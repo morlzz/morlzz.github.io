@@ -2,6 +2,19 @@
   
     {
     
+      "title"    : "Github Pages 不支持插件Plugin",
+      "url"      : "/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/",	  
+      "category" : "Tech, 搬运",
+      "tags"     : "Jekyll",
+      "date"     : "2019-03-29",
+      "excerpt" : "",
+	  "body"    : "目前的方法：本地生成_site后，将_site目录内的所有内容上传至github，可避免插件问题。",
+	  "content" : "_site_sitegithub"	 
+      
+    } ,
+  
+    {
+    
       "title"    : "FFmpeg 音视频无损转换",
       "url"      : "/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/",	  
       "category" : "Tech, 搬运",
