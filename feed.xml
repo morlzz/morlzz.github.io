@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost/" rel="alternate" type="text/html" /><updated>2019-03-29T03:32:37+08:00</updated><id>http://localhost/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">Github Pages 不支持插件Plugin</title><link href="http://localhost/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/" rel="alternate" type="text/html" title="Github Pages 不支持插件Plugin" /><published>2019-03-29T00:00:00+08:00</published><updated>2019-03-29T00:00:00+08:00</updated><id>http://localhost/tech/%E6%90%AC%E8%BF%90/Github%20Pages%20not%20Support%20Plugin</id><content type="html" xml:base="http://localhost/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost/" rel="alternate" type="text/html" /><updated>2019-03-29T04:18:49+08:00</updated><id>http://localhost/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">Github Pages 不支持插件Plugin</title><link href="http://localhost/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/" rel="alternate" type="text/html" title="Github Pages 不支持插件Plugin" /><published>2019-03-29T00:00:00+08:00</published><updated>2019-03-29T00:00:00+08:00</updated><id>http://localhost/tech/%E6%90%AC%E8%BF%90/Github%20Pages%20not%20Support%20Plugin</id><content type="html" xml:base="http://localhost/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4 id=&quot;目前的方法本地生成_site后将_site目录内的所有内容上传至github可避免插件问题&quot;&gt;目前的方法：本地生成_site后，将_site目录内的所有内容上传至github，可避免插件问题。&lt;/h4&gt;</content><author><name></name></author><category term="Jekyll" /></entry><entry><title type="html">FFmpeg 音视频无损转换</title><link href="http://localhost/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/" rel="alternate" type="text/html" title="FFmpeg 音视频无损转换" /><published>2019-03-24T00:00:00+08:00</published><updated>2019-03-24T00:00:00+08:00</updated><id>http://localhost/tech/%E6%90%AC%E8%BF%90/Multimedia%20Lossless%20Convert</id><content type="html" xml:base="http://localhost/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;视频无损旋转&quot;&gt;视频无损旋转&lt;/h3&gt;
 
@@ -17,7 +17,8 @@
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;音频格式转换&quot;&gt;音频格式转换&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/zrbcsdn/article/details/50460274&quot;&gt;&lt;font size=&quot;2&quot;&gt;(原出处)&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/zrbcsdn/article/details/50460274&quot;&gt;&lt;font size=&quot;2&quot;&gt;(原出处1&lt;/font&gt;&lt;/a&gt;
+&lt;a href=&quot;https://blog.csdn.net/hy119/article/details/81632662&quot;&gt;&lt;font size=&quot;2&quot;&gt; &amp;ensp;原出处2)&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -29,9 +30,16 @@
 &lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.amr output.mp3&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;转换mp3到wav：
-&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmepg -i input.mp3 -f wav output.wav&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;转换m4a到mp3：
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -v 5 -y -i input.m4a -acodec libmp3lame -ac 2 -ab 192k output.mp3&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
+  &lt;li&gt;转换mp3到wav：
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ffmepg -i input.mp3 -f wav output.wav
+ffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;转换m4a到wav：
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.m4a -acodec pcm_s16le -ac 2 -ar 44100 output.wav&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;

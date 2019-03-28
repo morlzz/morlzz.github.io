@@ -87,7 +87,8 @@
 
 <p><br /></p>
 <h3 id="音频格式转换">音频格式转换</h3>
-<p><a href="https://blog.csdn.net/zrbcsdn/article/details/50460274"><font size="2">(原出处)</font></a></p>
+<p><a href="https://blog.csdn.net/zrbcsdn/article/details/50460274"><font size="2">(原出处1</font></a>
+<a href="https://blog.csdn.net/hy119/article/details/81632662"><font size="2"> &ensp;原出处2)</font></a></p>
 
 <ul>
   <li>
@@ -99,9 +100,16 @@
 <code class="highlighter-rouge">ffmpeg -i input.amr output.mp3</code></p>
   </li>
   <li>
-    <p>转换mp3到wav：
-<code class="highlighter-rouge">ffmepg -i input.mp3 -f wav output.wav</code></p>
+    <p>转换m4a到mp3：
+<code class="highlighter-rouge">ffmpeg -v 5 -y -i input.m4a -acodec libmp3lame -ac 2 -ab 192k output.mp3</code></p>
   </li>
+  <li>转换mp3到wav：
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ffmepg -i input.mp3 -f wav output.wav
+ffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav
+</code></pre></div>    </div>
+  </li>
+  <li>转换m4a到wav：
+<code class="highlighter-rouge">ffmpeg -i input.m4a -acodec pcm_s16le -ac 2 -ar 44100 output.wav</code></li>
 </ul>
 
 <p><br /></p>
