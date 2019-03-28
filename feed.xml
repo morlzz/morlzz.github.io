@@ -1,0 +1,1332 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost/" rel="alternate" type="text/html" /><updated>2019-03-29T02:55:48+08:00</updated><id>http://localhost/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">FFmpeg 音视频无损转换</title><link href="http://localhost/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/" rel="alternate" type="text/html" title="FFmpeg 音视频无损转换" /><published>2019-03-24T00:00:00+08:00</published><updated>2019-03-24T00:00:00+08:00</updated><id>http://localhost/tech/%E6%90%AC%E8%BF%90/Multimedia%20Lossless%20Convert</id><content type="html" xml:base="http://localhost/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;视频无损旋转&quot;&gt;视频无损旋转&lt;/h3&gt;
+
+&lt;p&gt;背景：手机拍摄的视频往往竖屏格式，电脑上的播放器可以临时”旋转“播放，但并不能更改原本格式，而借助视频转换软件（如格式工厂）往往会有一定失真。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ffmpeg.zeranoe.com/builds/&quot;&gt;FFmpeg&lt;/a&gt; 可以实现视频无损旋转。&lt;/p&gt;
+
+&lt;p&gt;步骤如下 &lt;font size=&quot;2&quot;&gt;(原出处:百度知道)&lt;/font&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 下载压缩包
+2. 将待旋转视频复制到“x:/xxx/FFMPEG/bin”目录
+3. cmd命令行, 在“x:/xxx/FFMPEG/bin&amp;gt;”后面输入：
+    ffmpeg -i input.mp4 -c copy -metadata:s:v:0 rotate=90 output.mp4
+
+** rotate=90表示逆时针旋转90度，顺时针旋转是rotate=-90，也可写入180或270的值。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;音频格式转换&quot;&gt;音频格式转换&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/zrbcsdn/article/details/50460274&quot;&gt;&lt;font size=&quot;2&quot;&gt;(原出处)&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;转换wav到mp3：
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.wav -codec:a libmp3lame -qscale:a 2 output.mp3&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;转换amr到mp3：
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.amr output.mp3&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;转换mp3到wav：
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmepg -i input.mp3 -f wav output.wav&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;ffmpeg-常用命令&quot;&gt;&lt;a href=&quot;https://www.cnblogs.com/frost-yen/p/5848781.html&quot;&gt;FFmpeg 常用命令&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;注：可以同一格式转换，可减少文件size。
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.mp4 output.mp4&lt;/code&gt;&lt;/p&gt;</content><author><name></name></author><category term="Multimedia" /></entry><entry><title type="html">萌宠</title><link href="http://localhost/pet/Pet-OThers/" rel="alternate" type="text/html" title="萌宠" /><published>2019-03-22T20:50:00+08:00</published><updated>2019-03-22T20:50:00+08:00</updated><id>http://localhost/pet/Pet-OThers</id><content type="html" xml:base="http://localhost/pet/Pet-OThers/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;1-很憨厚的小黄定期增产报国2次年平均每次6只小狗狗奇怪和隔壁的小黑死对头&quot;&gt;1. 很憨厚的小黄，定期增产报国，2次/年，平均每次6只小狗狗。奇怪，和隔壁的小黑死对头。&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/16.jpg&quot; width=&quot;50%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;2-小黑一家三口小白早早被送人了小黑小黄每天来串门子&quot;&gt;2. 小黑一家三口。小白早早被送人了，小黑、小黄每天来串门子。&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/17.jpg&quot; width=&quot;70%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;3--&quot;&gt;3. 😘 。&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/18.jpg&quot; width=&quot;40%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;4-园区小黄和小黑一对couple一天小黄看到我后居然示意领着我去找小黑找到后小黑兴奋地和小黄媳妇眼神交流&quot;&gt;4. 园区小黄和小黑，一对couple。一天，小黄看到我后，居然示意领着我去找小黑，找到后小黑兴奋地和小黄媳妇眼神交流~。&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/19.jpg&quot; width=&quot;66%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;5-猫咪真会享受&quot;&gt;5. 猫咪真会享受。&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/20.jpg&quot; width=&quot;66%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;6---&quot;&gt;6. 😘 🥰 。&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/21.jpg&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;7-同一家身形迥异的吉娃娃-vs-萨摩耶这搭配也可爱的没谁了&quot;&gt;7. 同一家身形迥异的吉娃娃 vs 萨摩耶，这搭配也可爱的没谁了~&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/22.jpg&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;8-大小兔子参照物同一笼子同一萝卜&quot;&gt;8. 大、小兔子。参照物：同一笼子、同一萝卜。&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/23.jpg&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">曾遇到的可爱小动物</summary></entry><entry><title type="html">Miracle Pets</title><link href="http://localhost/pet/Miracle-Pets/" rel="alternate" type="text/html" title="Miracle Pets" /><published>2019-03-22T00:00:00+08:00</published><updated>2019-03-22T00:00:00+08:00</updated><id>http://localhost/pet/Miracle%20Pets</id><content type="html" xml:base="http://localhost/pet/Miracle-Pets/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1-被疗愈和祝福的小狗&quot;&gt;&lt;strong&gt;1. 被疗愈和祝福的小狗&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;照片拍摄于20181027。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/15.jpg&quot; width=&quot;45%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;border-bottom: 3px solid grey;display:block&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;h3 id=&quot;2-跨越时空的猫狗&quot;&gt;&lt;strong&gt;2. 跨越时空的猫、狗&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;2017年偶然翻到老照片，发现一张十年前的猫咪照片，看着它的眼神，觉着好眼熟哦，时空突然停滞住，wow，现在的旺财狗狗，原来，一场同一灵魂不同时空的旅行。&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;div style=&quot;width:50%;float:left;text-align:center;font-size:16px;font-weight:bold;color:#404040;&quot;&gt; 
+狗狗照片拍摄于20161228&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;/assets/img/14.jpg&quot; width=&quot;80%&quot; /&gt;
+&lt;/div&gt;
+&lt;div style=&quot;width:50%;float:right;text-align:center;font-size:16px;font-weight:bold;color:#404040;height:120px; line-height:120px;&quot;&gt; 
+&lt;p&gt;猫咪照片拍摄于20061104&lt;/p&gt;
+&lt;img src=&quot;/assets/img/13.jpg&quot; width=&quot;95%&quot; style=&quot;display: inline-block; vertical-align: middle;&quot; /&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="Spirit" /></entry><entry><title type="html">旺财</title><link href="http://localhost/pet/dog/Pet-WangCai/" rel="alternate" type="text/html" title="旺财" /><published>2019-03-22T00:00:00+08:00</published><updated>2019-03-22T00:00:00+08:00</updated><id>http://localhost/pet/dog/Pet-WangCai</id><content type="html" xml:base="http://localhost/pet/dog/Pet-WangCai/">&lt;style&gt;
+.responsive-wrap iframe{ max-width: 100%;}
+&lt;/style&gt;
+
+&lt;div class=&quot;responsive-wrap&quot;&gt;
+&lt;!-- this is the embed code --&gt;
+  &lt;iframe src=&quot;/assets/pdfjs/web/viewer.html?file=/assets/file/wangcai_20190322.pdf&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;567&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+&lt;!-- embed ends --&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="Wangcai" /><summary type="html">My lovely Dog 旺财从小到大成长历程</summary></entry><entry><title type="html">Secure Tools/Links</title><link href="http://localhost/tech/Secure-Tools_Links/" rel="alternate" type="text/html" title="Secure Tools/Links" /><published>2019-03-21T00:00:00+08:00</published><updated>2019-03-21T00:00:00+08:00</updated><id>http://localhost/tech/Secure%20Tools_Links</id><content type="html" xml:base="http://localhost/tech/Secure-Tools_Links/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;blogsecure-note&quot;&gt;Blog/Secure Note&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.textarea.com/&quot;&gt;TextArea.com&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://write.as/new&quot;&gt;write.as&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.protectedtext.com/&quot;&gt;ProtectedText&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;file-share&quot;&gt;File Share&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://send.firefox.com/&quot;&gt;Firefox Send&lt;/a&gt;: e2e encrpt + 到期即焚&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Secure" /></entry><entry><title type="html">Spiritual Blog/Web/IM/Channel</title><link href="http://localhost/life/Spiritual-Relative-Links/" rel="alternate" type="text/html" title="Spiritual Blog/Web/IM/Channel" /><published>2019-03-15T00:00:00+08:00</published><updated>2019-03-15T00:00:00+08:00</updated><id>http://localhost/life/Spiritual%20Relative%20Links</id><content type="html" xml:base="http://localhost/life/Spiritual-Relative-Links/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot; style=&quot;border-bottom: 3px solid grey;display:block&quot;&gt;By Category&lt;/font&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;blog&quot;&gt;Blog&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.sina.com.cn/s/articlelist_2820773504_0_1.html&quot;&gt;lina光爱能量的博客&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;web&quot;&gt;Web&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://reginameredith.com/gaia-tv/&quot;&gt;gaia-tv&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gaia.com/&quot;&gt;gaia&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot; style=&quot;border-bottom: 3px solid grey;display:block&quot;&gt;By Person&lt;/font&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;rasta-wang&quot;&gt;Rasta Wang&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/daxiw&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/apha0102&quot;&gt;Youtube&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.instagram.com/apha09261/&quot;&gt;Instagram&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Spirit" /></entry><entry><title type="html">Jekyll-Simple-Search, NOT WORKING due to invalid JSON</title><link href="http://localhost/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E6%90%AC%E8%BF%90/Issues-when-use-JekyllSimpleSearch/" rel="alternate" type="text/html" title="Jekyll-Simple-Search, NOT WORKING due to invalid JSON" /><published>2019-03-09T00:00:00+08:00</published><updated>2019-03-09T00:00:00+08:00</updated><id>http://localhost/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E6%90%AC%E8%BF%90/Issues%20when%20use%20JekyllSimpleSearch</id><content type="html" xml:base="http://localhost/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E6%90%AC%E8%BF%90/Issues-when-use-JekyllSimpleSearch/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;使用jekyll-simple-search时searchjasonsearch-scriptjssearchhtml-有时搜索功能不工作-主要是因为某些字符破环了json文件的结构即invalid-json--link-检验json是否有效-解决方法&quot;&gt;使用”Jekyll Simple Search”时（search.jason+search-script.js+search.html）, 有时”搜索功能”不工作, 主要是因为&lt;strong&gt;某些字符破环了json文件的结构，即invalid JSON&lt;/strong&gt;  (&lt;a href=&quot;https://jsonlint.com/&quot;&gt;Link: 检验json是否有效&lt;/a&gt;), 解决方法：&lt;/h4&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;方法1-避免使用特殊符号&quot;&gt;方法1. 避免使用特殊符号&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;如转义符号&lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;\\&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;可将&lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt;或者&lt;code class=&quot;highlighter-rouge&quot;&gt;\\&lt;/code&gt;, 改成&lt;code class=&quot;highlighter-rouge&quot;&gt;\\\&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;可将&lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt;替换成&lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;方法2-filterrb-with-remove_chars-filter--inc-body-field-in-search&quot;&gt;方法2. filter.rb with “remove_chars” filter + inc. body field in search&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;下载&lt;a href=&quot;https://raw.githubusercontent.com/analca3/blog_files/master/_plugins/simple_search_filter.rb&quot;&gt;simple_search_filter.rb&lt;/a&gt;, 置于&lt;code class=&quot;highlighter-rouge&quot;&gt;/_plugins&lt;/code&gt;目录下。&lt;/li&gt;
+  &lt;li&gt;在&lt;code class=&quot;highlighter-rouge&quot;&gt;search.json&lt;/code&gt;文件&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;content&quot; : &lt;/code&gt;中，增加rb中定义的filter&lt;code class=&quot;highlighter-rouge&quot;&gt;| remove_chars |&lt;/code&gt;, &lt;a href=&quot;https://github.com/christian-fei/Simple-Jekyll-Search/blob/master/WIKI.md&quot;&gt;原出处&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&quot;content&quot; : &quot;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;strip_html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;strip_newlines&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;escape&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&quot;	
+&quot;content&quot; : &quot;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;strip_html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;strip_newlines&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;remove_chars&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;escape&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&quot;	&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;在&lt;code class=&quot;highlighter-rouge&quot;&gt;search.json&lt;/code&gt;文件中增加&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;body&quot; : &lt;/code&gt;field, 这里是最容易导致search not working的主要原因, &lt;a href=&quot;https://idratherbewriting.com/documentation-theme-jekyll/mydoc_search_configuration.html#more-robust-search&quot;&gt;原出处&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&quot;body&quot;: &quot;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;strip_html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;strip_newlines&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'\'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'\\\\'&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'&quot;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'\\&quot;'&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'	'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'    '&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&quot;,&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="Jekyll" /><summary type="html">search.json结构被破坏的解决方法</summary></entry><entry><title type="html">Useful Collection for Tools/Links</title><link href="http://localhost/tech/Useful-Collection_Tools_Links/" rel="alternate" type="text/html" title="Useful Collection for Tools/Links" /><published>2019-03-09T00:00:00+08:00</published><updated>2019-03-09T00:00:00+08:00</updated><id>http://localhost/tech/Useful%20Collection_Tools_Links</id><content type="html" xml:base="http://localhost/tech/Useful-Collection_Tools_Links/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot; style=&quot;border-bottom: 5px solid grey;display:block&quot;&gt;1. 编辑相关&lt;/font&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;颜色&quot;&gt;颜色&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tools.jb51.net/color/colorpicker&quot;&gt;在线颜色选择器/RGB颜色查询对照表&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/tools/use&quot;&gt;在线颜色-站长工具&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;markdown-online-editor&quot;&gt;Markdown Online Editor&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pandao.github.io/editor.md/&quot;&gt;Editor.md&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bejson.com/md/mahua/&quot;&gt;MaHua&lt;/a&gt;（支持html导出）&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown&quot;&gt;Cmd Markdown&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;richtext-online-editor&quot;&gt;RichText Online Editor&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ueditor.baidu.com/website/onlinedemo.html&quot;&gt;UEditor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://kindeditor.net/demo.php&quot;&gt;KindEditor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ckeditor.com/docs/ckeditor5/latest/examples/builds/classic-editor.html&quot;&gt;CKEditor&lt;/a&gt; （支持上传图片并生成对应链接）&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.codecogs.com/latex/eqneditor.php&quot;&gt;LaTeX 公式编辑器&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;richtext-to-markdown-online-editor&quot;&gt;RichText-To-Markdown Online Editor&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bejson.com/convert/ueditor2markdown/&quot;&gt;BeJSON.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot; style=&quot;border-bottom: 5px solid grey;display:block&quot;&gt;2. 网络查询相关&lt;/font&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;网速&quot;&gt;网速&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://fast.com/zh/cn/#&quot;&gt;FAST.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;ip查询&quot;&gt;IP查询&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ip111.cn/&quot;&gt;ip111.cn&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ipip.net/ip.html&quot;&gt;IPIP.net&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://whoer.net/zh&quot;&gt;whoer.net&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot; style=&quot;border-bottom: 5px solid grey;display:block&quot;&gt;3. 搜索相关&lt;/font&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;网盘搜索&quot;&gt;网盘搜索&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.panduoduo.net/&quot;&gt;盘多多&lt;/a&gt; (搜索百度云盘)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;种子搜索&quot;&gt;种子搜索&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://btkitty.pet/&quot;&gt;BT Kitty&lt;/a&gt; (磁力链接搜索)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot; style=&quot;border-bottom: 5px solid grey;display:block&quot;&gt;4. 授权管理/注销相关&lt;/font&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;授权管理&quot;&gt;授权管理&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://connect.qq.com/manage.html#/appauth/user&quot;&gt;QQ授权管理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;微信授权管理: 微信App，【 隐私 】→【 授权管理 】&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.95516.com/portal/payment/closePayment.do&quot;&gt;关闭银联在线支付&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://passport.baidu.com/accountbind&quot;&gt;百度-关闭绑定的外部帐号&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;注销删除账号&quot;&gt;注销/删除账号&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;百度帐号注销:
+    &lt;ul&gt;
+      &lt;li&gt;使用百度系内的任一款百度APP, 登录需要注销的帐号，进入【帐号管理】页，点击选择【帐号安全中心】，进入页面后，选择点击【帐号注销】。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://account.live.com/closeaccount.aspx?mpsplit=1&quot;&gt;微软账号销户&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://account.xiaomi.com/pass/del&quot;&gt;谷歌账号删除&lt;/a&gt;, 选择“Delete your Google Account”。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://account.xiaomi.com/pass/del&quot;&gt;小米账号删除&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="常用工具" /></entry><entry><title type="html">Useful Collection for Symbols</title><link href="http://localhost/tech/%E6%90%AC%E8%BF%90/Useful-Collection_Symbols/" rel="alternate" type="text/html" title="Useful Collection for Symbols" /><published>2019-03-09T00:00:00+08:00</published><updated>2019-03-09T00:00:00+08:00</updated><id>http://localhost/tech/%E6%90%AC%E8%BF%90/Useful%20Collection_Symbols</id><content type="html" xml:base="http://localhost/tech/%E6%90%AC%E8%BF%90/Useful-Collection_Symbols/">&lt;h3 id=&quot;括号&quot;&gt;括号&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;‹ ›&lt;/th&gt;
+      &lt;th&gt;&amp;lt;&amp;gt;&lt;/th&gt;
+      &lt;th&gt;〈〉&lt;/th&gt;
+      &lt;th&gt;〔〕&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;﹝﹞&lt;/td&gt;
+      &lt;td&gt;( )&lt;/td&gt;
+      &lt;td&gt;（）&lt;/td&gt;
+      &lt;td&gt;{ }&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;﹛﹜&lt;/td&gt;
+      &lt;td&gt;［］&lt;/td&gt;
+      &lt;td&gt;「」&lt;/td&gt;
+      &lt;td&gt;【】&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;『』&lt;/td&gt;
+      &lt;td&gt;〖〗&lt;/td&gt;
+      &lt;td&gt;『』&lt;/td&gt;
+      &lt;td&gt;《》&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;︵&lt;/td&gt;
+      &lt;td&gt;︶&lt;/td&gt;
+      &lt;td&gt;︷&lt;/td&gt;
+      &lt;td&gt;︸&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;︿&lt;/td&gt;
+      &lt;td&gt;﹀&lt;/td&gt;
+      &lt;td&gt;︹&lt;/td&gt;
+      &lt;td&gt;︺&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;︽&lt;/td&gt;
+      &lt;td&gt;︾&lt;/td&gt;
+      &lt;td&gt;﹁&lt;/td&gt;
+      &lt;td&gt;﹂&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;﹃&lt;/td&gt;
+      &lt;td&gt;﹄&lt;/td&gt;
+      &lt;td&gt;︻&lt;/td&gt;
+      &lt;td&gt;︼&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;表情&quot;&gt;&lt;a href=&quot;https://getemoji.com/&quot;&gt;表情&lt;/a&gt;&lt;/h3&gt;</content><author><name></name></author><category term="常用工具" /></entry><entry><title type="html">Useful Collection for Jekyll Blog/Markdown</title><link href="http://localhost/tech/%E6%90%AC%E8%BF%90/Useful-Collection_Jekyllblog_markdown/" rel="alternate" type="text/html" title="Useful Collection for Jekyll Blog/Markdown" /><published>2019-03-09T00:00:00+08:00</published><updated>2019-03-09T00:00:00+08:00</updated><id>http://localhost/tech/%E6%90%AC%E8%BF%90/Useful%20Collection_Jekyllblog_markdown</id><content type="html" xml:base="http://localhost/tech/%E6%90%AC%E8%BF%90/Useful-Collection_Jekyllblog_markdown/">&lt;h3 id=&quot;markdown-file需添加反斜号的符号&quot;&gt;Markdown File需添加反斜号&lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt;的符号：&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\   反斜线
+`   反引号
+*   星号
+_   底线
+{}  花括号
+[]  方括号
+()  括弧
+#   井字号
++   加号
+-   减号
+.   英文句点
+!   惊叹号
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;markdown-file定义文字颜色字体的方式&quot;&gt;Markdown File定义文字颜色/字体的方式：&lt;/h3&gt;
+&lt;h5 id=&quot;原文链接&quot;&gt;&lt;a href=&quot;https://blog.csdn.net/u011995719/article/details/77232626&quot;&gt;原文链接&lt;/a&gt;&lt;/h5&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;font  更改语法&amp;gt; 你的内容 &amp;lt;/font&amp;gt; 
+
+更改语法有: 
+color=#0099ff 更改字体颜色 
+face=&quot;黑体&quot; 更改字体 
+size= 7 更改字体大小 
+
+&amp;lt;font face=&quot;黑体&quot;&amp;gt;我是黑体字&amp;lt;/font&amp;gt; 
+&amp;lt;font face=&quot;微软雅黑&quot;&amp;gt;我是微软雅黑&amp;lt;/font&amp;gt; 
+&amp;lt;font face=&quot;STCAIYUN&quot;&amp;gt;我是华文彩云&amp;lt;/font&amp;gt; 
+&amp;lt;font color=#0099ff size=7 face=&quot;黑体&quot;&amp;gt;color=#0099ff size=72 face=&quot;黑体&quot;&amp;lt;/font&amp;gt;
+&amp;lt;font color=#00ffff size=72&amp;gt;color=#00ffff&amp;lt;/font&amp;gt; 
+&amp;lt;font color=gray size=72&amp;gt;color=gray&amp;lt;/font&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;markdown语法&quot;&gt;Markdown语法&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/qcx321/article/details/53780672&quot;&gt;搬运：语法实例&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.fandong.me/2017/08/25/Markdown-Advance/&quot;&gt;搬运：语法含嵌套音视频&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/maxsky/article/details/54666998?utm_source=blogxgwz0&quot;&gt;搬运：Markown 表格之调整宽度技巧&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;html语法&quot;&gt;Html语法&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;空格&quot;&gt;空格&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;普通空格: &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;nbsp;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;两个普通空格: &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;ensp;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;四个普通空格: &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;emsp;&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;语法案例-原出处&quot;&gt;&lt;a href=&quot;https://www.cnblogs.com/Daniel-Liang/p/5918381.html&quot;&gt;语法案例 (原出处)&lt;/a&gt;&lt;/h4&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;liquid-template-language列出所有静态文件名&quot;&gt;Liquid Template Language：列出所有静态文件名&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/8.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;!--
+  		
+  1. [README.md](/README.md)      		 
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		
+  1. [viewer.html](/assets/pdfjs/web/viewer.html)      		 
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+  		  
+
+--&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;gitignore使用方法&quot;&gt;.gitignore使用方法&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/qq_30100043/article/details/78225631&quot;&gt;原出处&lt;/a&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;注释方法&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;被忽略的类型&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;*.a&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;* 代表所有, 即忽略所有 .a类型结尾的文件&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;/todo&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;仅仅忽略 RootSRC(项目根目录)/todo, 即忽略指定的文件或文件夹(不包括子目录)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;todo&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;忽略 todo/ 目录下的所有文件, 包括子目录&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;doc/*.txt&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;会忽略 doc/ 目录内的所有.txt文件, 但不包括子目录的&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;markdown-表格对齐方式&quot;&gt;Markdown 表格对齐方式&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;居左   | :------------ | :------------ |
+居中   | :------------: | :------------: |
+默认   | ------------ | ------------ |
+居右   | ------------: | ------------: |
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="Jekyll" /><category term="常用工具" /></entry></feed>
