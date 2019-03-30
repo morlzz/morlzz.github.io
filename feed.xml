@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost/" rel="alternate" type="text/html" /><updated>2019-03-29T04:18:49+08:00</updated><id>http://localhost/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">Github Pages 不支持插件Plugin</title><link href="http://localhost/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/" rel="alternate" type="text/html" title="Github Pages 不支持插件Plugin" /><published>2019-03-29T00:00:00+08:00</published><updated>2019-03-29T00:00:00+08:00</updated><id>http://localhost/tech/%E6%90%AC%E8%BF%90/Github%20Pages%20not%20Support%20Plugin</id><content type="html" xml:base="http://localhost/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost/" rel="alternate" type="text/html" /><updated>2019-03-30T23:15:19+08:00</updated><id>http://localhost/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">Wonderful Spiritual Video</title><link href="http://localhost/life/Wonderful-Spirit-Video/" rel="alternate" type="text/html" title="Wonderful Spiritual Video" /><published>2019-03-30T23:04:00+08:00</published><updated>2019-03-30T23:04:00+08:00</updated><id>http://localhost/life/Wonderful%20Spirit%20Video</id><content type="html" xml:base="http://localhost/life/Wonderful-Spirit-Video/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;20190330&quot;&gt;20190330&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=jjcU4_pdCGs&quot;&gt;三摩地影片第1部 - “幻象，自我的迷失” -Samadhi Part 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=80ukIWYp-rE&amp;amp;t=36s&quot;&gt;三摩地影片第2部-“非你所想” - Samadhi Part 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Spirit" /></entry><entry><title type="html">Github Pages 不支持插件Plugin</title><link href="http://localhost/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/" rel="alternate" type="text/html" title="Github Pages 不支持插件Plugin" /><published>2019-03-29T00:00:00+08:00</published><updated>2019-03-29T00:00:00+08:00</updated><id>http://localhost/tech/%E6%90%AC%E8%BF%90/Github%20Pages%20not%20Support%20Plugin</id><content type="html" xml:base="http://localhost/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4 id=&quot;目前的方法本地生成_site后将_site目录内的所有内容上传至github可避免插件问题&quot;&gt;目前的方法：本地生成_site后，将_site目录内的所有内容上传至github，可避免插件问题。&lt;/h4&gt;</content><author><name></name></author><category term="Jekyll" /></entry><entry><title type="html">FFmpeg 音视频无损转换</title><link href="http://localhost/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/" rel="alternate" type="text/html" title="FFmpeg 音视频无损转换" /><published>2019-03-24T00:00:00+08:00</published><updated>2019-03-24T00:00:00+08:00</updated><id>http://localhost/tech/%E6%90%AC%E8%BF%90/Multimedia%20Lossless%20Convert</id><content type="html" xml:base="http://localhost/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;视频无损旋转&quot;&gt;视频无损旋转&lt;/h3&gt;
 
@@ -268,63 +274,4 @@ ffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav
   &lt;li&gt;&lt;a href=&quot;https://account.live.com/closeaccount.aspx?mpsplit=1&quot;&gt;微软账号销户&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://account.xiaomi.com/pass/del&quot;&gt;谷歌账号删除&lt;/a&gt;, 选择“Delete your Google Account”。&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://account.xiaomi.com/pass/del&quot;&gt;小米账号删除&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="常用工具" /></entry><entry><title type="html">Useful Collection for Symbols</title><link href="http://localhost/tech/%E6%90%AC%E8%BF%90/Useful-Collection_Symbols/" rel="alternate" type="text/html" title="Useful Collection for Symbols" /><published>2019-03-09T00:00:00+08:00</published><updated>2019-03-09T00:00:00+08:00</updated><id>http://localhost/tech/%E6%90%AC%E8%BF%90/Useful%20Collection_Symbols</id><content type="html" xml:base="http://localhost/tech/%E6%90%AC%E8%BF%90/Useful-Collection_Symbols/">&lt;h3 id=&quot;括号&quot;&gt;括号&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;‹ ›&lt;/th&gt;
-      &lt;th&gt;&amp;lt;&amp;gt;&lt;/th&gt;
-      &lt;th&gt;〈〉&lt;/th&gt;
-      &lt;th&gt;〔〕&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;﹝﹞&lt;/td&gt;
-      &lt;td&gt;( )&lt;/td&gt;
-      &lt;td&gt;（）&lt;/td&gt;
-      &lt;td&gt;{ }&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;﹛﹜&lt;/td&gt;
-      &lt;td&gt;［］&lt;/td&gt;
-      &lt;td&gt;「」&lt;/td&gt;
-      &lt;td&gt;【】&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;『』&lt;/td&gt;
-      &lt;td&gt;〖〗&lt;/td&gt;
-      &lt;td&gt;『』&lt;/td&gt;
-      &lt;td&gt;《》&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;︵&lt;/td&gt;
-      &lt;td&gt;︶&lt;/td&gt;
-      &lt;td&gt;︷&lt;/td&gt;
-      &lt;td&gt;︸&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;︿&lt;/td&gt;
-      &lt;td&gt;﹀&lt;/td&gt;
-      &lt;td&gt;︹&lt;/td&gt;
-      &lt;td&gt;︺&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;︽&lt;/td&gt;
-      &lt;td&gt;︾&lt;/td&gt;
-      &lt;td&gt;﹁&lt;/td&gt;
-      &lt;td&gt;﹂&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;﹃&lt;/td&gt;
-      &lt;td&gt;﹄&lt;/td&gt;
-      &lt;td&gt;︻&lt;/td&gt;
-      &lt;td&gt;︼&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;表情&quot;&gt;&lt;a href=&quot;https://getemoji.com/&quot;&gt;表情&lt;/a&gt;&lt;/h3&gt;</content><author><name></name></author><category term="常用工具" /></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="常用工具" /></entry></feed>

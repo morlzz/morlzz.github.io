@@ -2,6 +2,19 @@
   
     {
     
+      "title"    : "Wonderful Spiritual Video",
+      "url"      : "/life/Wonderful-Spirit-Video/",	  
+      "category" : "Life",
+      "tags"     : "Spirit",
+      "date"     : "2019-03-30",
+      "excerpt" : "",
+	  "body"    : "20190330  三摩地影片第1部 - “幻象，自我的迷失” -Samadhi Part 1  三摩地影片第2部-“非你所想” - Samadhi Part 2",
+	  "content" : "20190330  1 -  -Samadhi Part 1  2- - Samadhi Part 2"	 
+      
+    } ,
+  
+    {
+    
       "title"    : "Github Pages 不支持插件Plugin",
       "url"      : "/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/",	  
       "category" : "Tech, 搬运",
