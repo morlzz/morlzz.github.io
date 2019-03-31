@@ -216,8 +216,8 @@
       "tags"     : "Cloud/VPN/VPS",
       "date"     : "2019-01-08",
       "excerpt" : "",
-	  "body"    : "AWS计费    以上公式原出处Case Study-Aws EC2（free tier）        Bill              free  tier 免费限制            出站流量超出费率，随区域变化，官方数据。 ",
-	  "content" : "AWSCase Study-Aws EC2free tier        Bill              free  tier              "	 
+	  "body"    : "AWS计费公式原出处 Case Study-Aws EC2（free tier）        Bill             free  tier 免费限制            出站流量超出费率，随区域变化，官方数据。 ",
+	  "content" : "AWS Case Study-Aws EC2free tier        Bill             free  tier              "	 
       
     } ,
   
