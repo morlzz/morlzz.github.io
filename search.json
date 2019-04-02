@@ -2,6 +2,19 @@
   
     {
     
+      "title"    : "萌宠",
+      "url"      : "/pet/Pet-OThers/",	  
+      "category" : "Pet",
+      "tags"     : "",
+      "date"     : "2019-03-31",
+      "excerpt" : "曾遇到的可爱小动物",
+	  "body"    : "1. 很憨厚的小黄，定期增产报国，2次/年，平均每次6只小狗狗。奇怪，和隔壁的小黑死对头。2. 小黑一家三口。小白早早被送人了，小黑、小黄每天来串门子。3. 😘 。4. 园区小黄和小黑，一对couple。一天，小黄看到我后，居然示意领着我去找小黑，找到后小黑兴奋地和小黄媳妇眼神交流~。5. 猫咪真会享受。6. 😘 🥰 。7. 同一家身形迥异的吉娃娃 vs 萨摩耶，这搭配也可爱的没谁了~8. 大、小兔子。参照物：同一笼子、同一萝卜。9. 难得路上遇到牛，领头的牛很酷，貌似脾气不大好，欲上前摸它一下，瞬间听到它鼻子“哼”了一下，还是停手吧🤔。Photography in 20190331",
+	  "content" : "1. 2/62. 3.  4. couple~5. 6.   7.  vs ~8. 9. Photography in 20190331"	 
+      
+    } ,
+  
+    {
+    
       "title"    : "Wonderful Spiritual Video",
       "url"      : "/life/Wonderful-Spirit-Video/",	  
       "category" : "Life",
@@ -34,21 +47,8 @@
       "tags"     : "Multimedia",
       "date"     : "2019-03-24",
       "excerpt" : "",
-	  "body"    : "视频无损旋转背景：手机拍摄的视频往往竖屏格式，电脑上的播放器可以临时”旋转“播放，但并不能更改原本格式，而借助视频转换软件（如格式工厂）往往会有一定失真。FFmpeg 可以实现视频无损旋转。步骤如下 (原出处:百度知道)1. 下载压缩包2. 将待旋转视频复制到“x:/xxx/FFMPEG/bin”目录3. cmd命令行, 在“x:/xxx/FFMPEG/bin&gt;”后面输入：    ffmpeg -i input.mp4 -c copy -metadata:s:v:0 rotate=90 output.mp4** rotate=90表示逆时针旋转90度，顺时针旋转是rotate=-90，也可写入180或270的值。音频格式转换(原出处1 &ensp;原出处2)      转换wav到mp3：ffmpeg -i input.wav -codec:a libmp3lame -qscale:a 2 output.mp3        转换amr到mp3：ffmpeg -i input.amr output.mp3        转换m4a到mp3：ffmpeg -v 5 -y -i input.m4a -acodec libmp3lame -ac 2 -ab 192k output.mp3    转换mp3到wav：    ffmepg -i input.mp3 -f wav output.wavffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav        转换m4a到wav：ffmpeg -i input.m4a -acodec pcm_s16le -ac 2 -ar 44100 output.wavFFmpeg 常用命令注：可以同一格式转换，可减少文件size。ffmpeg -i input.mp4 output.mp4",
-	  "content" : "FFmpeg  (:)1. 2. x:/xxx/FFMPEG/bin3. cmd, x:/xxx/FFMPEG/bingt;    ffmpeg -i input.mp4 -c copy -metadata:s:v:0 rotate=90 output.mp4** rotate=9090rotate=-90180270(1 ensp;2)      wavmp3ffmpeg -i input.wav -codec:a libmp3lame -qscale:a 2 output.mp3        amrmp3ffmpeg -i input.amr output.mp3        m4amp3ffmpeg -v 5 -y -i input.m4a -acodec libmp3lame -ac 2 -ab 192k output.mp3    mp3wav    ffmepg -i input.mp3 -f wav output.wavffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav        m4awavffmpeg -i input.m4a -acodec pcm_s16le -ac 2 -ar 44100 output.wavFFmpeg sizeffmpeg -i input.mp4 output.mp4"	 
-      
-    } ,
-  
-    {
-    
-      "title"    : "萌宠",
-      "url"      : "/pet/Pet-OThers/",	  
-      "category" : "Pet",
-      "tags"     : "",
-      "date"     : "2019-03-22",
-      "excerpt" : "曾遇到的可爱小动物",
-	  "body"    : "1. 很憨厚的小黄，定期增产报国，2次/年，平均每次6只小狗狗。奇怪，和隔壁的小黑死对头。2. 小黑一家三口。小白早早被送人了，小黑、小黄每天来串门子。3. 😘 。4. 园区小黄和小黑，一对couple。一天，小黄看到我后，居然示意领着我去找小黑，找到后小黑兴奋地和小黄媳妇眼神交流~。5. 猫咪真会享受。6. 😘 🥰 。7. 同一家身形迥异的吉娃娃 vs 萨摩耶，这搭配也可爱的没谁了~8. 大、小兔子。参照物：同一笼子、同一萝卜。9. 难得路上遇到牛，领头的牛很酷，貌似脾气不大好，欲上前摸它一下，瞬间听到它鼻子“哼”了一下，还是停手吧🤔。",
-	  "content" : "1. 2/62. 3.  4. couple~5. 6.   7.  vs ~8. 9. "	 
+	  "body"    : "视频无损旋转背景：手机拍摄的视频往往竖屏格式，电脑上的播放器可以临时”旋转“播放，但并不能更改原本格式，而借助视频转换软件（如格式工厂）往往会有一定失真。FFmpeg 可以实现视频无损旋转。步骤如下 (原出处:百度知道)1. 下载压缩包2. 将待旋转视频复制到“x:/xxx/FFMPEG/bin”目录3. cmd命令行, 在“x:/xxx/FFMPEG/bin&gt;”后面输入：    ffmpeg -i input.mp4 -c copy -metadata:s:v:0 rotate=90 output.mp4** rotate=90表示逆时针旋转90度，顺时针旋转是rotate=-90，也可写入180或270的值。音频格式转换(原出处1 原出处2)      转换wav到mp3：ffmpeg -i input.wav -codec:a libmp3lame -qscale:a 2 output.mp3        转换amr到mp3：ffmpeg -i input.amr output.mp3        转换m4a到mp3：ffmpeg -v 5 -y -i input.m4a -acodec libmp3lame -ac 2 -ab 192k output.mp3    转换mp3到wav：    ffmepg -i input.mp3 -f wav output.wavffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav        转换m4a到wav：ffmpeg -i input.m4a -acodec pcm_s16le -ac 2 -ar 44100 output.wavFFmpeg 常用命令注：可以同一格式转换，可减少文件size。ffmpeg -i input.mp4 output.mp4",
+	  "content" : "FFmpeg  (:)1. 2. x:/xxx/FFMPEG/bin3. cmd, x:/xxx/FFMPEG/bingt;    ffmpeg -i input.mp4 -c copy -metadata:s:v:0 rotate=90 output.mp4** rotate=9090rotate=-90180270(12)      wavmp3ffmpeg -i input.wav -codec:a libmp3lame -qscale:a 2 output.mp3        amrmp3ffmpeg -i input.amr output.mp3        m4amp3ffmpeg -v 5 -y -i input.m4a -acodec libmp3lame -ac 2 -ab 192k output.mp3    mp3wav    ffmepg -i input.mp3 -f wav output.wavffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav        m4awavffmpeg -i input.m4a -acodec pcm_s16le -ac 2 -ar 44100 output.wavFFmpeg sizeffmpeg -i input.mp4 output.mp4"	 
       
     } ,
   

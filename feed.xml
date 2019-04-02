@@ -1,58 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost/" rel="alternate" type="text/html" /><updated>2019-04-01T01:45:32+08:00</updated><id>http://localhost/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">Wonderful Spiritual Video</title><link href="http://localhost/life/Wonderful-Spirit-Video/" rel="alternate" type="text/html" title="Wonderful Spiritual Video" /><published>2019-03-30T23:04:00+08:00</published><updated>2019-03-30T23:04:00+08:00</updated><id>http://localhost/life/Wonderful%20Spirit%20Video</id><content type="html" xml:base="http://localhost/life/Wonderful-Spirit-Video/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;20190330&quot;&gt;20190330&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=jjcU4_pdCGs&quot;&gt;三摩地影片第1部 - “幻象，自我的迷失” -Samadhi Part 1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=80ukIWYp-rE&amp;amp;t=36s&quot;&gt;三摩地影片第2部-“非你所想” - Samadhi Part 2&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="Spirit" /></entry><entry><title type="html">Github Pages 不支持插件Plugin</title><link href="http://localhost/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/" rel="alternate" type="text/html" title="Github Pages 不支持插件Plugin" /><published>2019-03-29T00:00:00+08:00</published><updated>2019-03-29T00:00:00+08:00</updated><id>http://localhost/tech/%E6%90%AC%E8%BF%90/Github%20Pages%20not%20Support%20Plugin</id><content type="html" xml:base="http://localhost/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;目前的方法本地生成_site后将_site目录内的所有内容上传至github可避免插件问题&quot;&gt;目前的方法：本地生成_site后，将_site目录内的所有内容上传至github，可避免插件问题。&lt;/h4&gt;</content><author><name></name></author><category term="Jekyll" /></entry><entry><title type="html">FFmpeg 音视频无损转换</title><link href="http://localhost/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/" rel="alternate" type="text/html" title="FFmpeg 音视频无损转换" /><published>2019-03-24T00:00:00+08:00</published><updated>2019-03-24T00:00:00+08:00</updated><id>http://localhost/tech/%E6%90%AC%E8%BF%90/Multimedia%20Lossless%20Convert</id><content type="html" xml:base="http://localhost/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;视频无损旋转&quot;&gt;视频无损旋转&lt;/h3&gt;
-
-&lt;p&gt;背景：手机拍摄的视频往往竖屏格式，电脑上的播放器可以临时”旋转“播放，但并不能更改原本格式，而借助视频转换软件（如格式工厂）往往会有一定失真。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://ffmpeg.zeranoe.com/builds/&quot;&gt;FFmpeg&lt;/a&gt; 可以实现视频无损旋转。&lt;/p&gt;
-
-&lt;p&gt;步骤如下 &lt;font size=&quot;2&quot;&gt;(原出处:百度知道)&lt;/font&gt;&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 下载压缩包
-2. 将待旋转视频复制到“x:/xxx/FFMPEG/bin”目录
-3. cmd命令行, 在“x:/xxx/FFMPEG/bin&amp;gt;”后面输入：
-    ffmpeg -i input.mp4 -c copy -metadata:s:v:0 rotate=90 output.mp4
-
-** rotate=90表示逆时针旋转90度，顺时针旋转是rotate=-90，也可写入180或270的值。
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;音频格式转换&quot;&gt;音频格式转换&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/zrbcsdn/article/details/50460274&quot;&gt;&lt;font size=&quot;2&quot;&gt;(原出处1&lt;/font&gt;&lt;/a&gt;
-&lt;a href=&quot;https://blog.csdn.net/hy119/article/details/81632662&quot;&gt;&lt;font size=&quot;2&quot;&gt; &amp;ensp;原出处2)&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;转换wav到mp3：
-&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.wav -codec:a libmp3lame -qscale:a 2 output.mp3&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;转换amr到mp3：
-&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.amr output.mp3&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;转换m4a到mp3：
-&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -v 5 -y -i input.m4a -acodec libmp3lame -ac 2 -ab 192k output.mp3&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;转换mp3到wav：
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ffmepg -i input.mp3 -f wav output.wav
-ffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;转换m4a到wav：
-&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.m4a -acodec pcm_s16le -ac 2 -ar 44100 output.wav&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;ffmpeg-常用命令&quot;&gt;&lt;a href=&quot;https://www.cnblogs.com/frost-yen/p/5848781.html&quot;&gt;FFmpeg 常用命令&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;注：可以同一格式转换，可减少文件size。
-&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.mp4 output.mp4&lt;/code&gt;&lt;/p&gt;</content><author><name></name></author><category term="Multimedia" /></entry><entry><title type="html">萌宠</title><link href="http://localhost/pet/Pet-OThers/" rel="alternate" type="text/html" title="萌宠" /><published>2019-03-22T20:50:00+08:00</published><updated>2019-03-22T20:50:00+08:00</updated><id>http://localhost/pet/Pet-OThers</id><content type="html" xml:base="http://localhost/pet/Pet-OThers/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost/" rel="alternate" type="text/html" /><updated>2019-04-03T00:55:12+08:00</updated><id>http://localhost/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">萌宠</title><link href="http://localhost/pet/Pet-OThers/" rel="alternate" type="text/html" title="萌宠" /><published>2019-03-31T20:50:00+08:00</published><updated>2019-03-31T20:50:00+08:00</updated><id>http://localhost/pet/Pet-OThers</id><content type="html" xml:base="http://localhost/pet/Pet-OThers/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4 id=&quot;1-很憨厚的小黄定期增产报国2次年平均每次6只小狗狗奇怪和隔壁的小黑死对头&quot;&gt;1. 很憨厚的小黄，定期增产报国，2次/年，平均每次6只小狗狗。奇怪，和隔壁的小黑死对头。&lt;/h4&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/16.jpg&quot; width=&quot;50%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -86,7 +32,63 @@ ffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4 id=&quot;9-难得路上遇到牛领头的牛很酷貌似脾气不大好欲上前摸它一下瞬间听到它鼻子哼了一下还是停手吧&quot;&gt;9. 难得路上遇到牛，领头的牛很酷，貌似脾气不大好，欲上前摸它一下，瞬间听到它鼻子“哼”了一下，还是停手吧🤔。&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/29.jpg&quot; width=&quot;65%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">曾遇到的可爱小动物</summary></entry><entry><title type="html">Miracle Pets</title><link href="http://localhost/pet/Miracle-Pets/" rel="alternate" type="text/html" title="Miracle Pets" /><published>2019-03-22T00:00:00+08:00</published><updated>2019-03-22T00:00:00+08:00</updated><id>http://localhost/pet/Miracle%20Pets</id><content type="html" xml:base="http://localhost/pet/Miracle-Pets/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/29.jpg&quot; width=&quot;65%&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;margin-left: 20%;margin-top: -8px;&quot;&gt;Photography in 20190331&lt;/p&gt;</content><author><name></name></author><summary type="html">曾遇到的可爱小动物</summary></entry><entry><title type="html">Wonderful Spiritual Video</title><link href="http://localhost/life/Wonderful-Spirit-Video/" rel="alternate" type="text/html" title="Wonderful Spiritual Video" /><published>2019-03-30T23:04:00+08:00</published><updated>2019-03-30T23:04:00+08:00</updated><id>http://localhost/life/Wonderful%20Spirit%20Video</id><content type="html" xml:base="http://localhost/life/Wonderful-Spirit-Video/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;20190330&quot;&gt;20190330&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=jjcU4_pdCGs&quot;&gt;三摩地影片第1部 - “幻象，自我的迷失” -Samadhi Part 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=80ukIWYp-rE&amp;amp;t=36s&quot;&gt;三摩地影片第2部-“非你所想” - Samadhi Part 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Spirit" /></entry><entry><title type="html">Github Pages 不支持插件Plugin</title><link href="http://localhost/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/" rel="alternate" type="text/html" title="Github Pages 不支持插件Plugin" /><published>2019-03-29T00:00:00+08:00</published><updated>2019-03-29T00:00:00+08:00</updated><id>http://localhost/tech/%E6%90%AC%E8%BF%90/Github%20Pages%20not%20Support%20Plugin</id><content type="html" xml:base="http://localhost/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;目前的方法本地生成_site后将_site目录内的所有内容上传至github可避免插件问题&quot;&gt;目前的方法：本地生成_site后，将_site目录内的所有内容上传至github，可避免插件问题。&lt;/h4&gt;</content><author><name></name></author><category term="Jekyll" /></entry><entry><title type="html">FFmpeg 音视频无损转换</title><link href="http://localhost/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/" rel="alternate" type="text/html" title="FFmpeg 音视频无损转换" /><published>2019-03-24T00:00:00+08:00</published><updated>2019-03-24T00:00:00+08:00</updated><id>http://localhost/tech/%E6%90%AC%E8%BF%90/Multimedia%20Lossless%20Convert</id><content type="html" xml:base="http://localhost/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;视频无损旋转&quot;&gt;视频无损旋转&lt;/h3&gt;
+
+&lt;p&gt;背景：手机拍摄的视频往往竖屏格式，电脑上的播放器可以临时”旋转“播放，但并不能更改原本格式，而借助视频转换软件（如格式工厂）往往会有一定失真。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ffmpeg.zeranoe.com/builds/&quot;&gt;FFmpeg&lt;/a&gt; 可以实现视频无损旋转。&lt;/p&gt;
+
+&lt;p&gt;步骤如下 &lt;font size=&quot;2&quot;&gt;(原出处:百度知道)&lt;/font&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 下载压缩包
+2. 将待旋转视频复制到“x:/xxx/FFMPEG/bin”目录
+3. cmd命令行, 在“x:/xxx/FFMPEG/bin&amp;gt;”后面输入：
+    ffmpeg -i input.mp4 -c copy -metadata:s:v:0 rotate=90 output.mp4
+
+** rotate=90表示逆时针旋转90度，顺时针旋转是rotate=-90，也可写入180或270的值。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;音频格式转换&quot;&gt;音频格式转换&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/zrbcsdn/article/details/50460274&quot;&gt;&lt;font size=&quot;2&quot;&gt;(原出处1&lt;/font&gt;&lt;/a&gt;
+ 
+&lt;a href=&quot;https://blog.csdn.net/hy119/article/details/81632662&quot;&gt;&lt;font size=&quot;2&quot;&gt;原出处2)&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;转换wav到mp3：
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.wav -codec:a libmp3lame -qscale:a 2 output.mp3&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;转换amr到mp3：
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.amr output.mp3&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;转换m4a到mp3：
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -v 5 -y -i input.m4a -acodec libmp3lame -ac 2 -ab 192k output.mp3&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;转换mp3到wav：
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ffmepg -i input.mp3 -f wav output.wav
+ffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;转换m4a到wav：
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.m4a -acodec pcm_s16le -ac 2 -ar 44100 output.wav&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;ffmpeg-常用命令&quot;&gt;&lt;a href=&quot;https://www.cnblogs.com/frost-yen/p/5848781.html&quot;&gt;FFmpeg 常用命令&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;注：可以同一格式转换，可减少文件size。
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.mp4 output.mp4&lt;/code&gt;&lt;/p&gt;</content><author><name></name></author><category term="Multimedia" /></entry><entry><title type="html">Miracle Pets</title><link href="http://localhost/pet/Miracle-Pets/" rel="alternate" type="text/html" title="Miracle Pets" /><published>2019-03-22T00:00:00+08:00</published><updated>2019-03-22T00:00:00+08:00</updated><id>http://localhost/pet/Miracle%20Pets</id><content type="html" xml:base="http://localhost/pet/Miracle-Pets/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;1-被疗愈和祝福的小狗&quot;&gt;&lt;strong&gt;1. 被疗愈和祝福的小狗&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;照片拍摄于20181027。&lt;/p&gt;
