@@ -2,6 +2,19 @@
   
     {
     
+      "title"    : "Website To Image",
+      "url"      : "/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Website-To-Image/",	  
+      "category" : "Tech, 个人经验分享",
+      "tags"     : "常用工具",
+      "date"     : "2019-04-06",
+      "excerpt" : "网页转成图像",
+	  "body"    : "背景：当网页包含众多元素，而不仅仅是文字时，最快速、最精简的方式是“图片”。 插件方案 (不推荐)：chrome浏览器，插件：“小白工具包”，但不知何故，转换后的图片或pdf 均会将原网页表格的board丢失掉，因此不推荐该方案。浏览器自带转换工具：Maxthon遨游浏览器，自带工具：“菜单” → “另存为” 图片或其他，完美转换。",
+	  "content" : "  ()chromepdf boardMaxthon   "	 
+      
+    } ,
+  
+    {
+    
       "title"    : "萌宠",
       "url"      : "/pet/Pet-OThers/",	  
       "category" : "Pet",
@@ -125,8 +138,8 @@
       "tags"     : "常用工具",
       "date"     : "2019-03-09",
       "excerpt" : "",
-	  "body"    : "括号            ‹ ›      &lt;&gt;      〈〉      〔〕                  ﹝﹞      ( )      （）      { }              ﹛﹜      ［］      「」      【】              『』      〖〗      『』      《》              ︵      ︶      ︷      ︸              ︿      ﹀      ︹      ︺              ︽      ︾      ﹁      ﹂              ﹃      ﹄      ︻      ︼      表情",
-	  "content" : "                   lt;gt;                                    ( )                                                                                                                                                                                                                   "	 
+	  "body"    : "1. 括号            ‹ ›      &lt;&gt;      〈〉      〔〕                  ﹝﹞      ( )      （）      { }              ﹛﹜      ［］      「」      【】              『』      〖〗      『』      《》              ︵      ︶      ︷      ︸              ︿      ﹀      ︹      ︺              ︽      ︾      ﹁      ﹂              ﹃      ﹄      ︻      ︼      &nbsp;2. 表情&nbsp;3. 符号",
+	  "content" : "1.                    lt;gt;                                    ( )                                                                                                                                                                                                                   nbsp;2. nbsp;3. "	 
       
     } ,
   
