@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost/" rel="alternate" type="text/html" /><updated>2019-04-03T00:55:12+08:00</updated><id>http://localhost/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">萌宠</title><link href="http://localhost/pet/Pet-OThers/" rel="alternate" type="text/html" title="萌宠" /><published>2019-03-31T20:50:00+08:00</published><updated>2019-03-31T20:50:00+08:00</updated><id>http://localhost/pet/Pet-OThers</id><content type="html" xml:base="http://localhost/pet/Pet-OThers/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost/" rel="alternate" type="text/html" /><updated>2019-04-05T21:03:39+08:00</updated><id>http://localhost/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">萌宠</title><link href="http://localhost/pet/Pet-OThers/" rel="alternate" type="text/html" title="萌宠" /><published>2019-03-31T20:50:00+08:00</published><updated>2019-03-31T20:50:00+08:00</updated><id>http://localhost/pet/Pet-OThers</id><content type="html" xml:base="http://localhost/pet/Pet-OThers/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4 id=&quot;1-很憨厚的小黄定期增产报国2次年平均每次6只小狗狗奇怪和隔壁的小黑死对头&quot;&gt;1. 很憨厚的小黄，定期增产报国，2次/年，平均每次6只小狗狗。奇怪，和隔壁的小黑死对头。&lt;/h4&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/16.jpg&quot; width=&quot;50%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -85,10 +85,21 @@ ffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;ffmpeg-常用命令&quot;&gt;&lt;a href=&quot;https://www.cnblogs.com/frost-yen/p/5848781.html&quot;&gt;FFmpeg 常用命令&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;视频格式转换&quot;&gt;视频格式转换&lt;/h3&gt;
 
-&lt;p&gt;注：可以同一格式转换，可减少文件size。
-&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.mp4 output.mp4&lt;/code&gt;&lt;/p&gt;</content><author><name></name></author><category term="Multimedia" /></entry><entry><title type="html">Miracle Pets</title><link href="http://localhost/pet/Miracle-Pets/" rel="alternate" type="text/html" title="Miracle Pets" /><published>2019-03-22T00:00:00+08:00</published><updated>2019-03-22T00:00:00+08:00</updated><id>http://localhost/pet/Miracle%20Pets</id><content type="html" xml:base="http://localhost/pet/Miracle-Pets/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;MP4不是一种简单的视频格式，是一个包装了视频和音频格式的壳，里面的音、视频使用什么编码格式是可变的；&lt;br /&gt;视频格式可以使用DivX也可使用H264，而Chrome只支持H264。转换到支持h264的mp4：&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.mp4 -vcodec h264 output.mp4&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;可以同一格式转换，可减少文件size。
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.mp4 output.mp4&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;ffmpeg-常用命令&quot;&gt;&lt;a href=&quot;https://www.cnblogs.com/frost-yen/p/5848781.html&quot;&gt;FFmpeg 常用命令&lt;/a&gt;&lt;/h3&gt;</content><author><name></name></author><category term="Multimedia" /></entry><entry><title type="html">Miracle Pets</title><link href="http://localhost/pet/Miracle-Pets/" rel="alternate" type="text/html" title="Miracle Pets" /><published>2019-03-22T00:00:00+08:00</published><updated>2019-03-22T00:00:00+08:00</updated><id>http://localhost/pet/Miracle%20Pets</id><content type="html" xml:base="http://localhost/pet/Miracle-Pets/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;1-被疗愈和祝福的小狗&quot;&gt;&lt;strong&gt;1. 被疗愈和祝福的小狗&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;照片拍摄于20181027。&lt;/p&gt;

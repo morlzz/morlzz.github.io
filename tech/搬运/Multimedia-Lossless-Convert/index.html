@@ -114,10 +114,22 @@ ffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav
 </ul>
 
 <p><br /></p>
+<h3 id="视频格式转换">视频格式转换</h3>
+
+<ul>
+  <li>
+    <p>MP4不是一种简单的视频格式，是一个包装了视频和音频格式的壳，里面的音、视频使用什么编码格式是可变的；<br />视频格式可以使用DivX也可使用H264，而Chrome只支持H264。转换到支持h264的mp4：<br />
+<code class="highlighter-rouge">ffmpeg -i input.mp4 -vcodec h264 output.mp4</code></p>
+  </li>
+  <li>
+    <p>可以同一格式转换，可减少文件size。
+<code class="highlighter-rouge">ffmpeg -i input.mp4 output.mp4</code></p>
+  </li>
+</ul>
+
+<p><br /></p>
 <h3 id="ffmpeg-常用命令"><a href="https://www.cnblogs.com/frost-yen/p/5848781.html">FFmpeg 常用命令</a></h3>
 
-<p>注：可以同一格式转换，可减少文件size。
-<code class="highlighter-rouge">ffmpeg -i input.mp4 output.mp4</code></p>
 
   </div><a class="u-url" href="/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/" hidden></a>
     
