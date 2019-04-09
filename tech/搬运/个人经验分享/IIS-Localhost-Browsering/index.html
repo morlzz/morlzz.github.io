@@ -25,9 +25,9 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">  
-    <h1 class="post-title p-name" itemprop="name headline">加解密软件/方案</h1>
+    <h1 class="post-title p-name" itemprop="name headline">IIS Localhost Browsering</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2019-02-19T21:59:18+08:00" itemprop="datePublished">Feb 19, 2019
+      <time class="dt-published" datetime="2019-04-10T03:05:00+08:00" itemprop="datePublished">Apr 10, 2019
       </time></p>
 
 
@@ -40,6 +40,16 @@
   <a href="/categories/#Tech">
       <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Tech</em></strong></span>     
   </a>  
+  &nbsp;
+  
+  <a href="/categories/#搬运">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>搬运</em></strong></span>     
+  </a>  
+  &nbsp;
+  
+  <a href="/categories/#个人经验分享">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>个人经验分享</em></strong></span>     
+  </a>  
   
   
 </div>
@@ -51,64 +61,46 @@
 <span style="font-size: 13px; color: #6d9eeb;"><strong><em>Tag▸&nbsp;</em></strong></span> 
   
   
-  <a href="/tags/#Secure">
-     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>Secure</em></strong></span>  
+  <a href="/tags/#建站">
+     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>建站</em></strong></span>  
   </a>
   
   
 </div>
 
-<span style="font-size:; color: rgb(127, 127, 127);"><strong><em></em></strong></span>
+<span style="font-size:; color: rgb(127, 127, 127);"><strong><em><p><p/>Abstract&nbsp;▹
+    局域网内电脑、手机对本地网站的浏览</em></strong></span>
 
   </header>
 
 
   <div class="post-content e-content" itemprop="articleBody">
-    <h3 id="1-cryptomator"><strong>1. Cryptomator</strong></h3>
+    <p><br />
+非常感谢万能的网络，今天萌发此念头：<strong>想将“Local Jekyll Blog”用手机浏览</strong>，百度了下，居然找到了方案，thnaks. 😘🙏</p>
 
-<ul>
-  <li>
-    <h4 id="app-pc版freemobile版付费">APP: <a href="https://cryptomator.org/downloads/#winDownload">pc版free</a>，mobile版付费</h4>
-  </li>
-  <li>
-    <h4 id="方案cryptomator加密--储存-云端-or-本地">方案：cryptomator加密 + 储存 (云端 OR 本地)</h4>
-  </li>
-</ul>
-
-<p><br />
- <img src="https://33333.cdn.cke-cs.com/rc1DFuFpHqcR3Mah6y0e/images/aa87e6d8c9028707cea74dd08d411b006be662843f604c72_1.jpg" width="65%" /><br /><br /></p>
-
-<ul>
-  <li>
-    <h4 id="加密方式passphrase为用户自己设定的256位密钥只有自己知道">加密方式：Passphrase为用户自己设定的256位密钥，只有自己知道</h4>
-  </li>
-</ul>
-
-<p> <img src="https://cryptomator.org/img/architecture/key-derivation.png" /><br /></p>
-
-<h5 id="note-scrypt比sha256哈希加密更加耗硬件资源的哈希算法可参考链接"><em> Note: scrypt，比sha256哈希加密，更加耗硬件资源的哈希算法。<a href="https://zhuanlan.zhihu.com/p/32484253">可参考链接</a>。</em></h5>
-
-<hr />
+<p>参考链接：
+<a href="https://jingyan.baidu.com/article/15622f24197179fdfdbea559.html">IIS</a>, <a href="https://wenku.baidu.com/view/bf57fe058762caaedc33d466.html">手机访问电脑上的网站</a></p>
 
 <p><br /></p>
-<h3 id="2-keepass"><strong>2. KeePass</strong></h3>
+<h4 id="方案整理如下">方案整理如下：</h4>
 
-<ul>
-  <li>
-    <h4 id="app-pc版官网">APP: <a href="https://keepass.info/download.html">pc版官网</a></h4>
-  </li>
-  <li>
-    <h4 id="app-mobile版-keepass2andriod-by-philipp-crocollcroco-apps">APP: mobile版, <a href="https://play.google.com/store/apps/details?id=keepass2android.keepass2android">Keepass2Andriod</a>, by Philipp Crocoll(Croco Apps)</h4>
-  </li>
-  <li>
-    <h4 id="browser-plugin-firefox-kee-by-luckyrat">Browser Plugin: Firefox, <a href="https://addons.mozilla.org/zh-CN/firefox/user/5248570/">Kee</a>, by Luckyrat</h4>
-  </li>
-  <li>
-    <h4 id="browser-plugin-chrome-keepasshelper-password-manager-by-unixeco">Browser Plugin: Chrome, <a href="https://chrome.google.com/webstore/detail/keepasshelper-password-ma/jgnfghanfbjmimbdmnjfofnbcgpkbegj">KeePassHelper Password Manager</a>, by unixeco</h4>
-  </li>
-</ul>
+<p>Step 1：开启电脑上IIS (启用或关闭 Windows功能)。</p>
+<p><img src="/assets/img/33.jpg" width="30%" /></p>
 
-  </div><a class="u-url" href="/tech/Encryped-App_Solution/" hidden></a>
+<p style="margin-top: 55px">Step 2：当开启成功后，会出现“c:\inetpub\”目录。<br />此时，电脑浏览器中输入 http://localhost 已经Working。</p>
+<p><img src="/assets/img/35.jpg" width="25%" /></p>
+
+<p style="margin-top: 55px">Step 3：为了使同一局域网的其他设备 (如手机) 也可以访问，需在“Windows防火墙允许应用”中选上“万维网服务(HTTP)”。
+<br />此时，手机浏览器中输入http://192.168.x.x (即电脑的IP地址) 已经Working。</p>
+<p><img src="/assets/img/34.jpg" width="60%" /></p>
+
+<p style="margin-top: 55px">Step 4：回到实际应用，Jekyll Blog <strong>"/_site"下内容 (即编译好的网站)</strong>，并不在默认的“C:\inetpub\wwwroot\”目录下。
+<br />因此，需在<strong>"IIS管理器"</strong>中自行“添加网站”，自行指定端口和网站的目录。
+<br />添加网站并启动后，此时，手机浏览器中输入http://192.168.x.x:xxx (即电脑的IP地址:自行指定的端口) 已经Working。</p>
+<p><img src="/assets/img/36.jpg" width="90%" /></p>
+
+
+  </div><a class="u-url" href="/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/IIS-Localhost-Browsering/" hidden></a>
     
 </article>
       </div>

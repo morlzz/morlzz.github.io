@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost/" rel="alternate" type="text/html" /><updated>2019-04-10T01:20:59+08:00</updated><id>http://localhost/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">Gboard 中文显示不出</title><link href="http://localhost/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Gboard-Chinese-not-Pop-Up/" rel="alternate" type="text/html" title="Gboard 中文显示不出" /><published>2019-04-09T00:00:00+08:00</published><updated>2019-04-09T00:00:00+08:00</updated><id>http://localhost/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Gboard%20Chinese%20not%20Pop%20Up</id><content type="html" xml:base="http://localhost/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Gboard-Chinese-not-Pop-Up/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2019-04-10T03:54:03+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">IIS Localhost Browsering</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/IIS-Localhost-Browsering/" rel="alternate" type="text/html" title="IIS Localhost Browsering" /><published>2019-04-10T03:05:00+08:00</published><updated>2019-04-10T03:05:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/IIS%20Localhost%20Browsering</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/IIS-Localhost-Browsering/">&lt;p&gt;&lt;br /&gt;
+非常感谢万能的网络，今天萌发此念头：&lt;strong&gt;想将“Local Jekyll Blog”用手机浏览&lt;/strong&gt;，百度了下，居然找到了方案，thnaks. 😘🙏&lt;/p&gt;
+
+&lt;p&gt;参考链接：
+&lt;a href=&quot;https://jingyan.baidu.com/article/15622f24197179fdfdbea559.html&quot;&gt;IIS&lt;/a&gt;, &lt;a href=&quot;https://wenku.baidu.com/view/bf57fe058762caaedc33d466.html&quot;&gt;手机访问电脑上的网站&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;方案整理如下&quot;&gt;方案整理如下：&lt;/h4&gt;
+
+&lt;p&gt;Step 1：开启电脑上IIS (启用或关闭 Windows功能)。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/33.jpg&quot; width=&quot;30%&quot; /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;margin-top: 55px&quot;&gt;Step 2：当开启成功后，会出现“c:\inetpub\”目录。&lt;br /&gt;此时，电脑浏览器中输入 http://localhost 已经Working。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/35.jpg&quot; width=&quot;25%&quot; /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;margin-top: 55px&quot;&gt;Step 3：为了使同一局域网的其他设备 (如手机) 也可以访问，需在“Windows防火墙允许应用”中选上“万维网服务(HTTP)”。
+&lt;br /&gt;此时，手机浏览器中输入http://192.168.x.x (即电脑的IP地址) 已经Working。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/34.jpg&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;margin-top: 55px&quot;&gt;Step 4：回到实际应用，Jekyll Blog &lt;strong&gt;&quot;/_site&quot;下内容 (即编译好的网站)&lt;/strong&gt;，并不在默认的“C:\inetpub\wwwroot\”目录下。
+&lt;br /&gt;因此，需在&lt;strong&gt;&quot;IIS管理器&quot;&lt;/strong&gt;中自行“添加网站”，自行指定端口和网站的目录。
+&lt;br /&gt;添加网站并启动后，此时，手机浏览器中输入http://192.168.x.x:xxx (即电脑的IP地址:自行指定的端口) 已经Working。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/36.jpg&quot; width=&quot;90%&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="建站" /><summary type="html">局域网内电脑、手机对本地网站的浏览</summary></entry><entry><title type="html">Gboard 中文显示不出</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Gboard-Chinese-not-Pop-Up/" rel="alternate" type="text/html" title="Gboard 中文显示不出" /><published>2019-04-09T00:00:00+08:00</published><updated>2019-04-09T00:00:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Gboard%20Chinese%20not%20Pop%20Up</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Gboard-Chinese-not-Pop-Up/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4 id=&quot;背景&quot;&gt;背景：&lt;/h4&gt;
 
 &lt;p&gt;默认输入法已经用惯了Gboard，今天无意删除并重装了Gboard后，选择&lt;code class=&quot;highlighter-rouge&quot;&gt;Gboard 中文&lt;/code&gt;，但怎么都打不出”中文文字”。&lt;/p&gt;
@@ -10,7 +32,7 @@
 
 &lt;p&gt;赋予联网权限后，Gboard则可正常使用。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/32.jpg&quot; width=&quot;30%&quot; /&gt;&lt;/p&gt;</content><author><name></name></author></entry><entry><title type="html">Website To Image</title><link href="http://localhost/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Website-To-Image/" rel="alternate" type="text/html" title="Website To Image" /><published>2019-04-06T00:00:00+08:00</published><updated>2019-04-06T00:00:00+08:00</updated><id>http://localhost/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Website%20To%20Image</id><content type="html" xml:base="http://localhost/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Website-To-Image/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/32.jpg&quot; width=&quot;30%&quot; /&gt;&lt;/p&gt;</content><author><name></name></author></entry><entry><title type="html">Website To Image</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Website-To-Image/" rel="alternate" type="text/html" title="Website To Image" /><published>2019-04-06T00:00:00+08:00</published><updated>2019-04-06T00:00:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Website%20To%20Image</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Website-To-Image/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;背景&quot;&gt;背景：&lt;/h4&gt;
 &lt;p&gt;当本地静态网页(如Jekyll)包含众多元素，而不仅仅是文字时，最简单直接、最精简的方式是转换成&lt;strong&gt;“图片”&lt;/strong&gt;，尤其便于分享。 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -23,7 +45,7 @@
 &lt;h4 id=&quot;浏览器自带转换工具&quot;&gt;&lt;strong&gt;浏览器自带转换工具&lt;/strong&gt;：&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.maxthon.cn/&quot;&gt;Maxthon遨游浏览器&lt;/a&gt;，自带工具：&lt;strong&gt;“菜单” → “另存为”&lt;/strong&gt; 图片或其他，完美转换。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/31.jpg&quot; width=&quot;30%&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="常用工具" /><summary type="html">静态网页转成图像</summary></entry><entry><title type="html">萌宠</title><link href="http://localhost/pet/Pet-OThers/" rel="alternate" type="text/html" title="萌宠" /><published>2019-03-31T20:50:00+08:00</published><updated>2019-03-31T20:50:00+08:00</updated><id>http://localhost/pet/Pet-OThers</id><content type="html" xml:base="http://localhost/pet/Pet-OThers/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="常用工具" /><summary type="html">静态网页转成图像</summary></entry><entry><title type="html">萌宠</title><link href="http://localhost:8000/pet/Pet-OThers/" rel="alternate" type="text/html" title="萌宠" /><published>2019-03-31T20:50:00+08:00</published><updated>2019-03-31T20:50:00+08:00</updated><id>http://localhost:8000/pet/Pet-OThers</id><content type="html" xml:base="http://localhost:8000/pet/Pet-OThers/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4 id=&quot;1-很憨厚的小黄定期增产报国2次年平均每次6只小狗狗奇怪和隔壁的小黑死对头&quot;&gt;1. 很憨厚的小黄，定期增产报国，2次/年，平均每次6只小狗狗。奇怪，和隔壁的小黑死对头。&lt;/h4&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/16.jpg&quot; width=&quot;50%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -58,14 +80,14 @@
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4 id=&quot;9-难得路上遇到牛领头的牛很酷貌似脾气不大好欲上前摸它一下瞬间听到它鼻子哼了一下还是停手吧&quot;&gt;9. 难得路上遇到牛，领头的牛很酷，貌似脾气不大好，欲上前摸它一下，瞬间听到它鼻子“哼”了一下，还是停手吧🤔。&lt;/h4&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/29.jpg&quot; width=&quot;65%&quot; /&gt;&lt;/p&gt;
-&lt;p style=&quot;margin-left: 20%;margin-top: -8px;&quot;&gt;Photography in 20190331&lt;/p&gt;</content><author><name></name></author><summary type="html">曾遇到的可爱小动物</summary></entry><entry><title type="html">Wonderful Spiritual Video</title><link href="http://localhost/life/Wonderful-Spirit-Video/" rel="alternate" type="text/html" title="Wonderful Spiritual Video" /><published>2019-03-30T23:04:00+08:00</published><updated>2019-03-30T23:04:00+08:00</updated><id>http://localhost/life/Wonderful%20Spirit%20Video</id><content type="html" xml:base="http://localhost/life/Wonderful-Spirit-Video/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;margin-left: 20%;margin-top: -8px;&quot;&gt;Photography in 20190331&lt;/p&gt;</content><author><name></name></author><summary type="html">曾遇到的可爱小动物</summary></entry><entry><title type="html">Wonderful Spiritual Video</title><link href="http://localhost:8000/life/Wonderful-Spirit-Video/" rel="alternate" type="text/html" title="Wonderful Spiritual Video" /><published>2019-03-30T23:04:00+08:00</published><updated>2019-03-30T23:04:00+08:00</updated><id>http://localhost:8000/life/Wonderful%20Spirit%20Video</id><content type="html" xml:base="http://localhost:8000/life/Wonderful-Spirit-Video/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;20190330&quot;&gt;20190330&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=jjcU4_pdCGs&quot;&gt;三摩地影片第1部 - “幻象，自我的迷失” -Samadhi Part 1&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=80ukIWYp-rE&amp;amp;t=36s&quot;&gt;三摩地影片第2部-“非你所想” - Samadhi Part 2&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="Spirit" /></entry><entry><title type="html">Github Pages 不支持插件Plugin</title><link href="http://localhost/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/" rel="alternate" type="text/html" title="Github Pages 不支持插件Plugin" /><published>2019-03-29T00:00:00+08:00</published><updated>2019-03-29T00:00:00+08:00</updated><id>http://localhost/tech/%E6%90%AC%E8%BF%90/Github%20Pages%20not%20Support%20Plugin</id><content type="html" xml:base="http://localhost/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;目前的方法本地生成_site后将_site目录内的所有内容上传至github可避免插件问题&quot;&gt;目前的方法：本地生成_site后，将_site目录内的所有内容上传至github，可避免插件问题。&lt;/h4&gt;</content><author><name></name></author><category term="Jekyll" /></entry><entry><title type="html">FFmpeg 音视频无损转换</title><link href="http://localhost/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/" rel="alternate" type="text/html" title="FFmpeg 音视频无损转换" /><published>2019-03-24T00:00:00+08:00</published><updated>2019-03-24T00:00:00+08:00</updated><id>http://localhost/tech/%E6%90%AC%E8%BF%90/Multimedia%20Lossless%20Convert</id><content type="html" xml:base="http://localhost/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Spirit" /></entry><entry><title type="html">Github Pages 不支持插件Plugin</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/" rel="alternate" type="text/html" title="Github Pages 不支持插件Plugin" /><published>2019-03-29T00:00:00+08:00</published><updated>2019-03-29T00:00:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Github%20Pages%20not%20Support%20Plugin</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;目前的方法本地生成_site后将_site目录内的所有内容上传至github可避免插件问题&quot;&gt;目前的方法：本地生成_site后，将_site目录内的所有内容上传至github，可避免插件问题。&lt;/h4&gt;</content><author><name></name></author><category term="Jekyll" /></entry><entry><title type="html">FFmpeg 音视频无损转换</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/" rel="alternate" type="text/html" title="FFmpeg 音视频无损转换" /><published>2019-03-24T00:00:00+08:00</published><updated>2019-03-24T00:00:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Multimedia%20Lossless%20Convert</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;视频无损旋转&quot;&gt;视频无损旋转&lt;/h3&gt;
 
 &lt;p&gt;背景：手机拍摄的视频往往竖屏格式，电脑上的播放器可以临时”旋转“播放，但并不能更改原本格式，而借助视频转换软件（如格式工厂）往往会有一定失真。&lt;/p&gt;
@@ -124,7 +146,7 @@ ffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;ffmpeg-常用命令&quot;&gt;&lt;a href=&quot;https://www.cnblogs.com/frost-yen/p/5848781.html&quot;&gt;FFmpeg 常用命令&lt;/a&gt;&lt;/h3&gt;</content><author><name></name></author><category term="Multimedia" /></entry><entry><title type="html">旺财</title><link href="http://localhost/pet/dog/Pet-WangCai/" rel="alternate" type="text/html" title="旺财" /><published>2019-03-22T00:00:00+08:00</published><updated>2019-03-22T00:00:00+08:00</updated><id>http://localhost/pet/dog/Pet-WangCai</id><content type="html" xml:base="http://localhost/pet/dog/Pet-WangCai/">&lt;style&gt;
+&lt;h3 id=&quot;ffmpeg-常用命令&quot;&gt;&lt;a href=&quot;https://www.cnblogs.com/frost-yen/p/5848781.html&quot;&gt;FFmpeg 常用命令&lt;/a&gt;&lt;/h3&gt;</content><author><name></name></author><category term="Multimedia" /></entry><entry><title type="html">旺财</title><link href="http://localhost:8000/pet/dog/Pet-WangCai/" rel="alternate" type="text/html" title="旺财" /><published>2019-03-22T00:00:00+08:00</published><updated>2019-03-22T00:00:00+08:00</updated><id>http://localhost:8000/pet/dog/Pet-WangCai</id><content type="html" xml:base="http://localhost:8000/pet/dog/Pet-WangCai/">&lt;style&gt;
 .responsive-wrap iframe{ max-width: 100%;}
 &lt;/style&gt;
 
@@ -132,7 +154,7 @@ ffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav
 &lt;!-- this is the embed code --&gt;
   &lt;iframe src=&quot;/assets/pdfjs/web/viewer.html?file=/assets/file/wangcai_20190322.pdf&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;567&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
 &lt;!-- embed ends --&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="Wangcai" /><summary type="html">My lovely Dog 旺财从小到大成长历程</summary></entry><entry><title type="html">Miracle Pets</title><link href="http://localhost/pet/Miracle-Pets/" rel="alternate" type="text/html" title="Miracle Pets" /><published>2019-03-22T00:00:00+08:00</published><updated>2019-03-22T00:00:00+08:00</updated><id>http://localhost/pet/Miracle%20Pets</id><content type="html" xml:base="http://localhost/pet/Miracle-Pets/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="Wangcai" /><summary type="html">My lovely Dog 旺财从小到大成长历程</summary></entry><entry><title type="html">Miracle Pets</title><link href="http://localhost:8000/pet/Miracle-Pets/" rel="alternate" type="text/html" title="Miracle Pets" /><published>2019-03-22T00:00:00+08:00</published><updated>2019-03-22T00:00:00+08:00</updated><id>http://localhost:8000/pet/Miracle%20Pets</id><content type="html" xml:base="http://localhost:8000/pet/Miracle-Pets/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;1-被疗愈和祝福的小狗&quot;&gt;&lt;strong&gt;1. 被疗愈和祝福的小狗&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;照片拍摄于20181027。&lt;/p&gt;
@@ -154,7 +176,7 @@ ffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav
 &lt;div style=&quot;width:50%;float:right;text-align:center;font-size:16px;font-weight:bold;color:#404040;height:120px; line-height:120px;&quot;&gt; 
 &lt;p&gt;猫咪照片拍摄于20061104&lt;/p&gt;
 &lt;img src=&quot;/assets/img/13.jpg&quot; width=&quot;95%&quot; style=&quot;display: inline-block; vertical-align: middle;&quot; /&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="Spirit" /></entry><entry><title type="html">Secure Tools/Links</title><link href="http://localhost/tech/Secure-Tools_Links/" rel="alternate" type="text/html" title="Secure Tools/Links" /><published>2019-03-21T00:00:00+08:00</published><updated>2019-03-21T00:00:00+08:00</updated><id>http://localhost/tech/Secure%20Tools_Links</id><content type="html" xml:base="http://localhost/tech/Secure-Tools_Links/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="Spirit" /></entry><entry><title type="html">Secure Tools/Links</title><link href="http://localhost:8000/tech/Secure-Tools_Links/" rel="alternate" type="text/html" title="Secure Tools/Links" /><published>2019-03-21T00:00:00+08:00</published><updated>2019-03-21T00:00:00+08:00</updated><id>http://localhost:8000/tech/Secure%20Tools_Links</id><content type="html" xml:base="http://localhost:8000/tech/Secure-Tools_Links/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;blogsecure-note&quot;&gt;Blog/Secure Note&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.textarea.com/&quot;&gt;TextArea.com&lt;/a&gt;&lt;/li&gt;
@@ -166,27 +188,4 @@ ffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav
 &lt;h3 id=&quot;file-share&quot;&gt;File Share&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://send.firefox.com/&quot;&gt;Firefox Send&lt;/a&gt;: e2e encrpt + 到期即焚&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="Secure" /></entry><entry><title type="html">Spiritual Blog/Web/IM/Channel</title><link href="http://localhost/life/Spiritual-Relative-Links/" rel="alternate" type="text/html" title="Spiritual Blog/Web/IM/Channel" /><published>2019-03-15T00:00:00+08:00</published><updated>2019-03-15T00:00:00+08:00</updated><id>http://localhost/life/Spiritual%20Relative%20Links</id><content type="html" xml:base="http://localhost/life/Spiritual-Relative-Links/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot; style=&quot;border-bottom: 3px solid grey;display:block&quot;&gt;By Category&lt;/font&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;blog&quot;&gt;Blog&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://blog.sina.com.cn/s/articlelist_2820773504_0_1.html&quot;&gt;lina光爱能量的博客&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;web&quot;&gt;Web&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://reginameredith.com/gaia-tv/&quot;&gt;gaia-tv&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.gaia.com/&quot;&gt;gaia&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot; style=&quot;border-bottom: 3px solid grey;display:block&quot;&gt;By Person&lt;/font&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;rasta-wang&quot;&gt;Rasta Wang&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/daxiw&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/apha0102&quot;&gt;Youtube&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.instagram.com/apha09261/&quot;&gt;Instagram&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="Spirit" /></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="Secure" /></entry></feed>

@@ -2,6 +2,19 @@
   
     {
     
+      "title"    : "IIS Localhost Browsering",
+      "url"      : "/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/IIS-Localhost-Browsering/",	  
+      "category" : "Tech, 搬运, 个人经验分享",
+      "tags"     : "建站",
+      "date"     : "2019-04-10",
+      "excerpt" : "局域网内电脑、手机对本地网站的浏览",
+	  "body"    : "非常感谢万能的网络，今天萌发此念头：想将“Local Jekyll Blog”用手机浏览，百度了下，居然找到了方案，thnaks. 😘🙏参考链接：IIS, 手机访问电脑上的网站方案整理如下：Step 1：开启电脑上IIS (启用或关闭 Windows功能)。Step 2：当开启成功后，会出现“c:\\inetpub\\”目录。此时，电脑浏览器中输入 http://localhost 已经Working。Step 3：为了使同一局域网的其他设备 (如手机) 也可以访问，需在“Windows防火墙允许应用”中选上“万维网服务(HTTP)”。此时，手机浏览器中输入http://192.168.x.x (即电脑的IP地址) 已经Working。Step 4：回到实际应用，Jekyll Blog \"/_site\"下内容 (即编译好的网站)，并不在默认的“C:\\inetpub\\wwwroot\\”目录下。因此，需在\"IIS管理器\"中自行“添加网站”，自行指定端口和网站的目录。添加网站并启动后，此时，手机浏览器中输入http://192.168.x.x:xxx (即电脑的IP地址:自行指定的端口) 已经Working。",
+	  "content" : "Local Jekyll Blogthnaks. IIS, Step 1IIS ( Windows)Step 2c:#92;inetpub#92; http://localhost WorkingStep 3 () Windows(HTTP)http://192.168.x.x (IP) WorkingStep 4Jekyll Blog /_site ()C:#92;inetpub#92;wwwroot#92;IIShttp://192.168.x.x:xxx (IP:) Working"	 
+      
+    } ,
+  
+    {
+    
       "title"    : "Gboard 中文显示不出",
       "url"      : "/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Gboard-Chinese-not-Pop-Up/",	  
       "category" : "Tech, 个人经验分享",
