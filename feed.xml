@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2019-04-10T03:54:03+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">IIS Localhost Browsering</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/IIS-Localhost-Browsering/" rel="alternate" type="text/html" title="IIS Localhost Browsering" /><published>2019-04-10T03:05:00+08:00</published><updated>2019-04-10T03:05:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/IIS%20Localhost%20Browsering</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/IIS-Localhost-Browsering/">&lt;p&gt;&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2019-04-11T00:47:06+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">IIS Localhost Browsering</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/IIS-Localhost-Browsering/" rel="alternate" type="text/html" title="IIS Localhost Browsering" /><published>2019-04-10T03:05:00+08:00</published><updated>2019-04-10T03:05:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/IIS%20Localhost%20Browsering</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/IIS-Localhost-Browsering/">&lt;p&gt;&lt;br /&gt;
 非常感谢万能的网络，今天萌发此念头：&lt;strong&gt;想将“Local Jekyll Blog”用手机浏览&lt;/strong&gt;，百度了下，居然找到了方案，thnaks. 😘🙏&lt;/p&gt;
 
 &lt;p&gt;参考链接：
@@ -20,7 +20,60 @@
 &lt;p style=&quot;margin-top: 55px&quot;&gt;Step 4：回到实际应用，Jekyll Blog &lt;strong&gt;&quot;/_site&quot;下内容 (即编译好的网站)&lt;/strong&gt;，并不在默认的“C:\inetpub\wwwroot\”目录下。
 &lt;br /&gt;因此，需在&lt;strong&gt;&quot;IIS管理器&quot;&lt;/strong&gt;中自行“添加网站”，自行指定端口和网站的目录。
 &lt;br /&gt;添加网站并启动后，此时，手机浏览器中输入http://192.168.x.x:xxx (即电脑的IP地址:自行指定的端口) 已经Working。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/36.jpg&quot; width=&quot;90%&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="建站" /><summary type="html">局域网内电脑、手机对本地网站的浏览</summary></entry><entry><title type="html">Gboard 中文显示不出</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Gboard-Chinese-not-Pop-Up/" rel="alternate" type="text/html" title="Gboard 中文显示不出" /><published>2019-04-09T00:00:00+08:00</published><updated>2019-04-09T00:00:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Gboard%20Chinese%20not%20Pop%20Up</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Gboard-Chinese-not-Pop-Up/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/36.jpg&quot; width=&quot;90%&quot; /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;margin-top: 55px&quot;&gt;&lt;font color=&quot;#70ad47&quot;&gt; &lt;strong&gt;Optional Step：启用Windows身份验证 &lt;/strong&gt;&lt;/font&gt;&lt;br /&gt;
+背景：Win10中的IIS，&lt;code&gt;默认启用匿名登录&lt;/code&gt;，即内网中任何机器均可浏览，带来不便。&lt;/p&gt;
+&lt;p&gt;解决方法：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;临时方法：在&lt;code class=&quot;highlighter-rouge&quot;&gt;IIS管理&lt;/code&gt;中&lt;code class=&quot;highlighter-rouge&quot;&gt;停止服务&lt;/code&gt;。则内网中均不可访问，下次需要时再&lt;code class=&quot;highlighter-rouge&quot;&gt;重新启动服务&lt;/code&gt; (If 设为“停止”，即使电脑重启，IIS服务不会自动enable，除非手动开启)。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;彻底方法：&lt;/strong&gt; &lt;a href=&quot;https://edi.wang/post/2011/8/8/enable-windows-authorization-in-iis7&quot; target=&quot;_blank&quot;&gt;&lt;font color=&quot;#4d8df1&quot; size=&quot;2&quot;&gt;(原出处)&lt;/font&gt;&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;
+    &lt;blockquote&gt;
+      &lt;h5 id=&quot;打开和关闭windows功能-internet信息服务-万维网服务-安全性选择windows身份验证&quot;&gt;打开和关闭Windows功能-&amp;gt;Internet信息服务-&amp;gt;万维网服务-&amp;gt;安全性，选择Windows身份验证。&lt;/h5&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;table style=&quot;width:100%;margin-left: 25px;&quot;&gt;
+    &lt;tbody&gt;
+		&lt;tr class=&quot;firstRow&quot;&gt;
+            &lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;33.3%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
+			&lt;p&gt;安装”Windows身份验证“for IIS。&lt;/p&gt;
+			&lt;a href=&quot;/assets/img/37.jpg&quot; target=&quot;_blank&quot;&gt;			
+			&lt;img src=&quot;/assets/img/37.jpg&quot; width=&quot;90%&quot; /&gt;&lt;/a&gt;	
+            &lt;/td&gt;
+            &lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;33.3%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
+			&lt;p&gt;安装后，打开IIS管理，点击网站的”身份验证“。&lt;/p&gt;
+			&lt;a href=&quot;/assets/img/39.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img src=&quot;/assets/img/39.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;
+            &lt;/td&gt;
+            &lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;33.3%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
+			&lt;p&gt;会发现，界面中已经增加了”Windows身份验证“的选项。&lt;strong&gt;这里将其”启用“即可。&lt;/strong&gt;&lt;br /&gt;(并将“匿名验证“禁用。)&lt;/p&gt;
+			&lt;a href=&quot;/assets/img/38.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img src=&quot;/assets/img/38.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;
+            &lt;/td&gt;			
+        &lt;/tr&gt;
+    &lt;/tbody&gt;			
+&lt;/table&gt;
+
+&lt;p style=&quot;margin-left: 25px;&quot;&gt;此时，回到PC(也是IIS Server)、手机的浏览器，进行浏览，自动弹出&lt;code&gt;身份验证对话框&lt;/code&gt;，So it's Working.&lt;/p&gt;
+
+&lt;table style=&quot;width:100%;margin-left: 25px;&quot;&gt;
+    &lt;tbody&gt;
+		&lt;tr class=&quot;firstRow&quot;&gt;
+            &lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;50%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
+			&lt;p&gt;Browsering From PC/IIS Server&lt;/p&gt;		
+			&lt;img src=&quot;/assets/img/40.jpg&quot; width=&quot;70%&quot; /&gt;	
+            &lt;/td&gt;
+            &lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;50%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
+			&lt;p&gt;Browsering From Mobile Device&lt;/p&gt;
+			&lt;img src=&quot;/assets/img/41.jpg&quot; width=&quot;60%&quot; /&gt;
+            &lt;/td&gt;		
+        &lt;/tr&gt;
+    &lt;/tbody&gt;			
+&lt;/table&gt;</content><author><name></name></author><category term="建站" /><summary type="html">局域网内电脑、手机对本地网站的浏览</summary></entry><entry><title type="html">Gboard 中文显示不出</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Gboard-Chinese-not-Pop-Up/" rel="alternate" type="text/html" title="Gboard 中文显示不出" /><published>2019-04-09T00:00:00+08:00</published><updated>2019-04-09T00:00:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Gboard%20Chinese%20not%20Pop%20Up</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Gboard-Chinese-not-Pop-Up/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4 id=&quot;背景&quot;&gt;背景：&lt;/h4&gt;
 
 &lt;p&gt;默认输入法已经用惯了Gboard，今天无意删除并重装了Gboard后，选择&lt;code class=&quot;highlighter-rouge&quot;&gt;Gboard 中文&lt;/code&gt;，但怎么都打不出”中文文字”。&lt;/p&gt;
