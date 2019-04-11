@@ -25,7 +25,7 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">  
-    <h1 class="post-title p-name" itemprop="name headline">SRT files to WebVTT</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Subtitles Convert</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="2019-04-11T00:00:00+08:00" itemprop="datePublished">Apr 11, 2019
       </time></p>
@@ -64,7 +64,7 @@
 </div>
 
 <span style="font-size:; color: rgb(127, 127, 127);"><strong><em><p><p/>Abstract&nbsp;▹
-    字幕脚本'srt格式'转'VTT格式'</em></strong></span>
+    字幕格式'srt'转'VTT', 常用格式互转</em></strong></span>
 
   </header>
 
@@ -72,16 +72,22 @@
   <div class="post-content e-content" itemprop="articleBody">
     <p><br /></p>
 
-<p style="margin-top:20px;margin-bottom:30px;">背景：一般下载的字幕多为<code>.srt</code>文件, 而 html5 &lt;video&gt; 标签支持的字幕文件为<code>.vtt</code>。</p>
+<p style="margin-top:20px;margin-bottom:10px;font-weight:bold;">1. 在线转换：SRT-To-WebVTT</p>
+<p>背景：一般下载的字幕多为<code>.srt</code>文件, 而 html5 &lt;video&gt; 标签支持的字幕文件为<code>.vtt</code>。</p>
 
-<p><strong>在线转换SRT-To-WebVTT:</strong> <br />
-<a href="http://www.webvtt.org/"><u>Converting SRT files to WebVTT files</u></a></p>
+<p><a href="http://www.webvtt.org/"><u>Converting SRT files to WebVTT files</u></a></p>
 
 <p>转换完成后，复制另存为”.vtt”文件即可。</p>
 
 <p>Html代码 &lt;video&gt; 标签中，增加 &lt;track&gt; 子标签，用于加载<code class="highlighter-rouge">vtt</code>字幕，如：</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;video id="video" controls="" preload="none" poster=""&gt;&lt;source id="mp4" style="width: ;height:;" src="/xxx/sample.mp4" type="video/mp4"&gt;&lt;track src="/xxx/sample.vtt" kind="subtitles" srclang="cn" label="中文"&gt;&lt;/video&gt;
 </code></pre></div></div>
+
+<p><br />
+<strong>2. 在线转换：常用格式互转</strong> 
+<br />(LRC/SRT/UTF/KSC/SSA/ASS/SMI-To-LRC/SRT/UTF/KSC/SSA/ASS/SMI/SNC/TXT)</p>
+
+<p><a href="http://www.lrccon.com/convert.php"><u>Convert Link</u></a></p>
 
   </div><a class="u-url" href="/tech/%E6%90%AC%E8%BF%90/SRT-to-VTT/" hidden></a>
     
