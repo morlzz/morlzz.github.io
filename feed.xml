@@ -1,4 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2019-04-12T03:46:40+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">Links - Wonderful Spiritual Video/Audio</title><link href="http://localhost:8000/life/%E6%90%AC%E8%BF%90/Wonderful-Spirit-Multimedia-(links)/" rel="alternate" type="text/html" title="Links - Wonderful Spiritual Video/Audio" /><published>2019-04-11T23:46:00+08:00</published><updated>2019-04-11T23:46:00+08:00</updated><id>http://localhost:8000/life/%E6%90%AC%E8%BF%90/Wonderful%20Spirit%20Multimedia%20(links)</id><content type="html" xml:base="http://localhost:8000/life/%E6%90%AC%E8%BF%90/Wonderful-Spirit-Multimedia-(links)/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2019-04-23T05:15:07+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">SMB(v2) File Share</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SMB-File-Share/" rel="alternate" type="text/html" title="SMB(v2) File Share" /><published>2019-04-23T03:32:00+08:00</published><updated>2019-04-23T03:32:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SMB%20File%20Share</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SMB-File-Share/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;margin-top:20px;margin-bottom:10px;font-weight:bold;font-size:20px;&quot;&gt;背景&lt;/p&gt;
+&lt;p&gt;随着Windows 10日常升级，安全因素，SMB(v1)已经默认被微软禁用，instead，启用SMB(v2)。&lt;/p&gt;
+
+&lt;p&gt;因此，有一段时间，内网中的“跨设备文件分享”不工作。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+研究了下，原因和解决方案如下：&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p style=&quot;margin-top:10px;margin-bottom:10px;font-weight:bold;font-size:20px;&quot;&gt;SOHO LAN 状态&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Laptop1, Laptop2:&lt;/strong&gt;  Windows 10, build 1809&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Mobile Phone:&lt;/strong&gt;  Andriod Pie, SMB_v2 App: X-plore&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Firewall:&lt;/strong&gt;  Kaspersky 2019, Malwarebytes v3.7.1&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;共享设置:&lt;/strong&gt;  “网络和共享中心”-&amp;gt;”高级共享设置”-&amp;gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;“启用网络发现“+“启用文件和打印机共享”&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Router:&lt;/strong&gt;  ”AP隔离“&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-top:35px;margin-bottom:10px;font-weight:bold;font-size:20px;&quot;&gt;出现的问题&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;问题1:&lt;/strong&gt;  两台笔记本之间，互ping不通。(无论路由器”AP隔离”，关闭或者开启)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;问题2:&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;当路由器AP隔离关闭时：笔记本可以ping通手机，但手机无法访问笔记本的共享文件。&lt;/li&gt;
+      &lt;li&gt;当路由器AP隔离开启时：笔记本也无法ping通手机。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-top:35px;margin-bottom:10px;font-weight:bold;font-size:20px;&quot;&gt;解决方案&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Ping 不通原因1:&lt;/strong&gt;  由于&lt;code class=&quot;highlighter-rouge&quot;&gt;Kaspersky卡巴斯基防火墙&lt;/code&gt;的拦截。
+    &lt;ul&gt;
+      &lt;li&gt;进入卡巴斯基”设置“-&amp;gt;”保护“-&amp;gt;”防火墙设置“-&amp;gt;”网络属性“，”编辑“LAN对应的SSID，将”网络类型“改为&lt;code class=&quot;highlighter-rouge&quot;&gt;受信任的网络&lt;/code&gt;，即可。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-top:-31px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Ping 不通原因2:&lt;/strong&gt;  由于&lt;code class=&quot;highlighter-rouge&quot;&gt;路由器的AP隔离&lt;/code&gt;。(内网中每个IP相当于一个个VLAN，之间相互隔离独立。)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-top:-31px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;SharedFile 权限设置:&lt;/strong&gt;  权限。
+    &lt;ul&gt;
+      &lt;li&gt;设置共享给”指定用户“ (内网中其他设备存取时，需输入该”指定用户“)。&lt;/li&gt;
+      &lt;li&gt;『optional』: 设置新用户( (Win10本地用户和组, lusrmgr.msc)。&lt;/li&gt;
+      &lt;li&gt;『建议』: 最大灵活性，可赋予”指定用户“对&lt;code class=&quot;highlighter-rouge&quot;&gt;SharedFile的读写权限&lt;/code&gt;。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="OS" /><summary type="html">SOHO LAN 跨设备件文件共享</summary></entry><entry><title type="html">Links - Wonderful Spiritual Video/Audio</title><link href="http://localhost:8000/life/%E6%90%AC%E8%BF%90/Wonderful-Spirit-Multimedia-(links)/" rel="alternate" type="text/html" title="Links - Wonderful Spiritual Video/Audio" /><published>2019-04-11T23:46:00+08:00</published><updated>2019-04-11T23:46:00+08:00</updated><id>http://localhost:8000/life/%E6%90%AC%E8%BF%90/Wonderful%20Spirit%20Multimedia%20(links)</id><content type="html" xml:base="http://localhost:8000/life/%E6%90%AC%E8%BF%90/Wonderful-Spirit-Multimedia-(links)/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;All Source from web. Here is a collection of the original video/audio, thanks for these lovely creations!&lt;br /&gt;
 If infringement occurs, please contact FB: &lt;code class=&quot;highlighter-rouge&quot;&gt;zzmorl&lt;/code&gt; for deletion.&lt;/em&gt;
@@ -290,26 +358,4 @@ ffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;ffmpeg-常用命令&quot;&gt;&lt;a href=&quot;https://www.cnblogs.com/frost-yen/p/5848781.html&quot;&gt;FFmpeg 常用命令&lt;/a&gt;&lt;/h3&gt;</content><author><name></name></author><category term="Multimedia" /></entry><entry><title type="html">Miracle Pets</title><link href="http://localhost:8000/pet/Miracle-Pets/" rel="alternate" type="text/html" title="Miracle Pets" /><published>2019-03-22T00:00:00+08:00</published><updated>2019-03-22T00:00:00+08:00</updated><id>http://localhost:8000/pet/Miracle%20Pets</id><content type="html" xml:base="http://localhost:8000/pet/Miracle-Pets/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;1-被疗愈和祝福的小狗&quot;&gt;&lt;strong&gt;1. 被疗愈和祝福的小狗&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;照片拍摄于20181027。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/15.jpg&quot; width=&quot;45%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p style=&quot;border-bottom: 3px solid grey;display:block&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-&lt;h3 id=&quot;2-跨越时空的猫狗&quot;&gt;&lt;strong&gt;2. 跨越时空的猫、狗&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;2017年偶然翻到老照片，发现一张十年前的猫咪照片，看着它的眼神，觉着好眼熟哦，时空突然停滞住，wow，现在的旺财狗狗，原来，一场同一灵魂不同时空的旅行。&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;div style=&quot;width:50%;float:left;text-align:center;font-size:16px;font-weight:bold;color:#404040;&quot;&gt; 
-狗狗照片拍摄于20161228&lt;br /&gt;&lt;br /&gt;
-&lt;img src=&quot;/assets/img/14.jpg&quot; width=&quot;80%&quot; /&gt;
-&lt;/div&gt;
-&lt;div style=&quot;width:50%;float:right;text-align:center;font-size:16px;font-weight:bold;color:#404040;height:120px; line-height:120px;&quot;&gt; 
-&lt;p&gt;猫咪照片拍摄于20061104&lt;/p&gt;
-&lt;img src=&quot;/assets/img/13.jpg&quot; width=&quot;95%&quot; style=&quot;display: inline-block; vertical-align: middle;&quot; /&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="Spirit" /></entry></feed>
+&lt;h3 id=&quot;ffmpeg-常用命令&quot;&gt;&lt;a href=&quot;https://www.cnblogs.com/frost-yen/p/5848781.html&quot;&gt;FFmpeg 常用命令&lt;/a&gt;&lt;/h3&gt;</content><author><name></name></author><category term="Multimedia" /></entry></feed>
