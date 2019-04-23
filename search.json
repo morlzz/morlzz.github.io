@@ -8,8 +8,8 @@
       "tags"     : "OS",
       "date"     : "2019-04-23",
       "excerpt" : "SOHO LAN 跨设备件文件共享",
-	  "body"    : "背景随着Windows 10日常升级，安全因素，SMB(v1)已经默认被微软禁用，instead，启用SMB(v2)。因此，有一段时间，内网中的“跨设备文件分享”不工作。研究了下，原因和解决方案如下：SOHO LAN 状态      Laptop1, Laptop2:  Windows 10, build 1809        Mobile Phone:  Andriod Pie, SMB_v2 App: X-plore        Firewall:  Kaspersky 2019, Malwarebytes v3.7.1        共享设置:  “网络和共享中心”-&gt;”高级共享设置”-&gt;“启用网络发现“+“启用文件和打印机共享”        Router:  ”AP隔离“  出现的问题      问题1:  两台笔记本之间，互ping不通。(无论路由器”AP隔离”，关闭或者开启)        问题2:          当路由器AP隔离关闭时：笔记本可以ping通手机，但手机无法访问笔记本的共享文件。      当路由器AP隔离开启时：笔记本也无法ping通手机。      解决方案  Ping 不通原因1:  由于Kaspersky卡巴斯基防火墙的拦截。          进入卡巴斯基”设置“-&gt;”保护“-&gt;”防火墙设置“-&gt;”网络属性“，”编辑“LAN对应的SSID，将”网络类型“改为受信任的网络，即可。      &nbsp;  Ping 不通原因2:  由于路由器的AP隔离。(内网中每个IP相当于一个个VLAN，之间相互隔离独立。)&nbsp;  SharedFile 权限设置:  权限。          设置共享给”指定用户“ (内网中其他设备存取时，需输入该”指定用户“)。      『optional』: 设置新用户( (Win10本地用户和组, lusrmgr.msc)。      『建议』: 最大灵活性，可赋予”指定用户“对SharedFile的读写权限。      ",
-	  "content" : "Windows 10SMB(v1)insteadSMB(v2)SOHO LAN       Laptop1, Laptop2:  Windows 10, build 1809        Mobile Phone:  Andriod Pie, SMB_v2 App: X-plore        Firewall:  Kaspersky 2019, Malwarebytes v3.7.1        :  -gt;-gt;+        Router:  AP        1:  ping(AP)        2:          APping      APping        Ping 1:  Kaspersky          -gt;-gt;-gt;LANSSID      nbsp;  Ping 2:  AP(IPVLAN)nbsp;  SharedFile :             ()      optional: ( (Win10, lusrmgr.msc)      : SharedFile      "	 
+	  "body"    : "背景随着Windows 10日常升级，安全因素，SMB(v1)已经默认被微软禁用，instead，启用SMB(v2)。因此，有一段时间，内网中的“跨设备文件分享”不工作。研究了下，原因和解决方案如下：SOHO LAN 状态      Laptop1, Laptop2:  Windows 10, build 1809        Mobile Phone:  Andriod Pie, APK: X-plore (support SMB_v2)        Firewall:  Kaspersky 2019, Malwarebytes v3.7.1        共享设置:  “网络和共享中心”-&gt;”高级共享设置”-&gt;“启用网络发现“+“启用文件和打印机共享”        Router:  ”AP隔离“  出现的问题      问题1:  两台笔记本之间，互ping不通。(无论路由器”AP隔离”，关闭或者开启)        问题2:          当路由器AP隔离关闭时：笔记本可以ping通手机，但手机无法访问笔记本的共享文件。      当路由器AP隔离开启时：笔记本也无法ping通手机。      解决方案  Ping 不通原因1:  由于Kaspersky卡巴斯基防火墙的拦截。          进入卡巴斯基”设置“-&gt;”保护“-&gt;”防火墙设置“-&gt;”网络属性“，”编辑“LAN对应的SSID，将”网络类型“改为受信任的网络，即可。      &nbsp;  Ping 不通原因2:  由于路由器的AP隔离的启用，(内网中每个IP相当于一个个VLAN，之间相互隔离独立)，关闭“AP隔离”即可。&nbsp;  SharedFile 权限设置:  权限。          设置共享给”指定用户“ (内网中其他设备存取时，需输入该”指定用户“)。      『optional』: 设置新用户( (Win10本地用户和组, lusrmgr.msc)。      『建议』: 最大灵活性，可赋予”指定用户“对SharedFile的读写权限。      ",
+	  "content" : "Windows 10SMB(v1)insteadSMB(v2)SOHO LAN       Laptop1, Laptop2:  Windows 10, build 1809        Mobile Phone:  Andriod Pie, APK: X-plore (support SMB_v2)        Firewall:  Kaspersky 2019, Malwarebytes v3.7.1        :  -gt;-gt;+        Router:  AP        1:  ping(AP)        2:          APping      APping        Ping 1:  Kaspersky          -gt;-gt;-gt;LANSSID      nbsp;  Ping 2:  AP(IPVLAN)APnbsp;  SharedFile :             ()      optional: ( (Win10, lusrmgr.msc)      : SharedFile      "	 
       
     } ,
   
@@ -164,8 +164,8 @@
       "tags"     : "Secure",
       "date"     : "2019-03-21",
       "excerpt" : "",
-	  "body"    : "Blog/Secure Note  TextArea.com  write.as  ProtectedTextFile Share  Firefox Send: e2e encrpt + 到期即焚",
-	  "content" : "Blog/Secure Note  TextArea.com  write.as  ProtectedTextFile Share  Firefox Send: e2e encrpt + "	 
+	  "body"    : "Blog/Secure Note  TextArea.com  write.as  ProtectedTextFile Share  Firefox Send：e2e encrpt + 到期即焚  Dukto：局域网内，所有设备间文件/消息的传送；开源，支持所有OS。",
+	  "content" : "Blog/Secure Note  TextArea.com  write.as  ProtectedTextFile Share  Firefox Sende2e encrpt +   Dukto/OS"	 
       
     } ,
   
