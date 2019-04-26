@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8000/feed.xml" title="Morgan Zhao's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Morgan Zhao&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/Search/">Search</a><a class="page-link" href="/tags/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">  
+    <h1 class="post-title p-name" itemprop="name headline">WireGuard 一键安装脚本</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-01-07T23:46:05+08:00" itemprop="datePublished">Jan 7, 2019
+      </time></p>
+
+
+<div class="post-categories">
+  
+  
+<span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Category▸&nbsp;</em></strong></span>   
+  
+  
+  <a href="/categories/#Tech">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Tech</em></strong></span>     
+  </a>  
+  &nbsp;
+  
+  <a href="/categories/#搬运">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>搬运</em></strong></span>     
+  </a>  
+  
+  
+</div>
+
+
+<div class="post-tags">
+    
+
+<span style="font-size: 13px; color: #6d9eeb;"><strong><em>Tag▸&nbsp;</em></strong></span> 
+  
+  
+  <a href="/tags/#Cloud/VPN/VPS">
+     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>Cloud/VPN/VPS</em></strong></span>  
+  </a>
+  
+  
+</div>
+
+<span style="font-size:; color: rgb(127, 127, 127);"><strong><em></em></strong></span>
+
+  </header>
+
+
+  <div class="post-content e-content" itemprop="articleBody">
+    
+<div style="">
+<br />
+<div style="text-indent:;"><font style="font-size: 18px;"><b>Script for Debian 9/Ubuntu/Centos_7</b></font></div>
+
+<br /><a href="https://github.com/hongwenjun/vps_setup" target="_self">原出处</a>
+<br />
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</div>
+<div># 一键安装wireguard 脚本 Debian 9 (源:逗比网安装笔记)</div>
+<div>wget -qO- git.io/fptwc | bash</div>
+<div><br /></div>
+<div># 一键安装wireguard 脚本 Ubuntu&nbsp;
+&nbsp;(源:逗比网安装笔记)</div>
+<div>wget -qO- git.io/fpcnL | bash</div>
+<div><br /></div>
+<div># CentOS7一键脚本安装WireGuard&nbsp;
+&nbsp;(https://atrandys.com/2018/886.html)</div>
+<div>yum install -y wget &amp;&amp; wget
+https://raw.githubusercontent.com/atrandys/wireguard/master/wireguard_install.sh
+&amp;&amp; chmod +x wireguard_install.sh &amp;&amp;
+./wireguard_install.sh</div>
+<div>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</div>
+<div><b><font style="font-size: 16px;">重启Linux系统：</font></b></div>
+<div><font style="font-size: 16px;"><br /></font></div>
+<div>
+<div style=""><font style="font-size: 16px;">重启vps系统： reboot
+（直接输入，回车）</font></div>
+<div style=""><br /></div>
+<div style="">CentOS重启ssh：/etc/init.d/sshd restart</div>
+<div style=""><br /></div>
+<div style="">Debian/Ubuntu重启ssh：/etc/init.d/ssh restart</div>
+<div style=""><br /></div>
+<div style="">重启Nginx： /etc/init.d/nginx restart</div>
+<div style=""><br /></div>
+<div style="">重启PHP-FPM：/etc/init.d/php-fpm restart</div>
+<div style=""><br /></div>
+<div style="">重启pptp： /etc/init.d/pptpd restart</div>
+<div style=""><br /></div>
+<div style="">重启Mysql：/etc/init.d/mysql
+restart（有时候需要手动加载mysql进程：/etc/init.d/mysql reload）</div>
+<div style="">
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</div>
+<div style=""><b><font style="font-size: 16px;"><u>Special for
+Ubuntu_AWS, Steps:</u></font></b></div>
+<div style=""><b><font style="font-size: 16px;"><u><br /></u></font></b></div>
+<div style="">1. optional:
+创建EC实例，“安全组”增加TCP和UDP，指定一样的“<b><font color="#6F3198">端口</font></b>”，允许 “<b>0.0.0.0/0</b>”。</div>
+<div style=""><br /></div>
+<div style="">2. # 一键安装wireguard 脚本 Ubuntu&nbsp;
+&nbsp;(源:逗比网安装笔记)</div>
+<div>wget -qO- git.io/fpcnL | bash</div>
+<div><br /></div>
+<div>3.&nbsp;使用“ bash wgmtu”&nbsp;
+命令，按“3”，服务器设置与上面一样的“<b><font color="#6F3198">端口</font></b>”；再按“5”，自动更新客户端配置，其中"client.conf“不会更改，需手动更改为与上面一样的”<b><font color="#6F3198">端口</font></b>“。</div>
+<div style=""><br /></div>
+<div style="">4.&nbsp;<span style="color: rgb(85, 85, 85); font-family:">启动服务端</span></div>
+<div style="">
+<pre style="padding: 8px; color: rgb(68, 68, 68); border-radius: 2px; margin-top: 0px; margin-bottom: 10px; line-height: 20px; word-break: break-all; overflow-wrap: break-word; white-space: pre-wrap; background-color: rgb(248, 248, 248); border: 1px solid rgb(238, 238, 238); overflow: hidden; text-indent: 30px; font-family: Consolas," bitstream="" vera="" sans="" monospace=""><code style="padding: 0px; color: inherit; border-radius: 3px; background-color: transparent; border: 0px; font-family: Consolas," bitstream="" vera="" sans="" monospace="">wg-quick up wg0</code> 
+<code style="padding: 0px; color: inherit; border-radius: 3px; background-color: transparent; border: 0px; font-family: Consolas," bitstream="" vera="" sans="" monospace="">   （关闭为：wg-quick down wg0）</code>
+</pre>
+
+可以通过命令 wg 检查启动是否成功，成功的话会输出如下内容：
+
+<table style="border-top: 1px solid rgb(221, 221, 221); border-left: 1px solid rgb(221, 221, 221); width: 735.273px; margin-bottom: 16px; text-indent: 0px;">
+
+<tbody>
+
+<tr>
+<td style="border-bottom: 1px solid rgb(221, 221, 221); border-right: 1px solid rgb(221, 221, 221); padding: 5px 10px;">
+<pre style="padding: 8px; color: rgb(68, 68, 68); border-radius: 2px; margin-top: 0px; margin-bottom: 10px; line-height: 20px; word-break: break-all; overflow-wrap: break-word; white-space: pre-wrap; background-color: rgb(248, 248, 248); border: 1px solid rgb(238, 238, 238); overflow: hidden; font-family: Consolas," bitstream="" vera="" sans="" monospace=""><span>interface: wg0</span>
+<span>  public key: xxxxxxxxxx</span>
+<span>  private key: (hidden)</span>
+<span>  listening port: 10443</span>
+</pre>
+</td>
+</tr>
+
+</tbody>
+
+</table>
+<div>5. 将 WireGuard 设置成开机启动</div>
+<div>
+
+<table style="border-top: 1px solid rgb(221, 221, 221); border-left: 1px solid rgb(221, 221, 221); width: 735.273px; margin-bottom: 16px; text-indent: 0px;">
+
+<tbody>
+
+<tr>
+<td style="border-bottom: 1px solid rgb(221, 221, 221); border-right: 1px solid rgb(221, 221, 221); padding: 5px 10px;">
+<pre style="white-space: pre-wrap; padding: 8px; color: rgb(68, 68, 68); border-radius: 2px; margin-top: 0px; margin-bottom: 10px; line-height: 20px; word-break: break-all; overflow-wrap: break-word; background-color: rgb(248, 248, 248); border: 1px solid rgb(238, 238, 238); overflow: hidden; font-family: Consolas," bitstream="" vera="" sans="" monospace=""><span>$ systemctl <span>enable</span> wg-quick@wg0</span>
+</pre>
+</td>
+</tr>
+
+</tbody>
+
+</table>
+<div style="text-indent: 30px;">
+<div style="">
+<div style="color: rgb(0, 0, 0); font-size: 14px; text-indent: 0px;">
+<div>6. 额外的配置</div>
+<div>为了让VPN能正常工作，需要启用ipv4的ip_forward功能</div>
+</div>
+<div style="color: rgb(0, 0, 0); font-size: 14px; text-indent: 0px;">
+
+<table style="border-top: 1px solid rgb(221, 221, 221); border-left: 1px solid rgb(221, 221, 221); width: 735.273px; margin-bottom: 16px;">
+
+<tbody>
+
+<tr>
+<td style="border-bottom: 1px solid rgb(221, 221, 221); border-right: 1px solid rgb(221, 221, 221); padding: 5px 10px;">
+<pre bitstream="" vera="" sans="" monospace="" style="white-space: pre-wrap; padding: 8px; color: rgb(68, 68, 68); border-radius: 2px; margin-top: 0px; margin-bottom: 10px; line-height: 20px; word-break: break-all; overflow-wrap: break-word; background-color: rgb(248, 248, 248); border: 1px solid rgb(238, 238, 238); overflow: hidden;">
+$ sysctl -w net.ipv4.ip_forward=1
+</pre>
+</td>
+</tr>
+
+</tbody>
+
+</table>
+</div>
+<div style="color: rgb(0, 0, 0); font-size: 14px; text-indent: 0px;">7.
+重启ssh：</div>
+<div style="color: rgb(0, 0, 0); font-size: 14px; text-indent: 0px;">
+/etc/init.d/ssh restart</div>
+<div style="color: rgb(0, 0, 0); font-size: 14px; text-indent: 0px;">
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</div>
+<div style="color: rgb(0, 0, 0); font-size: 14px; text-indent: 0px;">
+<b><font style="font-size: 16px;"><u>Notes for
+Debian_GCE:</u></font></b></div>
+<div style="font-size: 14px; text-indent: 0px;">
+<div style="color: rgb(0, 0, 0);"><br /></div>
+<div style="color: rgb(0, 0, 0);">1. 一键脚本。</div>
+<div style="color: rgb(0, 0, 0);">&nbsp;
+&nbsp;【Optional】wg配置： 可设置指定端口（同上,
+"client.conf“需手动更改）</div>
+<div style="color: rgb(0, 0, 0);">&nbsp;
+&nbsp; Plus: 以上步骤 4~7.</div>
+<div style="">2. firewall rule: <b style="color: rgb(0, 0, 0);">network tags</b>: <font color="#6F3198"><b><u>http-server, httpw-server, in,
+out</u></b></font></div>
+<div style="color: rgb(0, 0, 0);">&nbsp;
+&nbsp; (优先级 1，IP Range: 0.0.0.0/0，port/protocol:
+all)</div>
+<div style="color: rgb(0, 0, 0);">&nbsp;
+&nbsp; <u>http-server, httpw-server</u>: 创建vm实例时，tick
+"allow http" &amp; "allow https".&nbsp;</div>
+<div style="color: rgb(0, 0, 0);">&nbsp;
+&nbsp; <u>in, out</u>: 自行创建，in for "ingress",out for
+"outgress".</div>
+<div style="color: rgb(0, 0, 0);">
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+  </div><a class="u-url" href="/tech/%E6%90%AC%E8%BF%90/WireGuard-Quick-Install-Script/" hidden></a>
+    
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Morgan Zhao&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name"><a href="/">Morgan Zhao&#39;s Blog</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Anything would love to share or record.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
+

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2019-04-26T23:31:42+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">SMB(v2) File Share</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SMB-File-Share/" rel="alternate" type="text/html" title="SMB(v2) File Share" /><published>2019-04-23T03:32:00+08:00</published><updated>2019-04-23T03:32:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SMB%20File%20Share</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SMB-File-Share/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;margin-top:20px;margin-bottom:10px;font-weight:bold;font-size:20px;&quot;&gt;背景&lt;/p&gt;
+&lt;p&gt;随着Windows 10日常升级，安全因素，SMB(v1)已经默认被微软禁用，instead，启用SMB(v2)。&lt;/p&gt;
+
+&lt;p&gt;因此，有一段时间，内网中的“跨设备文件分享”不工作。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+研究了下，原因和解决方案如下：&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p style=&quot;margin-top:10px;margin-bottom:10px;font-weight:bold;font-size:20px;&quot;&gt;SOHO LAN 状态&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Laptop1, Laptop2:&lt;/strong&gt;  Windows 10, build 1809&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Mobile Phone:&lt;/strong&gt;  Andriod Pie, APK: X-plore (support SMB_v2)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Firewall:&lt;/strong&gt;  Kaspersky 2019, Malwarebytes v3.7.1&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;共享设置:&lt;/strong&gt;  “网络和共享中心”-&amp;gt;”高级共享设置”-&amp;gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;“启用网络发现“+“启用文件和打印机共享”&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Router:&lt;/strong&gt;  ”AP隔离“&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-top:35px;margin-bottom:10px;font-weight:bold;font-size:20px;&quot;&gt;出现的问题&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;问题1:&lt;/strong&gt;  两台笔记本之间，互ping不通。(无论路由器”AP隔离”，关闭或者开启)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;问题2:&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;当路由器AP隔离关闭时：笔记本可以ping通手机，但手机无法访问笔记本的共享文件。&lt;/li&gt;
+      &lt;li&gt;当路由器AP隔离开启时：笔记本也无法ping通手机。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-top:35px;margin-bottom:10px;font-weight:bold;font-size:20px;&quot;&gt;解决方案&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Ping 不通原因1:&lt;/strong&gt;  由于&lt;code class=&quot;highlighter-rouge&quot;&gt;Kaspersky卡巴斯基防火墙&lt;/code&gt;的拦截。
+    &lt;ul&gt;
+      &lt;li&gt;进入卡巴斯基”设置“-&amp;gt;”保护“-&amp;gt;”防火墙设置“-&amp;gt;”网络属性“，”编辑“LAN对应的SSID，将”网络类型“改为&lt;code class=&quot;highlighter-rouge&quot;&gt;受信任的网络&lt;/code&gt;，即可。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-top:-31px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Ping 不通原因2:&lt;/strong&gt;  由于&lt;code class=&quot;highlighter-rouge&quot;&gt;路由器的AP隔离&lt;/code&gt;的启用，(内网中每个IP相当于一个个VLAN，之间相互隔离独立)，关闭“AP隔离”即可。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-top:-31px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;SharedFile 权限设置:&lt;/strong&gt;  权限。
+    &lt;ul&gt;
+      &lt;li&gt;设置共享给”指定用户“ (内网中其他设备存取时，需输入该”指定用户“)。&lt;/li&gt;
+      &lt;li&gt;『optional』: 设置新用户( (Win10本地用户和组, lusrmgr.msc)。&lt;/li&gt;
+      &lt;li&gt;『建议』: 最大灵活性，可赋予”指定用户“对&lt;code class=&quot;highlighter-rouge&quot;&gt;SharedFile的读写权限&lt;/code&gt;。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="OS" /><summary type="html">SOHO LAN 跨设备件文件共享</summary></entry><entry><title type="html">Links - Wonderful Spiritual Video/Audio</title><link href="http://localhost:8000/life/%E6%90%AC%E8%BF%90/Wonderful-Spirit-Multimedia-(links)/" rel="alternate" type="text/html" title="Links - Wonderful Spiritual Video/Audio" /><published>2019-04-11T23:46:00+08:00</published><updated>2019-04-11T23:46:00+08:00</updated><id>http://localhost:8000/life/%E6%90%AC%E8%BF%90/Wonderful%20Spirit%20Multimedia%20(links)</id><content type="html" xml:base="http://localhost:8000/life/%E6%90%AC%E8%BF%90/Wonderful-Spirit-Multimedia-(links)/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;All Source from web. Here is a collection of the original video/audio, thanks for these lovely creations!&lt;br /&gt;
+If infringement occurs, please contact FB: &lt;a href=&quot;https://www.facebook.com/zzmorl&quot;&gt;zzmorl&lt;/a&gt;  for deletion.&lt;/em&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;灵性视频&quot;&gt;灵性视频&lt;/h3&gt;
+&lt;p&gt;Add in 20190330.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=jjcU4_pdCGs&quot;&gt;三摩地影片第1部 - “幻象，自我的迷失” -Samadhi Part 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=80ukIWYp-rE&amp;amp;t=36s&quot;&gt;三摩地影片第2部-“非你所想” - Samadhi Part 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;音乐&quot;&gt;音乐&lt;/h3&gt;
+&lt;p&gt;Add in 20190411.&lt;/p&gt;
+
+&lt;table style=&quot;width:100%&quot;&gt;
+    &lt;tbody&gt;
+		&lt;tr class=&quot;firstRow&quot;&gt;
+            &lt;td style=&quot;word-break: break-all;background-color: #e1eefa;font-weight:bold;font-size:18px;&quot; rowspan=&quot;1&quot; colspan=&quot;4&quot; width=&quot;100%&quot; valign=&quot;middle&quot; align=&quot;left&quot;&gt;
+			Zion Music
+            &lt;/td&gt;
+        &lt;/tr&gt;	
+		&lt;tr&gt;
+            &lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;70%&quot; valign=&quot;middle&quot; align=&quot;left&quot;&gt;
+			心中永念我主洪恩大愛 (1455)			
+            &lt;/td&gt;	
+			&lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;10%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
+			&lt;a href=&quot;https://youtu.be/is91hHAmWJM&quot; target=&quot;_blank&quot;&gt;video&lt;/a&gt;			
+            &lt;/td&gt;
+			&lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;10%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
+			&lt;a href=&quot;https://www.zionnewsong.com/download.php?aid=73&amp;amp;sid=1455&amp;amp;vid=1&amp;amp;order=9&quot; target=&quot;_blank&quot;&gt;audio&lt;/a&gt;			
+            &lt;/td&gt;
+			&lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;10%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
+			&lt;a href=&quot;/assets/mp3/1455.txt&quot; target=&quot;_blank&quot;&gt;lrc&lt;/a&gt;			
+            &lt;/td&gt;			
+		&lt;/tr&gt;	
+		&lt;tr&gt;
+            &lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;70%&quot; valign=&quot;middle&quot; align=&quot;left&quot;&gt;
+			蒙神怜悯 (508)			
+            &lt;/td&gt;	
+			&lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;10%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
+			&lt;a href=&quot;https://youtu.be/SSWSiXkQ_IA&quot; target=&quot;_blank&quot;&gt;video&lt;/a&gt;			
+            &lt;/td&gt;
+			&lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;10%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
+			&lt;a href=&quot;https://www.zionnewsong.com/download.php?aid=1&amp;amp;sid=508&amp;amp;vid=1&amp;amp;order=1&quot; target=&quot;_blank&quot;&gt;audio&lt;/a&gt;			
+            &lt;/td&gt;
+			&lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;10%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
+			&lt;a href=&quot;/assets/mp3/508.txt&quot; target=&quot;_blank&quot;&gt;lrc&lt;/a&gt;			
+            &lt;/td&gt;			
+		&lt;/tr&gt;		
+    &lt;/tbody&gt;			
+&lt;/table&gt;
+
+&lt;table style=&quot;width:100%&quot;&gt;
+    &lt;tbody&gt;
+		&lt;tr class=&quot;firstRow&quot;&gt;
+            &lt;td style=&quot;word-break: break-all;background-color: #e1eefa;font-weight:bold;font-size:18px;&quot; width=&quot;100%&quot; valign=&quot;middle&quot; align=&quot;left&quot;&gt;
+			Mooji Music
+            &lt;/td&gt;
+        &lt;/tr&gt;	
+		&lt;tr&gt;
+            &lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;100%&quot; valign=&quot;middle&quot; align=&quot;left&quot;&gt;
+			&lt;ul&gt;
+			&lt;li&gt;&lt;a href=&quot;https://youtu.be/Oz9Jli3XzF4&quot; target=&quot;_blank&quot;&gt;Prem Leela - They Can't Put Out Our Light&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;https://youtu.be/quzsgFRRoG0&quot; target=&quot;_blank&quot;&gt;Prem Leela - New Music Album&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;https://youtu.be/K__GPWI-ZBk&quot; target=&quot;_blank&quot;&gt;Prem Leela - Higher&lt;/a&gt;&lt;/li&gt;	
+			&lt;li&gt;&lt;a href=&quot;https://youtu.be/xyVJAAlO1O8&quot; target=&quot;_blank&quot;&gt;Shivali - Your Heart is the Light of this World&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;				
+            &lt;/td&gt;			
+		&lt;/tr&gt;	
+    &lt;/tbody&gt;			
+&lt;/table&gt;</content><author><name></name></author><category term="Spirit" /></entry><entry><title type="html">Subtitles Convert</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/SRT-to-VTT/" rel="alternate" type="text/html" title="Subtitles Convert" /><published>2019-04-11T00:00:00+08:00</published><updated>2019-04-11T00:00:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/SRT%20to%20VTT</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/SRT-to-VTT/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;margin-top:20px;margin-bottom:10px;font-weight:bold;&quot;&gt;1. 在线转换：SRT-To-WebVTT&lt;/p&gt;
+&lt;p&gt;背景：一般下载的字幕多为&lt;code&gt;.srt&lt;/code&gt;文件, 而 html5 &amp;lt;video&amp;gt; 标签支持的字幕文件为&lt;code&gt;.vtt&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.webvtt.org/&quot;&gt;&lt;u&gt;Converting SRT files to WebVTT files&lt;/u&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;转换完成后，复制另存为”.vtt”文件即可。&lt;/p&gt;
+
+&lt;p&gt;Html代码 &amp;lt;video&amp;gt; 标签中，增加 &amp;lt;track&amp;gt; 子标签，用于加载&lt;code class=&quot;highlighter-rouge&quot;&gt;vtt&lt;/code&gt;字幕，如：&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;video id=&quot;video&quot; controls=&quot;&quot; preload=&quot;none&quot; poster=&quot;&quot;&amp;gt;&amp;lt;source id=&quot;mp4&quot; style=&quot;width: ;height:;&quot; src=&quot;/xxx/sample.mp4&quot; type=&quot;video/mp4&quot;&amp;gt;&amp;lt;track src=&quot;/xxx/sample.vtt&quot; kind=&quot;subtitles&quot; srclang=&quot;cn&quot; label=&quot;中文&quot;&amp;gt;&amp;lt;/video&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;strong&gt;2. 在线转换：常用格式互转&lt;/strong&gt; 
+&lt;br /&gt;(LRC/SRT/UTF/KSC/SSA/ASS/SMI-To-LRC/SRT/UTF/KSC/SSA/ASS/SMI/SNC/TXT)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.lrccon.com/convert.php&quot;&gt;&lt;u&gt;Convert Link&lt;/u&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Multimedia" /><summary type="html">字幕格式'srt'转'VTT', 常用格式互转</summary></entry><entry><title type="html">IIS Localhost Browsering</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/IIS-Localhost-Browsering/" rel="alternate" type="text/html" title="IIS Localhost Browsering" /><published>2019-04-10T03:05:00+08:00</published><updated>2019-04-10T03:05:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/IIS%20Localhost%20Browsering</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/IIS-Localhost-Browsering/">&lt;p&gt;&lt;br /&gt;
+非常感谢万能的网络，今天萌发此念头：&lt;strong&gt;想将“Local Jekyll Blog”用手机浏览&lt;/strong&gt;，百度了下，居然找到了方案，thnaks. 😘🙏&lt;/p&gt;
+
+&lt;p&gt;参考链接：
+&lt;a href=&quot;https://jingyan.baidu.com/article/15622f24197179fdfdbea559.html&quot;&gt;IIS&lt;/a&gt;, &lt;a href=&quot;https://wenku.baidu.com/view/bf57fe058762caaedc33d466.html&quot;&gt;手机访问电脑上的网站&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;方案整理如下&quot;&gt;方案整理如下：&lt;/h4&gt;
+
+&lt;p&gt;Step 1：开启电脑上IIS (启用或关闭 Windows功能)。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/33.jpg&quot; width=&quot;30%&quot; /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;margin-top: 55px&quot;&gt;Step 2：当开启成功后，会出现“c:\inetpub\”目录。&lt;br /&gt;此时，电脑浏览器中输入 http://localhost 已经Working。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/35.jpg&quot; width=&quot;25%&quot; /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;margin-top: 55px&quot;&gt;Step 3：为了使同一局域网的其他设备 (如手机) 也可以访问，需在“Windows防火墙允许应用”中选上“万维网服务(HTTP)”。
+&lt;br /&gt;此时，手机浏览器中输入http://192.168.x.x (即电脑的IP地址) 已经Working。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/34.jpg&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;margin-top: 55px&quot;&gt;Step 4：回到实际应用，Jekyll Blog &lt;strong&gt;&quot;/_site&quot;下内容 (即编译好的网站)&lt;/strong&gt;，并不在默认的“C:\inetpub\wwwroot\”目录下。
+&lt;br /&gt;因此，需在&lt;strong&gt;&quot;IIS管理器&quot;&lt;/strong&gt;中自行“添加网站”，自行指定端口和网站的目录。
+&lt;br /&gt;添加网站并启动后，此时，手机浏览器中输入http://192.168.x.x:xxx (即电脑的IP地址:自行指定的端口) 已经Working。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/36.jpg&quot; width=&quot;90%&quot; /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;margin-top: 55px&quot;&gt;&lt;font color=&quot;#70ad47&quot;&gt; &lt;strong&gt;Optional Step：启用Windows身份验证 &lt;/strong&gt;&lt;/font&gt;&lt;br /&gt;
+背景：Win10中的IIS，&lt;code&gt;默认启用匿名登录&lt;/code&gt;，即内网中任何机器，无需任何身份验证，直接可浏览网站，带来不便。&lt;/p&gt;
+&lt;p&gt;解决方法：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;临时方法：在&lt;code class=&quot;highlighter-rouge&quot;&gt;IIS管理&lt;/code&gt;中&lt;code class=&quot;highlighter-rouge&quot;&gt;停止服务&lt;/code&gt;。则内网中均不可访问，下次需要时再&lt;code class=&quot;highlighter-rouge&quot;&gt;重新启动服务&lt;/code&gt; (If 设为“停止”，即使电脑重启，IIS服务不会自动enable，除非手动开启)。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;彻底方法：&lt;/strong&gt; &lt;a href=&quot;https://edi.wang/post/2011/8/8/enable-windows-authorization-in-iis7&quot; target=&quot;_blank&quot;&gt;&lt;font color=&quot;#4d8df1&quot; size=&quot;2&quot;&gt;(原出处)&lt;/font&gt;&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;
+    &lt;blockquote&gt;
+      &lt;h5 id=&quot;打开和关闭windows功能-internet信息服务-万维网服务-安全性选择windows身份验证&quot;&gt;打开和关闭Windows功能-&amp;gt;Internet信息服务-&amp;gt;万维网服务-&amp;gt;安全性，选择Windows身份验证。&lt;/h5&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;table style=&quot;width:100%;margin-left: 25px;&quot;&gt;
+    &lt;tbody&gt;
+		&lt;tr class=&quot;firstRow&quot;&gt;
+            &lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;33.3%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
+			&lt;p&gt;安装”Windows身份验证“for IIS。&lt;/p&gt;
+			&lt;a href=&quot;/assets/img/37.jpg&quot; target=&quot;_blank&quot;&gt;			
+			&lt;img src=&quot;/assets/img/37.jpg&quot; width=&quot;90%&quot; /&gt;&lt;/a&gt;	
+            &lt;/td&gt;
+            &lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;33.3%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
+			&lt;p&gt;安装后，打开IIS管理，点击网站的”身份验证“。&lt;/p&gt;
+			&lt;a href=&quot;/assets/img/39.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img src=&quot;/assets/img/39.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;
+            &lt;/td&gt;
+            &lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;33.3%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
+			&lt;p&gt;会发现，界面中已经增加了”Windows身份验证“的选项。&lt;strong&gt;这里将其”启用“即可。&lt;/strong&gt;&lt;br /&gt;(并将“匿名验证“禁用。)&lt;/p&gt;
+			&lt;a href=&quot;/assets/img/38.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img src=&quot;/assets/img/38.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;
+            &lt;/td&gt;			
+        &lt;/tr&gt;
+    &lt;/tbody&gt;			
+&lt;/table&gt;
+
+&lt;p style=&quot;margin-left: 25px;&quot;&gt;此时，回到PC(也是IIS Server)、手机的浏览器，进行浏览，自动弹出&lt;code&gt;身份验证对话框&lt;/code&gt;，So it's Working.&lt;/p&gt;
+
+&lt;table style=&quot;width:100%;margin-left: 25px;&quot;&gt;
+    &lt;tbody&gt;
+		&lt;tr class=&quot;firstRow&quot;&gt;
+            &lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;50%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
+			&lt;p&gt;Browsering From PC/IIS Server&lt;/p&gt;		
+			&lt;img src=&quot;/assets/img/40.jpg&quot; width=&quot;70%&quot; /&gt;	
+            &lt;/td&gt;
+            &lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;50%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
+			&lt;p&gt;Browsering From Mobile Device&lt;/p&gt;
+			&lt;img src=&quot;/assets/img/41.jpg&quot; width=&quot;60%&quot; /&gt;
+            &lt;/td&gt;		
+        &lt;/tr&gt;
+    &lt;/tbody&gt;			
+&lt;/table&gt;</content><author><name></name></author><category term="建站" /><summary type="html">局域网内电脑、手机对本地网站的浏览</summary></entry><entry><title type="html">Gboard 中文显示不出</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Gboard-Chinese-not-Pop-Up/" rel="alternate" type="text/html" title="Gboard 中文显示不出" /><published>2019-04-09T00:00:00+08:00</published><updated>2019-04-09T00:00:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Gboard%20Chinese%20not%20Pop%20Up</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Gboard-Chinese-not-Pop-Up/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;背景&quot;&gt;背景：&lt;/h4&gt;
+
+&lt;p&gt;默认输入法已经用惯了Gboard，今天无意删除并重装了Gboard后，选择&lt;code class=&quot;highlighter-rouge&quot;&gt;Gboard 中文&lt;/code&gt;，但怎么都打不出”中文文字”。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;解决方案&quot;&gt;解决方案：&lt;/h4&gt;
+
+&lt;p&gt;原来，原因是：我禁用了Gboard使用网络 (下图)，而“Gboard”第一次启动时，需联网下载中文字库，that’s why。&lt;/p&gt;
+
+&lt;p&gt;赋予联网权限后，Gboard则可正常使用。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/32.jpg&quot; width=&quot;30%&quot; /&gt;&lt;/p&gt;</content><author><name></name></author></entry><entry><title type="html">Website To Image</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Website-To-Image/" rel="alternate" type="text/html" title="Website To Image" /><published>2019-04-06T00:00:00+08:00</published><updated>2019-04-06T00:00:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Website%20To%20Image</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Website-To-Image/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;背景&quot;&gt;背景：&lt;/h4&gt;
+&lt;p&gt;当本地静态网页(如Jekyll)包含众多元素，而不仅仅是文字时，最简单直接、最精简的方式是转换成&lt;strong&gt;“图片”&lt;/strong&gt;，尤其便于分享。 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;插件方案-不推荐&quot;&gt;插件方案 (不推荐)：&lt;/h4&gt;
+&lt;p&gt;chrome浏览器，插件：“小白工具包”，但不知何故，转换后的图片或pdf 均会将原网页表格的board丢失掉，因此不推荐该方案。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/30.jpg&quot; width=&quot;28%&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;浏览器自带转换工具&quot;&gt;&lt;strong&gt;浏览器自带转换工具&lt;/strong&gt;：&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.maxthon.cn/&quot;&gt;Maxthon遨游浏览器&lt;/a&gt;，自带工具：&lt;strong&gt;“菜单” → “另存为”&lt;/strong&gt; 图片或其他，完美转换。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/31.jpg&quot; width=&quot;30%&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="常用工具" /><summary type="html">静态网页转成图像</summary></entry><entry><title type="html">萌宠</title><link href="http://localhost:8000/pet/Pet-OThers/" rel="alternate" type="text/html" title="萌宠" /><published>2019-03-31T20:50:00+08:00</published><updated>2019-03-31T20:50:00+08:00</updated><id>http://localhost:8000/pet/Pet-OThers</id><content type="html" xml:base="http://localhost:8000/pet/Pet-OThers/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;1-很憨厚的小黄定期增产报国2次年平均每次6只小狗狗奇怪和隔壁的小黑死对头&quot;&gt;1. 很憨厚的小黄，定期增产报国，2次/年，平均每次6只小狗狗。奇怪，和隔壁的小黑死对头。&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/16.jpg&quot; width=&quot;50%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;2-小黑一家三口小白早早被送人了小黑小黄每天来串门子&quot;&gt;2. 小黑一家三口。小白早早被送人了，小黑、小黄每天来串门子。&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/17.jpg&quot; width=&quot;70%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;3--&quot;&gt;3. 😘 。&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/18.jpg&quot; width=&quot;40%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;4-园区小黄和小黑一对couple一天小黄看到我后居然示意领着我去找小黑找到后小黑兴奋地和小黄媳妇眼神交流&quot;&gt;4. 园区小黄和小黑，一对couple。一天，小黄看到我后，居然示意领着我去找小黑，找到后小黑兴奋地和小黄媳妇眼神交流~。&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/19.jpg&quot; width=&quot;66%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;5-猫咪真会享受&quot;&gt;5. 猫咪真会享受。&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/20.jpg&quot; width=&quot;66%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;6---&quot;&gt;6. 😘 🥰 。&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/21.jpg&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;7-同一家身形迥异的吉娃娃-vs-萨摩耶这搭配也可爱的没谁了&quot;&gt;7. 同一家身形迥异的吉娃娃 vs 萨摩耶，这搭配也可爱的没谁了~&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/22.jpg&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;8-大小兔子参照物同一笼子同一萝卜&quot;&gt;8. 大、小兔子。参照物：同一笼子、同一萝卜。&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/23.jpg&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;9-难得路上遇到牛领头的牛很酷貌似脾气不大好欲上前摸它一下瞬间听到它鼻子哼了一下还是停手吧&quot;&gt;9. 难得路上遇到牛，领头的牛很酷，貌似脾气不大好，欲上前摸它一下，瞬间听到它鼻子“哼”了一下，还是停手吧🤔。&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/29.jpg&quot; width=&quot;65%&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;margin-left: 20%;margin-top: -8px;&quot;&gt;Photography in 20190331&lt;/p&gt;</content><author><name></name></author><summary type="html">曾遇到的可爱小动物</summary></entry><entry><title type="html">Github Pages 不支持插件Plugin</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/" rel="alternate" type="text/html" title="Github Pages 不支持插件Plugin" /><published>2019-03-29T00:00:00+08:00</published><updated>2019-03-29T00:00:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Github%20Pages%20not%20Support%20Plugin</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;目前的方法本地生成_site后将_site目录内的所有内容上传至github可避免插件问题&quot;&gt;目前的方法：本地生成_site后，将_site目录内的所有内容上传至github，可避免插件问题。&lt;/h4&gt;</content><author><name></name></author><category term="Jekyll" /></entry><entry><title type="html">FFmpeg 音视频无损转换</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/" rel="alternate" type="text/html" title="FFmpeg 音视频无损转换" /><published>2019-03-24T00:00:00+08:00</published><updated>2019-03-24T00:00:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Multimedia%20Lossless%20Convert</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;视频无损旋转&quot;&gt;视频无损旋转&lt;/h3&gt;
+
+&lt;p&gt;背景：手机拍摄的视频往往竖屏格式，电脑上的播放器可以临时”旋转“播放，但并不能更改原本格式，而借助视频转换软件（如格式工厂）往往会有一定失真。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ffmpeg.zeranoe.com/builds/&quot;&gt;FFmpeg&lt;/a&gt; 可以实现视频无损旋转。&lt;/p&gt;
+
+&lt;p&gt;步骤如下 &lt;font size=&quot;2&quot;&gt;(原出处:百度知道)&lt;/font&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 下载压缩包
+2. 将待旋转视频复制到“x:/xxx/FFMPEG/bin”目录
+3. cmd命令行, 在“x:/xxx/FFMPEG/bin&amp;gt;”后面输入：
+    ffmpeg -i input.mp4 -c copy -metadata:s:v:0 rotate=90 output.mp4
+
+** rotate=90表示逆时针旋转90度，顺时针旋转是rotate=-90，也可写入180或270的值。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;音频格式转换&quot;&gt;音频格式转换&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/zrbcsdn/article/details/50460274&quot;&gt;&lt;font size=&quot;2&quot;&gt;(原出处1&lt;/font&gt;&lt;/a&gt;
+ 
+&lt;a href=&quot;https://blog.csdn.net/hy119/article/details/81632662&quot;&gt;&lt;font size=&quot;2&quot;&gt;原出处2)&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;转换wav到mp3：
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.wav -codec:a libmp3lame -qscale:a 2 output.mp3&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;转换amr到mp3：
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.amr output.mp3&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;转换m4a到mp3：
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -v 5 -y -i input.m4a -acodec libmp3lame -ac 2 -ab 192k output.mp3&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;转换mp3到wav：
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ffmepg -i input.mp3 -f wav output.wav
+ffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;转换m4a到wav：
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.m4a -acodec pcm_s16le -ac 2 -ar 44100 output.wav&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;视频格式转换&quot;&gt;视频格式转换&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;MP4不是一种简单的视频格式，是一个包装了视频和音频格式的壳，里面的音、视频使用什么编码格式是可变的；&lt;br /&gt;视频格式可以使用DivX也可使用H264，而Chrome只支持H264。转换到支持h264的mp4：&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.mp4 -vcodec h264 output.mp4&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;可以同一格式转换，可减少文件size。
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.mp4 output.mp4&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;ffmpeg-常用命令&quot;&gt;&lt;a href=&quot;https://www.cnblogs.com/frost-yen/p/5848781.html&quot;&gt;FFmpeg 常用命令&lt;/a&gt;&lt;/h3&gt;</content><author><name></name></author><category term="Multimedia" /></entry><entry><title type="html">Miracle Pets</title><link href="http://localhost:8000/pet/Miracle-Pets/" rel="alternate" type="text/html" title="Miracle Pets" /><published>2019-03-22T00:00:00+08:00</published><updated>2019-03-22T00:00:00+08:00</updated><id>http://localhost:8000/pet/Miracle%20Pets</id><content type="html" xml:base="http://localhost:8000/pet/Miracle-Pets/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1-被疗愈和祝福的小狗&quot;&gt;&lt;strong&gt;1. 被疗愈和祝福的小狗&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;照片拍摄于20181027。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/15.jpg&quot; width=&quot;45%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;border-bottom: 3px solid grey;display:block&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;h3 id=&quot;2-跨越时空的猫狗&quot;&gt;&lt;strong&gt;2. 跨越时空的猫、狗&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;2017年偶然翻到老照片，发现一张十年前的猫咪照片，看着它的眼神，觉着好眼熟哦，时空突然停滞住，wow，现在的旺财狗狗，原来，一场同一灵魂不同时空的旅行。&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;div style=&quot;width:50%;float:left;text-align:center;font-size:16px;font-weight:bold;color:#404040;&quot;&gt; 
+狗狗照片拍摄于20161228&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;/assets/img/14.jpg&quot; width=&quot;80%&quot; /&gt;
+&lt;/div&gt;
+&lt;div style=&quot;width:50%;float:right;text-align:center;font-size:16px;font-weight:bold;color:#404040;height:120px; line-height:120px;&quot;&gt; 
+&lt;p&gt;猫咪照片拍摄于20061104&lt;/p&gt;
+&lt;img src=&quot;/assets/img/13.jpg&quot; width=&quot;95%&quot; style=&quot;display: inline-block; vertical-align: middle;&quot; /&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="Spirit" /></entry></feed>
