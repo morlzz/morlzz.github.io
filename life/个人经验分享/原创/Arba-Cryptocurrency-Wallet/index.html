@@ -103,6 +103,11 @@
           <li>所有<code class="highlighter-rouge">exchange</code>，实则采用<strong>“smart contract”</strong>，即锁定等值的原native数字币种。
             <ul>
               <li>官网案例：<code class="highlighter-rouge">btc</code>通过”euro contract”转换成<code class="highlighter-rouge">euro</code>，之后用户想将<code class="highlighter-rouge">euro</code>转换成<code class="highlighter-rouge">eth</code>，实际过程是 “convert contract”：”redeem euro contract” first -&gt; “fix value of btc” to the amount of eth = “create eth contract”.</li>
+              <li>smart contract：保存在区块链，因此arba需要支付network mining fee，arba将此费用折摊到<code class="highlighter-rouge">exchange rate转换率</code>中。
+                <ul>
+                  <li>即，”arba spread on exchange rate”包含两部分：1)  实际发生的 network fee; 2) abra宣称唯一用来盈利的转换率差价(由arba自己设定)。</li>
+                </ul>
+              </li>
             </ul>
 
             <p><br /><img src="/assets/img/50.jpg" width="65%" /></p>
