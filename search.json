@@ -2,6 +2,32 @@
   
     {
     
+      "title"    : "Arba Cryptocurrency Wallet",
+      "url"      : "/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba-Cryptocurrency-Wallet/",	  
+      "category" : "Life, 个人经验分享, 原创",
+      "tags"     : "newBank, Cryptocurrency",
+      "date"     : "2019-05-04",
+      "excerpt" : "Arba数字货币钱包",
+	  "body"    : "Like &amp; recommend this “Arba bitcoin wallet”. 以下整理为原创。优点：      初心：vision - 实现100%去中心化的数字银行。👍        简单：前台的设计简单易用，看不到”技术”的影子。        便利：          30种数字货币 + 52种法币。                  支持 native 四种数字货币：btc/bch/lte/eth (即支持这四种的原生钱包地址) 。          其他26种数字货币和52种法币: 通过app内的exchange“合成”对应币种。          所有exchange，实则采用“smart contract”，即锁定等值的原native数字币种。                          官网案例：btc通过”euro contract”转换成euro，之后用户想将euro转换成eth，实际过程是 “convert contract”：”redeem euro contract” first -&gt; “fix value of btc” to the amount of eth = “create eth contract”.                                                      所有币种市场行情，一目了然，行情价格可以参考(接近全网较低价格水平)。      &nbsp;  “数字银行”, 打通数字货币和法币的进程：          目前，美国和菲律宾，可以自由在”数字货币、法币”之间, deposit、withdraw from/to 传统银行。      其他国家，操作上暂无法和传统银行挂钩。      其他国家 (部分)，可通过abra合作伙伴simplex，使用visa card 直接购买btc, simplex收取5%手续费(min. 10usd)。                  simplex 优势：限额空间大；没有身份认证等要求。                    &nbsp;  安全：          私钥/recovery phrase 完全由用户掌握(non-custodial wallet)，arba 无法得知。      HD wallet，每次deposit数字货币后，钱包地址变自动变更，好处：保护隐私，(旧的依旧生效)。      &nbsp;  良心：          zero fee: mining fee for withdraw、no fee for deposit、zero fee for transfer inbetween arba a/c.      only fee from “spread on exchange rate”: Arba在币种间转换(exchange)时, 从转换率上获利。      Recommend Links：  Abra launches new multi-signature wallet for holding digital assets using Bitcoin  How do Abra’s synthetic currencies work?  How non-custodial wallets let you be your own bank  Abra Blog  Abra Homepage",
+	  "content" : "Like amp; recommend this Arba bitcoin wallet.       vision - 100                          30 + 52                   native btc/bch/lte/eth ()           2652: appexchange          exchangesmart contractnative                          btceuro contracteuroeuroeth convert contractredeem euro contract first -gt; fix value of btc to the amount of eth = create eth contract.                                                      ()      nbsp;  ,           , depositwithdraw from/to              ()abrasimplexvisa card btc, simplex5(min. 10usd)                  simplex                     nbsp;            /recovery phrase (non-custodial wallet)arba       HD walletdeposit()      nbsp;            zero fee: mining fee for withdrawno fee for depositzero fee for transfer inbetween arba a/c.      only fee from spread on exchange rate: Arba(exchange),       Recommend Links  Abra launches new multi-signature wallet for holding digital assets using Bitcoin  How do Abras synthetic currencies work?  How non-custodial wallets let you be your own bank  Abra Blog  Abra Homepage"	 
+      
+    } ,
+  
+    {
+    
+      "title"    : "Weston Union",
+      "url"      : "/life/Weston-Union/",	  
+      "category" : "Life",
+      "tags"     : "Bank",
+      "date"     : "2019-05-01",
+      "excerpt" : "中国发汇",
+	  "body"    : "中国邮政储蓄银行的手机银行，已支持在线国际收发汇 - 国际速汇，包括西联汇款、速汇金汇款。  发汇：选取“现钞”。  收汇：选取“现汇”。      (邮政无钞汇转换费)    到账时间，和柜台一样，15分钟以后。  发汇限制：单笔1万美金。&nbsp;                                                                                                                                            ",
+	  "content" : " -           ()    15  1nbsp;                                                                                                                                            "	 
+      
+    } ,
+  
+    {
+    
       "title"    : "Cryptomator v1.49 Error Unlock Issue",
       "url"      : "/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Cryptomator-Error-Unlock-Issue/",	  
       "category" : "Tech, 个人经验分享",

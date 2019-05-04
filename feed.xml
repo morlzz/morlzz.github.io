@@ -1,4 +1,108 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2019-04-29T21:31:39+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">Cryptomator v1.49 Error Unlock Issue</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Cryptomator-Error-Unlock-Issue/" rel="alternate" type="text/html" title="Cryptomator v1.49 Error Unlock Issue" /><published>2019-04-29T20:07:00+08:00</published><updated>2019-04-29T20:07:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Cryptomator%20Error%20Unlock%20Issue</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Cryptomator-Error-Unlock-Issue/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2019-05-05T03:09:36+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">Arba Cryptocurrency Wallet</title><link href="http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba-Cryptocurrency-Wallet/" rel="alternate" type="text/html" title="Arba Cryptocurrency Wallet" /><published>2019-05-04T23:14:00+08:00</published><updated>2019-05-04T23:14:00+08:00</updated><id>http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba%20Cryptocurrency%20Wallet</id><content type="html" xml:base="http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba-Cryptocurrency-Wallet/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;like--recommend-this-arba-bitcoin-wallet-以下整理为原创&quot;&gt;&lt;strong&gt;Like &amp;amp; recommend this “Arba bitcoin wallet”. 以下整理为原创。&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;优点&quot;&gt;&lt;strong&gt;优点：&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;初心：vision - 实现100%去中心化的数字银行。👍&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;简单：前台的设计简单易用，看不到”技术”的影子。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;便利：&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;30种数字货币 + 52种法币。
+        &lt;ul&gt;
+          &lt;li&gt;支持 &lt;strong&gt;native 四种数字货币&lt;/strong&gt;：&lt;strong&gt;btc/bch/lte/eth&lt;/strong&gt; (即支持这四种的原生钱包地址) 。&lt;/li&gt;
+          &lt;li&gt;其他26种数字货币和52种法币: 通过app内的&lt;code class=&quot;highlighter-rouge&quot;&gt;exchange&lt;/code&gt;“合成”对应币种。&lt;/li&gt;
+          &lt;li&gt;所有&lt;code class=&quot;highlighter-rouge&quot;&gt;exchange&lt;/code&gt;，实则采用&lt;strong&gt;“smart contract”&lt;/strong&gt;，即锁定等值的原native数字币种。
+            &lt;ul&gt;
+              &lt;li&gt;官网案例：&lt;code class=&quot;highlighter-rouge&quot;&gt;btc&lt;/code&gt;通过”euro contract”转换成&lt;code class=&quot;highlighter-rouge&quot;&gt;euro&lt;/code&gt;，之后用户想将&lt;code class=&quot;highlighter-rouge&quot;&gt;euro&lt;/code&gt;转换成&lt;code class=&quot;highlighter-rouge&quot;&gt;eth&lt;/code&gt;，实际过程是 “convert contract”：”redeem euro contract” first -&amp;gt; “fix value of btc” to the amount of eth = “create eth contract”.&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;p&gt;&lt;br /&gt;&lt;img src=&quot;/assets/img/50.jpg&quot; width=&quot;65%&quot; /&gt;&lt;/p&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;所有币种市场行情，一目了然，行情价格可以参考(接近全网较低价格水平)。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: -15px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;“数字银行”, 打通数字货币和法币的进程：
+    &lt;ul&gt;
+      &lt;li&gt;目前，美国和菲律宾，可以自由在”数字货币、法币”之间, deposit、withdraw from/to 传统银行。&lt;/li&gt;
+      &lt;li&gt;其他国家，操作上暂无法和传统银行挂钩。&lt;/li&gt;
+      &lt;li&gt;其他国家 (部分)，可通过abra合作伙伴simplex，使用visa card 直接购买btc, simplex收取5%手续费(min. 10usd)。
+        &lt;ul&gt;
+          &lt;li&gt;simplex 优势：限额空间大；没有身份认证等要求。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: -15px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;安全：
+    &lt;ul&gt;
+      &lt;li&gt;私钥/recovery phrase 完全由用户掌握(non-custodial wallet)，arba 无法得知。&lt;/li&gt;
+      &lt;li&gt;HD wallet，每次deposit数字货币后，钱包地址变自动变更，好处：保护隐私，(旧的依旧生效)。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: -15px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;良心：
+    &lt;ul&gt;
+      &lt;li&gt;zero fee: mining fee for withdraw、no fee for deposit、zero fee for transfer inbetween arba a/c.&lt;/li&gt;
+      &lt;li&gt;only fee from “spread on exchange rate”: Arba在币种间转换(exchange)时, 从转换率上获利。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Recommend Links：&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.abra.com/blog/abra-launches-new-multi-signature-wallet-holding-digital-assets-using-bitcoin/&quot;&gt;Abra launches new multi-signature wallet for holding digital assets using Bitcoin&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://support.abra.com/hc/en-us/articles/360001818392-How-do-Abra-s-synthetic-currencies-work-&quot;&gt;How do Abra’s synthetic currencies work?&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.abra.com/blog/noncustodialwallet/&quot;&gt;How non-custodial wallets let you be your own bank&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.abra.com/blog/&quot;&gt;Abra Blog&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.abra.com&quot;&gt;Abra Homepage&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="newBank" /><category term="Cryptocurrency" /><summary type="html">Arba数字货币钱包</summary></entry><entry><title type="html">Weston Union</title><link href="http://localhost:8000/life/Weston-Union/" rel="alternate" type="text/html" title="Weston Union" /><published>2019-05-01T02:04:00+08:00</published><updated>2019-05-01T02:04:00+08:00</updated><id>http://localhost:8000/life/Weston%20Union</id><content type="html" xml:base="http://localhost:8000/life/Weston-Union/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;中国邮政储蓄银行的手机银行，已支持在线国际收发汇 - &lt;code class=&quot;highlighter-rouge&quot;&gt;国际速汇&lt;/code&gt;，包括&lt;code class=&quot;highlighter-rouge&quot;&gt;西联汇款&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;速汇金汇款&lt;/code&gt;。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;发汇：选取“现钞”。&lt;/li&gt;
+  &lt;li&gt;收汇：选取“现汇”。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;(邮政无钞汇转换费)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;到账时间，和柜台一样，15分钟以后。&lt;/li&gt;
+  &lt;li&gt;发汇限制：单笔1万美金。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: -15px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;table style=&quot;width:100%;&quot;&gt;
+    &lt;tbody&gt;
+        &lt;tr class=&quot;firstRow&quot;&gt;	
+            &lt;td width=&quot;50%&quot; align=&quot;center&quot;&gt;
+			&lt;img src=&quot;/assets/img/48.jpg&quot; width=&quot;75%&quot; /&gt;
+			&lt;/td&gt;
+            &lt;td width=&quot;50%&quot; align=&quot;center&quot;&gt;
+			&lt;a href=&quot;/assets/img/49.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img src=&quot;/assets/img/49.jpg&quot; width=&quot;75%&quot; /&gt;&lt;/a&gt;
+			&lt;/td&gt;				
+        &lt;/tr&gt;			
+    &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name></name></author><category term="Bank" /><summary type="html">中国发汇</summary></entry><entry><title type="html">Cryptomator v1.49 Error Unlock Issue</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Cryptomator-Error-Unlock-Issue/" rel="alternate" type="text/html" title="Cryptomator v1.49 Error Unlock Issue" /><published>2019-04-29T20:07:00+08:00</published><updated>2019-04-29T20:07:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Cryptomator%20Error%20Unlock%20Issue</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Cryptomator-Error-Unlock-Issue/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;1-无法解锁&quot;&gt;&lt;strong&gt;1. 无法解锁&lt;/strong&gt;&lt;/h3&gt;
 
@@ -396,64 +500,4 @@ If infringement occurs, please contact FB: &lt;a href=&quot;https://www.facebook
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4 id=&quot;9-难得路上遇到牛领头的牛很酷貌似脾气不大好欲上前摸它一下瞬间听到它鼻子哼了一下还是停手吧&quot;&gt;9. 难得路上遇到牛，领头的牛很酷，貌似脾气不大好，欲上前摸它一下，瞬间听到它鼻子“哼”了一下，还是停手吧🤔。&lt;/h4&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/29.jpg&quot; width=&quot;65%&quot; /&gt;&lt;/p&gt;
-&lt;p style=&quot;margin-left: 20%;margin-top: -8px;&quot;&gt;Photography in 20190331&lt;/p&gt;</content><author><name></name></author><summary type="html">曾遇到的可爱小动物</summary></entry><entry><title type="html">Github Pages 不支持插件Plugin</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/" rel="alternate" type="text/html" title="Github Pages 不支持插件Plugin" /><published>2019-03-29T00:00:00+08:00</published><updated>2019-03-29T00:00:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Github%20Pages%20not%20Support%20Plugin</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;目前的方法本地生成_site后将_site目录内的所有内容上传至github可避免插件问题&quot;&gt;目前的方法：本地生成_site后，将_site目录内的所有内容上传至github，可避免插件问题。&lt;/h4&gt;</content><author><name></name></author><category term="Jekyll" /></entry><entry><title type="html">FFmpeg 音视频无损转换</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/" rel="alternate" type="text/html" title="FFmpeg 音视频无损转换" /><published>2019-03-24T00:00:00+08:00</published><updated>2019-03-24T00:00:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Multimedia%20Lossless%20Convert</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;视频无损旋转&quot;&gt;视频无损旋转&lt;/h3&gt;
-
-&lt;p&gt;背景：手机拍摄的视频往往竖屏格式，电脑上的播放器可以临时”旋转“播放，但并不能更改原本格式，而借助视频转换软件（如格式工厂）往往会有一定失真。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://ffmpeg.zeranoe.com/builds/&quot;&gt;FFmpeg&lt;/a&gt; 可以实现视频无损旋转。&lt;/p&gt;
-
-&lt;p&gt;步骤如下 &lt;font size=&quot;2&quot;&gt;(原出处:百度知道)&lt;/font&gt;&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 下载压缩包
-2. 将待旋转视频复制到“x:/xxx/FFMPEG/bin”目录
-3. cmd命令行, 在“x:/xxx/FFMPEG/bin&amp;gt;”后面输入：
-    ffmpeg -i input.mp4 -c copy -metadata:s:v:0 rotate=90 output.mp4
-
-** rotate=90表示逆时针旋转90度，顺时针旋转是rotate=-90，也可写入180或270的值。
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;音频格式转换&quot;&gt;音频格式转换&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/zrbcsdn/article/details/50460274&quot;&gt;&lt;font size=&quot;2&quot;&gt;(原出处1&lt;/font&gt;&lt;/a&gt;
- 
-&lt;a href=&quot;https://blog.csdn.net/hy119/article/details/81632662&quot;&gt;&lt;font size=&quot;2&quot;&gt;原出处2)&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;转换wav到mp3：
-&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.wav -codec:a libmp3lame -qscale:a 2 output.mp3&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;转换amr到mp3：
-&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.amr output.mp3&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;转换m4a到mp3：
-&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -v 5 -y -i input.m4a -acodec libmp3lame -ac 2 -ab 192k output.mp3&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;转换mp3到wav：
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ffmepg -i input.mp3 -f wav output.wav
-ffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;转换m4a到wav：
-&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.m4a -acodec pcm_s16le -ac 2 -ar 44100 output.wav&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;视频格式转换&quot;&gt;视频格式转换&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;MP4不是一种简单的视频格式，是一个包装了视频和音频格式的壳，里面的音、视频使用什么编码格式是可变的；&lt;br /&gt;视频格式可以使用DivX也可使用H264，而Chrome只支持H264。转换到支持h264的mp4：&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.mp4 -vcodec h264 output.mp4&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;可以同一格式转换，可减少文件size。
-&lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg -i input.mp4 output.mp4&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;ffmpeg-常用命令&quot;&gt;&lt;a href=&quot;https://www.cnblogs.com/frost-yen/p/5848781.html&quot;&gt;FFmpeg 常用命令&lt;/a&gt;&lt;/h3&gt;</content><author><name></name></author><category term="Multimedia" /></entry></feed>
+&lt;p style=&quot;margin-left: 20%;margin-top: -8px;&quot;&gt;Photography in 20190331&lt;/p&gt;</content><author><name></name></author><summary type="html">曾遇到的可爱小动物</summary></entry></feed>
