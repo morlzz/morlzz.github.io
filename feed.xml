@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2019-05-05T03:23:55+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">Arba Cryptocurrency Wallet</title><link href="http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba-Cryptocurrency-Wallet/" rel="alternate" type="text/html" title="Arba Cryptocurrency Wallet" /><published>2019-05-04T23:14:00+08:00</published><updated>2019-05-04T23:14:00+08:00</updated><id>http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba%20Cryptocurrency%20Wallet</id><content type="html" xml:base="http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba-Cryptocurrency-Wallet/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2019-05-18T03:09:55+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">Arba Cryptocurrency Wallet</title><link href="http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba-Cryptocurrency-Wallet/" rel="alternate" type="text/html" title="Arba Cryptocurrency Wallet" /><published>2019-05-04T23:14:00+08:00</published><updated>2019-05-04T23:14:00+08:00</updated><id>http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba%20Cryptocurrency%20Wallet</id><content type="html" xml:base="http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba-Cryptocurrency-Wallet/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;like--recommend-this-arba-bitcoin-wallet-以下整理为原创&quot;&gt;&lt;strong&gt;Like &amp;amp; recommend this “Arba bitcoin wallet”. 以下整理为原创。&lt;/strong&gt;&lt;/h4&gt;
 
@@ -72,8 +72,66 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;br /&gt;
-Recommend Links：&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;information-from-abra-official&quot;&gt;Information from Abra Official&lt;/h4&gt;
+
+&lt;h4 id=&quot;1-all-transactions-must-confirm-via-blockchain&quot;&gt;&lt;strong&gt;1. All Transactions Must Confirm Via Blockchain&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;All underlying currency is BTC, and all transactions must confirm via blockchain.&lt;/li&gt;
+  &lt;li&gt;Abra uses &lt;strong&gt;Bitcoin-based contracts&lt;/strong&gt; to facilitate cryptocurrency and fiat investments on the blockchain.&lt;/li&gt;
+  &lt;li&gt;This &lt;strong&gt;network fee is required&lt;/strong&gt; to ensure your transaction is confirmed by the Bitcoin mining network.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: -15px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h4 id=&quot;2-transaction-types&quot;&gt;&lt;strong&gt;2. Transaction Types&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Send Funds (Scenario: Abra钱包之间 发送)&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;u&gt;Send Fiat&lt;/u&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;Merely choose ‘send funds’&lt;/strong&gt; in the app, this &lt;strong&gt;would not be a withdrawal&lt;/strong&gt;. &lt;strong&gt;Abra does not charge an Abra fee (inc. no network fee)&lt;/strong&gt; to ‘Send funds’ to another Abra wallet.&lt;/li&gt;
+          &lt;li&gt;But still must be confirmed by blockchain.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;u&gt;Send BTC/LTC/BCH/ETH&lt;/u&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Be charged a network fee to &lt;strong&gt;withdraw&lt;/strong&gt; BTC/LTC/BCH/ETH from an Abra wallet &lt;strong&gt;and send&lt;/strong&gt; to another Abra wallet.&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;A withdrawal&lt;/strong&gt; will encounter a network fee.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;u&gt;Other Cryptocurrency Cannot Be Sent&lt;/u&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;margin-bottom: -30px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Withdrawal (Scenario: Abra钱包-&amp;gt;其他数字钱包 提现)&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;A withdrawal will encounter a &lt;strong&gt;network fee&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;Abra currently support &lt;strong&gt;BTC/LTC/BCH/ETH withdrawal&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;margin-bottom: -30px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Withdrawal (Scenario: Abra钱包-&amp;gt;Bank 提现)&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Abra currently support &lt;strong&gt;BTC/LTC/BCH/ETH withdrawal&lt;/strong&gt;; A withdrawal will encounter a &lt;strong&gt;network fee&lt;/strong&gt;.&lt;/li&gt;
+      &lt;li&gt;Support Fiat Transfer, no Abra fee (inc. no network fee); The charge fee depends on bank/third-party their own policy.&lt;/li&gt;
+      &lt;li&gt;All above case must be confirmed by blockchain.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;总结&quot;&gt;总结&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Send/Transfer Fiat: no Abra fee (inc. no network fee);&lt;/li&gt;
+  &lt;li&gt;Send/Transfer/Withdraw BTC/LTC/BCH/ETH: The actual transaction type is &lt;strong&gt;“A withdrawal”&lt;/strong&gt;, a withdrawal will encounter a network fee.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;recommend-links&quot;&gt;Recommend Links&lt;/h4&gt;
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.abra.com/blog/abra-launches-new-multi-signature-wallet-holding-digital-assets-using-bitcoin/&quot;&gt;Abra launches new multi-signature wallet for holding digital assets using Bitcoin&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://support.abra.com/hc/en-us/articles/360001818392-How-do-Abra-s-synthetic-currencies-work-&quot;&gt;How do Abra’s synthetic currencies work?&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
@@ -85,7 +143,11 @@ Recommend Links：&lt;/p&gt;
 &lt;p&gt;中国邮政储蓄银行的手机银行，已支持在线国际收发汇 - &lt;code class=&quot;highlighter-rouge&quot;&gt;国际速汇&lt;/code&gt;，包括&lt;code class=&quot;highlighter-rouge&quot;&gt;西联汇款&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;速汇金汇款&lt;/code&gt;。&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;发汇：选取“现钞”。&lt;/li&gt;
+  &lt;li&gt;发汇：选取“现钞”。 (info from 西联客服, 个人猜测是针对线下现金操作的方式。)
+    &lt;ul&gt;
+      &lt;li&gt;实际操作：通过手机银行购汇，购汇后则选”现汇”；购汇时，需将外币手续费包含在内。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;收汇：选取“现汇”。&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;(邮政无钞汇转换费)&lt;/p&gt;
@@ -94,17 +156,30 @@ Recommend Links：&lt;/p&gt;
   &lt;li&gt;发汇限制：单笔1万美金。&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;&lt;br /&gt;
+西联官方咨询:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;发汇美国，收款方必填的信息：名，姓，美国的州 (电话和具体地址，仅作为西联的说明信息，无需填写或者随意填写，不影响收款)。&lt;/li&gt;
+  &lt;li&gt;if&amp;gt;=3000美金，美国收款方必须具有”美国的社会安全号”，否则无法收款。&lt;/li&gt;
+  &lt;li&gt;美国收款方，需提供MCTN、ID/Passport、社会安全号(if amount&amp;gt;=$3000)。&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;p style=&quot;margin-bottom: -15px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 &lt;table style=&quot;width:100%;&quot;&gt;
     &lt;tbody&gt;
         &lt;tr class=&quot;firstRow&quot;&gt;	
-            &lt;td width=&quot;50%&quot; align=&quot;center&quot;&gt;
+            &lt;td width=&quot;33.3%&quot; align=&quot;center&quot;&gt;
 			&lt;img src=&quot;/assets/img/48.jpg&quot; width=&quot;75%&quot; /&gt;
 			&lt;/td&gt;
-            &lt;td width=&quot;50%&quot; align=&quot;center&quot;&gt;
+            &lt;td width=&quot;33.3%&quot; align=&quot;center&quot;&gt;
 			&lt;a href=&quot;/assets/img/49.jpg&quot; target=&quot;_blank&quot;&gt;
 			&lt;img src=&quot;/assets/img/49.jpg&quot; width=&quot;75%&quot; /&gt;&lt;/a&gt;
-			&lt;/td&gt;				
+			&lt;/td&gt;	
+            &lt;td width=&quot;33.3%&quot; align=&quot;center&quot;&gt;
+			&lt;a href=&quot;/assets/img/51.png&quot; target=&quot;_blank&quot;&gt;
+			&lt;img src=&quot;/assets/img/51.png&quot; width=&quot;75%&quot; /&gt;&lt;/a&gt;
+			&lt;/td&gt;			
         &lt;/tr&gt;			
     &lt;/tbody&gt;
 &lt;/table&gt;</content><author><name></name></author><category term="Bank" /><summary type="html">中国发汇</summary></entry><entry><title type="html">Cryptomator v1.49 Error Unlock Issue</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Cryptomator-Error-Unlock-Issue/" rel="alternate" type="text/html" title="Cryptomator v1.49 Error Unlock Issue" /><published>2019-04-29T20:07:00+08:00</published><updated>2019-04-29T20:07:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Cryptomator%20Error%20Unlock%20Issue</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Cryptomator-Error-Unlock-Issue/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;

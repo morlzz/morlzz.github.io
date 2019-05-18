@@ -86,6 +86,12 @@
 </code></pre></div></div>
 
 <p><br /></p>
+<h3 id="音频裁剪">音频裁剪</h3>
+
+<p>ffmpeg -ss 28 -t 25 -i input.mp3 output.mp3
+<br />(ss 开始时间, 如从第28秒开始裁剪；t 裁剪的长度, 如裁剪出从”第28秒 (含28秒)”开始 的25秒长度的音频。)</p>
+
+<p><br /></p>
 <h3 id="音频格式转换">音频格式转换</h3>
 <p><a href="https://blog.csdn.net/zrbcsdn/article/details/50460274"><font size="2">(原出处1</font></a>
  
@@ -109,8 +115,12 @@
 ffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav
 </code></pre></div>    </div>
   </li>
-  <li>转换m4a到wav：
-<code class="highlighter-rouge">ffmpeg -i input.m4a -acodec pcm_s16le -ac 2 -ar 44100 output.wav</code></li>
+  <li>
+    <p>转换m4a到wav：
+<code class="highlighter-rouge">ffmpeg -i input.m4a -acodec pcm_s16le -ac 2 -ar 44100 output.wav</code></p>
+  </li>
+  <li>转换aac到mp3：
+<code class="highlighter-rouge">ffmpeg -i input.aac -acodec libmp3lame -ac 2 -ab 160 output.mp3</code></li>
 </ul>
 
 <p><br /></p>
