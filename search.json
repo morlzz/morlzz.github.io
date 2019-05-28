@@ -2,6 +2,19 @@
   
     {
     
+      "title"    : "Data Backup/Restore for OnePlus Mobile",
+      "url"      : "/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/OnePlus-Mobile-Backup/",	  
+      "category" : "Tech, 个人经验分享",
+      "tags"     : "OS",
+      "date"     : "2019-05-28",
+      "excerpt" : "一加手机资料备份",
+	  "body"    : "一加手机自带备份恢复软件BanckupRestore 一加搬家, 可用来：  不同厂家手机间的在线资料搬运。  生成离线备份文件 (用于下次离线恢复), 支持系统基本配置的备份，如铃声/wifi config/contacts/壁纸/桌面图标配置等等。缺点：应用程序备份只能备份app，无法备份其数据配置。因此，Titanium 钛备份 + BanckupRestore 一加搬家可完美互补。Titanium 钛备份完美支持应用程序包含其数据配置的备份和恢复。",
+	  "content" : "BanckupRestore ,      (), /wifi config/contacts//appTitanium  + BanckupRestore Titanium "	 
+      
+    } ,
+  
+    {
+    
       "title"    : "Arba Cryptocurrency Wallet",
       "url"      : "/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba-Cryptocurrency-Wallet/",	  
       "category" : "Life, 个人经验分享, 原创",

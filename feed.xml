@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2019-05-20T01:24:27+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">Arba Cryptocurrency Wallet</title><link href="http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba-Cryptocurrency-Wallet/" rel="alternate" type="text/html" title="Arba Cryptocurrency Wallet" /><published>2019-05-04T23:14:00+08:00</published><updated>2019-05-04T23:14:00+08:00</updated><id>http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba%20Cryptocurrency%20Wallet</id><content type="html" xml:base="http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba-Cryptocurrency-Wallet/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2019-05-28T21:44:31+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">Data Backup/Restore for OnePlus Mobile</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/OnePlus-Mobile-Backup/" rel="alternate" type="text/html" title="Data Backup/Restore for OnePlus Mobile" /><published>2019-05-28T21:14:00+08:00</published><updated>2019-05-28T21:14:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/OnePlus%20Mobile%20Backup</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/OnePlus-Mobile-Backup/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;一加手机自带备份恢复软件&lt;code class=&quot;highlighter-rouge&quot;&gt;BanckupRestore 一加搬家&lt;/code&gt;, 可用来：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;不同厂家手机间的在线资料搬运。&lt;/li&gt;
+  &lt;li&gt;生成离线备份文件 (用于下次离线恢复), 支持系统基本配置的备份，如铃声/wifi config/contacts/壁纸/桌面图标配置等等。
+&lt;br /&gt;&lt;strong&gt;缺点：&lt;code class=&quot;highlighter-rouge&quot;&gt;应用程序备份&lt;/code&gt;只能备份app，无法备份其数据配置。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+因此，&lt;a href=&quot;https://www.apkmirror.com/apk/titanium-track/titanium-backup/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Titanium 钛备份&lt;/code&gt;&lt;/a&gt; + &lt;a href=&quot;https://www.apkmirror.com/apk/oneplus-ltd/oneplus-switch/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;BanckupRestore 一加搬家&lt;/code&gt;&lt;/a&gt;可完美互补。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Titanium 钛备份&lt;/code&gt;完美支持应用程序包含其数据配置的备份和恢复。&lt;/p&gt;</content><author><name></name></author><category term="OS" /><summary type="html">一加手机资料备份</summary></entry><entry><title type="html">Arba Cryptocurrency Wallet</title><link href="http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba-Cryptocurrency-Wallet/" rel="alternate" type="text/html" title="Arba Cryptocurrency Wallet" /><published>2019-05-04T23:14:00+08:00</published><updated>2019-05-04T23:14:00+08:00</updated><id>http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba%20Cryptocurrency%20Wallet</id><content type="html" xml:base="http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba-Cryptocurrency-Wallet/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;like--recommend-this-arba-bitcoin-wallet-以下整理为原创&quot;&gt;&lt;strong&gt;Like &amp;amp; recommend this “Arba bitcoin wallet”. 以下整理为原创。&lt;/strong&gt;&lt;/h4&gt;
 
@@ -545,39 +558,4 @@ If infringement occurs, please contact FB: &lt;a href=&quot;https://www.facebook
 &lt;h4 id=&quot;浏览器自带转换工具&quot;&gt;&lt;strong&gt;浏览器自带转换工具&lt;/strong&gt;：&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.maxthon.cn/&quot;&gt;Maxthon遨游浏览器&lt;/a&gt;，自带工具：&lt;strong&gt;“菜单” → “另存为”&lt;/strong&gt; 图片或其他，完美转换。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/31.jpg&quot; width=&quot;30%&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="常用工具" /><summary type="html">静态网页转成图像</summary></entry><entry><title type="html">萌宠</title><link href="http://localhost:8000/pet/Pet-OThers/" rel="alternate" type="text/html" title="萌宠" /><published>2019-03-31T20:50:00+08:00</published><updated>2019-03-31T20:50:00+08:00</updated><id>http://localhost:8000/pet/Pet-OThers</id><content type="html" xml:base="http://localhost:8000/pet/Pet-OThers/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;1-很憨厚的小黄定期增产报国2次年平均每次6只小狗狗奇怪和隔壁的小黑死对头&quot;&gt;1. 很憨厚的小黄，定期增产报国，2次/年，平均每次6只小狗狗。奇怪，和隔壁的小黑死对头。&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/16.jpg&quot; width=&quot;50%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;2-小黑一家三口小白早早被送人了小黑小黄每天来串门子&quot;&gt;2. 小黑一家三口。小白早早被送人了，小黑、小黄每天来串门子。&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/17.jpg&quot; width=&quot;70%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;3--&quot;&gt;3. 😘 。&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/18.jpg&quot; width=&quot;40%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;4-园区小黄和小黑一对couple一天小黄看到我后居然示意领着我去找小黑找到后小黑兴奋地和小黄媳妇眼神交流&quot;&gt;4. 园区小黄和小黑，一对couple。一天，小黄看到我后，居然示意领着我去找小黑，找到后小黑兴奋地和小黄媳妇眼神交流~。&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/19.jpg&quot; width=&quot;66%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;5-猫咪真会享受&quot;&gt;5. 猫咪真会享受。&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/20.jpg&quot; width=&quot;66%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;6---&quot;&gt;6. 😘 🥰 。&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/21.jpg&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;7-同一家身形迥异的吉娃娃-vs-萨摩耶这搭配也可爱的没谁了&quot;&gt;7. 同一家身形迥异的吉娃娃 vs 萨摩耶，这搭配也可爱的没谁了~&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/22.jpg&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;8-大小兔子参照物同一笼子同一萝卜&quot;&gt;8. 大、小兔子。参照物：同一笼子、同一萝卜。&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/23.jpg&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;9-难得路上遇到牛领头的牛很酷貌似脾气不大好欲上前摸它一下瞬间听到它鼻子哼了一下还是停手吧&quot;&gt;9. 难得路上遇到牛，领头的牛很酷，貌似脾气不大好，欲上前摸它一下，瞬间听到它鼻子“哼”了一下，还是停手吧🤔。&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/29.jpg&quot; width=&quot;65%&quot; /&gt;&lt;/p&gt;
-&lt;p style=&quot;margin-left: 20%;margin-top: -8px;&quot;&gt;Photography in 20190331&lt;/p&gt;</content><author><name></name></author><summary type="html">曾遇到的可爱小动物</summary></entry></feed>
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="常用工具" /><summary type="html">静态网页转成图像</summary></entry></feed>
