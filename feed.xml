@@ -1,4 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2019-05-28T21:44:31+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">Data Backup/Restore for OnePlus Mobile</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/OnePlus-Mobile-Backup/" rel="alternate" type="text/html" title="Data Backup/Restore for OnePlus Mobile" /><published>2019-05-28T21:14:00+08:00</published><updated>2019-05-28T21:14:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/OnePlus%20Mobile%20Backup</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/OnePlus-Mobile-Backup/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2019-06-02T22:25:33+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">Android MultiUser &amp;amp; Clone App</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&-Clone-App/" rel="alternate" type="text/html" title="Android MultiUser &amp; Clone App" /><published>2019-06-02T03:25:00+08:00</published><updated>2019-06-02T03:25:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod%20Multiuser%20&amp;%20Clone%20App</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&amp;-Clone-App/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;note-以下经验为亲测原创一方面作为日常总结纪录另分享给有兴趣的人&quot;&gt;Note: 以下经验为亲测原创，一方面作为日常总结纪录，另分享给有兴趣的人。&lt;/h4&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;作用&quot;&gt;作用&lt;/h4&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;安卓多用户&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;克隆App&lt;/code&gt;，在日常使用中需求愈来愈明显。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;安卓多用户&lt;/code&gt;：等于sandbox，有效隔离各个用户的空间。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;安卓自带多用户，需切换至不同用户&lt;/li&gt;
+  &lt;li&gt;另一种方式 AFW (Android For Work), 无需切换用户，该用户与主用户界面共存；&lt;br /&gt;界面呈现上，”Work(工作资料)”沙箱空间与主用户同时工作，逻辑上两者还是多用户概念。
+    &lt;ul&gt;
+      &lt;li&gt;推荐谷歌商店App: &lt;code class=&quot;highlighter-rouge&quot;&gt;Island&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;克隆App&lt;/code&gt;：适用于多个app账号（亲测，有些app如手机银行登录时不识别克隆的app）。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;推荐谷歌商店App: &lt;code class=&quot;highlighter-rouge&quot;&gt;App Cloner&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;安卓多用户&quot;&gt;安卓多用户&lt;/h4&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;操作时几个要点：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;主用户、其他用户：各自安装维护删除第三方App，互不影响。
+    &lt;ul&gt;
+      &lt;li&gt;系统App：慎删、慎冻结，会影响正常使用这些App的用户。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;主用户更新App&lt;/strong&gt;时：
+    &lt;ul&gt;
+      &lt;li&gt;IF 其他用户也安装了相同App：&lt;strong&gt;其他用户自动更新对应App&lt;/strong&gt;。(反之，理论上：其他用户更新，主用户也应该自动更新，未测。)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用&lt;code class=&quot;highlighter-rouge&quot;&gt;钛备份Titanium Backup&lt;/code&gt;恢复App及其数据时：所有其他用户都会自动安装对应App (其他用户仅是恢复App，数据无法恢复)。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;权限/空间管理软件推荐：&lt;code class=&quot;highlighter-rouge&quot;&gt;App Ops&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;MyAndroidTools&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;Storage Redirect 存储重定向&lt;/code&gt;。
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;App Ops&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;Storage Redirect 存储重定向&lt;/code&gt;: 支持在当前用户下跨多用户管理&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;MyAndroidTools&lt;/code&gt;: 仅支持当前用户管理&lt;/li&gt;
+      &lt;li&gt;此外，&lt;code class=&quot;highlighter-rouge&quot;&gt;钛备份Titanium Backup&lt;/code&gt;：仅支持当前用户管理 (但恢复时，会恢复安装至所有用户下)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;备份软件：&lt;code class=&quot;highlighter-rouge&quot;&gt;钛备份Titanium Backup&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;一加搬家 OneplusBackuprestore&lt;/code&gt; (一加手机自带专用)
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;钛备份Titanium Backup&lt;/code&gt;：支持app及其数据的备份恢复。&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;一加搬家 OneplusBackuprestore&lt;/code&gt;：&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul&gt;
+      &lt;li&gt;仅支持app软件本身的备份恢复，不支持对应的应用数据的备份恢复。&lt;/li&gt;
+      &lt;li&gt;优点：可备份恢复基本系统配置：如联系人、桌面图标设置、壁纸、铃声、wifi等。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;app克隆&quot;&gt;App克隆&lt;/h4&gt;
+&lt;hr /&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;App Cloner&lt;/code&gt;的操作仅对当前用户生效，不会安装到其他用户下。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;主程序、克隆程序：&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;软件版本互不影响&lt;/li&gt;
+      &lt;li&gt;主程序更新后，&lt;code class=&quot;highlighter-rouge&quot;&gt;App Cloner&lt;/code&gt;会提醒”克隆程序有更新&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="Android" /><category term="MultiUser&amp;CloneApp" /><summary type="html">安卓多用户、克隆App</summary></entry><entry><title type="html">Storage Rediect</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E6%90%AC%E8%BF%90/Storage-Redirect/" rel="alternate" type="text/html" title="Storage Rediect" /><published>2019-05-30T00:26:00+08:00</published><updated>2019-05-30T00:26:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E6%90%AC%E8%BF%90/Storage%20Redirect</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E6%90%AC%E8%BF%90/Storage-Redirect/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;APK 软件名：&lt;code class=&quot;highlighter-rouge&quot;&gt;Storage Redirect 存储重定向&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;作用：存储位置重定向，有效规整apps乱建文件夹，需要root。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;推荐一篇网络上很好的该软件讲解文章：&lt;a href=&quot;https://sspai.com/post/54420&quot;&gt;让你的 Android 内部存储空间整洁如新：存储重定向上手指南&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+经亲自测试：&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;&quot;同步文件夹&quot; 效果：如隔离空间中的A，同步到内置存储空间中的B&lt;/u&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;A、B共用一个copy，占有一份存储空间；&lt;/li&gt;
+  &lt;li&gt;当删除B时，A自动删除；反之，当删除A时，B不影响 (即B为主存位置，A为”从”)；&lt;/li&gt;
+  &lt;li&gt;当卸载对应app时，其对应隔离空间完全被删除，包括A；而内置存储空间中的B，不受影响。&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Android" /><category term="StorageManagement" /><summary type="html">安卓存储空间管理</summary></entry><entry><title type="html">Data Backup/Restore for OnePlus Mobile</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/OnePlus-Mobile-Backup/" rel="alternate" type="text/html" title="Data Backup/Restore for OnePlus Mobile" /><published>2019-05-28T21:14:00+08:00</published><updated>2019-05-28T21:14:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/OnePlus%20Mobile%20Backup</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/OnePlus-Mobile-Backup/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;一加手机自带备份恢复软件&lt;code class=&quot;highlighter-rouge&quot;&gt;BanckupRestore 一加搬家&lt;/code&gt;, 可用来：&lt;/p&gt;
 
@@ -533,29 +628,4 @@ If infringement occurs, please contact FB: &lt;a href=&quot;https://www.facebook
             &lt;/td&gt;		
         &lt;/tr&gt;
     &lt;/tbody&gt;			
-&lt;/table&gt;</content><author><name></name></author><category term="建站" /><summary type="html">局域网内电脑、手机对本地网站的浏览</summary></entry><entry><title type="html">Gboard 中文显示不出</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Gboard-Chinese-not-Pop-Up/" rel="alternate" type="text/html" title="Gboard 中文显示不出" /><published>2019-04-09T00:00:00+08:00</published><updated>2019-04-09T00:00:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Gboard%20Chinese%20not%20Pop%20Up</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Gboard-Chinese-not-Pop-Up/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;背景&quot;&gt;背景：&lt;/h4&gt;
-
-&lt;p&gt;默认输入法已经用惯了Gboard，今天无意删除并重装了Gboard后，选择&lt;code class=&quot;highlighter-rouge&quot;&gt;Gboard 中文&lt;/code&gt;，但怎么都打不出”中文文字”。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;解决方案&quot;&gt;解决方案：&lt;/h4&gt;
-
-&lt;p&gt;原来，原因是：我禁用了Gboard使用网络 (下图)，而“Gboard”第一次启动时，需联网下载中文字库，that’s why。&lt;/p&gt;
-
-&lt;p&gt;赋予联网权限后，Gboard则可正常使用。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/32.jpg&quot; width=&quot;30%&quot; /&gt;&lt;/p&gt;</content><author><name></name></author></entry><entry><title type="html">Website To Image</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Website-To-Image/" rel="alternate" type="text/html" title="Website To Image" /><published>2019-04-06T00:00:00+08:00</published><updated>2019-04-06T00:00:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Website%20To%20Image</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Website-To-Image/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;背景&quot;&gt;背景：&lt;/h4&gt;
-&lt;p&gt;当本地静态网页(如Jekyll)包含众多元素，而不仅仅是文字时，最简单直接、最精简的方式是转换成&lt;strong&gt;“图片”&lt;/strong&gt;，尤其便于分享。 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;插件方案-不推荐&quot;&gt;插件方案 (不推荐)：&lt;/h4&gt;
-&lt;p&gt;chrome浏览器，插件：“小白工具包”，但不知何故，转换后的图片或pdf 均会将原网页表格的board丢失掉，因此不推荐该方案。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/30.jpg&quot; width=&quot;28%&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;浏览器自带转换工具&quot;&gt;&lt;strong&gt;浏览器自带转换工具&lt;/strong&gt;：&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.maxthon.cn/&quot;&gt;Maxthon遨游浏览器&lt;/a&gt;，自带工具：&lt;strong&gt;“菜单” → “另存为”&lt;/strong&gt; 图片或其他，完美转换。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/31.jpg&quot; width=&quot;30%&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="常用工具" /><summary type="html">静态网页转成图像</summary></entry></feed>
+&lt;/table&gt;</content><author><name></name></author><category term="建站" /><summary type="html">局域网内电脑、手机对本地网站的浏览</summary></entry></feed>
