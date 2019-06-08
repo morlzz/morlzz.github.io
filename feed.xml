@@ -1,4 +1,128 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2019-06-02T22:25:33+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">Android MultiUser &amp;amp; Clone App</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&-Clone-App/" rel="alternate" type="text/html" title="Android MultiUser &amp; Clone App" /><published>2019-06-02T03:25:00+08:00</published><updated>2019-06-02T03:25:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod%20Multiuser%20&amp;%20Clone%20App</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&amp;-Clone-App/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2019-06-09T01:57:08+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">上海社会保障卡</title><link href="http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Shanghai-Social-Security-Card-in-China/" rel="alternate" type="text/html" title="上海社会保障卡" /><published>2019-06-08T21:52:00+08:00</published><updated>2019-06-08T21:52:00+08:00</updated><id>http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%20Shanghai%20Social%20Security%20Card%20in%20China</id><content type="html" xml:base="http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Shanghai-Social-Security-Card-in-China/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;关于上海社保卡到底涉及几个密码没有看到官方明确引导文件期间办理相关事宜也是一头雾水经电话咨询和亲测总结如下&quot;&gt;关于上海社保卡到底涉及几个密码，没有看到官方明确引导文件，期间办理相关事宜也是一头雾水，经电话咨询和亲测，总结如下：&lt;/h4&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;维度1-社保卡的迭代上海第三代社会保障卡&quot;&gt;&lt;strong&gt;『维度1: 社保卡的迭代』&lt;font color=&quot;#3c78d8&quot;&gt;上海第三代社会保障卡：&lt;/font&gt;&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;相较第二代，多了银联Quick Pass即卡片闪付功能，即宣传的”‘一晃而过’的非接触功能” (其实涉及的是金融账号的卡片闪付功能，与”小额免密免签”设置有关。)&lt;/li&gt;
+  &lt;li&gt;两个账户：社保账户 + 金融账户
+    &lt;ul&gt;
+      &lt;li&gt;【A】&lt;strong&gt;社保账户&lt;/strong&gt;：用于 - 用户医保个人账户结算业务（&lt;strong&gt;如就医/购药&lt;/strong&gt;）、人社业务、其他政府公共服务业务。&lt;/li&gt;
+      &lt;li&gt;【B】金融账户：
+        &lt;ul&gt;
+          &lt;li&gt;用于与社保账户相关的服务 - 养老金发放、医疗报销发放、其他各种福利补贴发放（如生育、工伤、失业等）。&lt;/li&gt;
+          &lt;li&gt;与社保账户无关，仅当作普通借记卡使用。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;【A】对应&lt;strong&gt;“社保密码” (= “上海人社App登陆密码” = “12333网站登陆密码”)&lt;/strong&gt;。&lt;/li&gt;
+      &lt;li&gt;【B】对应”银行交易密码”。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;维度2-社保卡个人可设置的密码社会保障卡---个人查询使用密码&quot;&gt;&lt;strong&gt;『维度2: 社保卡个人可设置的密码』&lt;font color=&quot;#3c78d8&quot;&gt;社会保障卡 - 个人查询/使用密码：&lt;/font&gt;&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;社保密码 (即上海人社App登陆密码、12333网站登陆密码)&lt;/strong&gt; &lt;br /&gt;〔&lt;u&gt;目前&lt;strong&gt;上海市&lt;/strong&gt;&quot;社保-养老&quot;相关业务，&lt;strong&gt;&lt;font color=&quot;#6fb153 &quot; style=&quot;font-size:23px&quot;&gt;仅这一个密码&lt;/font&gt;&lt;/strong&gt;，6位数字&lt;/u&gt;〕
+    &lt;ul&gt;
+      &lt;li&gt;登录12333网站时：仅可查看养老保险缴纳信息；医保信息，需单独在”上海医保网”查看，使用独立的”医保个人账户查询密码”。&lt;/li&gt;
+      &lt;li&gt;登录上海人社App时：除了养老保险缴纳信息；App内嵌”医保”Portal，无需输入”医保个人账户查询密码”，即可查看医保信息。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;医保个人账户查询 (即登录) 密码&lt;/strong&gt; &lt;br /&gt;〔&lt;u&gt;目前&lt;strong&gt;上海市&lt;/strong&gt;&quot;社保-医保个人账户&quot;相关业务，&lt;strong&gt;&lt;font color=&quot;#6fb153 &quot; style=&quot;font-size:23px&quot;&gt;仅这一个密码&lt;/font&gt; (即&quot;查询密码&quot;，没有&quot;交易密码或使用密码&quot;)&lt;/strong&gt;，&lt;font color=&quot;red&quot;&gt;BUG/ISSUE: 6位字符 OR 6位数字? (见下文&quot;其他ISSUE&quot;)&lt;/font&gt;&lt;/u&gt;〕
+    &lt;ul&gt;
+      &lt;li&gt;使用场景1：当&lt;strong&gt;登录”上海医保网”、电话查询&lt;/strong&gt;(962218服务热线)个人信息时需要”医保个人账户&lt;strong&gt;查询密码&lt;/strong&gt;“。&lt;/li&gt;
+      &lt;li&gt;使用场景2：当&lt;strong&gt;就医或者购药&lt;/strong&gt;时，&lt;strong&gt;上海&lt;/strong&gt;社保卡无需任何密码，&lt;strong&gt;直接结算&lt;/strong&gt;。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span style=&quot;border-bottom: 2px solid grey;display:block;margin-bottom: 15px;margin-top: 20px&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;其他1相关网址apps&quot;&gt;&lt;strong&gt;《其他1：相关网址/APPs》&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.12333sh.gov.cn/sbsjb/wzb/226.jsp&quot;&gt;12333网站 - 上海社会保险服务, 个人办事平台&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;ID: 身份证号码&lt;/li&gt;
+      &lt;li&gt;PSW: 社保密码&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ybj.sh.gov.cn/&quot;&gt;上海医保网&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;ID: 身份证号码&lt;/li&gt;
+      &lt;li&gt;PSW: 医保个人账户查询密码&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.12333sh.gov.cn/sbsjb/sjb/app/sjb.apk&quot;&gt;上海人社App&lt;/a&gt; (养老保险信息，App内集成医保信息，无需单独输入”医保查询密码”；可在”医保”portal中修改”医保查询密码”。)
+    &lt;ul&gt;
+      &lt;li&gt;ID: 身份证号码&lt;/li&gt;
+      &lt;li&gt;PSW: 社保密码&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://a.app.qq.com/o/simple.jsp?pkgname=com.wondersgroup.socialsecurity&amp;amp;fromcase=40003&quot;&gt;上海社保卡App&lt;/a&gt; (对应网站：&lt;a href=&quot;http://www.962222.net/index.html&quot;&gt;上海市民信息服务网&lt;/a&gt;)
+    &lt;ul&gt;
+      &lt;li&gt;ID: 身份证号码&lt;/li&gt;
+      &lt;li&gt;PSW: 应用登录密码 (与社保/医保密码无关)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;其他2社保医保密码更改&quot;&gt;&lt;strong&gt;《其他2：社保/医保密码更改》&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;社保密码&lt;/strong&gt;：社保中心/街道社区事务 - 自助机；社保中心/街道社区事务 - 受理窗口；&lt;strong&gt;上海人社App - 在线更改&lt;/strong&gt;。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;医保个人账户查询密码&lt;/strong&gt;：医保中心/街道社区事务 - 受理窗口；&lt;strong&gt;上海医保网、上海人社App - 在线更改&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;其他issue上海医保网更改密码bug&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#ed4e4e&quot;&gt;《其他ISSUE：&quot;上海医保网&quot;更改密码BUG》&lt;/font&gt;&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;上海医保网 - 在线更改 “医保个人账户查询密码”&lt;/strong&gt;:
+    &lt;ul&gt;
+      &lt;li&gt;上海医保网更改后的新密码要求 - 总长6位，&lt;strong&gt;至少包含大写字母 + 数字&lt;/strong&gt;。&lt;/li&gt;
+      &lt;li&gt;962218医保电话平台、上海人社App、医保中心/街道社区事务：&lt;strong&gt;仅支持6位数字的密码&lt;/strong&gt;。&lt;/li&gt;
+      &lt;li&gt;
+        &lt;font color=&quot;#ed4e4e&quot;&gt;BUG!当医保密码在&quot;上海医保网&quot;更改后，无法被&quot;962218医保电话平台、上海人社App、医保中心/街道社区事务&quot;验证。&lt;/font&gt;
+        &lt;ul&gt;
+          &lt;li&gt;解决方案：医保中心/街道社区事务 - 受理窗口，&lt;strong&gt;&lt;font color=&quot;#6fb153 &quot; style=&quot;font-size:23px&quot;&gt;重置&quot;医保个人账户查询密码&quot;, 为6位数字密码&lt;/font&gt;&lt;/strong&gt;。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;table style=&quot;width:100%;&quot;&gt;
+    &lt;tbody&gt;
+        &lt;tr class=&quot;firstRow&quot;&gt;		
+            &lt;td width=&quot;100%&quot; rowspan=&quot;1&quot; colspan=&quot;2&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;	
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/52.jpg&quot; width=&quot;90%&quot; /&gt;	
+			&lt;/td&gt;			
+        &lt;/tr&gt;		
+        &lt;tr&gt;		
+            &lt;td width=&quot;50%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;	
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/53.jpg&quot; width=&quot;70%&quot; /&gt;	
+			&lt;/td&gt;	
+            &lt;td width=&quot;50%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;	
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/54.jpg&quot; width=&quot;70%&quot; /&gt;	
+			&lt;/td&gt;			
+        &lt;/tr&gt;		
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table style=&quot;width:100%;&quot;&gt;
+    &lt;tbody&gt;
+        &lt;tr class=&quot;firstRow&quot;&gt;		
+            &lt;td width=&quot;50%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;	
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/55.jpg&quot; width=&quot;70%&quot; /&gt;	
+			&lt;/td&gt;	
+            &lt;td width=&quot;50%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;	
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/56.jpg&quot; width=&quot;70%&quot; /&gt;	
+			&lt;/td&gt;			
+        &lt;/tr&gt;		
+    &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name></name></author><category term="公共事业服务" /><summary type="html">上海社保卡/社保账户, 涉及的密码</summary></entry><entry><title type="html">Android MultiUser &amp;amp; Clone App</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&-Clone-App/" rel="alternate" type="text/html" title="Android MultiUser &amp; Clone App" /><published>2019-06-02T03:25:00+08:00</published><updated>2019-06-02T03:25:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod%20Multiuser%20&amp;%20Clone%20App</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&amp;-Clone-App/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;note-以下经验为亲测原创一方面作为日常总结纪录另分享给有兴趣的人&quot;&gt;Note: 以下经验为亲测原创，一方面作为日常总结纪录，另分享给有兴趣的人。&lt;/h4&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -553,79 +677,4 @@ If infringement occurs, please contact FB: &lt;a href=&quot;https://www.facebook
 &lt;strong&gt;2. 在线转换：常用格式互转&lt;/strong&gt; 
 &lt;br /&gt;(LRC/SRT/UTF/KSC/SSA/ASS/SMI-To-LRC/SRT/UTF/KSC/SSA/ASS/SMI/SNC/TXT)&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.lrccon.com/convert.php&quot;&gt;&lt;u&gt;Convert Link&lt;/u&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Multimedia" /><summary type="html">字幕格式'srt'转'VTT', 常用格式互转</summary></entry><entry><title type="html">IIS Localhost Browsering</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/IIS-Localhost-Browsering/" rel="alternate" type="text/html" title="IIS Localhost Browsering" /><published>2019-04-10T03:05:00+08:00</published><updated>2019-04-10T03:05:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/IIS%20Localhost%20Browsering</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/IIS-Localhost-Browsering/">&lt;p&gt;&lt;br /&gt;
-非常感谢万能的网络，今天萌发此念头：&lt;strong&gt;想将“Local Jekyll Blog”用手机浏览&lt;/strong&gt;，百度了下，居然找到了方案，thnaks. 😘🙏&lt;/p&gt;
-
-&lt;p&gt;参考链接：
-&lt;a href=&quot;https://jingyan.baidu.com/article/15622f24197179fdfdbea559.html&quot;&gt;IIS&lt;/a&gt;, &lt;a href=&quot;https://wenku.baidu.com/view/bf57fe058762caaedc33d466.html&quot;&gt;手机访问电脑上的网站&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;方案整理如下&quot;&gt;方案整理如下：&lt;/h4&gt;
-
-&lt;p&gt;Step 1：开启电脑上IIS (启用或关闭 Windows功能)。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/33.jpg&quot; width=&quot;30%&quot; /&gt;&lt;/p&gt;
-
-&lt;p style=&quot;margin-top: 55px&quot;&gt;Step 2：当开启成功后，会出现“c:\inetpub\”目录。&lt;br /&gt;此时，电脑浏览器中输入 http://localhost 已经Working。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/35.jpg&quot; width=&quot;25%&quot; /&gt;&lt;/p&gt;
-
-&lt;p style=&quot;margin-top: 55px&quot;&gt;Step 3：为了使同一局域网的其他设备 (如手机) 也可以访问，需在“Windows防火墙允许应用”中选上“万维网服务(HTTP)”。
-&lt;br /&gt;此时，手机浏览器中输入http://192.168.x.x (即电脑的IP地址) 已经Working。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/34.jpg&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
-
-&lt;p style=&quot;margin-top: 55px&quot;&gt;Step 4：回到实际应用，Jekyll Blog &lt;strong&gt;&quot;/_site&quot;下内容 (即编译好的网站)&lt;/strong&gt;，并不在默认的“C:\inetpub\wwwroot\”目录下。
-&lt;br /&gt;因此，需在&lt;strong&gt;&quot;IIS管理器&quot;&lt;/strong&gt;中自行“添加网站”，自行指定端口和网站的目录。
-&lt;br /&gt;添加网站并启动后，此时，手机浏览器中输入http://192.168.x.x:xxx (即电脑的IP地址:自行指定的端口) 已经Working。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/36.jpg&quot; width=&quot;90%&quot; /&gt;&lt;/p&gt;
-
-&lt;p style=&quot;margin-top: 55px&quot;&gt;&lt;font color=&quot;#70ad47&quot;&gt; &lt;strong&gt;Optional Step：启用Windows身份验证 &lt;/strong&gt;&lt;/font&gt;&lt;br /&gt;
-背景：Win10中的IIS，&lt;code&gt;默认启用匿名登录&lt;/code&gt;，即内网中任何机器，无需任何身份验证，直接可浏览网站，带来不便。&lt;/p&gt;
-&lt;p&gt;解决方法：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;临时方法：在&lt;code class=&quot;highlighter-rouge&quot;&gt;IIS管理&lt;/code&gt;中&lt;code class=&quot;highlighter-rouge&quot;&gt;停止服务&lt;/code&gt;。则内网中均不可访问，下次需要时再&lt;code class=&quot;highlighter-rouge&quot;&gt;重新启动服务&lt;/code&gt; (If 设为“停止”，即使电脑重启，IIS服务不会自动enable，除非手动开启)。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;彻底方法：&lt;/strong&gt; &lt;a href=&quot;https://edi.wang/post/2011/8/8/enable-windows-authorization-in-iis7&quot; target=&quot;_blank&quot;&gt;&lt;font color=&quot;#4d8df1&quot; size=&quot;2&quot;&gt;(原出处)&lt;/font&gt;&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;
-    &lt;blockquote&gt;
-      &lt;h5 id=&quot;打开和关闭windows功能-internet信息服务-万维网服务-安全性选择windows身份验证&quot;&gt;打开和关闭Windows功能-&amp;gt;Internet信息服务-&amp;gt;万维网服务-&amp;gt;安全性，选择Windows身份验证。&lt;/h5&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;table style=&quot;width:100%;margin-left: 25px;&quot;&gt;
-    &lt;tbody&gt;
-		&lt;tr class=&quot;firstRow&quot;&gt;
-            &lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;33.3%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
-			&lt;p&gt;安装”Windows身份验证“for IIS。&lt;/p&gt;
-			&lt;a href=&quot;/assets/img/37.jpg&quot; target=&quot;_blank&quot;&gt;			
-			&lt;img src=&quot;/assets/img/37.jpg&quot; width=&quot;90%&quot; /&gt;&lt;/a&gt;	
-            &lt;/td&gt;
-            &lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;33.3%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
-			&lt;p&gt;安装后，打开IIS管理，点击网站的”身份验证“。&lt;/p&gt;
-			&lt;a href=&quot;/assets/img/39.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img src=&quot;/assets/img/39.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;
-            &lt;/td&gt;
-            &lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;33.3%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
-			&lt;p&gt;会发现，界面中已经增加了”Windows身份验证“的选项。&lt;strong&gt;这里将其”启用“即可。&lt;/strong&gt;&lt;br /&gt;(并将“匿名验证“禁用。)&lt;/p&gt;
-			&lt;a href=&quot;/assets/img/38.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img src=&quot;/assets/img/38.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;
-            &lt;/td&gt;			
-        &lt;/tr&gt;
-    &lt;/tbody&gt;			
-&lt;/table&gt;
-
-&lt;p style=&quot;margin-left: 25px;&quot;&gt;此时，回到PC(也是IIS Server)、手机的浏览器，进行浏览，自动弹出&lt;code&gt;身份验证对话框&lt;/code&gt;，So it's Working.&lt;/p&gt;
-
-&lt;table style=&quot;width:100%;margin-left: 25px;&quot;&gt;
-    &lt;tbody&gt;
-		&lt;tr class=&quot;firstRow&quot;&gt;
-            &lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;50%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
-			&lt;p&gt;Browsering From PC/IIS Server&lt;/p&gt;		
-			&lt;img src=&quot;/assets/img/40.jpg&quot; width=&quot;70%&quot; /&gt;	
-            &lt;/td&gt;
-            &lt;td style=&quot;word-break: break-all;background-color: ;&quot; width=&quot;50%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;
-			&lt;p&gt;Browsering From Mobile Device&lt;/p&gt;
-			&lt;img src=&quot;/assets/img/41.jpg&quot; width=&quot;60%&quot; /&gt;
-            &lt;/td&gt;		
-        &lt;/tr&gt;
-    &lt;/tbody&gt;			
-&lt;/table&gt;</content><author><name></name></author><category term="建站" /><summary type="html">局域网内电脑、手机对本地网站的浏览</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;http://www.lrccon.com/convert.php&quot;&gt;&lt;u&gt;Convert Link&lt;/u&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Multimedia" /><summary type="html">字幕格式'srt'转'VTT', 常用格式互转</summary></entry></feed>
