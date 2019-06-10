@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2019-06-10T20:05:18+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">上海社会保障卡</title><link href="http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Shanghai-Social-Security-Card-in-China/" rel="alternate" type="text/html" title="上海社会保障卡" /><published>2019-06-09T21:52:00+08:00</published><updated>2019-06-09T21:52:00+08:00</updated><id>http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Shanghai%20Social%20Security%20Card%20in%20China</id><content type="html" xml:base="http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Shanghai-Social-Security-Card-in-China/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:5000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:5000/" rel="alternate" type="text/html" /><updated>2019-06-10T20:22:49+08:00</updated><id>http://localhost:5000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>Anything would love to share or record.</subtitle><entry><title type="html">Useful Collection for Common Commands</title><link href="http://localhost:5000/tech/Useful-Collection_Common-Commands/" rel="alternate" type="text/html" title="Useful Collection for Common Commands" /><published>2019-06-10T20:12:00+08:00</published><updated>2019-06-10T20:12:00+08:00</updated><id>http://localhost:5000/tech/Useful%20Collection_Common%20Commands</id><content type="html" xml:base="http://localhost:5000/tech/Useful-Collection_Common-Commands/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;5&quot; style=&quot;border-bottom: 3px solid grey;display:block&quot;&gt;Windows OS 命令集&lt;/font&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;1-端口被占用&quot;&gt;1. 端口被占用&lt;/h4&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;如查找4000端口被哪个进程占用了，打开CMD：&lt;code class=&quot;highlighter-rouge&quot;&gt;netstat -aon | findstr &quot;4000&quot;&lt;/code&gt; &lt;br /&gt;找到对应的PID。&lt;/li&gt;
+  &lt;li&gt;打开Windows任务管理器，结束对应PID进程即可。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="命令集" /><category term="Windows_OS" /></entry><entry><title type="html">上海社会保障卡</title><link href="http://localhost:5000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Shanghai-Social-Security-Card-in-China/" rel="alternate" type="text/html" title="上海社会保障卡" /><published>2019-06-09T21:52:00+08:00</published><updated>2019-06-09T21:52:00+08:00</updated><id>http://localhost:5000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Shanghai%20Social%20Security%20Card%20in%20China</id><content type="html" xml:base="http://localhost:5000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Shanghai-Social-Security-Card-in-China/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;关于上海社保卡到底涉及几个密码没有看到官方明确引导文件期间办理相关事宜也是一头雾水经电话咨询和亲测总结如下&quot;&gt;关于上海社保卡到底涉及几个密码，没有看到官方明确引导文件，期间办理相关事宜也是一头雾水，经电话咨询和亲测，总结如下：&lt;/h4&gt;
 
@@ -128,7 +138,7 @@
 			&lt;/td&gt;			
         &lt;/tr&gt;		
     &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><category term="公共事业服务" /><summary type="html">上海社保卡/社保账户, 涉及的密码</summary></entry><entry><title type="html">Android MultiUser &amp;amp; Clone App</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&-Clone-App/" rel="alternate" type="text/html" title="Android MultiUser &amp; Clone App" /><published>2019-06-02T03:25:00+08:00</published><updated>2019-06-02T03:25:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod%20Multiuser%20&amp;%20Clone%20App</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&amp;-Clone-App/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/table&gt;</content><author><name></name></author><category term="公共事业服务" /><summary type="html">上海社保卡/社保账户, 涉及的密码</summary></entry><entry><title type="html">Android MultiUser &amp;amp; Clone App</title><link href="http://localhost:5000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&-Clone-App/" rel="alternate" type="text/html" title="Android MultiUser &amp; Clone App" /><published>2019-06-02T03:25:00+08:00</published><updated>2019-06-02T03:25:00+08:00</updated><id>http://localhost:5000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod%20Multiuser%20&amp;%20Clone%20App</id><content type="html" xml:base="http://localhost:5000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&amp;-Clone-App/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;note-以下经验为亲测原创一方面作为日常总结纪录另分享给有兴趣的人&quot;&gt;Note: 以下经验为亲测原创，一方面作为日常总结纪录，另分享给有兴趣的人。&lt;/h4&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -207,7 +217,7 @@
       &lt;li&gt;主程序更新后，&lt;code class=&quot;highlighter-rouge&quot;&gt;App Cloner&lt;/code&gt;会提醒”克隆程序有更新&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="Android" /><category term="MultiUser&amp;CloneApp" /><summary type="html">安卓多用户、克隆App</summary></entry><entry><title type="html">Storage Rediect</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E6%90%AC%E8%BF%90/Storage-Redirect/" rel="alternate" type="text/html" title="Storage Rediect" /><published>2019-05-30T00:26:00+08:00</published><updated>2019-05-30T00:26:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E6%90%AC%E8%BF%90/Storage%20Redirect</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E6%90%AC%E8%BF%90/Storage-Redirect/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="Android" /><category term="MultiUser&amp;CloneApp" /><summary type="html">安卓多用户、克隆App</summary></entry><entry><title type="html">Storage Rediect</title><link href="http://localhost:5000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E6%90%AC%E8%BF%90/Storage-Redirect/" rel="alternate" type="text/html" title="Storage Rediect" /><published>2019-05-30T00:26:00+08:00</published><updated>2019-05-30T00:26:00+08:00</updated><id>http://localhost:5000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E6%90%AC%E8%BF%90/Storage%20Redirect</id><content type="html" xml:base="http://localhost:5000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E6%90%AC%E8%BF%90/Storage-Redirect/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;APK 软件名：&lt;code class=&quot;highlighter-rouge&quot;&gt;Storage Redirect 存储重定向&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -223,7 +233,7 @@
   &lt;li&gt;A、B共用一个copy，占有一份存储空间；&lt;/li&gt;
   &lt;li&gt;当删除B时，A自动删除；反之，当删除A时，B不影响 (即B为主存位置，A为”从”)；&lt;/li&gt;
   &lt;li&gt;当卸载对应app时，其对应隔离空间完全被删除，包括A；而内置存储空间中的B，不受影响。&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="Android" /><category term="StorageManagement" /><summary type="html">安卓存储空间管理</summary></entry><entry><title type="html">Data Backup/Restore for OnePlus Mobile</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/OnePlus-Mobile-Backup/" rel="alternate" type="text/html" title="Data Backup/Restore for OnePlus Mobile" /><published>2019-05-28T21:14:00+08:00</published><updated>2019-05-28T21:14:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/OnePlus%20Mobile%20Backup</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/OnePlus-Mobile-Backup/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Android" /><category term="StorageManagement" /><summary type="html">安卓存储空间管理</summary></entry><entry><title type="html">Data Backup/Restore for OnePlus Mobile</title><link href="http://localhost:5000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/OnePlus-Mobile-Backup/" rel="alternate" type="text/html" title="Data Backup/Restore for OnePlus Mobile" /><published>2019-05-28T21:14:00+08:00</published><updated>2019-05-28T21:14:00+08:00</updated><id>http://localhost:5000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/OnePlus%20Mobile%20Backup</id><content type="html" xml:base="http://localhost:5000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/OnePlus-Mobile-Backup/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;一加手机自带备份恢复软件&lt;code class=&quot;highlighter-rouge&quot;&gt;BanckupRestore 一加搬家&lt;/code&gt;, 可用来：&lt;/p&gt;
 
@@ -236,7 +246,7 @@
 &lt;p&gt;&lt;br /&gt;
 因此，&lt;a href=&quot;https://www.apkmirror.com/apk/titanium-track/titanium-backup/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Titanium 钛备份&lt;/code&gt;&lt;/a&gt; + &lt;a href=&quot;https://www.apkmirror.com/apk/oneplus-ltd/oneplus-switch/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;BanckupRestore 一加搬家&lt;/code&gt;&lt;/a&gt;可完美互补。&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Titanium 钛备份&lt;/code&gt;完美支持应用程序包含其数据配置的备份和恢复。&lt;/p&gt;</content><author><name></name></author><category term="OS" /><summary type="html">一加手机资料备份</summary></entry><entry><title type="html">Arba Cryptocurrency Wallet</title><link href="http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba-Cryptocurrency-Wallet/" rel="alternate" type="text/html" title="Arba Cryptocurrency Wallet" /><published>2019-05-04T23:14:00+08:00</published><updated>2019-05-04T23:14:00+08:00</updated><id>http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba%20Cryptocurrency%20Wallet</id><content type="html" xml:base="http://localhost:8000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba-Cryptocurrency-Wallet/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Titanium 钛备份&lt;/code&gt;完美支持应用程序包含其数据配置的备份和恢复。&lt;/p&gt;</content><author><name></name></author><category term="OS" /><summary type="html">一加手机资料备份</summary></entry><entry><title type="html">Arba Cryptocurrency Wallet</title><link href="http://localhost:5000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba-Cryptocurrency-Wallet/" rel="alternate" type="text/html" title="Arba Cryptocurrency Wallet" /><published>2019-05-04T23:14:00+08:00</published><updated>2019-05-04T23:14:00+08:00</updated><id>http://localhost:5000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba%20Cryptocurrency%20Wallet</id><content type="html" xml:base="http://localhost:5000/life/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Arba-Cryptocurrency-Wallet/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;like--recommend-this-arba-bitcoin-wallet-以下整理为原创&quot;&gt;&lt;strong&gt;Like &amp;amp; recommend this “Arba bitcoin wallet”. 以下整理为原创。&lt;/strong&gt;&lt;/h4&gt;
 
@@ -376,7 +386,7 @@
   &lt;li&gt;&lt;a href=&quot;https://www.abra.com/blog/noncustodialwallet/&quot;&gt;How non-custodial wallets let you be your own bank&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.abra.com/blog/&quot;&gt;Abra Blog&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.abra.com&quot;&gt;Abra Homepage&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="newBank" /><category term="Cryptocurrency" /><summary type="html">Arba数字货币钱包</summary></entry><entry><title type="html">Weston Union</title><link href="http://localhost:8000/life/Weston-Union/" rel="alternate" type="text/html" title="Weston Union" /><published>2019-05-01T02:04:00+08:00</published><updated>2019-05-01T02:04:00+08:00</updated><id>http://localhost:8000/life/Weston%20Union</id><content type="html" xml:base="http://localhost:8000/life/Weston-Union/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="newBank" /><category term="Cryptocurrency" /><summary type="html">Arba数字货币钱包</summary></entry><entry><title type="html">Weston Union</title><link href="http://localhost:5000/life/Weston-Union/" rel="alternate" type="text/html" title="Weston Union" /><published>2019-05-01T02:04:00+08:00</published><updated>2019-05-01T02:04:00+08:00</updated><id>http://localhost:5000/life/Weston%20Union</id><content type="html" xml:base="http://localhost:5000/life/Weston-Union/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;中国邮政储蓄银行的手机银行，已支持在线国际收发汇 - &lt;code class=&quot;highlighter-rouge&quot;&gt;国际速汇&lt;/code&gt;，包括&lt;code class=&quot;highlighter-rouge&quot;&gt;西联汇款&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;速汇金汇款&lt;/code&gt;。&lt;/p&gt;
 
@@ -420,7 +430,7 @@
 			&lt;/td&gt;			
         &lt;/tr&gt;			
     &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><category term="Bank" /><summary type="html">中国发汇</summary></entry><entry><title type="html">Cryptomator v1.49 Error Unlock Issue</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Cryptomator-Error-Unlock-Issue/" rel="alternate" type="text/html" title="Cryptomator v1.49 Error Unlock Issue" /><published>2019-04-29T20:07:00+08:00</published><updated>2019-04-29T20:07:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Cryptomator%20Error%20Unlock%20Issue</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Cryptomator-Error-Unlock-Issue/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/table&gt;</content><author><name></name></author><category term="Bank" /><summary type="html">中国发汇</summary></entry><entry><title type="html">Cryptomator v1.49 Error Unlock Issue</title><link href="http://localhost:5000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Cryptomator-Error-Unlock-Issue/" rel="alternate" type="text/html" title="Cryptomator v1.49 Error Unlock Issue" /><published>2019-04-29T20:07:00+08:00</published><updated>2019-04-29T20:07:00+08:00</updated><id>http://localhost:5000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Cryptomator%20Error%20Unlock%20Issue</id><content type="html" xml:base="http://localhost:5000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Cryptomator-Error-Unlock-Issue/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;1-无法解锁&quot;&gt;&lt;strong&gt;1. 无法解锁&lt;/strong&gt;&lt;/h3&gt;
 
@@ -524,7 +534,7 @@ org.cryptomator.ui.model.Volume$VolumeException: org.cryptomator.frontend.webdav
   &lt;li&gt;&lt;a href=&quot;https://cryptomator.org/downloads/#winDownload&quot;&gt;Cryptomator 官网&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://dl.bintray.com/cryptomator/cryptomator/1.4.9/Cryptomator-1.4.9-x64.exe&quot;&gt;Cryptomator-1.4.9-x64&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/cryptomator/cryptomator/releases/download/1.4.2/Cryptomator-1.4.2-x64.exe&quot;&gt;Cryptomator-1.4.2-x64&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="Secure" /><summary type="html">Cryptomator v1.49 解锁失败的原因和解决方法</summary></entry><entry><title type="html">SMB(v2) File Share</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SMB-File-Share/" rel="alternate" type="text/html" title="SMB(v2) File Share" /><published>2019-04-23T03:32:00+08:00</published><updated>2019-04-23T03:32:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SMB%20File%20Share</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SMB-File-Share/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Secure" /><summary type="html">Cryptomator v1.49 解锁失败的原因和解决方法</summary></entry><entry><title type="html">SMB(v2) File Share</title><link href="http://localhost:5000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SMB-File-Share/" rel="alternate" type="text/html" title="SMB(v2) File Share" /><published>2019-04-23T03:32:00+08:00</published><updated>2019-04-23T03:32:00+08:00</updated><id>http://localhost:5000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SMB%20File%20Share</id><content type="html" xml:base="http://localhost:5000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SMB-File-Share/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p style=&quot;margin-top:20px;margin-bottom:10px;font-weight:bold;font-size:20px;&quot;&gt;背景&lt;/p&gt;
 &lt;p&gt;随着Windows 10日常升级，安全因素，SMB(v1)已经默认被微软禁用，instead，启用SMB(v2)。&lt;/p&gt;
@@ -592,7 +602,7 @@ org.cryptomator.ui.model.Volume$VolumeException: org.cryptomator.frontend.webdav
       &lt;li&gt;『建议』: 最大灵活性，可赋予”指定用户“对&lt;code class=&quot;highlighter-rouge&quot;&gt;SharedFile的读写权限&lt;/code&gt;。&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="OS" /><summary type="html">SOHO LAN 跨设备件文件共享</summary></entry><entry><title type="html">Links - Wonderful Spiritual Video/Audio</title><link href="http://localhost:8000/life/%E6%90%AC%E8%BF%90/Wonderful-Spirit-Multimedia-(links)/" rel="alternate" type="text/html" title="Links - Wonderful Spiritual Video/Audio" /><published>2019-04-11T23:46:00+08:00</published><updated>2019-04-11T23:46:00+08:00</updated><id>http://localhost:8000/life/%E6%90%AC%E8%BF%90/Wonderful%20Spirit%20Multimedia%20(links)</id><content type="html" xml:base="http://localhost:8000/life/%E6%90%AC%E8%BF%90/Wonderful-Spirit-Multimedia-(links)/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="OS" /><summary type="html">SOHO LAN 跨设备件文件共享</summary></entry><entry><title type="html">Links - Wonderful Spiritual Video/Audio</title><link href="http://localhost:5000/life/%E6%90%AC%E8%BF%90/Wonderful-Spirit-Multimedia-(links)/" rel="alternate" type="text/html" title="Links - Wonderful Spiritual Video/Audio" /><published>2019-04-11T23:46:00+08:00</published><updated>2019-04-11T23:46:00+08:00</updated><id>http://localhost:5000/life/%E6%90%AC%E8%BF%90/Wonderful%20Spirit%20Multimedia%20(links)</id><content type="html" xml:base="http://localhost:5000/life/%E6%90%AC%E8%BF%90/Wonderful-Spirit-Multimedia-(links)/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;All Source from web. Here is a collection of the original video/audio, thanks for these lovely creations!&lt;br /&gt;
 If infringement occurs, please contact FB: &lt;a href=&quot;https://www.facebook.com/zzmorl&quot;&gt;zzmorl&lt;/a&gt;  for deletion.&lt;/em&gt;
@@ -666,21 +676,4 @@ If infringement occurs, please contact FB: &lt;a href=&quot;https://www.facebook
             &lt;/td&gt;			
 		&lt;/tr&gt;	
     &lt;/tbody&gt;			
-&lt;/table&gt;</content><author><name></name></author><category term="Spirit" /></entry><entry><title type="html">Subtitles Convert</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/SRT-to-VTT/" rel="alternate" type="text/html" title="Subtitles Convert" /><published>2019-04-11T00:00:00+08:00</published><updated>2019-04-11T00:00:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/SRT%20to%20VTT</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/SRT-to-VTT/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p style=&quot;margin-top:20px;margin-bottom:10px;font-weight:bold;&quot;&gt;1. 在线转换：SRT-To-WebVTT&lt;/p&gt;
-&lt;p&gt;背景：一般下载的字幕多为&lt;code&gt;.srt&lt;/code&gt;文件, 而 html5 &amp;lt;video&amp;gt; 标签支持的字幕文件为&lt;code&gt;.vtt&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.webvtt.org/&quot;&gt;&lt;u&gt;Converting SRT files to WebVTT files&lt;/u&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;转换完成后，复制另存为”.vtt”文件即可。&lt;/p&gt;
-
-&lt;p&gt;Html代码 &amp;lt;video&amp;gt; 标签中，增加 &amp;lt;track&amp;gt; 子标签，用于加载&lt;code class=&quot;highlighter-rouge&quot;&gt;vtt&lt;/code&gt;字幕，如：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;video id=&quot;video&quot; controls=&quot;&quot; preload=&quot;none&quot; poster=&quot;&quot;&amp;gt;&amp;lt;source id=&quot;mp4&quot; style=&quot;width: ;height:;&quot; src=&quot;/xxx/sample.mp4&quot; type=&quot;video/mp4&quot;&amp;gt;&amp;lt;track src=&quot;/xxx/sample.vtt&quot; kind=&quot;subtitles&quot; srclang=&quot;cn&quot; label=&quot;中文&quot;&amp;gt;&amp;lt;/video&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;strong&gt;2. 在线转换：常用格式互转&lt;/strong&gt; 
-&lt;br /&gt;(LRC/SRT/UTF/KSC/SSA/ASS/SMI-To-LRC/SRT/UTF/KSC/SSA/ASS/SMI/SNC/TXT)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.lrccon.com/convert.php&quot;&gt;&lt;u&gt;Convert Link&lt;/u&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Multimedia" /><summary type="html">字幕格式'srt'转'VTT', 常用格式互转</summary></entry></feed>
+&lt;/table&gt;</content><author><name></name></author><category term="Spirit" /></entry></feed>
