@@ -297,8 +297,9 @@ table {
   width: calc(62% - (30px / 2)); }
   
   .footer-col-5 {
-  width: -webkit-calc(62% - (30px / 2));
-  width: calc(62% - (30px / 2)); 
+  width: -webkit-calc(68% - (30px / 2));
+  width: calc(68% - (30px / 2));
+  margin-right: -10px;  
   margin-top: -9px;}  
 
 @media screen and (max-width: 800px) {
