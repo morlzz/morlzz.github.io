@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8080/feed.xml" title="Morgan Zhao's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Morgan Zhao&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/Search/">Search</a><a class="page-link" href="/tags/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">  
+    <h1 class="post-title p-name" itemprop="name headline">Cryptomator v1.49 Error Unlock Issue</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-04-29T20:07:00+08:00" itemprop="datePublished">Apr 29, 2019
+      </time></p>
+
+
+<div class="post-categories">
+  
+  
+<span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Category▸&nbsp;</em></strong></span>   
+  
+  
+  <a href="/categories/#Tech">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Tech</em></strong></span>     
+  </a>  
+  &nbsp;
+  
+  <a href="/categories/#个人经验分享">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>个人经验分享</em></strong></span>     
+  </a>  
+  
+  
+</div>
+
+
+<div class="post-tags">
+    
+
+<span style="font-size: 13px; color: #6d9eeb;"><strong><em>Tag▸&nbsp;</em></strong></span> 
+  
+  
+  <a href="/tags/#Secure">
+     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>Secure</em></strong></span>  
+  </a>
+  
+  
+</div>
+
+<span style="font-size:; color: rgb(127, 127, 127);"><strong><em><p><p/>Abstract&nbsp;▹
+    Cryptomator v1.49 解锁失败的原因和解决方法</em></strong></span>
+
+  </header>
+
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><br /></p>
+
+<h3 id="1-无法解锁"><strong>1. 无法解锁</strong></h3>
+
+<p><span style="border-bottom: 1px solid grey;display:block;margin-bottom: 20px;margin-top: 20px"></span>
+<img src="/assets/img/46.jpg" width="58%" /></p>
+
+<p><br /></p>
+<h3 id="2-原因分析"><strong>2. 原因分析</strong></h3>
+
+<p><span style="border-bottom: 1px solid grey;display:block;margin-bottom: 20px;margin-top: 20px"></span></p>
+
+<h4 id="卷类型选用webdav时错误log如下-win10查看位置appdatacryptomator">卷类型选用<strong>“WebDAV”</strong>时，错误log如下 <em>(Win10查看位置：%AppData%/Cryptomator)：</em></h4>
+
+<p><img src="/assets/img/42.jpg" width="35%" /></p>
+
+<h4 id="主要原因194055153-javafx-application-thread-error-ocuicontrollersunlockcontroller---unlock-failed-for-technical-reasons">主要原因：<br />19:40:55.153 [JavaFX Application Thread] ERROR o.c.ui.controllers.UnlockController - <strong>Unlock failed for technical reasons.</strong></h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>19:40:30.916 [main] INFO  org.cryptomator.launcher.Cryptomator - Starting Cryptomator 1.4.9 on Windows 10 10.0 (amd64)
+19:40:31.322 [main] INFO  o.c.launcher.IpcProtocolImpl - Received launch args: 
+19:40:31.619 [JavaFX Application Thread] INFO  org.cryptomator.launcher.Cryptomator - JavaFX application started.
+19:40:31.779 [JavaFX Application Thread] INFO  org.cryptomator.jni.JniModule - loaded WinFunctions.dll
+19:40:31.821 [JavaFX Application Thread] INFO  o.c.ui.controllers.MainController - Unable to setPreferencesHandler, probably not supported on this OS.
+19:40:33.538 [JavaFX Application Thread] INFO  o.c.ui.controllers.WelcomeController - Current version: 1.4.9, lastest version: 1.4.9
+19:40:37.968 [pool-1-thread-1] INFO  o.c.common.settings.SettingsProvider - Settings saved to C:\Users\...\AppData\Roaming\Cryptomator\settings.json
+19:40:45.581 [JavaFX Application Thread] INFO  o.c.k.WindowsProtectedKeychainAccess - Unable to load existing keychain file, creating new keychain.
+19:40:54.775 [Background Thread 2] INFO  org.eclipse.jetty.util.log - Logging initialized @28172ms to org.eclipse.jetty.util.log.Slf4jLog
+19:40:54.843 [Background Thread 2] INFO  o.c.frontend.webdav.WebDavServer - Binding server socket to 127.0.0.1:42427
+19:40:54.866 [Background Thread 2] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3ad5e485{HTTP/1.1,[http/1.1]}{127.0.0.1:42427}
+19:40:54.869 [Background Thread 2] INFO  org.eclipse.jetty.server.Server - jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 11.0.2+7
+19:40:54.894 [Background Thread 2] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3ab9380d{/,null,AVAILABLE}
+19:40:54.894 [Background Thread 2] INFO  org.eclipse.jetty.server.Server - Started @28292ms
+19:40:54.894 [Background Thread 2] INFO  o.c.frontend.webdav.WebDavServer - WebDavServer started.
+19:40:54.926 [Background Thread 2] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+19:40:54.926 [Background Thread 2] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+19:40:54.927 [Background Thread 2] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+19:40:54.933 [Background Thread 2] INFO  o.a.j.w.server.AbstractWebdavServlet - authenticate-header = Basic realm="Jackrabbit Webdav Server"
+19:40:54.934 [Background Thread 2] INFO  o.a.j.w.server.AbstractWebdavServlet - csrf-protection = null
+19:40:54.934 [Background Thread 2] INFO  o.a.j.w.server.AbstractWebdavServlet - createAbsoluteURI = true
+19:40:54.935 [Background Thread 2] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@...{/...,null,AVAILABLE}
+19:40:54.935 [Background Thread 2] INFO  o.c.f.w.s.WebDavServletController - WebDavServlet started: /...
+19:40:54.936 [Background Thread 2] INFO  o.c.f.w.s.WebDavServletController - Mounting http://cryptomator-vault:42427/... using org.cryptomator.frontend.webdav.mount.WindowsMounter
+19:40:55.153 [JavaFX Application Thread] ERROR o.c.ui.controllers.UnlockController - Unlock failed for technical reasons.
+org.cryptomator.ui.model.Volume$VolumeException: org.cryptomator.frontend.webdav.mount.Mounter$CommandFailedException: Command failed with exit code 2. Expected 0. Stderr: ?????????? 53??
+</code></pre></div></div>
+
+<h4 id="卷类型选用dokany时成功log如下">卷类型选用<strong>“Dokany”</strong>时，成功log如下：</h4>
+
+<h4 id="noteunable-to-setpreferenceshandlerunable-to-load-existing-keychain-file-都不是解锁失败的直接原因">Note：<br /><strong>Unable to setPreferencesHandler</strong>、<strong>Unable to load existing keychain file</strong> 都不是”解锁失败”的直接原因。</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>19:51:43.294 [main] INFO  org.cryptomator.launcher.Cryptomator - Starting Cryptomator 1.4.9 on Windows 10 10.0 (amd64)
+19:51:43.684 [main] INFO  o.c.launcher.IpcProtocolImpl - Received launch args: 
+19:51:43.950 [JavaFX Application Thread] INFO  org.cryptomator.launcher.Cryptomator - JavaFX application started.
+19:51:44.083 [JavaFX Application Thread] INFO  org.cryptomator.jni.JniModule - loaded WinFunctions.dll
+19:51:44.125 [JavaFX Application Thread] INFO  o.c.ui.controllers.MainController - Unable to setPreferencesHandler, probably not supported on this OS.
+19:51:45.591 [JavaFX Application Thread] INFO  o.c.ui.controllers.WelcomeController - Current version: 1.4.9, lastest version: 1.4.9
+19:51:46.405 [JavaFX Application Thread] INFO  o.c.k.WindowsProtectedKeychainAccess - Unable to load existing keychain file, creating new keychain.
+19:51:52.805 [Background Thread 2] INFO  com.dokany.java.DokanyDriver - Dokany version: 100
+19:51:52.805 [Background Thread 2] INFO  com.dokany.java.DokanyDriver - Dokany driver version: 400
+</code></pre></div></div>
+
+<h3 id="所以出错原因在于卷类型选用dokany即可而webdav会出错"><strong>所以，出错原因在于：卷类型选用”Dokany”即可，而”WebDAV”会出错。</strong></h3>
+
+<p><br /></p>
+<h3 id="3-解决方法安装-dokany-driver"><strong>3. 解决方法：安装 Dokany Driver</strong></h3>
+
+<p><span style="border-bottom: 1px solid grey;display:block;margin-bottom: 20px;margin-top: 20px"></span></p>
+
+<p>默认最新版v1.4.9安装包中，不包含<code class="highlighter-rouge">Dokany driver</code>，建议先行安装v1.4.2 (inc. Dokany Library)后，再升级为 Cryptomator v1.4.9。</p>
+
+<table style="width:100%;">
+    <tbody>
+        <tr class="firstRow">	
+            <td width="33.3%" align="center">
+			直接安装v1.4.9，缺少"Dokany driver"。
+			</td>
+            <td width="66.6%" align="center" rowspan="1" colspan="2">
+			先安装v1.4.2后，"Dokany driver"可用。继而再升级为v1.4.9。
+			</td>				
+        </tr>	
+        <tr class="firstRow">	
+            <td width="33.3%" align="center">
+			<img src="/assets/img/43.jpg" width="100%" />
+			</td>
+			<td width="33.3%" align="center">
+			<img src="/assets/img/47.jpg" width="95%" />
+			</td>	
+            <td width="33.3%" align="center">
+			<img src="/assets/img/44.jpg" width="100%" />
+			</td>				
+        </tr>			
+    </tbody>
+</table>
+
+<p>此外，还需安装Dokany Driver 依赖包 - <code class="highlighter-rouge">Microsoft Visual C++ Redistributable for Visual Studio 2017</code>。</p>
+
+<p><img src="/assets/img/45.jpg" width="30%" /></p>
+
+<p>相关Links:</p>
+
+<ul>
+  <li><a href="https://cryptomator.org/downloads/#winDownload">Cryptomator 官网</a></li>
+  <li><a href="https://dl.bintray.com/cryptomator/cryptomator/1.4.9/Cryptomator-1.4.9-x64.exe">Cryptomator-1.4.9-x64</a></li>
+  <li><a href="https://github.com/cryptomator/cryptomator/releases/download/1.4.2/Cryptomator-1.4.2-x64.exe">Cryptomator-1.4.2-x64</a></li>
+</ul>
+
+  </div><a class="u-url" href="/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Cryptomator-Error-Unlock-Issue/" hidden></a>
+    
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Morgan Zhao&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name"><a href="/">Morgan Zhao&#39;s Blog</a></li><li>FB：<a href="https://www.facebook.com/zzmorl"><span class="username">zzmorl</span></a></li></ul>
+      </div>
+
+<!--
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/zzmorl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">zzmorl</span></a></li></ul>
+</div>  
+
+      <div class="footer-col footer-col-3">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+-->
+	  
+	  <div class="footer-col footer-col-4">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+	  
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
+
