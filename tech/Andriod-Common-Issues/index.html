@@ -64,7 +64,7 @@
 </div>
 
 <span style="font-size:; color: rgb(127, 127, 127);"><strong><em><p><p/>Abstract&nbsp;▹
-    锁屏码/支付宝指纹验证问题/银行App绕过Root检测/Data分区清空/安卓多用户/墙内使用谷歌服务...</em></strong></span>
+    锁屏码/支付宝指纹验证问题/银行App绕过Root检测/Data分区清空/安卓多用户、及多用户下Magisk/EdXosed/Xposed生效问题/墙内使用Google...</em></strong></span>
 
   </header>
 
@@ -76,7 +76,7 @@ Keywords:
 <a href="#keyword2">支付宝指纹验证问题</a>，
 <a href="#keyword3">银行App绕过Root检测</a>， 
 <a href="#keyword4">Data分区清空后成功完成TWRP Restore的方法</a>，
-<a href="#keyword5">安卓多用户&amp;克隆App&amp;应用双开</a>，
+<a href="#keyword5">安卓多用户&amp;克隆App&amp;应用双开、多用户下Magisk/EdXosed/Xposed生效问题</a>，
 <a href="#keyword6">墙内使用Google服务</a>
 </p>
 
@@ -128,7 +128,7 @@ rm /data/system/gatekeeper.pattern.key
       <li>子系统有自己专门的gatekeeper：在/data/system/users下。</li>
     </ul>
   </li>
-  <li>『<strong>Be Careful!</strong>』设置指纹验证的部分App (如 <strong>Alipay</strong>)，和”locksettings”文件深度绑定，如果Alipay在<strong>未提前取消指纹设置</strong>情况下，<strong>贸然</strong>删除”locksettings”文件 (或是贸然重新系统)，则Alipay指纹验证会进入死循环，无解。
+  <li>『<strong>Be Careful!</strong>』设置指纹验证的部分App (如 <strong>Alipay</strong>)，和”locksettings”文件深度绑定，如果Alipay在<strong>未提前取消指纹设置</strong>情况下，<strong>贸然</strong>删除”locksettings”文件 (或是贸然重刷系统)，则Alipay指纹验证会进入死循环，无解。
     <ul>
       <li>只能 TWRP Restore 原系统，进入系统后，将 Alipay 的指纹设置取消。尔后，Alipay 才能成功接受新的指纹验证。</li>
     </ul>
@@ -242,6 +242,10 @@ rm /data/system/gatekeeper.pattern.key
 
 <p style="margin-top: -25px;">&emsp;</p>
 <h4 id="安卓多用户克隆app"><a href="/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&amp;-Clone-App/">安卓多用户、克隆App</a></h4>
+
+<blockquote>
+  <p>安卓多用户、克隆App、多用户下Magisk/EdXosed/Xposed生效问题。</p>
+</blockquote>
 
 <p><br /></p>
 <p id="keyword6"><font color="purple" size="5" style="border-bottom: 2px solid grey;display:block">5. 墙内如何使用Google服务 </font></p>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8080/" rel="alternate" type="text/html" /><updated>2019-06-25T20:39:27+08:00</updated><id>http://localhost:8080/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">萌宠</title><link href="http://localhost:8080/pet/Pet-OThers/" rel="alternate" type="text/html" title="萌宠" /><published>2019-06-25T20:03:00+08:00</published><updated>2019-06-25T20:03:00+08:00</updated><id>http://localhost:8080/pet/Pet-OThers</id><content type="html" xml:base="http://localhost:8080/pet/Pet-OThers/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8080/" rel="alternate" type="text/html" /><updated>2019-06-28T15:05:25+08:00</updated><id>http://localhost:8080/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">萌宠</title><link href="http://localhost:8080/pet/Pet-OThers/" rel="alternate" type="text/html" title="萌宠" /><published>2019-06-25T20:03:00+08:00</published><updated>2019-06-25T20:03:00+08:00</updated><id>http://localhost:8080/pet/Pet-OThers</id><content type="html" xml:base="http://localhost:8080/pet/Pet-OThers/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4 id=&quot;1-很憨厚的小黄定期增产报国2次年平均每次6只小狗狗奇怪和隔壁的小黑死对头&quot;&gt;1. 很憨厚的小黄，定期增产报国，2次/年，平均每次6只小狗狗。奇怪，和隔壁的小黑死对头。&lt;/h4&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/16.jpg&quot; width=&quot;50%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -88,7 +88,7 @@ Keywords:
 &lt;a href=&quot;#keyword2&quot;&gt;支付宝指纹验证问题&lt;/a&gt;，
 &lt;a href=&quot;#keyword3&quot;&gt;银行App绕过Root检测&lt;/a&gt;， 
 &lt;a href=&quot;#keyword4&quot;&gt;Data分区清空后成功完成TWRP Restore的方法&lt;/a&gt;，
-&lt;a href=&quot;#keyword5&quot;&gt;安卓多用户&amp;amp;克隆App&amp;amp;应用双开&lt;/a&gt;，
+&lt;a href=&quot;#keyword5&quot;&gt;安卓多用户&amp;amp;克隆App&amp;amp;应用双开、多用户下Magisk/EdXosed/Xposed生效问题&lt;/a&gt;，
 &lt;a href=&quot;#keyword6&quot;&gt;墙内使用Google服务&lt;/a&gt;
 &lt;/p&gt;
 
@@ -140,7 +140,7 @@ rm /data/system/gatekeeper.pattern.key
       &lt;li&gt;子系统有自己专门的gatekeeper：在/data/system/users下。&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;『&lt;strong&gt;Be Careful!&lt;/strong&gt;』设置指纹验证的部分App (如 &lt;strong&gt;Alipay&lt;/strong&gt;)，和”locksettings”文件深度绑定，如果Alipay在&lt;strong&gt;未提前取消指纹设置&lt;/strong&gt;情况下，&lt;strong&gt;贸然&lt;/strong&gt;删除”locksettings”文件 (或是贸然重新系统)，则Alipay指纹验证会进入死循环，无解。
+  &lt;li&gt;『&lt;strong&gt;Be Careful!&lt;/strong&gt;』设置指纹验证的部分App (如 &lt;strong&gt;Alipay&lt;/strong&gt;)，和”locksettings”文件深度绑定，如果Alipay在&lt;strong&gt;未提前取消指纹设置&lt;/strong&gt;情况下，&lt;strong&gt;贸然&lt;/strong&gt;删除”locksettings”文件 (或是贸然重刷系统)，则Alipay指纹验证会进入死循环，无解。
     &lt;ul&gt;
       &lt;li&gt;只能 TWRP Restore 原系统，进入系统后，将 Alipay 的指纹设置取消。尔后，Alipay 才能成功接受新的指纹验证。&lt;/li&gt;
     &lt;/ul&gt;
@@ -255,12 +255,16 @@ rm /data/system/gatekeeper.pattern.key
 &lt;p style=&quot;margin-top: -25px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 &lt;h4 id=&quot;安卓多用户克隆app&quot;&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&amp;amp;-Clone-App/&quot;&gt;安卓多用户、克隆App&lt;/a&gt;&lt;/h4&gt;
 
+&lt;blockquote&gt;
+  &lt;p&gt;安卓多用户、克隆App、多用户下Magisk/EdXosed/Xposed生效问题。&lt;/p&gt;
+&lt;/blockquote&gt;
+
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p id=&quot;keyword6&quot;&gt;&lt;font color=&quot;purple&quot; size=&quot;5&quot; style=&quot;border-bottom: 2px solid grey;display:block&quot;&gt;5. 墙内如何使用Google服务 &lt;/font&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;墙内使用google服务&quot;&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Use-Google-Services-in-China/&quot;&gt;墙内使用Google服务&lt;/a&gt;&lt;/h4&gt;
 
-&lt;h4 id=&quot;其中翻墙部分目前推荐使用wireguardwireguard&quot;&gt;其中翻墙部分，目前推荐使用Wireguard：&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/WireGuard-Quick-Install-Script/&quot;&gt;WireGuard&lt;/a&gt;&lt;/h4&gt;</content><author><name></name></author><category term="OS" /><category term="Andriod" /><summary type="html">锁屏码/支付宝指纹验证问题/银行App绕过Root检测/Data分区清空/安卓多用户/墙内使用谷歌服务...</summary></entry><entry><title type="html">各系统命令集汇总</title><link href="http://localhost:8080/tech/Useful-Collection_Common-Commands/" rel="alternate" type="text/html" title="各系统命令集汇总" /><published>2019-06-10T20:12:00+08:00</published><updated>2019-06-10T20:12:00+08:00</updated><id>http://localhost:8080/tech/Useful%20Collection_Common%20Commands</id><content type="html" xml:base="http://localhost:8080/tech/Useful-Collection_Common-Commands/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;其中翻墙部分目前推荐使用wireguardwireguard&quot;&gt;其中翻墙部分，目前推荐使用Wireguard：&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/WireGuard-Quick-Install-Script/&quot;&gt;WireGuard&lt;/a&gt;&lt;/h4&gt;</content><author><name></name></author><category term="OS" /><category term="Andriod" /><summary type="html">锁屏码/支付宝指纹验证问题/银行App绕过Root检测/Data分区清空/安卓多用户、及多用户下Magisk/EdXosed/Xposed生效问题/墙内使用Google...</summary></entry><entry><title type="html">各系统命令集汇总</title><link href="http://localhost:8080/tech/Useful-Collection_Common-Commands/" rel="alternate" type="text/html" title="各系统命令集汇总" /><published>2019-06-10T20:12:00+08:00</published><updated>2019-06-10T20:12:00+08:00</updated><id>http://localhost:8080/tech/Useful%20Collection_Common%20Commands</id><content type="html" xml:base="http://localhost:8080/tech/Useful-Collection_Common-Commands/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;5&quot; style=&quot;border-bottom: 3px solid grey;display:block&quot;&gt;Windows OS 命令集&lt;/font&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;1-端口被占用&quot;&gt;1. 端口被占用&lt;/h4&gt;
@@ -377,7 +381,7 @@ rm /data/system/gatekeeper.pattern.key
       &lt;li&gt;
         &lt;font color=&quot;#ed4e4e&quot;&gt;BUG!当医保密码在&quot;上海医保网&quot;更改后，无法被&quot;962218医保电话平台、上海人社App、医保中心/街道社区事务&quot;验证。&lt;/font&gt;
         &lt;ul&gt;
-          &lt;li&gt;该ISSUE已反馈给12333，何时解决未知。(另，12333反馈：上海医保网网站事宜，由”上海市医疗保险信息中心”-转”信息科”处理，总机 021-62558001。)&lt;/li&gt;
+          &lt;li&gt;该ISSUE已反馈给962218热线，何时解决未知。(另，12333反馈：上海医保网网站事宜，由”上海市医疗保险信息中心”-转”信息科”处理，总机 021-62558001。)&lt;/li&gt;
           &lt;li&gt;目前解决方案：医保中心/街道社区事务 - 受理窗口，&lt;strong&gt;&lt;font color=&quot;#6fb153 &quot; style=&quot;font-size:23px&quot;&gt;重置&quot;医保个人账户查询密码&quot;, 为6位数字密码&lt;/font&gt;&lt;/strong&gt;。
             &lt;ul&gt;
               &lt;li&gt;&lt;strong&gt;&lt;font color=&quot;#3c78d8&quot; style=&quot;font-size:23px&quot;&gt;2019.6.10 补充：&lt;br /&gt;经亲测，受理窗口重置6位数字密码后，该密码可以在&quot;上海医保网&quot;登录；另在&quot;上海人社APP&quot;中集成的&quot;医保&quot;修改密码页面，也认可该6位数字密码，并可在这里成功在线更改成其他6位数字密码。&lt;/font&gt;&lt;/strong&gt;&lt;/li&gt;
@@ -420,7 +424,7 @@ rm /data/system/gatekeeper.pattern.key
 			&lt;/td&gt;			
         &lt;/tr&gt;		
     &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><category term="公共事业服务" /><summary type="html">上海社保卡/社保账户, 涉及的密码</summary></entry><entry><title type="html">安卓常见问题和解决方案之-Android MultiUser &amp;amp; Clone App</title><link href="http://localhost:8080/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&-Clone-App/" rel="alternate" type="text/html" title="安卓常见问题和解决方案之-Android MultiUser &amp; Clone App" /><published>2019-06-02T03:25:00+08:00</published><updated>2019-06-02T03:25:00+08:00</updated><id>http://localhost:8080/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod%20Multiuser%20&amp;%20Clone%20App</id><content type="html" xml:base="http://localhost:8080/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&amp;-Clone-App/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/table&gt;</content><author><name></name></author><category term="公共事业服务" /><summary type="html">上海社保卡/社保账户, 涉及的密码</summary></entry><entry><title type="html">安卓常见问题和解决方案之-安卓多用户、克隆App、多用户下Magisk、EdXosed/Xposed生效问题</title><link href="http://localhost:8080/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&-Clone-App/" rel="alternate" type="text/html" title="安卓常见问题和解决方案之-安卓多用户、克隆App、多用户下Magisk、EdXosed/Xposed生效问题" /><published>2019-06-02T03:25:00+08:00</published><updated>2019-06-02T03:25:00+08:00</updated><id>http://localhost:8080/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod%20Multiuser%20&amp;%20Clone%20App</id><content type="html" xml:base="http://localhost:8080/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&amp;-Clone-App/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;note-以下经验为亲测原创一方面作为日常总结纪录另分享给有兴趣的人&quot;&gt;Note: 以下经验为亲测原创，一方面作为日常总结纪录，另分享给有兴趣的人。&lt;/h4&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -452,41 +456,66 @@ rm /data/system/gatekeeper.pattern.key
 &lt;p&gt;操作时几个要点：&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;主用户、其他用户：各自安装维护删除第三方App，互不影响。
+  &lt;li&gt;&lt;u&gt;主用户、其他用户：各自安装维护删除第三方App，互不影响。&lt;/u&gt;
     &lt;ul&gt;
-      &lt;li&gt;系统App：慎删、慎冻结，会影响正常使用这些App的用户。&lt;/li&gt;
+      &lt;li&gt;系统App：慎删、慎冻结，会影响正常使用这些App的用户。
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;主用户更新App&lt;/strong&gt;时：
+  &lt;li&gt;&lt;u&gt;**主用户更新App**时：&lt;/u&gt;
     &lt;ul&gt;
-      &lt;li&gt;IF 其他用户也安装了相同App：&lt;strong&gt;其他用户自动更新对应App&lt;/strong&gt;。(同理：其他用户更新，主用户也应该自动更新。)&lt;/li&gt;
+      &lt;li&gt;IF 其他用户也安装了相同App：&lt;strong&gt;其他用户自动更新对应App&lt;/strong&gt;。(同理：其他用户更新，主用户也应该自动更新。)
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;使用&lt;code class=&quot;highlighter-rouge&quot;&gt;钛备份Titanium Backup&lt;/code&gt;恢复App及其数据时：所有其他用户都会自动安装对应App (其他用户仅是恢复App，数据无法恢复)。
+  &lt;li&gt;&lt;u&gt;使用`钛备份Titanium Backup`恢复App及其数据时：所有其他用户都会自动安装对应App (其他用户仅是恢复App，数据无法恢复)。&lt;/u&gt;
     &lt;ul&gt;
-      &lt;li&gt;如钛备份仅是恢复数据，对其他用户没有影响。&lt;/li&gt;
+      &lt;li&gt;如钛备份仅是恢复数据，对其他用户没有影响。
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;权限/空间管理软件推荐：&lt;code class=&quot;highlighter-rouge&quot;&gt;App Ops&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;MyAndroidTools&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;Storage Redirect 存储重定向&lt;/code&gt;。
+  &lt;li&gt;&lt;u&gt;权限/空间管理软件推荐：`App Ops`、`MyAndroidTools`、`Storage Redirect 存储重定向`。&lt;/u&gt; &lt;a href=&quot;/tech/个人经验分享/搬运/Storage-Redirect/&quot;&gt;Storage Redirect 说明&lt;/a&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;App Ops&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;Storage Redirect 存储重定向&lt;/code&gt;: 支持在当前用户下跨多用户管理&lt;/li&gt;
       &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;MyAndroidTools&lt;/code&gt;: 仅支持当前用户管理&lt;/li&gt;
-      &lt;li&gt;此外，&lt;code class=&quot;highlighter-rouge&quot;&gt;钛备份Titanium Backup&lt;/code&gt;：仅支持当前用户管理 (但恢复应用时，会恢复安装至所有用户下；仅恢复数据时，只对当前用户作用)。&lt;/li&gt;
+      &lt;li&gt;此外，&lt;code class=&quot;highlighter-rouge&quot;&gt;钛备份Titanium Backup&lt;/code&gt;：仅支持当前用户管理 (但恢复应用时，会恢复安装至所有用户下；仅恢复数据时，只对当前用户作用)。
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;备份软件：&lt;code class=&quot;highlighter-rouge&quot;&gt;钛备份Titanium Backup&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;一加搬家 OneplusBackuprestore&lt;/code&gt; (一加手机自带专用)
+  &lt;li&gt;&lt;u&gt;备份软件：`钛备份Titanium Backup`、`一加搬家 OneplusBackuprestore` (一加手机自带专用)&lt;/u&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;钛备份Titanium Backup&lt;/code&gt;：支持app及其数据的备份恢复。&lt;/li&gt;
       &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;一加搬家 OneplusBackuprestore&lt;/code&gt;：&lt;/li&gt;
     &lt;/ul&gt;
     &lt;ul&gt;
       &lt;li&gt;不支持对应用的数据的备份/恢复。&lt;/li&gt;
-      &lt;li&gt;优点：可备份恢复基本系统配置：如联系人、桌面图标设置、壁纸、铃声、wifi等。&lt;/li&gt;
+      &lt;li&gt;优点：可备份恢复基本系统配置：如联系人、桌面图标设置、壁纸、铃声、wifi等。	 
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;u&gt;多用户下的Magisk、EdXosed/Xposed：&lt;/u&gt;
+    &lt;ul&gt;
+      &lt;li&gt;两个概念：”&lt;strong&gt;系统是否已Root&lt;/strong&gt;” vs “&lt;strong&gt;Roo授权&lt;/strong&gt;“。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;系统是否已Root&lt;/strong&gt;： 一旦系统刷入的Magisk.zip, root分区为所有用户共用，因此默认所有用户均已Root。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Root授权&lt;/strong&gt;: 表示是否启用接口 (如 Magisk Manager)，以便授予App Root权限。&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Magisk Manager：需在设置中，开启多用户选项；同时，在其他用户上需安装”Magisk Manager”。(注意: “Magisk.zip”一次性刷入即可。)
+        &lt;ul&gt;
+          &lt;li&gt;其他用户如果未安装Magisk Manager，则App检测不到Root状态，也无法被授权。(银行类App除外，因为采用不同的检测机制”SafetyNet”。)&lt;/li&gt;
+          &lt;li&gt;例1：But, 以”绿色守护”为例，在app初始化设定时，无法通过Root检测，但进入App后，在”设置”/”工作模式”下，可直接选择”Root模式”，同样生效。&lt;/li&gt;
+          &lt;li&gt;例2：”EdXosed Manager”为例，在其他用户，无需再次安装”EdXosed Manager”，它的模块安装后，同样生效。&lt;/li&gt;
+          &lt;li&gt;以上例证说明:
+            &lt;ul&gt;
+              &lt;li&gt;&lt;strong&gt;多用户下”Magisk Manager”仅是Root Portal&lt;/strong&gt;, 而事实上无关乎它，核心已经Root, &lt;strong&gt;App如果支持跳过Root Portal检测，或直接支持选用Root模式，则可直接生效&lt;/strong&gt; (目前大多数App，仅支持”Root Portal检测”的方式，如钛备份)。&lt;/li&gt;
+              &lt;li&gt;&lt;strong&gt;多用户下, 其他用户无需再次安装”EdXosed/Xposed Manager”&lt;/strong&gt;,它的模块自动判断出系统状态，从而可&lt;strong&gt;直接生效&lt;/strong&gt;。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;p&gt; &lt;a href=&quot;/tech/个人经验分享/搬运/Storage-Redirect/&quot;&gt;Storage Redirect 说明&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4 id=&quot;app克隆&quot;&gt;App克隆&lt;/h4&gt;
@@ -503,7 +532,7 @@ rm /data/system/gatekeeper.pattern.key
       &lt;li&gt;主程序更新后，&lt;code class=&quot;highlighter-rouge&quot;&gt;App Cloner&lt;/code&gt;会提醒”克隆程序有更新&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="Android" /><summary type="html">安卓多用户、克隆App</summary></entry><entry><title type="html">安卓常见问题和解决方案之-Storage Rediect</title><link href="http://localhost:8080/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E6%90%AC%E8%BF%90/Storage-Redirect/" rel="alternate" type="text/html" title="安卓常见问题和解决方案之-Storage Rediect" /><published>2019-05-30T00:26:00+08:00</published><updated>2019-05-30T00:26:00+08:00</updated><id>http://localhost:8080/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E6%90%AC%E8%BF%90/Storage%20Redirect</id><content type="html" xml:base="http://localhost:8080/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E6%90%AC%E8%BF%90/Storage-Redirect/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="Android" /><summary type="html">安卓多用户、克隆App、多用户下Magisk/EdXosed/Xposed生效问题</summary></entry><entry><title type="html">安卓常见问题和解决方案之-Storage Rediect</title><link href="http://localhost:8080/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E6%90%AC%E8%BF%90/Storage-Redirect/" rel="alternate" type="text/html" title="安卓常见问题和解决方案之-Storage Rediect" /><published>2019-05-30T00:26:00+08:00</published><updated>2019-05-30T00:26:00+08:00</updated><id>http://localhost:8080/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E6%90%AC%E8%BF%90/Storage%20Redirect</id><content type="html" xml:base="http://localhost:8080/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E6%90%AC%E8%BF%90/Storage-Redirect/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;APK 软件名：&lt;code class=&quot;highlighter-rouge&quot;&gt;Storage Redirect 存储重定向&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 
