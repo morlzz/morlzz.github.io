@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8080/" rel="alternate" type="text/html" /><updated>2019-06-28T15:05:25+08:00</updated><id>http://localhost:8080/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">萌宠</title><link href="http://localhost:8080/pet/Pet-OThers/" rel="alternate" type="text/html" title="萌宠" /><published>2019-06-25T20:03:00+08:00</published><updated>2019-06-25T20:03:00+08:00</updated><id>http://localhost:8080/pet/Pet-OThers</id><content type="html" xml:base="http://localhost:8080/pet/Pet-OThers/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8080/" rel="alternate" type="text/html" /><updated>2019-06-29T22:37:59+08:00</updated><id>http://localhost:8080/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">萌宠</title><link href="http://localhost:8080/pet/Pet-OThers/" rel="alternate" type="text/html" title="萌宠" /><published>2019-06-25T20:03:00+08:00</published><updated>2019-06-25T20:03:00+08:00</updated><id>http://localhost:8080/pet/Pet-OThers</id><content type="html" xml:base="http://localhost:8080/pet/Pet-OThers/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4 id=&quot;1-很憨厚的小黄定期增产报国2次年平均每次6只小狗狗奇怪和隔壁的小黑死对头&quot;&gt;1. 很憨厚的小黄，定期增产报国，2次/年，平均每次6只小狗狗。奇怪，和隔壁的小黑死对头。&lt;/h4&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/16.jpg&quot; width=&quot;50%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -186,6 +186,10 @@ rm /data/system/gatekeeper.pattern.key
       &lt;li&gt;对话框取消：开启增强模式，在目标App设置中启用”防检测”，”隐藏其他应用”中勾选所有使用到Root权限的App。&lt;/li&gt;
       &lt;li&gt;HiddenCore Module：无需任何设置。&lt;/li&gt;
     &lt;/ul&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;Note：if &amp;lt; Android 9，use “Xposed framework/manager” directly, no need install “EdXposed” module through Magisk.&lt;/p&gt;
+    &lt;/blockquote&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;在 Magisk Manager “Magisk Hide”中，勾选对应App。&lt;/p&gt;
@@ -253,11 +257,7 @@ rm /data/system/gatekeeper.pattern.key
 &lt;/blockquote&gt;
 
 &lt;p style=&quot;margin-top: -25px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-&lt;h4 id=&quot;安卓多用户克隆app&quot;&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&amp;amp;-Clone-App/&quot;&gt;安卓多用户、克隆App&lt;/a&gt;&lt;/h4&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;安卓多用户、克隆App、多用户下Magisk/EdXosed/Xposed生效问题。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h4 id=&quot;安卓多用户克隆app多用户下magiskedxosedxposed生效问题&quot;&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&amp;amp;-Clone-App/&quot;&gt;安卓多用户、克隆App、多用户下Magisk/EdXosed/Xposed生效问题&lt;/a&gt;&lt;/h4&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p id=&quot;keyword6&quot;&gt;&lt;font color=&quot;purple&quot; size=&quot;5&quot; style=&quot;border-bottom: 2px solid grey;display:block&quot;&gt;5. 墙内如何使用Google服务 &lt;/font&gt;&lt;/p&gt;
