@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8080/feed.xml" title="Morgan Zhao's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Morgan Zhao&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/Search/">Search</a><a class="page-link" href="/tags/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">  
+    <h1 class="post-title p-name" itemprop="name headline">Ubuntu Touch 相关信息汇总</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-07-09T00:00:00+08:00" itemprop="datePublished">Jul 9, 2019
+      </time></p>
+
+
+<div class="post-categories">
+  
+  
+<span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Category▸&nbsp;</em></strong></span>   
+  
+  
+  <a href="/categories/#Tech">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Tech</em></strong></span>     
+  </a>  
+  &nbsp;
+  
+  <a href="/categories/#搬运">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>搬运</em></strong></span>     
+  </a>  
+  
+  
+</div>
+
+
+<div class="post-tags">
+    
+
+<span style="font-size: 13px; color: #6d9eeb;"><strong><em>Tag▸&nbsp;</em></strong></span> 
+  
+  
+  <a href="/tags/#OS">
+     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>OS</em></strong></span>  
+  </a>
+  
+  
+</div>
+
+<span style="font-size:; color: rgb(127, 127, 127);"><strong><em><p><p/>Abstract&nbsp;▹
+    Ubuntu Touch 命令集,SSH启动,国内源</em></strong></span>
+
+  </header>
+
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><br /></p>
+
+<h3 id="1-启用ubuntu-touch的ssh功能-原出处">1. 启用Ubuntu Touch的ssh功能 (<a href="/tech/%E6%90%AC%E8%BF%90/Enable-SSH-of-Ubuntu-Touch/">原出处</a>)</h3>
+<p style="border-bottom: 3px solid grey;display:block"></p>
+
+<ul>
+  <li>
+    <p><u>生成公钥/私钥</u><br />
+在Linux下通过命令<code class="highlighter-rouge">ssh-keygen</code>生成，拷贝保存出来。</p>
+  </li>
+  <li><u>Windows CMD</u>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb push nexus5UT.pub /home/phablet/
+</code></pre></div>    </div>
+  </li>
+  <li><u>adb shell</u>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  mkdir /home/phablet/.ssh
+  chmod 700 /home/phablet/.ssh
+  cat /home/phablet/nexus5UT.pub &gt;&gt; /home/phablet/.ssh/authorized_keys
+  chmod 600 /home/phablet/.ssh/authorized_keys
+  chown -R phablet.phablet /home/phablet/.ssh
+		
+  sudo android-gadget-service enable ssh
+</code></pre></div>    </div>
+  </li>
+  <li><u>PC: SFTP/SSH客户端可实现访问</u><br />
+需将私钥导入，和手机上的公钥匹配。</li>
+</ul>
+
+<p style="margin-top: -15px;">&emsp;</p>
+
+<h3 id="2-常用命令集">2. 常用命令集</h3>
+<p style="border-bottom: 3px solid grey;display:block"></p>
+
+<ul>
+  <li>
+    <p>使用SFTP普通账户登录时，当复制文件因权限不够失败时，在root账户下<strong>授权<code class="highlighter-rouge">该目录 xxx</code>777权限</strong>即可：<br />
+<code class="highlighter-rouge">chmod -R 777 xxx</code></p>
+  </li>
+  <li><strong>Root 账户下依旧显示<code class="highlighter-rouge">Read-only file system</code></strong> , 解决方法 (在root账户下)：(<a href="https://blog.csdn.net/u010839779/article/details/77062347">原出处</a>)
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ll /etc/.pwd.lock
+  rm -rf /etc/.pwd.lock 
+  mount -o remount rw /  
+  rm -rf /etc/.pwd.lock
+</code></pre></div>    </div>
+  </li>
+  <li><strong><code class="highlighter-rouge">/var/cache/apt/archives</code>空间太小</strong>不让”更新软件”, 使用软连接方法解决：(<a href="https://blog.csdn.net/horacehe16/article/details/82978828">原出处</a>)<br />
+  在某个空间大的分区建立一个目录，把/var/cache/apt/archives换成指向那个目录的<strong>软链接</strong>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  mkdir -p "$HOME/debs/partial"
+  sudo rm -rf /var/cache/apt/archives
+  sudo ln -s "$HOME/debs" /var/cache/apt/archives
+</code></pre></div>    </div>
+    <ul>
+      <li>BUT 会导致另一个问题：<a href="https://blog.csdn.net/victoryckl/article/details/8214688"><strong>硬链接 Invalid cross-device link错误</strong></a><br />
+  这样，以Ubuntu touch为例，lxc的更新软件则无法更新，由于硬链接错误 (只能在同一个分区建立数据关联；而前面由于空间不够，又必须跨分区建立软连接，因此循环无解)。</li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-top: -35px;">&emsp;</p>
+<ul>
+  <li>“软件源签名” couldn’t be verified 或者 invalid, 方法解决：(<a href="https://blog.csdn.net/u011037837/article/details/83032584">原出处</a>)<br />
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  grep -iR opensuse /etc/apt/sources.list*
+  sudo sed -i '/opensuse/ s/^/#/' /etc/apt/sources.list.d/*.list
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><a href="https://www.liquidweb.com/kb/install-git-ubuntu-16-04-lts/">安装 git</a>：<code class="highlighter-rouge">apt-get install git-core</code>、<code class="highlighter-rouge">git --version</code></p>
+  </li>
+  <li>
+    <p>安装 zypper：<code class="highlighter-rouge">sudo apt-get install zypper</code></p>
+  </li>
+  <li>
+    <p>清除所有已下载的过期安装包：<code class="highlighter-rouge">sudo apt-get autoclean</code></p>
+  </li>
+  <li>清除所有已下载的安装包：<code class="highlighter-rouge">sudo apt-get clean</code></li>
+</ul>
+
+<p style="margin-top: -15px;">&emsp;</p>
+
+<h3 id="3-国内源">3. 国内源</h3>
+<p style="border-bottom: 3px solid grey;display:block"></p>
+
+<blockquote>
+  <p>Ubuntu Port/ Ubuntu ARM 源</p>
+</blockquote>
+
+<p>以下内容搬运, <a href="https://blog.csdn.net/guo_lei_lamant/article/details/81809452">原出处</a>:</p>
+
+<p>查看镜像站点，是否支持arm的方法: <br />
+打开 /dists/xenial/main/ ，查看该目录下是否有 <code class="highlighter-rouge">binary-arm</code>，如果有，则表示支持。</p>
+
+<p><strong>国内源更换步骤：</strong><br /></p>
+<ul>
+  <li>
+    <p>以root身份打开 <code class="highlighter-rouge">/etc/apt/sources.list</code>。</p>
+  </li>
+  <li>将 http://ports.ubuntu.com/ 全部替换为 http://mirrors.ustc.edu.cn/ubuntu-ports/ (或者其他<a href="https://blog.csdn.net/qq_35451572/article/details/79516563">镜像站点1</a>, <a href="https://blog.csdn.net/wang_shuai_ww/article/details/80386708">镜像站点2</a>, <a href="https://www.cnblogs.com/wylnii/p/Ubuntu-mirrors-armhf.html">镜像站点3</a>)
+    <ul>
+      <li>镜像站点源：注意需将”ubuntu”更新成”ubuntu-ports”, 且确保镜像目录下具有”binary-arm目录”。例如清华version 16.04的源为：
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ xenial main restricted universe multiverse
+  deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ xenial main restricted universe multiverse
+  deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ xenial-updates main restricted universe multiverse
+  deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ xenial-updates main restricted universe multiverse
+  deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ xenial-backports main restricted universe multiverse
+  deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ xenial-backports main restricted universe multiverse
+  deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ xenial-security main restricted universe multiverse
+  deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ xenial-security main restricted universe multiverse	
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>删除<code class="highlighter-rouge">/etc/apt/sources.list.d</code>目录下的<code class="highlighter-rouge">.list</code>文件。</li>
+</ul>
+
+<table style="width:98%;margin-left:2%">
+    <tbody>
+		<tr class="firstRow">
+            <td style="background-color: #e7e7e7;" width="100%" valign="middle">							
+			注意: 经亲测，更换成国内源后，"更新软件"过程中总会<code>bad version...错误</code>，尔后wifi无法正常连接，尝试重启则变装状态。
+			<br />因此，保守使用默认国外源，"更新软件"过程未发生上述情况 (OR Maybe just need find a suitable "Ubuntu armhf Source")。
+			</td>	
+        </tr>		
+    </tbody>			
+</table>
+
+<ul>
+  <li>执行：
+    <ul>
+      <li>更新源：<code class="highlighter-rouge">sudo apt-get update</code>
+        <ul>
+          <li>执行时，如出错：”W: 系统中不存在沙箱用户’_apt’,无法降低权限”，解决方法 (在root账户下)【搬运】：
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  # add unprivileged user for the apt methods
+  adduser --force-badname --system --home /nonexistent \
+  --no-create-home --quiet _apt || true
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+      <li>复损坏的软件包，尝试卸载出错的包，重新安装正确版本：<code class="highlighter-rouge">sudo apt-get -f install</code></li>
+      <li>更新软件：<code class="highlighter-rouge">sudo apt-get upgrade</code></li>
+    </ul>
+  </li>
+</ul>
+
+  </div><a class="u-url" href="/tech/%E6%90%AC%E8%BF%90/Ubuntu-Touch/" hidden></a>
+    
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Morgan Zhao&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name"><a href="/">Morgan Zhao&#39;s Blog</a></li><li>FB：<a href="https://www.facebook.com/zzmorl"><span class="username">zzmorl</span></a></li></ul>
+      </div>
+
+<!--
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/zzmorl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">zzmorl</span></a></li></ul>
+</div>  
+
+      <div class="footer-col footer-col-3">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+-->
+	  
+	  <div class="footer-col footer-col-4">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+	  
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
+

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8080/feed.xml" title="Morgan Zhao's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Morgan Zhao&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/Search/">Search</a><a class="page-link" href="/tags/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">  
+    <h1 class="post-title p-name" itemprop="name headline">Andriod 安卓常见问题和解决方案汇总</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-06-13T01:41:00+08:00" itemprop="datePublished">Jun 13, 2019
+      </time></p>
+
+
+<div class="post-categories">
+  
+  
+<span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Category▸&nbsp;</em></strong></span>   
+  
+  
+  <a href="/categories/#Tech">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Tech</em></strong></span>     
+  </a>  
+  
+  
+</div>
+
+
+<div class="post-tags">
+    
+
+<span style="font-size: 13px; color: #6d9eeb;"><strong><em>Tag▸&nbsp;</em></strong></span> 
+  
+  
+  <a href="/tags/#OS">
+     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>OS</em></strong></span>  
+  </a>
+  &nbsp;
+  
+  <a href="/tags/#Andriod">
+     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>Andriod</em></strong></span>  
+  </a>
+  
+  
+</div>
+
+<span style="font-size:; color: rgb(127, 127, 127);"><strong><em><p><p/>Abstract&nbsp;▹
+    锁屏码/支付宝指纹验证问题/银行App绕过Root检测/Data分区清空/安卓多用户、及多用户下Magisk/EdXosed/Xposed生效问题/墙内使用Google...</em></strong></span>
+
+  </header>
+
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="margin-bottom: 12px;color:#474747;font-size:14px;">
+Keywords: 
+<a href="#keyword1">锁屏码</a>， 
+<a href="#keyword2">支付宝指纹验证问题</a>，
+<a href="#keyword3">银行App绕过Root检测</a>， 
+<a href="#keyword4">Data分区清空后成功完成TWRP Restore的方法</a>，
+<a href="#keyword5">安卓多用户&amp;克隆App&amp;应用双开、多用户下Magisk/EdXosed/Xposed生效问题</a>，
+<a href="#keyword6">墙内使用Google服务</a>
+</p>
+
+<p><br /></p>
+<p id="keyword1" style="height:;"><font color="purple" size="5" style="border-bottom: 2px solid grey;display:block">1. 去除开机锁屏密码</font></p>
+
+<p><a href="https://www.cnblogs.com/leftshine/p/7784962.html">参考链接1</a>
+<a href="https://jingyan.baidu.com/article/c33e3f48bb0655ea15cbb5f9.html">参考链接2</a>
+<a href="https://www.jianshu.com/p/0d40aa780f9e">参考链接3</a></p>
+
+<h4 id="删除如下文件-if-any"><strong>删除如下文件 (If Any)</strong></h4>
+
+<p>如因锁屏码无法进入系统：/data/system下 删除以下文件 (If Any)：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rm /data/system/locksettings.db
+rm /data/system/locksettings.db-shm
+rm /data/system/locksettings.db-wal
+rm /data/system/gatekeeper.password.key
+rm /data/system/gatekeeper.pattern.key
+</code></pre></div></div>
+
+<h4 id="怎么删方法有三"><strong>怎么删？方法有三</strong></h4>
+
+<ol>
+  <li>
+    <p>使用TWRP内置文件管理器，直接删除以上文件，then reboot。</p>
+  </li>
+  <li>
+    <p>使用Root Explorer (需获得root权限)，直接删除以上文件，then reboot。</p>
+  </li>
+  <li>
+    <p>使用adb shell命令:</p>
+    <ul>
+      <li>手机需启用USB调试模式</li>
+      <li>Windows电脑：cmd，<code class="highlighter-rouge">cd c:\cmd</code>，<code class="highlighter-rouge">adb shell</code>，</li>
+      <li>进入adb shell：<code class="highlighter-rouge">su</code>以获得权限，<code class="highlighter-rouge">cd data/system</code>通过<code class="highlighter-rouge">ls</code>查看以上锁屏相关的文件(If Any)，通过<code class="highlighter-rouge">rm</code>命令删除，reboot即可。</li>
+    </ul>
+  </li>
+</ol>
+
+<p><span id="keyword2"></span></p>
+<h4 id="locksettings文件慎删-与指纹验证深度绑定-如-支付宝指纹验证"><strong>“locksettings”文件慎删, 与指纹验证深度绑定 (如: <font color="purple">支付宝指纹验证</font>)</strong></h4>
+
+<ol>
+  <li>locksettings、gatekeeper 文件的作用：
+    <ul>
+      <li><strong>locksettings</strong>文件: 存储系统<strong>所有用户</strong>的<strong>指纹/密码/图案等的验证信息</strong>。</li>
+      <li>gatekeeper.password.key, gatekeeper.pattern.key：<strong>仅负责锁屏的界面</strong>，删除后，即可绕过它可进入对应系统或子系统，但<strong>并不能真正解除验证信息</strong>。</li>
+      <li>子系统有自己专门的gatekeeper：在/data/system/users下。</li>
+    </ul>
+  </li>
+  <li>『<strong>Be Careful!</strong>』设置指纹验证的部分App (如 <strong>Alipay</strong>)，和”locksettings”文件深度绑定，如果Alipay在<strong>未提前取消指纹设置</strong>情况下，<strong>贸然</strong>删除”locksettings”文件 (或是贸然重刷系统)，则Alipay指纹验证会进入死循环，无解。
+    <ul>
+      <li>只能 TWRP Restore 原系统，进入系统后，将 Alipay 的指纹设置取消。尔后，Alipay 才能成功接受新的指纹验证。</li>
+    </ul>
+  </li>
+</ol>
+
+<table style="width:100%;">
+    <tbody>
+        <tr class="firstRow">		
+            <td width="33.3%" valign="middle" align="center">	
+			<a align="center" href="/assets/img/58.jpg" target="_blank">
+			<img align="center" src="/assets/img/58.jpg" width="70%" /></a>	
+			</td>	
+            <td width="33.3%" valign="middle" align="center">	
+			<a align="center" href="/assets/img/59.jpg" target="_blank">
+			<img align="center" src="/assets/img/59.jpg" width="70%" /></a>	
+			</td>	
+            <td width="33.3%" valign="middle" align="center">	
+			<a align="center" href="/assets/img/60.jpg" target="_blank">
+			<img align="center" src="/assets/img/60.jpg" width="70%" /></a>		
+			</td>			
+        </tr>		
+    </tbody>
+</table>
+
+<p><br /></p>
+<p id="keyword3"><font color="purple" size="5" style="border-bottom: 2px solid grey;display:block">2. 银行App绕过Root检测 (如建设银行App)</font></p>
+
+<blockquote>
+  <p>背景：对于已经Root的手机，部分App严苛检测，一经检测到，完全不让使用该App。</p>
+</blockquote>
+
+<h4 id="root-magisk手机-绕过root检测的方法-20190619-亲测"><strong>Root (Magisk)手机: 绕过Root检测的方法 (20190619 亲测)</strong></h4>
+
+<ol>
+  <li>
+    <p>Magisk Manager: 安装 <code class="highlighter-rouge">MagiskHide Props Config</code>、<code class="highlighter-rouge">Riru-Core</code>、<code class="highlighter-rouge">Riru-EdXposed</code>模块。</p>
+  </li>
+  <li>EdXposed Manager: 安装 <code class="highlighter-rouge">对话框取消</code>、<code class="highlighter-rouge">HiddenCore Module</code>、<code class="highlighter-rouge">RootCloak</code>、<code class="highlighter-rouge">XPrivacyLua</code>模块。
+    <ul>
+      <li>XPrivacyLua：禁止 “读取应用列表”。</li>
+      <li>RootCloak：将App”包名”加入。</li>
+      <li>对话框取消：开启增强模式，在目标App设置中启用”防检测”，”隐藏其他应用”中勾选所有使用到Root权限的App。</li>
+      <li>HiddenCore Module：无需任何设置。</li>
+    </ul>
+
+    <blockquote>
+      <p>Note：if &lt; Android 9，use “Xposed framework/manager” directly, no need install “EdXposed” module through Magisk.</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>在 Magisk Manager “Magisk Hide”中，勾选对应App。</p>
+  </li>
+  <li>重启即可。</li>
+</ol>
+
+<p><br />
+<i style="color:#776c6c;"> Note:<br />
+<u>1) 理论上所有的类似App (尤其: <strong>银行类App</strong>) 均可适用该方法。</u><br />
+<u>2) 类似App需要安装在其他用户/AFW下，步骤如下：</u><br />
+ - 在主用户上，先行安装该App、并使用以上Magisk + EdXposed方法；<br />
+  * 该App：不用打开，禁止任何权限。<br />
+ - 在主用户上，确保设置好Magisk Hide后，可将该App直接”禁用”或者”冻结”；<br />
+ - 尔后，在其他用户或者AFW上，安装该App，则可，绕开效果和主用户上一致。<br />
+  * <strong>该App：在其他用户或者AFW下，给予所需权限，以便正常使用。</strong>
+</i></p>
+
+<p><br /></p>
+<p id="keyword4"><font color="purple" size="5" style="border-bottom: 2px solid grey;display:block">3. 一加手机"未加密" -&gt; 启动"手机加密", 失败后的情形 (Data分区全部清空)和成功完成TWRP Restore的方法</font></p>
+
+<blockquote>
+  <p>手机默认状态：TWRP、Root (Magisk)、Disable-DM-Verify Patch (即手机”未加密”状态)。</p>
+</blockquote>
+
+<h4 id="操作实录步骤"><strong>操作实录步骤</strong></h4>
+
+<ol>
+  <li>
+    <p>现在，我想由”未加密”转成”加密”状态，因此进入<code class="highlighter-rouge">设置</code>/<code class="highlighter-rouge">安全和锁屏</code>/<code class="highlighter-rouge">加密与凭据</code>/<code class="highlighter-rouge">加密手机</code>，即下图，点击”加密手机”:</p>
+
+    <table style="width:35%;">
+   <tbody>
+     <tr class="firstRow">		
+         <td width="100%" valign="middle" align="center">	
+         <img align="center" src="/assets/img/57.jpg" width="100%" />
+         </td>				
+     </tr>		
+   </tbody>
+ </table>
+  </li>
+  <li>
+    <p>手机无数次重启，但并未完成”加密”，同时还将data全部删除；试过两次，都失败。</p>
+  </li>
+  <li>So 这种”手机未加密”转”手机加密”，不敢再尝试 (拿现有的data开玩笑。) 任何尝试之前，<strong>务必TWRP BACKUP,务必！</strong>
+    <ul>
+      <li>实现”手机加密”，宁可在刷机时，不打”Disable-DM-Verify”补丁，则默认启用”手机加密”，但也意味着”原未加密的data数据”不可用，否则进不了系统。</li>
+    </ul>
+    <font style="margin-top: 10px;">&emsp;</font>
+  </li>
+  <li>问题来了，当失败后，data全部清空，TWRP直接四清 + Format Data后，几种尝试如下：
+    <ul>
+      <li><u>尝试1 失败</u>：进行<strong>TWRP RESTORE</strong>，完成后重启，手机卡死</li>
+      <li><u>尝试2 失败</u>：进行<strong>TWRP RESTORE + root + Disable DM Verify</strong>，完成后重启，手机卡死</li>
+      <li><u><strong>尝试3 成功</strong></u>：install <strong>OS.zip + root + Disable DM Verify</strong>，完成后重启，<strong>手机终于可以进入系统</strong>，1) 当出现欢迎界面时，即可直接重启进入TWRP；2) 进行<strong>TWRP RESTORE，仅选”data分区”即可</strong>，完成后重启，<strong>顺利完成恢复</strong>。</li>
+    </ul>
+  </li>
+</ol>
+
+<p><br /></p>
+<p id="keyword5"><font color="purple" size="5" style="border-bottom: 2px solid grey;display:block">4. 安卓多用户、克隆App、应用双开</font></p>
+
+<blockquote>
+  <p>背景：<br />- <strong>安卓多用户</strong> :  沙箱机制，各用户在各个子系统中各司其职，互不干涉，实现信息隔离和隐私保护，除了安卓自带的 <code class="highlighter-rouge">多用户功能 MultiUser</code>外，还有 <code class="highlighter-rouge">工作资料 AFW (Andriod for Work)</code> (和主用户在同一系统下)均可实现子系统。<br />- <strong>克隆 App</strong> : 如 <code class="highlighter-rouge">App Cloner应用</code>, 当有&gt;=2个双开需要求时，可使用，原理：更改包名；无需建立虚拟空间。 <br />- <strong>应用双开</strong> : 1) <code class="highlighter-rouge">系统自带的双开</code>：需借助 “多用户机制”，当多用户数量达到系统设定的上限时，”系统自带的双开”则无法启用；2) <code class="highlighter-rouge">第三方双开软件, 如"平行空间"</code>, 因是第三方，所以不受系统的多用户上限数量限制。</p>
+</blockquote>
+
+<p style="margin-top: -25px;">&emsp;</p>
+<h4 id="安卓多用户克隆app多用户下magiskedxosedxposed生效问题"><a href="/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&amp;-Clone-App/">安卓多用户、克隆App、多用户下Magisk/EdXosed/Xposed生效问题</a></h4>
+
+<p><br /></p>
+<p id="keyword6"><font color="purple" size="5" style="border-bottom: 2px solid grey;display:block">5. 墙内如何使用Google服务 </font></p>
+
+<h4 id="墙内使用google服务"><a href="/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Use-Google-Services-in-China/">墙内使用Google服务</a></h4>
+
+<h4 id="其中翻墙部分目前推荐使用wireguardwireguard">其中翻墙部分，目前推荐使用Wireguard：<a href="/tech/%E6%90%AC%E8%BF%90/WireGuard-Quick-Install-Script/">WireGuard</a></h4>
+
+  </div><a class="u-url" href="/tech/Andriod-Common-Issues/" hidden></a>
+    
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Morgan Zhao&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name"><a href="/">Morgan Zhao&#39;s Blog</a></li><li>FB：<a href="https://www.facebook.com/zzmorl"><span class="username">zzmorl</span></a></li></ul>
+      </div>
+
+<!--
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/zzmorl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">zzmorl</span></a></li></ul>
+</div>  
+
+      <div class="footer-col footer-col-3">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+-->
+	  
+	  <div class="footer-col footer-col-4">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+	  
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
+
