@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8080/" rel="alternate" type="text/html" /><updated>2019-08-10T22:47:10+08:00</updated><id>http://localhost:8080/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">Android 刷机和应用相关汇总</title><link href="http://localhost:8080/tech/Android-OS-Flashing&APK/" rel="alternate" type="text/html" title="Android 刷机和应用相关汇总" /><published>2019-08-09T20:40:00+08:00</published><updated>2019-08-09T20:40:00+08:00</updated><id>http://localhost:8080/tech/Android%20OS%20Flashing&amp;APK</id><content type="html" xml:base="http://localhost:8080/tech/Android-OS-Flashing&amp;APK/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8080/" rel="alternate" type="text/html" /><updated>2019-08-13T03:09:20+08:00</updated><id>http://localhost:8080/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">Android 刷机和应用相关汇总</title><link href="http://localhost:8080/tech/Android-OS-Flashing&APK/" rel="alternate" type="text/html" title="Android 刷机和应用相关汇总" /><published>2019-08-09T20:40:00+08:00</published><updated>2019-08-09T20:40:00+08:00</updated><id>http://localhost:8080/tech/Android%20OS%20Flashing&amp;APK</id><content type="html" xml:base="http://localhost:8080/tech/Android-OS-Flashing&amp;APK/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;h4 id=&quot;关于bl锁非常认同看到的一句话即解不解锁是我的事你不允许我解锁绝不可以its-all-about-respect-and-human-right-因此对于践踏他人权益的公司和产品建议不再给予支持和购买&quot;&gt;&lt;strong&gt;关于BL锁，非常认同看到的一句话，即：解不解锁是我的事，你不允许我解锁绝不可以。it‘s all about RESPECT and HUMAN RIGHT!!! 因此，对于践踏他人权益的公司和产品，建议不再给予支持和购买。&lt;/strong&gt;&lt;/h4&gt;
@@ -145,7 +145,7 @@
   &lt;li&gt;&lt;strong&gt;For non-root Solution&lt;/strong&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;MicroG.apk&lt;/code&gt; for google account login + &lt;code class=&quot;highlighter-rouge&quot;&gt;YouTube Vanced.apk&lt;/code&gt; for anonymous browsing &lt;br /&gt;(该方案和系统自带youtube互不干涉，推荐)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Note: “绿色运行”或是”阻止运行 Prevent Running”中，必须&lt;strong&gt;不再阻止&lt;/strong&gt;MicroG，否则YouTube Vanced 登录功能失效。&lt;/p&gt;
+&lt;p&gt;Note: “阻止运行 Prevent Running”中，必须&lt;strong&gt;不再阻止&lt;/strong&gt;MicroG，否则YouTube Vanced 登录功能失效。&lt;/p&gt;
 
 &lt;p style=&quot;margin-top: -20px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 &lt;h3 id=&quot;im&quot;&gt;&lt;strong&gt;IM&lt;/strong&gt;&lt;/h3&gt;
@@ -162,7 +162,28 @@
   &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=org.twinlife.device.android.twinme&quot;&gt;Download Link&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.lanzous.com/i5if9mj&quot;&gt;网盘下载&lt;/a&gt; (如侵权，请联系删除)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://twin.me/en/&quot;&gt;Official Link&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="Android" /><summary type="html">华为荣耀7_解BL锁/刷TWRP,一加5,谷歌亲儿子出厂镜像,XPOSED,Magisk,Disable_DM,TWRP,应用</summary></entry><entry><title type="html">Huawei Hornor 7 BLUnlock/Flash TWRP - EMUI (Android Based)</title><link href="http://localhost:8080/tech/Huawei-EMUI/" rel="alternate" type="text/html" title="Huawei Hornor 7 BLUnlock/Flash TWRP - EMUI (Android Based)" /><published>2019-08-08T02:00:00+08:00</published><updated>2019-08-08T02:00:00+08:00</updated><id>http://localhost:8080/tech/Huawei%20EMUI</id><content type="html" xml:base="http://localhost:8080/tech/Huawei-EMUI/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
+&lt;/ul&gt;
+
+&lt;table style=&quot;width:100%;&quot;&gt;
+    &lt;tbody&gt;
+        &lt;tr class=&quot;firstRow&quot;&gt;			
+            &lt;td width=&quot;33.3%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+			&lt;a align=&quot;center&quot; href=&quot;/assets/img/77.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/77.jpg&quot; width=&quot;80%&quot; /&gt;&lt;/a&gt;		
+			&lt;a align=&quot;center&quot; href=&quot;/assets/img/78.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/78.jpg&quot; width=&quot;80%&quot; /&gt;&lt;/a&gt;				
+			&lt;/td&gt;
+            &lt;td width=&quot;33.3%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+			&lt;a align=&quot;center&quot; href=&quot;/assets/img/79.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/79.jpg&quot; width=&quot;80%&quot; /&gt;&lt;/a&gt;		
+			&lt;/td&gt;	
+            &lt;td width=&quot;33.3%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+			&lt;a align=&quot;center&quot; href=&quot;/assets/img/80.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/80.jpg&quot; width=&quot;80%&quot; /&gt;&lt;/a&gt;		
+			&lt;/td&gt;			
+        &lt;/tr&gt;			
+    &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name></name></author><category term="Android" /><summary type="html">华为荣耀7_解BL锁/刷TWRP,一加5,谷歌亲儿子出厂镜像,XPOSED,Magisk,Disable_DM,TWRP,应用</summary></entry><entry><title type="html">Huawei Hornor 7 BLUnlock/Flash TWRP - EMUI (Android Based)</title><link href="http://localhost:8080/tech/Huawei-EMUI/" rel="alternate" type="text/html" title="Huawei Hornor 7 BLUnlock/Flash TWRP - EMUI (Android Based)" /><published>2019-08-08T02:00:00+08:00</published><updated>2019-08-08T02:00:00+08:00</updated><id>http://localhost:8080/tech/Huawei%20EMUI</id><content type="html" xml:base="http://localhost:8080/tech/Huawei-EMUI/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
 Keywords: 
 &lt;a href=&quot;#keyword1&quot;&gt;华为荣耀7 解BL锁/刷TWRP&lt;/a&gt;
 &lt;/p&gt;
