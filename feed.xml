@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8080/" rel="alternate" type="text/html" /><updated>2019-08-13T03:09:20+08:00</updated><id>http://localhost:8080/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">Android 刷机和应用相关汇总</title><link href="http://localhost:8080/tech/Android-OS-Flashing&APK/" rel="alternate" type="text/html" title="Android 刷机和应用相关汇总" /><published>2019-08-09T20:40:00+08:00</published><updated>2019-08-09T20:40:00+08:00</updated><id>http://localhost:8080/tech/Android%20OS%20Flashing&amp;APK</id><content type="html" xml:base="http://localhost:8080/tech/Android-OS-Flashing&amp;APK/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8080/" rel="alternate" type="text/html" /><updated>2019-08-13T21:06:40+08:00</updated><id>http://localhost:8080/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">一加手机使用相关说明</title><link href="http://localhost:8080/tech/Oneplus-Readme/" rel="alternate" type="text/html" title="一加手机使用相关说明" /><published>2019-08-13T20:08:00+08:00</published><updated>2019-08-13T20:08:00+08:00</updated><id>http://localhost:8080/tech/Oneplus%20Readme</id><content type="html" xml:base="http://localhost:8080/tech/Oneplus-Readme/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;1-系统app进行固件更新后的软件版本&quot;&gt;&lt;strong&gt;1. “系统App”进行”固件更新”后的软件版本&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;假设系统固件更新前，”系统App”的版本是”A”，新固件中内置的”系统App”的版本是”B”，”A”高于”B”，那么，完成固件更新后，”系统App”的版本仍然是”A”。&lt;/p&gt;
+
+&lt;p style=&quot;margin-top: -26px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;2-官方备份恢复工具一加搬家-oneplus-swich&quot;&gt;&lt;strong&gt;2. 官方备份恢复工具：”一加搬家 OnePlus Swich”&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;一般主要使用其：”联系人”、”一加桌面”、”系统设置” 备份功能。而Apps的备份及其数据迁移，”一加搬家”并不支持，推荐使用”钛备份”。&lt;/p&gt;
+
+&lt;p&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/81.jpg&quot; target=&quot;_blank&quot;&gt;
+&lt;img align=&quot;center&quot; src=&quot;/assets/img/81.jpg&quot; width=&quot;30%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p style=&quot;margin-top: -26px;&quot;&gt;&amp;emsp;&lt;/p&gt;</content><author><name></name></author><category term="OS" /></entry><entry><title type="html">Android 刷机和应用相关汇总</title><link href="http://localhost:8080/tech/Android-OS-Flashing&APK/" rel="alternate" type="text/html" title="Android 刷机和应用相关汇总" /><published>2019-08-13T20:03:00+08:00</published><updated>2019-08-13T20:03:00+08:00</updated><id>http://localhost:8080/tech/Android%20OS%20Flashing&amp;APK</id><content type="html" xml:base="http://localhost:8080/tech/Android-OS-Flashing&amp;APK/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;h4 id=&quot;关于bl锁非常认同看到的一句话即解不解锁是我的事你不允许我解锁绝不可以its-all-about-respect-and-human-right-因此对于践踏他人权益的公司和产品建议不再给予支持和购买&quot;&gt;&lt;strong&gt;关于BL锁，非常认同看到的一句话，即：解不解锁是我的事，你不允许我解锁绝不可以。it‘s all about RESPECT and HUMAN RIGHT!!! 因此，对于践踏他人权益的公司和产品，建议不再给予支持和购买。&lt;/strong&gt;&lt;/h4&gt;
@@ -7,18 +22,26 @@
 &lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot; style=&quot;border-bottom: 3px solid grey;display:block;margin-top: 30px;font-weight:&quot;&gt;Android OS Flashing&lt;/font&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;huawei-emui&quot;&gt;&lt;strong&gt;Huawei EMUI&lt;/strong&gt;&lt;/h3&gt;
-&lt;hr /&gt;
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;华为bl锁自2018年5月24日起华为宣布对今后上市的产品停止解锁码的服务而已经上市的手机也将在发布公告之日起的60天后停止此服务&quot;&gt;&lt;strong&gt;华为BL锁&lt;/strong&gt;：自2018年5月24日起，华为宣布对今后上市的产品停止解锁码的服务，而已经上市的手机，也将在发布公告之日起的60天后停止此服务。&lt;/h4&gt;
+  &lt;hr /&gt;
+&lt;/blockquote&gt;
 
 &lt;h4 id=&quot;1-华为荣耀7-解bl锁刷twrp&quot;&gt;&lt;a href=&quot;/tech/Huawei-EMUI/&quot;&gt;1. 华为荣耀7 解BL锁/刷TWRP&lt;/a&gt;&lt;/h4&gt;
 
 &lt;p style=&quot;margin-top: -20px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
 &lt;h3 id=&quot;oneplus&quot;&gt;&lt;strong&gt;OnePlus&lt;/strong&gt;&lt;/h3&gt;
-&lt;hr /&gt;
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;国产手机中良心佳作一股清流无任何锁定限制任刷刷机神器刷机保修内核源码开源&quot;&gt;国产手机中良心佳作，一股清流。&lt;strong&gt;无任何锁定限制，任刷：刷机神器/刷机保修/内核源码开源&lt;/strong&gt;。&lt;/h4&gt;
+  &lt;hr /&gt;
+&lt;/blockquote&gt;
 
 &lt;h4 id=&quot;1-一加5刷机资源和教程&quot;&gt;&lt;a href=&quot;https://forum.xda-developers.com/oneplus-5/how-to/official-oxygenos-4-5-2-7-1-1-ota-t3627003&quot;&gt;1. 一加5刷机资源和教程&lt;/a&gt;&lt;/h4&gt;
 &lt;p style=&quot;margin-top: -48px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 &lt;h4 id=&quot;2-一加5官方论坛&quot;&gt;&lt;a href=&quot;https://forums.oneplus.com/forums/OnePlus5-5T/&quot;&gt;2. 一加5官方论坛&lt;/a&gt;&lt;/h4&gt;
+&lt;p style=&quot;margin-top: -48px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+&lt;h4 id=&quot;3-一加手机使用相关说明&quot;&gt;&lt;a href=&quot;/tech/Oneplus-Readme/&quot;&gt;3. 一加手机使用相关说明&lt;/a&gt;&lt;/h4&gt;
 
 &lt;p style=&quot;margin-top: -20px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
@@ -169,17 +192,17 @@
         &lt;tr class=&quot;firstRow&quot;&gt;			
             &lt;td width=&quot;33.3%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
 			&lt;a align=&quot;center&quot; href=&quot;/assets/img/77.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img align=&quot;center&quot; src=&quot;/assets/img/77.jpg&quot; width=&quot;80%&quot; /&gt;&lt;/a&gt;		
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/77.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;		
 			&lt;a align=&quot;center&quot; href=&quot;/assets/img/78.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img align=&quot;center&quot; src=&quot;/assets/img/78.jpg&quot; width=&quot;80%&quot; /&gt;&lt;/a&gt;				
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/78.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;				
 			&lt;/td&gt;
             &lt;td width=&quot;33.3%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
 			&lt;a align=&quot;center&quot; href=&quot;/assets/img/79.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img align=&quot;center&quot; src=&quot;/assets/img/79.jpg&quot; width=&quot;80%&quot; /&gt;&lt;/a&gt;		
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/79.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;		
 			&lt;/td&gt;	
             &lt;td width=&quot;33.3%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
 			&lt;a align=&quot;center&quot; href=&quot;/assets/img/80.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img align=&quot;center&quot; src=&quot;/assets/img/80.jpg&quot; width=&quot;80%&quot; /&gt;&lt;/a&gt;		
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/80.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;		
 			&lt;/td&gt;			
         &lt;/tr&gt;			
     &lt;/tbody&gt;
@@ -807,189 +830,4 @@ Keywords:
 
 &lt;p style=&quot;margin-top: -30px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h4 id=&quot;2-常用-symbols&quot;&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/Useful-Collection_Symbols/&quot;&gt;2. 常用 Symbols&lt;/a&gt;&lt;/h4&gt;</content><author><name></name></author><category term="常用工具" /><summary type="html">颜色,Markdown/RichText 在线编辑器/互转,网速,IP查询,种子搜索,授权管理,注销/删除账号,表情,符号</summary></entry><entry><title type="html">Android 常见问题和解决方案汇总</title><link href="http://localhost:8080/tech/Andriod-Common-Issues/" rel="alternate" type="text/html" title="Android 常见问题和解决方案汇总" /><published>2019-06-13T01:41:00+08:00</published><updated>2019-06-13T01:41:00+08:00</updated><id>http://localhost:8080/tech/Andriod%20Common%20Issues</id><content type="html" xml:base="http://localhost:8080/tech/Andriod-Common-Issues/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
-Keywords: 
-&lt;a href=&quot;#keyword1&quot;&gt;锁屏码&lt;/a&gt;， 
-&lt;a href=&quot;#keyword2&quot;&gt;支付宝指纹验证问题&lt;/a&gt;，
-&lt;a href=&quot;#keyword3&quot;&gt;银行App绕过Root检测&lt;/a&gt;， 
-&lt;a href=&quot;#keyword4&quot;&gt;Data分区清空后成功完成TWRP Restore的方法&lt;/a&gt;，
-&lt;a href=&quot;#keyword5&quot;&gt;安卓多用户&amp;amp;克隆App&amp;amp;应用双开、多用户下Magisk/EdXosed/Xposed生效问题&lt;/a&gt;，
-&lt;a href=&quot;#keyword6&quot;&gt;墙内使用Google服务&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p id=&quot;keyword1&quot; style=&quot;height:;&quot;&gt;&lt;font color=&quot;purple&quot; size=&quot;5&quot; style=&quot;border-bottom: 2px solid grey;display:block&quot;&gt;1. 去除开机锁屏密码&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/leftshine/p/7784962.html&quot;&gt;参考链接1&lt;/a&gt;
-&lt;a href=&quot;https://jingyan.baidu.com/article/c33e3f48bb0655ea15cbb5f9.html&quot;&gt;参考链接2&lt;/a&gt;
-&lt;a href=&quot;https://www.jianshu.com/p/0d40aa780f9e&quot;&gt;参考链接3&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;删除如下文件-if-any&quot;&gt;&lt;strong&gt;删除如下文件 (If Any)&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p&gt;如因锁屏码无法进入系统：/data/system下 删除以下文件 (If Any)：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rm /data/system/locksettings.db
-rm /data/system/locksettings.db-shm
-rm /data/system/locksettings.db-wal
-rm /data/system/gatekeeper.password.key
-rm /data/system/gatekeeper.pattern.key
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;怎么删方法有三&quot;&gt;&lt;strong&gt;怎么删？方法有三&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;使用TWRP内置文件管理器，直接删除以上文件，then reboot。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;使用Root Explorer (需获得root权限)，直接删除以上文件，then reboot。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;使用adb shell命令:&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;手机需启用USB调试模式&lt;/li&gt;
-      &lt;li&gt;Windows电脑：cmd，&lt;code class=&quot;highlighter-rouge&quot;&gt;cd c:\cmd&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;adb shell&lt;/code&gt;，&lt;/li&gt;
-      &lt;li&gt;进入adb shell：&lt;code class=&quot;highlighter-rouge&quot;&gt;su&lt;/code&gt;以获得权限，&lt;code class=&quot;highlighter-rouge&quot;&gt;cd data/system&lt;/code&gt;通过&lt;code class=&quot;highlighter-rouge&quot;&gt;ls&lt;/code&gt;查看以上锁屏相关的文件(If Any)，通过&lt;code class=&quot;highlighter-rouge&quot;&gt;rm&lt;/code&gt;命令删除，reboot即可。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;span id=&quot;keyword2&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h4 id=&quot;locksettings文件慎删-与指纹验证深度绑定-如-支付宝指纹验证&quot;&gt;&lt;strong&gt;“locksettings”文件慎删, 与指纹验证深度绑定 (如: &lt;font color=&quot;purple&quot;&gt;支付宝指纹验证&lt;/font&gt;)&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;locksettings、gatekeeper 文件的作用：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;locksettings&lt;/strong&gt;文件: 存储系统&lt;strong&gt;所有用户&lt;/strong&gt;的&lt;strong&gt;指纹/密码/图案等的验证信息&lt;/strong&gt;。&lt;/li&gt;
-      &lt;li&gt;gatekeeper.password.key, gatekeeper.pattern.key：&lt;strong&gt;仅负责锁屏的界面&lt;/strong&gt;，删除后，即可绕过它可进入对应系统或子系统，但&lt;strong&gt;并不能真正解除验证信息&lt;/strong&gt;。&lt;/li&gt;
-      &lt;li&gt;子系统有自己专门的gatekeeper：在/data/system/users下。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;『&lt;strong&gt;Be Careful!&lt;/strong&gt;』设置指纹验证的部分App (如 &lt;strong&gt;Alipay&lt;/strong&gt;)，和”locksettings”文件深度绑定，如果Alipay在&lt;strong&gt;未提前取消指纹设置&lt;/strong&gt;情况下，&lt;strong&gt;贸然&lt;/strong&gt;删除”locksettings”文件 (或是贸然重刷系统)，则Alipay指纹验证会进入死循环，无解。
-    &lt;ul&gt;
-      &lt;li&gt;只能 TWRP Restore 原系统，进入系统后，将 Alipay 的指纹设置取消。尔后，Alipay 才能成功接受新的指纹验证。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;table style=&quot;width:100%;&quot;&gt;
-    &lt;tbody&gt;
-        &lt;tr class=&quot;firstRow&quot;&gt;		
-            &lt;td width=&quot;33.3%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;	
-			&lt;a align=&quot;center&quot; href=&quot;/assets/img/58.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img align=&quot;center&quot; src=&quot;/assets/img/58.jpg&quot; width=&quot;70%&quot; /&gt;&lt;/a&gt;	
-			&lt;/td&gt;	
-            &lt;td width=&quot;33.3%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;	
-			&lt;a align=&quot;center&quot; href=&quot;/assets/img/59.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img align=&quot;center&quot; src=&quot;/assets/img/59.jpg&quot; width=&quot;70%&quot; /&gt;&lt;/a&gt;	
-			&lt;/td&gt;	
-            &lt;td width=&quot;33.3%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;	
-			&lt;a align=&quot;center&quot; href=&quot;/assets/img/60.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img align=&quot;center&quot; src=&quot;/assets/img/60.jpg&quot; width=&quot;70%&quot; /&gt;&lt;/a&gt;		
-			&lt;/td&gt;			
-        &lt;/tr&gt;		
-    &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p id=&quot;keyword3&quot;&gt;&lt;font color=&quot;purple&quot; size=&quot;5&quot; style=&quot;border-bottom: 2px solid grey;display:block&quot;&gt;2. 银行App绕过Root检测 (如建设银行App)&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;背景：对于已经Root的手机，部分App严苛检测，一经检测到，完全不让使用该App。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;root-magisk手机-绕过root检测的方法-20190619-亲测&quot;&gt;&lt;strong&gt;Root (Magisk)手机: 绕过Root检测的方法 (20190619 亲测)&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Magisk Manager: 安装 &lt;code class=&quot;highlighter-rouge&quot;&gt;MagiskHide Props Config&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;Riru-Core&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;Riru-EdXposed&lt;/code&gt;模块。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;EdXposed Manager: 安装 &lt;code class=&quot;highlighter-rouge&quot;&gt;对话框取消&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;HiddenCore Module&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;RootCloak&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;XPrivacyLua&lt;/code&gt;模块。
-    &lt;ul&gt;
-      &lt;li&gt;XPrivacyLua：禁止 “读取应用列表”。&lt;/li&gt;
-      &lt;li&gt;RootCloak：将App”包名”加入。&lt;/li&gt;
-      &lt;li&gt;对话框取消：开启增强模式，在目标App设置中启用”防检测”，”隐藏其他应用”中勾选所有使用到Root权限的App。&lt;/li&gt;
-      &lt;li&gt;HiddenCore Module：无需任何设置。&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;blockquote&gt;
-      &lt;p&gt;Note：if &amp;lt; Android 9，use “Xposed framework/manager” directly, no need install “EdXposed” module through Magisk.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;在 Magisk Manager “Magisk Hide”中，勾选对应App。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;重启即可。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;i style=&quot;color:#776c6c;&quot;&gt; Note:&lt;br /&gt;
-&lt;u&gt;1) 理论上所有的类似App (尤其: &lt;strong&gt;银行类App&lt;/strong&gt;) 均可适用该方法。&lt;/u&gt;&lt;br /&gt;
-&lt;u&gt;2) 类似App需要安装在其他用户/AFW下，步骤如下：&lt;/u&gt;&lt;br /&gt;
- - 在主用户上，先行安装该App、并使用以上Magisk + EdXposed方法；&lt;br /&gt;
-  * 该App：不用打开，禁止任何权限。&lt;br /&gt;
- - 在主用户上，确保设置好Magisk Hide后，可将该App直接”禁用”或者”冻结”；&lt;br /&gt;
- - 尔后，在其他用户或者AFW上，安装该App，则可，绕开效果和主用户上一致。&lt;br /&gt;
-  * &lt;strong&gt;该App：在其他用户或者AFW下，给予所需权限，以便正常使用。&lt;/strong&gt;
-&lt;/i&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p id=&quot;keyword4&quot;&gt;&lt;font color=&quot;purple&quot; size=&quot;5&quot; style=&quot;border-bottom: 2px solid grey;display:block&quot;&gt;3. 一加手机&quot;未加密&quot; -&amp;gt; 启动&quot;手机加密&quot;, 失败后的情形 (Data分区全部清空)和成功完成TWRP Restore的方法&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;手机默认状态：TWRP、Root (Magisk)、Disable-DM-Verify Patch (即手机”未加密”状态)。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;操作实录步骤&quot;&gt;&lt;strong&gt;操作实录步骤&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;现在，我想由”未加密”转成”加密”状态，因此进入&lt;code class=&quot;highlighter-rouge&quot;&gt;设置&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;安全和锁屏&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;加密与凭据&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;加密手机&lt;/code&gt;，即下图，点击”加密手机”:&lt;/p&gt;
-
-    &lt;table style=&quot;width:35%;&quot;&gt;
-   &lt;tbody&gt;
-     &lt;tr class=&quot;firstRow&quot;&gt;		
-         &lt;td width=&quot;100%&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;	
-         &lt;img align=&quot;center&quot; src=&quot;/assets/img/57.jpg&quot; width=&quot;100%&quot; /&gt;
-         &lt;/td&gt;				
-     &lt;/tr&gt;		
-   &lt;/tbody&gt;
- &lt;/table&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;手机无数次重启，但并未完成”加密”，同时还将data全部删除；试过两次，都失败。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;So 这种”手机未加密”转”手机加密”，不敢再尝试 (拿现有的data开玩笑。) 任何尝试之前，&lt;strong&gt;务必TWRP BACKUP,务必！&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;实现”手机加密”，宁可在刷机时，不打”Disable-DM-Verify”补丁，则默认启用”手机加密”，但也意味着”原未加密的data数据”不可用，否则进不了系统。&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;font style=&quot;margin-top: 10px;&quot;&gt;&amp;emsp;&lt;/font&gt;
-  &lt;/li&gt;
-  &lt;li&gt;问题来了，当失败后，data全部清空，TWRP直接四清 + Format Data后，几种尝试如下：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;u&gt;尝试1 失败&lt;/u&gt;：进行&lt;strong&gt;TWRP RESTORE&lt;/strong&gt;，完成后重启，手机卡死&lt;/li&gt;
-      &lt;li&gt;&lt;u&gt;尝试2 失败&lt;/u&gt;：进行&lt;strong&gt;TWRP RESTORE + root + Disable DM Verify&lt;/strong&gt;，完成后重启，手机卡死&lt;/li&gt;
-      &lt;li&gt;&lt;u&gt;&lt;strong&gt;尝试3 成功&lt;/strong&gt;&lt;/u&gt;：install &lt;strong&gt;OS.zip + root + Disable DM Verify&lt;/strong&gt;，完成后重启，&lt;strong&gt;手机终于可以进入系统&lt;/strong&gt;，1) 当出现欢迎界面时，即可直接重启进入TWRP；2) 进行&lt;strong&gt;TWRP RESTORE，仅选”data分区”即可&lt;/strong&gt;，完成后重启，&lt;strong&gt;顺利完成恢复&lt;/strong&gt;。&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p style=&quot;margin-top: -28px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-    &lt;font color=&quot;#4d8df1&quot;&gt;『2019.8.8更新』: 优先&quot;尝试1&quot;，如果失败，采用&quot;尝试3&quot;。&lt;/font&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p id=&quot;keyword5&quot;&gt;&lt;font color=&quot;purple&quot; size=&quot;5&quot; style=&quot;border-bottom: 2px solid grey;display:block&quot;&gt;4. 安卓多用户、克隆App、应用双开&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;背景：&lt;br /&gt;- &lt;strong&gt;安卓多用户&lt;/strong&gt; :  沙箱机制，各用户在各个子系统中各司其职，互不干涉，实现信息隔离和隐私保护，除了安卓自带的 &lt;code class=&quot;highlighter-rouge&quot;&gt;多用户功能 MultiUser&lt;/code&gt;外，还有 &lt;code class=&quot;highlighter-rouge&quot;&gt;工作资料 AFW (Andriod for Work)&lt;/code&gt; (和主用户在同一系统下)均可实现子系统。&lt;br /&gt;- &lt;strong&gt;克隆 App&lt;/strong&gt; : 如 &lt;code class=&quot;highlighter-rouge&quot;&gt;App Cloner应用&lt;/code&gt;, 当有&amp;gt;=2个双开需要求时，可使用，原理：更改包名；无需建立虚拟空间。 &lt;br /&gt;- &lt;strong&gt;应用双开&lt;/strong&gt; : 1) &lt;code class=&quot;highlighter-rouge&quot;&gt;系统自带的双开&lt;/code&gt;：需借助 “多用户机制”，当多用户数量达到系统设定的上限时，”系统自带的双开”则无法启用；2) &lt;code class=&quot;highlighter-rouge&quot;&gt;第三方双开软件, 如&quot;平行空间&quot;&lt;/code&gt;, 因是第三方，所以不受系统的多用户上限数量限制。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p style=&quot;margin-top: -25px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-&lt;h4 id=&quot;安卓多用户克隆app多用户下magiskedxosedxposed生效问题&quot;&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&amp;amp;-Clone-App/&quot;&gt;安卓多用户、克隆App、多用户下Magisk/EdXosed/Xposed生效问题&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p id=&quot;keyword6&quot;&gt;&lt;font color=&quot;purple&quot; size=&quot;5&quot; style=&quot;border-bottom: 2px solid grey;display:block&quot;&gt;5. 墙内如何使用Google服务 &lt;/font&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;墙内使用google服务&quot;&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Use-Google-Services-in-China/&quot;&gt;墙内使用Google服务&lt;/a&gt;&lt;/h4&gt;
-
-&lt;h4 id=&quot;其中翻墙部分目前推荐使用wireguardwireguard&quot;&gt;其中翻墙部分，目前推荐使用Wireguard：&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/WireGuard-Quick-Install-Script/&quot;&gt;WireGuard&lt;/a&gt;&lt;/h4&gt;</content><author><name></name></author><category term="Android" /><summary type="html">锁屏码/支付宝指纹验证问题/银行App绕过Root检测/Data分区清空/安卓多用户、及多用户下Magisk/EdXosed/Xposed生效问题/墙内使用Google...</summary></entry></feed>
+&lt;h4 id=&quot;2-常用-symbols&quot;&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/Useful-Collection_Symbols/&quot;&gt;2. 常用 Symbols&lt;/a&gt;&lt;/h4&gt;</content><author><name></name></author><category term="常用工具" /><summary type="html">颜色,Markdown/RichText 在线编辑器/互转,网速,IP查询,种子搜索,授权管理,注销/删除账号,表情,符号</summary></entry></feed>
