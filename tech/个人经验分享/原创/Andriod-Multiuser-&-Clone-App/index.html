@@ -113,10 +113,21 @@
 <br /><br /></li>
     </ul>
   </li>
-  <li><u>**主用户更新App**时：</u>
+  <li><u>主用户更新App时：</u>
     <ul>
-      <li>IF 其他用户也安装了相同App：<strong>其他用户自动更新对应App</strong>。(同理：其他用户更新，主用户也应该自动更新。)
+      <li>IF 其他用户也安装了相同App：<strong>其他用户自动更新对应App</strong>。(同理：其他用户更新，主用户也会自动更新。)
 <br /><br /></li>
+    </ul>
+  </li>
+  <li><u>"主用户 + Island用户" 情况下：</u>
+    <ul>
+      <li>IF 主用户和Island用户，都安装了同一个应用A
+        <ul>
+          <li>当主用户透过”MyAndriodTools”卸载应用A时，Island中的A也会被同时卸载。(原因未知，但实测结果如此)(主用户、Island用户之外的其他用户中的应用A，不受影响)</li>
+          <li>当主用户直接卸载应用A (长按图标卸载)，Island中的A仍旧保留，不受影响。		
+<br /><br /></li>
+        </ul>
+      </li>
     </ul>
   </li>
   <li><u>使用`钛备份Titanium Backup`恢复App及其数据时：所有其他用户都会自动安装对应App (其他用户仅是恢复App，数据无法恢复)。</u>
@@ -135,13 +146,19 @@
   </li>
   <li><u>备份软件：`钛备份Titanium Backup`、`一加搬家 OneplusBackuprestore` (一加手机自带专用)</u>
     <ul>
-      <li><code class="highlighter-rouge">钛备份Titanium Backup</code>：支持app及其数据的备份恢复。</li>
-      <li><code class="highlighter-rouge">一加搬家 OneplusBackuprestore</code>：</li>
-    </ul>
-    <ul>
-      <li>不支持对应用的数据的备份/恢复。</li>
-      <li>优点：可备份恢复基本系统配置：如联系人、桌面图标设置、壁纸、铃声、wifi等。	 
+      <li><code class="highlighter-rouge">钛备份Titanium Backup</code>：支持app及其数据的备份恢复。<u>多用户情况下</u>：
+        <ul>
+          <li>“钛备份”不支持跨用户管理，需每个用户各自安装”钛备份”。</li>
+          <li>IF 其他用户安装了应用B，但主用户并未安装：当使用”钛备份”时，”钛备份”app list中则看不到应用B，因而无法备份应用B；解决方法：在主用户中安装应用B，安装完成后可直接冻结应用B，而后回到其他用户的”钛备份”app list中，则会看见应用B，因而可以进行备份。</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">一加搬家 OneplusBackuprestore</code>：
+        <ul>
+          <li>不支持对应用的数据的备份/恢复。</li>
+          <li>优点：可备份恢复基本系统配置：如联系人、桌面图标设置、壁纸、铃声、wifi等。	 
 <br /><br /></li>
+        </ul>
+      </li>
     </ul>
   </li>
   <li><u>多用户下的Magisk、EdXosed/Xposed：</u>

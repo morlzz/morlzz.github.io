@@ -1,4 +1,91 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8080/" rel="alternate" type="text/html" /><updated>2019-08-13T21:06:40+08:00</updated><id>http://localhost:8080/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">一加手机使用相关说明</title><link href="http://localhost:8080/tech/Oneplus-Readme/" rel="alternate" type="text/html" title="一加手机使用相关说明" /><published>2019-08-13T20:08:00+08:00</published><updated>2019-08-13T20:08:00+08:00</updated><id>http://localhost:8080/tech/Oneplus%20Readme</id><content type="html" xml:base="http://localhost:8080/tech/Oneplus-Readme/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8080/" rel="alternate" type="text/html" /><updated>2019-09-10T00:29:03+08:00</updated><id>http://localhost:8080/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">QR Payout-Code,xxPay,HCE, online pay in China</title><link href="http://localhost:8080/life/Legacy-Pay-QR&Pass-Pay/" rel="alternate" type="text/html" title="QR Payout-Code,xxPay,HCE, online pay in China" /><published>2019-09-09T20:56:00+08:00</published><updated>2019-09-09T20:56:00+08:00</updated><id>http://localhost:8080/life/Legacy%20Pay%20QR&amp;Pass%20Pay</id><content type="html" xml:base="http://localhost:8080/life/Legacy-Pay-QR&amp;Pass-Pay/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;线上支付&quot;&gt;&lt;strong&gt;&lt;u&gt;线上支付&lt;/u&gt;&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;网络支付，在商户订单中填写支付信息，如：&lt;strong&gt;银联在线、快捷支付&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p style=&quot;margin-bottom: -5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;线下支付&quot;&gt;&lt;strong&gt;&lt;u&gt;线下支付&lt;/u&gt;&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;扫码支付、闪付。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;扫码支付：&lt;/strong&gt;
+&lt;br /&gt;存储支付账号信息的”种子数据”，存在支付宝中，由”种子数据”计算得出动态的QR码，因此&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;出示QR支付码的一方&lt;/code&gt; 无需联网&lt;/strong&gt;，而&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;核验接受该码的另一方&lt;/code&gt; 需要联网&lt;/strong&gt;。如：微信扫码、支付宝扫码、银联扫码。
+&lt;br /&gt; QR付款码，使用后，该码即刻失效。每一分钟更新一次。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;闪付：&lt;/strong&gt;
+&lt;br /&gt;“闪付”, 是由”银联”发开的QuickPass方案。银行卡默认开通(实体卡有”QuickPass”标识)，”闪付”功能开通后，”小额免密免签”功能也自动开通。(&lt;strong&gt;“闪付”、”小额免密免签”是”银联”QuickPass方案中，二者关联的默认启用选项，要么同时启用、要么同时关闭，但小额金额一般可自行设置&lt;/strong&gt;)。&lt;/p&gt;
+
+&lt;p&gt;实体银行卡可以关闭”闪付功能”；虚拟卡闪付不可关闭”闪付功能”，但可自行设置”小额免密免签”的金额。&lt;/p&gt;
+
+&lt;p&gt;闪付包括：&lt;/p&gt;
+&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;实体银行卡闪付、虚拟卡云闪付(即各种pay、HCE设备卡)。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;虚拟卡云闪付(即xxPay(各种Pay，如Apple Pay、Samsu Pay)、HCE设备卡) 线下支付机制：&lt;/p&gt;
+&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;支付时，&lt;strong&gt;NFC向POS机传输Token&lt;/strong&gt;，收单行收到Token后与银行结算。Token由银行下发给手机，并存储在手机，因此和POS交易时，无需联网。
+&lt;br /&gt; 支付机制: 虚拟卡 + Token + NFC&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;xxPay vs. HCE：&lt;/p&gt;
+&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;xxPay：手机中包含硬件eSE (Electron Secure Element), 保存安全信息。&lt;/li&gt;
+  &lt;li&gt;HCE：Android &amp;gt;=4.4, 谷歌提供的HCE技术(Hostcard Emulation)，用来生成虚拟卡，没有硬件eSE，所以”SE模块”的功能存储在云端。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;关于闪付各种payhce的区别-有一篇专业的详解-链接&quot;&gt;(关于闪付、各种pay、HCE的区别, 有一篇专业的详解, &lt;a href=&quot;https://zhuanlan.zhihu.com/p/52818911&quot;&gt;链接&lt;/a&gt;。)&lt;/h5&gt;
+
+&lt;p style=&quot;margin-bottom: -5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;银联云闪付方案的应用国内现状&quot;&gt;&lt;strong&gt;&lt;u&gt;&quot;银联云闪付方案&quot;的应用，国内现状&lt;/u&gt;&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;设备支持情况：&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;xxPay: 设备厂商在各自支持。&lt;/li&gt;
+  &lt;li&gt;银联云闪付App: HCE方式，支持大多数国内银行。&lt;/li&gt;
+  &lt;li&gt;各家银行自己的App(如: 招商银行的”掌上生活”)：HCE方式，仅支持自家银行。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;国内应用情况：&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;具备”银联闪付”标识的POS机，都可使用闪付挥手功能&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;使用”小额免密免签”的前提&lt;/strong&gt;：银行卡/虚拟卡启动该功能、商户POS机软硬件已升级支持，否则无法使用”小额免密免签”功能。&lt;/li&gt;
+  &lt;li&gt;如果无法使用”小额免密免签”时，需输入密码，如事先未开启”刷卡验密”功能，则会显示”交易失败”。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: -5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;银联闪付标识的pos机都支持xxpayhce设备卡&quot;&gt;&lt;strong&gt;&lt;u&gt;&quot;银联闪付&quot;标识的POS机，都支持xxPay、HCE设备卡&lt;/u&gt;&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;xxPay、HCE设备卡：本质上没有区别，全部基于 &lt;code class=&quot;highlighter-rouge&quot;&gt;银联云闪付方案&lt;/code&gt; ，因此在任何有”银联闪付”标识的POS机器上都可使用闪付挥手功能。&lt;/p&gt;
+
+&lt;p&gt;“银联服务”包括三部分：
+&lt;br /&gt;云闪付挥手(线下)、银联扫码(线下)(类似”微信/支付宝扫码”)、银联在线支付(线上)(类似”快捷支付”)。&lt;/p&gt;
+
+&lt;p style=&quot;margin-bottom: -5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;招商银行&quot;&gt;&lt;strong&gt;&lt;u&gt;招商银行&lt;/u&gt;&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;在”掌上生活”App中的启用&lt;strong&gt;“HCE设备卡”&lt;/strong&gt;即可开通银联云闪付挥卡，”免密免签”功能自动开通(无法停用)、&lt;strong&gt;小额金额可自行设置&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;注意：实体卡的”免密免签”功能App中有控制开关，”关闭”表示：实体卡的闪付挥卡功能停用。(即使停用了，也&lt;strong&gt;不影响”HCE设备卡”的闪付挥卡功能&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;p style=&quot;margin-top: -38px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;table style=&quot;width:33.3%;&quot;&gt;
+    &lt;tbody&gt;
+        &lt;tr class=&quot;firstRow&quot;&gt;	
+            &lt;td width=&quot;100%&quot; align=&quot;center&quot;&gt;
+			&lt;a align=&quot;center&quot; href=&quot;/assets/img/82.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img src=&quot;/assets/img/82.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;
+			&lt;/td&gt;		
+        &lt;/tr&gt;			
+    &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name></name></author><category term="LegacyBank" /><summary type="html">中国线下支付(扫码支付、闪付)、线上支付(银联在线、快捷支付)</summary></entry><entry><title type="html">一加手机使用相关说明</title><link href="http://localhost:8080/tech/Oneplus-Readme/" rel="alternate" type="text/html" title="一加手机使用相关说明" /><published>2019-08-13T20:08:00+08:00</published><updated>2019-08-13T20:08:00+08:00</updated><id>http://localhost:8080/tech/Oneplus%20Readme</id><content type="html" xml:base="http://localhost:8080/tech/Oneplus-Readme/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;1-系统app进行固件更新后的软件版本&quot;&gt;&lt;strong&gt;1. “系统App”进行”固件更新”后的软件版本&lt;/strong&gt;&lt;/h4&gt;
 
@@ -306,23 +393,7 @@ Keywords:
   &lt;li&gt;
     &lt;p&gt;降后，再通过”fastboot_all线刷方式”或者“dload”卡强刷方式，升级至B388.&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="OS" /><summary type="html">华为荣耀7 解BL锁/刷TWRP</summary></entry><entry><title type="html">Lovely Animals Experiencing in My Life</title><link href="http://localhost:8080/pet/Lovely-Animals/" rel="alternate" type="text/html" title="Lovely Animals Experiencing in My Life" /><published>2019-07-19T01:11:00+08:00</published><updated>2019-07-19T01:11:00+08:00</updated><id>http://localhost:8080/pet/Lovely%20Animals</id><content type="html" xml:base="http://localhost:8080/pet/Lovely-Animals/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;1-萌宠&quot;&gt;&lt;a href=&quot;/pet/Pet-OThers/&quot;&gt;1. 萌宠&lt;/a&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;生命中曾遇到的可爱小动物们。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;2-旺财成长记&quot;&gt;&lt;a href=&quot;/pet/dog/Pet-WangCai/&quot;&gt;2. 旺财成长记&lt;/a&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;My lovely Dog 旺财从小到大成长历程。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;3-miracle-pets&quot;&gt;&lt;a href=&quot;/pet/Miracle-Pets/&quot;&gt;3. Miracle Pets&lt;/a&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;神迹无处不在。&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name></name></author><summary type="html">萌宠,旺财成长纪,Miracle Pets</summary></entry><entry><title type="html">萌宠</title><link href="http://localhost:8080/pet/Pet-OThers/" rel="alternate" type="text/html" title="萌宠" /><published>2019-07-19T01:11:00+08:00</published><updated>2019-07-19T01:11:00+08:00</updated><id>http://localhost:8080/pet/Pet-OThers</id><content type="html" xml:base="http://localhost:8080/pet/Pet-OThers/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="OS" /><summary type="html">华为荣耀7 解BL锁/刷TWRP</summary></entry><entry><title type="html">萌宠</title><link href="http://localhost:8080/pet/Pet-OThers/" rel="alternate" type="text/html" title="萌宠" /><published>2019-07-19T01:11:00+08:00</published><updated>2019-07-19T01:11:00+08:00</updated><id>http://localhost:8080/pet/Pet-OThers</id><content type="html" xml:base="http://localhost:8080/pet/Pet-OThers/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4 id=&quot;1-很憨厚的小黄定期增产报国2次年平均每次6只小狗狗奇怪和隔壁的小黑死对头&quot;&gt;1. 很憨厚的小黄，定期增产报国，2次/年，平均每次6只小狗狗。奇怪，和隔壁的小黑死对头。&lt;/h4&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/16.jpg&quot; width=&quot;50%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -442,7 +513,23 @@ Keywords:
 			&lt;/td&gt;			
         &lt;/tr&gt;		
     &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><summary type="html">曾遇到的可爱小动物</summary></entry><entry><title type="html">Hyper-V 虚拟服务器</title><link href="http://localhost:8080/tech/%E6%90%AC%E8%BF%90/Hyper-V/" rel="alternate" type="text/html" title="Hyper-V 虚拟服务器" /><published>2019-07-12T00:00:00+08:00</published><updated>2019-07-12T00:00:00+08:00</updated><id>http://localhost:8080/tech/%E6%90%AC%E8%BF%90/Hyper-V</id><content type="html" xml:base="http://localhost:8080/tech/%E6%90%AC%E8%BF%90/Hyper-V/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/table&gt;</content><author><name></name></author><summary type="html">曾遇到的可爱小动物</summary></entry><entry><title type="html">Lovely Animals Experiencing in My Life</title><link href="http://localhost:8080/pet/Lovely-Animals/" rel="alternate" type="text/html" title="Lovely Animals Experiencing in My Life" /><published>2019-07-19T01:11:00+08:00</published><updated>2019-07-19T01:11:00+08:00</updated><id>http://localhost:8080/pet/Lovely%20Animals</id><content type="html" xml:base="http://localhost:8080/pet/Lovely-Animals/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;1-萌宠&quot;&gt;&lt;a href=&quot;/pet/Pet-OThers/&quot;&gt;1. 萌宠&lt;/a&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;生命中曾遇到的可爱小动物们。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;2-旺财成长记&quot;&gt;&lt;a href=&quot;/pet/dog/Pet-WangCai/&quot;&gt;2. 旺财成长记&lt;/a&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;My lovely Dog 旺财从小到大成长历程。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;3-miracle-pets&quot;&gt;&lt;a href=&quot;/pet/Miracle-Pets/&quot;&gt;3. Miracle Pets&lt;/a&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;神迹无处不在。&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><summary type="html">萌宠,旺财成长纪,Miracle Pets</summary></entry><entry><title type="html">Hyper-V 虚拟服务器</title><link href="http://localhost:8080/tech/%E6%90%AC%E8%BF%90/Hyper-V/" rel="alternate" type="text/html" title="Hyper-V 虚拟服务器" /><published>2019-07-12T00:00:00+08:00</published><updated>2019-07-12T00:00:00+08:00</updated><id>http://localhost:8080/tech/%E6%90%AC%E8%BF%90/Hyper-V</id><content type="html" xml:base="http://localhost:8080/tech/%E6%90%AC%E8%BF%90/Hyper-V/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;1-虚拟os过程中出现死机状态&quot;&gt;1. 虚拟OS过程中，出现”死机”状态&lt;/h3&gt;
 &lt;p style=&quot;border-bottom: 3px solid grey;display:block;margin-bottom: 20px;&quot;&gt;&lt;/p&gt;
@@ -824,10 +911,4 @@ Keywords:
 &lt;hr /&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.faststone.org/FSIVDownload.htm&quot;&gt;FastStone Image Viewer&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="常用工具" /></entry><entry><title type="html">Useful Info Collections - Tools/Links, Symbols</title><link href="http://localhost:8080/tech/Useful-Info-Collection/" rel="alternate" type="text/html" title="Useful Info Collections - Tools/Links, Symbols" /><published>2019-07-05T00:00:00+08:00</published><updated>2019-07-05T00:00:00+08:00</updated><id>http://localhost:8080/tech/Useful%20Info%20Collection</id><content type="html" xml:base="http://localhost:8080/tech/Useful-Info-Collection/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;1-常用-toolslinks&quot;&gt;&lt;a href=&quot;/tech/Useful-Collection_Tools_Links/&quot;&gt;1. 常用 Tools&amp;amp;Links&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p style=&quot;margin-top: -30px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;2-常用-symbols&quot;&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/Useful-Collection_Symbols/&quot;&gt;2. 常用 Symbols&lt;/a&gt;&lt;/h4&gt;</content><author><name></name></author><category term="常用工具" /><summary type="html">颜色,Markdown/RichText 在线编辑器/互转,网速,IP查询,种子搜索,授权管理,注销/删除账号,表情,符号</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="常用工具" /></entry></feed>
