@@ -113,9 +113,21 @@
 <p style="margin-bottom: -35px;">&nbsp;</p>
 <ul>
   <li>xxPay: 设备厂商在各自支持。</li>
-  <li>银联云闪付App: HCE方式，支持大多数国内银行。</li>
+  <li>银联云闪付App: HCE方式，支持部分国内银行 (见下图)，主流大银行并未包含在内，想必这些银行目的在于保护自家的闪付App。</li>
   <li>各家银行自己的App(如: 招商银行的”掌上生活”)：HCE方式，仅支持自家银行。</li>
 </ul>
+
+<p style="margin-top: -38px;">&nbsp;</p>
+<table style="width:45%;">
+    <tbody>
+        <tr class="firstRow">	
+            <td width="100%" align="center">
+			<a align="center" href="/assets/img/83.jpg" target="_blank">
+			<img src="/assets/img/83.jpg" width="100%" /></a>
+			</td>		
+        </tr>			
+    </tbody>
+</table>
 
 <p><strong>国内应用情况：</strong></p>
 <p style="margin-bottom: -35px;">&nbsp;</p>
@@ -138,9 +150,13 @@
 
 <h4 id="招商银行"><strong><u>招商银行</u></strong></h4>
 
-<p>在”掌上生活”App中的启用<strong>“HCE设备卡”</strong>即可开通银联云闪付挥卡，”免密免签”功能自动开通(无法停用)、<strong>小额金额可自行设置</strong>。</p>
+<p>在”掌上生活”App中的启用<strong>“HCE设备卡”</strong>即可开通银联云闪付挥卡，”免密免签”功能自动开通(无法停用)。</p>
 
-<p>注意：实体卡的”免密免签”功能App中有控制开关，”关闭”表示：实体卡的闪付挥卡功能停用。(即使停用了，也<strong>不影响”HCE设备卡”的闪付挥卡功能</strong>)</p>
+<p>注意：</p>
+<ul>
+  <li>实体卡的”免密免签”功能App中有控制开关，”关闭”表示：实体卡的闪付挥卡功能停用。(即使停用了，也<strong>不影响”HCE设备卡”的闪付挥卡功能</strong>)</li>
+  <li>在<strong>多用户</strong>下均安装”掌上生活App”时，闪付卡在A用户下申请的，但仅可在A用户下使用闪付；其他用户无法使用闪付。原因：申请时Token储存在A用户下。</li>
+</ul>
 
 <p style="margin-top: -38px;">&nbsp;</p>
 <table style="width:33.3%;">
@@ -153,6 +169,26 @@
         </tr>			
     </tbody>
 </table>
+
+<h4 id="note"><strong>Note</strong></h4>
+<hr />
+<p>20190915更新：经和招行信用卡客服(400-820-5555)核实，关于<strong>小额金额可自行设置</strong>，实则官方已取消该功能 (但App上描述文字未更新)。</p>
+<ul>
+  <li>手机闪付的单笔限额：5000元/笔(招行平台的限制)，具体消费时，不同的商户也会有不同的单笔限额。</li>
+  <li>实体卡闪付的单笔限额：300~1000元/笔(招行平台的限制)，具体消费时，不同的商户也会有不同的单笔限额。</li>
+</ul>
+
+<p>关于手机闪付消费，其他注意事项（1年前实测，目前情况待再次使用后更新）：</p>
+<ul>
+  <li>需打开<code class="highlighter-rouge">掌上生活App中的"一闪通"界面</code></li>
+  <li>超出”小额免密金额”时, 需输入密码，当时POS机上没有键盘，<code class="highlighter-rouge">"一闪通"界面</code>直接弹出输入密码框。(如果POS机有键盘，是什么情况未测不知。)</li>
+</ul>
+
+<p>关于<code class="highlighter-rouge">掌上生活App</code>，其他注意事项：</p>
+<ul>
+  <li>App中-&gt;我的-&gt;设置-&gt;支付管理-&gt;小额免密支付 (含金额设置)，是仅针对App内嵌商户的消费的”小额免密”设置。</li>
+</ul>
+
 
   </div><a class="u-url" href="/life/Legacy-Pay-QR&Pass-Pay/" hidden></a>
     

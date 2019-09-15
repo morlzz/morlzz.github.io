@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8080/" rel="alternate" type="text/html" /><updated>2019-09-10T00:29:03+08:00</updated><id>http://localhost:8080/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">QR Payout-Code,xxPay,HCE, online pay in China</title><link href="http://localhost:8080/life/Legacy-Pay-QR&Pass-Pay/" rel="alternate" type="text/html" title="QR Payout-Code,xxPay,HCE, online pay in China" /><published>2019-09-09T20:56:00+08:00</published><updated>2019-09-09T20:56:00+08:00</updated><id>http://localhost:8080/life/Legacy%20Pay%20QR&amp;Pass%20Pay</id><content type="html" xml:base="http://localhost:8080/life/Legacy-Pay-QR&amp;Pass-Pay/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8080/" rel="alternate" type="text/html" /><updated>2019-09-15T20:01:50+08:00</updated><id>http://localhost:8080/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">QR Payout-Code,xxPay,HCE, online pay in China</title><link href="http://localhost:8080/life/Legacy-Pay-QR&Pass-Pay/" rel="alternate" type="text/html" title="QR Payout-Code,xxPay,HCE, online pay in China" /><published>2019-09-09T20:56:00+08:00</published><updated>2019-09-09T20:56:00+08:00</updated><id>http://localhost:8080/life/Legacy%20Pay%20QR&amp;Pass%20Pay</id><content type="html" xml:base="http://localhost:8080/life/Legacy-Pay-QR&amp;Pass-Pay/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;线上支付&quot;&gt;&lt;strong&gt;&lt;u&gt;线上支付&lt;/u&gt;&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;网络支付，在商户订单中填写支付信息，如：&lt;strong&gt;银联在线、快捷支付&lt;/strong&gt;。&lt;/p&gt;
@@ -46,9 +46,21 @@
 &lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;xxPay: 设备厂商在各自支持。&lt;/li&gt;
-  &lt;li&gt;银联云闪付App: HCE方式，支持大多数国内银行。&lt;/li&gt;
+  &lt;li&gt;银联云闪付App: HCE方式，支持部分国内银行 (见下图)，主流大银行并未包含在内，想必这些银行目的在于保护自家的闪付App。&lt;/li&gt;
   &lt;li&gt;各家银行自己的App(如: 招商银行的”掌上生活”)：HCE方式，仅支持自家银行。&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p style=&quot;margin-top: -38px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;table style=&quot;width:45%;&quot;&gt;
+    &lt;tbody&gt;
+        &lt;tr class=&quot;firstRow&quot;&gt;	
+            &lt;td width=&quot;100%&quot; align=&quot;center&quot;&gt;
+			&lt;a align=&quot;center&quot; href=&quot;/assets/img/83.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img src=&quot;/assets/img/83.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;
+			&lt;/td&gt;		
+        &lt;/tr&gt;			
+    &lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;p&gt;&lt;strong&gt;国内应用情况：&lt;/strong&gt;&lt;/p&gt;
 &lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
@@ -71,9 +83,13 @@
 
 &lt;h4 id=&quot;招商银行&quot;&gt;&lt;strong&gt;&lt;u&gt;招商银行&lt;/u&gt;&lt;/strong&gt;&lt;/h4&gt;
 
-&lt;p&gt;在”掌上生活”App中的启用&lt;strong&gt;“HCE设备卡”&lt;/strong&gt;即可开通银联云闪付挥卡，”免密免签”功能自动开通(无法停用)、&lt;strong&gt;小额金额可自行设置&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;在”掌上生活”App中的启用&lt;strong&gt;“HCE设备卡”&lt;/strong&gt;即可开通银联云闪付挥卡，”免密免签”功能自动开通(无法停用)。&lt;/p&gt;
 
-&lt;p&gt;注意：实体卡的”免密免签”功能App中有控制开关，”关闭”表示：实体卡的闪付挥卡功能停用。(即使停用了，也&lt;strong&gt;不影响”HCE设备卡”的闪付挥卡功能&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;注意：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;实体卡的”免密免签”功能App中有控制开关，”关闭”表示：实体卡的闪付挥卡功能停用。(即使停用了，也&lt;strong&gt;不影响”HCE设备卡”的闪付挥卡功能&lt;/strong&gt;)&lt;/li&gt;
+  &lt;li&gt;在&lt;strong&gt;多用户&lt;/strong&gt;下均安装”掌上生活App”时，闪付卡在A用户下申请的，但仅可在A用户下使用闪付；其他用户无法使用闪付。原因：申请时Token储存在A用户下。&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p style=&quot;margin-top: -38px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 &lt;table style=&quot;width:33.3%;&quot;&gt;
@@ -85,7 +101,26 @@
 			&lt;/td&gt;		
         &lt;/tr&gt;			
     &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><category term="LegacyBank" /><summary type="html">中国线下支付(扫码支付、闪付)、线上支付(银联在线、快捷支付)</summary></entry><entry><title type="html">一加手机使用相关说明</title><link href="http://localhost:8080/tech/Oneplus-Readme/" rel="alternate" type="text/html" title="一加手机使用相关说明" /><published>2019-08-13T20:08:00+08:00</published><updated>2019-08-13T20:08:00+08:00</updated><id>http://localhost:8080/tech/Oneplus%20Readme</id><content type="html" xml:base="http://localhost:8080/tech/Oneplus-Readme/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&quot;note&quot;&gt;&lt;strong&gt;Note&lt;/strong&gt;&lt;/h4&gt;
+&lt;hr /&gt;
+&lt;p&gt;20190915更新：经和招行信用卡客服(400-820-5555)核实，关于&lt;strong&gt;小额金额可自行设置&lt;/strong&gt;，实则官方已取消该功能 (但App上描述文字未更新)。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;手机闪付的单笔限额：5000元/笔(招行平台的限制)，具体消费时，不同的商户也会有不同的单笔限额。&lt;/li&gt;
+  &lt;li&gt;实体卡闪付的单笔限额：300~1000元/笔(招行平台的限制)，具体消费时，不同的商户也会有不同的单笔限额。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;关于手机闪付消费，其他注意事项（1年前实测，目前情况待再次使用后更新）：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;需打开&lt;code class=&quot;highlighter-rouge&quot;&gt;掌上生活App中的&quot;一闪通&quot;界面&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;超出”小额免密金额”时, 需输入密码，当时POS机上没有键盘，&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;一闪通&quot;界面&lt;/code&gt;直接弹出输入密码框。(如果POS机有键盘，是什么情况未测不知。)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;关于&lt;code class=&quot;highlighter-rouge&quot;&gt;掌上生活App&lt;/code&gt;，其他注意事项：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;App中-&amp;gt;我的-&amp;gt;设置-&amp;gt;支付管理-&amp;gt;小额免密支付 (含金额设置)，是仅针对App内嵌商户的消费的”小额免密”设置。&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="LegacyBank" /><summary type="html">中国线下支付(扫码支付、闪付)、线上支付(银联在线、快捷支付)</summary></entry><entry><title type="html">一加手机使用相关说明</title><link href="http://localhost:8080/tech/Oneplus-Readme/" rel="alternate" type="text/html" title="一加手机使用相关说明" /><published>2019-08-13T20:08:00+08:00</published><updated>2019-08-13T20:08:00+08:00</updated><id>http://localhost:8080/tech/Oneplus%20Readme</id><content type="html" xml:base="http://localhost:8080/tech/Oneplus-Readme/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;1-系统app进行固件更新后的软件版本&quot;&gt;&lt;strong&gt;1. “系统App”进行”固件更新”后的软件版本&lt;/strong&gt;&lt;/h4&gt;
 
@@ -211,6 +246,16 @@
 &lt;h4 id=&quot;official-link-1&quot;&gt;&lt;a href=&quot;https://twrp.me/Devices/&quot;&gt;Official Link&lt;/a&gt;&lt;/h4&gt;
 &lt;p style=&quot;margin-top: -48px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 &lt;h4 id=&quot;codeworkx-link&quot;&gt;&lt;a href=&quot;https://sourceforge.net/projects/cheeseburgerdumplings/files/16.0/cheeseburger/recovery/&quot;&gt;Codeworkx Link&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p style=&quot;border-bottom: 3px solid grey;display:block;margin-top: 50px;font-weight:&quot;&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot;&gt;APK 权限设置&lt;/font&gt;&lt;/p&gt;
+
+&lt;p style=&quot;margin-top: -46px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;权限管理配置中，有些item是必选项，否则部分应用打不开或者出错。宗旨：在”权限把控”和”正常使用App”中找一个平衡。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/87.png&quot; target=&quot;_blank&quot;&gt;
+&lt;img align=&quot;center&quot; src=&quot;/assets/img/87.png&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p style=&quot;border-bottom: 3px solid grey;display:block;margin-top: 50px;font-weight:&quot;&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot;&gt;APK&lt;/font&gt;&lt;/p&gt;
 

@@ -77,6 +77,8 @@
 <br /><a href="https://github.com/hongwenjun/vps_setup" target="_self">原出处</a>
 <br />
 
+服务器配置好Wireguard后：配置文件在 `/etc/wireguard` 目录下。
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</div>
 <div># 一键安装wireguard 脚本 Debian 9 (源:逗比网安装笔记)</div>
 <div>wget -qO- git.io/fptwc | bash</div>
@@ -120,7 +122,7 @@ Ubuntu_AWS, Steps:</u></font></b></div>
 创建EC实例，“安全组”增加TCP和UDP，指定一样的“<b><font color="#6F3198">端口</font></b>”，允许 “<b>0.0.0.0/0</b>”。</div>
 <div style=""><br /></div>
 <div style="">2. # 一键安装wireguard 脚本 Ubuntu&nbsp;
-&nbsp;(源:逗比网安装笔记)</div>
+&nbsp;(源:逗比网安装笔记)&nbsp;&nbsp;注意：1)root用户下安装；2)chmod -R 777 *.* &amp;nbsp (对当前该目录/文件进行权限变更，进而可以进行复制删除的操作)</div>
 <div>wget -qO- git.io/fpcnL | bash</div>
 <div><br /></div>
 <div>3.&nbsp;使用“ bash wgmtu”&nbsp;
