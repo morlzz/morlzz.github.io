@@ -1,4 +1,525 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8080/" rel="alternate" type="text/html" /><updated>2019-09-15T20:01:50+08:00</updated><id>http://localhost:8080/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">QR Payout-Code,xxPay,HCE, online pay in China</title><link href="http://localhost:8080/life/Legacy-Pay-QR&Pass-Pay/" rel="alternate" type="text/html" title="QR Payout-Code,xxPay,HCE, online pay in China" /><published>2019-09-09T20:56:00+08:00</published><updated>2019-09-09T20:56:00+08:00</updated><id>http://localhost:8080/life/Legacy%20Pay%20QR&amp;Pass%20Pay</id><content type="html" xml:base="http://localhost:8080/life/Legacy-Pay-QR&amp;Pass-Pay/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8080/" rel="alternate" type="text/html" /><updated>2019-10-13T03:24:13+08:00</updated><id>http://localhost:8080/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">Traditional Banking/E-Wallet 相关汇总</title><link href="http://localhost:8080/digitgame/Traditional-Banking&E-Wallet/" rel="alternate" type="text/html" title="Traditional Banking/E-Wallet 相关汇总" /><published>2019-10-12T18:29:00+08:00</published><updated>2019-10-12T18:29:00+08:00</updated><id>http://localhost:8080/digitgame/Traditional%20Banking&amp;E-Wallet</id><content type="html" xml:base="http://localhost:8080/digitgame/Traditional-Banking&amp;E-Wallet/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;1-paypal&quot;&gt;1. &lt;a href=&quot;/digitgame/PayPal/&quot;&gt;PayPal&lt;/a&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;PayPal US, PayPal HK, PayPal China；风控；绑卡/账户。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;2-hk-e-wallet-香港电子钱包&quot;&gt;2. &lt;a href=&quot;/digitgame/HK-E-Wallet/&quot;&gt;HK E-Wallet 香港电子钱包&lt;/a&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;TAP N GO拍住赏, AlipayHK。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;3-中国大陆扫码支付闪付&quot;&gt;3. &lt;a href=&quot;/digitgame/Legacy-Pay-QR&amp;amp;Pass-Pay/&quot;&gt;中国大陆扫码支付、闪付&lt;/a&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;概况汇总：线下支付(扫码支付、闪付)、线上支付(银联在线、快捷支付)。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;4-western-union&quot;&gt;4. Western Union&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;/digitgame/China-Western-Union/&quot;&gt;Western Union China&lt;/a&gt;, Western Union HK。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Western Union China&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;在线汇款 - 只能透过合作银行在线发汇，如邮储银行；&lt;/li&gt;
+      &lt;li&gt;在线收款 - 透过合作银行在线收款 (如邮储银行)、或者直接汇入中国境内合作银行的银联卡。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Western Union HK&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;在线汇款 - &lt;code class=&quot;highlighter-rouge&quot;&gt;Western Union HK&lt;/code&gt;App, 支持在线直接发送款项。和Tap N GO拍住赏，深度合作，WU HK手机App直接调用拍住赏 (金额：100~2000 HKD)，费率及其优惠。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;5-transferwise&quot;&gt;5. &lt;a href=&quot;https://transferwise.com/&quot;&gt;TransferWise&lt;/a&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;TransferWise, 开通外币银行账户(borderless account), 可直接提现至国内银联卡号 (自动转成 RMB@中间汇率, 31,000 CNY/每笔)。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;相较Payoneer, TransferWise 对于资金来源较为宽松，广泛支持个人金额的中转、以及数字资产等来源，都支持自动转成RMB，直接银行转账至银联卡号 (即国内的 TransferWise 合作方直接将 RMB 转账至客户的银联卡号)。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;6-汇率&quot;&gt;6. 汇率&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.boc.cn/sourcedb/whpj/&quot;&gt;中国银行现汇买入&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;中行实时汇率&lt;/code&gt; &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.antianyu.currency&amp;amp;hl=en&quot;&gt;App&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="LegacyBank" /><summary type="html">交易中心,OTC,数字资产抵押</summary></entry><entry><title type="html">Digital Assets 相关汇总</title><link href="http://localhost:8080/digitgame/Digital-Assets/" rel="alternate" type="text/html" title="Digital Assets 相关汇总" /><published>2019-10-12T18:02:00+08:00</published><updated>2019-10-12T18:02:00+08:00</updated><id>http://localhost:8080/digitgame/Digital%20Assets</id><content type="html" xml:base="http://localhost:8080/digitgame/Digital-Assets/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;1-otc-场外交易&quot;&gt;1. &lt;a href=&quot;/digitgame/OTC-Exchange/&quot;&gt;OTC 场外交易&lt;/a&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;BISQ, Paxful, Coincola, &lt;a href=&quot;/digitgame/Binance/&quot;&gt;Binance&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.coincola.com/&quot;&gt;Coincola&lt;/a&gt;&lt;/strong&gt;：平台：中心化。可以场内交易，但交易深度较低，不适宜场内，主要用来场外交易；出售广告托管费，由发布广告的人承担 (购买无手续费)。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://bisq.network/zh-cn/&quot;&gt;BISQ&lt;/a&gt;&lt;/strong&gt;：完全遵循中本聪的理念，平台本身就是&lt;strong&gt;“去中心化”设计&lt;/strong&gt;，自行保管私钥，缺点：目前，maker很少。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://paxful.com/&quot;&gt;Paxful&lt;/a&gt;&lt;/strong&gt;：平台：中心化。特点：广泛的支付方式 + KYC要求很低，缺点：费用比Coincola高；出售广告托管费，由卖家承担 (购买无手续费)。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.binance.com/&quot;&gt;Binance&lt;/a&gt;&lt;/strong&gt;：平台：中心化。Binance自从App v1.12.1后，增加支持场外交易，可完全代替Coincola。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.binance.org/&quot;&gt;Binance Dex&lt;/a&gt;&lt;/strong&gt;：平台：去中心化, @Binance Chain。 (&lt;a href=&quot;https://explorer.binance.org/&quot;&gt;Binance Dex Explorer&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;2-交易中心&quot;&gt;2. &lt;a href=&quot;/digitgame/OTC-Exchange/&quot;&gt;交易中心&lt;/a&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Coincola, &lt;a href=&quot;/digitgame/Binance/&quot;&gt;Binance&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;3-数字资产抵押方案&quot;&gt;3. 数字资产抵押方案&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;/digitgame/Nexo-Wallet/&quot;&gt;Nexo&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><category term="newBank" /><category term="CryptoCurrency" /><summary type="html">交易中心,OTC,数字资产抵押</summary></entry><entry><title type="html">Binance</title><link href="http://localhost:8080/digitgame/Binance/" rel="alternate" type="text/html" title="Binance" /><published>2019-10-01T21:45:00+08:00</published><updated>2019-10-01T21:45:00+08:00</updated><id>http://localhost:8080/digitgame/Binance</id><content type="html" xml:base="http://localhost:8080/digitgame/Binance/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. 关于实名认证的个人资料的使用：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/92.jpg&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;/assets/img/92.jpg&quot; width=&quot;40%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Binance App CNY法币直接买卖数字资产&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;从Binance App v1.12.1开始，在App中，支持CNY法币直接买卖数字资产：通过&lt;code class=&quot;highlighter-rouge&quot;&gt;场外交易方式&lt;/code&gt;，支持&lt;code class=&quot;highlighter-rouge&quot;&gt;银行卡、支付宝、微信&lt;/code&gt;方式。&lt;/li&gt;
+  &lt;li&gt;买卖金额限制/一次：&lt;strong&gt;1,000~1,000,000CNY&lt;/strong&gt;。
+    &lt;ul&gt;
+      &lt;li&gt;金额范围也很合适，可用以替代Coincola OTC，原因：a) 节省转移费用;  b) 币安拥有更广的市场深度，实现更快速交易。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;目前支持的场外直接买卖的数字资产有：BTC、ETH、USDT。&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="newBank" /><category term="CryptoCurrency" /><summary type="html">币安</summary></entry><entry><title type="html">Nexo Wallet</title><link href="http://localhost:8080/digitgame/Nexo-Wallet/" rel="alternate" type="text/html" title="Nexo Wallet" /><published>2019-10-01T21:38:00+08:00</published><updated>2019-10-01T21:38:00+08:00</updated><id>http://localhost:8080/digitgame/Nexo%20Wallet</id><content type="html" xml:base="http://localhost:8080/digitgame/Nexo-Wallet/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://nexo.io/&quot;&gt;Nexo Wallet&lt;/a&gt;, 创新理念的 “&lt;strong&gt;法币&amp;lt;-&amp;gt;数字资产&lt;/strong&gt;” 的方案, 通过抵押借贷的方式，实现两者的兑换。Nexo公司主要的收益，是借贷的利息 (按天，随时偿还)。&lt;br /&gt;数字资产扣除已用的额度，剩余的可随时提现至其他数字钱包，0手续费 (含网络费)。&lt;br /&gt;存储的特定币种或stablecoin有存款利息。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;1-nexo-token&quot;&gt;&lt;strong&gt;1. Nexo Token&lt;/strong&gt;&lt;/h4&gt;
+&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;基于ERC20&lt;/li&gt;
+  &lt;li&gt;Nexo Token, 持有分红30%&lt;/li&gt;
+  &lt;li&gt;Changelly等小众交易所，可以兑换&lt;/li&gt;
+  &lt;li&gt;Nexo Token优惠利率：如持有Nexo Token, 享有最低的8%年利率(即万分之2.2/天)的借贷利率 (Rate Range: 8%~24.9%);偿还利率时，使用Nexo Token直接抵扣。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;2-特定法币和stalecoins资产-存入收益8年利率&quot;&gt;&lt;strong&gt;2. 特定法币和StaleCoins资产 存入收益@8%年利率&lt;/strong&gt;&lt;/h4&gt;
+&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;8%年利率&lt;/li&gt;
+  &lt;li&gt;USD/EUR/GBP/TUSD/USDT/USDC/PAX/DAI&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;3-stalecoins资产&quot;&gt;&lt;strong&gt;3. StaleCoins资产&lt;/strong&gt;&lt;/h4&gt;
+&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;借贷消费或提现至银行时(即当作法币提现、消费、偿还借贷时)，承诺与美金1：1价值。&lt;/li&gt;
+  &lt;li&gt;当作数字资产提现时(如提现至crypto wallet)，按照当下的市价。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;4-数字资产最低提现数量&quot;&gt;&lt;strong&gt;4. 数字资产最低提现数量&lt;/strong&gt;&lt;/h4&gt;
+&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;提现手续费(含网络费)：0&lt;/p&gt;
+
+    &lt;p&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/91.jpg&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;/assets/img/91.jpg&quot; width=&quot;40%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;5-credit-line提现至银行&quot;&gt;&lt;strong&gt;5. Credit Line提现至银行&lt;/strong&gt;&lt;/h4&gt;
+&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;最低提现金额：$500。&lt;/li&gt;
+  &lt;li&gt;借出的那一刻，即起算该全天的利息interest = Loan Amount * APR/365。(APR Range: 8%@Nexo Token~24.9%@Others)&lt;/li&gt;
+  &lt;li&gt;Transfer Type for Withdraw:
+    &lt;ul&gt;
+      &lt;li&gt;Withdraw USD to US bank account: 使用”ABA Local”&lt;/li&gt;
+      &lt;li&gt;Withdraw USD to non-US bank account: 使用”ABA Swift”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;性价比最高的方案 (仅支付1天的利息): 
+1) Credit Line (X) = 充入的数字资产等值价值(Y)的15%~50%，即充入 X/15%~50%的数字资产以获得价值X的Credit Line。
+2) 将Credit Line (X)提现至银行账户，从提现那一刻开始起息当天的利息 = X * APR/365。(该利息，系统直接从已存入的Y中扣除。)
+3) 发起提现成功后，当天即可使用已存入的数字资产Y，进行全额偿还Credit Line (X)。(没有额外费用)
+4) &quot;自动支付利息+手动全额偿还&quot;后, 即可将剩余的数字资产提现至其他数字钱包。(NexoApp提现至数字钱包, 没有手续费+没有网络费)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;table style=&quot;margin-top: 15px;width:100%;&quot;&gt;
+    &lt;tbody&gt;
+        &lt;tr class=&quot;firstRow&quot;&gt;
+            &lt;td width=&quot;33.3%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+			  &lt;a align=&quot;center&quot; href=&quot;/assets/img/99.jpg&quot; target=&quot;_blank&quot;&gt;
+			  &lt;img align=&quot;center&quot; src=&quot;/assets/img/99.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt; 
+			&lt;/td&gt;
+		    &lt;td width=&quot;33.3%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+			  &lt;a align=&quot;center&quot; href=&quot;/assets/img/100.jpg&quot; target=&quot;_blank&quot;&gt;
+			  &lt;img align=&quot;center&quot; src=&quot;/assets/img/100.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt; 
+			  &lt;a align=&quot;center&quot; href=&quot;/assets/img/102.png&quot; target=&quot;_blank&quot;&gt;
+			  &lt;img align=&quot;center&quot; src=&quot;/assets/img/102.png&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt; 
+			&lt;/td&gt;	
+		    &lt;td width=&quot;33.3%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+			  &lt;a align=&quot;center&quot; href=&quot;/assets/img/101.jpg&quot; target=&quot;_blank&quot;&gt;
+			  &lt;img align=&quot;center&quot; src=&quot;/assets/img/101.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt; 
+			&lt;/td&gt;	
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;</content><author><name></name></author><category term="newBank" /><category term="CryptoCurrency" /><summary type="html">Nexo抵押借贷方式提现数字资产</summary></entry><entry><title type="html">OTC Exchage 场外交易</title><link href="http://localhost:8080/digitgame/OTC-Exchange/" rel="alternate" type="text/html" title="OTC Exchage 场外交易" /><published>2019-10-01T00:00:00+08:00</published><updated>2019-10-01T00:00:00+08:00</updated><id>http://localhost:8080/digitgame/OTC%20Exchange</id><content type="html" xml:base="http://localhost:8080/digitgame/OTC-Exchange/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. BISQ&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;真正的去中心化场外交易平台，p2p local exchange，密钥全部掌握在自己手里。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;目前主要的Ad是美元法币的exchange，CNY的挂单很少。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;支持的支付方式很多。&lt;/p&gt;
+
+    &lt;p&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/94.jpg&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;/assets/img/94.jpg&quot; width=&quot;33%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Paxful&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. Coincola&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4. Binance&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;近期币安App (v1.12.1) 已支持场外交易，见&lt;a href=&quot;/digitgame/Binance/&quot;&gt;币安OTC&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;</content><author><name></name></author><category term="newBank" /><category term="CryptoCurrency" /><summary type="html">法币/数字资产-场外交易</summary></entry><entry><title type="html">PayPal</title><link href="http://localhost:8080/digitgame/PayPal/" rel="alternate" type="text/html" title="PayPal" /><published>2019-09-29T00:00:00+08:00</published><updated>2019-09-29T00:00:00+08:00</updated><id>http://localhost:8080/digitgame/PayPal</id><content type="html" xml:base="http://localhost:8080/digitgame/PayPal/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. PayPal严谨的防控机制&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;IP地址风控机制
+    &lt;ul&gt;
+      &lt;li&gt;PayPal HK 国内IP直接使用；PayPal US 美国IP。&lt;/li&gt;
+      &lt;li&gt;保持一致的IP习惯。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;App软件包检测机制(App Clone无法使用)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: -10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. PayPal Cash Account (仅限US区)&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;可用来保存余额的余额账户，否则Paypal收到来款后，只能提现到绑定的借记卡或者银行账户中。&lt;/li&gt;
+  &lt;li&gt;注册Cash Account时，需填入SSN或者税号 (即仅美国人可申请)。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: -10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. 添加银行卡，任何地区的银行卡均可，&amp;amp; 卡片要求验证&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;PP*xxxxCODE (xxxx即为4位数字)&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;亲测：刚刚被扣费时(即”入账中”状态时)，交易记录/摘要上看不到4位数字，致电客服还是一样。2~3天，再次查看交易记录/摘要，会显示”PP*xxxxCODE”形式。&lt;/p&gt;
+
+    &lt;table style=&quot;width:100%;&quot;&gt;
+  &lt;tbody&gt;
+      &lt;tr class=&quot;firstRow&quot;&gt;	
+          &lt;td width=&quot;50%&quot; align=&quot;center&quot;&gt;
+          &lt;a align=&quot;center&quot; href=&quot;/assets/img/89.jpg&quot; target=&quot;_blank&quot;&gt;
+          &lt;img src=&quot;/assets/img/89.jpg&quot; width=&quot;85%&quot; /&gt;&lt;/a&gt;
+          &lt;/td&gt;	
+          &lt;td width=&quot;50%&quot; align=&quot;center&quot;&gt;
+          &lt;a align=&quot;center&quot; href=&quot;/assets/img/90.jpg&quot; target=&quot;_blank&quot;&gt;
+          &lt;img src=&quot;/assets/img/90.jpg&quot; width=&quot;80%&quot; /&gt;&lt;/a&gt;
+          &lt;/td&gt;			
+      &lt;/tr&gt;			
+  &lt;/tbody&gt;
+&lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: -10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4. 添加银行账户，只能同地区的账户，&amp;amp; 账户要求验证&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;TransferWise’s borderless account&lt;/strong&gt; 仅支持deposit，不支持debit，因此当PayPal验证该银行账户时，会将deposit进入的钱再debit回去，debit过程会失败，因此”TransferWise’s borderless account”不支持PayPal的银行账户绑定。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;PayPal China&lt;/strong&gt;: 拒绝绑定payoneer的虚拟账户，列为”高危”账户。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;PayPal HK、PayPal China&lt;/strong&gt;: 可绑定以及提现至拍住赏账户(默认：港币账户)，免费 (由于：PayPal具备香港的支付牌照)。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: -10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5. PayPal HK 可支持”中国大陆国籍&amp;amp;中国大陆手机号注册”&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;PayPal HK 的官方直接注册入口，仅支持中国香港户籍和手机号的注册；需透过与PayPal HK合作商家的订单页面，redirect注册页面，可以选择”中国大陆国籍&amp;amp;中国大陆手机号注册”。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: -10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;</content><author><name></name></author><category term="LegacyBank" /><category term="E-Channel" /></entry><entry><title type="html">HK E-Wallet 香港电子钱包</title><link href="http://localhost:8080/digitgame/HK-E-Wallet/" rel="alternate" type="text/html" title="HK E-Wallet 香港电子钱包" /><published>2019-09-29T00:00:00+08:00</published><updated>2019-09-29T00:00:00+08:00</updated><id>http://localhost:8080/digitgame/HK%20E-Wallet</id><content type="html" xml:base="http://localhost:8080/digitgame/HK-E-Wallet/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;1-tap-n-go&quot;&gt;&lt;strong&gt;1. TAP N GO&lt;/strong&gt;&lt;/h4&gt;
+&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;拍住赏银联卡: 内地实测，可以闪付，需拍住赏钱包密码。&lt;/p&gt;
+
+    &lt;p&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/93.jpg&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;/assets/img/93.jpg&quot; width=&quot;30%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;支持PayPal的提现款项 ✔&lt;/p&gt;
+    &lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;PayPal，提现至拍住赏账户(默认：港币账户)，&lt;strong&gt;免费&lt;/strong&gt; (由于：PayPal具备香港的支付牌照)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: 2px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;2-alipay-hk&quot;&gt;&lt;strong&gt;2. Alipay HK&lt;/strong&gt;&lt;/h4&gt;
+&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;可使用FPS 发送/接收金额。&lt;/li&gt;
+  &lt;li&gt;可使用&lt;strong&gt;收钱码&lt;/strong&gt;接收金额。&lt;/li&gt;
+  &lt;li&gt;实测国际汇款To GCash, 无汇损、实时、无手续费。&lt;/li&gt;
+  &lt;li&gt;拒收来自PayPal的提现 ✘
+    &lt;ul&gt;
+      &lt;li&gt;即使找到&lt;code class=&quot;highlighter-rouge&quot;&gt;Alipay HK银行编号(银行代码+账号)&lt;/code&gt;，也会拒收来自PayPal的提现款项。&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;table style=&quot;width:100%;&quot;&gt;
+  &lt;tbody&gt;
+      &lt;tr class=&quot;firstRow&quot;&gt;	
+          &lt;td width=&quot;50%&quot; align=&quot;center&quot;&gt;
+          &lt;a align=&quot;center&quot; href=&quot;/assets/img/95.jpg&quot; target=&quot;_blank&quot;&gt;
+          &lt;img src=&quot;/assets/img/95.jpg&quot; width=&quot;75%&quot; /&gt;&lt;/a&gt;
+          &lt;/td&gt;	
+          &lt;td width=&quot;50%&quot; align=&quot;center&quot;&gt;
+          &lt;a align=&quot;center&quot; href=&quot;/assets/img/96.jpg&quot; target=&quot;_blank&quot;&gt;
+          &lt;img src=&quot;/assets/img/96.jpg&quot; width=&quot;75%&quot; /&gt;&lt;/a&gt;
+          &lt;/td&gt;			
+      &lt;/tr&gt;			
+  &lt;/tbody&gt;
+&lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="LegacyBank" /><category term="E-Wallet" /><summary type="html">TAP N GO拍住赏,AlipayHK</summary></entry><entry><title type="html">GCash</title><link href="http://localhost:8080/digitgame/Gcash/" rel="alternate" type="text/html" title="GCash" /><published>2019-09-29T00:00:00+08:00</published><updated>2019-09-29T00:00:00+08:00</updated><id>http://localhost:8080/digitgame/Gcash</id><content type="html" xml:base="http://localhost:8080/digitgame/Gcash/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Gcash Receive Western Union Remitannce
+&lt;a href=&quot;https://help.gcash.com/hc/en-us/articles/360034030313-How-can-I-claim-my-remittance-if-I-was-locked-out-&quot;&gt;账号被锁&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;信息输错3次，则被锁；24小时后，可再尝试。&lt;/li&gt;
+  &lt;li&gt;填入信息：
+    &lt;ul&gt;
+      &lt;li&gt;MTCN&lt;/li&gt;
+      &lt;li&gt;Send’s Name&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Country of birth&lt;/code&gt;: Send’s info&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;绑定PayPal&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;在GCash App内绑定时，只接受绑定PayPal Philippines。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;AMEX Virtual pay&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;可绑定于PayPal (没有地区限制)&lt;/li&gt;
+  &lt;li&gt;绑定Google Pay
+    &lt;ul&gt;
+      &lt;li&gt;会被扣除5.38 peso的”Google Service”费用，尚未见退还；&lt;/li&gt;
+      &lt;li&gt;仅支持线上支付，到店支付该卡不支持。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Gcash Hotline （no body answer）&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;直拨（8元一分钟）：+6327392882&lt;/li&gt;
+  &lt;li&gt;加拨17951（每分钟3.6元+本地通话费，大概合到3.8元一分钟）：17951006327392882&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Globe Hotline （no body answer）&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;+6327301212&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.gcash.com/app/v1.0.0/terms-and-conditions&quot;&gt;GCash账户关闭&lt;/a&gt;
+GCash wallets that remain inactive for 6 months and with zero balances shall be automatically closed.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;TERMINATION / CANCELLATION OF THE GCASH WALLET / MASTERCARD
+Should the GCash Customer fail to comply with the Terms and Conditions provided herein, the right to use the GCash Wallet/ MasterCard shall be terminated. GCash Wallets that are dormant/no monetary activity for more than 6 months and with zero balances shall automatically be closed/ terminated.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.gcash.com/privacy-notice/20190402/&quot;&gt;G-Xchange, Inc. Data Privacy Notice&lt;/a&gt;
+As we care about what you think, welcome your feedback, and wish to assist you on your Data Privacy needs and concerns, you can reach us thru: gxi.dataprivacy@mynt.xyz (Data Privacy Officer), or 2882 (GCash Customer Care).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.gcash.com/app/v1.0.0/terms-and-conditions&quot;&gt;客户投诉处理流程&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;CUSTOMER COMPLAINTS HANDLING PROCESS&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;We are committed to maintaining the highest standards of financial consumer protection. Your requests, feedback and customer needs are our priority. If you have any concerns about a procedure or have encountered a problem with our service, you may contact our Customer Service number by dialing 2882 if you are a Globe or TM mobile subscriber, or reach us at our official Facebook page (www.facebook.com/gcashcare). All information disclosed shall be treated with utmost confidentiality and will be resolved in the most efficient and effective manner.&lt;/p&gt;
+
+&lt;p&gt;GCash maintains full cooperation with the BSP in Financial Consumer Protection. You may coordinate with BSP’s Financial Consumer Protection Department at (632) 708.7087 or (632) 708.7088). You may also email BSP at consumeraffairs@bsp.gov.ph.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;20190926&lt;/li&gt;
+  &lt;li&gt;09270283998&lt;/li&gt;
+  &lt;li&gt;mg111@protonmail.com&lt;/li&gt;
+  &lt;li&gt;Order Ref No：4482 2175 3&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="LegacyBank" /><summary type="html">temp post</summary></entry><entry><title type="html">珍爱动物的生命</title><link href="http://localhost:8080/animals/Cherish-Anminals/" rel="alternate" type="text/html" title="珍爱动物的生命" /><published>2019-09-28T00:00:00+08:00</published><updated>2019-09-28T00:00:00+08:00</updated><id>http://localhost:8080/animals/Cherish%20Anminals</id><content type="html" xml:base="http://localhost:8080/animals/Cherish-Anminals/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong style=&quot;font-size: 20px;&quot;&gt;&lt;font color=&quot;#4d8df1&quot;&gt;Thanks God, 近来让我见证到杀戮的凶残，如不是精巧安排，不会如此巧合，刚好都遇上、刚好都被深深触动。&lt;br /&gt;Thanks God for your grace and mercy! 🙏&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong style=&quot;font-size: 20px;&quot;&gt;&lt;font color=&quot;#434343&quot;&gt;No more kill, cherish any creature's life, Love and Peace is unique answer and unique significancy for living. STOP MEAT, if you DO don’t want to hurt them, you won't to eat them, NEVER.&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;20190819-巧遇两只小羊羔---待宰羔羊&quot;&gt;&lt;strong&gt;20190819 巧遇两只小羊羔 - 待宰羔羊&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;今天路上巧遇两只”越狱中”的小羊羔，协助帮助将两只羊羔赶回饲主家。&lt;/p&gt;
+
+&lt;p&gt;出于好奇，来到饲主家，本想好好撸下小羊羔，走进去发现天哪，满院子被关养的羊🐏，询问饲主，原来她是”职业”饲养，进而交易买卖。这些可伶的羊，从出世到死亡，从未踏出过牢笼半步，不禁觉得很内疚，刚刚真不该拦住小羊羔；面对赤裸裸的”合法”杀戮，无奈有心无力，当饲主问道为何不买一只、很美味，心里很不是滋味，它们真的只是”物品”吗？心痛至极，touched so much，天哪，真的不忍心再伤害它们、也无法再食用它们。&lt;/p&gt;
+
+&lt;table style=&quot;width:100%;&quot;&gt;
+    &lt;tbody&gt;
+        &lt;tr class=&quot;firstRow&quot;&gt;			
+            &lt;td width=&quot;50%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+			&lt;a align=&quot;center&quot; href=&quot;/assets/img/104.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/104.jpg&quot; width=&quot;70%&quot; /&gt;&lt;/a&gt;		
+			&lt;/td&gt;	
+            &lt;td width=&quot;50%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+			&lt;a align=&quot;center&quot; href=&quot;/assets/img/105.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/105.jpg&quot; width=&quot;70%&quot; /&gt;&lt;/a&gt;		
+			&lt;/td&gt;			
+        &lt;/tr&gt;			
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;20190916-巧遇到的一对母女牛---待宰牛犊&quot;&gt;&lt;strong&gt;20190916 巧遇到的一对母女牛 - 待宰牛犊&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;很巧，我骑在电动车上，后面不远处有一辆卡车，开的很慢，似乎在找什么。&lt;/p&gt;
+
+&lt;p&gt;路边看到一对母女被主人拴在一起，我停下来逗小牛玩，就这么巧，那辆卡车缓缓停下，走出的人和牛的饲主在交谈，原来又是一桩买卖。眼睁睁看着一对母女被领到车上。。。此刻回想起来，仍记得他们说的话：”养大了，屠宰”。。。&lt;/p&gt;
+
+&lt;table style=&quot;width:100%;&quot;&gt;
+    &lt;tbody&gt;
+        &lt;tr class=&quot;firstRow&quot;&gt;			
+            &lt;td width=&quot;50%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+			&lt;a align=&quot;center&quot; href=&quot;/assets/img/97.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/97.jpg&quot; width=&quot;70%&quot; /&gt;&lt;/a&gt;		
+			&lt;/td&gt;	
+            &lt;td width=&quot;50%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+			&lt;a align=&quot;center&quot; href=&quot;/assets/img/98.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/98.jpg&quot; width=&quot;70%&quot; /&gt;&lt;/a&gt;		
+			&lt;/td&gt;			
+        &lt;/tr&gt;			
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;20190925-我的牛朋友---不见了&quot;&gt;&lt;strong&gt;20190925 &lt;a href=&quot;/animals/Pet-OThers/#keyword1&quot;&gt;我的牛朋友&lt;/a&gt; - 不见了&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;从今天7月份认识它到现在，近3个月，好灵巧聪明的牛牛，每次经过它都会探头张望、每次看望它它都会奔跑过来、每次离开它都会痴痴目送，好几次傍晚看它，它已经待在水塘里享受，但还是”很给面子”的走过来跟你亲近一下，又立刻跑回去享受沐浴。。。&lt;/p&gt;
+
+&lt;p&gt;本来感觉这一切都已习惯日常，谁知终有这一天，它，不见了。遇到它主人，原来它主人把它给卖了。。。&lt;/p&gt;
+
+&lt;p&gt;亲爱的牛牛，祝福你，God bless you，无论你在哪, love you 🙏&lt;/p&gt;
+
+&lt;table style=&quot;width:100%;&quot;&gt;
+    &lt;tbody&gt;
+        &lt;tr class=&quot;firstRow&quot;&gt;	
+            &lt;td width=&quot;25%&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;
+			&lt;p style=&quot;margin-top:20px;font-weight:bold&quot;&gt;She was running to you, when you call her :)&lt;/p&gt; 
+			&lt;p style=&quot;font-weight:bold&quot;&gt;So gentle, stopped in front of you, and saw you warmly &amp;amp; silently.&lt;/p&gt; 
+			&lt;/td&gt;			
+            &lt;td width=&quot;25%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+			&lt;a align=&quot;center&quot; href=&quot;/assets/img/cow/1.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/cow/1.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;		
+			&lt;/td&gt;	
+            &lt;td width=&quot;25%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+			&lt;a align=&quot;center&quot; href=&quot;/assets/img/cow/2.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/cow/2.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;		
+			&lt;/td&gt;
+            &lt;td width=&quot;25%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+			&lt;a align=&quot;center&quot; href=&quot;/assets/img/cow/3.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/cow/3.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;		
+			&lt;/td&gt;		
+        &lt;/tr&gt;	
+        &lt;tr&gt;			
+            &lt;td width=&quot;25%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+			&lt;a align=&quot;center&quot; href=&quot;/assets/img/cow/4.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/cow/4.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;		
+			&lt;/td&gt;	
+            &lt;td width=&quot;25%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+			&lt;a align=&quot;center&quot; href=&quot;/assets/img/cow/5.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/cow/5.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;		
+			&lt;/td&gt;
+            &lt;td width=&quot;25%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+			&lt;a align=&quot;center&quot; href=&quot;/assets/img/cow/6.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/cow/6.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;		
+			&lt;/td&gt;	
+            &lt;td width=&quot;25%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+			&lt;a align=&quot;center&quot; href=&quot;/assets/img/cow/7.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img align=&quot;center&quot; src=&quot;/assets/img/cow/7.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;		
+			&lt;/td&gt;			
+        &lt;/tr&gt;		
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;20190928-小鸟---死在路边&quot;&gt;&lt;strong&gt;20190928 小鸟 - 死在路边&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;路边发现一只死掉的小鸟，觉得很疼惜，拿起它放在手心，很诧异，这不是第一次碰触死掉的生物，但这一次很奇怪，内心没有一丝的害怕，只有怜惜和祝福，同时感觉小鸟的身体非常的柔软，没有一点的僵硬，Amazing。&lt;/p&gt;
+
+&lt;p&gt;I know in some way, LOVE is rising and soften/melt all the others which not belong to love.  🙏&lt;/p&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong style=&quot;font-size: 20px;&quot;&gt;&lt;font color=&quot;#4d8df1&quot;&gt;Thanks God, 我看到了这几件事情所串联的演化轨迹，thanks for your work，planting rightousness seed in my heart which touched me so much 🙏&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">珍爱生命,因为爱,停止肉食</summary></entry><entry><title type="html">QR Payout-Code,xxPay,HCE, online pay in China</title><link href="http://localhost:8080/digitgame/Legacy-Pay-QR&Pass-Pay/" rel="alternate" type="text/html" title="QR Payout-Code,xxPay,HCE, online pay in China" /><published>2019-09-09T20:56:00+08:00</published><updated>2019-09-09T20:56:00+08:00</updated><id>http://localhost:8080/digitgame/Legacy%20Pay%20QR&amp;Pass%20Pay</id><content type="html" xml:base="http://localhost:8080/digitgame/Legacy-Pay-QR&amp;Pass-Pay/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;线上支付&quot;&gt;&lt;strong&gt;&lt;u&gt;线上支付&lt;/u&gt;&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;网络支付，在商户订单中填写支付信息，如：&lt;strong&gt;银联在线、快捷支付&lt;/strong&gt;。&lt;/p&gt;
@@ -56,7 +577,7 @@
         &lt;tr class=&quot;firstRow&quot;&gt;	
             &lt;td width=&quot;100%&quot; align=&quot;center&quot;&gt;
 			&lt;a align=&quot;center&quot; href=&quot;/assets/img/83.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img src=&quot;/assets/img/83.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;
+			&lt;img src=&quot;/assets/img/83.jpg&quot; width=&quot;90%&quot; /&gt;&lt;/a&gt;
 			&lt;/td&gt;		
         &lt;/tr&gt;			
     &lt;/tbody&gt;
@@ -103,13 +624,34 @@
     &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h4 id=&quot;note&quot;&gt;&lt;strong&gt;Note&lt;/strong&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;招商银行-掌上生活app中云闪付实测情况&quot;&gt;&lt;strong&gt;招商银行-“掌上生活”App中云闪付，实测情况：&lt;/strong&gt;&lt;/h4&gt;
 &lt;hr /&gt;
-&lt;p&gt;20190915更新：经和招行信用卡客服(400-820-5555)核实，关于&lt;strong&gt;小额金额可自行设置&lt;/strong&gt;，实则官方已取消该功能 (但App上描述文字未更新)。&lt;/p&gt;
+&lt;p&gt;20190915更新：经和招行信用卡客服(400-820-5555) 核实，关于&lt;strong&gt;小额金额可自行设置&lt;/strong&gt;，实则官方已取消该功能 (但App上描述文字未更新)。&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;手机闪付的单笔限额：5000元/笔(招行平台的限制)，具体消费时，不同的商户也会有不同的单笔限额。&lt;/li&gt;
   &lt;li&gt;实体卡闪付的单笔限额：300~1000元/笔(招行平台的限制)，具体消费时，不同的商户也会有不同的单笔限额。&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;20190916 “掌上生活一闪通”手机云闪付实测：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;商户POS机有自己的免签免密金额门槛，即使招行平台设置5000元/笔免密，而实测在华联超市消费时，~10元仍需输入密码。
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;步骤&lt;/strong&gt;：&lt;strong&gt;打开NFC; 屏幕点亮即可，无需解屏&lt;/strong&gt;；&lt;strong&gt;贴近POS机感应区&lt;/strong&gt;，收银方电脑有反应后即可移开；如需&lt;strong&gt;输密&lt;/strong&gt;，手机移开收好后，直接在POS机键盘上输入即可；验密完成后，POS机出回执。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-top: -38px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;table style=&quot;width:33.3%;&quot;&gt;
+    &lt;tbody&gt;
+        &lt;tr class=&quot;firstRow&quot;&gt;	
+            &lt;td width=&quot;100%&quot; align=&quot;center&quot;&gt;
+			&lt;a align=&quot;center&quot; href=&quot;/assets/img/88.jpg&quot; target=&quot;_blank&quot;&gt;
+			&lt;img src=&quot;/assets/img/88.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;
+			&lt;/td&gt;		
+        &lt;/tr&gt;			
+    &lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;p&gt;关于手机闪付消费，其他注意事项（1年前实测，目前情况待再次使用后更新）：&lt;/p&gt;
 &lt;ul&gt;
@@ -120,840 +662,4 @@
 &lt;p&gt;关于&lt;code class=&quot;highlighter-rouge&quot;&gt;掌上生活App&lt;/code&gt;，其他注意事项：&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;App中-&amp;gt;我的-&amp;gt;设置-&amp;gt;支付管理-&amp;gt;小额免密支付 (含金额设置)，是仅针对App内嵌商户的消费的”小额免密”设置。&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="LegacyBank" /><summary type="html">中国线下支付(扫码支付、闪付)、线上支付(银联在线、快捷支付)</summary></entry><entry><title type="html">一加手机使用相关说明</title><link href="http://localhost:8080/tech/Oneplus-Readme/" rel="alternate" type="text/html" title="一加手机使用相关说明" /><published>2019-08-13T20:08:00+08:00</published><updated>2019-08-13T20:08:00+08:00</updated><id>http://localhost:8080/tech/Oneplus%20Readme</id><content type="html" xml:base="http://localhost:8080/tech/Oneplus-Readme/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;1-系统app进行固件更新后的软件版本&quot;&gt;&lt;strong&gt;1. “系统App”进行”固件更新”后的软件版本&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p&gt;假设系统固件更新前，”系统App”的版本是”A”，新固件中内置的”系统App”的版本是”B”，”A”高于”B”，那么，完成固件更新后，”系统App”的版本仍然是”A”。&lt;/p&gt;
-
-&lt;p style=&quot;margin-top: -26px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;2-官方备份恢复工具一加搬家-oneplus-swich&quot;&gt;&lt;strong&gt;2. 官方备份恢复工具：”一加搬家 OnePlus Swich”&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p&gt;一般主要使用其：”联系人”、”一加桌面”、”系统设置” 备份功能。而Apps的备份及其数据迁移，”一加搬家”并不支持，推荐使用”钛备份”。&lt;/p&gt;
-
-&lt;p&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/81.jpg&quot; target=&quot;_blank&quot;&gt;
-&lt;img align=&quot;center&quot; src=&quot;/assets/img/81.jpg&quot; width=&quot;30%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p style=&quot;margin-top: -26px;&quot;&gt;&amp;emsp;&lt;/p&gt;</content><author><name></name></author><category term="OS" /></entry><entry><title type="html">Android 刷机和应用相关汇总</title><link href="http://localhost:8080/tech/Android-OS-Flashing&APK/" rel="alternate" type="text/html" title="Android 刷机和应用相关汇总" /><published>2019-08-13T20:03:00+08:00</published><updated>2019-08-13T20:03:00+08:00</updated><id>http://localhost:8080/tech/Android%20OS%20Flashing&amp;APK</id><content type="html" xml:base="http://localhost:8080/tech/Android-OS-Flashing&amp;APK/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h4 id=&quot;关于bl锁非常认同看到的一句话即解不解锁是我的事你不允许我解锁绝不可以its-all-about-respect-and-human-right-因此对于践踏他人权益的公司和产品建议不再给予支持和购买&quot;&gt;&lt;strong&gt;关于BL锁，非常认同看到的一句话，即：解不解锁是我的事，你不允许我解锁绝不可以。it‘s all about RESPECT and HUMAN RIGHT!!! 因此，对于践踏他人权益的公司和产品，建议不再给予支持和购买。&lt;/strong&gt;&lt;/h4&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot; style=&quot;border-bottom: 3px solid grey;display:block;margin-top: 30px;font-weight:&quot;&gt;Android OS Flashing&lt;/font&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;huawei-emui&quot;&gt;&lt;strong&gt;Huawei EMUI&lt;/strong&gt;&lt;/h3&gt;
-&lt;blockquote&gt;
-  &lt;h4 id=&quot;华为bl锁自2018年5月24日起华为宣布对今后上市的产品停止解锁码的服务而已经上市的手机也将在发布公告之日起的60天后停止此服务&quot;&gt;&lt;strong&gt;华为BL锁&lt;/strong&gt;：自2018年5月24日起，华为宣布对今后上市的产品停止解锁码的服务，而已经上市的手机，也将在发布公告之日起的60天后停止此服务。&lt;/h4&gt;
-  &lt;hr /&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;1-华为荣耀7-解bl锁刷twrp&quot;&gt;&lt;a href=&quot;/tech/Huawei-EMUI/&quot;&gt;1. 华为荣耀7 解BL锁/刷TWRP&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p style=&quot;margin-top: -20px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;oneplus&quot;&gt;&lt;strong&gt;OnePlus&lt;/strong&gt;&lt;/h3&gt;
-&lt;blockquote&gt;
-  &lt;h4 id=&quot;国产手机中良心佳作一股清流无任何锁定限制任刷刷机神器刷机保修内核源码开源&quot;&gt;国产手机中良心佳作，一股清流。&lt;strong&gt;无任何锁定限制，任刷：刷机神器/刷机保修/内核源码开源&lt;/strong&gt;。&lt;/h4&gt;
-  &lt;hr /&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;1-一加5刷机资源和教程&quot;&gt;&lt;a href=&quot;https://forum.xda-developers.com/oneplus-5/how-to/official-oxygenos-4-5-2-7-1-1-ota-t3627003&quot;&gt;1. 一加5刷机资源和教程&lt;/a&gt;&lt;/h4&gt;
-&lt;p style=&quot;margin-top: -48px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-&lt;h4 id=&quot;2-一加5官方论坛&quot;&gt;&lt;a href=&quot;https://forums.oneplus.com/forums/OnePlus5-5T/&quot;&gt;2. 一加5官方论坛&lt;/a&gt;&lt;/h4&gt;
-&lt;p style=&quot;margin-top: -48px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-&lt;h4 id=&quot;3-一加手机使用相关说明&quot;&gt;&lt;a href=&quot;/tech/Oneplus-Readme/&quot;&gt;3. 一加手机使用相关说明&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p style=&quot;margin-top: -20px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;google-phone-factory-images-for-nexus-and-pixel-devices&quot;&gt;&lt;strong&gt;Google Phone: Factory Images for Nexus and Pixel Devices&lt;/strong&gt;&lt;/h3&gt;
-&lt;hr /&gt;
-
-&lt;h4 id=&quot;1-谷歌出厂镜像涵盖pixelnexus系列&quot;&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/Native-Andriod-OS/&quot;&gt;1. 谷歌出厂镜像：涵盖Pixel、Nexus系列&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot; style=&quot;border-bottom: 3px solid grey;display:block;margin-top: 50px;font-weight:&quot;&gt;去DM验证&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;优选-universal-dm-verity-forceencrypt-disk-quota-disablers&quot;&gt;(优选) &lt;a href=&quot;https://forum.xda-developers.com/android/software/universal-dm-verity-forceencrypt-t3817389&quot;&gt;Universal DM-Verity, ForceEncrypt, Disk Quota Disablers&lt;/a&gt;&lt;/h4&gt;
-    &lt;p style=&quot;margin-top: -52px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Disable_Dm-Verity_ForceEncrypt.zip&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-top: -40px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;备选-no-verity-op5t_v3_treble&quot;&gt;(备选) &lt;a href=&quot;https://drive.google.com/file/d/1ge2KhBjtR3FF2e3AGT03kYPutbVdDxIU/view&quot;&gt;no-verity-op5(T)_V3_treble&lt;/a&gt;&lt;/h4&gt;
-    &lt;p style=&quot;margin-top: -52px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;no-verity-op5(T)_V3_treble_.zip&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;border-bottom: 3px solid grey;display:block;margin-top: 50px;font-weight:&quot;&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot;&gt;XPOSED Framework for Android&lt;/font&gt; &amp;ensp;(Up to date)&lt;/p&gt;
-
-&lt;h3 id=&quot;android-9&quot;&gt;&lt;strong&gt;Android 9&lt;/strong&gt;&lt;/h3&gt;
-&lt;hr /&gt;
-
-&lt;h4 id=&quot;1-framework-edxposed&quot;&gt;&lt;strong&gt;1. &lt;u&gt;Framework: EdXposed&lt;/u&gt;&lt;/strong&gt;&lt;/h4&gt;
-&lt;p style=&quot;margin-top: -55px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/ElderDrivers/EdXposed/releases&quot;&gt;Zip Framework Flash in Magisk&lt;/a&gt; (need intsall &lt;code class=&quot;highlighter-rouge&quot;&gt;Riru-Core v19+&lt;/code&gt; from Magisk Repo)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/ElderDrivers/EdXposedManager/releases&quot;&gt;Apk&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;2-useful-modules-working-on-android-9&quot;&gt;&lt;strong&gt;2. &lt;a href=&quot;https://repo.xposed.info/&quot;&gt;&lt;u&gt;Useful Modules working on Android 9&lt;/u&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
-&lt;p style=&quot;margin-top: -55px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.linangran.nowakelock&quot;&gt;禁止唤醒&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Xposed Module Repository 没有下载源，须至Google Play下载 (超出限制，需付费&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.linangran.nowakelock.donation&quot;&gt;捐赠版&lt;/a&gt;)。&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;禁止”CPU唤醒锁”&lt;/strong&gt;、&lt;strong&gt;禁止”所有其它唤醒锁”&lt;/strong&gt;(除了CPU唤醒外, 还有一些唤醒锁可以阻止设备休眠)、&lt;strong&gt;禁止”同步”&lt;/strong&gt;。&lt;/li&gt;
-      &lt;li&gt;以上三项，绝大多数App禁用即可；&lt;strong&gt;对于”微信”，禁止”CPU唤醒锁”和禁止”同步”&lt;/strong&gt;(省电同时，不影响任何消息的及时递送)。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://repo.xposed.info/module/eu.faircode.xlua&quot;&gt;XPrivacyLua&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;隐私保护利器&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-top: -20px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-&lt;h3 id=&quot;android-8-or-lower-than-android-8&quot;&gt;&lt;strong&gt;Android 8 or Lower than Android 8&lt;/strong&gt;&lt;/h3&gt;
-&lt;hr /&gt;
-
-&lt;h4 id=&quot;1-framework-xposed&quot;&gt;&lt;strong&gt;1. &lt;u&gt;Framework: Xposed&lt;/u&gt;&lt;/strong&gt;&lt;/h4&gt;
-&lt;p style=&quot;margin-top: -55px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://dl-xda.xposed.info/framework/&quot;&gt;Zip Framework Flash in Recovery&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://forum.xda-developers.com/showthread.php?t=3034811&quot;&gt;Apk&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://repo.xposed.info/module/de.robv.android.xposed.installer&quot;&gt;Xposed Module Repository&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot; style=&quot;border-bottom: 3px solid grey;display:block;margin-top: 50px;font-weight:&quot;&gt;Magisk&lt;/font&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;official-link&quot;&gt;&lt;a href=&quot;https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445&quot;&gt;Official Link&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot; style=&quot;border-bottom: 3px solid grey;display:block;margin-top: 50px;font-weight:&quot;&gt;TWRP&lt;/font&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;official-link-1&quot;&gt;&lt;a href=&quot;https://twrp.me/Devices/&quot;&gt;Official Link&lt;/a&gt;&lt;/h4&gt;
-&lt;p style=&quot;margin-top: -48px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-&lt;h4 id=&quot;codeworkx-link&quot;&gt;&lt;a href=&quot;https://sourceforge.net/projects/cheeseburgerdumplings/files/16.0/cheeseburger/recovery/&quot;&gt;Codeworkx Link&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p style=&quot;border-bottom: 3px solid grey;display:block;margin-top: 50px;font-weight:&quot;&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot;&gt;APK 权限设置&lt;/font&gt;&lt;/p&gt;
-
-&lt;p style=&quot;margin-top: -46px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;权限管理配置中，有些item是必选项，否则部分应用打不开或者出错。宗旨：在”权限把控”和”正常使用App”中找一个平衡。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/87.png&quot; target=&quot;_blank&quot;&gt;
-&lt;img align=&quot;center&quot; src=&quot;/assets/img/87.png&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p style=&quot;border-bottom: 3px solid grey;display:block;margin-top: 50px;font-weight:&quot;&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot;&gt;APK&lt;/font&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;电话管理&quot;&gt;&lt;strong&gt;电话管理&lt;/strong&gt;&lt;/h3&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;span&gt;&lt;font style=&quot;font-size: 20px;font-weight: bold;&quot;&gt;1. &lt;u&gt;应用名称:  来电信息&lt;/u&gt;&lt;/font&gt;  (&lt;a href=&quot;https://github.com/xdtianyu/CallerInfo&quot;&gt;开源项目&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&quot;margin-top: -55px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=org.xdty.callerinfo&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;来电信息&lt;/code&gt;&lt;/a&gt; (来电号码辨识)。&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=org.xdty.callerinfo.plugin&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;来电信息插件&lt;/code&gt;&lt;/a&gt; (开启自动挂断，结合黑名单:归属地/记关键字(诈骗、广告等)/起始号码)。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;亲测：效果很好，but该应用不会随系统开机自启动，应用也不会常驻后台运行。需要开启自动运行，否则应用不能监听系统广播。对于没有”自启管理”功能，开机后需主动打开&lt;code class=&quot;highlighter-rouge&quot;&gt;来电信息插件&lt;/code&gt;的设置界面，黑名单自动挂断才会生效。&lt;/p&gt;
-
-&lt;table style=&quot;width:66.6%;&quot;&gt;
-    &lt;tbody&gt;
-        &lt;tr class=&quot;firstRow&quot;&gt;			
-            &lt;td width=&quot;33.3%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
-			&lt;a align=&quot;center&quot; href=&quot;/assets/img/75.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img align=&quot;center&quot; src=&quot;/assets/img/75.jpg&quot; width=&quot;80%&quot; /&gt;&lt;/a&gt;		
-			&lt;/td&gt;
-            &lt;td width=&quot;33.3%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
-			&lt;a align=&quot;center&quot; href=&quot;/assets/img/76.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img align=&quot;center&quot; src=&quot;/assets/img/76.jpg&quot; width=&quot;80%&quot; /&gt;&lt;/a&gt;		
-			&lt;/td&gt;			
-        &lt;/tr&gt;			
-    &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p style=&quot;margin-top: -20px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-&lt;h3 id=&quot;音视频&quot;&gt;&lt;strong&gt;音视频&lt;/strong&gt;&lt;/h3&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;span&gt;&lt;font style=&quot;font-size: 20px;font-weight: bold;&quot;&gt;1. &lt;u&gt;应用名称:  YouTube Vanced Edition&lt;/u&gt;&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&quot;margin-top: -55px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://forum.xda-developers.com/android/apps-games/app-youtube-vanced-edition-t3758757&quot;&gt;XDA Download Link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://vanced.app/&quot;&gt;Official Link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;For non-root Solution&lt;/strong&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;MicroG.apk&lt;/code&gt; for google account login + &lt;code class=&quot;highlighter-rouge&quot;&gt;YouTube Vanced.apk&lt;/code&gt; for anonymous browsing &lt;br /&gt;(该方案和系统自带youtube互不干涉，推荐)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Note: “阻止运行 Prevent Running”中，必须&lt;strong&gt;不再阻止&lt;/strong&gt;MicroG，否则YouTube Vanced 登录功能失效。&lt;/p&gt;
-
-&lt;p style=&quot;margin-top: -20px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-&lt;h3 id=&quot;im&quot;&gt;&lt;strong&gt;IM&lt;/strong&gt;&lt;/h3&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;span&gt;&lt;font style=&quot;font-size: 20px;font-weight: bold;&quot;&gt;1. &lt;u&gt;应用名称:  twinme&lt;/u&gt;&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;margin-top: -46px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;该应用设计理念很棒，即：为用户开发&lt;strong&gt;完全可掌控的 IM&lt;/strong&gt;，no ADs + no unsolicited messages/calls + &lt;strong&gt;no server, only p2p data storing&lt;/strong&gt;。&lt;strong&gt;无需任何注册信息&lt;/strong&gt; (仅提供一个ID名称，随时可更改)；基于WebRTC，聊天&lt;strong&gt;内容强制加密&lt;/strong&gt;；支持文字/语音通话/视频通话。使用&lt;strong&gt;国内网络畅通&lt;/strong&gt;，是替代”微信”的很好选择。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p style=&quot;margin-top: -42px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=org.twinlife.device.android.twinme&quot;&gt;Download Link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.lanzous.com/i5if9mj&quot;&gt;网盘下载&lt;/a&gt; (如侵权，请联系删除)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://twin.me/en/&quot;&gt;Official Link&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;table style=&quot;width:100%;&quot;&gt;
-    &lt;tbody&gt;
-        &lt;tr class=&quot;firstRow&quot;&gt;			
-            &lt;td width=&quot;33.3%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
-			&lt;a align=&quot;center&quot; href=&quot;/assets/img/77.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img align=&quot;center&quot; src=&quot;/assets/img/77.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;		
-			&lt;a align=&quot;center&quot; href=&quot;/assets/img/78.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img align=&quot;center&quot; src=&quot;/assets/img/78.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;				
-			&lt;/td&gt;
-            &lt;td width=&quot;33.3%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
-			&lt;a align=&quot;center&quot; href=&quot;/assets/img/79.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img align=&quot;center&quot; src=&quot;/assets/img/79.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;		
-			&lt;/td&gt;	
-            &lt;td width=&quot;33.3%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
-			&lt;a align=&quot;center&quot; href=&quot;/assets/img/80.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img align=&quot;center&quot; src=&quot;/assets/img/80.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;		
-			&lt;/td&gt;			
-        &lt;/tr&gt;			
-    &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><category term="Android" /><summary type="html">华为荣耀7_解BL锁/刷TWRP,一加5,谷歌亲儿子出厂镜像,XPOSED,Magisk,Disable_DM,TWRP,应用</summary></entry><entry><title type="html">Huawei Hornor 7 BLUnlock/Flash TWRP - EMUI (Android Based)</title><link href="http://localhost:8080/tech/Huawei-EMUI/" rel="alternate" type="text/html" title="Huawei Hornor 7 BLUnlock/Flash TWRP - EMUI (Android Based)" /><published>2019-08-08T02:00:00+08:00</published><updated>2019-08-08T02:00:00+08:00</updated><id>http://localhost:8080/tech/Huawei%20EMUI</id><content type="html" xml:base="http://localhost:8080/tech/Huawei-EMUI/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
-Keywords: 
-&lt;a href=&quot;#keyword1&quot;&gt;华为荣耀7 解BL锁/刷TWRP&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h4 id=&quot;关于bl锁非常认同看到的一句话即解不解锁是我的事你不允许我解锁绝不可以its-all-about-respect-and-human-right-因此对于践踏他人权益的公司和产品建议不再给予支持和购买&quot;&gt;&lt;strong&gt;关于BL锁，非常认同看到的一句话，即：解不解锁是我的事，你不允许我解锁绝不可以。it‘s all about RESPECT and HUMAN RIGHT!!! 因此，对于践踏他人权益的公司和产品，建议不再给予支持和购买。&lt;/strong&gt;&lt;/h4&gt;
-&lt;/blockquote&gt;
-
-&lt;p id=&quot;keyword1&quot;&gt;&lt;font color=&quot;purple&quot; size=&quot;5&quot; style=&quot;border-bottom: 3px solid grey;display:block&quot;&gt;华为荣耀7 (PLK-AL10全网通)解BL锁/刷TWRP&lt;/font&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;1-手机状态&quot;&gt;&lt;strong&gt;1. 手机状态&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p&gt;几年前曾经解锁过BootLoader，显示”fastboot unlock”, 但是当通过“fastboot命令”刷入TWRP时，显示&lt;code class=&quot;highlighter-rouge&quot;&gt;remote: Command not not allowed&lt;/code&gt; 错误, 无法刷入TWRP。对此，网络的建议：重新解锁BL一次。&lt;/p&gt;
-
-&lt;p style=&quot;margin-top: -26px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;2-解bl锁&quot;&gt;&lt;strong&gt;2. 解BL锁&lt;/strong&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;刷入官方以外的任何东东 (如TWRP/第三方固件)，前提条件：必须解BL锁。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;font color=&quot;red&quot;&gt;2018年，华为官方已正式停止申请BL解锁码。&lt;/font&gt;
-    &lt;p&gt;2018年后，需要BL解锁码的方式有两：&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;淘宝等收费网站&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.52pojie.cn/forum.php?mod=viewthread&amp;amp;tid=816065&quot;&gt;网上流传的方法，自行获得解锁码 &lt;/a&gt;
-  &lt;br /&gt;亲测体验：
-        &lt;ul&gt;
-          &lt;li&gt;必须root先，EMUI 4.x.x 很难root，降级至B220或B201 (EMUI 3)后，使用&lt;code class=&quot;highlighter-rouge&quot;&gt;kingroot.apk&lt;/code&gt;root成功。&lt;/li&gt;
-          &lt;li&gt;使用以上链接方法尝试：搜索WVLOCK，得到的是&lt;code class=&quot;highlighter-rouge&quot;&gt;UUUUU......UUUDDDD.......DD&lt;/code&gt;，并非16位解锁码，无解。&lt;br /&gt;也许和”fastboot unlock”状态有关，也许是针对”曾经解过锁但需重新解锁”所特有的错误，maybe, not sure.&lt;/li&gt;
-        &lt;/ul&gt;
-
-        &lt;p&gt;&lt;br /&gt;以上链接涉及的命令：&lt;/p&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  adb shell
-  $ su
-  # cd /storage/sdcard0/
-  # mkdir -p PartitionBackup
-  # cd /storage/sdcard0/PartitionBackup
-
-  # dd if=/dev/block/platform/hi_mci.0/by-name/nvme of=/storage/sdcard0/PartitionBackup/nvme
-  # dd if=/dev/block/platform/hi_mci.0/by-name/oeminfo of=/storage/sdcard0/PartitionBackup/oeminfo
-  # dd if=/dev/block/platform/hi_mci.0/by-name/recovery of=/storage/sdcard0/PartitionBackup/recovery
-
-  root@hwp7:/storage/sdcard0/PartitionBackup # strings nvme | grep WVDEVID -B 1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-top: -26px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;3-其他尝试成功刷入root--twrp&quot;&gt;&lt;strong&gt;3. 其他尝试：成功刷入root + TWRP&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p&gt;无心插柳柳成荫，在&lt;strong&gt;B388官方固件&lt;/strong&gt;状态下，尝试使用&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;YoRoot_V1.1&lt;/code&gt;&lt;/strong&gt;进行root。成功root的同时，YoRoot还自动成功刷入TWRP 2.8.7.0. (之后可手动更新TWRP版本)&lt;/p&gt;
-
-&lt;p&gt;Amazing! (至于为什么没有报错：&lt;code class=&quot;highlighter-rouge&quot;&gt;remote: Command not not allowed&lt;/code&gt;，未解之迷 :) )，anyway，”fastboot unlock” was still helpful to achieve root/TWRP flashing.&lt;/p&gt;
-
-&lt;p&gt;Note: &lt;code class=&quot;highlighter-rouge&quot;&gt;YoRoot_Test_2.0&lt;/code&gt; 不支持荣耀7。&lt;/p&gt;
-
-&lt;p style=&quot;margin-top: -26px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;4-刷入第三方固件&quot;&gt;&lt;strong&gt;4. 刷入第三方固件&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;目标：刷入”论坛优化版固件”，基于极客版(即开发版)进行优化的论坛第三方固件，比较基于原官方固件&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;进入TWRP，清除缓存、清楚data.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;刷入论坛优化版固件(zip文件) (一般均含有root和xposed). &lt;br /&gt;
-荣耀7 Final极客优化版: &lt;a href=&quot;https://club.huawei.com/thread-19007601-1-1-2520.html&quot;&gt;PLK-AL10_7.5.16_90208Em&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;(可选) 待进入系统平滑稳定后，可进入TWRP，刷入更新版本的TWRP.img和supersu.zip (为避免版本不对，xposed.zip for HW 建议不更新).&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p style=&quot;margin-top: -26px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;5-关于荣耀7-官方固件降级升级说明&quot;&gt;&lt;strong&gt;5. 关于荣耀7 官方固件降级/升级说明&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;荣耀7 官方final稳定版为B389，YoRoot_V1.1不支持该版本，因此需退回到B388.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;不能直退，需安装华为官方助手 &lt;code class=&quot;highlighter-rouge&quot;&gt;hisuite&lt;/code&gt;，点”系统升级”，可降级至B220.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;降后，再通过”fastboot_all线刷方式”或者“dload”卡强刷方式，升级至B388.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="OS" /><summary type="html">华为荣耀7 解BL锁/刷TWRP</summary></entry><entry><title type="html">萌宠</title><link href="http://localhost:8080/pet/Pet-OThers/" rel="alternate" type="text/html" title="萌宠" /><published>2019-07-19T01:11:00+08:00</published><updated>2019-07-19T01:11:00+08:00</updated><id>http://localhost:8080/pet/Pet-OThers</id><content type="html" xml:base="http://localhost:8080/pet/Pet-OThers/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;1-很憨厚的小黄定期增产报国2次年平均每次6只小狗狗奇怪和隔壁的小黑死对头&quot;&gt;1. 很憨厚的小黄，定期增产报国，2次/年，平均每次6只小狗狗。奇怪，和隔壁的小黑死对头。&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/16.jpg&quot; width=&quot;50%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;2-小黑一家三口小白早早被送人了小黑小黄每天来串门子&quot;&gt;2. 小黑一家三口。小白早早被送人了，小黑、小黄每天来串门子。&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/17.jpg&quot; width=&quot;70%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;3--&quot;&gt;3. 😘 。&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/18.jpg&quot; width=&quot;40%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;4-园区小黄和小黑一对couple一天小黄看到我后居然示意领着我去找小黑找到后小黑兴奋地和小黄媳妇眼神交流&quot;&gt;4. 园区小黄和小黑，一对couple。一天，小黄看到我后，居然示意领着我去找小黑，找到后小黑兴奋地和小黄媳妇眼神交流~。&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/19.jpg&quot; width=&quot;66%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;5-猫咪真会享受&quot;&gt;5. 猫咪真会享受。&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/20.jpg&quot; width=&quot;66%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;6---&quot;&gt;6. 😘 🥰 。&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/21.jpg&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;7-同一家身形迥异的吉娃娃-vs-萨摩耶这搭配也可爱的没谁了&quot;&gt;7. 同一家身形迥异的吉娃娃 vs 萨摩耶，这搭配也可爱的没谁了~&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/22.jpg&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;8-大小兔子参照物同一笼子同一萝卜&quot;&gt;8. 大、小兔子。参照物：同一笼子、同一萝卜。&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/23.jpg&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;9-难得路上遇到牛领头的牛很酷貌似脾气不大好欲上前摸它一下瞬间听到它鼻子哼了一下还是停手吧&quot;&gt;9. 难得路上遇到牛，领头的牛很酷，貌似脾气不大好，欲上前摸它一下，瞬间听到它鼻子“哼”了一下，还是停手吧🤔。&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/29.jpg&quot; width=&quot;65%&quot; /&gt;&lt;/p&gt;
-&lt;p style=&quot;margin-left: 20%;margin-top: -8px;&quot;&gt;Photography in 20190331&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;10-动物的小眼神原来他们也会思会想&quot;&gt;10. 动物的小眼神，原来他们也会思、会想。&lt;/h4&gt;
-
-&lt;table style=&quot;width:100%;&quot;&gt;
-    &lt;tbody&gt;
-        &lt;tr class=&quot;firstRow&quot;&gt;		
-            &lt;td align=&quot;center&quot; width=&quot;33.3%&quot; style=&quot;font-weight: bold;font-size:18px;&quot;&gt;
-			20190619
-			&lt;/td&gt;	
-            &lt;td align=&quot;center&quot; width=&quot;33.3%&quot; style=&quot;font-weight: bold;font-size:18px;&quot;&gt;	
-			20190620
-			&lt;/td&gt;
-            &lt;td align=&quot;center&quot; width=&quot;33.3%&quot; style=&quot;font-weight: bold;font-size:18px;&quot;&gt;
-			20190625
-			&lt;/td&gt;			
-        &lt;/tr&gt;	
-        &lt;tr&gt;		
-            &lt;td width=&quot;33.3%&quot;&gt;
-			&lt;a href=&quot;/assets/img/63.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img src=&quot;/assets/img/63.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt; 
-			&lt;/td&gt;	
-            &lt;td width=&quot;33.3%&quot;&gt;	
-			&lt;a href=&quot;/assets/img/64.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img src=&quot;/assets/img/64.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt; 
-			&lt;/td&gt;
-            &lt;td width=&quot;33.3%&quot;&gt;	
-			&lt;a href=&quot;/assets/img/65.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img src=&quot;/assets/img/65.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt; 
-			&lt;/td&gt;			
-        &lt;/tr&gt;		
-    &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;11-牛---她居然低下头让我摸她那么高的个头她的头居然甘愿俯至地上温顺地给你抚摸太感动了好有灵性-那一刻体会到俯首甘为孺子牛原来是这个神态---一直不理解她的一个动作挨着抚摸她时她总试图用牛角轻轻的拱我同时嘴里总要轻哼一声貌似好像要把我拱到她背上去暂时还不敢尝试-后来她累了索性就地趴下很安静很乖后来听她主人说她今年2岁了&quot;&gt;11. &lt;strong&gt;牛&lt;/strong&gt; - 她居然低下头让我摸她，那么高的个头，她的头居然甘愿俯至地上，温顺地给你抚摸，太感动了，好有灵性。 那一刻，体会到”俯首甘为孺子牛”原来是这个神态 :) &lt;br /&gt; &lt;u&gt;一直不理解她的一个动作&lt;/u&gt;：挨着抚摸她时，她总试图用牛角轻轻的拱我，同时嘴里总要轻哼一声，貌似好像要把我拱到她背上去，暂时还不敢尝试。&lt;br /&gt; 后来她累了，索性就地趴下，很安静很乖。&lt;br /&gt;后来听她主人说，她今年2岁了。&lt;/h4&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;拍摄于 20190708。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;table style=&quot;width:100%;&quot;&gt;
-    &lt;tbody align=&quot;center&quot; valign=&quot;middle&quot;&gt;	
-        &lt;tr class=&quot;firstRow&quot;&gt;		
-            &lt;td width=&quot;50%&quot;&gt;
-			&lt;a href=&quot;/assets/img/72.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img src=&quot;/assets/img/72.jpg&quot; width=&quot;60%&quot; /&gt;&lt;/a&gt; 
-			&lt;/td&gt;	
-            &lt;td width=&quot;50%&quot;&gt;	
-			&lt;a href=&quot;/assets/img/73.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img src=&quot;/assets/img/73.jpg&quot; width=&quot;60%&quot; /&gt;&lt;/a&gt; 
-			&lt;/td&gt;		
-        &lt;/tr&gt;
-        &lt;tr&gt;		
-            &lt;td width=&quot;50%&quot;&gt;
-			&lt;a href=&quot;/assets/img/70.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img src=&quot;/assets/img/70.jpg&quot; width=&quot;80%&quot; /&gt;&lt;/a&gt; 
-			&lt;/td&gt;	
-            &lt;td width=&quot;50%&quot;&gt;	
-			&lt;a href=&quot;/assets/img/71.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img src=&quot;/assets/img/71.jpg&quot; width=&quot;80%&quot; /&gt;&lt;/a&gt; 
-			&lt;/td&gt;		
-        &lt;/tr&gt;		
-    &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h4 id=&quot;20190715哈哈我又去看老朋友了她居然认识我了我向她招手她向我走来快要靠近时她居然跑起来吓我一跳我下意识地拔腿就跑-以后还得慢慢练胆&quot;&gt;20190715：哈哈，我又去看老朋友了，她居然认识我了，我向她招手，她向我走来，快要靠近时她居然跑起来，吓我一跳，我下意识地拔腿就跑 :)，以后还得慢慢练胆。&lt;/h4&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;12-beautiful-smile&quot;&gt;12. Beautiful Smile.&lt;/h4&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;拍摄于 20190718。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;table style=&quot;width:50%;&quot;&gt;
-    &lt;tbody align=&quot;center&quot; valign=&quot;middle&quot;&gt;	
-        &lt;tr class=&quot;firstRow&quot;&gt;		
-            &lt;td width=&quot;100%&quot;&gt;
-			&lt;a href=&quot;/assets/img/74.jpg&quot; target=&quot;_blank&quot;&gt;
-			&lt;img src=&quot;/assets/img/74.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt; 
-			&lt;/td&gt;			
-        &lt;/tr&gt;		
-    &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><summary type="html">曾遇到的可爱小动物</summary></entry><entry><title type="html">Lovely Animals Experiencing in My Life</title><link href="http://localhost:8080/pet/Lovely-Animals/" rel="alternate" type="text/html" title="Lovely Animals Experiencing in My Life" /><published>2019-07-19T01:11:00+08:00</published><updated>2019-07-19T01:11:00+08:00</updated><id>http://localhost:8080/pet/Lovely%20Animals</id><content type="html" xml:base="http://localhost:8080/pet/Lovely-Animals/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;1-萌宠&quot;&gt;&lt;a href=&quot;/pet/Pet-OThers/&quot;&gt;1. 萌宠&lt;/a&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;生命中曾遇到的可爱小动物们。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;2-旺财成长记&quot;&gt;&lt;a href=&quot;/pet/dog/Pet-WangCai/&quot;&gt;2. 旺财成长记&lt;/a&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;My lovely Dog 旺财从小到大成长历程。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;3-miracle-pets&quot;&gt;&lt;a href=&quot;/pet/Miracle-Pets/&quot;&gt;3. Miracle Pets&lt;/a&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;神迹无处不在。&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name></name></author><summary type="html">萌宠,旺财成长纪,Miracle Pets</summary></entry><entry><title type="html">Hyper-V 虚拟服务器</title><link href="http://localhost:8080/tech/%E6%90%AC%E8%BF%90/Hyper-V/" rel="alternate" type="text/html" title="Hyper-V 虚拟服务器" /><published>2019-07-12T00:00:00+08:00</published><updated>2019-07-12T00:00:00+08:00</updated><id>http://localhost:8080/tech/%E6%90%AC%E8%BF%90/Hyper-V</id><content type="html" xml:base="http://localhost:8080/tech/%E6%90%AC%E8%BF%90/Hyper-V/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;1-虚拟os过程中出现死机状态&quot;&gt;1. 虚拟OS过程中，出现”死机”状态&lt;/h3&gt;
-&lt;p style=&quot;border-bottom: 3px solid grey;display:block;margin-bottom: 20px;&quot;&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;安装或启动过程中，出现”死机”状态，Hyper-V关闭也没有用&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;解决方法 (&lt;a href=&quot;https://www.jianshu.com/p/2e3429d45aea&quot;&gt;原出处&lt;/a&gt;)：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;使用&lt;a href=&quot;https://www.microsoft.com/en-us/download/details.aspx?id=53337&quot;&gt;微软官方工具&lt;code class=&quot;highlighter-rouge&quot;&gt;dgreadiness&lt;/code&gt;&lt;/a&gt;。&lt;/li&gt;
-  &lt;li&gt;解压后, 在Powershell中运行：&lt;code class=&quot;highlighter-rouge&quot;&gt;.\DG_Readiness_Tool_v3.6.ps1 -Disable&lt;/code&gt;。&lt;/li&gt;
-  &lt;li&gt;重启后问题则解决了。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;2-visual-studio-emulator-for-android&quot;&gt;2. &lt;a href=&quot;https://visualstudio.microsoft.com/zh-hans/vs/msft-android-emulator/&quot;&gt;Visual Studio Emulator for Android&lt;/a&gt;&lt;/h3&gt;
-&lt;p style=&quot;border-bottom: 3px solid grey;display:block;margin-bottom: 20px;&quot;&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;微软官方提供，在windows上的安卓模拟器，借助”Hyper-V” (即需事先启用 Hyper-V)。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;主机虚拟机之间的网卡设定注意事项&quot;&gt;主机、虚拟机之间的网卡设定注意事项：&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Hyper-V虚拟服务器 “虚拟交换机管理器”配置中，确保有三块网卡：&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;默认：&lt;code class=&quot;highlighter-rouge&quot;&gt;Default Switch&lt;/code&gt;，不管它；&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Windows Phone Emulator Internal Switch&lt;/code&gt;，一般也是默认安装的，如没有自建一个，名字随意，连接类型选&lt;code class=&quot;highlighter-rouge&quot;&gt;内部网络&lt;/code&gt;。&lt;/li&gt;
-      &lt;li&gt;需自建一个”外部网络”，用来绑定”主机的物理网卡”，同时需允许共享该物理网卡。&lt;br /&gt;
-  &lt;a align=&quot;center&quot; href=&quot;/assets/img/69.jpg&quot; target=&quot;_blank&quot;&gt;
-  &lt;img align=&quot;center&quot; src=&quot;/assets/img/69.jpg&quot; width=&quot;65%&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-top: -35px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;安卓虚拟机 配置中，需确保设定两块网卡：&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;必须设定两块网卡：Internal Switch (内部)、External Switch (外部，绑定主机的”物理网卡”，允许该网卡共享)；&lt;/li&gt;
-      &lt;li&gt;Internal Switch 顺序在前，External Switch 顺序在后 (未颠倒过来测试，国外某论坛上这么说’the order does matter’；因默认是这个先后顺序，故未亲测)。&lt;br /&gt;
-  &lt;a align=&quot;center&quot; href=&quot;/assets/img/68.jpg&quot; target=&quot;_blank&quot;&gt;
-  &lt;img align=&quot;center&quot; src=&quot;/assets/img/68.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-top: -35px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;安卓虚拟机 虚拟网卡的工作方式：&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;“安卓虚拟机外部网络，”绑定”主机的物理网卡 &lt;strong&gt;X&lt;/strong&gt;“，则在主机”网络适配器”中，自动安装”X的虚拟网卡 &lt;strong&gt;Y&lt;/strong&gt;” (Y，被安卓虚拟机配置成网卡)；&lt;/li&gt;
-      &lt;li&gt;自动生成”网桥”，桥接&lt;strong&gt;X&lt;/strong&gt;，至此，”X” 已无法被主机使用；但透过桥接，主机上网不受影响；
-        &lt;ul&gt;
-          &lt;li&gt;但主机的SMB受到影响，即手机无法通过SMB访问到主机；&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;SMB问题解决方法：&lt;/strong&gt;&lt;strong&gt;主机上使用”双网卡”&lt;/strong&gt;，除了以上&lt;strong&gt;网卡X&lt;/strong&gt;用于与Hyper-V桥接，另一”&lt;strong&gt;网卡K&lt;/strong&gt;“用于主机日常的使用；在主机上，可同时使这两个网卡连接网络。(注意：实际操作时，先禁用”&lt;strong&gt;网卡K&lt;/strong&gt;“，待&lt;strong&gt;网卡X&lt;/strong&gt;全部配置成功后，再启用”&lt;strong&gt;网卡K&lt;/strong&gt;“。)
-  &lt;a align=&quot;center&quot; href=&quot;/assets/img/66.jpg&quot; target=&quot;_blank&quot;&gt;
-  &lt;img align=&quot;center&quot; src=&quot;/assets/img/66.jpg&quot; width=&quot;70%&quot; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
-  &lt;a align=&quot;center&quot; href=&quot;/assets/img/67.jpg&quot; target=&quot;_blank&quot;&gt;
-  &lt;img align=&quot;center&quot; src=&quot;/assets/img/67.jpg&quot; width=&quot;70%&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;p style=&quot;margin-top: -30px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;每次启动”安卓虚拟机”时，被问及’是否重配置网络时’，选择忽略/否。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-top: -35px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;其他问题：&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;TunSafe (Wireguard) 不能用&lt;/strong&gt;
-        &lt;ul&gt;
-          &lt;li&gt;“Hyper-V虚拟服务器”和”安卓虚拟机”配置中，删除 Wireguard涉及的网卡 &lt;code class=&quot;highlighter-rouge&quot;&gt;TAP-Windows Adapter V9&lt;/code&gt;，即可。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="OS" /><summary type="html">Hyper-V 常见问题,微软官方安卓虚拟器</summary></entry><entry><title type="html">各系统命令集汇总</title><link href="http://localhost:8080/tech/Useful-Collection_Common-Commands-for-Diff-OS/" rel="alternate" type="text/html" title="各系统命令集汇总" /><published>2019-07-09T20:37:00+08:00</published><updated>2019-07-09T20:37:00+08:00</updated><id>http://localhost:8080/tech/Useful%20Collection_Common%20Commands%20for%20Diff%20OS</id><content type="html" xml:base="http://localhost:8080/tech/Useful-Collection_Common-Commands-for-Diff-OS/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;5&quot; style=&quot;border-bottom: 3px solid grey;display:block&quot;&gt;Windows OS 命令集&lt;/font&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;1-端口被占用&quot;&gt;1. 端口被占用&lt;/h4&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;如查找4000端口被哪个进程占用了，打开CMD：&lt;code class=&quot;highlighter-rouge&quot;&gt;netstat -aon | findstr &quot;4000&quot;&lt;/code&gt; &lt;br /&gt;找到对应的PID。&lt;/li&gt;
-  &lt;li&gt;打开Windows任务管理器，结束对应PID进程即可。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;5&quot; style=&quot;border-bottom: 3px solid grey;display:block&quot;&gt;Meego OS&lt;/font&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;nokia-n9-meego-os-相关信息&quot;&gt;&lt;a href=&quot;/tech/Nokia-N9-Meego-OS/&quot;&gt;Nokia N9 (Meego OS) 相关信息&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;5&quot; style=&quot;border-bottom: 3px solid grey;display:block&quot;&gt;Sailfish OS&lt;/font&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;jolla-sailfish-os-相关信息&quot;&gt;&lt;a href=&quot;/tech/Jolla-Sailfish-OS/&quot;&gt;Jolla (Sailfish OS) 相关信息&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;5&quot; style=&quot;border-bottom: 3px solid grey;display:block&quot;&gt;Ubuntu&lt;/font&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;ubuntu-常用命令&quot;&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/Ubuntu-Commands/&quot;&gt;Ubuntu 常用命令&lt;/a&gt;&lt;/h4&gt;
-
-&lt;h4 id=&quot;ubuntu-touch-相关信息汇总&quot;&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/Ubuntu-Touch/&quot;&gt;Ubuntu Touch 相关信息汇总&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p style=&quot;margin-top: -46px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Ubuntu Touch 命令集, SSH启动, 国内源&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;5&quot; style=&quot;border-bottom: 3px solid grey;display:block&quot;&gt;TunSafe install on Linux&lt;/font&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;tunsafe-install-on-linux&quot;&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/TunSafe-install-on-Linux/&quot;&gt;TunSafe install on Linux&lt;/a&gt;&lt;/h4&gt;</content><author><name></name></author><category term="命令集" /><summary type="html">Windows,Meego,Sailfish,Ubuntu,Tunsafe on Linux</summary></entry><entry><title type="html">Ubuntu Touch 相关信息汇总</title><link href="http://localhost:8080/tech/%E6%90%AC%E8%BF%90/Ubuntu-Touch/" rel="alternate" type="text/html" title="Ubuntu Touch 相关信息汇总" /><published>2019-07-09T00:00:00+08:00</published><updated>2019-07-09T00:00:00+08:00</updated><id>http://localhost:8080/tech/%E6%90%AC%E8%BF%90/Ubuntu%20Touch</id><content type="html" xml:base="http://localhost:8080/tech/%E6%90%AC%E8%BF%90/Ubuntu-Touch/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;1-启用ubuntu-touch的ssh功能-原出处&quot;&gt;1. 启用Ubuntu Touch的ssh功能 (&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/Enable-SSH-of-Ubuntu-Touch/&quot;&gt;原出处&lt;/a&gt;)&lt;/h3&gt;
-&lt;p style=&quot;border-bottom: 3px solid grey;display:block&quot;&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;u&gt;生成公钥/私钥&lt;/u&gt;&lt;br /&gt;
-在Linux下通过命令&lt;code class=&quot;highlighter-rouge&quot;&gt;ssh-keygen&lt;/code&gt;生成，拷贝保存出来。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;u&gt;Windows CMD&lt;/u&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  adb push nexus5UT.pub /home/phablet/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;u&gt;adb shell&lt;/u&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  mkdir /home/phablet/.ssh
-  chmod 700 /home/phablet/.ssh
-  cat /home/phablet/nexus5UT.pub &amp;gt;&amp;gt; /home/phablet/.ssh/authorized_keys
-  chmod 600 /home/phablet/.ssh/authorized_keys
-  chown -R phablet.phablet /home/phablet/.ssh
-		
-  sudo android-gadget-service enable ssh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;u&gt;PC: SFTP/SSH客户端可实现访问&lt;/u&gt;&lt;br /&gt;
-需将私钥导入，和手机上的公钥匹配。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-top: -15px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;2-常用命令集&quot;&gt;2. 常用命令集&lt;/h3&gt;
-&lt;p style=&quot;border-bottom: 3px solid grey;display:block&quot;&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;使用SFTP普通账户登录时，当复制文件因权限不够失败时，在root账户下&lt;strong&gt;授权&lt;code class=&quot;highlighter-rouge&quot;&gt;该目录 xxx&lt;/code&gt;777权限&lt;/strong&gt;即可：&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;chmod -R 777 xxx&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Root 账户下依旧显示&lt;code class=&quot;highlighter-rouge&quot;&gt;Read-only file system&lt;/code&gt;&lt;/strong&gt; , 解决方法 (在root账户下)：(&lt;a href=&quot;https://blog.csdn.net/u010839779/article/details/77062347&quot;&gt;原出处&lt;/a&gt;)
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  ll /etc/.pwd.lock
-  rm -rf /etc/.pwd.lock 
-  mount -o remount rw /  
-  rm -rf /etc/.pwd.lock
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/var/cache/apt/archives&lt;/code&gt;空间太小&lt;/strong&gt;不让”更新软件”, 使用软连接方法解决：(&lt;a href=&quot;https://blog.csdn.net/horacehe16/article/details/82978828&quot;&gt;原出处&lt;/a&gt;)&lt;br /&gt;
-  在某个空间大的分区建立一个目录，把/var/cache/apt/archives换成指向那个目录的&lt;strong&gt;软链接&lt;/strong&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  mkdir -p &quot;$HOME/debs/partial&quot;
-  sudo rm -rf /var/cache/apt/archives
-  sudo ln -s &quot;$HOME/debs&quot; /var/cache/apt/archives
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;ul&gt;
-      &lt;li&gt;BUT 会导致另一个问题：&lt;a href=&quot;https://blog.csdn.net/victoryckl/article/details/8214688&quot;&gt;&lt;strong&gt;硬链接 Invalid cross-device link错误&lt;/strong&gt;&lt;/a&gt;&lt;br /&gt;
-  这样，以Ubuntu touch为例，lxc的更新软件则无法更新，由于硬链接错误 (只能在同一个分区建立数据关联；而前面由于空间不够，又必须跨分区建立软连接，因此循环无解)。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-top: -35px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;“软件源签名” couldn’t be verified 或者 invalid, 方法解决：(&lt;a href=&quot;https://blog.csdn.net/u011037837/article/details/83032584&quot;&gt;原出处&lt;/a&gt;)&lt;br /&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  grep -iR opensuse /etc/apt/sources.list*
-  sudo sed -i '/opensuse/ s/^/#/' /etc/apt/sources.list.d/*.list
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.liquidweb.com/kb/install-git-ubuntu-16-04-lts/&quot;&gt;安装 git&lt;/a&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get install git-core&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;git --version&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;安装 zypper：&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install zypper&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;清除所有已下载的过期安装包：&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get autoclean&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;清除所有已下载的安装包：&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get clean&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-top: -15px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;3-国内源&quot;&gt;3. 国内源&lt;/h3&gt;
-&lt;p style=&quot;border-bottom: 3px solid grey;display:block&quot;&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Ubuntu Port/ Ubuntu ARM 源&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;以下内容搬运, &lt;a href=&quot;https://blog.csdn.net/guo_lei_lamant/article/details/81809452&quot;&gt;原出处&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p&gt;查看镜像站点，是否支持arm的方法: &lt;br /&gt;
-打开 /dists/xenial/main/ ，查看该目录下是否有 &lt;code class=&quot;highlighter-rouge&quot;&gt;binary-arm&lt;/code&gt;，如果有，则表示支持。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;国内源更换步骤：&lt;/strong&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;以root身份打开 &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/apt/sources.list&lt;/code&gt;。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;将 http://ports.ubuntu.com/ 全部替换为 http://mirrors.ustc.edu.cn/ubuntu-ports/ (或者其他&lt;a href=&quot;https://blog.csdn.net/qq_35451572/article/details/79516563&quot;&gt;镜像站点1&lt;/a&gt;, &lt;a href=&quot;https://blog.csdn.net/wang_shuai_ww/article/details/80386708&quot;&gt;镜像站点2&lt;/a&gt;, &lt;a href=&quot;https://www.cnblogs.com/wylnii/p/Ubuntu-mirrors-armhf.html&quot;&gt;镜像站点3&lt;/a&gt;)
-    &lt;ul&gt;
-      &lt;li&gt;镜像站点源：注意需将”ubuntu”更新成”ubuntu-ports”, 且确保镜像目录下具有”binary-arm目录”。例如清华version 16.04的源为：
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ xenial main restricted universe multiverse
-  deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ xenial main restricted universe multiverse
-  deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ xenial-updates main restricted universe multiverse
-  deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ xenial-updates main restricted universe multiverse
-  deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ xenial-backports main restricted universe multiverse
-  deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ xenial-backports main restricted universe multiverse
-  deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ xenial-security main restricted universe multiverse
-  deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ xenial-security main restricted universe multiverse	
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;删除&lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/apt/sources.list.d&lt;/code&gt;目录下的&lt;code class=&quot;highlighter-rouge&quot;&gt;.list&lt;/code&gt;文件。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;table style=&quot;width:98%;margin-left:2%&quot;&gt;
-    &lt;tbody&gt;
-		&lt;tr class=&quot;firstRow&quot;&gt;
-            &lt;td style=&quot;background-color: #e7e7e7;&quot; width=&quot;100%&quot; valign=&quot;middle&quot;&gt;							
-			注意: 经亲测，更换成国内源后，&quot;更新软件&quot;过程中总会&lt;code&gt;bad version...错误&lt;/code&gt;，尔后wifi无法正常连接，尝试重启则变装状态。
-			&lt;br /&gt;因此，保守使用默认国外源，&quot;更新软件&quot;过程未发生上述情况 (OR Maybe just need find a suitable &quot;Ubuntu armhf Source&quot;)。
-			&lt;/td&gt;	
-        &lt;/tr&gt;		
-    &lt;/tbody&gt;			
-&lt;/table&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;执行：
-    &lt;ul&gt;
-      &lt;li&gt;更新源：&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get update&lt;/code&gt;
-        &lt;ul&gt;
-          &lt;li&gt;执行时，如出错：”W: 系统中不存在沙箱用户’_apt’,无法降低权限”，解决方法 (在root账户下)【搬运】：
-            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  # add unprivileged user for the apt methods
-  adduser --force-badname --system --home /nonexistent \
-  --no-create-home --quiet _apt || true
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;复损坏的软件包，尝试卸载出错的包，重新安装正确版本：&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get -f install&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;更新软件：&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get upgrade&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="OS" /><summary type="html">Ubuntu Touch 命令集,SSH启动,国内源</summary></entry><entry><title type="html">Useful Collection for Tools/Links</title><link href="http://localhost:8080/tech/Useful-Collection_Tools_Links/" rel="alternate" type="text/html" title="Useful Collection for Tools/Links" /><published>2019-07-05T15:08:00+08:00</published><updated>2019-07-05T15:08:00+08:00</updated><id>http://localhost:8080/tech/Useful%20Collection_Tools_Links</id><content type="html" xml:base="http://localhost:8080/tech/Useful-Collection_Tools_Links/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot; style=&quot;border-bottom: 5px solid grey;display:block&quot;&gt;1. 编辑相关&lt;/font&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;颜色&quot;&gt;颜色&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://tools.jb51.net/color/colorpicker&quot;&gt;在线颜色选择器/RGB颜色查询对照表&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/tools/use&quot;&gt;在线颜色-站长工具&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;markdown-online-editor&quot;&gt;Markdown Online Editor&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://pandao.github.io/editor.md/&quot;&gt;Editor.md&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.bejson.com/md/mahua/&quot;&gt;MaHua&lt;/a&gt;（支持html导出）&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown&quot;&gt;Cmd Markdown&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;richtext-online-editor&quot;&gt;RichText Online Editor&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ueditor.baidu.com/website/onlinedemo.html&quot;&gt;UEditor&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://kindeditor.net/demo.php&quot;&gt;KindEditor&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ckeditor.com/docs/ckeditor5/latest/examples/builds/classic-editor.html&quot;&gt;CKEditor&lt;/a&gt; （支持上传图片并生成对应链接）&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.codecogs.com/latex/eqneditor.php&quot;&gt;LaTeX 公式编辑器&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;richtext-to-markdown-online-editor&quot;&gt;RichText-To-Markdown Online Editor&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.bejson.com/convert/ueditor2markdown/&quot;&gt;BeJSON.com&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;htmlmarkdown-互转工具&quot;&gt;Html/MarkDown 互转工具&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.bejson.com/convert/html2markdown/&quot;&gt;BeJSON.com&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot; style=&quot;border-bottom: 5px solid grey;display:block&quot;&gt;2. 网络查询相关&lt;/font&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;网速&quot;&gt;网速&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://fast.com/zh/cn/#&quot;&gt;FAST.com&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;ip查询&quot;&gt;IP查询&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://ip111.cn/&quot;&gt;ip111.cn&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.ipip.net/ip.html&quot;&gt;IPIP.net&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://whoer.net/zh&quot;&gt;whoer.net&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot; style=&quot;border-bottom: 5px solid grey;display:block&quot;&gt;3. 搜索相关&lt;/font&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;网盘搜索&quot;&gt;网盘搜索&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.panduoduo.net/&quot;&gt;盘多多&lt;/a&gt; (搜索百度云盘)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;种子搜索&quot;&gt;种子搜索&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://btkitty.pet/&quot;&gt;BT Kitty&lt;/a&gt; (磁力链接搜索)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;font color=&quot;purple&quot; size=&quot;6&quot; style=&quot;border-bottom: 5px solid grey;display:block&quot;&gt;4. 授权管理/注销相关&lt;/font&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;授权管理&quot;&gt;授权管理&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://connect.qq.com/manage.html#/appauth/user&quot;&gt;QQ授权管理&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;微信授权管理: 微信App，【 隐私 】→【 授权管理 】&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.95516.com/portal/payment/closePayment.do&quot;&gt;关闭银联在线支付&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://passport.baidu.com/accountbind&quot;&gt;百度-关闭绑定的外部帐号&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;注销删除账号&quot;&gt;注销/删除账号&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;百度帐号注销:
-    &lt;ul&gt;
-      &lt;li&gt;使用百度系内的任一款百度APP, 登录需要注销的帐号，进入【帐号管理】页，点击选择【帐号安全中心】，进入页面后，选择点击【帐号注销】。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://account.live.com/closeaccount.aspx?mpsplit=1&quot;&gt;微软账号销户&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://account.xiaomi.com/pass/del&quot;&gt;谷歌账号删除&lt;/a&gt;, 选择“Delete your Google Account”。&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://account.xiaomi.com/pass/del&quot;&gt;小米账号删除&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;图片浏览器&quot;&gt;图片浏览器&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.faststone.org/FSIVDownload.htm&quot;&gt;FastStone Image Viewer&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="常用工具" /></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="LegacyBank" /><category term="Bank" /><summary type="html">中国线下支付(扫码支付、闪付)、线上支付(银联在线、快捷支付)</summary></entry></feed>

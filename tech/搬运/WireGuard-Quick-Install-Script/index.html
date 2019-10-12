@@ -231,6 +231,31 @@ all)</div>
 </div>
 </div>
 
+<p><br /><br /></p>
+
+<hr />
+<p><strong>Banwagon: Ubuntu</strong></p>
+
+<ol>
+  <li>一键安装wireguard 脚本 Ubuntu   (源:逗比网安装笔记)<br />
+<br />注意：1)root用户下安装；2)chmod -R 777 <em>.</em> &amp;nbsp (对当前该目录/文件进行权限变更，进而可以进行复制删除的操作)
+<br /><code class="highlighter-rouge">wget -qO- git.io/fpcnL | bash</code></li>
+</ol>
+
+<p>Note: 安装过程中，出现互动窗口，怎么按都没有反应，不理会，CTRL+C退出，再执行一键安装脚本，则一次通过。</p>
+
+<p>Optional 2. 使用<code class="highlighter-rouge">bash wgmtu</code>  命令
+<br />按“3”，服务器设置与上面一样的“端口”；再按“5”，自动更新客户端配置，其中”client.conf“不会更改，需手动更改为与上面一样的”端口“。</p>
+
+<p>Optional 3. 启动服务端
+<br /><code class="highlighter-rouge">wg-quick up wg0</code> （关闭为：wg-quick down wg0）</p>
+
+<p><br />可以通过命令 <code class="highlighter-rouge">wg</code> 检查启动是否成功，成功的话会输出如下内容：
+interface: wg0
+  public key: xxxxxxxxxx
+  private key: (hidden)
+  listening port: 10443
+—</p>
 
   </div><a class="u-url" href="/tech/%E6%90%AC%E8%BF%90/WireGuard-Quick-Install-Script/" hidden></a>
     
