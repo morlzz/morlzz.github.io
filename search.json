@@ -2,14 +2,40 @@
   
     {
     
+      "title"    : "Python",
+      "url"      : "/tech/Python/",	  
+      "category" : "Tech",
+      "tags"     : "Python",
+      "date"     : "2019-10-16",
+      "excerpt" : "",
+	  "body"    : "Windows Python 搭建环境教程github: 51bitqunt环境 anaconda编辑器 pycharm",
+	  "content" : "Windows Python github: 51bitqunt anaconda pycharm"	 
+      
+    } ,
+  
+    {
+    
+      "title"    : "爱汇国际旅支卡",
+      "url"      : "/digitgame/IHui-TravelCard/",	  
+      "category" : "DigitGame",
+      "tags"     : "LegacyBank",
+      "date"     : "2019-10-15",
+      "excerpt" : "",
+	  "body"    : "爱汇国际旅支卡  支持美元、港元账户。  外汇管制同等限制 (50,000美元年度兑换额度)。  微信直接deposit美元或者港元账户。  爱汇汇率查看。  汇率对比  费用：&nbsp;",
+	  "content" : "     (50,000)  deposit      nbsp;"	 
+      
+    } ,
+  
+    {
+    
       "title"    : "Traditional Banking/E-Wallet 相关汇总",
       "url"      : "/digitgame/Traditional-Banking&E-Wallet/",	  
       "category" : "DigitGame",
       "tags"     : "LegacyBank",
       "date"     : "2019-10-12",
       "excerpt" : "交易中心,OTC,数字资产抵押",
-	  "body"    : "1. PayPal  PayPal US, PayPal HK, PayPal China；风控；绑卡/账户。&nbsp;2. HK E-Wallet 香港电子钱包  TAP N GO拍住赏, AlipayHK。&nbsp;3. 中国大陆扫码支付、闪付  概况汇总：线下支付(扫码支付、闪付)、线上支付(银联在线、快捷支付)。&nbsp;4. Western Union  Western Union China, Western Union HK。  Western Union China          在线汇款 - 只能透过合作银行在线发汇，如邮储银行；      在线收款 - 透过合作银行在线收款 (如邮储银行)、或者直接汇入中国境内合作银行的银联卡。        Western Union HK          在线汇款 - Western Union HKApp, 支持在线直接发送款项。和Tap N GO拍住赏，深度合作，WU HK手机App直接调用拍住赏 (金额：100~2000 HKD)，费率及其优惠。      &nbsp;5. TransferWise  TransferWise, 开通外币银行账户(borderless account), 可直接提现至国内银联卡号 (自动转成 RMB@中间汇率, 31,000 CNY/每笔)。  相较Payoneer, TransferWise 对于资金来源较为宽松，广泛支持个人金额的中转、以及数字资产等来源，都支持自动转成RMB，直接银行转账至银联卡号 (即国内的 TransferWise 合作方直接将 RMB 转账至客户的银联卡号)。&nbsp;6. 汇率  中国银行现汇买入  中行实时汇率 App",
-	  "content" : "1. PayPal  PayPal US, PayPal HK, PayPal China/nbsp;2. HK E-Wallet   TAP N GO, AlipayHKnbsp;3.   ()()nbsp;4. Western Union  Western Union China, Western Union HK  Western Union China           -        -  ()        Western Union HK           - Western Union HKApp, Tap N GOWU HKApp (100~2000 HKD)      nbsp;5. TransferWise  TransferWise, (borderless account),  ( RMB, 31,000 CNY/)  Payoneer, TransferWise RMB ( TransferWise  RMB )nbsp;6.      App"	 
+	  "body"    : "Keywords: PayPal， HK E-Wallet，中国大陆扫码支付/闪付， 中国大陆手机银行/网银柜面注册/自助注册/银行卡间转账，Western Union，TransferWise，汇率，EPay，爱汇国际旅支卡1. PayPal  PayPal US, PayPal HK, PayPal China；风控；绑卡/账户。&nbsp;2. HK E-Wallet 香港电子钱包  TAP N GO拍住赏, AlipayHK。&nbsp;3. 中国大陆扫码支付、闪付  概况汇总：线下支付(扫码支付、闪付)、线上支付(银联在线、快捷支付)。&nbsp;4. 中国大陆手机银行/网银 - 柜面注册 vs 自助注册, 不同权限  在手机银行/网银上，自己申请添加银行卡，称为自助注册用户；  自助注册用户 只能操作查询余额、注销、冻结银行卡等，无法进行资金转账支出等操作。  柜面注册用户 需本人携带银行卡、身份证，到营业网点柜面开通，开通后就可以在手机银行上进行转账操作。“银行卡转账功能”的折中方法  如果不想去柜面开通，但有转账的需求，可以使用“银联云闪付”App中的转账功能、以及微信/支付宝的快捷支付功能；  该”折中方法”, 实则使用的是”线上支付(银联在线、快捷支付)“功能，和”各家银行自家的网银/手机银行”是两条不同的路径。&nbsp;5. Western Union  Western Union China, Western Union HK。  Western Union China          在线汇款 - 只能透过合作银行在线发汇，如邮储银行；      在线收款 - 透过合作银行在线收款 (如邮储银行)、或者直接汇入中国境内合作银行的银联卡。        Western Union HK          在线汇款 - Western Union HKApp, 支持在线直接发送款项。和Tap N GO拍住赏，深度合作，WU HK手机App直接调用拍住赏 (金额：100~2000 HKD)，费率及其优惠。      &nbsp;6. TransferWise  TransferWise, 开通外币银行账户(borderless account), 可直接提现至国内银联卡号 (自动转成 RMB@中间汇率, 31,000 CNY/每笔)。  相较Payoneer, TransferWise 对于资金来源较为宽松，广泛支持个人金额的中转、以及数字资产等来源，都支持自动转成RMB，直接银行转账至银联卡号 (即国内的 TransferWise 合作方直接将 RMB 转账至客户的银联卡号)。  TransferWise 不支持 EPay。&nbsp;7. 汇率  中国银行现汇买入  中行实时汇率 App&nbsp;8. EPay  关于用户隐私数据：      八、您如何访问或更改您的用户信息  您随时可以登录自己的账户并查看账户设置和用户信息，来查看和修改或删除您的个人信息。您承诺对您所填写的资料真实性负责。  您也可以通过Epay网站注销账户。如果您注销了Epay账户，我们就会在数据库中将您的账户标记为“已注销”，但可能仍会保留您  账户中的个人信息，以解决争议、排除问题、协助任何调查、避免欺诈、实施我们的用户协议或采取法律要求或允许的其他措施。  对于您删除的个人信息，将不会出现在您个人账户中，但对于该部分信息的删除操作将依旧保留在Epay数据储存平台，以解决争议、  排除问题、协助任何调查、避免欺诈、实施我们的用户协议或采取法律要求或允许的其他措施。        特点：可直接充值提现 digital assets。  缺点：银行路径，法币只能支持Wire Transfer (EPay 平台零手续费)。&nbsp;9. 爱汇国际旅支卡  爱汇国际旅支卡，支持内地微信直接充值，实现 RMB -&gt; HKD 或者 USD，对于港币进而使用FPS转账任何的港币账户。  缺点：汇率价差上有一定的损失 (高出银行汇率 2.3~2.5%) ；  好处：爱汇购得外币可携带消费、转账等，很灵活；而国内银行购得外币只能电汇 (电汇具有审核严格、不通过被退回等等风险)、结汇或者取现钞；  受每年外汇管制要求限制。&nbsp;",
+	  "content" : "Keywords: PayPal HK E-Wallet/ ///Western UnionTransferWiseEPay1. PayPal  PayPal US, PayPal HK, PayPal China/nbsp;2. HK E-Wallet   TAP N GO, AlipayHKnbsp;3.   ()()nbsp;4. / -  vs ,   /        App/  , ()/nbsp;5. Western Union  Western Union China, Western Union HK  Western Union China           -        -  ()        Western Union HK           - Western Union HKApp, Tap N GOWU HKApp (100~2000 HKD)      nbsp;6. TransferWise  TransferWise, (borderless account),  ( RMB, 31,000 CNY/)  Payoneer, TransferWise RMB ( TransferWise  RMB )  TransferWise  EPaynbsp;7.      Appnbsp;8. EPay            EpayEpay    Epay           digital assets  Wire Transfer (EPay )nbsp;9.    RMB -gt; HKD  USDFPS   ( 2.3~2.5)    ()  nbsp;"	 
       
     } ,
   
