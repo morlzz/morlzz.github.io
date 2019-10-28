@@ -1,23 +1,280 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8080/" rel="alternate" type="text/html" /><updated>2019-10-17T19:41:18+08:00</updated><id>http://localhost:8080/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">Python</title><link href="http://localhost:8080/tech/Python/" rel="alternate" type="text/html" title="Python" /><published>2019-10-16T00:00:00+08:00</published><updated>2019-10-16T00:00:00+08:00</updated><id>http://localhost:8080/tech/Python</id><content type="html" xml:base="http://localhost:8080/tech/Python/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8080/" rel="alternate" type="text/html" /><updated>2019-10-28T21:03:30+08:00</updated><id>http://localhost:8080/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">全球付</title><link href="http://localhost:8080/digitgame/Globalcash-Card/" rel="alternate" type="text/html" title="全球付" /><published>2019-10-22T00:00:00+08:00</published><updated>2019-10-22T00:00:00+08:00</updated><id>http://localhost:8080/digitgame/Globalcash%20Card</id><content type="html" xml:base="http://localhost:8080/digitgame/Globalcash-Card/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;全球付&quot;&gt;&lt;a href=&quot;https://www.globalcash.hk/&quot;&gt;全球付&lt;/a&gt;&lt;/h3&gt;
+&lt;p style=&quot;margin-bottom:-5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;账户类型支持美元港元账户人民币账户&quot;&gt;【&lt;strong&gt;账户类型&lt;/strong&gt;】支持美元、港元账户、人民币账户。&lt;/h4&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;账户数量限制&quot;&gt;【&lt;strong&gt;账户数量限制&lt;/strong&gt;】&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;每个人最多同时申请2个账户。&lt;/li&gt;
+      &lt;li&gt;早期的”免费试用VNC卡 (当时仅有”人民币”币种)”，一个手机号限量3张VNC。(有效期: 3年，到期后&amp;amp;余额为0，次月自动注销)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;margin-bottom:-20px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;充值&quot;&gt;【&lt;strong&gt;充值&lt;/strong&gt;】。&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;【&lt;strong&gt;国内银行/电子钱包充值&lt;/strong&gt;】。
+        &lt;ul&gt;
+          &lt;li&gt;没有充值时间限制。&lt;/li&gt;
+          &lt;li&gt;首次充值最低金额：300CNY/350HKD/50USD。再次任意金额。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;充值手续费：1%&lt;/strong&gt;，最低5CNY/笔。月免费额度50元。&lt;/li&gt;
+          &lt;li&gt;支持&lt;code class=&quot;highlighter-rouge&quot;&gt;快捷支付(绑定银联卡)&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;网银支付&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;微信/支付宝&lt;/code&gt;。&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p style=&quot;margin-bottom:-18px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;【&lt;strong&gt;香港账户&lt;/strong&gt;】。
+        &lt;ul&gt;
+          &lt;li&gt;没有充值时间限制。&lt;/li&gt;
+          &lt;li&gt;无充值手续费。&lt;/li&gt;
+          &lt;li&gt;货币转换：当使用”港币账户”支付时，全球付会自动换算成(&lt;strong&gt;全球付汇率&lt;/strong&gt;)需支付的HKD。&lt;/li&gt;
+          &lt;li&gt;当使用”香港开户的人民币账户”支付时，直接1：1消费。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p style=&quot;margin-bottom:-20px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+    &lt;p&gt;&lt;span style=&quot;font-size:18px;font-weight:bold;color:green;&quot;&gt;
+  注意：『充值』，相当于”商户下单&amp;amp;无卡支付消费”的性质，和”银行转账汇款”是两个概念。(故”消费”没有时间限制)
+  &lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-20px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;转账&quot;&gt;【&lt;strong&gt;转账&lt;/strong&gt;】。&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;【&lt;strong&gt;本人国内银行账号&lt;/strong&gt;】。
+        &lt;ul&gt;
+          &lt;li&gt;银行账号：银联卡号 + 开户分行信息。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;转账手续费：1%&lt;/strong&gt;，最低5CNY/笔。&lt;strong&gt;月限额3万，年限额25万。&lt;/strong&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;转账时间限制&lt;/strong&gt;：
+            &lt;ul&gt;
+              &lt;li&gt;时间段：7am~8pm。(该时间段以外，直接”交易失败”)&lt;/li&gt;
+              &lt;li&gt;实测周末不受限制，秒到，只要在&lt;code class=&quot;highlighter-rouge&quot;&gt;时间段&lt;/code&gt;内操作即可。(节假日待测)&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p style=&quot;margin-bottom:-18px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;【&lt;strong&gt;香港CNY账号 - 传统银行账户&lt;/strong&gt;】
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;转账手续费：0.5%&lt;/strong&gt;，最低18CNY/笔。&lt;/li&gt;
+          &lt;li&gt;无时间限制。&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p style=&quot;margin-bottom:-18px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;【&lt;strong&gt;香港CNY账号 - FPS&lt;/strong&gt;】
+        &lt;ul&gt;
+          &lt;li&gt;无转账手续费。&lt;/li&gt;
+          &lt;li&gt;无时间限制。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-20px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;消费-posnfc网付&quot;&gt;【&lt;strong&gt;消费 (POS/NFC/网付)&lt;/strong&gt;】。&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;【&lt;strong&gt;“小额交易”限制&lt;/strong&gt;】。
+        &lt;ul&gt;
+          &lt;li&gt;小额交易金额：每月单笔交易&lt;strong&gt;小于10 RMB（HKD 11或USD 1.5）&lt;/strong&gt;&lt;/li&gt;
+          &lt;li&gt;限制：每月免费3笔”小额交易”，超过3次，第4次的小额交易将收取异常交易处理费 (异常交易处理费：每笔 3RMB/4HKD/0.5USD)。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-20px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;身份认证&quot;&gt;【&lt;strong&gt;身份认证&lt;/strong&gt;】&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;不记名 -&amp;gt; 实名登记： 提交个人实名资料通过审核。&lt;/li&gt;
+      &lt;li&gt;实名登记 -&amp;gt; 实名认证： 绑定一张中国大陆银行卡或通过同名的香港账户完成一笔任意金额的充值或转入。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;margin-bottom:-20px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;费用&quot;&gt;&lt;a href=&quot;https://www.globalcash.hk/foot_new_explain.html&quot;&gt;&lt;strong&gt;费用&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;限额表-不受外汇管制限制但有限额表&quot;&gt;&lt;a href=&quot;https://www.globalcash.hk/foot_prepaid_cardLimit.html&quot;&gt;&lt;strong&gt;限额表&lt;/strong&gt;&lt;/a&gt;   &lt;span style=&quot;font-size:20px;font-weight:bold;color:green;&quot;&gt;&lt;strong&gt;不受”外汇管制”限制&lt;/strong&gt;&lt;/span&gt;，但有”限额表”&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;CHY转账至”国内绑定银联卡”，相同币种，不存在”结汇”问题。&lt;/li&gt;
+      &lt;li&gt;“国内绑定银联卡”进行&lt;strong&gt;充值&lt;/strong&gt;，无论充入任何CNY/HKD/USD，实则属于”&lt;strong&gt;网上无卡支付&lt;/strong&gt;“方式 (相当于信用卡消费)，汇率按照MasterCard直接转换，和”外管局”无关。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;margin-bottom:-20px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;qa&quot;&gt;&lt;a href=&quot;https://www.globalcash.hk/intro/help_center.html&quot;&gt;&lt;strong&gt;Q&amp;amp;A&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;margin-bottom:-20px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;条款和细则-condi--terms-&quot;&gt;&lt;a href=&quot;https://www.globalcash.hk/foot_service.html&quot;&gt;&lt;strong&gt;条款和细则 Condi. &amp;amp; Terms&lt;/strong&gt;&lt;/a&gt; &lt;br /&gt;&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;【&lt;strong&gt;注销卡片&lt;/strong&gt;】: &lt;strong&gt;持卡人可隨時向全球付公司發出書面通知註銷全球付&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  11、全球付的暫停、終止、註銷和退回儲值額
+  11.1   本公司有權隨時暫停、終止及∕或註銷全球付及∕或任何服務及∕或不批准任何擬進行之交易，而毋須通知及陳述理由。本公司
+  不會承擔因本公司採取該等行動而直接或間接引致之任何損失或損害。
+
+  11.2   持卡人可隨時向本公司發出書面通知註銷全球付。儘管全球付及相關賬戶已被註銷，持卡人仍須承擔一切使用全球付進行交易的
+  風險及責任（詳情請参閱收費表）。
+
+  11.3   持卡人應在全球付終止或註銷後立即將實體預付卡剪卡處理。儘管全球付已被終止或註銷，但在實體預付卡剪卡之前，持卡人仍
+  需繼續對使用全球付及相關之手續費及收費承擔一切風險及責任。（詳情請参閱收費表）
+
+  11.4   持卡人應在全球付註銷前以消費及∕或透過自動櫃員機提款方式用完及∕或提清賬戶內所有儲值額。持卡人應盡量於全球付註銷
+  前辦理退回儲值額申請，持卡人需承擔相關手續費（詳情請参閱收費表）。
+
+  11.5   若不記名持卡人申請退回儲值額，可於最後一宗交易發生的7天後，攜帶有效身份證明文件、實體預付卡、購卡證明或初次充值及
+  交易證明親身前往本公司香港辦事處申請退款。不記名卡持卡人應盡量提升預付卡級別至實名卡，再自行將儲值額轉入銀行戶口。
+
+  11.6   本公司將於全球付註消後30天內完成計算全球付儲值額，唯本公司有權先行在儲值額內扣除持卡人在該全球付或其名下其他全球
+  付拖欠本公司的款項及費用，本公司將簽發本港銀行的港幣支票或以本公司認為任何合適方法退回儲值額。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;【联系方式】
+        &lt;ul&gt;
+          &lt;li&gt;客戶服務部電話號碼︰+86 4006183327； +852 3175-7797；&lt;/li&gt;
+          &lt;li&gt;電郵地址：globalcash@epaylinks.hk&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;</content><author><name></name></author><category term="LegacyBank" /></entry><entry><title type="html">Python</title><link href="http://localhost:8080/tech/Python/" rel="alternate" type="text/html" title="Python" /><published>2019-10-16T00:00:00+08:00</published><updated>2019-10-16T00:00:00+08:00</updated><id>http://localhost:8080/tech/Python</id><content type="html" xml:base="http://localhost:8080/tech/Python/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;windows-python-搭建环境&quot;&gt;&lt;strong&gt;Windows Python 搭建环境&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=3IXZbRC52oU&quot;&gt;教程&lt;/a&gt;
 github: 51bitqunt
 &lt;a href=&quot;https://repo.anaconda.com/archive/Anaconda3-2019.07-Windows-x86_64.exe&quot;&gt;环境 anaconda&lt;/a&gt;
-&lt;a href=&quot;https://download.jetbrains.com/python/pycharm-community-2019.2.3.exe&quot;&gt;编辑器 pycharm&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Python" /></entry><entry><title type="html">爱汇国际旅支卡</title><link href="http://localhost:8080/digitgame/IHui-TravelCard/" rel="alternate" type="text/html" title="爱汇国际旅支卡" /><published>2019-10-15T00:00:00+08:00</published><updated>2019-10-15T00:00:00+08:00</updated><id>http://localhost:8080/digitgame/IHui%20TravelCard</id><content type="html" xml:base="http://localhost:8080/digitgame/IHui-TravelCard/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;a href=&quot;https://download.jetbrains.com/python/pycharm-community-2019.2.3.exe&quot;&gt;编辑器 pycharm&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;爱汇国际旅支卡&quot;&gt;&lt;a href=&quot;https://www.ihui.com/tripcard&quot;&gt;爱汇国际旅支卡&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://tool.lu/timestamp&quot;&gt;时间戳查看&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Bid=buy, 最高买价
+Ask=sell，最低卖价&lt;/p&gt;</content><author><name></name></author><category term="Python" /></entry><entry><title type="html">爱汇国际旅支卡</title><link href="http://localhost:8080/digitgame/IHui-TravelCard/" rel="alternate" type="text/html" title="爱汇国际旅支卡" /><published>2019-10-15T00:00:00+08:00</published><updated>2019-10-15T00:00:00+08:00</updated><id>http://localhost:8080/digitgame/IHui%20TravelCard</id><content type="html" xml:base="http://localhost:8080/digitgame/IHui-TravelCard/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;爱汇国际旅支卡-已销卡&quot;&gt;&lt;a href=&quot;https://www.ihui.com/tripcard&quot;&gt;爱汇国际旅支卡&lt;/a&gt;  &lt;span style=&quot;color:#cc4125;&quot;&gt;(已销卡)&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom:-5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr /&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;支持美元、港元账户。&lt;/li&gt;
-  &lt;li&gt;外汇管制同等限制 (50,000美元年度兑换额度)。&lt;/li&gt;
-  &lt;li&gt;微信直接deposit美元或者港元账户。&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.ihui.com/rate/contrast.html&quot;&gt;爱汇汇率查看&lt;/a&gt;。&lt;/li&gt;
-  &lt;li&gt;汇率对比&lt;br /&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;实名认证&quot;&gt;【&lt;strong&gt;实名认证&lt;/strong&gt;】&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span style=&quot;font-size:18px;font-weight:bold;color:#cc4125;&quot;&gt;(坑)&lt;/span&gt; 由于”旅支卡”实名信息会被”全球付公司”共享，因此登录”全球付Portal”后，会自动显示&lt;code class=&quot;highlighter-rouge&quot;&gt;实名登记审核中&lt;/code&gt;，随后告知&lt;code class=&quot;highlighter-rouge&quot;&gt;身份资料不清晰，需重新认证&lt;/code&gt;，	提交资料后，再告知&lt;code class=&quot;highlighter-rouge&quot;&gt;职业信息前后两次不一致，要求提供户口簿/职业证明/收入证明等等&lt;/code&gt;&lt;strong&gt;诸多额外隐私&lt;/strong&gt;；而&lt;span style=&quot;color:green;font-weight:bold;&quot;&gt;职业信息不一致&lt;/span&gt;，有两个可能因素:
+        &lt;ul&gt;
+          &lt;li&gt;1)”爱汇旅支卡”并无职业填写需求，因此内部共享给”全球付”时可能是爱汇随意填写的;&lt;/li&gt;
+          &lt;li&gt;2) 历史注册”全球付”时所选择的职业信息(选项方式)，而现在”全球付”网站更改了”选项列表”，从而导致没有了”一模一样的”选项，即使选择相近的，官方也会提示所谓的”职业信息前后两次不一致”，由此可见”全球付公司”并不希望更多人通过”实名认证”，因为会变相地减少他们的收入。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-30px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;销卡&quot;&gt;【&lt;strong&gt;销卡&lt;/strong&gt;】&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;销卡流程&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;余额清零&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;爱汇微信公众号&lt;/code&gt;联络客服要求销卡 (如果无人回应，人工热线400-618-2211)：
+            &lt;ul&gt;
+              &lt;li&gt;爱汇会给出”全球付银行账号”用以接收&lt;code class=&quot;highlighter-rouge&quot;&gt;旅支卡销卡手续费&lt;/code&gt; (“旅支卡销卡需求”由”爱汇”受理，”全球付”不受理)。
+                &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  收款人姓名：全球付
+  银行账号：012-87500512543 
+  开户行：中国银行 Bank of China (HK) Limited
+  SWIFT CODE: BKCHHKHHXXX
+  银行地址：2A Des Voeux Road Central, Hong Kong
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;                &lt;/div&gt;
+              &lt;/li&gt;
+              &lt;li&gt;付款成功后，截图发送微信，告知：&lt;code class=&quot;highlighter-rouge&quot;&gt;待销卡卡号&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;删除个人信息&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;销卡成功，邮件通知&lt;/code&gt; (告知销卡需要1周时间)&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;p style=&quot;margin-bottom:-15px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;p&gt;&lt;span style=&quot;font-size:18px;font-weight:bold;color:green;&quot;&gt;
+注意：”爱汇旅支卡”，官方并未提及”被动销卡 (即超出有效期自动失效)”的说法和原则，保险起见，付费直接销卡较为安妥。
+&lt;/span&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;span style=&quot;font-size:20px;color:#cc4125;&quot;&gt;【&lt;strong&gt;缺点汇总&lt;/strong&gt;】&lt;/span&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span style=&quot;color:#cc4125;font-weight:bold;font-size:18px;&quot;&gt;缺点1：汇率价差损失高 (高出银行汇率 2.3~2.5%); &lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span style=&quot;color:#cc4125;font-weight:bold;font-size:18px;&quot;&gt;缺点2：微信直充，但每次200HKD/50USD@最低金额; 销卡前必须余额清零，”兑回RMB”功能=港币兑人民币结汇 + 20HKD手续费; &lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span style=&quot;color:#cc4125;font-weight:bold;font-size:18px;&quot;&gt;缺点3：微信直充，受”营业时间”限制，11pm~7am 停止充值;&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span style=&quot;color:#cc4125;font-weight:bold;font-size:18px;&quot;&gt;缺点4：多数商户不支持该卡，如”国内微信”、”AlipayHK”;&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span style=&quot;color:#cc4125;font-weight:bold;font-size:18px;&quot;&gt;外汇管制：受每年外汇管制要求限制。&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;【&lt;strong&gt;账户类型&lt;/strong&gt;】支持美元、港元账户。&lt;/li&gt;
+  &lt;li&gt;【&lt;strong&gt;外汇管制&lt;/strong&gt;】外汇管制同等限制 (50,000美元年度兑换额度)。&lt;/li&gt;
+  &lt;li&gt;【&lt;strong&gt;微信充值&lt;/strong&gt;】微信直接deposit美元或者港元账户。
+    &lt;ul&gt;
+      &lt;li&gt;微信充值时间：22:59:00 – 07:01:00   &lt;span style=&quot;font-size:;font-weight:bold;color:#cc4125;&quot;&gt;(实用性差1)&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;微信充值每次最低金额：50美金/200港币&lt;/strong&gt; 	 &lt;span style=&quot;font-size:;font-weight:bold;color:#cc4125;&quot;&gt;(坑1)&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;【&lt;strong&gt;兑回人民币&lt;/strong&gt;】微信中，&lt;code class=&quot;highlighter-rouge&quot;&gt;兑回RMB&lt;/code&gt;=&lt;code class=&quot;highlighter-rouge&quot;&gt;港币兑人民币结汇 + 20HKD手续费&lt;/code&gt;	 &lt;span style=&quot;font-size:;font-weight:bold;color:#cc4125;&quot;&gt;(坑2)&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;【&lt;strong&gt;被商户接收程度&lt;/strong&gt;】多数商户不支持该卡，如”国内微信”、”AlipayHK”。 &lt;span style=&quot;font-size:;font-weight:bold;color:#cc4125;&quot;&gt;(实用性差2)&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;【&lt;strong&gt;余额清零&lt;/strong&gt;】
+    &lt;ul&gt;
+      &lt;li&gt;途径1：境外商户消费，1) 但很难刚巧=余额数字；2) 多少商户不支持该卡。&lt;/li&gt;
+      &lt;li&gt;途径2：微信上”兑回功能”，巨大的坑，不建议。&lt;/li&gt;
+      &lt;li&gt;&lt;span style=&quot;font-size:;font-weight:bold;color:green;&quot;&gt;途径3(推荐！)：与其被”途径2”坑掉，不然捐款更有意义，实测有效，如：&lt;a href=&quot;https://ssl.msf.hk/donate/&quot;&gt;無國界醫生&lt;/a&gt;。&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;汇率对比&lt;/strong&gt;&lt;br /&gt;
 &lt;a href=&quot;/assets/img/107.jpg&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/107.jpg&quot; width=&quot;80%&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.ihui.com/images/abouts_01.png&quot;&gt;费用&lt;/a&gt;：&lt;br /&gt;
-&lt;a href=&quot;/assets/img/106.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/106.png&quot; width=&quot;95%&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ihui.com/images/abouts_01.png&quot;&gt;&lt;strong&gt;费用&lt;/strong&gt;&lt;/a&gt;：&lt;br /&gt;
+&lt;a href=&quot;/assets/img/106.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/106.png&quot; width=&quot;85%&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ihui.com/helps/epaylinks_faq.jsp&quot;&gt;&lt;strong&gt;Q&amp;amp;A&lt;/strong&gt;&lt;/a&gt;：&lt;br /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;【额度限制】单张旅支卡余额上限为100,000HKD及13,000USD，根据外汇管理政策要求，在50000美元年度兑换额度内，可即时充值，并可多次充值，反复使用。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.bincodes.com/bin-checker/&quot;&gt;&lt;strong&gt;Bin Code Check&lt;/strong&gt;&lt;/a&gt;：&lt;br /&gt;
+&lt;a href=&quot;/assets/img/108.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/108.png&quot; width=&quot;45%&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;</content><author><name></name></author><category term="LegacyBank" /></entry><entry><title type="html">Traditional Banking/E-Wallet 相关汇总</title><link href="http://localhost:8080/digitgame/Traditional-Banking&E-Wallet/" rel="alternate" type="text/html" title="Traditional Banking/E-Wallet 相关汇总" /><published>2019-10-12T18:29:00+08:00</published><updated>2019-10-12T18:29:00+08:00</updated><id>http://localhost:8080/digitgame/Traditional%20Banking&amp;E-Wallet</id><content type="html" xml:base="http://localhost:8080/digitgame/Traditional-Banking&amp;E-Wallet/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
@@ -30,13 +287,14 @@ Keywords:
 &lt;a href=&quot;#keyword6&quot;&gt;TransferWise&lt;/a&gt;，
 &lt;a href=&quot;#keyword7&quot;&gt;汇率&lt;/a&gt;，
 &lt;a href=&quot;#keyword8&quot;&gt;EPay&lt;/a&gt;，
-&lt;a href=&quot;#keyword9&quot;&gt;爱汇国际旅支卡&lt;/a&gt;
+&lt;a href=&quot;#keyword9&quot;&gt;EPayLinks易票联&lt;/a&gt;，
+&lt;a href=&quot;#keyword10&quot;&gt;个人收款码(非公开)&lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span id=&quot;keyword1&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h4 id=&quot;1-paypal&quot;&gt;1. &lt;a href=&quot;/digitgame/PayPal/&quot;&gt;PayPal&lt;/a&gt;&lt;/h4&gt;
+&lt;h3 id=&quot;1-paypal&quot;&gt;&lt;strong&gt;1. &lt;a href=&quot;/digitgame/PayPal/&quot;&gt;PayPal&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;PayPal US, PayPal HK, PayPal China；风控；绑卡/账户。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -44,15 +302,230 @@ Keywords:
 &lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;p&gt;&lt;span id=&quot;keyword2&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h4 id=&quot;2-hk-e-wallet-香港电子钱包&quot;&gt;2. &lt;a href=&quot;/digitgame/HK-E-Wallet/&quot;&gt;HK E-Wallet 香港电子钱包&lt;/a&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;TAP N GO拍住赏, AlipayHK。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h3 id=&quot;2-hk-e-walletprepaid-card&quot;&gt;&lt;strong&gt;2. HK E-Wallet/Prepaid Card&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;hk-e-wallet-香港电子钱包&quot;&gt;&lt;strong&gt;&lt;a href=&quot;/digitgame/HK-E-Wallet/&quot;&gt;HK E-Wallet 香港电子钱包&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;TAP N GO拍住赏, AlipayHK。&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-25px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;香港发行的预付卡&quot;&gt;&lt;strong&gt;香港发行的预付卡&lt;/strong&gt;&lt;/h4&gt;
+    &lt;p&gt;&lt;span id=&quot;keyword9&quot; style=&quot;font-size:20px;color:green;font-weight:bold;&quot;&gt;1) EPayLinks 易票联&lt;/span&gt;&lt;/p&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;-“易票联”所发行的卡包括：&lt;code class=&quot;highlighter-rouge&quot;&gt;全球付&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;爱汇旅支卡&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;安游&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;neat&lt;/code&gt;；
+  &lt;br /&gt;-所有卡均可在”&lt;a href=&quot;https://www.globalcash.hk&quot;&gt;全球付 Web Portal&lt;/a&gt;“和”&lt;a href=&quot;https://mp.weixin.qq.com/s/DBZR0dYakLgwo7BnPs9Xnw&quot;&gt;全球付微信公众号&lt;/a&gt;“登录; 但”全球付App”，仅”全球付”卡号可登录。
+  &lt;br /&gt;-&lt;strong&gt;香港 FPS&lt;/strong&gt; (无费用)：Epaylinks 银行代码 &lt;strong&gt;930&lt;/strong&gt; + 卡号 + 姓名 (各渠道购买认证时的姓名)。
+  &lt;br /&gt;-&lt;strong&gt;“&lt;a href=&quot;https://www.globalcash.hk/foot_service.html&quot; target=&quot;_blank&quot;&gt;条款 &amp;amp; 细则&lt;/a&gt; “&lt;/strong&gt;中，对于 &lt;strong&gt;“隐私 /用户数据”比较 Unfriendly&lt;/strong&gt; (默认为在其所有子公司内部共享 + 营销 + 应法律部门要求 (除非法律所禁止); 如销户，未提及 “永久删除用户数据”)。&lt;/p&gt;
+    &lt;/blockquote&gt;
+
+    &lt;p style=&quot;margin-bottom:-1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span style=&quot;font-size:19px;font-weight:bold;&quot;&gt;EPayLinks 易票联 – &lt;a href=&quot;https://www.ihui.com/tripcard&quot;&gt;爱汇国际旅支卡&lt;/a&gt; (&lt;a href=&quot;/digitgame/IHui-TravelCard/&quot;&gt;Details&lt;/a&gt;)&lt;/span&gt;   &lt;span style=&quot;font-size:19px;font-weight:bold;color:#cc4125;&quot;&gt;(很差的”实用性+性价比”，已销卡)&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p style=&quot;margin-bottom:-1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span style=&quot;font-size:19px;font-weight:bold;&quot;&gt;EPayLinks 易票联 – &lt;a href=&quot;https://www.globalcash.hk/&quot;&gt;全球付&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;font-size:19px;font-weight:bold;color:#cc4125;&quot;&gt;(当”实名认证”要求补充额外的”隐私数据”时，建议销卡)&lt;/span&gt;
+        &lt;blockquote&gt;
+          &lt;p&gt;&lt;a href=&quot;/digitgame/Globalcash-Card/&quot;&gt;全球付&lt;/a&gt;，支持&lt;strong&gt;绑定内地银联卡, 直接充值&lt;/strong&gt;，&lt;strong&gt;实名认证后&lt;/strong&gt;可进而使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;香港 FPS&lt;/code&gt; 转账至任何的港币账户。&lt;/p&gt;
+        &lt;/blockquote&gt;
+        &lt;ul&gt;
+          &lt;li&gt;缺点：&lt;strong&gt;实名认证比较麻烦&lt;/strong&gt;，稍不慎会要求补充一堆敏感资料。(考虑其很差的”隐私保护策略”，可果断销卡)&lt;/li&gt;
+          &lt;li&gt;好处：
+            &lt;ul&gt;
+              &lt;li&gt;除了首充300CNY/350HKD/50USD，再次充值没有金额限制。&lt;/li&gt;
+              &lt;li&gt;&lt;strong&gt;转帐&lt;/strong&gt;：可直接转帐至”国内银联卡”@1%手续费。(转账有时间限制：7am~8pm) (比”爱汇的兑回”性价比高很多)。 &lt;span style=&quot;font-size:;font-weight:bold;color:green;&quot;&gt;『实测 - 全球付人民币账户：仅人民币账户-to-人民币账户』&lt;/span&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;strong&gt;充值&lt;/strong&gt;：”银联卡”直充@1%手续费。 &lt;span style=&quot;font-size:;font-weight:bold;color:green;&quot;&gt;『实测 - 全球付人民币账户：充值可港币/可人民币』&lt;/span&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;外汇管制：不受”外汇管制”限制, 但有”&lt;a href=&quot;https://www.globalcash.hk/foot_prepaid_cardLimit.html&quot;&gt;限额表规定&lt;/a&gt;“。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-25px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;香港转数快-fps&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://fps.hkicl.com.hk/schi/fps/about_fps/participant.php&quot;&gt;香港转数快 FPS&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.fpsconsole.hkicl.com.hk/pub/p1/FPSD2005.pdf&quot;&gt;参与机构名单&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;易票联: EPAYLINKS TECHNOLOGY CO., LTD.  (930) (含”易票联”所有发行的卡片)&lt;/li&gt;
+          &lt;li&gt;拍住赏：HKT Payment Limited   (935)&lt;/li&gt;
+          &lt;li&gt;WeChatHK/AlipayHK，均在名单中&lt;/li&gt;
+          &lt;li&gt;PaypalHK，虽不在名单中，但具有香港金融支付牌照，因此当提现至拍住赏时，实则透过FPS转账，因此零费用。
+            &lt;ul&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PaypalHK&lt;/code&gt;与&lt;code class=&quot;highlighter-rouge&quot;&gt;拍住赏&lt;/code&gt;有合作协议，而其他如”易票联/WeChatHK/AlipayHK”则没有，当尝试PaypalHK提现时，会被”易票联/WeChatHK/AlipayHK”退回。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-25px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;to-china-转帐方案&quot;&gt;&lt;strong&gt;To-China 转帐方案&lt;/strong&gt;&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;【&lt;strong&gt;HK-to-HK 转账方案&lt;/strong&gt;】
+        &lt;ul&gt;
+          &lt;li&gt;全球付(实名认证后) &amp;lt;- 转帐 -&amp;gt; 拍住赏，币种一样即可：即人民币转到人民币帐户，港币转到港币帐户。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;【&lt;strong&gt;HK-to-China 提现到国内RMB方案&lt;/strong&gt;】
+        &lt;ul&gt;
+          &lt;li&gt;用&lt;code class=&quot;highlighter-rouge&quot;&gt;拍住赏&lt;/code&gt;把港币换成人民币后，再转帐到&lt;code class=&quot;highlighter-rouge&quot;&gt;全球付人民币帐户&lt;/code&gt;，而后&lt;code class=&quot;highlighter-rouge&quot;&gt;全球付人民币帐户&lt;/code&gt;再提现到国内的银行帐号。&lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;拍住赏&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;Western Union HK&lt;/code&gt; =&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Western Union China&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;(西联收款方式)国内合作银行(如邮储银行)/西联网点、(银行直接收款方式)支持的银行的银联账号直接结算成人民币&lt;/code&gt;		
+  &lt;br /&gt;&lt;/p&gt;
+
+            &lt;table style=&quot;width:100%;font-size:14px;&quot;&gt;
+      &lt;tbody&gt;
+          &lt;tr class=&quot;firstRow&quot;&gt;
+              &lt;td width=&quot;100%&quot; valign=&quot;middle&quot; align=&quot;center&quot; colspan=&quot;4&quot; rowspan=&quot;1&quot; style=&quot;word-break: break-all; background-color: rgb(198, 217, 240);&quot;&gt;
+                  &lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;strong&gt;CNY &amp;lt;-&amp;gt; HKD&lt;/strong&gt;&lt;/span&gt;&lt;br /&gt;
+              &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+              &lt;td width=&quot;20%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all; background-color: rgb(255, 229, 153);&quot; align=&quot;center&quot;&gt;
+                  &lt;strong&gt;2019-10-25 汇率&lt;/strong&gt;
+              &lt;/td&gt;
+              &lt;td width=&quot;16%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all; background-color: rgb(255, 229, 153);&quot; align=&quot;center&quot;&gt;
+                  &lt;strong&gt;买港币&lt;/strong&gt;&lt;br /&gt;&lt;span style=&quot;font-size:12px;font-weight:bold;color:grey;&quot;&gt;(所花CNY越少越优)&lt;/span&gt;
+              &lt;/td&gt;
+              &lt;td width=&quot;16%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all; background-color: rgb(255, 229, 153);&quot; align=&quot;center&quot;&gt;
+                  &lt;strong&gt;卖港币&lt;/strong&gt;&lt;br /&gt;&lt;span style=&quot;font-size:12px;font-weight:bold;color:grey;&quot;&gt;(所得CNY越多越优)&lt;/span&gt;
+              &lt;/td&gt;
+              &lt;td width=&quot;63%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all; background-color: rgb(255, 229, 153);&quot; align=&quot;center&quot;&gt;
+                  &lt;strong&gt;备注&lt;/strong&gt;
+              &lt;/td&gt;						
+          &lt;/tr&gt;
+          &lt;tr&gt;
+              &lt;td width=&quot;20%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all;&quot; align=&quot;center&quot;&gt;
+                  全球付/爱汇
+              &lt;/td&gt;
+              &lt;td width=&quot;16%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all;&quot; align=&quot;center&quot;&gt;
+                  92.21
+              &lt;/td&gt;
+              &lt;td width=&quot;16%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all;font-weight:bold;&quot; align=&quot;center&quot;&gt;
+                  ✅ 89.17
+              &lt;/td&gt;
+              &lt;td width=&quot;63%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all;&quot; align=&quot;left&quot;&gt;
+              ❶&quot;卖港币汇率&quot;还不错，比拍住赏好0.2%，想换成人民币时，可透过&quot;香港港币账户支付&quot;的方式来&lt;strong&gt;充值&lt;/strong&gt;&quot;全球付CNY账户&quot;。
+              &lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt; 
+              ** 通过”全球付转账至内地银联卡”，需&lt;span style=&quot;font-size:;font-weight:bold;color:#cc4125;&quot;&gt;额外的1%手续费&lt;/span&gt;。
+              &lt;/td&gt;						
+          &lt;/tr&gt;
+          &lt;tr&gt;
+              &lt;td width=&quot;20%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all;font-weight:;&quot; align=&quot;center&quot;&gt;
+                  拍住赏
+              &lt;/td&gt;
+              &lt;td width=&quot;16%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all;font-weight:bold;&quot; align=&quot;center&quot;&gt;
+                  ✅ 91.33
+              &lt;/td&gt;
+              &lt;td width=&quot;16%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all;&quot; align=&quot;center&quot;&gt;
+                  89.02
+              &lt;/td&gt;
+              &lt;td width=&quot;63%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all;&quot; align=&quot;left&quot;&gt;
+              ❷可结合&quot;全球付CNY账户&quot;实现充值、转账:
+              &lt;br /&gt;- &lt;strong&gt;转入(买港版)全程&lt;/strong&gt;&quot;国内银联账户-&amp;gt;充值CNY-&amp;gt;全球付CNY账户-&amp;gt;FPS转账-&amp;gt;拍住赏CNY账户-&amp;gt;内部互转-&amp;gt;拍住赏HKD账户&quot;;
+              &lt;br /&gt;- &lt;strong&gt;转出(卖港币)全程1&lt;/strong&gt;&quot;拍住赏CNY账户-&amp;gt;FPS转账-&amp;gt;全球付CNY账户-&amp;gt;转账至本人名下内地银联卡&quot;;
+              &lt;br /&gt;- &lt;strong&gt;(优选) 转出(卖港币)全程2&lt;/strong&gt;&quot;同❶&quot;
+              &lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt; 
+              ** 通过”全球付转账至内地银联卡”，需&lt;span style=&quot;font-size:;font-weight:bold;color:#cc4125;&quot;&gt;额外的1%手续费&lt;/span&gt;。
+              &lt;br /&gt;&lt;i style=&quot;font-size:12px;&quot;&gt;** &quot;拍住赏银联卡&quot;: 如果将来开放在内地&quot;取现&quot;，则可避开该&quot;1%&quot;。(目前仅支持刷卡消费)&lt;/i&gt;
+              &lt;/td&gt;						
+          &lt;/tr&gt;
+          &lt;tr&gt;
+              &lt;td width=&quot;20%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all;font-weight:;&quot; align=&quot;center&quot;&gt;
+                  WU HK
+              &lt;/td&gt;
+              &lt;td width=&quot;16%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all;&quot; align=&quot;center&quot;&gt;
+                  /
+              &lt;/td&gt;
+              &lt;td width=&quot;16%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all;font-weight:bold;&quot; align=&quot;center&quot;&gt;
+                  89.33
+              &lt;/td&gt;
+              &lt;td width=&quot;63%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all;&quot; align=&quot;left&quot;&gt;
+              ❸&quot;卖港币汇率&quot;不错，外汇管制原因导致2个劣势:&lt;br /&gt;1) 国内西联只接受&quot;美元/欧元&quot;的来款，即全程&quot;HKD-&amp;gt;USD/Euro-&amp;gt;CNY&quot;，两次汇损 (&lt;u&gt;两次转换损失合计 0.2%&lt;/u&gt;)；&lt;br /&gt;2) 结售汇受外汇管制额度限制。
+              &lt;/td&gt;						
+          &lt;/tr&gt;
+          &lt;tr&gt;
+              &lt;td width=&quot;20%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all;&quot; align=&quot;center&quot;&gt;
+                  taobao
+              &lt;/td&gt;
+              &lt;td width=&quot;16%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all;&quot; align=&quot;center&quot;&gt;
+                  92.8~94
+              &lt;/td&gt;
+              &lt;td width=&quot;16%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all;&quot; align=&quot;center&quot;&gt;
+                  /
+              &lt;/td&gt;
+              &lt;td width=&quot;63%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all;&quot; align=&quot;left&quot;&gt;
+						
+              &lt;/td&gt;						
+          &lt;/tr&gt;					
+          &lt;tr&gt;
+              &lt;td width=&quot;20%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all; background-color: #EDEDED;&quot; align=&quot;center&quot;&gt;
+                  中间价
+              &lt;/td&gt;
+              &lt;td width=&quot;16%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all; background-color: #EDEDED;&quot; align=&quot;center&quot;&gt;
+                  90.27
+              &lt;/td&gt;
+              &lt;td width=&quot;16%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all; background-color: #EDEDED;&quot; align=&quot;center&quot;&gt;
+                  /
+              &lt;/td&gt;
+              &lt;td width=&quot;63%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all;background-color: #EDEDED;&quot; align=&quot;left&quot;&gt;
+						
+              &lt;/td&gt;						
+          &lt;/tr&gt;
+          &lt;tr&gt;
+              &lt;td width=&quot;20%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all; background-color: #EDEDED;&quot; align=&quot;center&quot;&gt;
+                  中行价格
+              &lt;/td&gt;
+              &lt;td width=&quot;16%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all; background-color: #EDEDED;&quot; align=&quot;center&quot;&gt;
+                  90.39
+              &lt;/td&gt;
+              &lt;td width=&quot;16%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all; background-color: #EDEDED;&quot; align=&quot;center&quot;&gt;
+                  89.33(钞)/90.03(汇)
+              &lt;/td&gt;
+              &lt;td width=&quot;63%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all;background-color: #EDEDED;&quot; align=&quot;left&quot;&gt;
+						
+              &lt;/td&gt;						
+          &lt;/tr&gt;
+      &lt;/tbody&gt;
+  &lt;/table&gt;
+
+            &lt;p&gt;&lt;span style=&quot;font-size:16px;font-weight:;color:green;&quot;&gt;
+  “提现CNY需求”：&lt;br /&gt;只要涉及通过”全球付转账至内地银联卡”，都需要&lt;u&gt;额外的1%手续费&lt;/u&gt;。
+  而&lt;strong&gt;几家渠道间的汇率差异为: &lt;u&gt;千分之几的数量级&lt;/u&gt;&lt;/strong&gt;，相较下，”1%手续费”较为高昂。
+   (建议：适度的使用Western Union)&lt;/span&gt;&lt;/p&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;p&gt;&lt;span id=&quot;keyword3&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h4 id=&quot;3-中国大陆扫码支付闪付&quot;&gt;3. &lt;a href=&quot;/digitgame/Legacy-Pay-QR&amp;amp;Pass-Pay/&quot;&gt;中国大陆扫码支付、闪付&lt;/a&gt;&lt;/h4&gt;
+&lt;h3 id=&quot;3-中国大陆扫码支付闪付&quot;&gt;&lt;strong&gt;3. &lt;a href=&quot;/digitgame/Legacy-Pay-QR&amp;amp;Pass-Pay/&quot;&gt;中国大陆扫码支付、闪付&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;概况汇总：线下支付(扫码支付、闪付)、线上支付(银联在线、快捷支付)。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -60,7 +533,7 @@ Keywords:
 &lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;p&gt;&lt;span id=&quot;keyword4&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h4 id=&quot;4-中国大陆手机银行网银---柜面注册-vs-自助注册-不同权限&quot;&gt;4. 中国大陆手机银行/网银 - 柜面注册 vs 自助注册, 不同权限&lt;/h4&gt;
+&lt;h3 id=&quot;4-中国大陆手机银行网银---柜面注册-vs-自助注册-不同权限&quot;&gt;&lt;strong&gt;4. 中国大陆手机银行/网银 - 柜面注册 vs 自助注册, 不同权限&lt;/strong&gt;&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;在手机银行/网银上，自己申请添加银行卡，称为&lt;code class=&quot;highlighter-rouge&quot;&gt;自助注册用户&lt;/code&gt;；&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;自助注册用户&lt;/code&gt; 只能操作查询余额、注销、冻结银行卡等，无法进行资金转账支出等操作。&lt;/li&gt;
@@ -76,19 +549,28 @@ Keywords:
 &lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;p&gt;&lt;span id=&quot;keyword5&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h4 id=&quot;5-western-union&quot;&gt;5. Western Union&lt;/h4&gt;
+&lt;h3 id=&quot;5-western-union&quot;&gt;&lt;strong&gt;5. Western Union&lt;/strong&gt;&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;&lt;a href=&quot;/digitgame/China-Western-Union/&quot;&gt;Western Union China&lt;/a&gt;, Western Union HK。&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Western Union China&lt;/strong&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;western-union-china&quot;&gt;&lt;strong&gt;Western Union China&lt;/strong&gt;&lt;/h4&gt;
+    &lt;p style=&quot;margin-bottom:-35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
     &lt;ul&gt;
       &lt;li&gt;在线汇款 - 只能透过合作银行在线发汇，如邮储银行；&lt;/li&gt;
       &lt;li&gt;在线收款 - 透过合作银行在线收款 (如邮储银行)、或者直接汇入中国境内合作银行的银联卡。&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Western Union HK&lt;/strong&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-25px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;western-union-hk&quot;&gt;&lt;strong&gt;Western Union HK&lt;/strong&gt;&lt;/h4&gt;
+    &lt;p style=&quot;margin-bottom:-35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
     &lt;ul&gt;
       &lt;li&gt;在线汇款 - &lt;code class=&quot;highlighter-rouge&quot;&gt;Western Union HK&lt;/code&gt;App, 支持在线直接发送款项。和Tap N GO拍住赏，深度合作，WU HK手机App直接调用拍住赏 (金额：100~2000 HKD)，费率及其优惠。&lt;/li&gt;
     &lt;/ul&gt;
@@ -98,30 +580,29 @@ Keywords:
 &lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;p&gt;&lt;span id=&quot;keyword6&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h4 id=&quot;6-transferwise&quot;&gt;6. &lt;a href=&quot;https://transferwise.com/&quot;&gt;TransferWise&lt;/a&gt;&lt;/h4&gt;
+&lt;h3 id=&quot;6-transferwise&quot;&gt;&lt;strong&gt;6. &lt;a href=&quot;https://transferwise.com/&quot;&gt;TransferWise&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;TransferWise, 开通外币银行账户(borderless account), 可直接提现至国内银联卡号 (自动转成 RMB@中间汇率, 31,000 CNY/每笔)。&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;相较Payoneer, TransferWise 对于资金来源较为宽松，广泛支持个人金额的中转、以及数字资产等来源，都支持自动转成RMB，直接银行转账至银联卡号 (即国内的 TransferWise 合作方直接将 RMB 转账至客户的银联卡号)。&lt;/li&gt;
+  &lt;li&gt;相较Payoneer, TransferWise 对于资金来源较为宽松，广泛支持个人金额的中转、以及数字资产等来源，都支持自动转成RMB，直接银行转账至银联卡号 (即国内的 TransferWise 合作方直接将 RMB 转账至客户的银联卡号)。
+    &lt;ul&gt;
+      &lt;li&gt;TransferWise CNY转账至银联卡，实际上走的是与银联合作的 &lt;a href=&quot;https://www.unionpayintl.com/cn/servicesProducts/servicesBenefits/crossBorderRemittance/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;银联跨境汇款服务: 银联全球速汇(MoneyExpress)&lt;/code&gt;&lt;/a&gt;。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;TransferWise 不支持 EPay。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;span id=&quot;keyword7&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h4 id=&quot;7-汇率&quot;&gt;7. 汇率&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.boc.cn/sourcedb/whpj/&quot;&gt;中国银行现汇买入&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;中行实时汇率&lt;/code&gt; &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.antianyu.currency&amp;amp;hl=en&quot;&gt;App&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;TransferWise 不支持 ACH Dedit
+    &lt;ul&gt;
+      &lt;li&gt;例如：绑定PayPal进行验证时，PayPal可以ACH Deposit但无法ACH Dedit，因而无法绑定PayPal。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;p&gt;&lt;span id=&quot;keyword8&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h4 id=&quot;8-epay&quot;&gt;8. &lt;a href=&quot;https://www.epay.com/&quot;&gt;EPay&lt;/a&gt;&lt;/h4&gt;
+&lt;h3 id=&quot;7-epay&quot;&gt;&lt;strong&gt;7. &lt;a href=&quot;https://www.epay.com/&quot;&gt;EPay&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;关于用户隐私数据：
@@ -139,19 +620,38 @@ Keywords:
 
 &lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;&lt;span id=&quot;keyword9&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h4 id=&quot;9-爱汇国际旅支卡&quot;&gt;9. &lt;a href=&quot;https://www.ihui.com/tripcard&quot;&gt;爱汇国际旅支卡&lt;/a&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;a href=&quot;/digitgame/IHui-TravelCard/&quot;&gt;爱汇国际旅支卡&lt;/a&gt;，支持&lt;strong&gt;内地微信直接充值&lt;/strong&gt;，实现 &lt;code class=&quot;highlighter-rouge&quot;&gt;RMB -&amp;gt; HKD 或者 USD&lt;/code&gt;，对于港币进而使用FPS转账任何的港币账户。&lt;/p&gt;
-&lt;/blockquote&gt;
-
+&lt;p&gt;&lt;span id=&quot;keyword7&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;8-tools&quot;&gt;&lt;strong&gt;8. Tools&lt;/strong&gt;&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;缺点：汇率价差上有一定的损失 (高出银行汇率 2.3~2.5%) ；&lt;/li&gt;
-  &lt;li&gt;好处：爱汇购得外币可携带消费、转账等，很灵活；而国内银行购得外币只能电汇 (电汇具有审核严格、不通过被退回等等风险)、结汇或者取现钞；&lt;/li&gt;
-  &lt;li&gt;受每年外汇管制要求限制。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;汇率&quot;&gt;汇率&lt;/h4&gt;
+    &lt;p style=&quot;margin-bottom:-35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.boc.cn/sourcedb/whpj/&quot;&gt;中国银行现汇买入&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;中行实时汇率&lt;/code&gt; &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.antianyu.currency&amp;amp;hl=en&quot;&gt;App&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;</content><author><name></name></author><category term="LegacyBank" /><summary type="html">交易中心,OTC,数字资产抵押</summary></entry><entry><title type="html">Digital Assets 相关汇总</title><link href="http://localhost:8080/digitgame/Digital-Assets/" rel="alternate" type="text/html" title="Digital Assets 相关汇总" /><published>2019-10-12T18:02:00+08:00</published><updated>2019-10-12T18:02:00+08:00</updated><id>http://localhost:8080/digitgame/Digital%20Assets</id><content type="html" xml:base="http://localhost:8080/digitgame/Digital-Assets/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;margin-bottom:-25px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;bin-codes-check-卡片前6位&quot;&gt;Bin Codes Check (卡片前6位)&lt;/h4&gt;
+    &lt;p style=&quot;margin-bottom:-35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.bincodes.com/bin-checker/&quot;&gt;Bin Check&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;span id=&quot;keyword10&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;其他非公开个人收款码&quot;&gt;&lt;strong&gt;其他(非公开)：个人收款码&lt;/strong&gt;&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;/digitgame/Personal-QR-Code/&quot;&gt;个人收款码&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><category term="LegacyBank" /><summary type="html">交易中心,OTC,数字资产抵押</summary></entry><entry><title type="html">Digital Assets 相关汇总</title><link href="http://localhost:8080/digitgame/Digital-Assets/" rel="alternate" type="text/html" title="Digital Assets 相关汇总" /><published>2019-10-12T18:02:00+08:00</published><updated>2019-10-12T18:02:00+08:00</updated><id>http://localhost:8080/digitgame/Digital%20Assets</id><content type="html" xml:base="http://localhost:8080/digitgame/Digital-Assets/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;1-otc-场外交易&quot;&gt;1. &lt;a href=&quot;/digitgame/OTC-Exchange/&quot;&gt;OTC 场外交易&lt;/a&gt;&lt;/h4&gt;
 &lt;blockquote&gt;
@@ -208,7 +708,14 @@ Keywords:
   &lt;li&gt;基于ERC20&lt;/li&gt;
   &lt;li&gt;Nexo Token, 持有分红30%&lt;/li&gt;
   &lt;li&gt;Changelly等小众交易所，可以兑换&lt;/li&gt;
-  &lt;li&gt;Nexo Token优惠利率：如持有Nexo Token, 享有最低的8%年利率(即万分之2.2/天)的借贷利率 (Rate Range: 8%~24.9%);偿还利率时，使用Nexo Token直接抵扣。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://support.nexo.io/hc/en-us/articles/360008239313-How-can-I-get-a-better-interest-rate-&quot;&gt;Nexo Token优惠利率&lt;/a&gt;：如持有Nexo Token, 享有&lt;strong&gt;5.9%年利率(即万分之1.6/天)&lt;/strong&gt;的借贷利率 (其他代币: APR@11.9%); 偿还利率时，可使用Nexo Token抵扣。
+&lt;span style=&quot;font-size:18px;font-weight:bold;color:green;&quot;&gt;『使用Nexo Token来偿还利息，即可享用5.9%年利率。』&lt;/span&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  当使用NEXO作为抵押或还款时，利息折扣适用。当使用NEXO代币偿还贷款或由NEXO代币支持的部分贷款（两者不能合并）时，
+  年百分比率（APR）从5.9％开始。不使用NEXO代币时的年百分比率为11.9％。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
@@ -247,8 +754,23 @@ Keywords:
 &lt;h4 id=&quot;5-credit-line提现至银行&quot;&gt;&lt;strong&gt;5. Credit Line提现至银行&lt;/strong&gt;&lt;/h4&gt;
 &lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 &lt;ul&gt;
+  &lt;li&gt;亲测：
+    &lt;ul&gt;
+      &lt;li&gt;Nexo转入TransferWise账户：US ABA Local Transfer (shown from “Currency Cloud”)，T+0 到达账户 (比local ACH要快)。&lt;/li&gt;
+      &lt;li&gt;TransferWise转账至国内银联卡：~3小时，手续费：1.5%。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;最低提现金额：$500。&lt;/li&gt;
-  &lt;li&gt;借出的那一刻，即起算该全天的利息interest = Loan Amount * APR/365。(APR Range: 8%@Nexo Token~24.9%@Others)&lt;/li&gt;
+  &lt;li&gt;借出的贷款，&lt;a href=&quot;https://support.nexo.io/hc/en-us/articles/360008239293-How-long-is-the-maturity-of-the-Nexo-loans-&quot;&gt;默认期限为1年&lt;/a&gt;。
+    &lt;ul&gt;
+      &lt;li&gt;可尝试要求延期；&lt;/li&gt;
+      &lt;li&gt;如果借贷偿还&amp;lt;30天，则仍计30全天的利息；&lt;/li&gt;
+      &lt;li&gt;偿还时，有$2.04还款手续费；&lt;/li&gt;
+      &lt;li&gt;可以&lt;a href=&quot;https://support.nexo.io/hc/en-us/articles/360008239133-When-will-my-first-payment-be-due-&quot;&gt;提前偿还&lt;/a&gt;，没有额外费用；&lt;/li&gt;
+      &lt;li&gt;计息时间，按CET 时间。CET = 冬季时间为 UTC+1，夏令时 UTC+2。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;借出的那一刻，即起算该全天的利息interest = Loan Amount * APR/365。(APR: &lt;strong&gt;5.9%@Nexo Token&lt;/strong&gt;, 11.9%@Others)&lt;/li&gt;
   &lt;li&gt;Transfer Type for Withdraw:
     &lt;ul&gt;
       &lt;li&gt;Withdraw USD to US bank account: 使用”ABA Local”&lt;/li&gt;
@@ -257,19 +779,22 @@ Keywords:
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;性价比最高的方案 (仅支付1天的利息): 
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;性价比最高的方案 (仅支付30天的利息(&amp;lt;30天，仍计30全天的利息)): 
 1) Credit Line (X) = 充入的数字资产等值价值(Y)的15%~50%，即充入 X/15%~50%的数字资产以获得价值X的Credit Line。
-2) 将Credit Line (X)提现至银行账户，从提现那一刻开始起息当天的利息 = X * APR/365。(该利息，系统直接从已存入的Y中扣除。)
-3) 发起提现成功后，当天即可使用已存入的数字资产Y，进行全额偿还Credit Line (X)。(没有额外费用)
-4) &quot;自动支付利息+手动全额偿还&quot;后, 即可将剩余的数字资产提现至其他数字钱包。(NexoApp提现至数字钱包, 没有手续费+没有网络费)
+2) 将Credit Line (X)提现至银行账户，从提现那一刻开始起息当天的利息 (Z) = X * APR@11.9%/365。(该利息，逐天加至借出
+   本金, 即Z+X)
+3) 发起提现成功后，当天即可使用已存入的数字资产Y，进行全额偿还Credit Line (X)。(但利息，(K) = 30天内仍需支付30全天
+   的利息)
+   『&amp;lt;30天总费用：(n天数*Z+X) + K + $2.04还款手续费』，『&amp;gt;=30天总费用：(n天数*Z+X) + $2.04还款手续费)』
+4) &quot;全额偿还&quot;后, 即可将剩余的数字资产提现至其他数字钱包。(NexoApp提现至数字钱包, 没有手续费+没有网络费)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;table style=&quot;margin-top: 15px;width:100%;&quot;&gt;
     &lt;tbody&gt;
         &lt;tr class=&quot;firstRow&quot;&gt;
             &lt;td width=&quot;33.3%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
-			  &lt;a align=&quot;center&quot; href=&quot;/assets/img/99.jpg&quot; target=&quot;_blank&quot;&gt;
-			  &lt;img align=&quot;center&quot; src=&quot;/assets/img/99.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt; 
+			  &lt;a align=&quot;center&quot; href=&quot;/assets/img/109.jpg&quot; target=&quot;_blank&quot;&gt;
+			  &lt;img align=&quot;center&quot; src=&quot;/assets/img/109.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt; 
 			&lt;/td&gt;
 		    &lt;td width=&quot;33.3%&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
 			  &lt;a align=&quot;center&quot; href=&quot;/assets/img/100.jpg&quot; target=&quot;_blank&quot;&gt;
@@ -316,67 +841,55 @@ Keywords:
 
 &lt;p&gt;近期币安App (v1.12.1) 已支持场外交易，见&lt;a href=&quot;/digitgame/Binance/&quot;&gt;币安OTC&lt;/a&gt;。&lt;/p&gt;
 
-&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;</content><author><name></name></author><category term="newBank" /><category term="CryptoCurrency" /><summary type="html">法币/数字资产-场外交易</summary></entry><entry><title type="html">GCash</title><link href="http://localhost:8080/digitgame/Gcash/" rel="alternate" type="text/html" title="GCash" /><published>2019-09-29T00:00:00+08:00</published><updated>2019-09-29T00:00:00+08:00</updated><id>http://localhost:8080/digitgame/Gcash</id><content type="html" xml:base="http://localhost:8080/digitgame/Gcash/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;</content><author><name></name></author><category term="newBank" /><category term="CryptoCurrency" /><summary type="html">法币/数字资产-场外交易</summary></entry><entry><title type="html">HK E-Wallet 香港电子钱包</title><link href="http://localhost:8080/digitgame/HK-E-Wallet/" rel="alternate" type="text/html" title="HK E-Wallet 香港电子钱包" /><published>2019-09-29T00:00:00+08:00</published><updated>2019-09-29T00:00:00+08:00</updated><id>http://localhost:8080/digitgame/HK%20E-Wallet</id><content type="html" xml:base="http://localhost:8080/digitgame/HK-E-Wallet/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;Gcash Receive Western Union Remitannce
-&lt;a href=&quot;https://help.gcash.com/hc/en-us/articles/360034030313-How-can-I-claim-my-remittance-if-I-was-locked-out-&quot;&gt;账号被锁&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;1-tap-n-go&quot;&gt;&lt;strong&gt;1. TAP N GO&lt;/strong&gt;&lt;/h4&gt;
+&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;信息输错3次，则被锁；24小时后，可再尝试。&lt;/li&gt;
-  &lt;li&gt;填入信息：
+  &lt;li&gt;
+    &lt;p&gt;拍住赏银联卡: 内地实测，可以闪付，需拍住赏钱包密码。&lt;/p&gt;
+
+    &lt;p&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/93.jpg&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;/assets/img/93.jpg&quot; width=&quot;30%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;支持PayPal的提现款项 ✔
+    &lt;p style=&quot;margin-bottom: -23px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
     &lt;ul&gt;
-      &lt;li&gt;MTCN&lt;/li&gt;
-      &lt;li&gt;Send’s Name&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Country of birth&lt;/code&gt;: Send’s info&lt;/li&gt;
+      &lt;li&gt;PayPal，提现至拍住赏账户(默认：港币账户)，&lt;strong&gt;免费&lt;/strong&gt; (由于：PayPal具备香港的支付牌照)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.tapngo.com.hk/chi/charges.html&quot;&gt;手续费&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;绑定PayPal&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;在GCash App内绑定时，只接受绑定PayPal Philippines。&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p style=&quot;margin-bottom: 2px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;AMEX Virtual pay&lt;/p&gt;
+&lt;h4 id=&quot;2-alipay-hk&quot;&gt;&lt;strong&gt;2. Alipay HK&lt;/strong&gt;&lt;/h4&gt;
+&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;可绑定于PayPal (没有地区限制)&lt;/li&gt;
-  &lt;li&gt;绑定Google Pay
+  &lt;li&gt;可使用FPS 发送/接收金额。&lt;/li&gt;
+  &lt;li&gt;可使用&lt;strong&gt;收钱码&lt;/strong&gt;接收金额。&lt;/li&gt;
+  &lt;li&gt;实测国际汇款To GCash, 无汇损、实时、无手续费。&lt;/li&gt;
+  &lt;li&gt;拒收来自PayPal的提现 ✘
     &lt;ul&gt;
-      &lt;li&gt;会被扣除5.38 peso的”Google Service”费用，尚未见退还；&lt;/li&gt;
-      &lt;li&gt;仅支持线上支付，到店支付该卡不支持。&lt;/li&gt;
+      &lt;li&gt;即使找到&lt;code class=&quot;highlighter-rouge&quot;&gt;Alipay HK银行编号(银行代码+账号)&lt;/code&gt;，也会拒收来自PayPal的提现款项。&lt;/li&gt;
     &lt;/ul&gt;
+
+    &lt;table style=&quot;width:100%;&quot;&gt;
+  &lt;tbody&gt;
+      &lt;tr class=&quot;firstRow&quot;&gt;	
+          &lt;td width=&quot;50%&quot; align=&quot;center&quot;&gt;
+          &lt;a align=&quot;center&quot; href=&quot;/assets/img/95.jpg&quot; target=&quot;_blank&quot;&gt;
+          &lt;img src=&quot;/assets/img/95.jpg&quot; width=&quot;75%&quot; /&gt;&lt;/a&gt;
+          &lt;/td&gt;	
+          &lt;td width=&quot;50%&quot; align=&quot;center&quot;&gt;
+          &lt;a align=&quot;center&quot; href=&quot;/assets/img/96.jpg&quot; target=&quot;_blank&quot;&gt;
+          &lt;img src=&quot;/assets/img/96.jpg&quot; width=&quot;75%&quot; /&gt;&lt;/a&gt;
+          &lt;/td&gt;			
+      &lt;/tr&gt;			
+  &lt;/tbody&gt;
+&lt;/table&gt;
   &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Gcash Hotline （no body answer）&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;直拨（8元一分钟）：+6327392882&lt;/li&gt;
-  &lt;li&gt;加拨17951（每分钟3.6元+本地通话费，大概合到3.8元一分钟）：17951006327392882&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Globe Hotline （no body answer）&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;+6327301212&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.gcash.com/app/v1.0.0/terms-and-conditions&quot;&gt;GCash账户关闭&lt;/a&gt;
-GCash wallets that remain inactive for 6 months and with zero balances shall be automatically closed.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;TERMINATION / CANCELLATION OF THE GCASH WALLET / MASTERCARD
-Should the GCash Customer fail to comply with the Terms and Conditions provided herein, the right to use the GCash Wallet/ MasterCard shall be terminated. GCash Wallets that are dormant/no monetary activity for more than 6 months and with zero balances shall automatically be closed/ terminated.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.gcash.com/privacy-notice/20190402/&quot;&gt;G-Xchange, Inc. Data Privacy Notice&lt;/a&gt;
-As we care about what you think, welcome your feedback, and wish to assist you on your Data Privacy needs and concerns, you can reach us thru: gxi.dataprivacy@mynt.xyz (Data Privacy Officer), or 2882 (GCash Customer Care).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.gcash.com/app/v1.0.0/terms-and-conditions&quot;&gt;客户投诉处理流程&lt;/a&gt;&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;CUSTOMER COMPLAINTS HANDLING PROCESS&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;We are committed to maintaining the highest standards of financial consumer protection. Your requests, feedback and customer needs are our priority. If you have any concerns about a procedure or have encountered a problem with our service, you may contact our Customer Service number by dialing 2882 if you are a Globe or TM mobile subscriber, or reach us at our official Facebook page (www.facebook.com/gcashcare). All information disclosed shall be treated with utmost confidentiality and will be resolved in the most efficient and effective manner.&lt;/p&gt;
-
-&lt;p&gt;GCash maintains full cooperation with the BSP in Financial Consumer Protection. You may coordinate with BSP’s Financial Consumer Protection Department at (632) 708.7087 or (632) 708.7088). You may also email BSP at consumeraffairs@bsp.gov.ph.&lt;/p&gt;</content><author><name></name></author><category term="LegacyBank" /><summary type="html">temp post</summary></entry><entry><title type="html">PayPal</title><link href="http://localhost:8080/digitgame/PayPal/" rel="alternate" type="text/html" title="PayPal" /><published>2019-09-29T00:00:00+08:00</published><updated>2019-09-29T00:00:00+08:00</updated><id>http://localhost:8080/digitgame/PayPal</id><content type="html" xml:base="http://localhost:8080/digitgame/PayPal/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="LegacyBank" /><category term="E-Wallet" /><summary type="html">TAP N GO拍住赏,AlipayHK</summary></entry><entry><title type="html">PayPal</title><link href="http://localhost:8080/digitgame/PayPal/" rel="alternate" type="text/html" title="PayPal" /><published>2019-09-29T00:00:00+08:00</published><updated>2019-09-29T00:00:00+08:00</updated><id>http://localhost:8080/digitgame/PayPal</id><content type="html" xml:base="http://localhost:8080/digitgame/PayPal/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;1. PayPal严谨的防控机制&lt;/strong&gt;&lt;/p&gt;
 &lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
@@ -443,52 +956,4 @@ As we care about what you think, welcome your feedback, and wish to assist you o
   &lt;li&gt;PayPal HK 的官方直接注册入口，仅支持中国香港户籍和手机号的注册；需透过与PayPal HK合作商家的订单页面，redirect注册页面，可以选择”中国大陆国籍&amp;amp;中国大陆手机号注册”。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p style=&quot;margin-bottom: -10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;</content><author><name></name></author><category term="LegacyBank" /><category term="E-Channel" /></entry><entry><title type="html">HK E-Wallet 香港电子钱包</title><link href="http://localhost:8080/digitgame/HK-E-Wallet/" rel="alternate" type="text/html" title="HK E-Wallet 香港电子钱包" /><published>2019-09-29T00:00:00+08:00</published><updated>2019-09-29T00:00:00+08:00</updated><id>http://localhost:8080/digitgame/HK%20E-Wallet</id><content type="html" xml:base="http://localhost:8080/digitgame/HK-E-Wallet/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;1-tap-n-go&quot;&gt;&lt;strong&gt;1. TAP N GO&lt;/strong&gt;&lt;/h4&gt;
-&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;拍住赏银联卡: 内地实测，可以闪付，需拍住赏钱包密码。&lt;/p&gt;
-
-    &lt;p&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/93.jpg&quot; target=&quot;_blank&quot;&gt;
-&lt;img src=&quot;/assets/img/93.jpg&quot; width=&quot;30%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;支持PayPal的提现款项 ✔&lt;/p&gt;
-    &lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;PayPal，提现至拍住赏账户(默认：港币账户)，&lt;strong&gt;免费&lt;/strong&gt; (由于：PayPal具备香港的支付牌照)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom: 2px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;2-alipay-hk&quot;&gt;&lt;strong&gt;2. Alipay HK&lt;/strong&gt;&lt;/h4&gt;
-&lt;p style=&quot;margin-bottom: -35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;可使用FPS 发送/接收金额。&lt;/li&gt;
-  &lt;li&gt;可使用&lt;strong&gt;收钱码&lt;/strong&gt;接收金额。&lt;/li&gt;
-  &lt;li&gt;实测国际汇款To GCash, 无汇损、实时、无手续费。&lt;/li&gt;
-  &lt;li&gt;拒收来自PayPal的提现 ✘
-    &lt;ul&gt;
-      &lt;li&gt;即使找到&lt;code class=&quot;highlighter-rouge&quot;&gt;Alipay HK银行编号(银行代码+账号)&lt;/code&gt;，也会拒收来自PayPal的提现款项。&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;table style=&quot;width:100%;&quot;&gt;
-  &lt;tbody&gt;
-      &lt;tr class=&quot;firstRow&quot;&gt;	
-          &lt;td width=&quot;50%&quot; align=&quot;center&quot;&gt;
-          &lt;a align=&quot;center&quot; href=&quot;/assets/img/95.jpg&quot; target=&quot;_blank&quot;&gt;
-          &lt;img src=&quot;/assets/img/95.jpg&quot; width=&quot;75%&quot; /&gt;&lt;/a&gt;
-          &lt;/td&gt;	
-          &lt;td width=&quot;50%&quot; align=&quot;center&quot;&gt;
-          &lt;a align=&quot;center&quot; href=&quot;/assets/img/96.jpg&quot; target=&quot;_blank&quot;&gt;
-          &lt;img src=&quot;/assets/img/96.jpg&quot; width=&quot;75%&quot; /&gt;&lt;/a&gt;
-          &lt;/td&gt;			
-      &lt;/tr&gt;			
-  &lt;/tbody&gt;
-&lt;/table&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="LegacyBank" /><category term="E-Wallet" /><summary type="html">TAP N GO拍住赏,AlipayHK</summary></entry></feed>
+&lt;p style=&quot;margin-bottom: -10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;</content><author><name></name></author><category term="LegacyBank" /><category term="E-Channel" /></entry></feed>

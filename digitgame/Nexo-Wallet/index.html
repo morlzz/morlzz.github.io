@@ -84,7 +84,14 @@
   <li>基于ERC20</li>
   <li>Nexo Token, 持有分红30%</li>
   <li>Changelly等小众交易所，可以兑换</li>
-  <li>Nexo Token优惠利率：如持有Nexo Token, 享有最低的8%年利率(即万分之2.2/天)的借贷利率 (Rate Range: 8%~24.9%);偿还利率时，使用Nexo Token直接抵扣。</li>
+  <li>
+    <p><a href="https://support.nexo.io/hc/en-us/articles/360008239313-How-can-I-get-a-better-interest-rate-">Nexo Token优惠利率</a>：如持有Nexo Token, 享有<strong>5.9%年利率(即万分之1.6/天)</strong>的借贷利率 (其他代币: APR@11.9%); 偿还利率时，可使用Nexo Token抵扣。
+<span style="font-size:18px;font-weight:bold;color:green;">『使用Nexo Token来偿还利息，即可享用5.9%年利率。』</span></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  当使用NEXO作为抵押或还款时，利息折扣适用。当使用NEXO代币偿还贷款或由NEXO代币支持的部分贷款（两者不能合并）时，
+  年百分比率（APR）从5.9％开始。不使用NEXO代币时的年百分比率为11.9％。
+</code></pre></div>    </div>
+  </li>
 </ul>
 
 <p style="margin-bottom: 1px;">&nbsp;</p>
@@ -123,8 +130,23 @@
 <h4 id="5-credit-line提现至银行"><strong>5. Credit Line提现至银行</strong></h4>
 <p style="margin-bottom: -35px;">&nbsp;</p>
 <ul>
+  <li>亲测：
+    <ul>
+      <li>Nexo转入TransferWise账户：US ABA Local Transfer (shown from “Currency Cloud”)，T+0 到达账户 (比local ACH要快)。</li>
+      <li>TransferWise转账至国内银联卡：~3小时，手续费：1.5%。</li>
+    </ul>
+  </li>
   <li>最低提现金额：$500。</li>
-  <li>借出的那一刻，即起算该全天的利息interest = Loan Amount * APR/365。(APR Range: 8%@Nexo Token~24.9%@Others)</li>
+  <li>借出的贷款，<a href="https://support.nexo.io/hc/en-us/articles/360008239293-How-long-is-the-maturity-of-the-Nexo-loans-">默认期限为1年</a>。
+    <ul>
+      <li>可尝试要求延期；</li>
+      <li>如果借贷偿还&lt;30天，则仍计30全天的利息；</li>
+      <li>偿还时，有$2.04还款手续费；</li>
+      <li>可以<a href="https://support.nexo.io/hc/en-us/articles/360008239133-When-will-my-first-payment-be-due-">提前偿还</a>，没有额外费用；</li>
+      <li>计息时间，按CET 时间。CET = 冬季时间为 UTC+1，夏令时 UTC+2。</li>
+    </ul>
+  </li>
+  <li>借出的那一刻，即起算该全天的利息interest = Loan Amount * APR/365。(APR: <strong>5.9%@Nexo Token</strong>, 11.9%@Others)</li>
   <li>Transfer Type for Withdraw:
     <ul>
       <li>Withdraw USD to US bank account: 使用”ABA Local”</li>
@@ -133,19 +155,22 @@
   </li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>性价比最高的方案 (仅支付1天的利息): 
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>性价比最高的方案 (仅支付30天的利息(&lt;30天，仍计30全天的利息)): 
 1) Credit Line (X) = 充入的数字资产等值价值(Y)的15%~50%，即充入 X/15%~50%的数字资产以获得价值X的Credit Line。
-2) 将Credit Line (X)提现至银行账户，从提现那一刻开始起息当天的利息 = X * APR/365。(该利息，系统直接从已存入的Y中扣除。)
-3) 发起提现成功后，当天即可使用已存入的数字资产Y，进行全额偿还Credit Line (X)。(没有额外费用)
-4) "自动支付利息+手动全额偿还"后, 即可将剩余的数字资产提现至其他数字钱包。(NexoApp提现至数字钱包, 没有手续费+没有网络费)
+2) 将Credit Line (X)提现至银行账户，从提现那一刻开始起息当天的利息 (Z) = X * APR@11.9%/365。(该利息，逐天加至借出
+   本金, 即Z+X)
+3) 发起提现成功后，当天即可使用已存入的数字资产Y，进行全额偿还Credit Line (X)。(但利息，(K) = 30天内仍需支付30全天
+   的利息)
+   『&lt;30天总费用：(n天数*Z+X) + K + $2.04还款手续费』，『&gt;=30天总费用：(n天数*Z+X) + $2.04还款手续费)』
+4) "全额偿还"后, 即可将剩余的数字资产提现至其他数字钱包。(NexoApp提现至数字钱包, 没有手续费+没有网络费)
 </code></pre></div></div>
 
 <table style="margin-top: 15px;width:100%;">
     <tbody>
         <tr class="firstRow">
             <td width="33.3%" valign="top" align="center">
-			  <a align="center" href="/assets/img/99.jpg" target="_blank">
-			  <img align="center" src="/assets/img/99.jpg" width="100%" /></a> 
+			  <a align="center" href="/assets/img/109.jpg" target="_blank">
+			  <img align="center" src="/assets/img/109.jpg" width="100%" /></a> 
 			</td>
 		    <td width="33.3%" valign="top" align="center">
 			  <a align="center" href="/assets/img/100.jpg" target="_blank">
