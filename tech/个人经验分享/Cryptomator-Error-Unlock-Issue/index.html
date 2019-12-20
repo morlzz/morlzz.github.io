@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8080/feed.xml" title="Morgan Zhao's Blog" /></head>
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8000/feed.xml" title="Morgan Zhao's Blog" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Morgan Zhao&#39;s Blog</a><nav class="site-nav">
@@ -138,18 +138,10 @@ org.cryptomator.ui.model.Volume$VolumeException: org.cryptomator.frontend.webdav
 
 <p><span style="border-bottom: 1px solid grey;display:block;margin-bottom: 20px;margin-top: 20px"></span></p>
 
-<p>默认最新版v1.4.9安装包中，不包含<code class="highlighter-rouge">Dokany driver</code>，建议先行安装v1.4.2 (inc. Dokany Library)后，再升级为 Cryptomator v1.4.9。</p>
+<p><a href="https://github.com/dokan-dev/dokany/releases/latest"><code class="highlighter-rouge">Dokany driver</code></a>。</p>
 
 <table style="width:100%;">
-    <tbody>
-        <tr class="firstRow">	
-            <td width="33.3%" align="center">
-			直接安装v1.4.9，缺少"Dokany driver"。
-			</td>
-            <td width="66.6%" align="center" rowspan="1" colspan="2">
-			先安装v1.4.2后，"Dokany driver"可用。继而再升级为v1.4.9。
-			</td>				
-        </tr>	
+    <tbody>	
         <tr class="firstRow">	
             <td width="33.3%" align="center">
 			<img src="/assets/img/43.jpg" width="100%" />
@@ -164,7 +156,8 @@ org.cryptomator.ui.model.Volume$VolumeException: org.cryptomator.frontend.webdav
     </tbody>
 </table>
 
-<p>此外，还需安装Dokany Driver 依赖包 - <code class="highlighter-rouge">Microsoft Visual C++ Redistributable for Visual Studio 2017</code>。</p>
+<p>此外，还需安装Dokany Driver 依赖包 - <a href="https://aka.ms/vs/16/release/VC_redist.x64.exe"><code class="highlighter-rouge">Microsoft Visual C++ Redistributable for Visual Studio 2019</code></a> 
+(<a href="https://visualstudio.microsoft.com/zh-hans/downloads/">微软地址</a>, <a href="https://social.msdn.microsoft.com/Forums/vstudio/en-US/e653a57a-bc32-4134-87bf-df33058f0531/download-microsoft-visual-c-2017-redistributable?forum=vssetup">说明</a>)。</p>
 
 <p><img src="/assets/img/45.jpg" width="30%" /></p>
 

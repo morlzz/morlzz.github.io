@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8080/feed.xml" title="Morgan Zhao's Blog" /></head>
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8000/feed.xml" title="Morgan Zhao's Blog" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Morgan Zhao&#39;s Blog</a><nav class="site-nav">
@@ -119,14 +119,14 @@ restart（有时候需要手动加载mysql进程：/etc/init.d/mysql reload）</
 Ubuntu_AWS, Steps:</u></font></b></div>
 <div style=""><b><font style="font-size: 16px;"><u><br /></u></font></b></div>
 <div style="">1. optional:
-创建EC实例，“安全组”增加TCP和UDP，指定一样的“<b><font color="#6F3198">端口</font></b>”，允许 “<b>0.0.0.0/0</b>”。</div>
+创建EC实例，“安全组”增加TCP和UDP，指定一样的“<b><font color="#6F3198">端口</font></b>”（或者不指定，任意端口），允许 “<b>0.0.0.0/0</b>”。</div>
 <div style=""><br /></div>
 <div style="">2. # 一键安装wireguard 脚本 Ubuntu&nbsp;
 &nbsp;(源:逗比网安装笔记)&nbsp;&nbsp;注意：1)root用户下安装；2)chmod -R 777 *.* &amp;nbsp (对当前该目录/文件进行权限变更，进而可以进行复制删除的操作)</div>
 <div>wget -qO- git.io/fpcnL | bash</div>
 <div><br /></div>
-<div>3.&nbsp;使用“ bash wgmtu”&nbsp;
-命令，按“3”，服务器设置与上面一样的“<b><font color="#6F3198">端口</font></b>”；再按“5”，自动更新客户端配置，其中"client.conf“不会更改，需手动更改为与上面一样的”<b><font color="#6F3198">端口</font></b>“。</div>
+<div>3.optional:&nbsp;使用“ bash wgmtu”&nbsp;
+命令，按“3”，服务器设置与上面一样的“<b><font color="#6F3198">端口</font></b>”；再按“5”，自动更新客户端配置，其中"client.conf“不会更改，需手动更改为与上面一样的”<b><font color="#6F3198">端口</font></b>“。（或者不用任何设置，直接使用默认分配的端口）</div>
 <div style=""><br /></div>
 <div style="">4.&nbsp;<span style="color: rgb(85, 85, 85); font-family:">启动服务端</span></div>
 <div style="">
@@ -173,7 +173,7 @@ Ubuntu_AWS, Steps:</u></font></b></div>
 <div style="text-indent: 30px;">
 <div style="">
 <div style="color: rgb(0, 0, 0); font-size: 14px; text-indent: 0px;">
-<div>6. 额外的配置</div>
+<div>6. optional （默认不需要这一步）: 额外的配置</div>
 <div>为了让VPN能正常工作，需要启用ipv4的ip_forward功能</div>
 </div>
 <div style="color: rgb(0, 0, 0); font-size: 14px; text-indent: 0px;">
@@ -211,14 +211,14 @@ Debian_GCE:</u></font></b></div>
 "client.conf“需手动更改）</div>
 <div style="color: rgb(0, 0, 0);">&nbsp;
 &nbsp; Plus: 以上步骤 4~7.</div>
-<div style="">2. firewall rule: <b style="color: rgb(0, 0, 0);">network tags</b>: <font color="#6F3198"><b><u>http-server, httpw-server, in,
+<div style="">2. firewall rule: <b style="color: rgb(0, 0, 0);">network tags</b>: <font color="#6F3198"><b><u>http-server(默认自动被选中，network tags中无需添加), https-server(同前面), in,
 out</u></b></font></div>
 <div style="color: rgb(0, 0, 0);">&nbsp;
 &nbsp; (优先级 1，IP Range: 0.0.0.0/0，port/protocol:
 all)</div>
 <div style="color: rgb(0, 0, 0);">&nbsp;
-&nbsp; <u>http-server, httpw-server</u>: 创建vm实例时，tick
-"allow http" &amp; "allow https".&nbsp;</div>
+&nbsp; <u>http-server, https-server</u>: 创建vm实例时，tick
+"allow http" &amp; "allow https".&nbsp;(在此处勾选后，firewall rule中则会自动选中，从而network tags中无需添加)</div>
 <div style="color: rgb(0, 0, 0);">&nbsp;
 &nbsp; <u>in, out</u>: 自行创建，in for "ingress",out for
 "outgress".</div>
