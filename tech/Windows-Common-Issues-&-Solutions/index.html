@@ -25,9 +25,9 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">  
-    <h1 class="post-title p-name" itemprop="name headline">谷歌出厂镜像：涵盖Pixel、Nexus系列</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Windows微软 常见问题和解决方案汇总</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2018-04-28T12:33:10+08:00" itemprop="datePublished">Apr 28, 2018
+      <time class="dt-published" datetime="2019-12-28T22:53:00+08:00" itemprop="datePublished">Dec 28, 2019
       </time></p>
 
 
@@ -39,11 +39,6 @@
   
   <a href="/categories/#Tech">
       <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Tech</em></strong></span>     
-  </a>  
-  &nbsp;
-  
-  <a href="/categories/#搬运">
-      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>搬运</em></strong></span>     
   </a>  
   
   
@@ -69,28 +64,47 @@
 
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>原出处：IT之家。</p>
+    <p style="margin-bottom: 12px;color:#474747;font-size:14px;">
+Keywords: 
+<a href="#keyword1">官方WinPE</a>
+</p>
 
-<p><a href="https://developers.google.cn/android/images">资源和教程</a>。</p>
+<p><br /></p>
+<p id="keyword1" style="height:;"><font color="purple" size="5" style="border-bottom: 2px solid grey;display:block">1. 微软官方WinPE 启动U盘或iso制作</font></p>
 
-<p>包括所有nexus系列和pixel系列的所有历史固件和刷机方法。</p>
-<ul>
-  <li><a href="https://androidmtk.com/download-15-seconds-adb-installer">15 seconds ADB Installer</a> 安装完成后默认生成<code class="highlighter-rouge">C:\adb</code>目录。</li>
-  <li><a href="https://developer.android.google.cn/studio/releases/platform-tools.html">Latest SDK Platform-Tools for Windows</a> 替换<code class="highlighter-rouge">C:\adb</code>下的内容即可。</li>
-</ul>
+<blockquote>
+  <p>背景：偶然发现使用习惯的”老毛桃”安装后，在设置共享权限时，发现”未知用户@管理员权限”，引起了我的警惕。确实，还是”官方的WinPE + 原生的WinNTSetup”更为安全。</p>
+</blockquote>
 
-<p>注意：</p>
-<ul>
-  <li>恢复出厂固件即<code class="highlighter-rouge">flash-all.bat</code>方式，刷机之前必须”unlock bootloader”; 刷机之后，可以再”lock bootloader”或者不。</li>
-  <li>“unlock bootloader” &lt;-&gt; “lock bootloader”, <code class="highlighter-rouge">data</code>会被清空。</li>
-  <li>如出现<code class="highlighter-rouge">FAILED (remote: 'Bogus size sparse and chunk header')</code>错误，更换”adb版本”即可（如：nexus 5采用更低的adb版本）。</li>
-</ul>
+<p><a href="https://www.tenforums.com/tutorials/103428-create-winpe-usb-iso.html">参考链接1：详细步骤指令</a>
+<a href="https://docs.microsoft.com/zh-cn/windows-hardware/get-started/adk-install">参考链接2：官方下载网址</a></p>
 
-<p>Enjoy😙👏🌹</p>
+<ol>
+  <li>
+    <p>从链接2下载：<code class="highlighter-rouge">Windows ADK</code> + <code class="highlighter-rouge">Windows PE 加载项</code>。</p>
+  </li>
+  <li>
+    <p>安装下载文件：<code class="highlighter-rouge">Windows ADK</code>选中”Deployment Tools”，<code class="highlighter-rouge">Windows PE 加载项</code>选中”Windows Preinstallation Environment(Windows PE)”。</p>
+  </li>
+  <li>
+    <p>管理员模式运行<code class="highlighter-rouge">Deployment and Imaging Tools</code>CMD窗口。</p>
+  </li>
+  <li>
+    <p>在窗口中输入命令：</p>
+    <ul>
+      <li><code class="highlighter-rouge">copype amd64 C:\WinPEx64</code></li>
+      <li>插入U盘：
+        <ul>
+          <li>bootable U-disk：<code class="highlighter-rouge">MakeWinPEMedia /UFD C:\WinPEx64 E:</code></li>
+          <li>create WinPE.iso: <code class="highlighter-rouge">MakeWinPEMedia /ISO D:\WinPEx64 F:\WPE64.iso</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
 
-<p><img src="/assets/img/7.jpg" alt="" /></p>
 
-  </div><a class="u-url" href="/tech/%E6%90%AC%E8%BF%90/Native-Andriod-OS/" hidden></a>
+  </div><a class="u-url" href="/tech/Windows-Common-Issues-&-Solutions/" hidden></a>
     
 </article>
       </div>

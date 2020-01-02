@@ -2,6 +2,19 @@
   
     {
     
+      "title"    : "Windows微软 常见问题和解决方案汇总",
+      "url"      : "/tech/Windows-Common-Issues-&-Solutions/",	  
+      "category" : "Tech",
+      "tags"     : "OS",
+      "date"     : "2019-12-28",
+      "excerpt" : "",
+	  "body"    : "Keywords: 官方WinPE1. 微软官方WinPE 启动U盘或iso制作  背景：偶然发现使用习惯的”老毛桃”安装后，在设置共享权限时，发现”未知用户@管理员权限”，引起了我的警惕。确实，还是”官方的WinPE + 原生的WinNTSetup”更为安全。参考链接1：详细步骤指令参考链接2：官方下载网址      从链接2下载：Windows ADK + Windows PE 加载项。        安装下载文件：Windows ADK选中”Deployment Tools”，Windows PE 加载项选中”Windows Preinstallation Environment(Windows PE)”。        管理员模式运行Deployment and Imaging ToolsCMD窗口。        在窗口中输入命令：          copype amd64 C:\\WinPEx64      插入U盘：                  bootable U-disk：MakeWinPEMedia /UFD C:\\WinPEx64 E:          create WinPE.iso: MakeWinPEMedia /ISO D:\\WinPEx64 F:\\WPE64.iso                    ",
+	  "content" : "Keywords: WinPE1. WinPE Uiso  WinPE + WinNTSetup12      2Windows ADK + Windows PE         Windows ADKDeployment ToolsWindows PE Windows Preinstallation Environment(Windows PE)        Deployment and Imaging ToolsCMD                  copype amd64 C:#92;WinPEx64      U                  bootable U-diskMakeWinPEMedia /UFD C:#92;WinPEx64 E:          create WinPE.iso: MakeWinPEMedia /ISO D:#92;WinPEx64 F:#92;WPE64.iso                    "	 
+      
+    } ,
+  
+    {
+    
       "title"    : "国内手机银行android下载地址",
       "url"      : "/digitgame/China-Mobile-Bank-DownloadLink/",	  
       "category" : "DigitGame",
@@ -359,8 +372,8 @@
       "tags"     : "常用工具",
       "date"     : "2019-07-05",
       "excerpt" : "",
-	  "body"    : "1. 编辑相关颜色  SOJSON在线工具  在线颜色-站长工具Markdown Online Editor  Editor.md  MaHua（支持html导出）  Cmd MarkdownRichText Online Editor  UEditor  KindEditor  CKEditor （支持上传图片并生成对应链接）  LaTeX 公式编辑器RichText-To-Markdown Online Editor  BeJSON.comHtml/MarkDown 互转工具  BeJSON.com2. 网络查询相关网速  FAST.comIP查询  ip111.cn  IPIP.net  whoer.net3. 搜索相关网盘搜索  盘多多 (搜索百度云盘)种子搜索  BT Kitty (磁力链接搜索)4. 授权管理/注销相关授权管理  QQ授权管理  微信授权管理: 微信App，【 隐私 】→【 授权管理 】  关闭银联在线支付  百度-关闭绑定的外部帐号注销/删除账号  百度帐号注销:          使用百度系内的任一款百度APP, 登录需要注销的帐号，进入【帐号管理】页，点击选择【帐号安全中心】，进入页面后，选择点击【帐号注销】。        微软账号销户  谷歌账号删除, 选择“Delete your Google Account”。  小米账号删除5. 推荐软件图片浏览器  FastStone Image Viewer多语言文本编辑器  Notepad压缩/解压缩  7 Zip",
-	  "content" : "1.   SOJSON  -Markdown Online Editor  Editor.md  MaHuahtml  Cmd MarkdownRichText Online Editor  UEditor  KindEditor  CKEditor   LaTeX RichText-To-Markdown Online Editor  BeJSON.comHtml/MarkDown   BeJSON.com2.   FAST.comIP  ip111.cn  IPIP.net  whoer.net3.    ()  BT Kitty ()4. /  QQ  : App        -/  :          APP,           , Delete your Google Account  5.   FastStone Image Viewer  Notepad/  7 Zip"	 
+	  "body"    : "1. 编辑相关颜色  SOJSON在线工具  在线颜色-站长工具Markdown Online Editor  Editor.md  MaHua（支持html导出）  Cmd MarkdownRichText Online Editor  UEditor  KindEditor  CKEditor （支持上传图片并生成对应链接）  LaTeX 公式编辑器RichText-To-Markdown Online Editor  BeJSON.comHtml/MarkDown 互转工具  BeJSON.com2. 网络查询相关网速  FAST.comIP查询  ip111.cn  IPIP.net  whoer.net3. 搜索相关网盘搜索  盘多多 (搜索百度云盘)种子搜索  BT Kitty (磁力链接搜索)4. 授权管理/注销相关授权管理  QQ授权管理  微信授权管理: 微信App，【 隐私 】→【 授权管理 】  关闭银联在线支付  百度-关闭绑定的外部帐号注销/删除账号  百度帐号注销:          使用百度系内的任一款百度APP, 登录需要注销的帐号，进入【帐号管理】页，点击选择【帐号安全中心】，进入页面后，选择点击【帐号注销】。        微软账号销户  谷歌账号删除, 选择“Delete your Google Account”。  小米账号删除5. 推荐软件图片浏览器  FastStone Image Viewer多语言文本编辑器  Notepad压缩/解压缩  7 Zip下载  qbittorrent          开源，仅bt/磁链接方式。      6. 搜索磁力搜索  老王磁力  !  !多语言文本编辑器  Notepad",
+	  "content" : "1.   SOJSON  -Markdown Online Editor  Editor.md  MaHuahtml  Cmd MarkdownRichText Online Editor  UEditor  KindEditor  CKEditor   LaTeX RichText-To-Markdown Online Editor  BeJSON.comHtml/MarkDown   BeJSON.com2.   FAST.comIP  ip111.cn  IPIP.net  whoer.net3.    ()  BT Kitty ()4. /  QQ  : App        -/  :          APP,           , Delete your Google Account  5.   FastStone Image Viewer  Notepad/  7 Zip  qbittorrent          bt/      6.     !  !  Notepad"	 
       
     } ,
   
@@ -905,8 +918,8 @@
       "tags"     : "OS",
       "date"     : "2018-04-28",
       "excerpt" : "",
-	  "body"    : "原出处：IT之家。资源和教程。包括所有nexus系列和pixel系列的所有历史固件和刷机方法。Enjoy😙👏🌹",
-	  "content" : "ITnexuspixelEnjoy"	 
+	  "body"    : "原出处：IT之家。资源和教程。包括所有nexus系列和pixel系列的所有历史固件和刷机方法。  15 seconds ADB Installer 安装完成后默认生成C:\\adb目录。  Latest SDK Platform-Tools for Windows 替换C:\\adb下的内容即可。注意：  恢复出厂固件即flash-all.bat方式，刷机之前必须”unlock bootloader”; 刷机之后，可以再”lock bootloader”或者不。  “unlock bootloader” &lt;-&gt; “lock bootloader”, data会被清空。  如出现FAILED (remote: 'Bogus size sparse and chunk header')错误，更换”adb版本”即可（如：nexus 5采用更低的adb版本）。Enjoy😙👏🌹",
+	  "content" : "ITnexuspixel  15 seconds ADB Installer C:#92;adb  Latest SDK Platform-Tools for Windows C:#92;adb  flash-all.batunlock bootloader; lock bootloader  unlock bootloader lt;-gt; lock bootloader, data  FAILED (remote: &#39;Bogus size sparse and chunk header&#39;)adbnexus 5adbEnjoy"	 
       
     } 
   

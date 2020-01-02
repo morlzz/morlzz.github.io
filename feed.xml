@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2019-12-21T03:11:25+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">国内手机银行android下载地址</title><link href="http://localhost:8000/digitgame/China-Mobile-Bank-DownloadLink/" rel="alternate" type="text/html" title="国内手机银行android下载地址" /><published>2019-12-21T01:01:00+08:00</published><updated>2019-12-21T01:01:00+08:00</updated><id>http://localhost:8000/digitgame/China%20Mobile%20Bank%20DownloadLink</id><content type="html" xml:base="http://localhost:8000/digitgame/China-Mobile-Bank-DownloadLink/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-01-03T03:02:40+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">Windows微软 常见问题和解决方案汇总</title><link href="http://localhost:8000/tech/Windows-Common-Issues-&-Solutions/" rel="alternate" type="text/html" title="Windows微软 常见问题和解决方案汇总" /><published>2019-12-28T22:53:00+08:00</published><updated>2019-12-28T22:53:00+08:00</updated><id>http://localhost:8000/tech/Windows%20Common%20Issues%20&amp;%20Solutions</id><content type="html" xml:base="http://localhost:8000/tech/Windows-Common-Issues-&amp;-Solutions/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
+Keywords: 
+&lt;a href=&quot;#keyword1&quot;&gt;官方WinPE&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p id=&quot;keyword1&quot; style=&quot;height:;&quot;&gt;&lt;font color=&quot;purple&quot; size=&quot;5&quot; style=&quot;border-bottom: 2px solid grey;display:block&quot;&gt;1. 微软官方WinPE 启动U盘或iso制作&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;背景：偶然发现使用习惯的”老毛桃”安装后，在设置共享权限时，发现”未知用户@管理员权限”，引起了我的警惕。确实，还是”官方的WinPE + 原生的WinNTSetup”更为安全。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.tenforums.com/tutorials/103428-create-winpe-usb-iso.html&quot;&gt;参考链接1：详细步骤指令&lt;/a&gt;
+&lt;a href=&quot;https://docs.microsoft.com/zh-cn/windows-hardware/get-started/adk-install&quot;&gt;参考链接2：官方下载网址&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;从链接2下载：&lt;code class=&quot;highlighter-rouge&quot;&gt;Windows ADK&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;Windows PE 加载项&lt;/code&gt;。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;安装下载文件：&lt;code class=&quot;highlighter-rouge&quot;&gt;Windows ADK&lt;/code&gt;选中”Deployment Tools”，&lt;code class=&quot;highlighter-rouge&quot;&gt;Windows PE 加载项&lt;/code&gt;选中”Windows Preinstallation Environment(Windows PE)”。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;管理员模式运行&lt;code class=&quot;highlighter-rouge&quot;&gt;Deployment and Imaging Tools&lt;/code&gt;CMD窗口。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;在窗口中输入命令：&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;copype amd64 C:\WinPEx64&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;插入U盘：
+        &lt;ul&gt;
+          &lt;li&gt;bootable U-disk：&lt;code class=&quot;highlighter-rouge&quot;&gt;MakeWinPEMedia /UFD C:\WinPEx64 E:&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;create WinPE.iso: &lt;code class=&quot;highlighter-rouge&quot;&gt;MakeWinPEMedia /ISO D:\WinPEx64 F:\WPE64.iso&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="OS" /></entry><entry><title type="html">国内手机银行android下载地址</title><link href="http://localhost:8000/digitgame/China-Mobile-Bank-DownloadLink/" rel="alternate" type="text/html" title="国内手机银行android下载地址" /><published>2019-12-21T01:01:00+08:00</published><updated>2019-12-21T01:01:00+08:00</updated><id>http://localhost:8000/digitgame/China%20Mobile%20Bank%20DownloadLink</id><content type="html" xml:base="http://localhost:8000/digitgame/China-Mobile-Bank-DownloadLink/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;背景: 国内手机银行(安卓版)，往往较易于在各个第三方应用中心下载获得，鉴于应用中心的参差不齐，app的安全性令人堪忧，最可靠的方式为在银行官网直接下载。&lt;/p&gt;
@@ -750,106 +787,4 @@ github: 51bitqunt
 &lt;p&gt;&lt;a href=&quot;https://tool.lu/timestamp&quot;&gt;时间戳查看&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Bid=buy, 最高买价
-Ask=sell，最低卖价&lt;/p&gt;</content><author><name></name></author><category term="Python" /></entry><entry><title type="html">爱汇国际旅支卡</title><link href="http://localhost:8000/digitgame/IHui-TravelCard/" rel="alternate" type="text/html" title="爱汇国际旅支卡" /><published>2019-10-15T00:00:00+08:00</published><updated>2019-10-15T00:00:00+08:00</updated><id>http://localhost:8000/digitgame/IHui%20TravelCard</id><content type="html" xml:base="http://localhost:8000/digitgame/IHui-TravelCard/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;爱汇国际旅支卡-已销卡&quot;&gt;&lt;a href=&quot;https://www.ihui.com/tripcard&quot;&gt;爱汇国际旅支卡&lt;/a&gt;  &lt;span style=&quot;color:#cc4125;&quot;&gt;(已销卡)&lt;/span&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom:-5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;实名认证&quot;&gt;【&lt;strong&gt;实名认证&lt;/strong&gt;】&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;span style=&quot;font-size:18px;font-weight:bold;color:#cc4125;&quot;&gt;(坑)&lt;/span&gt; 由于”旅支卡”实名信息会被”全球付公司”共享，因此登录”全球付Portal”后，会自动显示&lt;code class=&quot;highlighter-rouge&quot;&gt;实名登记审核中&lt;/code&gt;，随后告知&lt;code class=&quot;highlighter-rouge&quot;&gt;身份资料不清晰，需重新认证&lt;/code&gt;，	提交资料后，再告知&lt;code class=&quot;highlighter-rouge&quot;&gt;职业信息前后两次不一致，要求提供户口簿/职业证明/收入证明等等&lt;/code&gt;&lt;strong&gt;诸多额外隐私&lt;/strong&gt;；而&lt;span style=&quot;color:green;font-weight:bold;&quot;&gt;职业信息不一致&lt;/span&gt;，有两个可能因素:
-        &lt;ul&gt;
-          &lt;li&gt;1)”爱汇旅支卡”并无职业填写需求，因此内部共享给”全球付”时可能是爱汇随意填写的;&lt;/li&gt;
-          &lt;li&gt;2) 历史注册”全球付”时所选择的职业信息(选项方式)，而现在”全球付”网站更改了”选项列表”，从而导致没有了”一模一样的”选项，即使选择相近的，官方也会提示所谓的”职业信息前后两次不一致”，由此可见”全球付公司”并不希望更多人通过”实名认证”，因为会变相地减少他们的收入。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-30px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;销卡&quot;&gt;【&lt;strong&gt;销卡&lt;/strong&gt;】&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;销卡流程&lt;/strong&gt;
-        &lt;ul&gt;
-          &lt;li&gt;余额清零&lt;/li&gt;
-          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;爱汇微信公众号&lt;/code&gt;联络客服要求销卡 (如果无人回应，人工热线400-618-2211)：
-            &lt;ul&gt;
-              &lt;li&gt;爱汇会给出”全球付银行账号”用以接收&lt;code class=&quot;highlighter-rouge&quot;&gt;旅支卡销卡手续费&lt;/code&gt; (“旅支卡销卡需求”由”爱汇”受理，”全球付”不受理)。
-                &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  收款人姓名：全球付
-  银行账号：012-87500512543 
-  开户行：中国银行 Bank of China (HK) Limited
-  SWIFT CODE: BKCHHKHHXXX
-  银行地址：2A Des Voeux Road Central, Hong Kong
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;                &lt;/div&gt;
-              &lt;/li&gt;
-              &lt;li&gt;付款成功后，截图发送微信，告知：&lt;code class=&quot;highlighter-rouge&quot;&gt;待销卡卡号&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;删除个人信息&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;销卡成功，邮件通知&lt;/code&gt; (告知销卡需要1周时间)&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-
-        &lt;p style=&quot;margin-bottom:-15px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-        &lt;p&gt;&lt;span style=&quot;font-size:18px;font-weight:bold;color:green;&quot;&gt;
-注意：”爱汇旅支卡”，官方并未提及”被动销卡 (即超出有效期自动失效)”的说法和原则，保险起见，付费直接销卡较为安妥。
-&lt;/span&gt;&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;span style=&quot;font-size:20px;color:#cc4125;&quot;&gt;【&lt;strong&gt;缺点汇总&lt;/strong&gt;】&lt;/span&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;span style=&quot;color:#cc4125;font-weight:bold;font-size:18px;&quot;&gt;缺点1：汇率价差损失高 (高出银行汇率 2.3~2.5%); &lt;/span&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;span style=&quot;color:#cc4125;font-weight:bold;font-size:18px;&quot;&gt;缺点2：微信直充，但每次200HKD/50USD@最低金额; 销卡前必须余额清零，”兑回RMB”功能=港币兑人民币结汇 + 20HKD手续费; &lt;/span&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;span style=&quot;color:#cc4125;font-weight:bold;font-size:18px;&quot;&gt;缺点3：微信直充，受”营业时间”限制，11pm~7am 停止充值;&lt;/span&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;span style=&quot;color:#cc4125;font-weight:bold;font-size:18px;&quot;&gt;缺点4：多数商户不支持该卡，如”国内微信”、”AlipayHK”;&lt;/span&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;span style=&quot;color:#cc4125;font-weight:bold;font-size:18px;&quot;&gt;外汇管制：受每年外汇管制要求限制。&lt;/span&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;【&lt;strong&gt;账户类型&lt;/strong&gt;】支持美元、港元账户。&lt;/li&gt;
-  &lt;li&gt;【&lt;strong&gt;外汇管制&lt;/strong&gt;】外汇管制同等限制 (50,000美元年度兑换额度)。&lt;/li&gt;
-  &lt;li&gt;【&lt;strong&gt;微信充值&lt;/strong&gt;】微信直接deposit美元或者港元账户。
-    &lt;ul&gt;
-      &lt;li&gt;微信充值时间：22:59:00 – 07:01:00   &lt;span style=&quot;font-size:;font-weight:bold;color:#cc4125;&quot;&gt;(实用性差1)&lt;/span&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;微信充值每次最低金额：50美金/200港币&lt;/strong&gt; 	 &lt;span style=&quot;font-size:;font-weight:bold;color:#cc4125;&quot;&gt;(坑1)&lt;/span&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;【&lt;strong&gt;兑回人民币&lt;/strong&gt;】微信中，&lt;code class=&quot;highlighter-rouge&quot;&gt;兑回RMB&lt;/code&gt;=&lt;code class=&quot;highlighter-rouge&quot;&gt;港币兑人民币结汇 + 20HKD手续费&lt;/code&gt;	 &lt;span style=&quot;font-size:;font-weight:bold;color:#cc4125;&quot;&gt;(坑2)&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;【&lt;strong&gt;被商户接收程度&lt;/strong&gt;】多数商户不支持该卡，如”国内微信”、”AlipayHK”。 &lt;span style=&quot;font-size:;font-weight:bold;color:#cc4125;&quot;&gt;(实用性差2)&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;【&lt;strong&gt;余额清零&lt;/strong&gt;】
-    &lt;ul&gt;
-      &lt;li&gt;途径1：境外商户消费，1) 但很难刚巧=余额数字；2) 多少商户不支持该卡。&lt;/li&gt;
-      &lt;li&gt;途径2：微信上”兑回功能”，巨大的坑，不建议。&lt;/li&gt;
-      &lt;li&gt;&lt;span style=&quot;font-size:;font-weight:bold;color:green;&quot;&gt;途径3(推荐！)：与其被”途径2”坑掉，不然捐款更有意义，实测有效，如：&lt;a href=&quot;https://ssl.msf.hk/donate/&quot;&gt;無國界醫生&lt;/a&gt;。&lt;/span&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;汇率对比&lt;/strong&gt;&lt;br /&gt;
-&lt;a href=&quot;/assets/img/107.jpg&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/107.jpg&quot; width=&quot;80%&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.ihui.com/images/abouts_01.png&quot;&gt;&lt;strong&gt;费用&lt;/strong&gt;&lt;/a&gt;：&lt;br /&gt;
-&lt;a href=&quot;/assets/img/106.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/106.png&quot; width=&quot;85%&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ihui.com/helps/epaylinks_faq.jsp&quot;&gt;&lt;strong&gt;Q&amp;amp;A&lt;/strong&gt;&lt;/a&gt;：&lt;br /&gt;
-    &lt;ul&gt;
-      &lt;li&gt;【额度限制】单张旅支卡余额上限为100,000HKD及13,000USD，根据外汇管理政策要求，在50000美元年度兑换额度内，可即时充值，并可多次充值，反复使用。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.bincodes.com/bin-checker/&quot;&gt;&lt;strong&gt;Bin Code Check&lt;/strong&gt;&lt;/a&gt;：&lt;br /&gt;
-&lt;a href=&quot;/assets/img/108.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/108.png&quot; width=&quot;45%&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;</content><author><name></name></author><category term="LegacyBank" /><category term="E-Wallet/BankCard" /></entry></feed>
+Ask=sell，最低卖价&lt;/p&gt;</content><author><name></name></author><category term="Python" /></entry></feed>
