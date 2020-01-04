@@ -69,7 +69,7 @@
 </div>
 
 <span style="font-size:; color: rgb(127, 127, 127);"><strong><em><p><p/>Abstract&nbsp;▹
-    SMB(v2)跨设备件文件共享,局域网内其他电脑/手机对Localhost的浏览</em></strong></span>
+    SMB(v2)局域网跨设备文件共享/浏览,IIS,卡巴防火墙相关设置,路由器访客/AP隔离</em></strong></span>
 
   </header>
 
@@ -97,6 +97,28 @@
 <p style="margin-top: -20px;">&emsp;</p>
 
 <h4 id="3-卡巴斯基防火墙因素导致局域网内设备不能互相访问"><a href="/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SOHO-Devices-cannot-access/">3. 卡巴斯基防火墙因素，导致局域网内设备不能互相访问</a></h4>
+
+<p style="margin-top: -20px;">&emsp;</p>
+
+<h4 id="4-路由器访客ap隔离设置">4. 路由器”访客”、”AP隔离”设置</h4>
+<blockquote>
+  <p>路由器”访客”功能，可有效与”主用户”区隔开，数据互不通；也可限制网速；无mac过滤等高级设置。但可便捷管理访客的接入需求。</p>
+</blockquote>
+
+<ul>
+  <li><code class="highlighter-rouge">访客</code>：
+    <ul>
+      <li><code class="highlighter-rouge">主用户</code>与<code class="highlighter-rouge">访客</code>，IP地址网段一致；但两者之间，互不相通，无关是否启用<code class="highlighter-rouge">AP隔离</code>。</li>
+      <li><code class="highlighter-rouge">访客</code>间，也无法互通，无关是否启用<code class="highlighter-rouge">AP隔离</code>。</li>
+      <li><code class="highlighter-rouge">访客</code>，禁止登录router portal。</li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-top: -40px;">&emsp;</p>
+<ul>
+  <li><code class="highlighter-rouge">AP隔离</code>：应用于<code class="highlighter-rouge">主用户</code>间，当”启用”时，内网中”任何主用户”间互不可访问；当”关闭”时，内网共享/SMB工作正常。</li>
+</ul>
 
   </div><a class="u-url" href="/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SohoLAN/" hidden></a>
     

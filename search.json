@@ -501,9 +501,9 @@
       "category" : "Tech, 搬运, 个人经验分享",
       "tags"     : "OS",
       "date"     : "2019-04-23",
-      "excerpt" : "SMB(v2)跨设备件文件共享,局域网内其他电脑/手机对Localhost的浏览",
-	  "body"    : "1. SMB(v2) File Share  优势：在任何终端，可自由的直接共享存取任何文件，无端任何中转。  局域网内，PC间共享：通过共享文件夹，辅以”映射网络驱动器”。  PC与移动设备 (手机/网络盒子) 间共享：通过SMB(v2)协议，手机推荐X-Plore。&emsp;2. IIS Localhost Browsering  本地搭建的 Jekyll Blog, 借助 IIS, 可以在手机上或是其他设备上, 通过 http://192.168.x.x:xxx 直接访问。&emsp;3. 卡巴斯基防火墙因素，导致局域网内设备不能互相访问",
-	  "content" : "1. SMB(v2) File Share    PC  PC (/) SMB(v2)X-Ploreemsp;2. IIS Localhost Browsering   Jekyll Blog,  IIS, ,  http://192.168.x.x:xxx emsp;3. "	 
+      "excerpt" : "SMB(v2)局域网跨设备文件共享/浏览,IIS,卡巴防火墙相关设置,路由器访客/AP隔离",
+	  "body"    : "1. SMB(v2) File Share  优势：在任何终端，可自由的直接共享存取任何文件，无端任何中转。  局域网内，PC间共享：通过共享文件夹，辅以”映射网络驱动器”。  PC与移动设备 (手机/网络盒子) 间共享：通过SMB(v2)协议，手机推荐X-Plore。&emsp;2. IIS Localhost Browsering  本地搭建的 Jekyll Blog, 借助 IIS, 可以在手机上或是其他设备上, 通过 http://192.168.x.x:xxx 直接访问。&emsp;3. 卡巴斯基防火墙因素，导致局域网内设备不能互相访问&emsp;4. 路由器”访客”、”AP隔离”设置  路由器”访客”功能，可有效与”主用户”区隔开，数据互不通；也可限制网速；无mac过滤等高级设置。但可便捷管理访客的接入需求。  访客：          主用户与访客，IP地址网段一致；但两者之间，互不相通，无关是否启用AP隔离。      访客间，也无法互通，无关是否启用AP隔离。      访客，禁止登录router portal。      &emsp;  AP隔离：应用于主用户间，当”启用”时，内网中”任何主用户”间互不可访问；当”关闭”时，内网共享/SMB工作正常。",
+	  "content" : "1. SMB(v2) File Share    PC  PC (/) SMB(v2)X-Ploreemsp;2. IIS Localhost Browsering   Jekyll Blog,  IIS, ,  http://192.168.x.x:xxx emsp;3. emsp;4. AP  mac            IPAP      AP      router portal      emsp;  AP/SMB"	 
       
     } ,
   
