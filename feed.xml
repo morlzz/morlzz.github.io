@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-01-07T04:52:34+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">在安卓手机上使用ADB &amp;amp; Fastboot命令</title><link href="http://localhost:8000/tech/Use-ADB-&-Fastboot-on-Android/" rel="alternate" type="text/html" title="在安卓手机上使用ADB &amp; Fastboot命令" /><published>2020-01-07T02:53:00+08:00</published><updated>2020-01-07T02:53:00+08:00</updated><id>http://localhost:8000/tech/Use%20ADB%20&amp;%20Fastboot%20on%20Android</id><content type="html" xml:base="http://localhost:8000/tech/Use-ADB-&amp;-Fastboot-on-Android/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-01-07T05:16:28+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">在安卓手机上使用ADB &amp;amp; Fastboot命令</title><link href="http://localhost:8000/tech/Use-ADB-&-Fastboot-on-Android/" rel="alternate" type="text/html" title="在安卓手机上使用ADB &amp; Fastboot命令" /><published>2020-01-07T02:53:00+08:00</published><updated>2020-01-07T02:53:00+08:00</updated><id>http://localhost:8000/tech/Use%20ADB%20&amp;%20Fastboot%20on%20Android</id><content type="html" xml:base="http://localhost:8000/tech/Use-ADB-&amp;-Fastboot-on-Android/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;背景&lt;/strong&gt;：&lt;br /&gt;当一部安卓手机需要透过adb命令进行&lt;code class=&quot;highlighter-rouge&quot;&gt;USB调试&lt;/code&gt;时，默认只能连接&lt;code class=&quot;highlighter-rouge&quot;&gt;PC&lt;/code&gt;，在外时非常不便。该方法可成功使用”手机#1”代替”PC”，使用ADB &amp;amp; Fastboot命令，连接&amp;amp;操作”手机#2”。&lt;br /&gt;&lt;br /&gt; &lt;strong&gt;好处&lt;/strong&gt;：&lt;br /&gt;“手机#2”不必root情况下，可随时透过adb方式，最大化的管理手机相关权限（如可使用&lt;code class=&quot;highlighter-rouge&quot;&gt;App Ops&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;Greenify&lt;/code&gt;）。&lt;/p&gt;
@@ -117,7 +117,57 @@
 			&lt;/td&gt;			
         &lt;/tr&gt;			
     &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><category term="Android" /></entry><entry><title type="html">Windows微软 常见问题和解决方案汇总</title><link href="http://localhost:8000/tech/Windows-Common-Issues-&-Solutions/" rel="alternate" type="text/html" title="Windows微软 常见问题和解决方案汇总" /><published>2019-12-28T22:53:00+08:00</published><updated>2019-12-28T22:53:00+08:00</updated><id>http://localhost:8000/tech/Windows%20Common%20Issues%20&amp;%20Solutions</id><content type="html" xml:base="http://localhost:8000/tech/Windows-Common-Issues-&amp;-Solutions/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
+&lt;/table&gt;
+
+&lt;p style=&quot;margin-top: -37px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ADB Commands&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://shizuku.rikka.app/zh-hans/guide/setup.html#_4-%E5%90%AF%E5%8A%A8-shizuku&quot;&gt;启动shizuku&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;手机每次重启后或者因”USB调试”关闭而失效，都&lt;strong&gt;需要再次启动shizuku&lt;/strong&gt; (当”shizuku”未启动时，&lt;code class=&quot;highlighter-rouge&quot;&gt;App Ops&lt;/code&gt;不可进入设置，但”App Ops”已设置过的应用权限，永久有效)。
+            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/files/start.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p style=&quot;margin-top: -30px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://greenify.uservoice.com/knowledgebase/articles/749142&quot;&gt;greenify&lt;/a&gt;，&lt;strong&gt;一次性设置即可&lt;/strong&gt;。
+        &lt;ul&gt;
+          &lt;li&gt;Accessibility service run-on-demand:
+            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  adb -d shell pm grant com.oasisfeng.greenify android.permission.WRITE_SECURE_SETTINGS
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Aggressive Doze on Android 7.0+ (non-root):
+            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  adb -d shell pm grant com.oasisfeng.greenify android.permission.WRITE_SECURE_SETTINGS
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Doze on the Go:
+            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  adb -d shell pm grant com.oasisfeng.greenify android.permission.DUMP
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Aggressive Doze (on device/ROM with Doze disabled):
+            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  adb -d shell pm grant com.oasisfeng.greenify android.permission.DUMP
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Wake-up Tracker:
+            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  adb -d shell pm grant com.oasisfeng.greenify android.permission.READ_LOGS
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Background-free enforcement on Android 8+ (non-root):
+            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  adb -d shell pm grant com.oasisfeng.greenify android.permission.GET_APP_OPS_STATS
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Android" /></entry><entry><title type="html">Windows微软 常见问题和解决方案汇总</title><link href="http://localhost:8000/tech/Windows-Common-Issues-&-Solutions/" rel="alternate" type="text/html" title="Windows微软 常见问题和解决方案汇总" /><published>2019-12-28T22:53:00+08:00</published><updated>2019-12-28T22:53:00+08:00</updated><id>http://localhost:8000/tech/Windows%20Common%20Issues%20&amp;%20Solutions</id><content type="html" xml:base="http://localhost:8000/tech/Windows-Common-Issues-&amp;-Solutions/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
 Keywords: 
 &lt;a href=&quot;#keyword1&quot;&gt;官方WinPE&lt;/a&gt;
 &lt;/p&gt;

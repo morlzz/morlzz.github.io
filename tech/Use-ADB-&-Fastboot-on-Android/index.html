@@ -185,6 +185,57 @@
     </tbody>
 </table>
 
+<p style="margin-top: -37px;">&emsp;</p>
+
+<ul>
+  <li><strong>ADB Commands</strong>
+    <ul>
+      <li><a href="https://shizuku.rikka.app/zh-hans/guide/setup.html#_4-%E5%90%AF%E5%8A%A8-shizuku">启动shizuku</a>
+        <ul>
+          <li>手机每次重启后或者因”USB调试”关闭而失效，都<strong>需要再次启动shizuku</strong> (当”shizuku”未启动时，<code class="highlighter-rouge">App Ops</code>不可进入设置，但”App Ops”已设置过的应用权限，永久有效)。
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/files/start.sh
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p style="margin-top: -30px;">&emsp;</p>
+
+    <ul>
+      <li><a href="https://greenify.uservoice.com/knowledgebase/articles/749142">greenify</a>，<strong>一次性设置即可</strong>。
+        <ul>
+          <li>Accessibility service run-on-demand:
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb -d shell pm grant com.oasisfeng.greenify android.permission.WRITE_SECURE_SETTINGS
+</code></pre></div>            </div>
+          </li>
+          <li>Aggressive Doze on Android 7.0+ (non-root):
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb -d shell pm grant com.oasisfeng.greenify android.permission.WRITE_SECURE_SETTINGS
+</code></pre></div>            </div>
+          </li>
+          <li>Doze on the Go:
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb -d shell pm grant com.oasisfeng.greenify android.permission.DUMP
+</code></pre></div>            </div>
+          </li>
+          <li>Aggressive Doze (on device/ROM with Doze disabled):
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb -d shell pm grant com.oasisfeng.greenify android.permission.DUMP
+</code></pre></div>            </div>
+          </li>
+          <li>Wake-up Tracker:
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb -d shell pm grant com.oasisfeng.greenify android.permission.READ_LOGS
+</code></pre></div>            </div>
+          </li>
+          <li>Background-free enforcement on Android 8+ (non-root):
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb -d shell pm grant com.oasisfeng.greenify android.permission.GET_APP_OPS_STATS
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
   </div><a class="u-url" href="/tech/Use-ADB-&-Fastboot-on-Android/" hidden></a>
     
 </article>
