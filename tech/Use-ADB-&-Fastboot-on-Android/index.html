@@ -72,16 +72,17 @@
 
 <p><br /></p>
 
-<h4 id="主要参考链接"><strong>主要参考链接</strong></h4>
+<h4 id="主要参考链接"><strong><u>主要参考链接</u></strong></h4>
 <ul>
   <li><a href="https://android.gadgethacks.com/how-to/use-adb-fastboot-commands-without-computer-0200838/">Use ADB &amp; Fastboot Commands Without a Computer</a>, BY STEPHEN PERKINS, 07/17/2019</li>
 </ul>
 
 <p style="margin-top: -15px;">&emsp;</p>
 
-<h4 id="重点摘录"><strong>重点摘录</strong></h4>
+<h4 id="重点摘录"><strong><u>重点摘录</u></strong></h4>
 <ul>
-  <li><strong>“手机#1”要求</strong>
+  <li>
+    <h4 id="手机1要求"><strong>“手机#1”要求</strong></h4>
     <ul>
       <li>已root</li>
       <li>已安装Magisk，安装模块<code class="highlighter-rouge">ADB &amp; Fastboot for Android</code></li>
@@ -94,7 +95,8 @@
 <p style="margin-top: -37px;">&emsp;</p>
 
 <ul>
-  <li><strong>“手机#2 (non-root)”要求</strong>
+  <li>
+    <h4 id="手机2-non-root要求"><strong>“手机#2 (non-root)”要求</strong></h4>
     <ul>
       <li>打开”开发者模式”下<code class="highlighter-rouge">USB调试</code></li>
     </ul>
@@ -103,9 +105,10 @@
 
 <p style="margin-top: -15px;">&emsp;</p>
 
-<h4 id="实测分享和注意点"><strong>实测分享和注意点</strong></h4>
+<h4 id="实测分享和注意点"><strong><u>实测分享和注意点</u></strong></h4>
 <ul>
-  <li><strong>Cable连接两部手机</strong>
+  <li>
+    <h4 id="cable连接两部手机"><strong>Cable连接两部手机</strong></h4>
     <ul>
       <li>亲测发现，当cable两端无需转换接口时，<code class="highlighter-rouge">文件传输</code>和<code class="highlighter-rouge">USB调试</code>均可正常工作；但当cable两端(或任一端口)需转换接口时，仅<code class="highlighter-rouge">文件传输</code>可正常工作，<code class="highlighter-rouge">USB调试</code>无反应。因此，建议使用<strong>无需转换接口的cable直接连接两部手机</strong>。</li>
     </ul>
@@ -115,21 +118,17 @@
 <p style="margin-top: -37px;">&emsp;</p>
 
 <ul>
-  <li><strong>操作步骤</strong>
+  <li>
+    <h4 id="操作步骤"><strong>操作步骤</strong></h4>
     <ol>
       <li>手机#1：将<code class="highlighter-rouge">USB OTG数据交换</code>功能打开。</li>
       <li>手机#2：将<code class="highlighter-rouge">USB调试</code>打开。</li>
       <li>连接cable。</li>
       <li>手机#2：在弹出的”USB偏好设置”中，选择<code class="highlighter-rouge">USB受控于 - 此设备</code>(如果有该选项)；选择<code class="highlighter-rouge">USB用途 - 不进行数据传输</code>。</li>
+      <li>手机#1：打开<code class="highlighter-rouge">Termux</code>，获取<code class="highlighter-rouge">su</code>后，输入<code class="highlighter-rouge">adb devices</code>。</li>
       <li>手机#2：弹出<code class="highlighter-rouge">允许USB调试吗？</code>窗口，打勾<code class="highlighter-rouge">一律允许使用这台计算机进行调试</code>&amp;点击<code class="highlighter-rouge">允许</code>。</li>
-      <li>手机#1：当第5步骤”被允许”后，”手机#1”SDcard根目录下自动生成两个文件 - <code class="highlighter-rouge">adbkey</code>、<code class="highlighter-rouge">adbkey.pub</code>。</li>
-      <li><span><font color="grey"><u><strong>(optional)</strong></u></font> 如果第5步骤未出现<code class="highlighter-rouge">允许USB调试吗？</code>窗口，则以下2个方法尝试，<strong>直到完成第5+6步骤</strong>：</span>
-        <ul>
-          <li>插拔cable。</li>
-          <li>打开”手机#1”<code class="highlighter-rouge">Termux</code>，获取<code class="highlighter-rouge">su</code>后，输入<code class="highlighter-rouge">adb devices</code>，会激活”手机#2”弹出<code class="highlighter-rouge">允许USB调试吗？</code>窗口。</li>
-        </ul>
-      </li>
-      <li>手机#1：<code class="highlighter-rouge">Termux</code>获取<code class="highlighter-rouge">su</code>后，输入<code class="highlighter-rouge">adb devices</code>，当看到”手机#1”的设备号时，即成功了。进而，输入需要的adb命令。</li>
+      <li>手机#1：当第6步骤”被允许”后，”手机#1”SDcard根目录下自动生成两个文件 - <code class="highlighter-rouge">adbkey</code>、<code class="highlighter-rouge">adbkey.pub</code>。</li>
+      <li>手机#1：<code class="highlighter-rouge">Termux</code>获取<code class="highlighter-rouge">su</code>后，输入<code class="highlighter-rouge">adb devices</code>后，当看到”手机#1”的设备号时，即成功了。进而，输入需要的adb命令。</li>
       <li><span><font color="grey"><u><strong>(optional)</strong></u></font> 手机#2：安全起见，完成相关操作后，将<code class="highlighter-rouge">USB调试</code>关闭。<code class="highlighter-rouge">撤销USB调试授权</code>。</span></li>
     </ol>
   </li>
@@ -188,9 +187,10 @@
 <p style="margin-top: -37px;">&emsp;</p>
 
 <ul>
-  <li><strong>ADB Commands</strong>
+  <li>
+    <h4 id="adb-commands"><strong>ADB Commands</strong></h4>
     <ul>
-      <li><a href="https://shizuku.rikka.app/zh-hans/guide/setup.html#_4-%E5%90%AF%E5%8A%A8-shizuku">启动shizuku</a>
+      <li><a href="https://shizuku.rikka.app/zh-hans/guide/setup.html#_4-%E5%90%AF%E5%8A%A8-shizuku"><strong>启动shizuku</strong></a>
         <ul>
           <li>手机每次重启后或者因”USB调试”关闭而失效，都<strong>需要再次启动shizuku</strong> (当”shizuku”未启动时，<code class="highlighter-rouge">App Ops</code>不可进入设置，但”App Ops”已设置过的应用权限，永久有效)。
             <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/files/start.sh
@@ -200,10 +200,10 @@
       </li>
     </ul>
 
-    <p style="margin-top: -30px;">&emsp;</p>
+    <p style="margin-top: -10px;">&emsp;</p>
 
     <ul>
-      <li><a href="https://greenify.uservoice.com/knowledgebase/articles/749142">greenify</a>，<strong>一次性设置即可</strong>。
+      <li><a href="https://greenify.uservoice.com/knowledgebase/articles/749142"><strong>greenify</strong></a>  <span style="font-size:16px;font-weight:bold;color:green;">(一次性设置即可)</span>
         <ul>
           <li>Accessibility service run-on-demand:
             <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb -d shell pm grant com.oasisfeng.greenify android.permission.WRITE_SECURE_SETTINGS
@@ -232,9 +232,37 @@
         </ul>
       </li>
     </ul>
+
+    <p style="margin-top: -10px;">&emsp;</p>
+
+    <ul>
+      <li><a href="https://ww.9to5google.com/2017/11/04/how-to-backup-restore-android-device-data-android-basics/#"><strong>full backup/restore all Android device’s data w/o root</strong></a>，<a href="https://forum.xda-developers.com/galaxy-nexus/general/guide-phone-backup-unlock-root-t1420351">详解</a>
+        <ul>
+          <li>full backup (can encrypt your backup with a password)
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb backup -apk -shared -all -f &lt;filepath&gt;/backup.ab
+</code></pre></div>            </div>
+            <p>另，网络上建议：backing up music, pictures, video, and other internal storage items manually；SMS自行单独备份。</p>
+          </li>
+          <li>full restore
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb restore &lt;filepath&gt;/backup.ab
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p style="margin-top: -10px;">&emsp;</p>
+
+    <ul>
+      <li><a href="https://island.oasisfeng.com/files"><strong>Island 文件传送门 - File Shuttle</strong></a>  <span style="font-size:16px;font-weight:bold;color:green;">(一次性设置即可)</span>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  pm grant com.oasisfeng.island android.permission.INTERACT_ACROSS_USERS
+</code></pre></div>        </div>
+      </li>
+    </ul>
+
+    <p style="margin-top: -10px;">&emsp;</p>
   </li>
 </ul>
-
 
   </div><a class="u-url" href="/tech/Use-ADB-&-Fastboot-on-Android/" hidden></a>
     

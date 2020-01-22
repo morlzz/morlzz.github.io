@@ -1,4 +1,78 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-01-07T21:02:39+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">在安卓手机上使用ADB &amp;amp; Fastboot命令</title><link href="http://localhost:8000/tech/Use-ADB-&-Fastboot-on-Android/" rel="alternate" type="text/html" title="在安卓手机上使用ADB &amp; Fastboot命令" /><published>2020-01-07T02:53:00+08:00</published><updated>2020-01-07T02:53:00+08:00</updated><id>http://localhost:8000/tech/Use%20ADB%20&amp;%20Fastboot%20on%20Android</id><content type="html" xml:base="http://localhost:8000/tech/Use-ADB-&amp;-Fastboot-on-Android/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-01-23T04:31:38+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">Windows OS 相关CMD指令</title><link href="http://localhost:8000/tech/Windows-OS-Commands/" rel="alternate" type="text/html" title="Windows OS 相关CMD指令" /><published>2020-01-13T22:18:00+08:00</published><updated>2020-01-13T22:18:00+08:00</updated><id>http://localhost:8000/tech/Windows%20OS%20Commands</id><content type="html" xml:base="http://localhost:8000/tech/Windows-OS-Commands/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;1-端口被占用&quot;&gt;&lt;strong&gt;1. 端口被占用&lt;/strong&gt;&lt;/h4&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;如查找4000端口被哪个进程占用了，打开CMD：&lt;code class=&quot;highlighter-rouge&quot;&gt;netstat -aon | findstr &quot;4000&quot;&lt;/code&gt; &lt;br /&gt;找到对应的PID。&lt;/li&gt;
+  &lt;li&gt;打开Windows任务管理器，结束对应PID进程即可。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;2-dns清空&quot;&gt;&lt;strong&gt;2. dns清空&lt;/strong&gt;&lt;/h4&gt;
+&lt;hr /&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ipconfig /flushdns
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="OS" /></entry><entry><title type="html">一加手机后门和漏洞</title><link href="http://localhost:8000/tech/Oneplus-backdoor&bug/" rel="alternate" type="text/html" title="一加手机后门和漏洞" /><published>2020-01-10T00:02:00+08:00</published><updated>2020-01-10T00:02:00+08:00</updated><id>http://localhost:8000/tech/Oneplus%20backdoor&amp;bug</id><content type="html" xml:base="http://localhost:8000/tech/Oneplus-backdoor&amp;bug/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;隐私泄漏&quot;&gt;&lt;strong&gt;隐私泄漏&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;1 &lt;a href=&quot;https://chinese.engadget.com/2017/10/11/oneplus-oxygenos-data-anonymity/&quot;&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;是否要加入用戶體驗計畫&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt;  (&lt;strong&gt;果断拒绝&lt;/strong&gt;)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;后台静默上传用户数据的行为，所上传的数据包括了IMEI串码、MAC地址、移动网络名称、WiFi SSID和手机序列号以及用户软件的使用状态。&lt;/li&gt;
+  &lt;li&gt;拒绝&lt;code class=&quot;highlighter-rouge&quot;&gt;是否要加入用戶體驗計畫&lt;/code&gt;后，&lt;strong&gt;另一部分沒法關掉的&lt;/strong&gt;，則都是裝置本身的資訊，一加聲稱需要這方面的數據來「提供更優質的售後服務」。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-top: 5px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;安全后门&quot;&gt;&lt;strong&gt;安全后门&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;2 &lt;a href=&quot;https://cloud.tencent.com/developer/article/1153925&quot;&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;EngineerMode.APK&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt;  (&lt;strong&gt;果断删除, 使用系统应用或者&lt;code class=&quot;highlighter-rouge&quot;&gt;MyAndroidTools&lt;/code&gt;删除&lt;/strong&gt;)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;透过”工程模式”，使用物理adb方式，直接获得root权限&lt;a href=&quot;https://forum.xda-developers.com/oneplus-5/how-to/oneplus-left-backdoor-devices-capable-t3704811&quot;&gt;link1&lt;/a&gt;, &lt;a href=&quot;https://www.anquanke.com/post/id/170096&quot;&gt;link2&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-top: -20px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;p&gt;3 &lt;a href=&quot;https://cloud.tencent.com/developer/article/1153925&quot;&gt;&lt;strong&gt;预装应用&lt;code class=&quot;highlighter-rouge&quot;&gt;OnePlusLogKit&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt;  (&lt;strong&gt;果断删除, 使用系统应用或者&lt;code class=&quot;highlighter-rouge&quot;&gt;MyAndroidTools&lt;/code&gt;删除&lt;/strong&gt;)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;攻击者利用它来获取目标用户的照片、视频、GPS、WiFi、蓝牙以及各种手机日志。&lt;/li&gt;
+  &lt;li&gt;使用&lt;code class=&quot;highlighter-rouge&quot;&gt;MyAndroidTools&lt;/code&gt;删除时：卸载&lt;code class=&quot;highlighter-rouge&quot;&gt;OnePlusLogKit.apk&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;OnePlusLogKit Service&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-top: -20px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;p&gt;4 &lt;a href=&quot;https://www.freebuf.com/news/174584.html&quot;&gt;&lt;strong&gt;Bootloader漏洞&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;即使bootloader被锁定，也可以由他人启动任意或修改过的images，并最终完全控制你的手机。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-top: -20px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;p&gt;5 &lt;a href=&quot;https://www.freebuf.com/vuls/135315.html&quot;&gt;&lt;strong&gt;OTA漏洞&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;一加固件版本4.1.3/3.0及以下版本皆受影响。该漏洞允许攻击者以中间人劫持方式介入OTA升级过程，对OxygenOS/HydrogenOS版本进行降级，甚至是将OxygenOS替换为HydrogenOS(反之亦然)。而且OnePlus X的ROM还能用在OnePlus One手机上(反之亦然)，导致引起拒绝服务。(Google Nexus &amp;amp; Pixel完全不会发生此类问题。)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-top: 5px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;其他快速查看方式---每次系统升级后建议check一下并作相应处理&quot;&gt;&lt;strong&gt;其他：快速查看方式&lt;/strong&gt;    &lt;span style=&quot;font-size:18px;font-weight:bold;color:green;&quot;&gt;(每次系统升级后建议check一下并作相应处理)&lt;/span&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;“*#808#”来查看自己的设备中是否安装&lt;code class=&quot;highlighter-rouge&quot;&gt;EngineerMode&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;“*#800#”来查看自己的设备中是否安装&lt;code class=&quot;highlighter-rouge&quot;&gt;OnePlusLogKit&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Android" /></entry><entry><title type="html">Android Hide Code type on Dialling Panel</title><link href="http://localhost:8000/tech/Android-Hide-Code/" rel="alternate" type="text/html" title="Android Hide Code type on Dialling Panel" /><published>2020-01-09T21:07:00+08:00</published><updated>2020-01-09T21:07:00+08:00</updated><id>http://localhost:8000/tech/Android%20Hide%20Code</id><content type="html" xml:base="http://localhost:8000/tech/Android-Hide-Code/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Display information about Phone, Battery and Usage statistics.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*#*#4636#*#*
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Displsys IMEI number.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*#06#
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Android" /></entry><entry><title type="html">在安卓手机上使用ADB &amp;amp; Fastboot命令</title><link href="http://localhost:8000/tech/Use-ADB-&-Fastboot-on-Android/" rel="alternate" type="text/html" title="在安卓手机上使用ADB &amp; Fastboot命令" /><published>2020-01-07T02:53:00+08:00</published><updated>2020-01-07T02:53:00+08:00</updated><id>http://localhost:8000/tech/Use%20ADB%20&amp;%20Fastboot%20on%20Android</id><content type="html" xml:base="http://localhost:8000/tech/Use-ADB-&amp;-Fastboot-on-Android/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;背景&lt;/strong&gt;：&lt;br /&gt;当一部安卓手机需要透过adb命令进行&lt;code class=&quot;highlighter-rouge&quot;&gt;USB调试&lt;/code&gt;时，默认只能连接&lt;code class=&quot;highlighter-rouge&quot;&gt;PC&lt;/code&gt;，在外时非常不便。该方法可成功使用”手机#1”代替”PC”，使用ADB &amp;amp; Fastboot命令，连接&amp;amp;操作”手机#2”。&lt;br /&gt;&lt;br /&gt; &lt;strong&gt;好处&lt;/strong&gt;：&lt;br /&gt;“手机#2”不必root情况下，可随时透过adb方式，最大化的管理手机相关权限（如可使用&lt;code class=&quot;highlighter-rouge&quot;&gt;App Ops&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;Greenify&lt;/code&gt;）。&lt;/p&gt;
@@ -6,16 +80,17 @@
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;主要参考链接&quot;&gt;&lt;strong&gt;主要参考链接&lt;/strong&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;主要参考链接&quot;&gt;&lt;strong&gt;&lt;u&gt;主要参考链接&lt;/u&gt;&lt;/strong&gt;&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://android.gadgethacks.com/how-to/use-adb-fastboot-commands-without-computer-0200838/&quot;&gt;Use ADB &amp;amp; Fastboot Commands Without a Computer&lt;/a&gt;, BY STEPHEN PERKINS, 07/17/2019&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p style=&quot;margin-top: -15px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h4 id=&quot;重点摘录&quot;&gt;&lt;strong&gt;重点摘录&lt;/strong&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;重点摘录&quot;&gt;&lt;strong&gt;&lt;u&gt;重点摘录&lt;/u&gt;&lt;/strong&gt;&lt;/h4&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;“手机#1”要求&lt;/strong&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;手机1要求&quot;&gt;&lt;strong&gt;“手机#1”要求&lt;/strong&gt;&lt;/h4&gt;
     &lt;ul&gt;
       &lt;li&gt;已root&lt;/li&gt;
       &lt;li&gt;已安装Magisk，安装模块&lt;code class=&quot;highlighter-rouge&quot;&gt;ADB &amp;amp; Fastboot for Android&lt;/code&gt;&lt;/li&gt;
@@ -28,7 +103,8 @@
 &lt;p style=&quot;margin-top: -37px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;“手机#2 (non-root)”要求&lt;/strong&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;手机2-non-root要求&quot;&gt;&lt;strong&gt;“手机#2 (non-root)”要求&lt;/strong&gt;&lt;/h4&gt;
     &lt;ul&gt;
       &lt;li&gt;打开”开发者模式”下&lt;code class=&quot;highlighter-rouge&quot;&gt;USB调试&lt;/code&gt;&lt;/li&gt;
     &lt;/ul&gt;
@@ -37,9 +113,10 @@
 
 &lt;p style=&quot;margin-top: -15px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h4 id=&quot;实测分享和注意点&quot;&gt;&lt;strong&gt;实测分享和注意点&lt;/strong&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;实测分享和注意点&quot;&gt;&lt;strong&gt;&lt;u&gt;实测分享和注意点&lt;/u&gt;&lt;/strong&gt;&lt;/h4&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Cable连接两部手机&lt;/strong&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;cable连接两部手机&quot;&gt;&lt;strong&gt;Cable连接两部手机&lt;/strong&gt;&lt;/h4&gt;
     &lt;ul&gt;
       &lt;li&gt;亲测发现，当cable两端无需转换接口时，&lt;code class=&quot;highlighter-rouge&quot;&gt;文件传输&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;USB调试&lt;/code&gt;均可正常工作；但当cable两端(或任一端口)需转换接口时，仅&lt;code class=&quot;highlighter-rouge&quot;&gt;文件传输&lt;/code&gt;可正常工作，&lt;code class=&quot;highlighter-rouge&quot;&gt;USB调试&lt;/code&gt;无反应。因此，建议使用&lt;strong&gt;无需转换接口的cable直接连接两部手机&lt;/strong&gt;。&lt;/li&gt;
     &lt;/ul&gt;
@@ -49,21 +126,17 @@
 &lt;p style=&quot;margin-top: -37px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;操作步骤&lt;/strong&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;操作步骤&quot;&gt;&lt;strong&gt;操作步骤&lt;/strong&gt;&lt;/h4&gt;
     &lt;ol&gt;
       &lt;li&gt;手机#1：将&lt;code class=&quot;highlighter-rouge&quot;&gt;USB OTG数据交换&lt;/code&gt;功能打开。&lt;/li&gt;
       &lt;li&gt;手机#2：将&lt;code class=&quot;highlighter-rouge&quot;&gt;USB调试&lt;/code&gt;打开。&lt;/li&gt;
       &lt;li&gt;连接cable。&lt;/li&gt;
       &lt;li&gt;手机#2：在弹出的”USB偏好设置”中，选择&lt;code class=&quot;highlighter-rouge&quot;&gt;USB受控于 - 此设备&lt;/code&gt;(如果有该选项)；选择&lt;code class=&quot;highlighter-rouge&quot;&gt;USB用途 - 不进行数据传输&lt;/code&gt;。&lt;/li&gt;
+      &lt;li&gt;手机#1：打开&lt;code class=&quot;highlighter-rouge&quot;&gt;Termux&lt;/code&gt;，获取&lt;code class=&quot;highlighter-rouge&quot;&gt;su&lt;/code&gt;后，输入&lt;code class=&quot;highlighter-rouge&quot;&gt;adb devices&lt;/code&gt;。&lt;/li&gt;
       &lt;li&gt;手机#2：弹出&lt;code class=&quot;highlighter-rouge&quot;&gt;允许USB调试吗？&lt;/code&gt;窗口，打勾&lt;code class=&quot;highlighter-rouge&quot;&gt;一律允许使用这台计算机进行调试&lt;/code&gt;&amp;amp;点击&lt;code class=&quot;highlighter-rouge&quot;&gt;允许&lt;/code&gt;。&lt;/li&gt;
-      &lt;li&gt;手机#1：当第5步骤”被允许”后，”手机#1”SDcard根目录下自动生成两个文件 - &lt;code class=&quot;highlighter-rouge&quot;&gt;adbkey&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;adbkey.pub&lt;/code&gt;。&lt;/li&gt;
-      &lt;li&gt;&lt;span&gt;&lt;font color=&quot;grey&quot;&gt;&lt;u&gt;&lt;strong&gt;(optional)&lt;/strong&gt;&lt;/u&gt;&lt;/font&gt; 如果第5步骤未出现&lt;code class=&quot;highlighter-rouge&quot;&gt;允许USB调试吗？&lt;/code&gt;窗口，则以下2个方法尝试，&lt;strong&gt;直到完成第5+6步骤&lt;/strong&gt;：&lt;/span&gt;
-        &lt;ul&gt;
-          &lt;li&gt;插拔cable。&lt;/li&gt;
-          &lt;li&gt;打开”手机#1”&lt;code class=&quot;highlighter-rouge&quot;&gt;Termux&lt;/code&gt;，获取&lt;code class=&quot;highlighter-rouge&quot;&gt;su&lt;/code&gt;后，输入&lt;code class=&quot;highlighter-rouge&quot;&gt;adb devices&lt;/code&gt;，会激活”手机#2”弹出&lt;code class=&quot;highlighter-rouge&quot;&gt;允许USB调试吗？&lt;/code&gt;窗口。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;手机#1：&lt;code class=&quot;highlighter-rouge&quot;&gt;Termux&lt;/code&gt;获取&lt;code class=&quot;highlighter-rouge&quot;&gt;su&lt;/code&gt;后，输入&lt;code class=&quot;highlighter-rouge&quot;&gt;adb devices&lt;/code&gt;，当看到”手机#1”的设备号时，即成功了。进而，输入需要的adb命令。&lt;/li&gt;
+      &lt;li&gt;手机#1：当第6步骤”被允许”后，”手机#1”SDcard根目录下自动生成两个文件 - &lt;code class=&quot;highlighter-rouge&quot;&gt;adbkey&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;adbkey.pub&lt;/code&gt;。&lt;/li&gt;
+      &lt;li&gt;手机#1：&lt;code class=&quot;highlighter-rouge&quot;&gt;Termux&lt;/code&gt;获取&lt;code class=&quot;highlighter-rouge&quot;&gt;su&lt;/code&gt;后，输入&lt;code class=&quot;highlighter-rouge&quot;&gt;adb devices&lt;/code&gt;后，当看到”手机#1”的设备号时，即成功了。进而，输入需要的adb命令。&lt;/li&gt;
       &lt;li&gt;&lt;span&gt;&lt;font color=&quot;grey&quot;&gt;&lt;u&gt;&lt;strong&gt;(optional)&lt;/strong&gt;&lt;/u&gt;&lt;/font&gt; 手机#2：安全起见，完成相关操作后，将&lt;code class=&quot;highlighter-rouge&quot;&gt;USB调试&lt;/code&gt;关闭。&lt;code class=&quot;highlighter-rouge&quot;&gt;撤销USB调试授权&lt;/code&gt;。&lt;/span&gt;&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
@@ -122,9 +195,10 @@
 &lt;p style=&quot;margin-top: -37px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;ADB Commands&lt;/strong&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;adb-commands&quot;&gt;&lt;strong&gt;ADB Commands&lt;/strong&gt;&lt;/h4&gt;
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://shizuku.rikka.app/zh-hans/guide/setup.html#_4-%E5%90%AF%E5%8A%A8-shizuku&quot;&gt;启动shizuku&lt;/a&gt;
+      &lt;li&gt;&lt;a href=&quot;https://shizuku.rikka.app/zh-hans/guide/setup.html#_4-%E5%90%AF%E5%8A%A8-shizuku&quot;&gt;&lt;strong&gt;启动shizuku&lt;/strong&gt;&lt;/a&gt;
         &lt;ul&gt;
           &lt;li&gt;手机每次重启后或者因”USB调试”关闭而失效，都&lt;strong&gt;需要再次启动shizuku&lt;/strong&gt; (当”shizuku”未启动时，&lt;code class=&quot;highlighter-rouge&quot;&gt;App Ops&lt;/code&gt;不可进入设置，但”App Ops”已设置过的应用权限，永久有效)。
             &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/files/start.sh
@@ -134,10 +208,10 @@
       &lt;/li&gt;
     &lt;/ul&gt;
 
-    &lt;p style=&quot;margin-top: -30px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+    &lt;p style=&quot;margin-top: -10px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://greenify.uservoice.com/knowledgebase/articles/749142&quot;&gt;greenify&lt;/a&gt;，&lt;strong&gt;一次性设置即可&lt;/strong&gt;。
+      &lt;li&gt;&lt;a href=&quot;https://greenify.uservoice.com/knowledgebase/articles/749142&quot;&gt;&lt;strong&gt;greenify&lt;/strong&gt;&lt;/a&gt;  &lt;span style=&quot;font-size:16px;font-weight:bold;color:green;&quot;&gt;(一次性设置即可)&lt;/span&gt;
         &lt;ul&gt;
           &lt;li&gt;Accessibility service run-on-demand:
             &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  adb -d shell pm grant com.oasisfeng.greenify android.permission.WRITE_SECURE_SETTINGS
@@ -166,6 +240,35 @@
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
+
+    &lt;p style=&quot;margin-top: -10px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://ww.9to5google.com/2017/11/04/how-to-backup-restore-android-device-data-android-basics/#&quot;&gt;&lt;strong&gt;full backup/restore all Android device’s data w/o root&lt;/strong&gt;&lt;/a&gt;，&lt;a href=&quot;https://forum.xda-developers.com/galaxy-nexus/general/guide-phone-backup-unlock-root-t1420351&quot;&gt;详解&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;full backup (can encrypt your backup with a password)
+            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  adb backup -apk -shared -all -f &amp;lt;filepath&amp;gt;/backup.ab
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+            &lt;p&gt;另，网络上建议：backing up music, pictures, video, and other internal storage items manually；SMS自行单独备份。&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;full restore
+            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  adb restore &amp;lt;filepath&amp;gt;/backup.ab
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p style=&quot;margin-top: -10px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://island.oasisfeng.com/files&quot;&gt;&lt;strong&gt;Island 文件传送门 - File Shuttle&lt;/strong&gt;&lt;/a&gt;  &lt;span style=&quot;font-size:16px;font-weight:bold;color:green;&quot;&gt;(一次性设置即可)&lt;/span&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  pm grant com.oasisfeng.island android.permission.INTERACT_ACROSS_USERS
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p style=&quot;margin-top: -10px;&quot;&gt;&amp;emsp;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><category term="Android" /></entry><entry><title type="html">Windows微软 常见问题和解决方案汇总</title><link href="http://localhost:8000/tech/Windows-Common-Issues-&-Solutions/" rel="alternate" type="text/html" title="Windows微软 常见问题和解决方案汇总" /><published>2019-12-28T22:53:00+08:00</published><updated>2019-12-28T22:53:00+08:00</updated><id>http://localhost:8000/tech/Windows%20Common%20Issues%20&amp;%20Solutions</id><content type="html" xml:base="http://localhost:8000/tech/Windows-Common-Issues-&amp;-Solutions/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
 Keywords: 
@@ -274,6 +377,7 @@ Keywords:
 &lt;ul&gt;
   &lt;li&gt;Local Services(TCP),方向-接收，设为&lt;code class=&quot;highlighter-rouge&quot;&gt;允许&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;Local Services(UDP),方向-接收，设为&lt;code class=&quot;highlighter-rouge&quot;&gt;允许&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;本地端口&lt;/code&gt;设置栏：不填任何端口，表示支持所有本地端口&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p style=&quot;margin-bottom:-15px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
@@ -677,268 +781,4 @@ Keywords:
   &lt;li&gt;可更换不同地区的IP地址，7天免费试用；&lt;/li&gt;
   &lt;li&gt;手机版支持众多的国家；&lt;/li&gt;
   &lt;li&gt;PC版支持Chrome&lt;code class=&quot;highlighter-rouge&quot;&gt;zenmate插件&lt;/code&gt;，免费的国家相对较少。&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="Cloud/VPN/VPS" /><category term="Google" /><summary type="html">谷歌商店基于账号的所属地区，呈现不同的App</summary></entry><entry><title type="html">Google账户/服务相关汇总</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Google-Related/" rel="alternate" type="text/html" title="Google账户/服务相关汇总" /><published>2019-11-04T02:29:00+08:00</published><updated>2019-11-04T02:29:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Google%20Related</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Google-Related/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;1-墙内使用google服务&quot;&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Use-Google-Services-in-China/&quot;&gt;1. 墙内使用Google服务&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p style=&quot;margin-top: -20px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;2-设置谷歌商店不同的所属地区&quot;&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Change-Google-Area/&quot;&gt;2. 设置谷歌商店不同的所属地区&lt;/a&gt;&lt;/h4&gt;</content><author><name></name></author><category term="Cloud/VPN/VPS" /><category term="Google" /><summary type="html">墙内使用Google服务,谷歌商店不同的所属地区</summary></entry><entry><title type="html">携程环球现金卡 Ctrip Travel CashCard/PrepaidCard</title><link href="http://localhost:8000/digitgame/Ctrip-CashCard/" rel="alternate" type="text/html" title="携程环球现金卡 Ctrip Travel CashCard/PrepaidCard" /><published>2019-10-29T00:00:00+08:00</published><updated>2019-10-29T00:00:00+08:00</updated><id>http://localhost:8000/digitgame/Ctrip%20CashCard</id><content type="html" xml:base="http://localhost:8000/digitgame/Ctrip-CashCard/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;1-发卡机构&quot;&gt;&lt;strong&gt;1. 发卡机构&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;发行机构：新加坡 &lt;a href=&quot;https://www.wirecard.com/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Wirecard Singapore Pte. Ltd&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Bin Check：&lt;br /&gt;
-  &lt;a href=&quot;/assets/img/113.jpg&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/113.jpg&quot; width=&quot;35%&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;2-terms--condition&quot;&gt;&lt;strong&gt;2. &lt;a href=&quot;/assets/file/mcp_terms.docx&quot;&gt;Terms &amp;amp; Condition&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;3-携程环球现金卡&quot;&gt;&lt;strong&gt;3. 携程环球现金卡&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;属于”旅行预付卡”;&lt;/li&gt;
-  &lt;li&gt;支持&lt;strong&gt;7种币种 (按优先次序)&lt;/strong&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;美元&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;日元&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;港币&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;欧元&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;新加坡元&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;澳元&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;英镑&lt;/code&gt;，&lt;strong&gt;该7种币种间自由免费转换&lt;/strong&gt;;&lt;/li&gt;
-  &lt;li&gt;交易时，如某一币种金额不够：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;u&gt;交易&quot;7种币种&quot;内的货币时&lt;/u&gt;：则按照”优先次序”自动使用其他6种货币支付。(自动&amp;amp;免费转换)&lt;/li&gt;
-      &lt;li&gt;&lt;u&gt;交易&quot;7种币种&quot;以外的货币时&lt;/u&gt;：同上 + 加收2.5%货币转换费。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;消费/取现其他的币种：2.5%转换费;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;携程App&lt;/code&gt;内:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;充值&lt;/strong&gt;：首次外，每次&lt;strong&gt;最低金额 &amp;gt;=500CNY等值外币&lt;/strong&gt;; &lt;strong&gt;无手续费&lt;/strong&gt;。&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;汇率&lt;/strong&gt;：”换取现金卡” 右上角查阅 “今日汇率”。(汇率较优(~中行汇率);)&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;p style=&quot;margin-bottom:-15px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-    &lt;table style=&quot;width:100%;font-size:15px;&quot;&gt;
-      &lt;tbody&gt;
-          &lt;tr style=&quot;;font-weight:bold;&quot;&gt;
-              &lt;td width=&quot;25%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all; background-color:;&quot; align=&quot;center&quot;&gt;
-                  &quot;携程App&quot;内充值
-              &lt;/td&gt;		
-              &lt;td width=&quot;25%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all; background-color:;&quot; align=&quot;center&quot;&gt;
-                  线下网点
-              &lt;/td&gt;
-              &lt;td width=&quot;25%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all; background-color: ;&quot; align=&quot;center&quot;&gt;
-                  相关限额
-              &lt;/td&gt;
-              &lt;td width=&quot;25%&quot; valign=&quot;middle&quot; style=&quot;word-break: break-all; background-color: ;&quot; align=&quot;center&quot;&gt;
-                  相关费用
-              &lt;/td&gt;						
-          &lt;/tr&gt;
-          &lt;tr&gt;
-              &lt;td valign=&quot;top&quot; style=&quot;word-break: break-all; background-color: #EDEDED;&quot; align=&quot;center&quot;&gt;
-                  &lt;a href=&quot;/assets/img/117.jpg&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/117.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;
-              &lt;/td&gt;		
-              &lt;td valign=&quot;top&quot; style=&quot;word-break: break-all; background-color: #EDEDED;&quot; align=&quot;center&quot;&gt;
-                  &lt;a href=&quot;/assets/img/114.jpg&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/114.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;
-              &lt;/td&gt;
-              &lt;td valign=&quot;top&quot; style=&quot;word-break: break-all; background-color: #EDEDED;&quot; align=&quot;center&quot;&gt;
-                  &lt;a href=&quot;/assets/img/115.jpg&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/115.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;
-              &lt;/td&gt;
-              &lt;td valign=&quot;top&quot; style=&quot;word-break: break-all; background-color: #EDEDED;&quot; align=&quot;center&quot;&gt;
-                  &lt;a href=&quot;/assets/img/116.jpg&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/116.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;
-              &lt;/td&gt;					
-          &lt;/tr&gt;
-      &lt;/tbody&gt;
-  &lt;/table&gt;
-  &lt;/li&gt;
-  &lt;li&gt;账户管理费:
-    &lt;ul&gt;
-      &lt;li&gt;隐藏费用条目，携程官网上从未提及；&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;6个月未使用或者未激活，则第7个月开始将收取1.5美元/月的管理费用。&lt;/strong&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;缺点：
-    &lt;ul&gt;
-      &lt;li&gt;ONLY 消费/取现/网购；&lt;/li&gt;
-      &lt;li&gt;没有账户的概念，即无法转账，实测：
-        &lt;ul&gt;
-          &lt;li&gt;Deposit TransferWise: 银行未授权。&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;Amazon: 可使用。&lt;/strong&gt;&lt;/li&gt;
-          &lt;li&gt;AlipayHK：绑卡失败。&lt;/li&gt;
-          &lt;li&gt;Google Pay: 可以绑定，但仅限线上支付，实体店不可以使用。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="LegacyBank" /><category term="E-Wallet/BankCard" /><summary type="html">携程环球现金卡</summary></entry><entry><title type="html">全球付</title><link href="http://localhost:8000/digitgame/Globalcash-Card/" rel="alternate" type="text/html" title="全球付" /><published>2019-10-22T00:00:00+08:00</published><updated>2019-10-22T00:00:00+08:00</updated><id>http://localhost:8000/digitgame/Globalcash%20Card</id><content type="html" xml:base="http://localhost:8000/digitgame/Globalcash-Card/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;全球付&quot;&gt;&lt;a href=&quot;https://www.globalcash.hk/&quot;&gt;全球付&lt;/a&gt;&lt;/h3&gt;
-&lt;p style=&quot;margin-bottom:-5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;账户类型支持美元港元账户人民币账户&quot;&gt;【&lt;strong&gt;账户类型&lt;/strong&gt;】支持美元、港元账户、人民币账户。&lt;/h4&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;账户数量限制&quot;&gt;【&lt;strong&gt;账户数量限制&lt;/strong&gt;】&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;每个人最多同时申请2个账户。&lt;/li&gt;
-      &lt;li&gt;早期的”免费试用VNC卡 (当时仅有”人民币”币种)”，一个手机号限量3张VNC。(有效期: 3年，到期后&amp;amp;余额为0，次月自动注销)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p style=&quot;margin-bottom:-20px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;充值&quot;&gt;【&lt;strong&gt;充值&lt;/strong&gt;】。&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;【&lt;strong&gt;国内银行/电子钱包充值&lt;/strong&gt;】。
-        &lt;ul&gt;
-          &lt;li&gt;没有充值时间限制。&lt;/li&gt;
-          &lt;li&gt;首次充值最低金额：300CNY/350HKD/50USD。再次任意金额。&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;充值手续费：1%&lt;/strong&gt;，最低5CNY/笔。月免费额度50元。&lt;/li&gt;
-          &lt;li&gt;支持&lt;code class=&quot;highlighter-rouge&quot;&gt;快捷支付(绑定银联卡)&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;网银支付&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;微信/支付宝&lt;/code&gt;。&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;p style=&quot;margin-bottom:-18px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;【&lt;strong&gt;香港账户&lt;/strong&gt;】。
-        &lt;ul&gt;
-          &lt;li&gt;没有充值时间限制。&lt;/li&gt;
-          &lt;li&gt;无充值手续费。&lt;/li&gt;
-          &lt;li&gt;货币转换：当使用”港币账户”支付时，全球付会自动换算成(&lt;strong&gt;全球付汇率&lt;/strong&gt;)需支付的HKD。&lt;/li&gt;
-          &lt;li&gt;当使用”香港开户的人民币账户”支付时，直接1：1消费。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p style=&quot;margin-bottom:-20px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-    &lt;p&gt;&lt;span style=&quot;font-size:18px;font-weight:bold;color:green;&quot;&gt;
-  注意：『充值』，相当于”商户下单&amp;amp;无卡支付消费”的性质，和”银行转账汇款”是两个概念。(故”消费”没有时间限制)
-  &lt;/span&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-20px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;转账&quot;&gt;【&lt;strong&gt;转账&lt;/strong&gt;】。&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;【&lt;strong&gt;本人国内银行账号&lt;/strong&gt;】。
-        &lt;ul&gt;
-          &lt;li&gt;银行账号：银联卡号 + 开户分行信息。&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;转账手续费：1%&lt;/strong&gt;，最低5CNY/笔。&lt;strong&gt;月限额3万，年限额25万。&lt;/strong&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;转账时间限制&lt;/strong&gt;：
-            &lt;ul&gt;
-              &lt;li&gt;时间段：7am~8pm。(该时间段以外，直接”交易失败”)&lt;/li&gt;
-              &lt;li&gt;实测周末不受限制，秒到，只要在&lt;code class=&quot;highlighter-rouge&quot;&gt;时间段&lt;/code&gt;内操作即可。(节假日待测)&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;p style=&quot;margin-bottom:-18px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;【&lt;strong&gt;香港CNY账号 - 传统银行账户&lt;/strong&gt;】
-        &lt;ul&gt;
-          &lt;li&gt;&lt;strong&gt;转账手续费：0.5%&lt;/strong&gt;，最低18CNY/笔。&lt;/li&gt;
-          &lt;li&gt;无时间限制。&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;p style=&quot;margin-bottom:-18px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;【&lt;strong&gt;香港CNY账号 - FPS&lt;/strong&gt;】
-        &lt;ul&gt;
-          &lt;li&gt;无转账手续费。&lt;/li&gt;
-          &lt;li&gt;无时间限制。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-20px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;消费-posnfc网付&quot;&gt;【&lt;strong&gt;消费 (POS/NFC/网付)&lt;/strong&gt;】。&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;【&lt;strong&gt;“小额交易”限制&lt;/strong&gt;】。
-        &lt;ul&gt;
-          &lt;li&gt;小额交易金额：每月单笔交易&lt;strong&gt;小于10 RMB（HKD 11或USD 1.5）&lt;/strong&gt;&lt;/li&gt;
-          &lt;li&gt;限制：每月免费3笔”小额交易”，超过3次，第4次的小额交易将收取异常交易处理费 (异常交易处理费：每笔 3RMB/4HKD/0.5USD)。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-20px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;身份认证&quot;&gt;【&lt;strong&gt;身份认证&lt;/strong&gt;】&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;不记名 -&amp;gt; 实名登记： 提交个人实名资料通过审核。&lt;/li&gt;
-      &lt;li&gt;实名登记 -&amp;gt; 实名认证： 绑定一张中国大陆银行卡或通过同名的香港账户完成一笔任意金额的充值或转入。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p style=&quot;margin-bottom:-20px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;费用&quot;&gt;&lt;a href=&quot;https://www.globalcash.hk/foot_new_explain.html&quot;&gt;&lt;strong&gt;费用&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;限额表-不受外汇管制限制但有限额表&quot;&gt;&lt;a href=&quot;https://www.globalcash.hk/foot_prepaid_cardLimit.html&quot;&gt;&lt;strong&gt;限额表&lt;/strong&gt;&lt;/a&gt;   &lt;span style=&quot;font-size:20px;font-weight:bold;color:green;&quot;&gt;&lt;strong&gt;不受”外汇管制”限制&lt;/strong&gt;&lt;/span&gt;，但有”限额表”&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;CHY转账至”国内绑定银联卡”，相同币种，不存在”结汇”问题。&lt;/li&gt;
-      &lt;li&gt;“国内绑定银联卡”进行&lt;strong&gt;充值&lt;/strong&gt;，无论充入任何CNY/HKD/USD，实则属于”&lt;strong&gt;网上无卡支付&lt;/strong&gt;“方式 (相当于信用卡消费)，汇率按照MasterCard直接转换，和”外管局”无关。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p style=&quot;margin-bottom:-20px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;qa&quot;&gt;&lt;a href=&quot;https://www.globalcash.hk/intro/help_center.html&quot;&gt;&lt;strong&gt;Q&amp;amp;A&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p style=&quot;margin-bottom:-20px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;条款和细则-condi--terms-&quot;&gt;&lt;a href=&quot;https://www.globalcash.hk/foot_service.html&quot;&gt;&lt;strong&gt;条款和细则 Condi. &amp;amp; Terms&lt;/strong&gt;&lt;/a&gt; &lt;br /&gt;&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;【&lt;strong&gt;注销卡片&lt;/strong&gt;】: &lt;strong&gt;持卡人可隨時向全球付公司發出書面通知註銷全球付&lt;/strong&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  11、全球付的暫停、終止、註銷和退回儲值額
-  11.1   本公司有權隨時暫停、終止及∕或註銷全球付及∕或任何服務及∕或不批准任何擬進行之交易，而毋須通知及陳述理由。本公司
-  不會承擔因本公司採取該等行動而直接或間接引致之任何損失或損害。
-
-  11.2   持卡人可隨時向本公司發出書面通知註銷全球付。儘管全球付及相關賬戶已被註銷，持卡人仍須承擔一切使用全球付進行交易的
-  風險及責任（詳情請参閱收費表）。
-
-  11.3   持卡人應在全球付終止或註銷後立即將實體預付卡剪卡處理。儘管全球付已被終止或註銷，但在實體預付卡剪卡之前，持卡人仍
-  需繼續對使用全球付及相關之手續費及收費承擔一切風險及責任。（詳情請参閱收費表）
-
-  11.4   持卡人應在全球付註銷前以消費及∕或透過自動櫃員機提款方式用完及∕或提清賬戶內所有儲值額。持卡人應盡量於全球付註銷
-  前辦理退回儲值額申請，持卡人需承擔相關手續費（詳情請参閱收費表）。
-
-  11.5   若不記名持卡人申請退回儲值額，可於最後一宗交易發生的7天後，攜帶有效身份證明文件、實體預付卡、購卡證明或初次充值及
-  交易證明親身前往本公司香港辦事處申請退款。不記名卡持卡人應盡量提升預付卡級別至實名卡，再自行將儲值額轉入銀行戶口。
-
-  11.6   本公司將於全球付註消後30天內完成計算全球付儲值額，唯本公司有權先行在儲值額內扣除持卡人在該全球付或其名下其他全球
-  付拖欠本公司的款項及費用，本公司將簽發本港銀行的港幣支票或以本公司認為任何合適方法退回儲值額。
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;【联系方式】
-        &lt;ul&gt;
-          &lt;li&gt;客戶服務部電話號碼︰+86 4006183327； +852 3175-7797；&lt;/li&gt;
-          &lt;li&gt;微信公众号: globalcash&lt;/li&gt;
-          &lt;li&gt;電郵地址：globalcash@epaylinks.hk&lt;/li&gt;
-          &lt;li&gt;全球付公司的名稱：全球付技術有限公司(&lt;a href=&quot;https://www.globalcash.hk/foot_news_companyName.html&quot;&gt;中文&lt;/a&gt;); ePaylinks Technology Co., Ltd(英文)&lt;/li&gt;
-          &lt;li&gt;全球付卡的英文名稱：&lt;/li&gt;
-          &lt;li&gt;全球付公司地址：
-            &lt;ul&gt;
-              &lt;li&gt;(中文) 香港九龍觀塘成業街7號寧晉中心25樓H室，郵編999077&lt;/li&gt;
-              &lt;li&gt;(英文) Unit H, 25/F., Legend Tower, 7 Shing Yip Street, Kwun Tong, Kowloon, Hong Kong&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;</content><author><name></name></author><category term="LegacyBank" /><category term="E-Wallet/BankCard" /></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="Cloud/VPN/VPS" /><category term="Google" /><summary type="html">谷歌商店基于账号的所属地区，呈现不同的App</summary></entry></feed>
