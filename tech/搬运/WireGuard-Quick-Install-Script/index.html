@@ -72,7 +72,7 @@
     
 <div style="">
 <br />
-<div style="text-indent:;"><font style="font-size: 18px;"><b>Script for Debian 9/Ubuntu/Centos_7</b></font></div>
+<div style="text-indent:;"><font style="font-size: 18px;"><b>Script for Debian 9/Ubuntu/Centos_7 (必须root用户下安装)</b></font></div>
 
 <br /><a href="https://github.com/hongwenjun/vps_setup" target="_self">原出处</a>
 <br />
@@ -122,7 +122,7 @@ Ubuntu_AWS, Steps:</u></font></b></div>
 创建EC实例，“安全组”增加TCP和UDP，指定一样的“<b><font color="#6F3198">端口</font></b>”（或者不指定，任意端口），允许 “<b>0.0.0.0/0</b>”。</div>
 <div style=""><br /></div>
 <div style="">2. # 一键安装wireguard 脚本 Ubuntu&nbsp;
-&nbsp;(源:逗比网安装笔记)&nbsp;&nbsp;注意：1)root用户下安装；2)chmod -R 777 *.* &amp;nbsp (对当前该目录/文件进行权限变更，进而可以进行复制删除的操作)</div>
+&nbsp;(源:逗比网安装笔记)&nbsp;&nbsp;注意：1)root用户下安装；2)<strong><u>chmod -R 777 *.*</u></strong>  (对当前该目录/文件进行权限变更，进而可以进行复制删除的操作; <code>*.*</code>文件或者文件目录)</div>
 <div>wget -qO- git.io/fpcnL | bash</div>
 <div><br /></div>
 <div>3.optional:&nbsp;使用“ bash wgmtu”&nbsp;
@@ -203,16 +203,35 @@ $ sysctl -w net.ipv4.ip_forward=1
 <div style="color: rgb(0, 0, 0); font-size: 14px; text-indent: 0px;">
 <b><font style="font-size: 16px;"><u>Notes for
 Debian_GCE:</u></font></b></div>
+<br />
+<code>chmod -R 777 /etc/wireguard </code>  #赋予权限后，可在sftp中直接读写。
+<br /><br />wireguard配置文件位置： <code>/etc/wireguard</code>
+<br />
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
 <div style="font-size: 14px; text-indent: 0px;">
 <div style="color: rgb(0, 0, 0);"><br /></div>
-<div style="color: rgb(0, 0, 0);">1. 一键脚本。</div>
+<div style="color: rgb(0, 0, 0);"><strong>1. 一键脚本。</strong></div>
 <div style="color: rgb(0, 0, 0);">&nbsp;
 &nbsp;【Optional】wg配置： 可设置指定端口（同上,
 "client.conf“需手动更改）</div>
-<div style="color: rgb(0, 0, 0);">&nbsp;
-&nbsp; Plus: 以上步骤 4~7.</div>
-<div style="">2. firewall rule: <b style="color: rgb(0, 0, 0);">network tags</b>: <font color="#6F3198"><b><u>http-server(默认自动被选中，network tags中无需添加), https-server(同前面), in,
+
+<div style="color: rgb(0, 0, 0);"><strong>2. 上面第5、第7步骤only。</strong></div>
+
+<br />
+
+<font style="font-size: 16px;font-weight:bold;color:#70ad47;">关于VPS配置：</font>
+<br />
+- 勾选"允许http流量、允许https流量"。<br />
+- "network tag"中：添加tags: "in"、"out"、"http-server"(默认自动添加)、"https-server"(默认自动添加)。<br />
+- [optional] 如使用远程ssh，则需设置ssh-key。<br /><br />
+
+
+<font style="font-size: 16px;font-weight:bold;color:grey;">关于防火墙中network tags的设置方法：</font><br />
+<div style="">firewall rule: <b style="color: rgb(0, 0, 0);">network tags</b>: <font color="#6F3198"><b><u>http-server(默认自动被选中，network tags中无需添加), https-server(同前面), in,
 out</u></b></font></div>
+
 <div style="color: rgb(0, 0, 0);">&nbsp;
 &nbsp; (优先级 1，IP Range: 0.0.0.0/0，port/protocol:
 all)</div>

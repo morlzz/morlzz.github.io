@@ -1,4 +1,254 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-01-23T04:31:38+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">Windows OS 相关CMD指令</title><link href="http://localhost:8000/tech/Windows-OS-Commands/" rel="alternate" type="text/html" title="Windows OS 相关CMD指令" /><published>2020-01-13T22:18:00+08:00</published><updated>2020-01-13T22:18:00+08:00</updated><id>http://localhost:8000/tech/Windows%20OS%20Commands</id><content type="html" xml:base="http://localhost:8000/tech/Windows-OS-Commands/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-03-20T17:35:40+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">Enable desktop experience &amp;amp; RDP for Ubuntu 18.04 LTS VM in GCP</title><link href="http://localhost:8000/tech/Linux-RDP-on-VPS2/" rel="alternate" type="text/html" title="Enable desktop experience &amp; RDP for Ubuntu 18.04 LTS VM in GCP" /><published>2020-03-16T01:31:00+08:00</published><updated>2020-03-16T01:31:00+08:00</updated><id>http://localhost:8000/tech/Linux%20RDP%20on%20VPS2</id><content type="html" xml:base="http://localhost:8000/tech/Linux-RDP-on-VPS2/">&lt;p style=&quot;margin-bottom:35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:30px;font-weight:bold;color:#70ad47;&quot;&gt;准备工作&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;日常更新&quot;&gt;日常更新&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;sudo apt update&lt;/li&gt;
+  &lt;li&gt;sudo apt upgrade&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;用户权限密码设置&quot;&gt;用户权限&amp;amp;密码设置&lt;/h3&gt;
+
+&lt;h4 id=&quot;1-添加用户&quot;&gt;1. 添加用户&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo useradd 你的用户名 -m&lt;/code&gt;            # 添加用户&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo passwd 你的用户名&lt;/code&gt;  			     # 为该用户设置密码&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;2-为新增用户添加sudo权限&quot;&gt;2. 为新增用户添加sudo权限&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo chmod u+w /etc/sudoers&lt;/code&gt;      # 添加sudo文件的写权限&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo vi /etc/sudoers&lt;/code&gt; 			 # 编辑sudoers文件 (&lt;code class=&quot;highlighter-rouge&quot;&gt;ins&lt;/code&gt;键进入编辑状态；保存退出: &lt;code class=&quot;highlighter-rouge&quot;&gt;Esc&lt;/code&gt;键后，&lt;code class=&quot;highlighter-rouge&quot;&gt;:wq!&lt;/code&gt;回车)&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  找到这行 root ALL=(ALL) ALL,在他下面添加xxx ALL=(ALL) ALL (这里的xxx是你的用户名) 
+  (例如添加上面创建的用户：你的用户名 ALL=(ALL) ALL)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo chmod u-w /etc/sudoers&lt;/code&gt;      # 撤销sudoers文件写权限&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;3-为root用户设置密码&quot;&gt;3. 为Root用户设置密码&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo -s&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;passwd&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:20px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;font-size:30px;font-weight:bold;color:#70ad47;&quot;&gt;教程&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;教程rdp-for-ubuntu-1804-lts-vm-in-gcp&quot;&gt;教程：&lt;a href=&quot;https://www.youtube.com/watch?v=L0QdZwDxQa8&quot;&gt;RDP for Ubuntu 18.04 LTS VM in GCP&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;step1-commands-in-terminal&quot;&gt;&lt;strong&gt;Step1: Commands in Terminal&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update
+sudo apt-get install -y xrdp
+sudo apt-get install -y xfce4
+sudo service xrdp restart      # (if not working, use this line) sudo systemctl start xrdp
+
+sudo -s
+passwd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;step2-gce-firewall设置&quot;&gt;&lt;strong&gt;Step2: GCE firewall设置&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;在防火墙中添加：允许tcp 3389@0.0.0.0/0@Ingress@apply to all。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;step3-使用windows-remote-desktop连接远程桌面&quot;&gt;&lt;strong&gt;Step3: 使用windows remote desktop连接远程桌面&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;windows + R&lt;/code&gt;运行框中输入：&lt;code class=&quot;highlighter-rouge&quot;&gt;mstsc&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;windows remote desktop&lt;/code&gt;窗口中输入：远程安装了RDP的&lt;strong&gt;VPS IP地址&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;优化显示速度：
+        &lt;ul&gt;
+          &lt;li&gt;「体验」Tab：”性能”选项中，选择&lt;code class=&quot;highlighter-rouge&quot;&gt;调制解调器(56kbps)&lt;/code&gt;; “允许功能”，都不选。&lt;/li&gt;
+          &lt;li&gt;「显示」Tab：”显示配置”中，调节合适的远程桌面大小(越小显示流畅); “颜色”，选择&lt;code class=&quot;highlighter-rouge&quot;&gt;增强色15位&lt;/code&gt;。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:20px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;font-size:30px;font-weight:bold;color:grey;&quot;&gt;其他问题&lt;/span&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;issue-1-sudo-unable-to-resolve-host-my-machine&quot;&gt;&lt;strong&gt;Issue 1&lt;/strong&gt;: “sudo: unable to resolve host my-machine”&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Solution: in&lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/hosts&lt;/code&gt;, add&lt;code class=&quot;highlighter-rouge&quot;&gt;127.0.1.1    你的用户名&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;issue-2-failed-to-execute-default-web-browser&quot;&gt;&lt;strong&gt;Issue 2&lt;/strong&gt;: “Failed to execute default web browser”&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Solution: 重新安装浏览器 (在远程桌面T端或是VPS SSH中安装均可)
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  sudo dpkg --install google-chrome-stable_current_amd64.deb
+  sudo apt install --assume-yes --fix-broken
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;命令&quot;&gt;&lt;strong&gt;命令&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;重启vps系统： &lt;code class=&quot;highlighter-rouge&quot;&gt;reboot&lt;/code&gt; （直接输入，回车）&lt;/li&gt;
+  &lt;li&gt;Debian/Ubuntu重启ssh：&lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/init.d/ssh restart&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo chmod -R 777 /etc/hosts&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo chmod -R 644 /etc/hosts&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo vi /etc/sudoers&lt;/code&gt;      #编辑文件&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo cat /etc/sudoers&lt;/code&gt;     #查看文件&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;安装-ubuntu-desktop&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/teddybugs/teamviewerongooglecloud&quot;&gt;安装 ubuntu-desktop&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;</content><author><name></name></author><category term="VPS" /><category term="RDP" /></entry><entry><title type="html">Google/Google Cloud</title><link href="http://localhost:8000/tech/GCE/" rel="alternate" type="text/html" title="Google/Google Cloud" /><published>2020-02-29T17:45:00+08:00</published><updated>2020-02-29T17:45:00+08:00</updated><id>http://localhost:8000/tech/GCE</id><content type="html" xml:base="http://localhost:8000/tech/GCE/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;1-gce-vps&quot;&gt;&lt;a href=&quot;https://console.cloud.google.com&quot;&gt;1. GCE VPS&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;GCE防火墙设置：&lt;/p&gt;
+
+    &lt;table style=&quot;width:100%&quot;&gt;
+      &lt;tbody&gt;
+          &lt;tr&gt;
+              &lt;td width=&quot;100%&quot;&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/124.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/124.png&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/td&gt;		
+          &lt;/tr&gt;		
+      &lt;/tbody&gt;			
+  &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;速度：&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;Carrier&lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;GCE线路&lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;速度&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;CM&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;Tokyo&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;good&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;CT&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;HK&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;ok&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;CT&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;US&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;bad&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-vps主机中一键安装linux桌面环境脚本和rdp远程桌面连接&quot;&gt;2. VPS主机中一键安装Linux桌面环境(脚本)和RDP远程桌面连接&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;教程1一键脚本-该教程安装后较卡&quot;&gt;教程1：&lt;a href=&quot;/tech/Linux-RDP-on-VPS1/&quot;&gt;一键脚本&lt;/a&gt;  (该教程安装后，较卡)&lt;/h4&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;教程2精简逐步命令行方式&quot;&gt;教程2：&lt;a href=&quot;/tech/Linux-RDP-on-VPS2/&quot;&gt;精简逐步命令行方式&lt;/a&gt;&lt;/h4&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-wireguard-一键安装脚本&quot;&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/WireGuard-Quick-Install-Script/&quot;&gt;3. WireGuard 一键安装脚本&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;4-墙内使用google服务&quot;&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Use-Google-Services-in-China/&quot;&gt;4. 墙内使用Google服务&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;5-更改google国家地区&quot;&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Change-Google-Area/&quot;&gt;5. 更改Google国家地区&lt;/a&gt;&lt;/h3&gt;</content><author><name></name></author><category term="VPS" /><category term="VPN" /><category term="RDP" /><summary type="html">谷歌账号,VPS,VPN(Wireguard),Windows远程桌面</summary></entry><entry><title type="html">VPS主机中一键安装Linux桌面环境(脚本)和RDP远程桌面连接</title><link href="http://localhost:8000/tech/Linux-RDP-on-VPS1/" rel="alternate" type="text/html" title="VPS主机中一键安装Linux桌面环境(脚本)和RDP远程桌面连接" /><published>2020-02-29T16:43:00+08:00</published><updated>2020-02-29T16:43:00+08:00</updated><id>http://localhost:8000/tech/Linux%20RDP%20on%20VPS1</id><content type="html" xml:base="http://localhost:8000/tech/Linux-RDP-on-VPS1/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;source-搬运&quot;&gt;&lt;strong&gt;Source: 搬运&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;链接：https://wzfou.com/linux-zhuomian/&lt;/li&gt;
+  &lt;li&gt;一键脚本项目：
+    &lt;ul&gt;
+      &lt;li&gt;项目：https://github.com/MeowLove/Linux-Remote-Desktop-Environment&lt;/li&gt;
+      &lt;li&gt;备份：https://github.com/freehao123/Linux-Remote-Desktop-Environment&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;一键脚本安装命令：
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  #下载脚本
+  wget --no-check-certificate -qO ~/Linux-Remote-Desktop-Environment.sh 'https://raw.githubusercontent.com/freehao123/Linux-Remote-Desktop-Environment/master/Download/Common/Load/Linux-Remote-Desktop-Environment.sh' &amp;amp;&amp;amp; chmod a+x ~/Linux-Remote-Desktop-Environment.sh
+    
+  #CentOS 7+安装 (sudo yum install wget)
+  bash ~/Linux-Remote-Desktop-Environment.sh -CentOS
+  #Debian 9+安装
+  bash ~/Linux-Remote-Desktop-Environment.sh -Debian
+  #Ubuntu 18.04+安装 (sudo apt-get install wget)
+  bash ~/Linux-Remote-Desktop-Environment.sh -Ubuntu
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;margin-bottom:5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;issue-多种尝试始终port3350相关的xrdp连接失败&quot;&gt;&lt;strong&gt;Issue: 多种尝试始终port:3350相关的xrdp连接失败&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;尝试多平台，相同issue&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;使用CentOS 7/8/9、Debian 8/9/10、Ubuntu 18/19，均安装过，均出现 “port:3350相关的xrdp连接失败” 错误。&lt;/li&gt;
+      &lt;li&gt;参考了网上的解决方案 &lt;a href=&quot;https://blog.csdn.net/liu251/article/details/6118350&quot;&gt;1&lt;/a&gt;、&lt;a href=&quot;https://bugs.launchpad.net/ubuntu/+source/xrdp/+bug/321040&quot;&gt;2&lt;/a&gt;，仍然无效。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;因此思考是否与一键脚本中连接的项目网站有关？&lt;/strong&gt; 测试一次通过。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;solution-更换项目网站&quot;&gt;&lt;strong&gt;Solution: 更换项目网站&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;亲测配置: Debian 9, 617M@Momery,10G@Storage,windows rdp成功连接，但非常卡。建议改用更优配置(如：Debian 9, 3.75G@Momery,30G@Storage)。&lt;/li&gt;
+  &lt;li&gt;脚本中的项目更换为原始网址
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  wget --no-check-certificate -qO ~/Linux-Remote-Desktop-Environment.sh 'https://raw.githubusercontent.com/MeowLove/Linux-Remote-Desktop-Environment/master/Download/Common/Load/Linux-Remote-Desktop-Environment.sh' &amp;amp;&amp;amp; chmod a+x ~/Linux-Remote-Desktop-Environment.sh
+    
+  #Debian 9+安装
+  bash ~/Linux-Remote-Desktop-Environment.sh -Debian
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;安装过程中，仅会出现一次关于”keyboard configuration”的互动图像界面，直接回车即可，自动返回终端界面继续安装，直至完成。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;完成后，windows PC端使用内置的&lt;code class=&quot;highlighter-rouge&quot;&gt;远程桌面连接&lt;/code&gt;直接连接；手机端，使用微软公司发行的&lt;code class=&quot;highlighter-rouge&quot;&gt;Microsoft Remote Desktop&lt;/code&gt;App即可连接。&lt;/p&gt;
+
+    &lt;table style=&quot;width:50%&quot;&gt;
+      &lt;tbody&gt;
+          &lt;tr&gt;
+              &lt;td width=&quot;100%&quot;&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/123.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/123.png&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/td&gt;		
+          &lt;/tr&gt;		
+      &lt;/tbody&gt;			
+  &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="VPS" /><category term="RDP" /></entry><entry><title type="html">EBook</title><link href="http://localhost:8000/tech/EBook/" rel="alternate" type="text/html" title="EBook" /><published>2020-01-28T21:40:00+08:00</published><updated>2020-01-28T21:40:00+08:00</updated><id>http://localhost:8000/tech/EBook</id><content type="html" xml:base="http://localhost:8000/tech/EBook/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;ebook&quot;&gt;&lt;strong&gt;EBook&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://calibre-ebook.com/download&quot;&gt;&lt;strong&gt;Calibre&lt;/strong&gt;&lt;/a&gt;
+&lt;br /&gt;免费开源，支持绝大多数格式的电子书。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.amazon.com/l/16571048011?_encoding=UTF8&amp;amp;ref=kcp_fd_hz&quot;&gt;&lt;strong&gt;Kindle Reading App&lt;/strong&gt;&lt;/a&gt;
+&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;epub&lt;/code&gt;不支持。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="EBook" /></entry><entry><title type="html">Windows OS 相关CMD指令</title><link href="http://localhost:8000/tech/Windows-OS-Commands/" rel="alternate" type="text/html" title="Windows OS 相关CMD指令" /><published>2020-01-13T22:18:00+08:00</published><updated>2020-01-13T22:18:00+08:00</updated><id>http://localhost:8000/tech/Windows%20OS%20Commands</id><content type="html" xml:base="http://localhost:8000/tech/Windows-OS-Commands/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;1-端口被占用&quot;&gt;&lt;strong&gt;1. 端口被占用&lt;/strong&gt;&lt;/h4&gt;
 &lt;hr /&gt;
@@ -367,418 +617,4 @@ Keywords:
 &lt;h4 id=&quot;7交通银行&quot;&gt;&lt;strong&gt;7.交通银行&lt;/strong&gt;&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://wap.95559.com.cn/mobs/main.html#downloadApp?t=2&quot;&gt;手机银行&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="LegacyBank" /><category term="E-Wallet/BankCard" /></entry><entry><title type="html">局域网内设备不能互相访问</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SOHO-Devices-cannot-access/" rel="alternate" type="text/html" title="局域网内设备不能互相访问" /><published>2019-12-14T04:00:00+08:00</published><updated>2019-12-14T04:00:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SOHO%20Devices%20cannot%20access</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SOHO-Devices-cannot-access/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;由于卡巴斯基防火墙导致局域网内设备不能互相访问解决方案&quot;&gt;由于卡巴斯基防火墙导致局域网内设备不能互相访问，解决方案：&lt;/h4&gt;
-
-&lt;p style=&quot;margin-bottom:-5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;卡巴斯基&lt;/code&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;防火墙&lt;/code&gt;设置 -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;包规则&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Local Services(TCP),方向-接收，设为&lt;code class=&quot;highlighter-rouge&quot;&gt;允许&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Local Services(UDP),方向-接收，设为&lt;code class=&quot;highlighter-rouge&quot;&gt;允许&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;本地端口&lt;/code&gt;设置栏：不填任何端口，表示支持所有本地端口&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-15px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/img/122.png&quot; target=&quot;_blank&quot;&gt;
-	&lt;img src=&quot;/assets/img/122.png&quot; width=&quot;50%&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">卡巴斯基防火墙因素导致</summary></entry><entry><title type="html">ADVCash</title><link href="http://localhost:8000/digitgame/ADVCash/" rel="alternate" type="text/html" title="ADVCash" /><published>2019-11-25T22:45:00+08:00</published><updated>2019-11-25T22:45:00+08:00</updated><id>http://localhost:8000/digitgame/ADVCash</id><content type="html" xml:base="http://localhost:8000/digitgame/ADVCash/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;银行信用卡实测&quot;&gt;&lt;strong&gt;银行信用卡实测&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;消费的币种&lt;/strong&gt;：&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;美元&lt;/code&gt;&lt;/strong&gt;没有问题，&lt;code class=&quot;highlighter-rouge&quot;&gt;其他币种&lt;/code&gt;会出现”授权失败”。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;消费的方式&lt;/strong&gt;：(猜测和国内监管政策有关)
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;充值ADVCash Wallet&lt;/code&gt;: 官方采用的是&lt;code class=&quot;highlighter-rouge&quot;&gt;境外POS预授权&lt;/code&gt;备注，&lt;strong&gt;工商银行均成功&lt;/strong&gt;，但招商银行失败多成功少。&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;instant buy crypto&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;transfer E-currecncy&lt;/code&gt;: 官方采用的是&lt;code class=&quot;highlighter-rouge&quot;&gt;网购支付订单&lt;/code&gt;备注，两家银行均失败。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;advcash-wallet-功能费用&quot;&gt;&lt;strong&gt;ADVCash Wallet 功能&amp;amp;费用&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;UK Company; KYC: ID + POA; Support China Country; (limit US IP Address)&lt;/li&gt;
-  &lt;li&gt;法币&amp;lt;-&amp;gt;数字货币，非常灵活；&lt;/li&gt;
-  &lt;li&gt;支持数字资产、Credit Card 充值/提现：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Credit Card 充值 (fee@2.99%)/ 提现(fee@6 USD/EUR + 1.99%)&lt;/strong&gt;；&lt;/li&gt;
-      &lt;li&gt;数字资产：
-        &lt;ul&gt;
-          &lt;li&gt;充入&lt;code class=&quot;highlighter-rouge&quot;&gt;BTC, ETH, LTC, BCH, XRP, ZEC&lt;/code&gt;自动计入美元@ADVCash Rate，无手续费；&lt;code class=&quot;highlighter-rouge&quot;&gt;USDT&lt;/code&gt; 无需Rate转换，按1：1直接计入等数量的美金，但每笔1 USDT手续费。&lt;/li&gt;
-          &lt;li&gt;有minimum deposit/withdraw limit。&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;p style=&quot;margin-bottom:-15px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-        &lt;table style=&quot;width: 100%; font-size: 14px;&quot; data-sort=&quot;sortDisabled&quot;&gt;
-  &lt;tbody&gt;
-  &lt;tr class=&quot;firstRow&quot; style=&quot;font-size: 16px; font-weight: bold;&quot;&gt;
-  &lt;td style=&quot;width: 13%;; color: #4d8df1; font-size: 18px;&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;ADVCash&lt;/td&gt;
-  &lt;td style=&quot;width: 15.857%; color: #4d8df1; font-size: 18px;&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;&amp;nbsp;&lt;/td&gt;
-  &lt;td style=&quot;width: 7.857%;&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;BTC&lt;/td&gt;
-  &lt;td style=&quot;width: 7.857%;&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;LTC&lt;/td&gt;
-  &lt;td style=&quot;width: 7.857%;&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;BCH&lt;/td&gt;
-  &lt;td style=&quot;width: 7.857%;&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;XRP&lt;/td&gt;
-  &lt;td style=&quot;width: 7.857%;&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;ETH&lt;/td&gt;
-  &lt;td style=&quot;width: 7.857%;&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;ZEC&lt;/td&gt;
-  &lt;td style=&quot;width: 24%;&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;USDT&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr style=&quot;background-color: white;color:#535353;&quot;&gt;
-  &lt;td colspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;市场价格水平参考&lt;br /&gt;@&lt;u&gt;2019/11/28&lt;/u&gt;&lt;/td&gt;	
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;$7468.62&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;$47.037&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;$220.99	&lt;/td&gt;		
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;$0.225&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;$151.32&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;$28.73&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;$1.002&lt;/td&gt;
-  &lt;/tr&gt;		
-  &lt;tr&gt;
-  &lt;td rowspan=&quot;4&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;从外部数字资产充入ADVCash&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;最低充值数量&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.004&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.4&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.2&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;110&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.25&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.2&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;&amp;gt;=1&amp;nbsp;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-  &lt;td rowspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;充入钱包&lt;/td&gt;
-  &lt;td colspan=&quot;7&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;&lt;span style=&quot;color: #339966;&quot;&gt;&lt;strong&gt;美元钱包&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-  &lt;td colspan=&quot;6&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;直接计入等值的美元&lt;strong&gt;@ADVCash Rate&lt;/strong&gt;&lt;span style=&quot;color: #00ccff;&quot;&gt;&lt;strong&gt; (RateLoss ~5%)&lt;/strong&gt;&amp;nbsp;&lt;/span&gt;&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;无需Rate转换，直接计入&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;strong&gt;等数量&lt;/strong&gt;&lt;/span&gt;美金&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;每笔手续费&lt;br /&gt;(含mining fee)&lt;/td&gt;
-  &lt;td colspan=&quot;6&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;无手续费&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;
-  &lt;p&gt;每笔1 USDT手续费&lt;/p&gt;
-  &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr style=&quot;background-color: #fff9f3&quot;&gt;
-  &lt;td rowspan=&quot;4&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;法币直接购买最低充值数量&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;最低充值数量&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.004&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.5&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.2&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;100&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.25&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.3&lt;/td&gt;
-  &lt;td rowspan=&quot;4&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;不支持USDT&amp;nbsp;&lt;/td&gt;
-  &lt;/tr&gt;				
-  &lt;tr style=&quot;background-color: #fff9f3&quot;&gt;
-  &lt;td rowspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;充入钱包&lt;/td&gt;
-  &lt;td colspan=&quot;6&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;填入&lt;span style=&quot;color: #339966;&quot;&gt;&lt;strong&gt;外部数字资产钱包&lt;/strong&gt;&lt;/span&gt;地址&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-  &lt;td colspan=&quot;6&quot; align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background-color: #fff9f3&quot;&gt;该方式无需支付2.99%信用卡手续费；&lt;br /&gt;但仍采用&lt;strong&gt;ADVCash Rate&lt;/strong&gt;&lt;span style=&quot;color: #00ccff;&quot;&gt;&lt;strong&gt; (RateLoss ~5%)&lt;/strong&gt;。&amp;nbsp;&lt;/span&gt;&lt;/td&gt;
-  &lt;/tr&gt;		
-  &lt;tr style=&quot;background-color: #fff9f3&quot;&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;每笔手续费 ❶&lt;br /&gt;(含mining fee)&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.0004&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.002&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.0002&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.02&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.002&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.002&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-  &lt;td rowspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;花费法币进行数字资产汇出&amp;nbsp;&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;最低提现数量&amp;nbsp;&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.004&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.5&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.2&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;100&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.25&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.3&lt;/td&gt;
-  &lt;td rowspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;不支持USDT&amp;nbsp;&amp;nbsp;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;每笔手续费 ❷&lt;br /&gt;(含mining fee)&amp;nbsp;&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.0004&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.002&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.0004&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.02&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.002&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.002&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;/tbody&gt;
-  &lt;/table&gt;
-
-        &lt;table style=&quot;width: 100%;font-size: 14px;&quot; data-sort=&quot;sortDisabled&quot;&gt;
-  &lt;tbody&gt;
-  &lt;tr class=&quot;firstRow&quot; style=&quot;font-size: 16px;font-weight: bold;&quot;&gt;
-  &lt;td style=&quot;width: 19%;color: #4d8df1;font-size: 18px;&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;Binance&lt;/td&gt;
-  &lt;td style=&quot;width: 8.5%;&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;BTC&lt;/td&gt;
-  &lt;td style=&quot;width: 8.5%;&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;LTC&lt;/td&gt;
-  &lt;td style=&quot;width: 8.5%;&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;BCH&lt;/td&gt;
-  &lt;td style=&quot;width: 8.5%;&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;XRP&lt;/td&gt;
-  &lt;td style=&quot;width: 8.5%;&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;ETH&lt;/td&gt;
-  &lt;td style=&quot;width: 8.5%;&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;ZEC&lt;/td&gt;
-  &lt;td style=&quot;width: 22%;&quot; colspan=&quot;2&quot; rowspan=&quot;1&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;USDT&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;法币快捷购买&lt;br /&gt;最低充值数量&lt;/td&gt;
-  &lt;td colspan=&quot;8&quot; rowspan=&quot;1&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;1,200 RUB/ 60 EUR/ 500 UAH/ 20,000 KZT&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;数字资产直接&lt;br /&gt;最低提现数量&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.001&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.002&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.002&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.5&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.02&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.01&lt;/td&gt;
-  &lt;td colspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;1.68&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr style=&quot;background-color: #ebeecc;&quot;&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;每笔交易提现费用 ❸&lt;br /&gt;(含mining fee)&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.0005&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.001&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.001&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.25&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.01&lt;/td&gt;
-  &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.005&lt;/td&gt;
-  &lt;td colspan=&quot;2&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;0.84&lt;br /&gt;&lt;/td&gt;
-  &lt;/tr&gt;				
-  &lt;/tbody&gt;
-  &lt;/table&gt;
-
-        &lt;p&gt;&lt;span style=&quot;color: #339966;font-size:18.5px&quot;&gt;&lt;strong&gt;总结：&lt;/strong&gt;❶&lt;strong&gt;优于&lt;/strong&gt;❷，❷&lt;strong&gt;优于&lt;/strong&gt;❸；&lt;strong&gt;ADVCash Rate 非常差，勿用；通过ADVCash操作，进出”ZEC”性价比最高&lt;/strong&gt;。&lt;/span&gt;&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Binance Web： 透过”ADVCash钱包”可直接充值法币：EUR/RUB/KZT/UAH
-    &lt;ul&gt;
-      &lt;li&gt;使用&lt;code class=&quot;highlighter-rouge&quot;&gt;币安Web&lt;/code&gt;，透过调用&lt;code class=&quot;highlighter-rouge&quot;&gt;ADVCash钱包&lt;/code&gt;进行法币&lt;code class=&quot;highlighter-rouge&quot;&gt;，透过调用&lt;/code&gt;ADVCash钱包&lt;code class=&quot;highlighter-rouge&quot;&gt;进行法币(&lt;/code&gt;EUR/RUB/KZT/UAH`)直接购买：
-        &lt;ul&gt;
-          &lt;li&gt;如果&lt;code class=&quot;highlighter-rouge&quot;&gt;ADVCash&lt;/code&gt;余额与&lt;code class=&quot;highlighter-rouge&quot;&gt;EUR/RUB/KZT/UAH&lt;/code&gt;一致，则币安仅收取0.1%手续费；&lt;/li&gt;
-          &lt;li&gt;如果&lt;code class=&quot;highlighter-rouge&quot;&gt;ADVCash&lt;/code&gt;余额与&lt;code class=&quot;highlighter-rouge&quot;&gt;EUR/RUB/KZT/UAH&lt;/code&gt;不一致，则除了币安收取的0.1%手续费，ADVCash有2%的法币汇率转换费。&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;p style=&quot;margin-bottom:-15px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-        &lt;table style=&quot;width: 100%; font-size: 14px;&quot;&gt;
-  &lt;tbody align=&quot;center&quot;&gt;
-  &lt;tr class=&quot;firstRow&quot; style=&quot;font-weight: bold;font-size: 16px;&quot;&gt;
-  &lt;td width=&quot;30%&quot; align=&quot;left&quot; style=&quot;color: #4d8df1;font-size: 18px;&quot;&gt;&quot;法币-&amp;gt;数字货币&quot; Rate对比&lt;/td&gt;
-  &lt;td width=&quot;11.5%&quot;&gt;BTC&lt;/td&gt;
-  &lt;td width=&quot;11.5%&quot;&gt;LTC&lt;/td&gt;		
-  &lt;td width=&quot;11.5%&quot;&gt;BCH&lt;/td&gt;
-  &lt;td width=&quot;11.5%&quot;&gt;XRP&lt;/td&gt;		
-  &lt;td width=&quot;11.5%&quot;&gt;ETH&lt;/td&gt;
-  &lt;td width=&quot;11.5%&quot;&gt;ZEC&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr style=&quot;font-weight: bold;&quot;&gt;
-  &lt;td align=&quot;left&quot;&gt;ADVCashRate Higher Than BinanceRate &amp;ensp;&lt;span style=&quot;color: #00ccff;&quot;&gt;&lt;strong&gt; (~5%)&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;
-  &lt;td&gt;4.4%&lt;/td&gt;
-  &lt;td&gt;4.7%&lt;/td&gt;		
-  &lt;td&gt;4.9%&lt;/td&gt;
-  &lt;td&gt;4.2%&lt;/td&gt;		
-  &lt;td&gt;4.4%&lt;/td&gt;
-  &lt;td&gt;4.8%&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;/tbody&gt;
-  &lt;/table&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;整体ADVCash系统运作/运营的体验 (&lt;strong&gt;推荐使用！&lt;/strong&gt;)：
-    &lt;ul&gt;
-      &lt;li&gt;系统资金安全保护措施较为严谨：信用卡充值仅本人注册国家发行的信用卡；信用卡提现，需注册邮箱确认 (0-3天工作日)。
-        &lt;ul&gt;
-          &lt;li&gt;提现不支持的国家：如&lt;code class=&quot;highlighter-rouge&quot;&gt;香港&lt;/code&gt;&lt;br /&gt;
-  &lt;a href=&quot;/assets/img/121.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/121.png&quot; width=&quot;35%&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;系统稳定性较好，功能完善；&lt;/li&gt;
-      &lt;li&gt;&lt;span style=&quot;color: #e69138;&quot;&gt;客服high availablity/quick response/efficiency/helpful。(这点很重要，如”Xapo”/”Crypterium”等客服响应成为瓶颈)&lt;/span&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://advcash.com/en/fees/&quot;&gt;Fee&lt;/a&gt;。&lt;/li&gt;
-  &lt;li&gt;币安合作钱包：目前直接支持充入的法币币种 – 欧元，英镑，俄罗斯币等。(人民币属于场外交易(自动匹配买/卖家))
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;币安法币充入方式&lt;/strong&gt;：ADVCash钱包、credit card by Simplex。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="newBank" /><category term="CryptoCurrency" /><summary type="html">安全稳定灵活的支付平台，支持'数字货币↔法币'</summary></entry><entry><title type="html">Paysend</title><link href="http://localhost:8000/digitgame/Paysend/" rel="alternate" type="text/html" title="Paysend" /><published>2019-11-07T22:31:00+08:00</published><updated>2019-11-07T22:31:00+08:00</updated><id>http://localhost:8000/digitgame/Paysend</id><content type="html" xml:base="http://localhost:8000/digitgame/Paysend/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h4 id=&quot;特点手机号--系统判定的居住国id可以是任何国家但poa必须居住国地址可以-no-kyc直接汇收款最低额度&quot;&gt;&lt;strong&gt;特点：手机号 = 系统判定的”居住国”，ID可以是任何国家，但POA必须=居住国地址。&lt;br /&gt;可以 No KYC，直接汇/收款@最低额度。&lt;/strong&gt;&lt;/h4&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;paysend公司性质&quot;&gt;&lt;strong&gt;Paysend公司性质&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;Paysend为Paysend plc的交易名称，注册地址为英国苏格兰。&lt;/li&gt;
-  &lt;li&gt;企业编号：376020。&lt;/li&gt;
-  &lt;li&gt;注册地址：Cluny Court John Smith Business Park, Kirkcaldy, Fife, KY2 6QJ.&lt;/li&gt;
-  &lt;li&gt;Paysend plc受英国金融行为监管局认可并受其监督，编号：900004。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;费用&quot;&gt;&lt;strong&gt;费用&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;每笔(和汇款金额无关)：1英镑/1.5欧元/2美元。&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.coupons-promo-code.com/coupons/paysend/&quot;&gt;Coupons&lt;/a&gt;: 截止到Dec 31,2022, 优惠码 &lt;code class=&quot;highlighter-rouge&quot;&gt;SENDFREE&lt;/code&gt;, 免除第一笔汇款手续费。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;认证&quot;&gt;&lt;strong&gt;认证&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;填写美国手机号注册登录、&lt;strong&gt;中国ID，可以通过认证&lt;/strong&gt;。&lt;/li&gt;
-  &lt;li&gt;地址：在最初注册时，地址可填写中国，但如需POA,则&lt;strong&gt;必须与手机号一致的国家&lt;/strong&gt;，否则无法通过POA。&lt;/li&gt;
-  &lt;li&gt;款项额度(Amount Limit)基于KYC认证的程度：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;no KYC  (6个月内累计1000美金)&lt;/strong&gt;&lt;/li&gt;
-      &lt;li&gt;ID Verification (6个月内累计5000美金)&lt;/li&gt;
-      &lt;li&gt;ID + POA (6个月内累计17000美金)&lt;/li&gt;
-      &lt;li&gt;ID + POA + Financial Prove (6个月内累计&amp;gt;17000美金)&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/assets/img/119.jpg&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/119.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;70个国家&quot;&gt;&lt;strong&gt;70个国家&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;阿尔巴尼亚、安道尔、奥地利、比利时、波黑、保加利亚、克罗地亚、塞浦路斯、捷克共和国、丹麦、爱沙尼亚、芬兰、法国、德国、希腊、荷兰、匈牙利、冰岛、爱尔兰、意大利、哈萨克斯坦、拉脱维亚、立陶宛、卢森堡、马其顿、马尔他，墨西哥、摩纳哥、蒙特内哥罗、圣马力诺共和国、塞尔维亚、斯洛伐克、斯洛文尼亚、西班牙、瑞典、瑞士、乌克兰和英国。
-    &lt;ul&gt;
-      &lt;li&gt;其中，&lt;code class=&quot;highlighter-rouge&quot;&gt;新加坡&lt;/code&gt;收款卡暂不支持&lt;code class=&quot;highlighter-rouge&quot;&gt;visa&lt;/code&gt;。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;不含&lt;code class=&quot;highlighter-rouge&quot;&gt;香港&lt;/code&gt;&lt;/strong&gt;。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;手机号注册登录&quot;&gt;&lt;strong&gt;手机号注册&amp;amp;登录&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;使用&lt;code class=&quot;highlighter-rouge&quot;&gt;居住地国家的手机号&lt;/code&gt;，进行注册和登录。&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;中国手机号&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;支持&lt;code class=&quot;highlighter-rouge&quot;&gt;请求汇款&lt;/code&gt;：
-        &lt;ul&gt;
-          &lt;li&gt;可以向世界各地超过70多个国家/地区的人发起收款请求。&lt;/li&gt;
-          &lt;li&gt;不可自己请求自己。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;不支持汇款服务。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;美国手机号&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;不支持&lt;code class=&quot;highlighter-rouge&quot;&gt;请求汇款&lt;/code&gt;。&lt;/li&gt;
-      &lt;li&gt;支持汇款服务：
-        &lt;ul&gt;
-          &lt;li&gt;可以向世界各地超过70多个国家/地区的人发起收款请求。&lt;/li&gt;
-          &lt;li&gt;汇款时，仅接受美国居住地发行的银行卡。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;汇款收款方式&quot;&gt;&lt;strong&gt;汇款&amp;amp;收款方式&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;汇款&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;仅支持&lt;code class=&quot;highlighter-rouge&quot;&gt;银行卡&lt;/code&gt;方式。&lt;/li&gt;
-      &lt;li&gt;仅限于汇款人所在国家发行的银行卡。&lt;/li&gt;
-      &lt;li&gt;可发款国：from 欧洲、美国。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;收款&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;支持&lt;code class=&quot;highlighter-rouge&quot;&gt;银行卡&lt;/code&gt;方式、&lt;code class=&quot;highlighter-rouge&quot;&gt;银行账户&lt;/code&gt;方式。&lt;/li&gt;
-      &lt;li&gt;大多数国家Visa/MasterCard；少部分国家仅Visa或仅MasterCard；中国仅银联卡。&lt;/li&gt;
-      &lt;li&gt;收款国：70个国家(没有&lt;code class=&quot;highlighter-rouge&quot;&gt;香港&lt;/code&gt;)。
-        &lt;ul&gt;
-          &lt;li&gt;汇款至新加坡&lt;code class=&quot;highlighter-rouge&quot;&gt;Wirecard Visa&lt;/code&gt;：显示&lt;code class=&quot;highlighter-rouge&quot;&gt;Visa维萨卡暂不支持，请选择汇款至其他银行卡或常规银行账户&lt;/code&gt;。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;请求汇款&quot;&gt;&lt;strong&gt;请求汇款&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;美国&lt;/code&gt;不支持&lt;code class=&quot;highlighter-rouge&quot;&gt;请求汇款&lt;/code&gt;。&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;中国&lt;/code&gt;支持&lt;code class=&quot;highlighter-rouge&quot;&gt;请求汇款&lt;/code&gt;：
-    &lt;ul&gt;
-      &lt;li&gt;自己不可以发给自己。&lt;/li&gt;
-      &lt;li&gt;家人银行卡应该可以发给自己。(待验证)&lt;/li&gt;
-      &lt;li&gt;可以向世界各地超过70多个国家/地区的人发起收款请求。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;支持的银行卡类型&quot;&gt;&lt;strong&gt;支持的银行卡类型&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;欧洲、英国、美国、土耳其和以色列 — Visa/Mastercard&lt;/li&gt;
-  &lt;li&gt;俄罗斯和哈萨克斯坦—维萨卡 — Visa/Mastercard&lt;/li&gt;
-  &lt;li&gt;中国-银联卡 (UnionPay)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;qa&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://paysend.com/zh/help#f2&amp;amp;p2&quot;&gt;Q&amp;amp;A&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;总结&quot;&gt;&lt;strong&gt;总结&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;中国手机号注册的账号&lt;/code&gt;：不可汇款；&lt;strong&gt;请求汇款&lt;/strong&gt;也不可自己给自己 (&lt;strong&gt;除非家人给自己&lt;/strong&gt;)。&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;美国手机号注册的账号&lt;/code&gt;：支持&lt;strong&gt;汇款&lt;/strong&gt;，汇款时仅接受美国居住地发行的银行卡；不支持请求汇款。&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="LegacyBank" /><category term="E-Channel" /><summary type="html">支持Visa Direct和Mastercard MoneySend, 卡到卡汇款, 发往+70个国家</summary></entry><entry><title type="html">更改Google国家地区</title><link href="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Change-Google-Area/" rel="alternate" type="text/html" title="更改Google国家地区" /><published>2019-11-04T02:29:00+08:00</published><updated>2019-11-04T02:29:00+08:00</updated><id>http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Change%20Google%20Area</id><content type="html" xml:base="http://localhost:8000/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Change-Google-Area/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;背景：谷歌商店中有”地区”限制的App，不可跨地区安装。而有时有一定的需求，解决方法如下：&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.zhihu.com/question/21999528&quot;&gt;参考链接&lt;/a&gt; + 实测：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;“参考链接”中的提及的”随机卡号”，谷歌已不支持，其实实测并不需要卡号。&lt;/li&gt;
-  &lt;li&gt;关键是一个能通过AVS的地址：
-    &lt;ul&gt;
-      &lt;li&gt;在&lt;a href=&quot;https://payments.google.com/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Google Payment&lt;/code&gt;&lt;/a&gt;下，添加一个”能通过AVS的地址”；银行卡信息随便填，不通过也没关系，&lt;strong&gt;地址通过即可&lt;/strong&gt;。&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Google Vending 谷歌商店&lt;/code&gt;的&lt;strong&gt;地区&lt;/strong&gt;会自动与&lt;strong&gt;该地址&lt;/strong&gt;一致 + 辅以该地区IP地址登录谷歌商店(第一次)，会成功下载该地区的App。(&lt;strong&gt;两个条件缺一不可&lt;/strong&gt;)
-        &lt;ul&gt;
-          &lt;li&gt;a) 从第二次开始登录”谷歌商店”，则&lt;strong&gt;不再需要”必须该地区IP地址”了&lt;/strong&gt;。&lt;/li&gt;
-          &lt;li&gt;b) 但如果&lt;strong&gt;跨地区&lt;/strong&gt;失败，&lt;strong&gt;清空”谷歌商店”data&lt;/strong&gt;后，重新打开&lt;strong&gt;“该地区IP地址”&lt;/strong&gt;，再进谷歌商店即可。&lt;/li&gt;
-          &lt;li&gt;c) 成功后，切勿&lt;strong&gt;清空”谷歌商店”data&lt;/strong&gt;，否则需重做&lt;code class=&quot;highlighter-rouge&quot;&gt;步骤b)&lt;/code&gt;。&lt;/li&gt;
-          &lt;li&gt;d) 成功后，下一次，只要打开&lt;strong&gt;任意地区的IP地址A&lt;/strong&gt;，理论上不会再影响”该已设置好的地区”了。
-            &lt;ul&gt;
-              &lt;li&gt;BUT IF，&lt;code class=&quot;highlighter-rouge&quot;&gt;任意地区的IP地址A&lt;/code&gt;导致&lt;code class=&quot;highlighter-rouge&quot;&gt;之前设置好的地区&lt;/code&gt;失效，解决方法：
-                &lt;ul&gt;
-                  &lt;li&gt;1) 重做&lt;code class=&quot;highlighter-rouge&quot;&gt;步骤b)&lt;/code&gt;;&lt;/li&gt;
-                  &lt;li&gt;2) 更换&lt;code class=&quot;highlighter-rouge&quot;&gt;任意地区的IP地址B&lt;/code&gt;，再进入”谷歌商店”，”设定原地区”应该不受影响了；&lt;/li&gt;
-                  &lt;li&gt;3) 如果仍就失效，再次重复&lt;code class=&quot;highlighter-rouge&quot;&gt;步骤1)&lt;/code&gt;&amp;amp;&lt;code class=&quot;highlighter-rouge&quot;&gt;步骤2)&lt;/code&gt;。&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;应用&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.zenmate.android&amp;amp;hl=en&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;zenmate&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;可更换不同地区的IP地址，7天免费试用；&lt;/li&gt;
-  &lt;li&gt;手机版支持众多的国家；&lt;/li&gt;
-  &lt;li&gt;PC版支持Chrome&lt;code class=&quot;highlighter-rouge&quot;&gt;zenmate插件&lt;/code&gt;，免费的国家相对较少。&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="Cloud/VPN/VPS" /><category term="Google" /><summary type="html">谷歌商店基于账号的所属地区，呈现不同的App</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="LegacyBank" /><category term="E-Wallet/BankCard" /></entry></feed>

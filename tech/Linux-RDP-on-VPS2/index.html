@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8000/feed.xml" title="Morgan Zhao's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Morgan Zhao&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/Search/">Search</a><a class="page-link" href="/tags/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">  
+    <h1 class="post-title p-name" itemprop="name headline">Enable desktop experience &amp; RDP for Ubuntu 18.04 LTS VM in GCP</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-03-16T01:31:00+08:00" itemprop="datePublished">Mar 16, 2020
+      </time></p>
+
+
+<div class="post-categories">
+  
+  
+<span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Category▸&nbsp;</em></strong></span>   
+  
+  
+  <a href="/categories/#Tech">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Tech</em></strong></span>     
+  </a>  
+  
+  
+</div>
+
+
+<div class="post-tags">
+    
+
+<span style="font-size: 13px; color: #6d9eeb;"><strong><em>Tag▸&nbsp;</em></strong></span> 
+  
+  
+  <a href="/tags/#VPS">
+     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>VPS</em></strong></span>  
+  </a>
+  &nbsp;
+  
+  <a href="/tags/#RDP">
+     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>RDP</em></strong></span>  
+  </a>
+  
+  
+</div>
+
+<span style="font-size:; color: rgb(127, 127, 127);"><strong><em></em></strong></span>
+
+  </header>
+
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="margin-bottom:35px;">&nbsp;</p>
+<p><span style="font-size:30px;font-weight:bold;color:#70ad47;">准备工作</span></p>
+
+<h3 id="日常更新">日常更新</h3>
+<ul>
+  <li>sudo apt update</li>
+  <li>sudo apt upgrade</li>
+</ul>
+
+<h3 id="用户权限密码设置">用户权限&amp;密码设置</h3>
+
+<h4 id="1-添加用户">1. 添加用户</h4>
+<ul>
+  <li><code class="highlighter-rouge">sudo useradd 你的用户名 -m</code>            # 添加用户</li>
+  <li><code class="highlighter-rouge">sudo passwd 你的用户名</code>  			     # 为该用户设置密码</li>
+</ul>
+
+<h4 id="2-为新增用户添加sudo权限">2. 为新增用户添加sudo权限</h4>
+<ul>
+  <li><code class="highlighter-rouge">sudo chmod u+w /etc/sudoers</code>      # 添加sudo文件的写权限</li>
+  <li>
+    <p><code class="highlighter-rouge">sudo vi /etc/sudoers</code> 			 # 编辑sudoers文件 (<code class="highlighter-rouge">ins</code>键进入编辑状态；保存退出: <code class="highlighter-rouge">Esc</code>键后，<code class="highlighter-rouge">:wq!</code>回车)</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  找到这行 root ALL=(ALL) ALL,在他下面添加xxx ALL=(ALL) ALL (这里的xxx是你的用户名) 
+  (例如添加上面创建的用户：你的用户名 ALL=(ALL) ALL)
+</code></pre></div>    </div>
+  </li>
+  <li><code class="highlighter-rouge">sudo chmod u-w /etc/sudoers</code>      # 撤销sudoers文件写权限</li>
+</ul>
+
+<h4 id="3-为root用户设置密码">3. 为Root用户设置密码</h4>
+<ul>
+  <li><code class="highlighter-rouge">sudo -s</code></li>
+  <li><code class="highlighter-rouge">passwd</code></li>
+</ul>
+
+<p style="margin-bottom:20px;">&nbsp;</p>
+
+<p><span style="font-size:30px;font-weight:bold;color:#70ad47;">教程</span></p>
+
+<h3 id="教程rdp-for-ubuntu-1804-lts-vm-in-gcp">教程：<a href="https://www.youtube.com/watch?v=L0QdZwDxQa8">RDP for Ubuntu 18.04 LTS VM in GCP</a></h3>
+
+<h4 id="step1-commands-in-terminal"><strong>Step1: Commands in Terminal</strong></h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get update
+sudo apt-get install -y xrdp
+sudo apt-get install -y xfce4
+sudo service xrdp restart      # (if not working, use this line) sudo systemctl start xrdp
+
+sudo -s
+passwd
+</code></pre></div></div>
+
+<h4 id="step2-gce-firewall设置"><strong>Step2: GCE firewall设置</strong></h4>
+<ul>
+  <li>在防火墙中添加：允许tcp 3389@0.0.0.0/0@Ingress@apply to all。</li>
+</ul>
+
+<h4 id="step3-使用windows-remote-desktop连接远程桌面"><strong>Step3: 使用windows remote desktop连接远程桌面</strong></h4>
+<ul>
+  <li><code class="highlighter-rouge">windows + R</code>运行框中输入：<code class="highlighter-rouge">mstsc</code></li>
+  <li><code class="highlighter-rouge">windows remote desktop</code>窗口中输入：远程安装了RDP的<strong>VPS IP地址</strong>
+    <ul>
+      <li>优化显示速度：
+        <ul>
+          <li>「体验」Tab：”性能”选项中，选择<code class="highlighter-rouge">调制解调器(56kbps)</code>; “允许功能”，都不选。</li>
+          <li>「显示」Tab：”显示配置”中，调节合适的远程桌面大小(越小显示流畅); “颜色”，选择<code class="highlighter-rouge">增强色15位</code>。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:20px;">&nbsp;</p>
+
+<p><span style="font-size:30px;font-weight:bold;color:grey;">其他问题</span></p>
+
+<h4 id="issue-1-sudo-unable-to-resolve-host-my-machine"><strong>Issue 1</strong>: “sudo: unable to resolve host my-machine”</h4>
+<ul>
+  <li>Solution: in<code class="highlighter-rouge">/etc/hosts</code>, add<code class="highlighter-rouge">127.0.1.1    你的用户名</code></li>
+</ul>
+
+<h4 id="issue-2-failed-to-execute-default-web-browser"><strong>Issue 2</strong>: “Failed to execute default web browser”</h4>
+<ul>
+  <li>Solution: 重新安装浏览器 (在远程桌面T端或是VPS SSH中安装均可)
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  sudo dpkg --install google-chrome-stable_current_amd64.deb
+  sudo apt install --assume-yes --fix-broken
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h4 id="命令"><strong>命令</strong></h4>
+<ul>
+  <li>重启vps系统： <code class="highlighter-rouge">reboot</code> （直接输入，回车）</li>
+  <li>Debian/Ubuntu重启ssh：<code class="highlighter-rouge">/etc/init.d/ssh restart</code></li>
+  <li><code class="highlighter-rouge">sudo chmod -R 777 /etc/hosts</code></li>
+  <li><code class="highlighter-rouge">sudo chmod -R 644 /etc/hosts</code></li>
+  <li><code class="highlighter-rouge">sudo vi /etc/sudoers</code>      #编辑文件</li>
+  <li><code class="highlighter-rouge">sudo cat /etc/sudoers</code>     #查看文件</li>
+</ul>
+
+<h4 id="安装-ubuntu-desktop"><strong><a href="https://github.com/teddybugs/teamviewerongooglecloud">安装 ubuntu-desktop</a></strong></h4>
+
+
+  </div><a class="u-url" href="/tech/Linux-RDP-on-VPS2/" hidden></a>
+    
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Morgan Zhao&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name"><a href="/">Morgan Zhao&#39;s Blog</a></li><li>FB：<a href="https://www.facebook.com/zzmorl"><span class="username">zzmorl</span></a></li></ul>
+      </div>
+
+<!--
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/zzmorl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">zzmorl</span></a></li></ul>
+</div>  
+
+      <div class="footer-col footer-col-3">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+-->
+	  
+	  <div class="footer-col footer-col-4">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+	  
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
+
