@@ -1,4 +1,331 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-03-20T17:35:40+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">Enable desktop experience &amp;amp; RDP for Ubuntu 18.04 LTS VM in GCP</title><link href="http://localhost:8000/tech/Linux-RDP-on-VPS2/" rel="alternate" type="text/html" title="Enable desktop experience &amp; RDP for Ubuntu 18.04 LTS VM in GCP" /><published>2020-03-16T01:31:00+08:00</published><updated>2020-03-16T01:31:00+08:00</updated><id>http://localhost:8000/tech/Linux%20RDP%20on%20VPS2</id><content type="html" xml:base="http://localhost:8000/tech/Linux-RDP-on-VPS2/">&lt;p style=&quot;margin-bottom:35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-03-23T02:13:44+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">亲测所有步骤 - Chrome RDP + Anbox on Debian10 GCE VPS</title><link href="http://localhost:8000/tech/Chrome-RDP-full-steps/" rel="alternate" type="text/html" title="亲测所有步骤 - Chrome RDP + Anbox on Debian10 GCE VPS" /><published>2020-03-22T23:12:00+08:00</published><updated>2020-03-22T23:12:00+08:00</updated><id>http://localhost:8000/tech/Chrome%20RDP%20full%20steps</id><content type="html" xml:base="http://localhost:8000/tech/Chrome-RDP-full-steps/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;chrome-rdpgce-vm安装-chrome-远程桌面&quot;&gt;&lt;strong&gt;&lt;font color=&quot;green&quot;&gt;『Chrome RDP』&lt;a align=&quot;left&quot; href=&quot;https://console.cloud.google.com/iam-admin/projects?hl=zh-cn&quot; target=&quot;_blank&quot;&gt;GCE VM安装 Chrome 远程桌面&lt;/a&gt;&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;构架：amd64&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cloud.google.com/solutions/chrome-desktop-remote-on-compute-engine?hl=zh-cn&quot;&gt;官方教程 for Dedian GCE VM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;step1---debian10教程&quot;&gt;&lt;strong&gt;Step1 - Debian10教程&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;#日常更新&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update
+sudo apt upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;#Debian10需要安装wget&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install wget
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;#准备工作1：为用户“xxx”添加sudo权限&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo chmod u+w /etc/sudoers 
+
+sudo vi /etc/sudoers           #编辑sudoers文件 (ins键进入编辑状态；保存退出: Esc键后，:wq!回车)
+“找到这行 root ALL=(ALL) ALL,在他下面添加xxx ALL=(ALL) ALL” 
+
+sudo cat /etc/sudoers          #查看文件
+
+sudo chmod u-w /etc/sudoers 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;#准备工作2：解决问题 - “sudo: unable to resolve host my-machine”&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo chmod -R 777 /etc/hosts
+
+sudo vi /etc/hosts			  #编辑hosts文件 (ins键进入编辑状态；保存退出: Esc键后，:wq!回车)
+“127.0.1.1    yyy”            #在&quot;/etc/hosts&quot;文件中, add 127.0.1.1 你的GCE VM项目名称
+
+sudo cat /etc/hosts           #查看文件
+
+sudo chmod -R 644 /etc/hosts
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;#准备工作3：为当前用户设置密码&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo passwd $(whoami)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;#开始官方教程步骤&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+
+sudo apt update
+
+sudo dpkg --install chrome-remote-desktop_current_amd64.deb
+
+sudo apt install --assume-yes --fix-broken
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;#开始安装Xfce&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo DEBIAN_FRONTEND=noninteractive \
+    apt install --assume-yes xfce4 desktop-base
+
+echo &quot;xfce4-session&quot; &amp;gt; ~/.chrome-remote-desktop-session
+
+sudo apt install --assume-yes xscreensaver
+
+sudo apt install --assume-yes task-xfce-desktop
+
+sudo systemctl disable lightdm.service
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;#安装 Chrome 浏览器&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+sudo dpkg --install google-chrome-stable_current_amd64.deb
+
+sudo apt install --assume-yes --fix-broken	
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;#提高桌面分辨率, 设为自己机器的分辨率&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;echo &quot;export CHROME_REMOTE_DESKTOP_DEFAULT_DESKTOP_SIZES=1600x1200,2736x1824&quot; \
+    &amp;gt;&amp;gt; ~/.profile
+     
+sudo systemctl restart chrome-remote-desktop                #重启服务
+
+sudo systemctl status chrome-remote-desktop                 #检查 Chrome远程桌面服务的状态, 如果服务正在运行，会看到包含&quot;active&quot;状态的输出(Ctrl+c退出)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;step2---授权远程桌面服务&quot;&gt;&lt;strong&gt;Step2 - &lt;a href=&quot;https://remotedesktop.google.com/headless&quot;&gt;授权远程桌面服务&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;登录对应的谷歌账户。&lt;/li&gt;
+  &lt;li&gt;将以下命令复制到SSH 窗口，运行该命令。
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  DISPLAY= /opt/google/chrome-remote-desktop/start-host \
+      --code=&quot;4/xxxxxxxxxxxxxxxxxxxxxxxx&quot; \
+      --redirect-url=&quot;https://remotedesktop.google.com/_/oauthredirect&quot; \
+      --name=
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;当系统提示输入计算机名称时，请输入实例名称 (yyy)。&lt;/li&gt;
+  &lt;li&gt;出现提示时，输入一个 6 位数的 PIN 码。稍后连接时，需要使用此号码进行额外的授权。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;step3---登录远程桌面服务&quot;&gt;&lt;strong&gt;Step3 - &lt;a href=&quot;https://remotedesktop.google.com/?hl=zh-cn&quot;&gt;登录远程桌面服务&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;登录对应的谷歌账户。&lt;/li&gt;
+  &lt;li&gt;可选项：改善远程桌面体验 for Xfce
+    &lt;ul&gt;
+      &lt;li&gt;在应用 (Applications) 菜单中，选择设置 (Settings) &amp;gt; 屏保 (Screensaver)。&lt;/li&gt;
+      &lt;li&gt;将模式 (Mode) 设置为停用屏保 (Disable Screen Saver)。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;step4---取消chrome远程桌面授权&quot;&gt;&lt;strong&gt;Step4 - &lt;a href=&quot;https://remotedesktop.google.com/access?hl=zh-cn&quot;&gt;取消Chrome远程桌面授权&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;登录对应的谷歌账户。&lt;/li&gt;
+  &lt;li&gt;点击该实例名称旁的删除图标即可。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;其他&quot;&gt;&lt;strong&gt;其他&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;删除Chrome RDP后，避免不必要的费用：需彻底删除GCE Compute Engine 实例。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;anbox在chrome-rdp中安装anbox以运行安卓apk&quot;&gt;&lt;strong&gt;&lt;font color=&quot;green&quot;&gt;『Anbox』在Chrome RDP中安装Anbox，以运行安卓apk&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;step1---安装anbox&quot;&gt;&lt;strong&gt;Step1 - 安装anbox&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;#准备工作&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install software-properties-common       #In case add-apt-repository is missing
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;#为root用户设置密码&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo -s
+passwd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;#安装anbox步骤&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.anbox.io/userguide/install.html&quot;&gt;Anbox官方教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/anbox/anbox-modules&quot;&gt;Install Kernel Modules - Install with DKMS&lt;/a&gt;, &lt;a href=&quot;https://github.com/anbox/anbox-modules/archive/master.zip&quot;&gt;Zip&lt;/a&gt;, PPA的方式目前不适用于Debian 10，因此推荐使用”Install with DKMS”直接下载好文件的方式。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;1 - Install necessary kernel modules&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;准备工作&lt;/p&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo apt install dkms
+  sudo apt install linux-headers-4.19.0-8-cloud-amd64                     
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;&lt;a href=&quot;(https://github.com/anbox/anbox-modules#install-instruction)&quot;&gt;教程步骤&lt;/a&gt;: 
+  先从GitHub将”&lt;a href=&quot;https://github.com/anbox/anbox-modules&quot;&gt;Anbox Kernel Modules&lt;/a&gt;“packages&lt;a href=&quot;https://github.com/anbox/anbox-modules/archive/master.zip&quot;&gt;下载&lt;/a&gt;下来。&lt;/p&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo cp anbox.conf /etc/modules-load.d/
+  $ sudo cp 99-anbox.rules /lib/udev/rules.d/
+
+  $ sudo cp -rT ashmem /usr/src/anbox-ashmem-1
+  $ sudo cp -rT binder /usr/src/anbox-binder-1
+
+  $ sudo dkms install anbox-ashmem/1
+  $ sudo dkms install anbox-binder/1
+
+  $ sudo modprobe ashmem_linux
+  $ sudo modprobe binder_linux
+  $ lsmod | grep -e ashmem_linux -e binder_linux
+  $ ls -alh /dev/binder /dev/ashmem                
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;load the kernel modules (The next time will be automatically loaded)&lt;/p&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo modprobe ashmem_linux
+  $ sudo modprobe binder_linux
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;System should have two new nodes in /dev directory (&lt;code class=&quot;highlighter-rouge&quot;&gt;/dev/ashmem&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;/dev/binder&lt;/code&gt;)&lt;/p&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ ls -1 /dev/{ashmem,binder}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;2 - Install the Anbox snap&lt;/strong&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo apt update
+  sudo apt install snapd                      #安装snapd
+  sudo snap install --devmode --beta anbox    #使用snap安装anbox beta, 安装完成后重启Debian vps,anbox会出现在&quot;开始菜单&quot;中
+  systemctl reboot -i                         #Restart Debian Linux 
+
+  sudo snap refresh --beta --devmode anbox    #udpate anbox manually
+  snap info anbox                             #Info about the currently available versions of the snap
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;step2---为anbox安装adb&quot;&gt;&lt;strong&gt;Step2 - 为Anbox安装adb&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;#安装adb&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install android-tools-adb
+sudo ln -s /snap/bin/anbox /usr/bin/anbox         #Managed to run the session-manager after
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;#检查adb是否安装成功&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb devices
+adb shell         
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;#安装APK程序&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb install 1.apk
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;#卸载APK程序&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb shell pm list packages                    #list all installed APP_IDs with
+adb uninstall [APP_ID]                        #卸载程序，注意是[APP_ID]而非文件名称
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;#从Linux VPS向anbox互相移动数据&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb push &amp;lt;files&amp;gt; '/sdcard/Download'           #从Linux向anbox传送数据
+adb pull &amp;lt;files&amp;gt; '/sdcard/Download'           #从anbox向Linux传送数据
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="VPS" /><category term="RDP" /></entry><entry><title type="html">Google/Google Cloud</title><link href="http://localhost:8000/tech/GCE/" rel="alternate" type="text/html" title="Google/Google Cloud" /><published>2020-03-22T23:07:00+08:00</published><updated>2020-03-22T23:07:00+08:00</updated><id>http://localhost:8000/tech/GCE</id><content type="html" xml:base="http://localhost:8000/tech/GCE/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;1-gce-vps&quot;&gt;&lt;a href=&quot;https://console.cloud.google.com&quot;&gt;1. GCE VPS&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;GCE防火墙设置：&lt;/p&gt;
+
+    &lt;table style=&quot;width:100%&quot;&gt;
+      &lt;tbody&gt;
+          &lt;tr&gt;
+              &lt;td width=&quot;100%&quot;&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/124.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/124.png&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/td&gt;		
+          &lt;/tr&gt;		
+      &lt;/tbody&gt;			
+  &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;速度：&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;Carrier&lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;GCE线路&lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;速度&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;CM&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;Tokyo&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;good&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;CT&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;HK&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;ok&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;CT&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;US&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;bad&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-vps主机中安装linux桌面环境脚本和windows-rdp远程桌面连接&quot;&gt;2. VPS主机中安装Linux桌面环境(脚本)和Windows RDP远程桌面连接&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;教程1一键脚本-该教程安装后较卡&quot;&gt;教程1：&lt;a href=&quot;/tech/Linux-RDP-on-VPS1/&quot;&gt;一键脚本&lt;/a&gt;  (该教程安装后，较卡)&lt;/h4&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;教程2精简逐步命令行方式&quot;&gt;教程2：&lt;a href=&quot;/tech/Linux-RDP-on-VPS2/&quot;&gt;精简逐步命令行方式&lt;/a&gt;&lt;/h4&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-在-compute-engine-上设置-chrome-远程桌面&quot;&gt;3. 在 Compute Engine 上设置 Chrome 远程桌面&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;官方教程&quot;&gt;&lt;a href=&quot;https://cloud.google.com/solutions/chrome-desktop-remote-on-compute-engine?hl=zh-cn&quot;&gt;官方教程&lt;/a&gt;&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;h5 id=&quot;chrome远程桌面-登录界面&quot;&gt;&lt;a href=&quot;https://remotedesktop.google.com/u/1/access/&quot;&gt;Chrome远程桌面-登录界面&lt;/a&gt;&lt;/h5&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h5 id=&quot;chrome远程桌面-授权&quot;&gt;&lt;a href=&quot;https://remotedesktop.google.com/headless?hl=zh-cn&quot;&gt;Chrome远程桌面-授权&lt;/a&gt;&lt;/h5&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h5 id=&quot;chrome远程桌面-取消授权&quot;&gt;&lt;a href=&quot;https://remotedesktop.google.com/access?hl=zh-cn&quot;&gt;Chrome远程桌面-取消授权&lt;/a&gt;&lt;/h5&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h5 id=&quot;chrome远程桌面-qa&quot;&gt;&lt;a href=&quot;https://support.google.com/chrome/answer/1649523?hl=zh-Hans&amp;amp;co=GENIE.Platform%3DDesktop&amp;amp;oco=1&quot;&gt;Chrome远程桌面-Q&amp;amp;A&lt;/a&gt;&lt;/h5&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;亲测所有步骤chrome-rdp--anbox-on-debian10-gce-vps&quot;&gt;&lt;a href=&quot;/tech/Chrome-RDP-full-steps/&quot;&gt;亲测所有步骤：Chrome RDP + Anbox on Debian10 GCE VPS&lt;/a&gt;&lt;/h4&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;4-wireguard-一键安装脚本&quot;&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/WireGuard-Quick-Install-Script/&quot;&gt;4. WireGuard 一键安装脚本&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;5-墙内使用google服务&quot;&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Use-Google-Services-in-China/&quot;&gt;5. 墙内使用Google服务&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;6-更改google国家地区&quot;&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Change-Google-Area/&quot;&gt;6. 更改Google国家地区&lt;/a&gt;&lt;/h3&gt;</content><author><name></name></author><category term="VPS" /><category term="VPN" /><category term="RDP" /><summary type="html">谷歌账号,VPS,VPN(Wireguard),Windows远程桌面</summary></entry><entry><title type="html">Enable desktop experience &amp;amp; RDP for Ubuntu 18.04 LTS VM in GCP</title><link href="http://localhost:8000/tech/Linux-RDP-on-VPS2/" rel="alternate" type="text/html" title="Enable desktop experience &amp; RDP for Ubuntu 18.04 LTS VM in GCP" /><published>2020-03-16T01:31:00+08:00</published><updated>2020-03-16T01:31:00+08:00</updated><id>http://localhost:8000/tech/Linux%20RDP%20on%20VPS2</id><content type="html" xml:base="http://localhost:8000/tech/Linux-RDP-on-VPS2/">&lt;p style=&quot;margin-bottom:35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 &lt;p&gt;&lt;span style=&quot;font-size:30px;font-weight:bold;color:#70ad47;&quot;&gt;准备工作&lt;/span&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;日常更新&quot;&gt;日常更新&lt;/h3&gt;
@@ -15,7 +342,12 @@
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo passwd 你的用户名&lt;/code&gt;  			     # 为该用户设置密码&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;2-为新增用户添加sudo权限&quot;&gt;2. 为新增用户添加sudo权限&lt;/h4&gt;
+&lt;h4 id=&quot;2-为当前用户设置密码&quot;&gt;2. 为当前用户设置密码&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo passwd $(whoami)&lt;/code&gt;  			     # 为当前用户设置密码&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;3-为新增用户添加sudo权限&quot;&gt;3. 为新增用户添加sudo权限&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo chmod u+w /etc/sudoers&lt;/code&gt;      # 添加sudo文件的写权限&lt;/li&gt;
   &lt;li&gt;
@@ -28,7 +360,12 @@
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo chmod u-w /etc/sudoers&lt;/code&gt;      # 撤销sudoers文件写权限&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;3-为root用户设置密码&quot;&gt;3. 为Root用户设置密码&lt;/h4&gt;
+&lt;h4 id=&quot;4-切换当前用户&quot;&gt;4. 切换当前用户&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;su - USERNAME&lt;/code&gt;                    #SU means switch user&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;5-为root用户设置密码&quot;&gt;5. 为Root用户设置密码&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo -s&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;passwd&lt;/code&gt;&lt;/li&gt;
@@ -97,81 +434,23 @@ passwd
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo chmod -R 777 /etc/hosts&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo chmod -R 644 /etc/hosts&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo vi /etc/sudoers&lt;/code&gt;      #编辑文件&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo nano /etc/hosts&lt;/code&gt;      #编辑文件&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo cat /etc/sudoers&lt;/code&gt;     #查看文件&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;安装-ubuntu-desktop&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/teddybugs/teamviewerongooglecloud&quot;&gt;安装 ubuntu-desktop&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;</content><author><name></name></author><category term="VPS" /><category term="RDP" /></entry><entry><title type="html">Google/Google Cloud</title><link href="http://localhost:8000/tech/GCE/" rel="alternate" type="text/html" title="Google/Google Cloud" /><published>2020-02-29T17:45:00+08:00</published><updated>2020-02-29T17:45:00+08:00</updated><id>http://localhost:8000/tech/GCE</id><content type="html" xml:base="http://localhost:8000/tech/GCE/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;1-gce-vps&quot;&gt;&lt;a href=&quot;https://console.cloud.google.com&quot;&gt;1. GCE VPS&lt;/a&gt;&lt;/h3&gt;
-
+&lt;p&gt;增加源&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;GCE防火墙设置：&lt;/p&gt;
-
-    &lt;table style=&quot;width:100%&quot;&gt;
-      &lt;tbody&gt;
-          &lt;tr&gt;
-              &lt;td width=&quot;100%&quot;&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/124.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/124.png&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/td&gt;		
-          &lt;/tr&gt;		
-      &lt;/tbody&gt;			
-  &lt;/table&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;速度：&lt;/p&gt;
-
-    &lt;table&gt;
-      &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th style=&quot;text-align: center&quot;&gt;Carrier&lt;/th&gt;
-          &lt;th style=&quot;text-align: center&quot;&gt;GCE线路&lt;/th&gt;
-          &lt;th style=&quot;text-align: center&quot;&gt;速度&lt;/th&gt;
-        &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;CM&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;Tokyo&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;good&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;CT&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;HK&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;ok&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;CT&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;US&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;bad&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
+  &lt;li&gt;sudo add-apt-repository ppa:morphis/anbox-support&lt;/li&gt;
+  &lt;li&gt;sudo apt update&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;2-vps主机中一键安装linux桌面环境脚本和rdp远程桌面连接&quot;&gt;2. VPS主机中一键安装Linux桌面环境(脚本)和RDP远程桌面连接&lt;/h3&gt;
-
+&lt;p&gt;删除源&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;教程1一键脚本-该教程安装后较卡&quot;&gt;教程1：&lt;a href=&quot;/tech/Linux-RDP-on-VPS1/&quot;&gt;一键脚本&lt;/a&gt;  (该教程安装后，较卡)&lt;/h4&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;教程2精简逐步命令行方式&quot;&gt;教程2：&lt;a href=&quot;/tech/Linux-RDP-on-VPS2/&quot;&gt;精简逐步命令行方式&lt;/a&gt;&lt;/h4&gt;
-  &lt;/li&gt;
+  &lt;li&gt;sudo add-apt-repository –remove ppa:morphis/anbox-support&lt;/li&gt;
+  &lt;li&gt;sudo apt update&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;3-wireguard-一键安装脚本&quot;&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/WireGuard-Quick-Install-Script/&quot;&gt;3. WireGuard 一键安装脚本&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;4-墙内使用google服务&quot;&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Use-Google-Services-in-China/&quot;&gt;4. 墙内使用Google服务&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;5-更改google国家地区&quot;&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Change-Google-Area/&quot;&gt;5. 更改Google国家地区&lt;/a&gt;&lt;/h3&gt;</content><author><name></name></author><category term="VPS" /><category term="VPN" /><category term="RDP" /><summary type="html">谷歌账号,VPS,VPN(Wireguard),Windows远程桌面</summary></entry><entry><title type="html">VPS主机中一键安装Linux桌面环境(脚本)和RDP远程桌面连接</title><link href="http://localhost:8000/tech/Linux-RDP-on-VPS1/" rel="alternate" type="text/html" title="VPS主机中一键安装Linux桌面环境(脚本)和RDP远程桌面连接" /><published>2020-02-29T16:43:00+08:00</published><updated>2020-02-29T16:43:00+08:00</updated><id>http://localhost:8000/tech/Linux%20RDP%20on%20VPS1</id><content type="html" xml:base="http://localhost:8000/tech/Linux-RDP-on-VPS1/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;安装-ubuntu-desktop&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/teddybugs/teamviewerongooglecloud&quot;&gt;安装 ubuntu-desktop&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;</content><author><name></name></author><category term="VPS" /><category term="RDP" /></entry><entry><title type="html">VPS主机中一键安装Linux桌面环境(脚本)和RDP远程桌面连接</title><link href="http://localhost:8000/tech/Linux-RDP-on-VPS1/" rel="alternate" type="text/html" title="VPS主机中一键安装Linux桌面环境(脚本)和RDP远程桌面连接" /><published>2020-02-29T16:43:00+08:00</published><updated>2020-02-29T16:43:00+08:00</updated><id>http://localhost:8000/tech/Linux%20RDP%20on%20VPS1</id><content type="html" xml:base="http://localhost:8000/tech/Linux-RDP-on-VPS1/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;source-搬运&quot;&gt;&lt;strong&gt;Source: 搬运&lt;/strong&gt;&lt;/h3&gt;
 
@@ -557,64 +836,4 @@ Keywords:
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="OS" /></entry><entry><title type="html">国内手机银行android下载地址</title><link href="http://localhost:8000/digitgame/China-Mobile-Bank-DownloadLink/" rel="alternate" type="text/html" title="国内手机银行android下载地址" /><published>2019-12-21T01:01:00+08:00</published><updated>2019-12-21T01:01:00+08:00</updated><id>http://localhost:8000/digitgame/China%20Mobile%20Bank%20DownloadLink</id><content type="html" xml:base="http://localhost:8000/digitgame/China-Mobile-Bank-DownloadLink/">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;背景: 国内手机银行(安卓版)，往往较易于在各个第三方应用中心下载获得，鉴于应用中心的参差不齐，app的安全性令人堪忧，最可靠的方式为在银行官网直接下载。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p style=&quot;margin-bottom:-20px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;现状：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;各家手机银行官网，”二维码”方式交易获得；&lt;/li&gt;
-  &lt;li&gt;但”直接下载链接”方式，一般藏得很深，甚至完全没有；&lt;/li&gt;
-  &lt;li&gt;无论哪种方式，MD5校验码和更新信息(如发布日期和版本号)，几乎很少提供；这种不透明性，无形之中给恶意篡改者透过第三方下载平台，提供了很大的操作空间。➤&lt;br /&gt; &lt;font color=&quot;#cc4125&quot;&gt;这种不必要的&quot;金融风险&quot;，实则源于银行方的怠倦疏忽、责任意识低下导致；相反，本末倒置，将精力投放在管控&quot;root设备&quot;，实际上root导致的风险，用户自然提前知晓和自行承担，银行方完全没有必要&quot;强制&quot;限制 (如建行)。&lt;br /&gt; &lt;span style=&quot;color: #4d8df1;&quot;&gt;Open Question: 银行，你真的是在为人民服务吗？&lt;/span&gt;&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;国内手机银行安卓版直接下载链接&quot;&gt;国内手机银行(安卓版)直接下载链接：&lt;/h3&gt;
-&lt;p style=&quot;margin-bottom:-15px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;1-工商银行&quot;&gt;&lt;strong&gt;1. 工商银行&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://m.icbc.com.cn/ICBC/%e7%bd%91%e7%ab%99%e8%b0%83%e7%94%a8%e4%b8%93%e9%a2%98/%e7%bd%91%e9%93%b6%e7%99%bb%e9%99%86%e9%a6%96%e9%a1%b5.htm&quot;&gt;融e行&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://m.icbc.com.cn/ICBC/kfssjyxkh9/4.htm&quot;&gt;融e联&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;2招商银行&quot;&gt;&lt;strong&gt;2.招商银行&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://m.cmbchina.com/Common/SoftwareDetail.aspx?pageid=android&quot;&gt;手机银行&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://static.cc.cmbimg.com/s/app/linkApp.html&quot;&gt;掌上生活&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;3建设银行&quot;&gt;&lt;strong&gt;3.建设银行&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://ebank1.ccb.com/cn/ebank/personal/serviceversion/201306081370667047.html&quot;&gt;手机银行&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;4邮储银行&quot;&gt;&lt;strong&gt;4.邮储银行&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://phone.psbc.com/&quot;&gt;手机银行&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;5农业银行&quot;&gt;&lt;strong&gt;5.农业银行&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://mobile.abchina.com/download/clientDownload/zh_CN/MB_Index.aspx&quot;&gt;手机银行&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;6中国银行&quot;&gt;&lt;strong&gt;6.中国银行&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.bankofchina.com/ebanking/service/cs1/201009/t20100921_1151946.html&quot;&gt;手机银行&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;7交通银行&quot;&gt;&lt;strong&gt;7.交通银行&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://wap.95559.com.cn/mobs/main.html#downloadApp?t=2&quot;&gt;手机银行&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="LegacyBank" /><category term="E-Wallet/BankCard" /></entry></feed>
+&lt;/ol&gt;</content><author><name></name></author><category term="OS" /></entry></feed>

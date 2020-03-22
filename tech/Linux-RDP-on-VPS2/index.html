@@ -86,7 +86,12 @@
   <li><code class="highlighter-rouge">sudo passwd 你的用户名</code>  			     # 为该用户设置密码</li>
 </ul>
 
-<h4 id="2-为新增用户添加sudo权限">2. 为新增用户添加sudo权限</h4>
+<h4 id="2-为当前用户设置密码">2. 为当前用户设置密码</h4>
+<ul>
+  <li><code class="highlighter-rouge">sudo passwd $(whoami)</code>  			     # 为当前用户设置密码</li>
+</ul>
+
+<h4 id="3-为新增用户添加sudo权限">3. 为新增用户添加sudo权限</h4>
 <ul>
   <li><code class="highlighter-rouge">sudo chmod u+w /etc/sudoers</code>      # 添加sudo文件的写权限</li>
   <li>
@@ -99,7 +104,12 @@
   <li><code class="highlighter-rouge">sudo chmod u-w /etc/sudoers</code>      # 撤销sudoers文件写权限</li>
 </ul>
 
-<h4 id="3-为root用户设置密码">3. 为Root用户设置密码</h4>
+<h4 id="4-切换当前用户">4. 切换当前用户</h4>
+<ul>
+  <li><code class="highlighter-rouge">su - USERNAME</code>                    #SU means switch user</li>
+</ul>
+
+<h4 id="5-为root用户设置密码">5. 为Root用户设置密码</h4>
 <ul>
   <li><code class="highlighter-rouge">sudo -s</code></li>
   <li><code class="highlighter-rouge">passwd</code></li>
@@ -168,7 +178,20 @@ passwd
   <li><code class="highlighter-rouge">sudo chmod -R 777 /etc/hosts</code></li>
   <li><code class="highlighter-rouge">sudo chmod -R 644 /etc/hosts</code></li>
   <li><code class="highlighter-rouge">sudo vi /etc/sudoers</code>      #编辑文件</li>
+  <li><code class="highlighter-rouge">sudo nano /etc/hosts</code>      #编辑文件</li>
   <li><code class="highlighter-rouge">sudo cat /etc/sudoers</code>     #查看文件</li>
+</ul>
+
+<p>增加源</p>
+<ul>
+  <li>sudo add-apt-repository ppa:morphis/anbox-support</li>
+  <li>sudo apt update</li>
+</ul>
+
+<p>删除源</p>
+<ul>
+  <li>sudo add-apt-repository –remove ppa:morphis/anbox-support</li>
+  <li>sudo apt update</li>
 </ul>
 
 <h4 id="安装-ubuntu-desktop"><strong><a href="https://github.com/teddybugs/teamviewerongooglecloud">安装 ubuntu-desktop</a></strong></h4>
