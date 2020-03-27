@@ -204,7 +204,7 @@ sudo systemctl status chrome-remote-desktop                 #检查 Chrome远程
 
 <p style="margin-bottom:8px;">&nbsp;</p>
 
-<h3 id="anbox在chrome-rdp中安装anbox以运行安卓apk"><strong><font color="green">『Anbox』在Chrome RDP中安装Anbox，以运行安卓apk</font></strong></h3>
+<h3 id="anbox-snap在chrome-rdp中安装snapanbox通过anbox安装安卓apk"><strong><font color="green">『Anbox, Snap』在Chrome RDP中安装Snap、Anbox，通过Anbox安装安卓apk</font></strong></h3>
 <hr />
 
 <p style="margin-bottom:-3px;">&nbsp;</p>
@@ -298,6 +298,127 @@ adb uninstall [APP_ID]                        #卸载程序，注意是[APP_ID]�
 <p>#从Linux VPS向anbox互相移动数据</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb push &lt;files&gt; '/sdcard/Download'           #从Linux向anbox传送数据
 adb pull &lt;files&gt; '/sdcard/Download'           #从anbox向Linux传送数据
+</code></pre></div></div>
+
+<p style="margin-bottom:8px;">&nbsp;</p>
+
+<h3 id="snap常用命令"><strong><font color="green">『Snap』常用命令</font></strong></h3>
+<hr />
+
+<p style="margin-bottom:-3px;">&nbsp;</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ snap find &lt;search_text&gt;      #搜索透过snap安装的对应安装包
+$ snap list					   #查找透过snap安装的所有安装包，与"snap list --all"效果一样
+$ sudo snap refresh --list     #查找哪些安装包可以进行升级
+$ sudo snap refresh &lt;package&gt;  #指定安装包升级
+$ sudo snap revert &lt;package&gt;   #指定安装包降级
+$ sudo snap remove &lt;package&gt;   #卸载指定安装包    
+</code></pre></div></div>
+
+<p style="margin-bottom:8px;">&nbsp;</p>
+
+<h3 id="shrun-sh-files-in-linux"><strong><font color="green">『.sh』Run .sh files in Linux</font></strong></h3>
+<hr />
+
+<p style="margin-bottom:-3px;">&nbsp;</p>
+
+<p>#Set execute permission on the script .sh file</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod +x script-name-here.sh      
+</code></pre></div></div>
+
+<p>#To the script .sh file</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./script-name-here.sh     
+</code></pre></div></div>
+
+<p style="margin-bottom:8px;">&nbsp;</p>
+
+<h3 id="wine在debian-10中安装wine-通过wine直接安装微软程序"><strong><font color="green">『Wine』在Debian 10中安装Wine, 通过wine直接安装微软程序</font></strong></h3>
+<hr />
+
+<p style="margin-bottom:-3px;">&nbsp;</p>
+
+<h4 id="教程"><a href="https://linuxhint.com/installing_wine_debian_10/">教程</a></h4>
+
+<p>#准备工作</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt install wget
+$ sudo dpkg --add-architecture i386
+$ sudo apt-add-repository contrib
+$ sudo apt-add-repository non-free
+$ sudo apt update     
+</code></pre></div></div>
+
+<p>#Installing Wine</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt --fix-broken install  
+$ sudo apt install wine wine64 wine32 winbind winetricks   #To confirm the installation, press Y and then press &lt;Enter&gt;
+</code></pre></div></div>
+
+<p>#使用Wine安装windows App</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd ~/Downloads
+$ wine xxx.exe	    #会在Linux GUI环境中，自动弹出安装界面
+</code></pre></div></div>
+
+<p>#使用Wine卸载windows App</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ wine uninstaller        #在弹出的窗口中选择卸载相关App
+$ wine64 uninstaller	  #在弹出的窗口中选择卸载相关App
+</code></pre></div></div>
+
+<p>#查看Wine目录</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt install nautilus
+$ nautilus ~/.wine
+</code></pre></div></div>
+
+<p>#查看xxx.exe的绝对路径</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ echo "$(pwd)/xxx.exe" | sed 's/ /\\ /g'
+</code></pre></div></div>
+
+<p>#在Debian 10中安装notepad++，借助snap安装</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo snap install notepad-plus-plus
+$ notepad-plus-plus		  #在Terminal中直接启动
+</code></pre></div></div>
+
+<p style="margin-bottom:8px;">&nbsp;</p>
+
+<h3 id="debian终端命令debain-terminal-commands"><strong><font color="green">『Debian终端命令』Debain Terminal Commands</font></strong></h3>
+<hr />
+
+<p style="margin-bottom:-3px;">&nbsp;</p>
+
+<p>#安装.deb包</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$sudo apt install ./name.deb
+</code></pre></div></div>
+
+<p>#显示安装包</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ dpkg --list                        #show packages list
+</code></pre></div></div>
+
+<p>#卸载安装包xxx</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get --purge remove xxx    #方法1：remove package "xxx", "–-remove"指卸载安装, "–-purge"指清除配置
+$ dpkg --remove xxx                  #方法2
+$ dpkg -r xxx.deb                    #方法3
+</code></pre></div></div>
+
+<p>#Removing Broken Packages</p>
+<ul>
+  <li>clean: Removes cache of programs older than the installed.</li>
+  <li>autoremove: Removes unnecessary files, like dependencies which are not longer needed.</li>
+  <li>-f / –fix-broken install: Fix broken dependencies, correct possible package corruption problems.</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># apt-get clean &amp;&amp; apt-get autoremove
+# sudo apt-get -f install
+# dpkg --configure -a
+</code></pre></div></div>
+
+<p>#Troubleshoot for issues when  installing or uninstalling software</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get update                  #Updates the packages’ list in the repositories
+$ sudo dpkg --configure -a             #checks for dependency problems to fix
+$ sudo apt-get -f install              #Another command to fix dependency problems
+$ sudo apt-get clean                   #clean unnecessary dependencies, "apt-get autoclean"
+</code></pre></div></div>
+
+<p>#Check if packages are being held by the packages manager</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># apt-get -u dist-upgrade                        #To check if the installer holds packages pending of installation run
+# apt-get remove –dry-run packagename            #to remove the be held packages, to run
 </code></pre></div></div>
 
 
