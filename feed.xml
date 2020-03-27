@@ -1,6 +1,157 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-03-27T14:36:50+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">亲测所有步骤 - Chrome RDP + Anbox on Debian10 GCE VPS</title><link href="http://localhost:8000/tech/Chrome-RDP-full-steps/" rel="alternate" type="text/html" title="亲测所有步骤 - Chrome RDP + Anbox on Debian10 GCE VPS" /><published>2020-03-22T23:12:00+08:00</published><updated>2020-03-22T23:12:00+08:00</updated><id>http://localhost:8000/tech/Chrome%20RDP%20full%20steps</id><content type="html" xml:base="http://localhost:8000/tech/Chrome-RDP-full-steps/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-03-27T22:15:09+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">『总贴』Android安卓所有相关汇总</title><link href="http://localhost:8000/tech/Andriod-All-Relative/" rel="alternate" type="text/html" title="『总贴』Android安卓所有相关汇总" /><published>2020-03-27T15:02:00+08:00</published><updated>2020-03-27T15:02:00+08:00</updated><id>http://localhost:8000/tech/Andriod%20All%20Relative</id><content type="html" xml:base="http://localhost:8000/tech/Andriod-All-Relative/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
+Keywords: 
+&lt;a href=&quot;#keyword1&quot;&gt;安卓App排错/使用说明&lt;/a&gt;， 
+&lt;a href=&quot;#keyword2&quot;&gt;安卓隐藏代码&lt;/a&gt;，
+&lt;a href=&quot;#keyword3&quot;&gt;在安卓手机上使用ADB &amp;amp; Fastboot命令&lt;/a&gt;， 
+&lt;a href=&quot;#keyword4&quot;&gt;安卓刷机相关汇总&lt;/a&gt;，
+&lt;a href=&quot;#keyword5&quot;&gt;安卓多用户/克隆App&lt;/a&gt;，
+&lt;a href=&quot;#keyword6&quot;&gt;微软官方安卓虚拟器&lt;/a&gt;，
+&lt;a href=&quot;#keyword7&quot;&gt;安卓系统常见问题解决方案&lt;/a&gt;
+&lt;/p&gt;
 
-&lt;h3 id=&quot;chrome-rdpgce-vm安装-chrome-远程桌面&quot;&gt;&lt;strong&gt;&lt;font color=&quot;green&quot;&gt;『Chrome RDP』&lt;a align=&quot;left&quot; href=&quot;https://console.cloud.google.com/iam-admin/projects?hl=zh-cn&quot; target=&quot;_blank&quot;&gt;GCE VM安装 Chrome 远程桌面&lt;/a&gt;&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;1-android-app安卓应用troubleshoot-for-issues使用说明推荐的应用&quot;&gt;&lt;font id=&quot;keyword1&quot; color=&quot;green&quot;&gt;1. 『Android App』&lt;/font&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Andriod-Apps/&quot;&gt;安卓应用：Troubleshoot for Issues、使用说明、推荐的应用&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom: -5px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-android-hide-code拨号界面可输入的安卓隐藏代码&quot;&gt;&lt;font id=&quot;keyword2&quot; color=&quot;green&quot;&gt;2. 『Android Hide Code』&lt;/font&gt;&lt;a href=&quot;/tech/Android-Hide-Code/&quot;&gt;拨号界面可输入的安卓隐藏代码&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom: -5px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-adbfastboot-on-android在安卓手机上使用adb--fastboot命令&quot;&gt;&lt;font id=&quot;keyword3&quot; color=&quot;green&quot;&gt;3. 『ADB&amp;amp;Fastboot on Android』&lt;/font&gt;&lt;a href=&quot;/tech/Use-ADB-&amp;amp;-Fastboot-on-Android/&quot;&gt;在安卓手机上使用ADB &amp;amp; Fastboot命令&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom: -5px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;4-android-os-flashing安卓刷机相关汇总&quot;&gt;&lt;font id=&quot;keyword4&quot; color=&quot;green&quot;&gt;4. 『Android OS Flashing』&lt;/font&gt;&lt;a href=&quot;/tech/Android-OS-Flashing/&quot;&gt;安卓刷机相关汇总&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom: -5px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;5-andriod-multiuser--clone-app安卓多用户克隆app多用户下magiskedxosedxposed生效问题&quot;&gt;&lt;font id=&quot;keyword5&quot; color=&quot;green&quot;&gt;5. 『Andriod Multiuser &amp;amp; Clone App』&lt;/font&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&amp;amp;-Clone-App/&quot;&gt;安卓多用户、克隆App、多用户下Magisk、EdXosed/Xposed生效问题&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom: -5px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;6-andriod-emulator-on-windowsos微软官方安卓虚拟器基于微软内置hyper-v-虚拟服务器&quot;&gt;&lt;font id=&quot;keyword6&quot; color=&quot;green&quot;&gt;6. 『Andriod Emulator on WindowsOS』&lt;/font&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/Hyper-V/&quot;&gt;微软官方安卓虚拟器，基于”微软内置Hyper-V 虚拟服务器&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom: -5px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;7-andriod-system-issues安卓系统常见问题解决方案&quot;&gt;&lt;font id=&quot;keyword6&quot; color=&quot;green&quot;&gt;7. 『Andriod System Issues』&lt;/font&gt;&lt;a href=&quot;/tech/Andriod-Common-Issues/&quot;&gt;安卓系统常见问题解决方案&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom: -5px;&quot;&gt;&amp;emsp;&lt;/p&gt;</content><author><name></name></author><category term="Android" /><summary type="html">Apps/hide code/ADB &amp; Fastboot on Mobile/Flashing OS/Multiuser&amp;CloneApps</summary></entry><entry><title type="html">『总贴』Google/Google Cloud</title><link href="http://localhost:8000/tech/GCE/" rel="alternate" type="text/html" title="『总贴』Google/Google Cloud" /><published>2020-03-27T15:02:00+08:00</published><updated>2020-03-27T15:02:00+08:00</updated><id>http://localhost:8000/tech/GCE</id><content type="html" xml:base="http://localhost:8000/tech/GCE/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;1-gce-vps&quot;&gt;&lt;a href=&quot;https://console.cloud.google.com&quot;&gt;1. GCE VPS&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;GCE防火墙设置：&lt;/p&gt;
+
+    &lt;table style=&quot;width:100%&quot;&gt;
+      &lt;tbody&gt;
+          &lt;tr&gt;
+              &lt;td width=&quot;100%&quot;&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/124.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/124.png&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/td&gt;		
+          &lt;/tr&gt;		
+      &lt;/tbody&gt;			
+  &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;速度：&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;Carrier&lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;GCE线路&lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;速度&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;CM&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;Tokyo&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;good&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;CT&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;HK&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;ok&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;CT&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;US&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;bad&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-vps主机中安装linux桌面环境脚本和windows-rdp远程桌面连接&quot;&gt;2. VPS主机中安装Linux桌面环境(脚本)和Windows RDP远程桌面连接&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;教程1一键脚本-该教程安装后较卡&quot;&gt;教程1：&lt;a href=&quot;/tech/Linux-RDP-on-VPS1/&quot;&gt;一键脚本&lt;/a&gt;  (该教程安装后，较卡)&lt;/h4&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;教程2精简逐步命令行方式&quot;&gt;教程2：&lt;a href=&quot;/tech/Linux-RDP-on-VPS2/&quot;&gt;精简逐步命令行方式&lt;/a&gt;&lt;/h4&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-在-compute-engine-上设置-chrome-远程桌面&quot;&gt;3. 在 Compute Engine 上设置 Chrome 远程桌面&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;官方教程&quot;&gt;&lt;a href=&quot;https://cloud.google.com/solutions/chrome-desktop-remote-on-compute-engine?hl=zh-cn&quot;&gt;官方教程&lt;/a&gt;&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;h5 id=&quot;chrome远程桌面-登录界面&quot;&gt;&lt;a href=&quot;https://remotedesktop.google.com/u/1/access/&quot;&gt;Chrome远程桌面-登录界面&lt;/a&gt;&lt;/h5&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h5 id=&quot;chrome远程桌面-授权&quot;&gt;&lt;a href=&quot;https://remotedesktop.google.com/headless?hl=zh-cn&quot;&gt;Chrome远程桌面-授权&lt;/a&gt;&lt;/h5&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h5 id=&quot;chrome远程桌面-取消授权&quot;&gt;&lt;a href=&quot;https://remotedesktop.google.com/access?hl=zh-cn&quot;&gt;Chrome远程桌面-取消授权&lt;/a&gt;&lt;/h5&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h5 id=&quot;chrome远程桌面-qa&quot;&gt;&lt;a href=&quot;https://support.google.com/chrome/answer/1649523?hl=zh-Hans&amp;amp;co=GENIE.Platform%3DDesktop&amp;amp;oco=1&quot;&gt;Chrome远程桌面-Q&amp;amp;A&lt;/a&gt;&lt;/h5&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;亲测所有步骤on-debian10-gce-vps---chrome-rdp--anboxsnapwine&quot;&gt;&lt;a href=&quot;/tech/Chrome-RDP-full-steps/&quot;&gt;亲测所有步骤：on Debian10 GCE VPS - Chrome RDP + Anbox/Snap/Wine&lt;/a&gt;&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;登录RDP初始化需要验证谷歌账户，即需要VPN (对VPN连接的质量要求不高，通过验证即可；登录成功后，建议保留该VPN连接，否则会出现明显卡顿现象)。&lt;/li&gt;
+      &lt;li&gt;默认本地有声音；本地速度流程；视频有卡顿，但基本还能勉强看。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;4-wireguard-一键安装脚本&quot;&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/WireGuard-Quick-Install-Script/&quot;&gt;4. WireGuard 一键安装脚本&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;5-墙内使用google服务&quot;&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Use-Google-Services-in-China/&quot;&gt;5. 墙内使用Google服务&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;6-更改google国家地区&quot;&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Change-Google-Area/&quot;&gt;6. 更改Google国家地区&lt;/a&gt;&lt;/h3&gt;</content><author><name></name></author><category term="VPS" /><category term="VPN" /><category term="RDP" /><summary type="html">谷歌账号,GCE,VPS,VPN(Wireguard),RDP远程桌面(windows/chrome)</summary></entry><entry><title type="html">亲测所有步骤 - Chrome RDP + Anbox/Snap/Wine on Debian10 GCE VPS</title><link href="http://localhost:8000/tech/Chrome-RDP-full-steps/" rel="alternate" type="text/html" title="亲测所有步骤 - Chrome RDP + Anbox/Snap/Wine on Debian10 GCE VPS" /><published>2020-03-22T23:12:00+08:00</published><updated>2020-03-22T23:12:00+08:00</updated><id>http://localhost:8000/tech/Chrome%20RDP%20full%20steps</id><content type="html" xml:base="http://localhost:8000/tech/Chrome-RDP-full-steps/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
+Keywords: 
+&lt;a href=&quot;#keyword1&quot;&gt;Install Chrome RDP&lt;/a&gt;， 
+&lt;a href=&quot;#keyword2&quot;&gt;Install Snap,Anbox&lt;/a&gt;，
+&lt;a href=&quot;#keyword3&quot;&gt;Snap常用指令&lt;/a&gt;，
+&lt;a href=&quot;#keyword4&quot;&gt;Install &quot;.sh&quot; File&lt;/a&gt;， 
+&lt;a href=&quot;#keyword5&quot;&gt;Install Wine&lt;/a&gt;，
+&lt;a href=&quot;#keyword6&quot;&gt;Debian常用指令&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;chrome-rdpgce-vm安装-chrome-远程桌面&quot;&gt;&lt;strong&gt;&lt;font id=&quot;keyword1&quot; color=&quot;green&quot;&gt;『Chrome RDP』&lt;a align=&quot;left&quot; href=&quot;https://console.cloud.google.com/iam-admin/projects?hl=zh-cn&quot; target=&quot;_blank&quot;&gt;GCE VM安装 Chrome 远程桌面&lt;/a&gt;&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
 &lt;hr /&gt;
 
 &lt;ul&gt;
@@ -133,7 +284,7 @@ sudo systemctl status chrome-remote-desktop                 #检查 Chrome远程
 
 &lt;p style=&quot;margin-bottom:8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;anbox-snap在chrome-rdp中安装snapanbox通过anbox安装安卓apk&quot;&gt;&lt;strong&gt;&lt;font color=&quot;green&quot;&gt;『Anbox, Snap』在Chrome RDP中安装Snap、Anbox，通过Anbox安装安卓apk&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;anbox-snap在chrome-rdp中安装snapanbox通过anbox安装安卓apk&quot;&gt;&lt;strong&gt;&lt;font id=&quot;keyword2&quot; color=&quot;green&quot;&gt;『Anbox, Snap』在Chrome RDP中安装Snap、Anbox，通过Anbox安装安卓apk&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
 &lt;hr /&gt;
 
 &lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
@@ -231,7 +382,7 @@ adb pull &amp;lt;files&amp;gt; '/sdcard/Download'           #从anbox向Linux传
 
 &lt;p style=&quot;margin-bottom:8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;snap常用命令&quot;&gt;&lt;strong&gt;&lt;font color=&quot;green&quot;&gt;『Snap』常用命令&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;snap常用命令&quot;&gt;&lt;strong&gt;&lt;font id=&quot;keyword3&quot; color=&quot;green&quot;&gt;『Snap』常用命令&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
 &lt;hr /&gt;
 
 &lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
@@ -246,7 +397,7 @@ $ sudo snap remove &amp;lt;package&amp;gt;   #卸载指定安装包
 
 &lt;p style=&quot;margin-bottom:8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;shrun-sh-files-in-linux&quot;&gt;&lt;strong&gt;&lt;font color=&quot;green&quot;&gt;『.sh』Run .sh files in Linux&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;shrun-sh-files-in-linux&quot;&gt;&lt;strong&gt;&lt;font id=&quot;keyword4&quot; color=&quot;green&quot;&gt;『.sh』Run .sh files in Linux&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
 &lt;hr /&gt;
 
 &lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
@@ -261,7 +412,7 @@ $ sudo snap remove &amp;lt;package&amp;gt;   #卸载指定安装包
 
 &lt;p style=&quot;margin-bottom:8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;wine在debian-10中安装wine-通过wine直接安装微软程序&quot;&gt;&lt;strong&gt;&lt;font color=&quot;green&quot;&gt;『Wine』在Debian 10中安装Wine, 通过wine直接安装微软程序&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;wine在debian-10中安装wine-通过wine直接安装微软程序&quot;&gt;&lt;strong&gt;&lt;font id=&quot;keyword5&quot; color=&quot;green&quot;&gt;『Wine』在Debian 10中安装Wine, 通过wine直接安装微软程序&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
 &lt;hr /&gt;
 
 &lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
@@ -307,7 +458,7 @@ $ notepad-plus-plus		  #在Terminal中直接启动
 
 &lt;p style=&quot;margin-bottom:8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;debian终端命令debain-terminal-commands&quot;&gt;&lt;strong&gt;&lt;font color=&quot;green&quot;&gt;『Debian终端命令』Debain Terminal Commands&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;debian终端命令debain-terminal-commands&quot;&gt;&lt;strong&gt;&lt;font id=&quot;keyword6&quot; color=&quot;green&quot;&gt;『Debian终端命令』Debain Terminal Commands&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
 &lt;hr /&gt;
 
 &lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
@@ -348,109 +499,7 @@ $ sudo apt-get clean                   #clean unnecessary dependencies, &quot;ap
 &lt;p&gt;#Check if packages are being held by the packages manager&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# apt-get -u dist-upgrade                        #To check if the installer holds packages pending of installation run
 # apt-get remove –dry-run packagename            #to remove the be held packages, to run
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="VPS" /><category term="RDP" /></entry><entry><title type="html">Google/Google Cloud</title><link href="http://localhost:8000/tech/GCE/" rel="alternate" type="text/html" title="Google/Google Cloud" /><published>2020-03-22T23:07:00+08:00</published><updated>2020-03-22T23:07:00+08:00</updated><id>http://localhost:8000/tech/GCE</id><content type="html" xml:base="http://localhost:8000/tech/GCE/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;1-gce-vps&quot;&gt;&lt;a href=&quot;https://console.cloud.google.com&quot;&gt;1. GCE VPS&lt;/a&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;GCE防火墙设置：&lt;/p&gt;
-
-    &lt;table style=&quot;width:100%&quot;&gt;
-      &lt;tbody&gt;
-          &lt;tr&gt;
-              &lt;td width=&quot;100%&quot;&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/124.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/124.png&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/td&gt;		
-          &lt;/tr&gt;		
-      &lt;/tbody&gt;			
-  &lt;/table&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;速度：&lt;/p&gt;
-
-    &lt;table&gt;
-      &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th style=&quot;text-align: center&quot;&gt;Carrier&lt;/th&gt;
-          &lt;th style=&quot;text-align: center&quot;&gt;GCE线路&lt;/th&gt;
-          &lt;th style=&quot;text-align: center&quot;&gt;速度&lt;/th&gt;
-        &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;CM&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;Tokyo&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;good&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;CT&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;HK&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;ok&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;CT&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;US&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;bad&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;2-vps主机中安装linux桌面环境脚本和windows-rdp远程桌面连接&quot;&gt;2. VPS主机中安装Linux桌面环境(脚本)和Windows RDP远程桌面连接&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;教程1一键脚本-该教程安装后较卡&quot;&gt;教程1：&lt;a href=&quot;/tech/Linux-RDP-on-VPS1/&quot;&gt;一键脚本&lt;/a&gt;  (该教程安装后，较卡)&lt;/h4&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;教程2精简逐步命令行方式&quot;&gt;教程2：&lt;a href=&quot;/tech/Linux-RDP-on-VPS2/&quot;&gt;精简逐步命令行方式&lt;/a&gt;&lt;/h4&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;3-在-compute-engine-上设置-chrome-远程桌面&quot;&gt;3. 在 Compute Engine 上设置 Chrome 远程桌面&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;官方教程&quot;&gt;&lt;a href=&quot;https://cloud.google.com/solutions/chrome-desktop-remote-on-compute-engine?hl=zh-cn&quot;&gt;官方教程&lt;/a&gt;&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;h5 id=&quot;chrome远程桌面-登录界面&quot;&gt;&lt;a href=&quot;https://remotedesktop.google.com/u/1/access/&quot;&gt;Chrome远程桌面-登录界面&lt;/a&gt;&lt;/h5&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;h5 id=&quot;chrome远程桌面-授权&quot;&gt;&lt;a href=&quot;https://remotedesktop.google.com/headless?hl=zh-cn&quot;&gt;Chrome远程桌面-授权&lt;/a&gt;&lt;/h5&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;h5 id=&quot;chrome远程桌面-取消授权&quot;&gt;&lt;a href=&quot;https://remotedesktop.google.com/access?hl=zh-cn&quot;&gt;Chrome远程桌面-取消授权&lt;/a&gt;&lt;/h5&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;h5 id=&quot;chrome远程桌面-qa&quot;&gt;&lt;a href=&quot;https://support.google.com/chrome/answer/1649523?hl=zh-Hans&amp;amp;co=GENIE.Platform%3DDesktop&amp;amp;oco=1&quot;&gt;Chrome远程桌面-Q&amp;amp;A&lt;/a&gt;&lt;/h5&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;亲测所有步骤on-debian10-gce-vps---chrome-rdp--anboxsnapwine&quot;&gt;&lt;a href=&quot;/tech/Chrome-RDP-full-steps/&quot;&gt;亲测所有步骤：on Debian10 GCE VPS - Chrome RDP + Anbox/Snap/Wine&lt;/a&gt;&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;登录RDP初始化需要验证谷歌账户，即需要VPN (对VPN连接的质量要求不高，通过验证即可；登录成功后，建议保留该VPN连接，否则会出现明显卡顿现象)。&lt;/li&gt;
-      &lt;li&gt;默认本地有声音；本地速度流程；视频有卡顿，但基本还能勉强看。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;4-wireguard-一键安装脚本&quot;&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/WireGuard-Quick-Install-Script/&quot;&gt;4. WireGuard 一键安装脚本&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;5-墙内使用google服务&quot;&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Use-Google-Services-in-China/&quot;&gt;5. 墙内使用Google服务&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;6-更改google国家地区&quot;&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Change-Google-Area/&quot;&gt;6. 更改Google国家地区&lt;/a&gt;&lt;/h3&gt;</content><author><name></name></author><category term="VPS" /><category term="VPN" /><category term="RDP" /><summary type="html">谷歌账号,VPS,VPN(Wireguard),Windows远程桌面</summary></entry><entry><title type="html">Enable desktop experience &amp;amp; RDP for Ubuntu 18.04 LTS VM in GCP</title><link href="http://localhost:8000/tech/Linux-RDP-on-VPS2/" rel="alternate" type="text/html" title="Enable desktop experience &amp; RDP for Ubuntu 18.04 LTS VM in GCP" /><published>2020-03-16T01:31:00+08:00</published><updated>2020-03-16T01:31:00+08:00</updated><id>http://localhost:8000/tech/Linux%20RDP%20on%20VPS2</id><content type="html" xml:base="http://localhost:8000/tech/Linux-RDP-on-VPS2/">&lt;p style=&quot;margin-bottom:35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="VPS" /><category term="RDP" /></entry><entry><title type="html">Enable desktop experience &amp;amp; RDP for Ubuntu 18.04 LTS VM in GCP</title><link href="http://localhost:8000/tech/Linux-RDP-on-VPS2/" rel="alternate" type="text/html" title="Enable desktop experience &amp; RDP for Ubuntu 18.04 LTS VM in GCP" /><published>2020-03-16T01:31:00+08:00</published><updated>2020-03-16T01:31:00+08:00</updated><id>http://localhost:8000/tech/Linux%20RDP%20on%20VPS2</id><content type="html" xml:base="http://localhost:8000/tech/Linux-RDP-on-VPS2/">&lt;p style=&quot;margin-bottom:35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 &lt;p&gt;&lt;span style=&quot;font-size:30px;font-weight:bold;color:#70ad47;&quot;&gt;准备工作&lt;/span&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;日常更新&quot;&gt;日常更新&lt;/h3&gt;
@@ -639,9 +688,9 @@ passwd
       &lt;/tbody&gt;			
   &lt;/table&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="VPS" /><category term="RDP" /></entry><entry><title type="html">EBook</title><link href="http://localhost:8000/tech/EBook/" rel="alternate" type="text/html" title="EBook" /><published>2020-01-28T21:40:00+08:00</published><updated>2020-01-28T21:40:00+08:00</updated><id>http://localhost:8000/tech/EBook</id><content type="html" xml:base="http://localhost:8000/tech/EBook/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="VPS" /><category term="RDP" /></entry><entry><title type="html">『总贴』EBook电子书</title><link href="http://localhost:8000/tech/EBook/" rel="alternate" type="text/html" title="『总贴』EBook电子书" /><published>2020-01-28T21:40:00+08:00</published><updated>2020-01-28T21:40:00+08:00</updated><id>http://localhost:8000/tech/EBook</id><content type="html" xml:base="http://localhost:8000/tech/EBook/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;ebook&quot;&gt;&lt;strong&gt;EBook&lt;/strong&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;ebook-apps&quot;&gt;&lt;strong&gt;EBook Apps&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -924,41 +973,4 @@ passwd
 
     &lt;p style=&quot;margin-top: -10px;&quot;&gt;&amp;emsp;&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="Android" /></entry><entry><title type="html">Windows微软 常见问题和解决方案汇总</title><link href="http://localhost:8000/tech/Windows-Common-Issues-&-Solutions/" rel="alternate" type="text/html" title="Windows微软 常见问题和解决方案汇总" /><published>2019-12-28T22:53:00+08:00</published><updated>2019-12-28T22:53:00+08:00</updated><id>http://localhost:8000/tech/Windows%20Common%20Issues%20&amp;%20Solutions</id><content type="html" xml:base="http://localhost:8000/tech/Windows-Common-Issues-&amp;-Solutions/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
-Keywords: 
-&lt;a href=&quot;#keyword1&quot;&gt;官方WinPE&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p id=&quot;keyword1&quot; style=&quot;height:;&quot;&gt;&lt;font color=&quot;purple&quot; size=&quot;5&quot; style=&quot;border-bottom: 2px solid grey;display:block&quot;&gt;1. 微软官方WinPE 启动U盘或iso制作&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;背景：偶然发现使用习惯的”老毛桃”安装后，在设置共享权限时，发现”未知用户@管理员权限”，引起了我的警惕。确实，还是”官方的WinPE + 原生的WinNTSetup”更为安全。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.tenforums.com/tutorials/103428-create-winpe-usb-iso.html&quot;&gt;参考链接1：详细步骤指令&lt;/a&gt;
-&lt;a href=&quot;https://docs.microsoft.com/zh-cn/windows-hardware/get-started/adk-install&quot;&gt;参考链接2：官方下载网址&lt;/a&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;从链接2下载：&lt;code class=&quot;highlighter-rouge&quot;&gt;Windows ADK&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;Windows PE 加载项&lt;/code&gt;。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;安装下载文件：&lt;code class=&quot;highlighter-rouge&quot;&gt;Windows ADK&lt;/code&gt;选中”Deployment Tools”，&lt;code class=&quot;highlighter-rouge&quot;&gt;Windows PE 加载项&lt;/code&gt;选中”Windows Preinstallation Environment(Windows PE)”。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;管理员模式运行&lt;code class=&quot;highlighter-rouge&quot;&gt;Deployment and Imaging Tools&lt;/code&gt;CMD窗口。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;在窗口中输入命令：&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;copype amd64 C:\WinPEx64&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;插入U盘：
-        &lt;ul&gt;
-          &lt;li&gt;bootable U-disk：&lt;code class=&quot;highlighter-rouge&quot;&gt;MakeWinPEMedia /UFD C:\WinPEx64 E:&lt;/code&gt;&lt;/li&gt;
-          &lt;li&gt;create WinPE.iso: &lt;code class=&quot;highlighter-rouge&quot;&gt;MakeWinPEMedia /ISO D:\WinPEx64 F:\WPE64.iso&lt;/code&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="OS" /></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="Android" /></entry></feed>

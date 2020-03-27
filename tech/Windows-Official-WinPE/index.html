@@ -25,9 +25,9 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">  
-    <h1 class="post-title p-name" itemprop="name headline">国内手机银行android下载地址</h1>
+    <h1 class="post-title p-name" itemprop="name headline">微软官方WinPE 启动U盘或iso制作</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2019-12-21T01:01:00+08:00" itemprop="datePublished">Dec 21, 2019
+      <time class="dt-published" datetime="2019-12-28T22:53:00+08:00" itemprop="datePublished">Dec 28, 2019
       </time></p>
 
 
@@ -37,8 +37,8 @@
 <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Category▸&nbsp;</em></strong></span>   
   
   
-  <a href="/categories/#DigitGame">
-      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>DigitGame</em></strong></span>     
+  <a href="/categories/#Tech">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Tech</em></strong></span>     
   </a>  
   
   
@@ -51,13 +51,8 @@
 <span style="font-size: 13px; color: #6d9eeb;"><strong><em>Tag▸&nbsp;</em></strong></span> 
   
   
-  <a href="/tags/#LegacyBank">
-     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>LegacyBank</em></strong></span>  
-  </a>
-  &nbsp;
-  
-  <a href="/tags/#E-Wallet/BankCard">
-     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>E-Wallet/BankCard</em></strong></span>  
+  <a href="/tags/#OS">
+     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>OS</em></strong></span>  
   </a>
   
   
@@ -72,66 +67,38 @@
     <p><br /></p>
 
 <blockquote>
-  <p>背景: 国内手机银行(安卓版)，往往较易于在各个第三方应用中心下载获得，鉴于应用中心的参差不齐，app的安全性令人堪忧，最可靠的方式为在银行官网直接下载。</p>
+  <p>背景：偶然发现使用习惯的”老毛桃”安装后，在设置共享权限时，发现”未知用户@管理员权限”，引起了我的警惕。确实，还是”官方的WinPE + 原生的WinNTSetup”更为安全。</p>
 </blockquote>
 
-<p style="margin-bottom:-20px;">&nbsp;</p>
+<p><a href="https://www.tenforums.com/tutorials/103428-create-winpe-usb-iso.html">参考链接1：详细步骤指令</a>
+<a href="https://docs.microsoft.com/zh-cn/windows-hardware/get-started/adk-install">参考链接2：官方下载网址</a></p>
 
-<p>现状：</p>
-<ul>
-  <li>各家手机银行官网，”二维码”方式交易获得；</li>
-  <li>但”直接下载链接”方式，一般藏得很深，甚至完全没有；</li>
-  <li>无论哪种方式，MD5校验码和更新信息(如发布日期和版本号)，几乎很少提供；这种不透明性，无形之中给恶意篡改者透过第三方下载平台，提供了很大的操作空间。➤<br /> <font color="#cc4125">这种不必要的"金融风险"，实则源于银行方的怠倦疏忽、责任意识低下导致；相反，本末倒置，将精力投放在管控"root设备"，实际上root导致的风险，用户自然提前知晓和自行承担，银行方完全没有必要"强制"限制 (如建行)。<br /></font></li>
-</ul>
+<ol>
+  <li>
+    <p>从链接2下载：<code class="highlighter-rouge">Windows ADK</code> + <code class="highlighter-rouge">Windows PE 加载项</code>。</p>
+  </li>
+  <li>
+    <p>安装下载文件：<code class="highlighter-rouge">Windows ADK</code>选中”Deployment Tools”，<code class="highlighter-rouge">Windows PE 加载项</code>选中”Windows Preinstallation Environment(Windows PE)”。</p>
+  </li>
+  <li>
+    <p>管理员模式运行<code class="highlighter-rouge">Deployment and Imaging Tools</code>CMD窗口。</p>
+  </li>
+  <li>
+    <p>在窗口中输入命令：</p>
+    <ul>
+      <li><code class="highlighter-rouge">copype amd64 C:\WinPEx64</code></li>
+      <li>插入U盘：
+        <ul>
+          <li>bootable U-disk：<code class="highlighter-rouge">MakeWinPEMedia /UFD C:\WinPEx64 E:</code></li>
+          <li>create WinPE.iso: <code class="highlighter-rouge">MakeWinPEMedia /ISO D:\WinPEx64 F:\WPE64.iso</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
 
-<p><br /></p>
-<h3 id="国内手机银行安卓版直接下载链接">国内手机银行(安卓版)直接下载链接：</h3>
-<p style="margin-bottom:-15px;">&nbsp;</p>
 
-<h4 id="1-工商银行"><strong>1. 工商银行</strong></h4>
-<ul>
-  <li><a href="http://m.icbc.com.cn/ICBC/%e7%bd%91%e7%ab%99%e8%b0%83%e7%94%a8%e4%b8%93%e9%a2%98/%e7%bd%91%e9%93%b6%e7%99%bb%e9%99%86%e9%a6%96%e9%a1%b5.htm">融e行</a></li>
-  <li><a href="http://m.icbc.com.cn/ICBC/kfssjyxkh9/4.htm">融e联</a></li>
-</ul>
-
-<p style="margin-bottom:-8px;">&nbsp;</p>
-<h4 id="2招商银行"><strong>2.招商银行</strong></h4>
-<ul>
-  <li><a href="http://m.cmbchina.com/Common/SoftwareDetail.aspx?pageid=android">手机银行</a></li>
-  <li><a href="https://static.cc.cmbimg.com/s/app/linkApp.html">掌上生活</a></li>
-</ul>
-
-<p style="margin-bottom:-8px;">&nbsp;</p>
-<h4 id="3建设银行"><strong>3.建设银行</strong></h4>
-<ul>
-  <li><a href="http://ebank1.ccb.com/cn/ebank/personal/serviceversion/201306081370667047.html">手机银行</a></li>
-</ul>
-
-<p style="margin-bottom:-8px;">&nbsp;</p>
-<h4 id="4邮储银行"><strong>4.邮储银行</strong></h4>
-<ul>
-  <li><a href="http://phone.psbc.com/">手机银行</a></li>
-</ul>
-
-<p style="margin-bottom:-8px;">&nbsp;</p>
-<h4 id="5农业银行"><strong>5.农业银行</strong></h4>
-<ul>
-  <li><a href="http://mobile.abchina.com/download/clientDownload/zh_CN/MB_Index.aspx">手机银行</a></li>
-</ul>
-
-<p style="margin-bottom:-8px;">&nbsp;</p>
-<h4 id="6中国银行"><strong>6.中国银行</strong></h4>
-<ul>
-  <li><a href="https://www.bankofchina.com/ebanking/service/cs1/201009/t20100921_1151946.html">手机银行</a></li>
-</ul>
-
-<p style="margin-bottom:-8px;">&nbsp;</p>
-<h4 id="7交通银行"><strong>7.交通银行</strong></h4>
-<ul>
-  <li><a href="https://wap.95559.com.cn/mobs/main.html#downloadApp?t=2">手机银行</a></li>
-</ul>
-
-  </div><a class="u-url" href="/digitgame/China-Mobile-Bank-DownloadLink/" hidden></a>
+  </div><a class="u-url" href="/tech/Windows-Official-WinPE/" hidden></a>
     
 </article>
       </div>

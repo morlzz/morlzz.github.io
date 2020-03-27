@@ -25,7 +25,7 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">  
-    <h1 class="post-title p-name" itemprop="name headline">Android 常见问题和解决方案汇总</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Android系统常见问题解决方案</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="2019-06-13T01:41:00+08:00" itemprop="datePublished">Jun 13, 2019
       </time></p>
@@ -59,7 +59,7 @@
 </div>
 
 <span style="font-size:; color: rgb(127, 127, 127);"><strong><em><p><p/>Abstract&nbsp;▹
-    锁屏码/支付宝指纹验证问题/银行App绕过Root检测/Data分区清空/安卓多用户、及多用户下Magisk/EdXosed/Xposed生效问题/墙内使用Google...</em></strong></span>
+    锁屏码/支付宝指纹验证问题/Data分区清空...</em></strong></span>
 
   </header>
 
@@ -68,11 +68,8 @@
     <p style="margin-bottom: 12px;color:#474747;font-size:14px;">
 Keywords: 
 <a href="#keyword1">锁屏码</a>， 
-<a href="#keyword2">支付宝指纹验证问题</a>，
-<a href="#keyword3">银行App绕过Root检测</a>， 
-<a href="#keyword4">Data分区清空后成功完成TWRP Restore的方法</a>，
-<a href="#keyword5">安卓多用户&amp;克隆App&amp;应用双开、多用户下Magisk/EdXosed/Xposed生效问题</a>，
-<a href="#keyword6">墙内使用Google服务</a>
+<a href="#keyword2">支付宝指纹验证问题</a>， 
+<a href="#keyword3">Data分区清空后成功完成TWRP Restore的方法</a>
 </p>
 
 <p><br /></p>
@@ -150,49 +147,7 @@ rm /data/system/gatekeeper.pattern.key
 </table>
 
 <p><br /></p>
-<p id="keyword3"><font color="purple" size="5" style="border-bottom: 2px solid grey;display:block">2. 银行App绕过Root检测 (如建设银行App)</font></p>
-
-<blockquote>
-  <p>背景：对于已经Root的手机，部分App严苛检测，一经检测到，完全不让使用该App。</p>
-</blockquote>
-
-<h4 id="root-magisk手机-绕过root检测的方法-20190619-亲测"><strong>Root (Magisk)手机: 绕过Root检测的方法 (20190619 亲测)</strong></h4>
-
-<ol>
-  <li>
-    <p>Magisk Manager: 安装 <code class="highlighter-rouge">MagiskHide Props Config</code>、<code class="highlighter-rouge">Riru-Core</code>、<code class="highlighter-rouge">Riru-EdXposed</code>模块。</p>
-  </li>
-  <li>EdXposed Manager: 安装 <code class="highlighter-rouge">对话框取消</code>、<code class="highlighter-rouge">HiddenCore Module</code>、<code class="highlighter-rouge">RootCloak</code>、<code class="highlighter-rouge">XPrivacyLua</code>模块。
-    <ul>
-      <li>XPrivacyLua：禁止 “读取应用列表”。</li>
-      <li>RootCloak：将App”包名”加入。</li>
-      <li>对话框取消：开启增强模式，在目标App设置中启用”防检测”，”隐藏其他应用”中勾选所有使用到Root权限的App。</li>
-      <li>HiddenCore Module：无需任何设置。</li>
-    </ul>
-
-    <blockquote>
-      <p>Note：if &lt; Android 9，use “Xposed framework/manager” directly, no need install “EdXposed” module through Magisk.</p>
-    </blockquote>
-  </li>
-  <li>
-    <p>在 Magisk Manager “Magisk Hide”中，勾选对应App。</p>
-  </li>
-  <li>重启即可。</li>
-</ol>
-
-<p><br />
-<i style="color:#776c6c;"> Note:<br />
-<u>1) 理论上所有的类似App (尤其: <strong>银行类App</strong>) 均可适用该方法。</u><br />
-<u>2) 类似App需要安装在其他用户/AFW下，步骤如下：</u><br />
- - 在主用户上，先行安装该App、并使用以上Magisk + EdXposed方法；<br />
-  * 该App：不用打开，禁止任何权限。<br />
- - 在主用户上，确保设置好Magisk Hide后，可将该App直接”禁用”或者”冻结”；<br />
- - 尔后，在其他用户或者AFW上，安装该App，则可，绕开效果和主用户上一致。<br />
-  * <strong>该App：在其他用户或者AFW下，给予所需权限，以便正常使用。</strong>
-</i></p>
-
-<p><br /></p>
-<p id="keyword4"><font color="purple" size="5" style="border-bottom: 2px solid grey;display:block">3. 一加手机"未加密" -&gt; 启动"手机加密", 失败后的情形 (Data分区全部清空)和成功完成TWRP Restore的方法</font></p>
+<p id="keyword3"><font color="purple" size="5" style="border-bottom: 2px solid grey;display:block">2. 一加手机"未加密" -&gt; 启动"手机加密", 失败后的情形 (Data分区全部清空)和成功完成TWRP Restore的方法</font></p>
 
 <blockquote>
   <p>手机默认状态：TWRP、Root (Magisk)、Disable-DM-Verify Patch (即手机”未加密”状态)。</p>
@@ -236,26 +191,10 @@ rm /data/system/gatekeeper.pattern.key
 </ol>
 
 <p><br /></p>
-<p id="keyword5"><font color="purple" size="5" style="border-bottom: 2px solid grey;display:block">4. TWRP双清对App是否影响</font></p>
+<p id="keyword5"><font color="purple" size="5" style="border-bottom: 2px solid grey;display:block">3. TWRP双清对App是否影响</font></p>
 
 <p>亲测，当<code class="highlighter-rouge">Dalvik Cache</code>以及<code class="highlighter-rouge">Cache</code>双清时，对系统中的App没有任何影响，每个App存储的账号和数据均不受影响。</p>
 
-<p><br /></p>
-<p id="keyword5"><font color="purple" size="5" style="border-bottom: 2px solid grey;display:block">5. 安卓多用户、克隆App、应用双开</font></p>
-
-<blockquote>
-  <p>背景：<br />- <strong>安卓多用户</strong> :  沙箱机制，各用户在各个子系统中各司其职，互不干涉，实现信息隔离和隐私保护，除了安卓自带的 <code class="highlighter-rouge">多用户功能 MultiUser</code>外，还有 <code class="highlighter-rouge">工作资料 AFW (Andriod for Work)</code> (和主用户在同一系统下)均可实现子系统。<br />- <strong>克隆 App</strong> : 如 <code class="highlighter-rouge">App Cloner应用</code>, 当有&gt;=2个双开需要求时，可使用，原理：更改包名；无需建立虚拟空间。 <br />- <strong>应用双开</strong> : 1) <code class="highlighter-rouge">系统自带的双开</code>：需借助 “多用户机制”，当多用户数量达到系统设定的上限时，”系统自带的双开”则无法启用；2) <code class="highlighter-rouge">第三方双开软件, 如"平行空间"</code>, 因是第三方，所以不受系统的多用户上限数量限制。</p>
-</blockquote>
-
-<p style="margin-top: -25px;">&emsp;</p>
-<h4 id="安卓多用户克隆app多用户下magiskedxosedxposed生效问题"><a href="/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&amp;-Clone-App/">安卓多用户、克隆App、多用户下Magisk/EdXosed/Xposed生效问题</a></h4>
-
-<p><br /></p>
-<p id="keyword6"><font color="purple" size="5" style="border-bottom: 2px solid grey;display:block">6. 墙内如何使用Google服务 </font></p>
-
-<h4 id="墙内使用google服务"><a href="/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Use-Google-Services-in-China/">墙内使用Google服务</a></h4>
-
-<h4 id="其中翻墙部分目前推荐使用wireguardwireguard">其中翻墙部分，目前推荐使用Wireguard：<a href="/tech/%E6%90%AC%E8%BF%90/WireGuard-Quick-Install-Script/">WireGuard</a></h4>
 
   </div><a class="u-url" href="/tech/Andriod-Common-Issues/" hidden></a>
     

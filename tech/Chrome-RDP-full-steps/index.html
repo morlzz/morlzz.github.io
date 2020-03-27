@@ -25,7 +25,7 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">  
-    <h1 class="post-title p-name" itemprop="name headline">亲测所有步骤 - Chrome RDP + Anbox on Debian10 GCE VPS</h1>
+    <h1 class="post-title p-name" itemprop="name headline">亲测所有步骤 - Chrome RDP + Anbox/Snap/Wine on Debian10 GCE VPS</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="2020-03-22T23:12:00+08:00" itemprop="datePublished">Mar 22, 2020
       </time></p>
@@ -69,9 +69,19 @@
 
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p><br /><br /></p>
+    <p style="margin-bottom: 12px;color:#474747;font-size:14px;">
+Keywords: 
+<a href="#keyword1">Install Chrome RDP</a>， 
+<a href="#keyword2">Install Snap,Anbox</a>，
+<a href="#keyword3">Snap常用指令</a>，
+<a href="#keyword4">Install ".sh" File</a>， 
+<a href="#keyword5">Install Wine</a>，
+<a href="#keyword6">Debian常用指令</a>
+</p>
 
-<h3 id="chrome-rdpgce-vm安装-chrome-远程桌面"><strong><font color="green">『Chrome RDP』<a align="left" href="https://console.cloud.google.com/iam-admin/projects?hl=zh-cn" target="_blank">GCE VM安装 Chrome 远程桌面</a></font></strong></h3>
+<p><br /><br /></p>
+
+<h3 id="chrome-rdpgce-vm安装-chrome-远程桌面"><strong><font id="keyword1" color="green">『Chrome RDP』<a align="left" href="https://console.cloud.google.com/iam-admin/projects?hl=zh-cn" target="_blank">GCE VM安装 Chrome 远程桌面</a></font></strong></h3>
 <hr />
 
 <ul>
@@ -204,7 +214,7 @@ sudo systemctl status chrome-remote-desktop                 #检查 Chrome远程
 
 <p style="margin-bottom:8px;">&nbsp;</p>
 
-<h3 id="anbox-snap在chrome-rdp中安装snapanbox通过anbox安装安卓apk"><strong><font color="green">『Anbox, Snap』在Chrome RDP中安装Snap、Anbox，通过Anbox安装安卓apk</font></strong></h3>
+<h3 id="anbox-snap在chrome-rdp中安装snapanbox通过anbox安装安卓apk"><strong><font id="keyword2" color="green">『Anbox, Snap』在Chrome RDP中安装Snap、Anbox，通过Anbox安装安卓apk</font></strong></h3>
 <hr />
 
 <p style="margin-bottom:-3px;">&nbsp;</p>
@@ -302,7 +312,7 @@ adb pull &lt;files&gt; '/sdcard/Download'           #从anbox向Linux传送数�
 
 <p style="margin-bottom:8px;">&nbsp;</p>
 
-<h3 id="snap常用命令"><strong><font color="green">『Snap』常用命令</font></strong></h3>
+<h3 id="snap常用命令"><strong><font id="keyword3" color="green">『Snap』常用命令</font></strong></h3>
 <hr />
 
 <p style="margin-bottom:-3px;">&nbsp;</p>
@@ -317,7 +327,7 @@ $ sudo snap remove &lt;package&gt;   #卸载指定安装包
 
 <p style="margin-bottom:8px;">&nbsp;</p>
 
-<h3 id="shrun-sh-files-in-linux"><strong><font color="green">『.sh』Run .sh files in Linux</font></strong></h3>
+<h3 id="shrun-sh-files-in-linux"><strong><font id="keyword4" color="green">『.sh』Run .sh files in Linux</font></strong></h3>
 <hr />
 
 <p style="margin-bottom:-3px;">&nbsp;</p>
@@ -332,7 +342,7 @@ $ sudo snap remove &lt;package&gt;   #卸载指定安装包
 
 <p style="margin-bottom:8px;">&nbsp;</p>
 
-<h3 id="wine在debian-10中安装wine-通过wine直接安装微软程序"><strong><font color="green">『Wine』在Debian 10中安装Wine, 通过wine直接安装微软程序</font></strong></h3>
+<h3 id="wine在debian-10中安装wine-通过wine直接安装微软程序"><strong><font id="keyword5" color="green">『Wine』在Debian 10中安装Wine, 通过wine直接安装微软程序</font></strong></h3>
 <hr />
 
 <p style="margin-bottom:-3px;">&nbsp;</p>
@@ -378,7 +388,7 @@ $ notepad-plus-plus		  #在Terminal中直接启动
 
 <p style="margin-bottom:8px;">&nbsp;</p>
 
-<h3 id="debian终端命令debain-terminal-commands"><strong><font color="green">『Debian终端命令』Debain Terminal Commands</font></strong></h3>
+<h3 id="debian终端命令debain-terminal-commands"><strong><font id="keyword6" color="green">『Debian终端命令』Debain Terminal Commands</font></strong></h3>
 <hr />
 
 <p style="margin-bottom:-3px;">&nbsp;</p>
