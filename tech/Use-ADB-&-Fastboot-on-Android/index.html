@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8000/feed.xml" title="Morgan Zhao's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Morgan Zhao&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/Search/">Search</a><a class="page-link" href="/tags/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">  
+    <h1 class="post-title p-name" itemprop="name headline">在安卓手机上使用ADB &amp; Fastboot命令</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-01-07T02:53:00+08:00" itemprop="datePublished">Jan 7, 2020
+      </time></p>
+
+
+<div class="post-categories">
+  
+  
+<span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Category▸&nbsp;</em></strong></span>   
+  
+  
+  <a href="/categories/#Tech">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Tech</em></strong></span>     
+  </a>  
+  
+  
+</div>
+
+
+<div class="post-tags">
+    
+
+<span style="font-size: 13px; color: #6d9eeb;"><strong><em>Tag▸&nbsp;</em></strong></span> 
+  
+  
+  <a href="/tags/#Android">
+     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>Android</em></strong></span>  
+  </a>
+  
+  
+</div>
+
+<span style="font-size:; color: rgb(127, 127, 127);"><strong><em></em></strong></span>
+
+  </header>
+
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><br /></p>
+
+<blockquote>
+  <p><strong>背景</strong>：<br />当一部安卓手机需要透过adb命令进行<code class="highlighter-rouge">USB调试</code>时，默认只能连接<code class="highlighter-rouge">PC</code>，在外时非常不便。该方法可成功使用”手机#1”代替”PC”，使用ADB &amp; Fastboot命令，连接&amp;操作”手机#2”。<br /><br /> <strong>好处</strong>：<br />“手机#2”不必root情况下，可随时透过adb方式，最大化的管理手机相关权限（如可使用<code class="highlighter-rouge">App Ops</code>、<code class="highlighter-rouge">Greenify</code>）。</p>
+</blockquote>
+
+<p><br /></p>
+
+<h4 id="主要参考链接"><strong><u>主要参考链接</u></strong></h4>
+<ul>
+  <li><a href="https://android.gadgethacks.com/how-to/use-adb-fastboot-commands-without-computer-0200838/">Use ADB &amp; Fastboot Commands Without a Computer</a>, BY STEPHEN PERKINS, 07/17/2019</li>
+</ul>
+
+<p style="margin-top: -15px;">&emsp;</p>
+
+<h4 id="重点摘录"><strong><u>重点摘录</u></strong></h4>
+<ul>
+  <li>
+    <h4 id="手机1要求"><strong>“手机#1”要求</strong></h4>
+    <ul>
+      <li>已root</li>
+      <li>已安装Magisk，安装模块<code class="highlighter-rouge">ADB &amp; Fastboot for Android</code></li>
+      <li>需支持<code class="highlighter-rouge">USB OTG</code>连接</li>
+      <li>安装命令行终端，如<code class="highlighter-rouge">Termux</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-top: -37px;">&emsp;</p>
+
+<ul>
+  <li>
+    <h4 id="手机2-non-root要求"><strong>“手机#2 (non-root)”要求</strong></h4>
+    <ul>
+      <li>打开”开发者模式”下<code class="highlighter-rouge">USB调试</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-top: -15px;">&emsp;</p>
+
+<h4 id="实测分享和注意点"><strong><u>实测分享和注意点</u></strong></h4>
+<ul>
+  <li>
+    <h4 id="cable连接两部手机"><strong>Cable连接两部手机</strong></h4>
+    <ul>
+      <li>亲测发现，当cable两端无需转换接口时，<code class="highlighter-rouge">文件传输</code>和<code class="highlighter-rouge">USB调试</code>均可正常工作；但当cable两端(或任一端口)需转换接口时，仅<code class="highlighter-rouge">文件传输</code>可正常工作，<code class="highlighter-rouge">USB调试</code>无反应。因此，建议使用<strong>无需转换接口的cable直接连接两部手机</strong>。</li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-top: -37px;">&emsp;</p>
+
+<ul>
+  <li>
+    <h4 id="操作步骤"><strong>操作步骤</strong></h4>
+    <ol>
+      <li>手机#1：将<code class="highlighter-rouge">USB OTG数据交换</code>功能打开。</li>
+      <li>手机#2：将<code class="highlighter-rouge">USB调试</code>打开。</li>
+      <li>连接cable。</li>
+      <li>手机#2：在弹出的”USB偏好设置”中，选择<code class="highlighter-rouge">USB受控于 - 此设备</code>(如果有该选项)；选择<code class="highlighter-rouge">USB用途 - 不进行数据传输</code>。</li>
+      <li>手机#1：打开<code class="highlighter-rouge">Termux</code>，获取<code class="highlighter-rouge">su</code>后，输入<code class="highlighter-rouge">adb devices</code>。</li>
+      <li>手机#2：弹出<code class="highlighter-rouge">允许USB调试吗？</code>窗口，打勾<code class="highlighter-rouge">一律允许使用这台计算机进行调试</code>&amp;点击<code class="highlighter-rouge">允许</code>。</li>
+      <li>手机#1：当第6步骤”被允许”后，”手机#1”SDcard根目录下自动生成两个文件 - <code class="highlighter-rouge">adbkey</code>、<code class="highlighter-rouge">adbkey.pub</code>。</li>
+      <li>手机#1：<code class="highlighter-rouge">Termux</code>获取<code class="highlighter-rouge">su</code>后，输入<code class="highlighter-rouge">adb devices</code>后，当看到”手机#1”的设备号时，即成功了。进而，输入需要的adb命令。</li>
+      <li><span><font color="grey"><u><strong>(optional)</strong></u></font> 手机#2：安全起见，完成相关操作后，将<code class="highlighter-rouge">USB调试</code>关闭。<code class="highlighter-rouge">撤销USB调试授权</code>。</span></li>
+    </ol>
+  </li>
+</ul>
+
+<p style="margin-top: -25px;">&emsp;</p>
+
+<table style="width:100%;">
+    <tbody>
+	    <tr class="firstRow">						
+			<td valign="top" colspan="3" align="center" style="font-size: 18px;font-weight: bold;">
+				手机#1
+			</td>
+        </tr>
+        <tr>			
+            <td width="33.3%" valign="top" align="center">
+			<a align="center" href="/assets/img/20200107/1/1.jpg" target="_blank">
+			<img align="center" src="/assets/img/20200107/1/1.jpg" width="100%" /></a>		
+			</td>
+            <td width="33.3%" valign="top" align="center">
+			<a align="center" href="/assets/img/20200107/1/2.jpg" target="_blank">
+			<img align="center" src="/assets/img/20200107/1/2.jpg" width="100%" /></a>		
+			</td>	
+            <td width="33.3%" valign="top" align="center">
+			<a align="center" href="/assets/img/20200107/1/3.jpg" target="_blank">
+			<img align="center" src="/assets/img/20200107/1/3.jpg" width="100%" /></a>		
+			</td>			
+        </tr>			
+    </tbody>
+</table>
+
+<table style="width:100%;">
+    <tbody>
+	    <tr class="firstRow">						
+			<td valign="top" colspan="3" align="center" style="font-size: 18px;font-weight: bold;">
+				手机#2
+			</td>
+        </tr>
+        <tr>			
+            <td width="33.3%" valign="top" align="center">
+			<a align="center" href="/assets/img/20200107/2/1.png" target="_blank">
+			<img align="center" src="/assets/img/20200107/2/1.png" width="100%" /></a>		
+			</td>
+            <td width="33.3%" valign="top" align="center">
+			<a align="center" href="/assets/img/20200107/2/2.png" target="_blank">
+			<img align="center" src="/assets/img/20200107/2/2.png" width="100%" /></a>		
+			</td>	
+            <td width="33.3%" valign="top" align="center">
+			<a align="center" href="/assets/img/20200107/2/3.png" target="_blank">
+			<img align="center" src="/assets/img/20200107/2/3.png" width="100%" /></a>		
+			</td>			
+        </tr>			
+    </tbody>
+</table>
+
+<p style="margin-top: -37px;">&emsp;</p>
+
+<ul>
+  <li>
+    <h4 id="adb-commands"><strong>ADB Commands</strong></h4>
+    <ul>
+      <li><a href="https://shizuku.rikka.app/zh-hans/guide/setup.html#_4-%E5%90%AF%E5%8A%A8-shizuku"><strong>启动shizuku</strong></a>
+        <ul>
+          <li>手机每次重启后或者因”USB调试”关闭而失效，都<strong>需要再次启动shizuku</strong> (当”shizuku”未启动时，<code class="highlighter-rouge">App Ops</code>不可进入设置，但”App Ops”已设置过的应用权限，永久有效)。
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/files/start.sh
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p style="margin-top: -10px;">&emsp;</p>
+
+    <ul>
+      <li><a href="https://greenify.uservoice.com/knowledgebase/articles/749142"><strong>greenify</strong></a>  <span style="font-size:16px;font-weight:bold;color:green;">(一次性设置即可)</span>
+        <ul>
+          <li>Accessibility service run-on-demand:
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb -d shell pm grant com.oasisfeng.greenify android.permission.WRITE_SECURE_SETTINGS
+</code></pre></div>            </div>
+          </li>
+          <li>Aggressive Doze on Android 7.0+ (non-root):
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb -d shell pm grant com.oasisfeng.greenify android.permission.WRITE_SECURE_SETTINGS
+</code></pre></div>            </div>
+          </li>
+          <li>Doze on the Go:
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb -d shell pm grant com.oasisfeng.greenify android.permission.DUMP
+</code></pre></div>            </div>
+          </li>
+          <li>Aggressive Doze (on device/ROM with Doze disabled):
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb -d shell pm grant com.oasisfeng.greenify android.permission.DUMP
+</code></pre></div>            </div>
+          </li>
+          <li>Wake-up Tracker:
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb -d shell pm grant com.oasisfeng.greenify android.permission.READ_LOGS
+</code></pre></div>            </div>
+          </li>
+          <li>Background-free enforcement on Android 8+ (non-root):
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb -d shell pm grant com.oasisfeng.greenify android.permission.GET_APP_OPS_STATS
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p style="margin-top: -10px;">&emsp;</p>
+
+    <ul>
+      <li><a href="https://ww.9to5google.com/2017/11/04/how-to-backup-restore-android-device-data-android-basics/#"><strong>full backup/restore all Android device’s data w/o root</strong></a>，<a href="https://forum.xda-developers.com/galaxy-nexus/general/guide-phone-backup-unlock-root-t1420351">详解</a>
+        <ul>
+          <li>full backup (can encrypt your backup with a password)
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb backup -apk -shared -all -f &lt;filepath&gt;/backup.ab
+</code></pre></div>            </div>
+            <p>另，网络上建议：backing up music, pictures, video, and other internal storage items manually；SMS自行单独备份。</p>
+          </li>
+          <li>full restore
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb restore &lt;filepath&gt;/backup.ab
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p style="margin-top: -10px;">&emsp;</p>
+
+    <ul>
+      <li><a href="https://island.oasisfeng.com/files"><strong>Island 文件传送门 - File Shuttle</strong></a>  <span style="font-size:16px;font-weight:bold;color:green;">(一次性设置即可)</span>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  pm grant com.oasisfeng.island android.permission.INTERACT_ACROSS_USERS
+</code></pre></div>        </div>
+      </li>
+    </ul>
+
+    <p style="margin-top: -10px;">&emsp;</p>
+  </li>
+</ul>
+
+  </div><a class="u-url" href="/tech/Use-ADB-&-Fastboot-on-Android/" hidden></a>
+    
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Morgan Zhao&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name"><a href="/">Morgan Zhao&#39;s Blog</a></li><li>FB：<a href="https://www.facebook.com/zzmorl"><span class="username">zzmorl</span></a></li></ul>
+      </div>
+
+<!--
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/zzmorl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">zzmorl</span></a></li></ul>
+</div>  
+
+      <div class="footer-col footer-col-3">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+-->
+	  
+	  <div class="footer-col footer-col-4">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+	  
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
+

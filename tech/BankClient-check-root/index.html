@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8000/feed.xml" title="Morgan Zhao's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Morgan Zhao&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/Search/">Search</a><a class="page-link" href="/tags/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">  
+    <h1 class="post-title p-name" itemprop="name headline">解决方法：银行App绕过Root检测</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-06-13T00:00:00+08:00" itemprop="datePublished">Jun 13, 2019
+      </time></p>
+
+
+<div class="post-categories">
+  
+  
+<span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Category▸&nbsp;</em></strong></span>   
+  
+  
+  <a href="/categories/#Tech">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Tech</em></strong></span>     
+  </a>  
+  
+  
+</div>
+
+
+<div class="post-tags">
+    
+
+<span style="font-size: 13px; color: #6d9eeb;"><strong><em>Tag▸&nbsp;</em></strong></span> 
+  
+  
+  <a href="/tags/#Android">
+     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>Android</em></strong></span>  
+  </a>
+  
+  
+</div>
+
+<span style="font-size:; color: rgb(127, 127, 127);"><strong><em><p><p/>Abstract&nbsp;▹
+    银行App绕过Root检测</em></strong></span>
+
+  </header>
+
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><br /></p>
+
+<p><font color="purple" size="5" style="border-bottom: 2px solid grey;display:block">银行App绕过Root检测 (如建设银行App)</font></p>
+
+<blockquote>
+  <p>背景：对于已经Root的手机，部分App严苛检测，一经检测到，完全不让使用该App。</p>
+</blockquote>
+
+<h4 id="root-magisk手机-绕过root检测的方法-20190619-亲测"><strong>Root (Magisk)手机: 绕过Root检测的方法 (20190619 亲测)</strong></h4>
+
+<ol>
+  <li>
+    <p>Magisk Manager: 安装 <code class="highlighter-rouge">MagiskHide Props Config</code>、<code class="highlighter-rouge">Riru-Core</code>、<code class="highlighter-rouge">Riru-EdXposed</code>模块。</p>
+  </li>
+  <li>EdXposed Manager: 安装 <code class="highlighter-rouge">对话框取消</code>、<code class="highlighter-rouge">HiddenCore Module</code>、<code class="highlighter-rouge">RootCloak</code>、<code class="highlighter-rouge">XPrivacyLua</code>模块。
+    <ul>
+      <li>XPrivacyLua：禁止 “读取应用列表”。</li>
+      <li>RootCloak：将App”包名”加入。</li>
+      <li>对话框取消：开启增强模式，在目标App设置中启用”防检测”，”隐藏其他应用”中勾选所有使用到Root权限的App。</li>
+      <li>HiddenCore Module：无需任何设置。</li>
+    </ul>
+
+    <blockquote>
+      <p>Note：if &lt; Android 9，use “Xposed framework/manager” directly, no need install “EdXposed” module through Magisk.</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>在 Magisk Manager “Magisk Hide”中，勾选对应App。</p>
+  </li>
+  <li>重启即可。</li>
+</ol>
+
+<p><br />
+<i style="color:#776c6c;"> Note:<br />
+<u>1) 理论上所有的类似App (尤其: <strong>银行类App</strong>) 均可适用该方法。</u><br />
+<u>2) 类似App需要安装在其他用户/AFW下，步骤如下：</u><br />
+ - 在主用户上，先行安装该App、并使用以上Magisk + EdXposed方法；<br />
+  * 该App：不用打开，禁止任何权限。<br />
+ - 在主用户上，确保设置好Magisk Hide后，可将该App直接”禁用”或者”冻结”；<br />
+ - 尔后，在其他用户或者AFW上，安装该App，则可，绕开效果和主用户上一致。<br />
+  * <strong>该App：在其他用户或者AFW下，给予所需权限，以便正常使用。</strong>
+</i></p>
+
+
+  </div><a class="u-url" href="/tech/BankClient-check-root/" hidden></a>
+    
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Morgan Zhao&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name"><a href="/">Morgan Zhao&#39;s Blog</a></li><li>FB：<a href="https://www.facebook.com/zzmorl"><span class="username">zzmorl</span></a></li></ul>
+      </div>
+
+<!--
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/zzmorl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">zzmorl</span></a></li></ul>
+</div>  
+
+      <div class="footer-col footer-col-3">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+-->
+	  
+	  <div class="footer-col footer-col-4">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+	  
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
+

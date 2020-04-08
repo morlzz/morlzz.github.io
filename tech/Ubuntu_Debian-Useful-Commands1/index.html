@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8000/feed.xml" title="Morgan Zhao's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Morgan Zhao&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/Search/">Search</a><a class="page-link" href="/tags/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">  
+    <h1 class="post-title p-name" itemprop="name headline">Ubuntu/Debian Useful Commands</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-03-22T00:00:00+08:00" itemprop="datePublished">Mar 22, 2020
+      </time></p>
+
+
+<div class="post-categories">
+  
+  
+<span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Category▸&nbsp;</em></strong></span>   
+  
+  
+  <a href="/categories/#Tech">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Tech</em></strong></span>     
+  </a>  
+  
+  
+</div>
+
+
+<div class="post-tags">
+    
+
+<span style="font-size: 13px; color: #6d9eeb;"><strong><em>Tag▸&nbsp;</em></strong></span> 
+  
+  
+  <a href="/tags/#Ubuntu">
+     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>Ubuntu</em></strong></span>  
+  </a>
+  
+  
+</div>
+
+<span style="font-size:; color: rgb(127, 127, 127);"><strong><em></em></strong></span>
+
+  </header>
+
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><br /><br /></p>
+
+<h3 id="debianubuntu终端命令debain-terminal-commands"><strong><font id="keyword6" color="green">『Debian/Ubuntu终端命令』Debain Terminal Commands</font></strong></h3>
+<hr />
+
+<p style="margin-bottom:-3px;">&nbsp;</p>
+
+<p>#安装.deb包</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$sudo apt install ./name.deb
+</code></pre></div></div>
+
+<p>#显示安装包</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ dpkg --list                        #show packages list
+</code></pre></div></div>
+
+<p>#卸载安装包xxx的几种方法</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get --purge remove xxx    #方法1：remove package "xxx", "–-remove"指卸载安装, "–-purge"指清除配置
+$ dpkg --remove xxx                  #方法2
+$ dpkg -r xxx.deb                    #方法3
+$ sudo apt purge -y packagename &amp;&amp; sudo apt autoremove -y    #方法4
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>例如，卸载安装包yyy，全过程</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  #卸载yyy
+  sudo apt remove --auto-remove yyy                  #删除已安装的软件包
+  sudo rm -f /etc/apt/sources.list.d/yyy.list        #禁用存储库
+
+  #进一步清理		
+  # apt-get clean &amp;&amp; apt-get autoremove
+  $ sudo apt-get -f install              #Another command to fix dependency problems
+  $ sudo dpkg --configure -a             #checks for dependency problems to fix            
+  $ sudo apt-get clean                   #clean unnecessary dependencies, "apt-get autoclean"
+  $ sudo apt-get update                  #Updates the packages’ list in the repositories
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>#Removing Broken Packages</p>
+<ul>
+  <li>clean: Removes cache of programs older than the installed.</li>
+  <li>autoremove: Removes unnecessary files, like dependencies which are not longer needed.</li>
+  <li>-f / –fix-broken install: Fix broken dependencies, correct possible package corruption problems.</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># apt-get clean &amp;&amp; apt-get autoremove
+$ sudo apt-get -f install
+$ sudo dpkg --configure -a
+</code></pre></div></div>
+
+<p>#Troubleshoot for issues when  installing or uninstalling software</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get update                  #Updates the packages’ list in the repositories
+$ sudo dpkg --configure -a             #checks for dependency problems to fix
+$ sudo apt-get -f install              #Another command to fix dependency problems
+$ sudo apt-get clean                   #clean unnecessary dependencies, "apt-get autoclean"
+</code></pre></div></div>
+
+<p>#Check if packages are being held by the packages manager</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># apt-get -u dist-upgrade                        #To check if the installer holds packages pending of installation run
+# apt-get remove –dry-run packagename            #to remove the be held packages, to run
+</code></pre></div></div>
+
+<p>#tar.gz文件解压缩</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tar xvzf 1.tar.gz
+</code></pre></div></div>
+
+<p>#tar.bz2文件解压缩</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tar xvjf 2.tar.bz2
+</code></pre></div></div>
+
+<p>#zip文件解压缩</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install unzip
+unzip test.zip                 #把文件解压到当前目录下
+unzip -d /temp test.zip        #把文件解压到指定的目录下
+</code></pre></div></div>
+
+<p>#命令行获取外网IP</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -L tool.lu/ip
+</code></pre></div></div>
+
+  </div><a class="u-url" href="/tech/Ubuntu_Debian-Useful-Commands1/" hidden></a>
+    
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Morgan Zhao&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name"><a href="/">Morgan Zhao&#39;s Blog</a></li><li>FB：<a href="https://www.facebook.com/zzmorl"><span class="username">zzmorl</span></a></li></ul>
+      </div>
+
+<!--
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/zzmorl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">zzmorl</span></a></li></ul>
+</div>  
+
+      <div class="footer-col footer-col-3">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+-->
+	  
+	  <div class="footer-col footer-col-4">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+	  
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
+

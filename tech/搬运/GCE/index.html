@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8000/feed.xml" title="Morgan Zhao's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Morgan Zhao&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/Search/">Search</a><a class="page-link" href="/tags/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">  
+    <h1 class="post-title p-name" itemprop="name headline">『总贴』Google/Google Cloud</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-04-07T02:19:00+08:00" itemprop="datePublished">Apr 7, 2020
+      </time></p>
+
+
+<div class="post-categories">
+  
+  
+<span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Category▸&nbsp;</em></strong></span>   
+  
+  
+  <a href="/categories/#Tech">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Tech</em></strong></span>     
+  </a>  
+  &nbsp;
+  
+  <a href="/categories/#搬运">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>搬运</em></strong></span>     
+  </a>  
+  
+  
+</div>
+
+
+<div class="post-tags">
+    
+
+<span style="font-size: 13px; color: #6d9eeb;"><strong><em>Tag▸&nbsp;</em></strong></span> 
+  
+  
+  <a href="/tags/#VPS">
+     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>VPS</em></strong></span>  
+  </a>
+  &nbsp;
+  
+  <a href="/tags/#RDP">
+     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>RDP</em></strong></span>  
+  </a>
+  
+  
+</div>
+
+<span style="font-size:; color: rgb(127, 127, 127);"><strong><em><p><p/>Abstract&nbsp;▹
+    谷歌账号,GCE VPS,RDP远程桌面(windows/chrome)</em></strong></span>
+
+  </header>
+
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><br /><br /></p>
+
+<h3 id="1-gce-vps"><strong><a href="https://console.cloud.google.com">1. GCE VPS</a></strong></h3>
+
+<ul>
+  <li>
+    <p>GCE防火墙设置：</p>
+
+    <table style="width:100%">
+      <tbody>
+          <tr>
+              <td width="100%"><a align="center" href="/assets/img/124.png" target="_blank"><img src="/assets/img/124.png" width="100%" /></a></td>		
+          </tr>		
+      </tbody>			
+  </table>
+  </li>
+  <li>
+    <p>速度：</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: center">Carrier</th>
+          <th style="text-align: center">GCE线路</th>
+          <th style="text-align: center">速度</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center">CM</td>
+          <td style="text-align: center">Tokyo</td>
+          <td style="text-align: center">good</td>
+        </tr>
+        <tr>
+          <td style="text-align: center">CT</td>
+          <td style="text-align: center">HK</td>
+          <td style="text-align: center">ok</td>
+        </tr>
+        <tr>
+          <td style="text-align: center">CT</td>
+          <td style="text-align: center">US</td>
+          <td style="text-align: center">bad</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<p style="margin-bottom:1px;">&nbsp;</p>
+
+<h3 id="2-vps主机中安装linux桌面环境脚本和windows-rdp远程桌面连接"><strong>2. VPS主机中安装Linux桌面环境(脚本)和Windows RDP远程桌面连接</strong></h3>
+
+<ul>
+  <li>
+    <h4 id="教程1一键脚本-该教程安装后较卡">教程1：<a href="/tech/Linux-RDP-on-VPS1/">一键脚本</a>  (该教程安装后，较卡)</h4>
+  </li>
+  <li>
+    <h4 id="教程2精简逐步命令行方式">教程2：<a href="/tech/Linux-RDP-on-VPS2/">精简逐步命令行方式</a></h4>
+  </li>
+</ul>
+
+<p style="margin-bottom:1px;">&nbsp;</p>
+
+<h3 id="3-在-compute-engine-上设置-chrome-远程桌面"><strong>3. 在 Compute Engine 上设置 Chrome 远程桌面</strong></h3>
+
+<ul>
+  <li>
+    <h4 id="官方教程"><a href="https://cloud.google.com/solutions/chrome-desktop-remote-on-compute-engine?hl=zh-cn">官方教程</a></h4>
+    <ul>
+      <li><a href="https://remotedesktop.google.com/u/1/access/">Chrome远程桌面-登录界面</a></li>
+      <li><a href="https://remotedesktop.google.com/headless?hl=zh-cn">Chrome远程桌面-授权</a></li>
+      <li><a href="https://remotedesktop.google.com/access?hl=zh-cn">Chrome远程桌面-取消授权</a></li>
+      <li><a href="https://support.google.com/chrome/answer/1649523?hl=zh-Hans&amp;co=GENIE.Platform%3DDesktop&amp;oco=1">Chrome远程桌面-Q&amp;A</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:-8px;">&nbsp;</p>
+
+<ul>
+  <li>
+    <h4 id="亲测所有步骤on-debian10-gce-vps---chrome-rdp--anboxsnapwine"><a href="/tech/Chrome-RDP-full-steps/">亲测所有步骤：on Debian10 GCE VPS - Chrome RDP + Anbox/Snap/Wine</a></h4>
+    <ul>
+      <li>登录RDP初始化需要验证谷歌账户，即需要VPN (对VPN连接的质量要求不高，通过验证即可；登录成功后，建议保留该VPN连接，否则会出现明显卡顿现象)。</li>
+      <li>默认本地有声音；本地速度流程；视频有卡顿，但基本还能勉强看。</li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:1px;">&nbsp;</p>
+
+<h3 id="4-vpn-for-vps-install-stepsscripts"><strong>4. VPN for VPS Install Steps/Scripts</strong></h3>
+<ul>
+  <li>
+    <h4 id="wireguard-安装脚本"><strong>WireGuard 安装脚本</strong></h4>
+    <ul>
+      <li><a href="/tech/搬运/WireGuard-Quick-Install-Script/">WireGuard 一键安装脚本@2019</a></li>
+      <li><a href="/tech/搬运/WG-new-Install-Script/">WireGuard 安装脚本@2020.4</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:-10px;">&nbsp;</p>
+
+<ul>
+  <li>
+    <h4 id="v2ray-安装脚本"><strong>V2Ray 安装脚本</strong></h4>
+    <ul>
+      <li><a href="/tech/搬运/V2Ray-Install-Script/">V2Ray 一键安装脚本@2020.2</a></li>
+      <li><a href="/tech/搬运/V2Ray-Install-Script2/">V2Ray 一键安装V2Ray+WebSocket+TLS+Nginx脚本@2020.2</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:-10px;">&nbsp;</p>
+
+<ul>
+  <li>
+    <h4 id="block-test"><strong><font color="grey">Block Test</font></strong></h4>
+    <ul>
+      <li><a href="https://port.ping.pe/">https://port.ping.pe/</a>，<a href="https://www.bandwagonhost.net/1934.html">说明</a></li>
+      <li><a href="https://kiwivm.64clouds.com/main-exec.php?mode=blacklistcheck">Banwagon Only Test</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:1px;">&nbsp;</p>
+
+<h3 id="5-要点如何使用google服务"><strong><a href="/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Use-Google-Services-in-China/">5. 要点：如何使用Google服务</a></strong></h3>
+
+<p style="margin-bottom:1px;">&nbsp;</p>
+
+<h3 id="6-更改google国家地区"><strong><a href="/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Change-Google-Area/">6. 更改Google国家地区</a></strong></h3>
+
+<p style="margin-bottom:1px;">&nbsp;</p>
+
+<h3 id="7-available-nice-apps"><strong><a href="/tech/搬运/V-Nice-Apps/">7. Available Nice Apps</a></strong></h3>
+
+
+  </div><a class="u-url" href="/tech/%E6%90%AC%E8%BF%90/GCE/" hidden></a>
+    
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Morgan Zhao&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name"><a href="/">Morgan Zhao&#39;s Blog</a></li><li>FB：<a href="https://www.facebook.com/zzmorl"><span class="username">zzmorl</span></a></li></ul>
+      </div>
+
+<!--
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/zzmorl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">zzmorl</span></a></li></ul>
+</div>  
+
+      <div class="footer-col footer-col-3">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+-->
+	  
+	  <div class="footer-col footer-col-4">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+	  
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
+

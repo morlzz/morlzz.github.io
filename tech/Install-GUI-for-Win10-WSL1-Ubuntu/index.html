@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8000/feed.xml" title="Morgan Zhao's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Morgan Zhao&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/Search/">Search</a><a class="page-link" href="/tags/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">  
+    <h1 class="post-title p-name" itemprop="name headline">微软Subsystem子系统WSL - Ubuntu安装图形用户界面</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-03-29T00:00:00+08:00" itemprop="datePublished">Mar 29, 2020
+      </time></p>
+
+
+<div class="post-categories">
+  
+  
+<span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Category▸&nbsp;</em></strong></span>   
+  
+  
+  <a href="/categories/#Tech">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Tech</em></strong></span>     
+  </a>  
+  
+  
+</div>
+
+
+<div class="post-tags">
+    
+
+<span style="font-size: 13px; color: #6d9eeb;"><strong><em>Tag▸&nbsp;</em></strong></span> 
+  
+  
+  <a href="/tags/#WSL">
+     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>WSL</em></strong></span>  
+  </a>
+  
+  
+</div>
+
+<span style="font-size:; color: rgb(127, 127, 127);"><strong><em></em></strong></span>
+
+  </header>
+
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><br /><br /></p>
+<blockquote>
+  <h4 id="背景windows-10-已安装-wslwindows-subsystem-for-linux--ubuntu-1804">背景：Windows 10 已安装 WSL（windows subsystem for linux）- Ubuntu 18.04。</h4>
+  <ul>
+    <li>Subsystem Path on Windows 10:
+      <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Users\&lt;我的用户名&gt;\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs
+</code></pre></div>      </div>
+    </li>
+  </ul>
+</blockquote>
+
+<p style="margin-bottom: 1px;">&emsp;</p>
+
+<h4 id="安装linux图形用户界面通常有两种方法">安装Linux图形用户界面通常有两种方法：</h4>
+<hr />
+<ul>
+  <li>
+    <h4 id="使用x-windows安装使用图形化界面"><a href="https://blog.csdn.net/daybreak222/article/details/87968078">使用X-Windows安装使用图形化界面</a></h4>
+  </li>
+  <li>
+    <h4 id="通过本机远程桌面连接-本帖使用方法"><strong><a href="https://www.bbsmax.com/A/x9J206jgd6/">通过本机远程桌面连接</a> (本帖使用方法)</strong></h4>
+
+    <p><strong>1. 查看当前系统版本</strong></p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  lsb_release -a
+</code></pre></div>    </div>
+
+    <p><strong>2. 查看运行ubuntu是32位或是64位</strong></p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  #如果显示i686, 则表示32位；如果显示 x86_64, 则表示64位
+  sudo uname --m
+</code></pre></div>    </div>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  #其他命令
+  sudo uname --s     #显示内核名字s
+  sudo uname --r     #显示内核版本
+  sudo uname --n     #显示网络主机名
+  sudo uname --p     #显示cpu 
+</code></pre></div>    </div>
+
+    <p><strong>3. 替换成国内源<code class="highlighter-rouge">/etc/apt/sources.list</code></strong></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse  
+  deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse  
+  deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse  
+  deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse  
+  ##测试版源  
+  deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse  
+  # 源码  
+  deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse  
+  deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse  
+  deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse  
+  deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse  
+  ##测试版源  
+  deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse  
+  # Canonical 合作伙伴和附加  
+  deb http://archive.canonical.com/ubuntu/ bionic partner  
+  #deb http://extras.ubuntu.com/ubuntu/ bionic main
+</code></pre></div>    </div>
+
+    <p><strong>4. 日常更新&amp;准备工作</strong></p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sudo apt update
+  sudo apt upgrade
+	
+  #或者
+  sudo apt update &amp;&amp; sudo apt upgrade
+</code></pre></div>    </div>
+
+    <p><strong>5. 使用”本机远程桌面连接”方式：在Ubuntu Terminal中的安装步骤</strong></p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  #安装xorg（包括显卡驱动、图形环境库等等一系列软件包）
+  sudo apt install xorg
+
+  #安装xfce4（运行在类Unix操作系统上，提供轻量级桌面环境）
+  sudo apt install xfce4
+
+  #安装xrdp（一种开源的远程桌面协议（RDP）服务器）
+  sudo apt install xrdp
+
+  #配置xrdp（配置端口）, 默认端口号为3389，此处配置为3399
+  sudo sed -i 's/port=3389/port=3399/g' /etc/xrdp/xrdp.ini
+
+  #向.xsession中写入xfce4-session
+  sudo echo xfce4-session &gt;~/.xsession
+
+  #重启xrdp服务
+  sudo service xrdp restart                  #停止xrdp服务： sudo service xrdp stop
+</code></pre></div>    </div>
+
+    <p><strong>6. 在windows远程桌面登录xfce4图形界面</strong></p>
+
+    <ul>
+      <li>在微软远程桌面连接(运行<code class="highlighter-rouge">mstsc</code>)，点击进入，计算机栏输入【本机IP:端口】（即：<code class="highlighter-rouge">127.0.0.1:3399</code>(for WSL1), <code class="highlighter-rouge">localhost:3399</code>(for WSL2)），用户名栏输入子系统用户名，点击连接。
+        <ul>
+          <li><strong><font color="green">NOTE: 每次重启Windows系统后，需要在WSL Terminal中"sudo service xrdp restart"重启xrdp服务一次，否则出现"远程连接失败"错误。</font></strong></li>
+          <li>在”微软远程桌面连接”窗口，”显示/体验”Tab中均可做呈现设置。
+            <ul>
+              <li>如：显示配置 - 2560x1440，颜色 - 真彩色24位，体验 - LAN/不勾选”动画、视觉样式”。</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p style="margin-bottom:-10px;">&nbsp;</p>
+
+    <ul>
+      <li>进入xfce4桌面，基本设置 (一次设置永久生效)：
+        <ul>
+          <li>开始菜单/应用/Screensaver: no Screensaver</li>
+          <li>开始菜单/应用/Seettings: Setting Manager  (桌面窗口样式/显示字体大小等等)
+            <ul>
+              <li><u>Appearance</u>: “Fonts” Tab, Size：18     (主要的字体大小)</li>
+              <li><u>Desktop</u>: “Icons” Tab, Icon Size：77   (桌面图标大小)</li>
+              <li><u>File Manager</u>: “Side Pane” Tab, 设置左侧图标大小，Shortcut Pane选择Large，Tree Pane选择Normal;窗口大小直接鼠标拉伸；文件夹图标大大小，直接通过右击鼠标选择zoom in或者zoom out。</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p style="margin-bottom:-3px;">&nbsp;</p>
+
+    <p><strong>7. 『可选』在子系统中安装常用程序</strong></p>
+
+    <ul>
+      <li>
+        <p><strong><a href="https://www.msec.it/blog/dukto/">Install Dukto</a></strong></p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  #下载并安装.deb包
+  $sudo apt install ./dukto_6.0-1_amd64.deb
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p><strong><a href="https://linuxize.com/post/how-to-list-installed-packages-on-ubuntu/">List Installed Packages on Ubuntu</a></strong></p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sudo apt list --installed
+  sudo apt list --installed | less
+  sudo apt list --installed | grep package_name
+
+  sudo dpkg-query -l | less
+  sudo dpkg-query -l | grep package_name	   
+
+  sudo dpkg-query -f '${binary:Package}\n' -W &gt; packages_list.txt    #将已安装包列表保存在"packages_list.txt"
+  sudo xargs -a packages_list.txt apt install                        #安装"packages_list.txt"中含列的安装包
+
+  sudo dpkg-query -f '${binary:Package}\n' -W | wc -l                #统计已安装的安装包的数量
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p><strong>Windows&lt;-&gt;WSL File Transfer</strong></p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  mv /mnt/c/download/file1 /home/Downloads  #从Windows C盘移动文件至WSL
+  cp /mnt/c/download/file2 /home/Downloads  #从Windows C盘复制文件至WSL；"-r"为复制目录；"-f"为强制，需逐个确认。
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+  </div><a class="u-url" href="/tech/Install-GUI-for-Win10-WSL1-Ubuntu/" hidden></a>
+    
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Morgan Zhao&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name"><a href="/">Morgan Zhao&#39;s Blog</a></li><li>FB：<a href="https://www.facebook.com/zzmorl"><span class="username">zzmorl</span></a></li></ul>
+      </div>
+
+<!--
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/zzmorl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">zzmorl</span></a></li></ul>
+</div>  
+
+      <div class="footer-col footer-col-3">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+-->
+	  
+	  <div class="footer-col footer-col-4">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+	  
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
+

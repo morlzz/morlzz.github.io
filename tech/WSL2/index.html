@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8000/feed.xml" title="Morgan Zhao's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Morgan Zhao&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/Search/">Search</a><a class="page-link" href="/tags/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">  
+    <h1 class="post-title p-name" itemprop="name headline">安装微软Subsystem子系统 v2 - WSL2</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-04-04T00:18:00+08:00" itemprop="datePublished">Apr 4, 2020
+      </time></p>
+
+
+<div class="post-categories">
+  
+  
+<span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Category▸&nbsp;</em></strong></span>   
+  
+  
+  <a href="/categories/#Tech">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Tech</em></strong></span>     
+  </a>  
+  
+  
+</div>
+
+
+<div class="post-tags">
+    
+
+<span style="font-size: 13px; color: #6d9eeb;"><strong><em>Tag▸&nbsp;</em></strong></span> 
+  
+  
+  <a href="/tags/#WSL">
+     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>WSL</em></strong></span>  
+  </a>
+  
+  
+</div>
+
+<span style="font-size:; color: rgb(127, 127, 127);"><strong><em></em></strong></span>
+
+  </header>
+
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><br /><br /></p>
+<blockquote>
+  <h4 id="背景wsl2支持原生linux-kernel-即可实现安装浏览器等">背景：WSL2支持原生Linux Kernel, 即可实现安装浏览器等。</h4>
+</blockquote>
+
+<p style="margin-bottom: 1px;">&emsp;</p>
+
+<h4 id="微软官方教程-en-cn"><strong>微软官方教程: <a href="https://docs.microsoft.com/en-us/windows/wsl/wsl2-install">EN</a>, <a href="https://docs.microsoft.com/zh-cn/windows/wsl/wsl2-install">CN</a></strong></h4>
+
+<p style="margin-bottom:1px;">&nbsp;</p>
+
+<h4 id="step1加入-windows-预览体验计划"><strong>Step1：加入 Windows 预览体验计划</strong></h4>
+<blockquote>
+  <p>WSL 2 仅适用于 Windows 10 版本 18917 或更高版本。因此，需加入 Windows 预览体验计划, 选择“快速”或“慢速”升级。</p>
+</blockquote>
+
+<hr />
+<ul>
+  <li>CMD窗口：<code class="highlighter-rouge">ver</code>命令, 检查 Windows 版本。</li>
+</ul>
+
+<p style="margin-bottom:1px;">&nbsp;</p>
+
+<h4 id="step2启用虚拟机平台可选组件并确保启用了-wsl"><strong>Step2：启用“虚拟机平台”可选组件并确保启用了 WSL</strong></h4>
+
+<ul>
+  <li>在 PowerShell 中运行以下命令:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+  dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+</code></pre></div>    </div>
+  </li>
+  <li>重启计算机来完成以上两个组件的安装。</li>
+</ul>
+
+<p style="margin-bottom:1px;">&nbsp;</p>
+
+<h4 id="step3确保已从microsoft-store安装wsl1"><strong>Step3：确保已从Microsoft Store安装WSL1</strong></h4>
+
+<ul>
+  <li>My Case: WSL1 - <a href="https://www.microsoft.com/store/apps/9N9TNGVNDL3Q">Ubuntu 18.04 LTS</a></li>
+  <li>安装完成后，需进入初始设置<code class="highlighter-rouge">UNIX用户名</code>和<code class="highlighter-rouge">UNIX密码</code>。</li>
+</ul>
+
+<p style="margin-bottom:1px;">&nbsp;</p>
+
+<h4 id="step4更新为wsl2-linux内核"><strong>Step4：<a href="https://docs.microsoft.com/zh-cn/windows/wsl/wsl2-kernel">更新为WSL2 Linux内核</a></strong></h4>
+
+<ul>
+  <li><a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">安装文件_PC-x64</a></li>
+</ul>
+
+<p style="margin-bottom:1px;">&nbsp;</p>
+
+<h4 id="step5使用powershell设置要由-wsl2-支持的发行版"><strong>Step5：使用PowerShell设置要由 WSL2 支持的发行版</strong></h4>
+
+<ul>
+  <li>使用<code class="highlighter-rouge">wsl -l</code>，显示当前发行版的名称，如<code class="highlighter-rouge">Ubuntu 18.04</code>。</li>
+  <li>设置发行版，运行：<code class="highlighter-rouge">wsl --set-version &lt;Distro&gt; 2</code>，其中<Distro>更改为`Ubuntu 18.04`</Distro></li>
+  <li>如要使 WSL 2 成为默认体系结构，运行：<code class="highlighter-rouge">wsl --set-default-version 2</code>，这会使安装的任何新发行版均初始化为<code class="highlighter-rouge">WSL2发行版</code>。</li>
+  <li><code class="highlighter-rouge">wsl --list --verbose</code>或者<code class="highlighter-rouge">wsl -l -v</code>，显示有关发行版所有的详细信息：每个发行版名称、状态、版本号、正在运行的版本。默认发行版标注星号。</li>
+</ul>
+
+
+  </div><a class="u-url" href="/tech/WSL2/" hidden></a>
+    
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Morgan Zhao&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name"><a href="/">Morgan Zhao&#39;s Blog</a></li><li>FB：<a href="https://www.facebook.com/zzmorl"><span class="username">zzmorl</span></a></li></ul>
+      </div>
+
+<!--
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/zzmorl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">zzmorl</span></a></li></ul>
+</div>  
+
+      <div class="footer-col footer-col-3">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+-->
+	  
+	  <div class="footer-col footer-col-4">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+	  
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
+

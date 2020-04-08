@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8000/feed.xml" title="Morgan Zhao's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Morgan Zhao&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/Search/">Search</a><a class="page-link" href="/tags/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">  
+    <h1 class="post-title p-name" itemprop="name headline">FFmpeg 音视频无损转换</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-03-24T00:00:00+08:00" itemprop="datePublished">Mar 24, 2019
+      </time></p>
+
+
+<div class="post-categories">
+  
+  
+<span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Category▸&nbsp;</em></strong></span>   
+  
+  
+  <a href="/categories/#Tech">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Tech</em></strong></span>     
+  </a>  
+  &nbsp;
+  
+  <a href="/categories/#搬运">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>搬运</em></strong></span>     
+  </a>  
+  
+  
+</div>
+
+
+<div class="post-tags">
+    
+
+<span style="font-size: 13px; color: #6d9eeb;"><strong><em>Tag▸&nbsp;</em></strong></span> 
+  
+  
+  <a href="/tags/#Multimedia">
+     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>Multimedia</em></strong></span>  
+  </a>
+  
+  
+</div>
+
+<span style="font-size:; color: rgb(127, 127, 127);"><strong><em></em></strong></span>
+
+  </header>
+
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><br /></p>
+<h3 id="视频无损旋转">视频无损旋转</h3>
+
+<p>背景：手机拍摄的视频往往竖屏格式，电脑上的播放器可以临时”旋转“播放，但并不能更改原本格式，而借助视频转换软件（如格式工厂）往往会有一定失真。</p>
+
+<p><a href="https://ffmpeg.zeranoe.com/builds/">FFmpeg</a> 可以实现视频无损旋转。</p>
+
+<p>步骤如下 <font size="2">(原出处:百度知道)</font></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. 下载压缩包
+2. 将待旋转视频复制到“x:/xxx/FFMPEG/bin”目录
+3. cmd命令行, 在“x:/xxx/FFMPEG/bin&gt;”后面输入：
+    ffmpeg -i input.mp4 -c copy -metadata:s:v:0 rotate=90 output.mp4
+
+** rotate=90表示逆时针旋转90度，顺时针旋转是rotate=-90，也可写入180或270的值。
+</code></pre></div></div>
+
+<p><br /></p>
+<h3 id="音频裁剪">音频裁剪</h3>
+
+<p>ffmpeg -ss 28 -t 25 -i input.mp3 output.mp3
+<br />(ss 开始时间, 如从第28秒开始裁剪；t 裁剪的长度, 如裁剪出从”第28秒 (含28秒)”开始 的25秒长度的音频。)</p>
+
+<p><br /></p>
+<h3 id="音频格式转换">音频格式转换</h3>
+<p><a href="https://blog.csdn.net/zrbcsdn/article/details/50460274"><font size="2">(原出处1</font></a>
+ 
+<a href="https://blog.csdn.net/hy119/article/details/81632662"><font size="2">原出处2)</font></a></p>
+
+<ul>
+  <li>
+    <p>转换wav到mp3：
+<code class="highlighter-rouge">ffmpeg -i input.wav -codec:a libmp3lame -qscale:a 2 output.mp3</code></p>
+  </li>
+  <li>
+    <p>转换amr到mp3：
+<code class="highlighter-rouge">ffmpeg -i input.amr output.mp3</code></p>
+  </li>
+  <li>
+    <p>转换m4a到mp3：
+<code class="highlighter-rouge">ffmpeg -v 5 -y -i input.m4a -acodec libmp3lame -ac 2 -ab 192k output.mp3</code></p>
+  </li>
+  <li>转换mp3到wav：
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ffmepg -i input.mp3 -f wav output.wav
+ffmpeg -i input.mp3 -acodec pcm_s16le -ac 2 -ar 44100 output.wav
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>转换m4a到wav：
+<code class="highlighter-rouge">ffmpeg -i input.m4a -acodec pcm_s16le -ac 2 -ar 44100 output.wav</code></p>
+  </li>
+  <li>转换aac到mp3：
+<code class="highlighter-rouge">ffmpeg -i input.aac -acodec libmp3lame -ac 2 -ab 160 output.mp3</code></li>
+</ul>
+
+<p><br /></p>
+<h3 id="视频格式转换">视频格式转换</h3>
+
+<ul>
+  <li>
+    <p>MP4不是一种简单的视频格式，是一个包装了视频和音频格式的壳，里面的音、视频使用什么编码格式是可变的；<br />视频格式可以使用DivX也可使用H264，而Chrome只支持H264。转换到支持h264的mp4：<br />
+<code class="highlighter-rouge">ffmpeg -i input.mp4 -vcodec h264 output.mp4</code></p>
+  </li>
+  <li>
+    <p>可以同一格式转换，可减少文件size。
+<code class="highlighter-rouge">ffmpeg -i input.mp4 output.mp4</code></p>
+  </li>
+</ul>
+
+<p><br /></p>
+<h3 id="ffmpeg-常用命令"><a href="https://www.cnblogs.com/frost-yen/p/5848781.html">FFmpeg 常用命令</a></h3>
+
+
+  </div><a class="u-url" href="/tech/%E6%90%AC%E8%BF%90/Multimedia-Lossless-Convert/" hidden></a>
+    
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Morgan Zhao&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name"><a href="/">Morgan Zhao&#39;s Blog</a></li><li>FB：<a href="https://www.facebook.com/zzmorl"><span class="username">zzmorl</span></a></li></ul>
+      </div>
+
+<!--
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/zzmorl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">zzmorl</span></a></li></ul>
+</div>  
+
+      <div class="footer-col footer-col-3">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+-->
+	  
+	  <div class="footer-col footer-col-4">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+	  
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
+
