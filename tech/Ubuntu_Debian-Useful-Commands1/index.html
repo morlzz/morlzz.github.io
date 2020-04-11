@@ -83,7 +83,7 @@
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get --purge remove xxx    #方法1：remove package "xxx", "–-remove"指卸载安装, "–-purge"指清除配置
 $ dpkg --remove xxx                  #方法2
 $ dpkg -r xxx.deb                    #方法3
-$ sudo apt purge -y packagename &amp;&amp; sudo apt autoremove -y    #方法4
+$ sudo apt purge -y packagename &amp;&amp; sudo apt autoremove -y    #方法4 (首推)
 </code></pre></div></div>
 
 <ul>
@@ -144,6 +144,16 @@ unzip -d /temp test.zip        #把文件解压到指定的目录下
 
 <p>#命令行获取外网IP</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -L tool.lu/ip
+</code></pre></div></div>
+
+<p>#文件/文件夹操作</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cp /1/xxx  ./                          #把目录1下的文件xxx，拷至当前目录下
+cp -r /1/yyy  ./                       #把目录1下的文件夹yyy，拷至当前目录下
+
+mv /2/kkk  ./                          #把目录2下的文件kkk，拷至当前目录下
+
+rm aaa                                 #把当前目录下的文件aaa，删除
+rm -rf bbb                             #把当前目录下的文件夹bbb，删除
 </code></pre></div></div>
 
   </div><a class="u-url" href="/tech/Ubuntu_Debian-Useful-Commands1/" hidden></a>

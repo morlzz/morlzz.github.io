@@ -1,4 +1,193 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-04-09T03:49:25+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">『总贴』Google/Google Cloud</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/GCE/" rel="alternate" type="text/html" title="『总贴』Google/Google Cloud" /><published>2020-04-07T02:19:00+08:00</published><updated>2020-04-07T02:19:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/GCE</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/GCE/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-04-11T18:05:59+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">Install &amp;amp; Run Jekyll</title><link href="http://localhost:8000/tech/Install_Run-Jekyll/" rel="alternate" type="text/html" title="Install &amp; Run Jekyll" /><published>2020-04-11T00:00:00+08:00</published><updated>2020-04-11T00:00:00+08:00</updated><id>http://localhost:8000/tech/Install_Run%20Jekyll</id><content type="html" xml:base="http://localhost:8000/tech/Install_Run-Jekyll/">&lt;p style=&quot;margin-bottom: 30px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;安装教程&quot;&gt;&lt;a href=&quot;https://www.jianshu.com/p/58e2c5ea3103&quot;&gt;&lt;strong&gt;安装教程&lt;/strong&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;step1-安装ruby&quot;&gt;&lt;strong&gt;Step1: 安装Ruby&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;RubyInstallers下载：&lt;a href=&quot;https://rubyinstaller.org/downloads/&quot;&gt;Ruby+Devkit(x64).exe&lt;/a&gt;&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;安装；勾选”添加到PATH”选&lt;/li&gt;
+      &lt;li&gt;勾选”安装msys2”&lt;/li&gt;
+      &lt;li&gt;选择 “3 – MSYS3 and MINGW development toolchain”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: 10px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;step2-安装rubygems&quot;&gt;&lt;strong&gt;Step2: 安装RubyGems&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;RubyGems下载：&lt;a href=&quot;https://rubygems.org/pages/download&quot;&gt;RubyGems&lt;/a&gt;&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;For Windows, download “.zip” file.&lt;/li&gt;
+      &lt;li&gt;在CMD或者Powershell命令行：
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  cd {unzip-path} // unzip-path表示解压的路径
+  ruby setup.rb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;margin-bottom: 10px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;step3-安装jekyll&quot;&gt;&lt;strong&gt;Step3: 安装Jekyll&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//在CMD或者Powershell命令行
+gem install jekyll
+
+gem install bundler
+bundle install                               //to install missing gems	
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p style=&quot;margin-bottom: 10px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;step4-安装jekyll-paginate&quot;&gt;&lt;strong&gt;Step4: 安装Jekyll-paginate&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//在CMD或者Powershell命令行
+gem install jekyll-paginate
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p style=&quot;margin-bottom: 10px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;step5-验证安装是否完成&quot;&gt;&lt;strong&gt;Step5: 验证安装是否完成&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//在CMD或者Powershell命令行
+jekyll -v
+gem -v
+ruby -v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p style=&quot;margin-bottom: 10px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;step6-用jekyll命创建博客模板&quot;&gt;&lt;strong&gt;Step6: 用jekyll命创建博客模板&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//在CMD或者Powershell命令行
+cd xxx  
+jekyll new mytestblog
+cd mytestblog
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p style=&quot;margin-bottom: 10px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;step7-本地运行博客&quot;&gt;&lt;strong&gt;Step7: 本地运行博客&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;方法1 (不推荐)&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  //在CMD或者Powershell命令行
+  jekyll serve                             //runs some version of jekyll server, which may or may not be the one you want  
+  jekyll serve --drafts
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;&lt;font color=&quot;green&quot;&gt;方法2 (推荐)&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  //在CMD或者Powershell命令行
+  bundle exec jekyll serve                 //runs the exact jekyll server version that is specified in your Gemfile/Gemfile.lock 
+  bundle exec jekyll serve --drafts        //含&quot;drafts&quot;目录
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: 10px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;step8-浏览器浏览&quot;&gt;&lt;strong&gt;Step8: 浏览器浏览&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;查看&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;文件中的端口”Serving Host/Port”，默认127.0.0.1:4000。&lt;/li&gt;
+  &lt;li&gt;浏览器输入: &lt;a href=&quot;http://127.0.0.1:4000/&quot;&gt;http://127.0.0.1:4000/&lt;/a&gt; 或者 &lt;a href=&quot;http://1ocalhost:4000/&quot;&gt;http://1ocalhost:4000/&lt;/a&gt;,即可。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: 35px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;issues&quot;&gt;&lt;strong&gt;Issues&lt;/strong&gt;&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;jekyll-serve启动报错&quot;&gt;&lt;strong&gt;jekyll serve启动报错&lt;/strong&gt;&lt;/h4&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;往往是因为端口被其他应用占有导致，一般需要kill relative port for the other app, 或者重启计算机。有时，更改了”_config.yml”中的端口，还是启动报错，往往重启才能解决问题。&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;ul&gt;
+      &lt;li&gt;最快的方式 - 指定端口, CMD 命令行：
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  bundle exec jekyll serve -P &amp;lt;Your_Assigned_New_Port&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Jekyll" /></entry><entry><title type="html">Install ADB in Local Linux-OS</title><link href="http://localhost:8000/tech/Install-ADB-in-Local-Linux-OS/" rel="alternate" type="text/html" title="Install ADB in Local Linux-OS" /><published>2020-04-10T00:00:00+08:00</published><updated>2020-04-10T00:00:00+08:00</updated><id>http://localhost:8000/tech/Install%20ADB%20in%20Local%20Linux-OS</id><content type="html" xml:base="http://localhost:8000/tech/Install-ADB-in-Local-Linux-OS/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;android-platform-tools-download-links&quot;&gt;&lt;strong&gt;Android-Platform-Tools Download Links&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;webpage&quot;&gt;&lt;strong&gt;Webpage:&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://androidsdkmanager.azurewebsites.net/Platformtools&quot;&gt;Android SDK Platform-tools&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;下载直链&quot;&gt;&lt;strong&gt;下载直链：&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dl.google.com/android/repository/platform-tools-latest-windows.zip&quot;&gt;Latest for Windows&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dl.google.com/android/repository/platform-tools-latest-linux.zip&quot;&gt;Latest for Linux&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: 20px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;for-linux-test-in-ubuntu-1804&quot;&gt;&lt;strong&gt;For Linux (Test in Ubuntu 18.04)&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;安装最新的android-platform-tools&quot;&gt;&lt;strong&gt;&lt;font color=&quot;green&quot;&gt;安装最新的Android-platform-tools&lt;/font&gt;&lt;/strong&gt;&lt;/h4&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Step1: 安装adb&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo apt-get install adb                //卸载 sudo apt purge -y adb &amp;amp;&amp;amp; sudo apt autoremove -y
+
+$ adb version                             //查看安装信息
+Android Debug Bridge version 1.0.39
+Version 1:8.1.0+r23-5~18.04
+Installed as /usr/lib/android-sdk/platform-tools/adb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Step2: 将&lt;code class=&quot;highlighter-rouge&quot;&gt;platform-tools-latest-linux.zip&lt;/code&gt;解压缩后，直接拷贝至&lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/lib/android-sdk/platform-tools/&lt;/code&gt;目录&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ adb kill-server                          //否则当adb server正在运行时，会无法覆盖adb文件
+$ sudo cp -r ./ /usr/lib/android-sdk/platform-tools
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Step3: 再次检查adb version&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ adb version                             
+Android Debug Bridge version 1.0.41
+Version 29.0.6-6198805
+Installed as /usr/lib/android-sdk/platform-tools/adb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p style=&quot;margin-bottom: 10px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;为adb加入path&quot;&gt;&lt;strong&gt;&lt;font color=&quot;green&quot;&gt;为adb加入path&lt;/font&gt;&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.xda-developers.com/adb-fastboot-any-directory-windows-linux/&quot;&gt;参考&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ls -la ~/ | more                          //&quot;.bashrc&quot;为隐藏文件，输入该命令可以看到
+
+$ sudo nano ~/.bashrc                       // 编辑或创建(如原先没有)该文件
+
+//在弹出的&quot;.bashrc&quot;文件中，加入下行：
+export PATH=${PATH}:/usr/lib/android-sdk/platform-tools/adb
+
+$ adb                                       //检查是否工作；如果不工作，安装&quot;glibc.i686&quot;和&quot;libstdc++&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p style=&quot;margin-bottom: 10px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;其他命令&quot;&gt;&lt;strong&gt;&lt;font color=&quot;green&quot;&gt;其他命令&lt;/font&gt;&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ adb kill-server
+$ adb start-server
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author></entry><entry><title type="html">『总贴』Google/Google Cloud</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/GCE/" rel="alternate" type="text/html" title="『总贴』Google/Google Cloud" /><published>2020-04-07T02:19:00+08:00</published><updated>2020-04-07T02:19:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/GCE</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/GCE/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;1-gce-vps&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://console.cloud.google.com&quot;&gt;1. GCE VPS&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;
 
@@ -89,7 +278,7 @@
 
 &lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;4-vpn-for-vps-install-stepsscripts&quot;&gt;&lt;strong&gt;4. VPN for VPS Install Steps/Scripts&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;4-vpn-for-vps-install-stepsscripts----from-net-info-only-not-for-public&quot;&gt;&lt;strong&gt;4. VPN for VPS Install Steps/Scripts&lt;/strong&gt;      &lt;span style=&quot;color:grey;font-size: 19px; font-weight: bold;&quot;&gt;(from Net, Info Only, not for Public)&lt;/span&gt;&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;wireguard-安装脚本&quot;&gt;&lt;strong&gt;WireGuard 安装脚本&lt;/strong&gt;&lt;/h4&gt;
@@ -167,63 +356,68 @@
   &lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><category term="OS" /></entry><entry><title type="html">『总贴』Windows微软相关汇总</title><link href="http://localhost:8000/tech/Windows-All-Relative/" rel="alternate" type="text/html" title="『总贴』Windows微软相关汇总" /><published>2020-04-04T22:16:00+08:00</published><updated>2020-04-04T22:16:00+08:00</updated><id>http://localhost:8000/tech/Windows%20All%20Relative</id><content type="html" xml:base="http://localhost:8000/tech/Windows-All-Relative/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
 Keywords: 
-&lt;a href=&quot;#keyword1&quot;&gt;微软官方WinPE&lt;/a&gt;,
-&lt;a href=&quot;#keyword2&quot;&gt;Surface Pro4 硬件驱动黄色惊叹号&lt;/a&gt;,
-&lt;a href=&quot;#keyword3&quot;&gt;SOHO局域网相关汇总&lt;/a&gt;,
-&lt;a href=&quot;#keyword4&quot;&gt;微软WSL-Ubuntu安装图形用户界面&lt;/a&gt;,
-&lt;a href=&quot;#keyword5&quot;&gt;微软子系统(Ubuntu)通过Xshell连接&lt;/a&gt;,
-&lt;a href=&quot;#keyword6&quot;&gt;Install WSL2&lt;/a&gt;,
-&lt;a href=&quot;#keyword7&quot;&gt;WSL Issues&lt;/a&gt;,
-&lt;a href=&quot;#keyword8&quot;&gt;Windows Sandbox .wsb Config&lt;/a&gt;,
-&lt;a href=&quot;#keyword9&quot;&gt;Apps for Windows OS&lt;/a&gt;,
-&lt;a href=&quot;#keyword10&quot;&gt;WindowsOS相关终端命令&lt;/a&gt;
+&lt;a href=&quot;#keyword1&quot;&gt;微软终端命令&lt;/a&gt;,
+&lt;a href=&quot;#keyword2&quot;&gt;微软官方WinPE&lt;/a&gt;,
+&lt;a href=&quot;#keyword3&quot;&gt;Surface Pro4 硬件驱动黄色惊叹号&lt;/a&gt;,
+&lt;a href=&quot;#keyword4&quot;&gt;SOHO局域网相关汇总&lt;/a&gt;,
+&lt;a href=&quot;#keyword5&quot;&gt;微软WSL-Ubuntu安装图形用户界面&lt;/a&gt;,
+&lt;a href=&quot;#keyword6&quot;&gt;微软子系统(Ubuntu)通过Xshell连接&lt;/a&gt;,
+&lt;a href=&quot;#keyword7&quot;&gt;Install WSL2&lt;/a&gt;,
+&lt;a href=&quot;#keyword8&quot;&gt;WSL Issues&lt;/a&gt;,
+&lt;a href=&quot;#keyword9&quot;&gt;Windows Sandbox .wsb Config&lt;/a&gt;,
+&lt;a href=&quot;#keyword10&quot;&gt;Apps for Windows OS&lt;/a&gt;,
+&lt;a href=&quot;#keyword11&quot;&gt;WindowsOS相关终端命令&lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;margin-bottom: 25px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;1-winpe微软官方winpe-启动u盘或iso制作&quot;&gt;&lt;font id=&quot;keyword1&quot; color=&quot;green&quot;&gt;1. 『WinPE』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-Official-WinPE/&quot;&gt;微软官方WinPE 启动U盘或iso制作&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;1-commandswindows-x86-相关终端命令&quot;&gt;&lt;font id=&quot;keyword1&quot; color=&quot;green&quot;&gt;1. 『Commands』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-OS-Commands/&quot;&gt;Windows x86 相关终端命令&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;2-driver-issuesurface-pro4-硬件驱动黄色惊叹号&quot;&gt;&lt;font id=&quot;keyword2&quot; color=&quot;green&quot;&gt;2. 『Driver Issue』&lt;/font&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Surface-Pro4-Drivers'-Issue/&quot;&gt;Surface Pro4 硬件驱动黄色惊叹号&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;2-winpe微软官方winpe-启动u盘或iso制作&quot;&gt;&lt;font id=&quot;keyword2&quot; color=&quot;green&quot;&gt;2. 『WinPE』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-Official-WinPE/&quot;&gt;微软官方WinPE 启动U盘或iso制作&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;3-soho-lansoho局域网相关汇总&quot;&gt;&lt;font id=&quot;keyword3&quot; color=&quot;green&quot;&gt;3. 『SOHO LAN』&lt;/font&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SohoLAN/&quot;&gt;SOHO局域网相关汇总&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;3-driver-issuesurface-pro4-硬件驱动黄色惊叹号&quot;&gt;&lt;font id=&quot;keyword3&quot; color=&quot;green&quot;&gt;3. 『Driver Issue』&lt;/font&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Surface-Pro4-Drivers'-Issue/&quot;&gt;Surface Pro4 硬件驱动黄色惊叹号&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;4-soho-lansoho局域网相关汇总&quot;&gt;&lt;font id=&quot;keyword4&quot; color=&quot;green&quot;&gt;4. 『SOHO LAN』&lt;/font&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SohoLAN/&quot;&gt;SOHO局域网相关汇总&lt;/a&gt;&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;SMB(v2)局域网跨设备文件共享/浏览,IIS,卡巴防火墙相关设置,路由器访客/AP隔离&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;4-win10-subsystem微软子系统wsl-v1ubuntu安装图形用户界面&quot;&gt;&lt;font id=&quot;keyword4&quot; color=&quot;green&quot;&gt;4. 『Win10 Subsystem』&lt;/font&gt;&lt;a href=&quot;/tech/Install-GUI-for-Win10-WSL1-Ubuntu/&quot;&gt;微软子系统WSL v1(Ubuntu)安装图形用户界面&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;5-win10-subsystem微软子系统wsl-v1ubuntu安装图形用户界面&quot;&gt;&lt;font id=&quot;keyword5&quot; color=&quot;green&quot;&gt;5. 『Win10 Subsystem』&lt;/font&gt;&lt;a href=&quot;/tech/Install-GUI-for-Win10-WSL1-Ubuntu/&quot;&gt;微软子系统WSL v1(Ubuntu)安装图形用户界面&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;5-win10-subsystemxshell连接wsl-ubuntu&quot;&gt;&lt;font id=&quot;keyword5&quot; color=&quot;green&quot;&gt;5. 『Win10 Subsystem』&lt;/font&gt;&lt;a href=&quot;/tech/Xshell-connect-to-WSL-Ubuntu/&quot;&gt;Xshell连接WSL Ubuntu&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;6-win10-subsystemxshell连接wsl-ubuntu&quot;&gt;&lt;font id=&quot;keyword6&quot; color=&quot;green&quot;&gt;6. 『Win10 Subsystem』&lt;/font&gt;&lt;a href=&quot;/tech/Xshell-connect-to-WSL-Ubuntu/&quot;&gt;Xshell连接WSL Ubuntu&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;6-win10-subsysteminstall-wsl2&quot;&gt;&lt;font id=&quot;keyword6&quot; color=&quot;green&quot;&gt;6. 『Win10 Subsystem』&lt;/font&gt;&lt;a href=&quot;/tech/WSL2/&quot;&gt;Install WSL2&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;7-win10-subsysteminstall-wsl2&quot;&gt;&lt;font id=&quot;keyword7&quot; color=&quot;green&quot;&gt;7. 『Win10 Subsystem』&lt;/font&gt;&lt;a href=&quot;/tech/WSL2/&quot;&gt;Install WSL2&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;7-win10-subsystemwsl-issues&quot;&gt;&lt;font id=&quot;keyword7&quot; color=&quot;green&quot;&gt;7. 『Win10 Subsystem』&lt;/font&gt;&lt;a href=&quot;/tech/WSL-Issues/&quot;&gt;WSL Issues&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;8-win10-subsystemwsl-issues&quot;&gt;&lt;font id=&quot;keyword8&quot; color=&quot;green&quot;&gt;8. 『Win10 Subsystem』&lt;/font&gt;&lt;a href=&quot;/tech/WSL-Issues/&quot;&gt;WSL Issues&lt;/a&gt;&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;缺失”Linux Header for 4.19.84-microsoft-standard Kernel”；Snapd不正常工作问题…&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;8-win10-sandboxwindows-sandbox-wsb-config&quot;&gt;&lt;font id=&quot;keyword8&quot; color=&quot;green&quot;&gt;8. 『Win10 Sandbox』&lt;/font&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/Win10-Sandbox/&quot;&gt;Windows Sandbox .wsb Config&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;9-win10-sandboxwindows-sandbox-wsb-config&quot;&gt;&lt;font id=&quot;keyword9&quot; color=&quot;green&quot;&gt;9. 『Win10 Sandbox』&lt;/font&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/Win10-Sandbox/&quot;&gt;Windows Sandbox .wsb Config&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;9-windows-apps微软平台推荐应用&quot;&gt;&lt;font id=&quot;keyword9&quot; color=&quot;green&quot;&gt;9. 『Windows Apps』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-Apps/&quot;&gt;微软平台推荐应用&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;10-windows-apps微软平台推荐应用&quot;&gt;&lt;font id=&quot;keyword10&quot; color=&quot;green&quot;&gt;10. 『Windows Apps』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-Apps/&quot;&gt;微软平台推荐应用&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;10-terminal-commandswindowsos相关终端命令&quot;&gt;&lt;font id=&quot;keyword10&quot; color=&quot;green&quot;&gt;10. 『Terminal Commands』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-OS-Commands/&quot;&gt;WindowsOS相关终端命令&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;11-terminal-commandswindowsos相关终端命令&quot;&gt;&lt;font id=&quot;keyword11&quot; color=&quot;green&quot;&gt;11. 『Terminal Commands』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-OS-Commands/&quot;&gt;WindowsOS相关终端命令&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;</content><author><name></name></author><category term="OS" /></entry><entry><title type="html">安装微软Subsystem子系统 v2 - WSL2</title><link href="http://localhost:8000/tech/WSL2/" rel="alternate" type="text/html" title="安装微软Subsystem子系统 v2 - WSL2" /><published>2020-04-04T00:18:00+08:00</published><updated>2020-04-04T00:18:00+08:00</updated><id>http://localhost:8000/tech/WSL2</id><content type="html" xml:base="http://localhost:8000/tech/WSL2/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -285,7 +479,17 @@ Keywords:
   &lt;li&gt;设置发行版，运行：&lt;code class=&quot;highlighter-rouge&quot;&gt;wsl --set-version &amp;lt;Distro&amp;gt; 2&lt;/code&gt;，其中&lt;Distro&gt;更改为`Ubuntu 18.04`&lt;/Distro&gt;&lt;/li&gt;
   &lt;li&gt;如要使 WSL 2 成为默认体系结构，运行：&lt;code class=&quot;highlighter-rouge&quot;&gt;wsl --set-default-version 2&lt;/code&gt;，这会使安装的任何新发行版均初始化为&lt;code class=&quot;highlighter-rouge&quot;&gt;WSL2发行版&lt;/code&gt;。&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;wsl --list --verbose&lt;/code&gt;或者&lt;code class=&quot;highlighter-rouge&quot;&gt;wsl -l -v&lt;/code&gt;，显示有关发行版所有的详细信息：每个发行版名称、状态、版本号、正在运行的版本。默认发行版标注星号。&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="WSL" /></entry><entry><title type="html">WSL Issues</title><link href="http://localhost:8000/tech/WSL-Issues/" rel="alternate" type="text/html" title="WSL Issues" /><published>2020-04-04T00:00:00+08:00</published><updated>2020-04-04T00:00:00+08:00</updated><id>http://localhost:8000/tech/WSL%20Issues</id><content type="html" xml:base="http://localhost:8000/tech/WSL-Issues/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="WSL" /></entry><entry><title type="html">Jekyll Terminal Command</title><link href="http://localhost:8000/tech/Jekyll-Terminal-Command/" rel="alternate" type="text/html" title="Jekyll Terminal Command" /><published>2020-04-04T00:00:00+08:00</published><updated>2020-04-04T00:00:00+08:00</updated><id>http://localhost:8000/tech/Jekyll%20Terminal%20Command</id><content type="html" xml:base="http://localhost:8000/tech/Jekyll-Terminal-Command/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;In Powershell:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem update jekyll
+bundle update
+bundle update jekyll
+ 
+jekyll -v
+bundle -v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="Jekyll" /></entry><entry><title type="html">WSL Issues</title><link href="http://localhost:8000/tech/WSL-Issues/" rel="alternate" type="text/html" title="WSL Issues" /><published>2020-04-04T00:00:00+08:00</published><updated>2020-04-04T00:00:00+08:00</updated><id>http://localhost:8000/tech/WSL%20Issues</id><content type="html" xml:base="http://localhost:8000/tech/WSL-Issues/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
 Keywords: 
 &lt;a href=&quot;#keyword1&quot;&gt;Linux header missing&lt;/a&gt;， 
 &lt;a href=&quot;#keyword2&quot;&gt;Snapd not working properly&lt;/a&gt;
@@ -426,17 +630,7 @@ Keywords:
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="WSL" /></entry><entry><title type="html">Jekyll Terminal Command</title><link href="http://localhost:8000/tech/Jekyll-Terminal-Command/" rel="alternate" type="text/html" title="Jekyll Terminal Command" /><published>2020-04-04T00:00:00+08:00</published><updated>2020-04-04T00:00:00+08:00</updated><id>http://localhost:8000/tech/Jekyll%20Terminal%20Command</id><content type="html" xml:base="http://localhost:8000/tech/Jekyll-Terminal-Command/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;In Powershell:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem update jekyll
-bundle update
-bundle update jekyll
- 
-jekyll -v
-bundle -v
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="Jekyll" /></entry><entry><title type="html">通过Xshell连接微软子系统 WSL - Ubuntu</title><link href="http://localhost:8000/tech/Xshell-connect-to-WSL-Ubuntu/" rel="alternate" type="text/html" title="通过Xshell连接微软子系统 WSL - Ubuntu" /><published>2020-04-02T21:40:00+08:00</published><updated>2020-04-02T21:40:00+08:00</updated><id>http://localhost:8000/tech/Xshell%20connect%20to%20WSL-Ubuntu</id><content type="html" xml:base="http://localhost:8000/tech/Xshell-connect-to-WSL-Ubuntu/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="WSL" /></entry><entry><title type="html">通过Xshell连接微软子系统 WSL - Ubuntu</title><link href="http://localhost:8000/tech/Xshell-connect-to-WSL-Ubuntu/" rel="alternate" type="text/html" title="通过Xshell连接微软子系统 WSL - Ubuntu" /><published>2020-04-02T21:40:00+08:00</published><updated>2020-04-02T21:40:00+08:00</updated><id>http://localhost:8000/tech/Xshell%20connect%20to%20WSL-Ubuntu</id><content type="html" xml:base="http://localhost:8000/tech/Xshell-connect-to-WSL-Ubuntu/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;step1---在wsl中配置公私钥&quot;&gt;&lt;strong&gt;Step1 - 在WSL中配置公/私钥&lt;/strong&gt;&lt;/h3&gt;
 &lt;hr /&gt;
@@ -701,389 +895,8 @@ bundle -v
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="WSL" /></entry><entry><title type="html">『总贴』Android安卓所有相关汇总</title><link href="http://localhost:8000/tech/Andriod-All-Relative/" rel="alternate" type="text/html" title="『总贴』Android安卓所有相关汇总" /><published>2020-03-27T15:02:00+08:00</published><updated>2020-03-27T15:02:00+08:00</updated><id>http://localhost:8000/tech/Andriod%20All%20Relative</id><content type="html" xml:base="http://localhost:8000/tech/Andriod-All-Relative/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
-Keywords: 
-&lt;a href=&quot;#keyword1&quot;&gt;安卓App排错/使用说明&lt;/a&gt;， 
-&lt;a href=&quot;#keyword2&quot;&gt;安卓隐藏代码&lt;/a&gt;，
-&lt;a href=&quot;#keyword3&quot;&gt;在安卓手机上使用ADB &amp;amp; Fastboot命令&lt;/a&gt;， 
-&lt;a href=&quot;#keyword4&quot;&gt;安卓刷机相关汇总&lt;/a&gt;，
-&lt;a href=&quot;#keyword5&quot;&gt;安卓多用户/克隆App&lt;/a&gt;，
-&lt;a href=&quot;#keyword6&quot;&gt;微软官方安卓虚拟器&lt;/a&gt;，
-&lt;a href=&quot;#keyword7&quot;&gt;安卓系统常见问题解决方案&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;1-android-app安卓应用troubleshoot-for-issues使用说明推荐的应用&quot;&gt;&lt;font id=&quot;keyword1&quot; color=&quot;green&quot;&gt;1. 『Android App』&lt;/font&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Andriod-Apps/&quot;&gt;安卓应用：Troubleshoot for Issues、使用说明、推荐的应用&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom: -5px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;2-android-hide-code拨号界面可输入的安卓隐藏代码&quot;&gt;&lt;font id=&quot;keyword2&quot; color=&quot;green&quot;&gt;2. 『Android Hide Code』&lt;/font&gt;&lt;a href=&quot;/tech/Android-Hide-Code/&quot;&gt;拨号界面可输入的安卓隐藏代码&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom: -5px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;3-adbfastboot-on-android在安卓手机上使用adb--fastboot命令&quot;&gt;&lt;font id=&quot;keyword3&quot; color=&quot;green&quot;&gt;3. 『ADB&amp;amp;Fastboot on Android』&lt;/font&gt;&lt;a href=&quot;/tech/Use-ADB-&amp;amp;-Fastboot-on-Android/&quot;&gt;在安卓手机上使用ADB &amp;amp; Fastboot命令&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom: -5px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;4-android-os-flashing安卓刷机相关汇总&quot;&gt;&lt;font id=&quot;keyword4&quot; color=&quot;green&quot;&gt;4. 『Android OS Flashing』&lt;/font&gt;&lt;a href=&quot;/tech/Android-OS-Flashing/&quot;&gt;安卓刷机相关汇总&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom: -5px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;5-andriod-multiuser--clone-app安卓多用户克隆app多用户下magiskedxosedxposed生效问题&quot;&gt;&lt;font id=&quot;keyword5&quot; color=&quot;green&quot;&gt;5. 『Andriod Multiuser &amp;amp; Clone App』&lt;/font&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E5%8E%9F%E5%88%9B/Andriod-Multiuser-&amp;amp;-Clone-App/&quot;&gt;安卓多用户、克隆App、多用户下Magisk、EdXosed/Xposed生效问题&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom: -5px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;6-andriod-emulator-on-windowsos微软官方安卓虚拟器基于微软内置hyper-v-虚拟服务器&quot;&gt;&lt;font id=&quot;keyword6&quot; color=&quot;green&quot;&gt;6. 『Andriod Emulator on WindowsOS』&lt;/font&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/Hyper-V/&quot;&gt;微软官方安卓虚拟器，基于”微软内置Hyper-V 虚拟服务器&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom: -5px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;7-andriod-system-issues安卓系统常见问题解决方案&quot;&gt;&lt;font id=&quot;keyword6&quot; color=&quot;green&quot;&gt;7. 『Andriod System Issues』&lt;/font&gt;&lt;a href=&quot;/tech/Andriod-Common-Issues/&quot;&gt;安卓系统常见问题解决方案&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom: -5px;&quot;&gt;&amp;emsp;&lt;/p&gt;</content><author><name></name></author><category term="Android" /><summary type="html">Apps/hide code/ADB &amp; Fastboot on Mobile/Flashing OS/Multiuser&amp;CloneApps</summary></entry><entry><title type="html">亲测所有步骤 - Chrome RDP + Anbox/Snap/Wine on Debian10 GCE VPS</title><link href="http://localhost:8000/tech/Chrome-RDP-full-steps/" rel="alternate" type="text/html" title="亲测所有步骤 - Chrome RDP + Anbox/Snap/Wine on Debian10 GCE VPS" /><published>2020-03-22T23:12:00+08:00</published><updated>2020-03-22T23:12:00+08:00</updated><id>http://localhost:8000/tech/Chrome%20RDP%20full%20steps</id><content type="html" xml:base="http://localhost:8000/tech/Chrome-RDP-full-steps/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
-Keywords: 
-&lt;a href=&quot;#keyword1&quot;&gt;Install Chrome RDP&lt;/a&gt;， 
-&lt;a href=&quot;#keyword2&quot;&gt;Install Snap,Anbox&lt;/a&gt;，
-&lt;a href=&quot;#keyword3&quot;&gt;Snap常用指令&lt;/a&gt;，
-&lt;a href=&quot;#keyword4&quot;&gt;Install &quot;.sh&quot; File&lt;/a&gt;， 
-&lt;a href=&quot;#keyword5&quot;&gt;Install Wine&lt;/a&gt;， 
-&lt;a href=&quot;#keyword6&quot;&gt;Aria2&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;chrome-rdpgce-vm安装-chrome-远程桌面&quot;&gt;&lt;strong&gt;&lt;font id=&quot;keyword1&quot; color=&quot;green&quot;&gt;『Chrome RDP』&lt;a align=&quot;left&quot; href=&quot;https://console.cloud.google.com/iam-admin/projects?hl=zh-cn&quot; target=&quot;_blank&quot;&gt;GCE VM安装 Chrome 远程桌面&lt;/a&gt;&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
-&lt;hr /&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;构架：amd64&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://cloud.google.com/solutions/chrome-desktop-remote-on-compute-engine?hl=zh-cn&quot;&gt;官方教程 for Dedian GCE VM&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;margin-bottom:15px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;h4 id=&quot;step1---debian10教程&quot;&gt;&lt;strong&gt;Step1 - Debian10教程&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p&gt;#日常更新&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update
-sudo apt upgrade
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#Debian10需要安装wget&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install wget
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#准备工作1：为用户“xxx”添加sudo权限&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo chmod u+w /etc/sudoers 
-
-#vim编辑sudoers文件 (ins键进入编辑状态；保存退出: Esc键后，:wq!回车)
-#“找到这行 root ALL=(ALL) ALL,在他下面添加xxx ALL=(ALL) ALL” 
-sudo vi /etc/sudoers 
-
-#『或者』nano编辑sudoers文件，光标直接移动/回车换行，鼠标右击paste，ctrl+x退出/Y保存/enter确认，ctrl+k删除行/长按可快速删除行
-sudo nano /etc/sudoers 
-
-sudo cat /etc/sudoers          #查看文件
-
-sudo chmod u-w /etc/sudoers 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#准备工作2：解决问题 - “sudo: unable to resolve host my-machine”&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo chmod -R 777 /etc/hosts
-
-sudo vi /etc/hosts			  #编辑hosts文件 (ins键进入编辑状态；保存退出: Esc键后，:wq!回车)
-“127.0.1.1    yyy”            #在&quot;/etc/hosts&quot;文件中, add 127.0.1.1 你的GCE VM项目名称
-
-sudo cat /etc/hosts           #查看文件
-
-sudo chmod -R 644 /etc/hosts
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#准备工作3：为当前用户设置密码&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo passwd $(whoami)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#开始官方教程步骤&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
-
-sudo apt update
-
-sudo dpkg --install chrome-remote-desktop_current_amd64.deb
-
-sudo apt install --assume-yes --fix-broken
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#开始安装Xfce&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo DEBIAN_FRONTEND=noninteractive \
-    apt install --assume-yes xfce4 desktop-base
-
-echo &quot;xfce4-session&quot; &amp;gt; ~/.chrome-remote-desktop-session
-
-sudo apt install --assume-yes xscreensaver
-
-sudo apt install --assume-yes task-xfce-desktop
-
-sudo systemctl disable lightdm.service
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#安装 Chrome 浏览器&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-
-sudo dpkg --install google-chrome-stable_current_amd64.deb
-
-sudo apt install --assume-yes --fix-broken	
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#提高桌面分辨率, 设为自己机器的分辨率&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;echo &quot;export CHROME_REMOTE_DESKTOP_DEFAULT_DESKTOP_SIZES=1600x1200,2736x1824&quot; \
-    &amp;gt;&amp;gt; ~/.profile
-     
-sudo systemctl restart chrome-remote-desktop                #重启服务
-
-sudo systemctl status chrome-remote-desktop                 #检查 Chrome远程桌面服务的状态, 如果服务正在运行，会看到包含&quot;active&quot;状态的输出(Ctrl+c退出)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;step2---授权远程桌面服务&quot;&gt;&lt;strong&gt;Step2 - &lt;a href=&quot;https://remotedesktop.google.com/headless&quot;&gt;授权远程桌面服务&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;登录对应的谷歌账户。&lt;/li&gt;
-  &lt;li&gt;将以下命令复制到SSH 窗口，运行该命令。
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  DISPLAY= /opt/google/chrome-remote-desktop/start-host \
-      --code=&quot;4/xxxxxxxxxxxxxxxxxxxxxxxx&quot; \
-      --redirect-url=&quot;https://remotedesktop.google.com/_/oauthredirect&quot; \
-      --name=
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;当系统提示输入计算机名称时，请输入实例名称 (yyy)。&lt;/li&gt;
-  &lt;li&gt;出现提示时，输入一个 6 位数的 PIN 码。稍后连接时，需要使用此号码进行额外的授权。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;step3---登录远程桌面服务&quot;&gt;&lt;strong&gt;Step3 - &lt;a href=&quot;https://remotedesktop.google.com/?hl=zh-cn&quot;&gt;登录远程桌面服务&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;登录对应的谷歌账户。&lt;/li&gt;
-  &lt;li&gt;可选项：改善远程桌面体验 for Xfce
-    &lt;ul&gt;
-      &lt;li&gt;在应用 (Applications) 菜单中，选择设置 (Settings) &amp;gt; 屏保 (Screensaver)。&lt;/li&gt;
-      &lt;li&gt;将模式 (Mode) 设置为停用屏保 (Disable Screen Saver)。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;step4---取消chrome远程桌面授权&quot;&gt;&lt;strong&gt;Step4 - &lt;a href=&quot;https://remotedesktop.google.com/access?hl=zh-cn&quot;&gt;取消Chrome远程桌面授权&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;登录对应的谷歌账户。&lt;/li&gt;
-  &lt;li&gt;点击该实例名称旁的删除图标即可。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;其他&quot;&gt;&lt;strong&gt;其他&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;删除Chrome RDP后，避免不必要的费用：需彻底删除GCE Compute Engine 实例。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;anbox-snap在chrome-rdp中安装snapanbox通过anbox安装安卓apk&quot;&gt;&lt;strong&gt;&lt;font id=&quot;keyword2&quot; color=&quot;green&quot;&gt;『Anbox, Snap』在Chrome RDP中安装Snap、Anbox，通过Anbox安装安卓apk&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
-&lt;hr /&gt;
-
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;step1---安装anbox&quot;&gt;&lt;strong&gt;Step1 - 安装anbox&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p&gt;#准备工作&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install software-properties-common       #In case add-apt-repository is missing
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#为root用户设置密码&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo -s
-passwd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#『可选』如需要切换为用户user1&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# su - user1                                       #切换成用户user1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#安装anbox步骤&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.anbox.io/userguide/install.html&quot;&gt;Anbox官方教程&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/anbox/anbox-modules&quot;&gt;Install Kernel Modules - Install with DKMS&lt;/a&gt;, &lt;a href=&quot;https://github.com/anbox/anbox-modules/archive/master.zip&quot;&gt;Zip&lt;/a&gt;, PPA的方式目前不适用于Debian 10，因此推荐使用”Install with DKMS”直接下载好文件的方式。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;1 - Install necessary kernel modules&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;p&gt;准备工作&lt;/p&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo apt install dkms
-  sudo apt install linux-headers-4.19.0-8-cloud-amd64               
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;&lt;a href=&quot;(https://github.com/anbox/anbox-modules#install-instruction)&quot;&gt;教程步骤&lt;/a&gt;: 
-  先从GitHub将”&lt;a href=&quot;https://github.com/anbox/anbox-modules&quot;&gt;Anbox Kernel Modules&lt;/a&gt;“packages&lt;a href=&quot;https://github.com/anbox/anbox-modules/archive/master.zip&quot;&gt;下载&lt;/a&gt;下来 (&lt;a href=&quot;/assets/file/postsfile/anbox-modules-master.zip&quot;&gt;本地副本&lt;/a&gt;)。&lt;/p&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo cp anbox.conf /etc/modules-load.d/
-  $ sudo cp 99-anbox.rules /lib/udev/rules.d/
-
-  $ sudo cp -rT ashmem /usr/src/anbox-ashmem-1
-  $ sudo cp -rT binder /usr/src/anbox-binder-1
-
-  $ sudo dkms install anbox-ashmem/1
-  $ sudo dkms install anbox-binder/1
-
-  $ sudo modprobe ashmem_linux
-  $ sudo modprobe binder_linux
-  $ lsmod | grep -e ashmem_linux -e binder_linux
-  $ ls -alh /dev/binder /dev/ashmem                
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;load the kernel modules (The next time will be automatically loaded)&lt;/p&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo modprobe ashmem_linux
-  $ sudo modprobe binder_linux
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;System should have two new nodes in /dev directory (&lt;code class=&quot;highlighter-rouge&quot;&gt;/dev/ashmem&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;/dev/binder&lt;/code&gt;)&lt;/p&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ ls -1 /dev/{ashmem,binder}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;2 - Install the Anbox snap&lt;/strong&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo apt update
-  sudo apt install snapd                      #安装snapd
-  sudo snap install --devmode --beta anbox    #使用snap安装anbox beta, 安装完成后重启Debian vps,anbox会出现在&quot;开始菜单&quot;中
-  systemctl reboot -i                         #Restart Debian Linux 
-
-  sudo snap refresh --beta --devmode anbox    #udpate anbox manually
-  snap info anbox                             #Info about the currently available versions of the snap
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;step2---为anbox安装adb&quot;&gt;&lt;strong&gt;Step2 - 为Anbox安装adb&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p&gt;#安装adb&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install android-tools-adb
-sudo ln -s /snap/bin/anbox /usr/bin/anbox         #Managed to run the session-manager after
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#检查adb是否安装成功&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb devices
-adb shell         
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#安装APK程序&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb install 1.apk
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#卸载APK程序&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb shell pm list packages                    #list all installed APP_IDs with
-adb uninstall [APP_ID]                        #卸载程序，注意是[APP_ID]而非文件名称
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#从Linux VPS向anbox互相移动数据&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb push &amp;lt;files&amp;gt; '/sdcard/Download'           #从Linux向anbox传送数据
-adb pull &amp;lt;files&amp;gt; '/sdcard/Download'           #从anbox向Linux传送数据
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p style=&quot;margin-bottom:8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;snap常用命令&quot;&gt;&lt;strong&gt;&lt;font id=&quot;keyword3&quot; color=&quot;green&quot;&gt;『Snap』常用命令&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
-&lt;hr /&gt;
-
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ snap find &amp;lt;search_text&amp;gt;      #搜索透过snap安装的对应安装包
-$ snap list					   #查找透过snap安装的所有安装包，与&quot;snap list --all&quot;效果一样
-$ sudo snap refresh --list     #查找哪些安装包可以进行升级
-$ sudo snap refresh &amp;lt;package&amp;gt;  #指定安装包升级
-$ sudo snap revert &amp;lt;package&amp;gt;   #指定安装包降级
-$ sudo snap remove &amp;lt;package&amp;gt;   #卸载指定安装包    
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p style=&quot;margin-bottom:8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;shrun-sh-files-in-linux&quot;&gt;&lt;strong&gt;&lt;font id=&quot;keyword4&quot; color=&quot;green&quot;&gt;『.sh』Run .sh files in Linux&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
-&lt;hr /&gt;
-
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;#Set execute permission on the script .sh file&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod +x script-name-here.sh      
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#To the script .sh file&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./script-name-here.sh     
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p style=&quot;margin-bottom:8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;wine在debian-10中安装wine-通过wine直接安装微软程序&quot;&gt;&lt;strong&gt;&lt;font id=&quot;keyword5&quot; color=&quot;green&quot;&gt;『Wine』在Debian 10中安装Wine, 通过wine直接安装微软程序&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
-&lt;hr /&gt;
-
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;教程&quot;&gt;&lt;a href=&quot;https://linuxhint.com/installing_wine_debian_10/&quot;&gt;教程&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;#准备工作&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo apt install wget
-$ sudo dpkg --add-architecture i386
-$ sudo apt-add-repository contrib
-$ sudo apt-add-repository non-free
-$ sudo apt update     
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#Installing Wine&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo apt --fix-broken install  
-$ sudo apt install wine wine64 wine32 winbind winetricks   #To confirm the installation, press Y and then press &amp;lt;Enter&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#使用Wine安装windows App&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ~/Downloads
-$ wine xxx.exe	    #会在Linux GUI环境中，自动弹出安装界面
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#使用Wine卸载windows App&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ wine uninstaller        #在弹出的窗口中选择卸载相关App
-$ wine64 uninstaller	  #在弹出的窗口中选择卸载相关App
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#查看Wine目录&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo apt install nautilus
-$ nautilus ~/.wine
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#查看xxx.exe的绝对路径&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ echo &quot;$(pwd)/xxx.exe&quot; | sed 's/ /\\ /g'
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#在Debian 10中安装notepad++，借助snap安装&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo snap install notepad-plus-plus
-$ notepad-plus-plus		  #在Terminal中直接启动
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p style=&quot;margin-bottom:8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;aria2一键安装ccaaaria2--ariang--filebrowser&quot;&gt;&lt;strong&gt;&lt;font id=&quot;keyword6&quot; color=&quot;green&quot;&gt;『Aria2』一键安装CCAA（Aria2 + AriaNg + Filebrowser）&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
-&lt;hr /&gt;
-
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;教程-项目&quot;&gt;&lt;a href=&quot;https://www.771633.com/14275.htm&quot;&gt;教程&lt;/a&gt;, &lt;a href=&quot;https://github.com/helloxz/ccaa&quot;&gt;项目&lt;/a&gt;&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo -i
-# apt-get -y install curl    
-# bash &amp;lt;(curl -Lsk https://raw.githubusercontent.com/helloxz/ccaa/master/ccaa.sh)    //内含安装/卸载/更新互动选项
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Note:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;For GCE, allow &lt;code class=&quot;highlighter-rouge&quot;&gt;Port 6080/6081/6800/6998/51413&lt;/code&gt; in Firewall rules. (ingress, tcp&amp;amp;udp, 0.0.0.0/0)&lt;/li&gt;
-  &lt;li&gt;下载到VPS后，在Aria_webUI，本地搭配FDM可快速下载。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:13px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;ubuntudebian常用命令参见&quot;&gt;&lt;strong&gt;Ubuntu/Debian常用命令：&lt;a href=&quot;/tech/Useful-Collection_Common-Commands-for-Diff-OS/&quot;&gt;参见&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;</content><author><name></name></author><category term="VPS" /><category term="RDP" /></entry></feed>
+&lt;h3 id=&quot;ubuntudebian常用命令参见&quot;&gt;&lt;strong&gt;Ubuntu/Debian常用命令：&lt;a href=&quot;/tech/Useful-Collection_Common-Commands-for-Diff-OS/&quot;&gt;参见&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;</content><author><name></name></author><category term="WSL" /></entry></feed>

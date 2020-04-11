@@ -25,9 +25,9 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">  
-    <h1 class="post-title p-name" itemprop="name headline">AWS Free Tier-EC2 Billing</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Install ADB in Local Linux-OS</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2019-01-08T01:29:21+08:00" itemprop="datePublished">Jan 8, 2019
+      <time class="dt-published" datetime="2020-04-10T00:00:00+08:00" itemprop="datePublished">Apr 10, 2020
       </time></p>
 
 
@@ -48,12 +48,7 @@
 <div class="post-tags">
     
 
-<span style="font-size: 13px; color: #6d9eeb;"><strong><em>Tag▸&nbsp;</em></strong></span> 
-  
-  
-  <a href="/tags/#Cloud/VPS">
-     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>Cloud/VPS</em></strong></span>  
-  </a>
+<span style="font-size: 13px; color: #6d9eeb;"><strong><em></em></strong></span> 
   
   
 </div>
@@ -64,46 +59,77 @@
 
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p><br /></p>
+    <p><br /><br /></p>
 
-<h3 id="aws计费"><strong>AWS计费</strong></h3>
-<p><a href="https://www.zhihu.com/question/59852183"><font size="3px">公式原出处</font></a></p>
+<h3 id="android-platform-tools-download-links"><strong>Android-Platform-Tools Download Links</strong></h3>
 
-<p><br /><img src="/assets/img/24.jpg" width="30%" /> 
-<br /><br /></p>
+<h4 id="webpage"><strong>Webpage:</strong></h4>
+<ul>
+  <li><a href="https://androidsdkmanager.azurewebsites.net/Platformtools">Android SDK Platform-tools</a></li>
+</ul>
+
+<h4 id="下载直链"><strong>下载直链：</strong></h4>
+<ul>
+  <li><a href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip">Latest for Windows</a></li>
+  <li><a href="https://dl.google.com/android/repository/platform-tools-latest-linux.zip">Latest for Linux</a></li>
+</ul>
+
+<p style="margin-bottom: 20px;">&emsp;</p>
+
+<h3 id="for-linux-test-in-ubuntu-1804"><strong>For Linux (Test in Ubuntu 18.04)</strong></h3>
+
+<h4 id="安装最新的android-platform-tools"><strong><font color="green">安装最新的Android-platform-tools</font></strong></h4>
+<hr />
+
+<p><strong>Step1: 安装adb</strong></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get install adb                //卸载 sudo apt purge -y adb &amp;&amp; sudo apt autoremove -y
+
+$ adb version                             //查看安装信息
+Android Debug Bridge version 1.0.39
+Version 1:8.1.0+r23-5~18.04
+Installed as /usr/lib/android-sdk/platform-tools/adb
+</code></pre></div></div>
+
+<p><strong>Step2: 将<code class="highlighter-rouge">platform-tools-latest-linux.zip</code>解压缩后，直接拷贝至<code class="highlighter-rouge">/usr/lib/android-sdk/platform-tools/</code>目录</strong></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ adb kill-server                          //否则当adb server正在运行时，会无法覆盖adb文件
+$ sudo cp -r ./ /usr/lib/android-sdk/platform-tools
+</code></pre></div></div>
+
+<p><strong>Step3: 再次检查adb version</strong></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ adb version                             
+Android Debug Bridge version 1.0.41
+Version 29.0.6-6198805
+Installed as /usr/lib/android-sdk/platform-tools/adb
+</code></pre></div></div>
+
+<p style="margin-bottom: 10px;">&emsp;</p>
+
+<h4 id="为adb加入path"><strong><font color="green">为adb加入path</font></strong></h4>
+<p><a href="https://www.xda-developers.com/adb-fastboot-any-directory-windows-linux/">参考</a></p>
 
 <hr />
 
-<p><br /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ls -la ~/ | more                          //".bashrc"为隐藏文件，输入该命令可以看到
 
-<h3 id="case-study-aws-ec2free-tier"><strong>Case Study-Aws EC2（free tier）</strong></h3>
+$ sudo nano ~/.bashrc                       // 编辑或创建(如原先没有)该文件
 
-<div><font color="#1A1A1A" face="-apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif">  
-<span style="font-size: 15px; background-color: rgb(255, 255, 255);"><br /></span></font></div>
-<div>  
-  
-<ul>  
-<li><b><font color="#6F3198" style="font-size: 18px;"><u>Bill</u></font></b></li>  
-</ul>  
-</div>
-<div><img src="/assets/img/25.jpg" width="690" height="485" /></div>
-<p><p /> 
-<div><img src="/assets/img/26.jpg" width="690" height="389" /></div>   
-<br /> 
-<div>  
-<ul>  
-<li><font color="#6F3198"><span style="font-size: 18px;"><b><u>free  
-tier 免费限制</u></b></span></font></li>  
-</ul>  
-</div>  
-<img src="/assets/img/27.jpg" width="55%" /><br />  
-<br />  
-<img src="/assets/img/28.jpg" width="750" /><br /> <p><p /> 
-<p>出站流量超出费率，随区域变化，官方数据。</p> 
+//在弹出的".bashrc"文件中，加入下行：
+export PATH=${PATH}:/usr/lib/android-sdk/platform-tools/adb
 
-</p></p>
+$ adb                                       //检查是否工作；如果不工作，安装"glibc.i686"和"libstdc++"
+</code></pre></div></div>
 
-  </div><a class="u-url" href="/tech/AWS-Billing/" hidden></a>
+<p style="margin-bottom: 10px;">&emsp;</p>
+
+<h4 id="其他命令"><strong><font color="green">其他命令</font></strong></h4>
+
+<hr />
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ adb kill-server
+$ adb start-server
+</code></pre></div></div>
+
+  </div><a class="u-url" href="/tech/Install-ADB-in-Local-Linux-OS/" hidden></a>
     
 </article>
       </div>
