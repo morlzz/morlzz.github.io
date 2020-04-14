@@ -75,9 +75,28 @@
   </ul>
 </blockquote>
 
-<p style="margin-bottom: 1px;">&emsp;</p>
+<p style="margin-bottom: 8px;">&emsp;</p>
 
-<h4 id="安装linux图形用户界面通常有两种方法">安装Linux图形用户界面通常有两种方法：</h4>
+<h3 id="首次安装wsl1步骤"><strong><font color="green">首次安装WSL1步骤：</font></strong></h3>
+<hr />
+<ul>
+  <li>
+    <h4 id="step1-powershell执行如下命令重启操作系统-作用等同于启用或关闭windows功能"><strong>Step1: Powershell执行如下命令&amp;重启操作系统 (作用等同于”启用或关闭Windows功能”)</strong></h4>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <h4 id="step2-在应用商店中安装想要的linux发行版"><strong>Step2: 在”应用商店”中，安装想要的Linux发行版</strong></h4>
+    <ul>
+      <li>安装完成后，需进入Linux Terminal进行初始设置(用户名+密码)。</li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:30px;">&nbsp;</p>
+
+<h3 id="安装linux图形用户界面通常有两种方法"><strong><font color="green">安装Linux图形用户界面通常有两种方法：</font></strong></h3>
 <hr />
 <ul>
   <li>
@@ -168,14 +187,37 @@
     <p style="margin-bottom:-10px;">&nbsp;</p>
 
     <ul>
-      <li>进入xfce4桌面，基本设置 (一次设置永久生效)：
+      <li><strong>进入xfce4桌面，基本设置 (一次设置永久生效)：</strong>
         <ul>
-          <li>开始菜单/应用/Screensaver: no Screensaver</li>
-          <li>开始菜单/应用/Seettings: Setting Manager  (桌面窗口样式/显示字体大小等等)
+          <li><strong>『Screensaver』：开始菜单/应用/Screensaver: no Screensaver</strong></li>
+        </ul>
+
+        <p style="margin-bottom:-10px;">&nbsp;</p>
+        <ul>
+          <li><strong>『Settings from StartMenu』：开始菜单/应用/Seettings: Setting Manager  (桌面窗口样式/显示字体大小等等)</strong>
             <ul>
-              <li><u>Appearance</u>: “Fonts” Tab, Size：18     (主要的字体大小)</li>
-              <li><u>Desktop</u>: “Icons” Tab, Icon Size：77   (桌面图标大小)</li>
-              <li><u>File Manager</u>: “Side Pane” Tab, 设置左侧图标大小，Shortcut Pane选择Large，Tree Pane选择Normal;窗口大小直接鼠标拉伸；文件夹图标大大小，直接通过右击鼠标选择zoom in或者zoom out。</li>
+              <li><strong><u>Appearance</u></strong>: “Fonts” Tab, Size：18     (主要的字体大小)</li>
+              <li><strong><u>Desktop</u></strong>: “Icons” Tab, Icon Size：78   (桌面图标大小)</li>
+              <li><strong><u>File Manager</u></strong>: “Side Pane” Tab, 设置左侧图标大小，Shortcut Pane选择Normal，Tree Pane选择Small;窗口大小直接鼠标拉伸；文件夹图标大大小，直接通过右击鼠标选择zoom in或者zoom out。</li>
+              <li><strong><u>Panel</u></strong>: Panel 1 Row Size：41; Panel 2 Row Size：64   (上下两个面板条的长度设置)</li>
+              <li><strong><u>Windows Manager</u></strong>: Style/Default/Title Font: Size 18   (设置窗口界面中的文字大小)</li>
+              <li><strong><u>Orange Perference</u></strong>: 点击打开即可   (日历，首次登录需打开一次即可，以后无需)</li>
+              <li><strong><u>Workspace</u></strong>: layout/number of workspaces: 1~4，选择自己需要的数字   (桌面右上方，可右击删除workspace)</li>
+            </ul>
+          </li>
+        </ul>
+
+        <p style="margin-bottom:-10px;">&nbsp;</p>
+        <ul>
+          <li><strong>『Terminal设置』: 打开Terminal窗口</strong>
+            <ul>
+              <li>Tab: “Preference” -&gt; Side Panel: “profile/unamed/” -&gt; “text appearence” Property:
+                <ul>
+                  <li><code class="highlighter-rouge">Initial Terminal Size</code>: 144 columns, 40 rows</li>
+                  <li><code class="highlighter-rouge">Customer Font</code>: 19</li>
+                </ul>
+              </li>
+              <li>关闭&amp;重新打开Terminal，设置即已生效。</li>
             </ul>
           </li>
         </ul>

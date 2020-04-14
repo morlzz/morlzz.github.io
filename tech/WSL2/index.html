@@ -121,7 +121,11 @@
 
 <ul>
   <li>使用<code class="highlighter-rouge">wsl -l</code>，显示当前发行版的名称，如<code class="highlighter-rouge">Ubuntu 18.04</code>。</li>
-  <li>设置发行版，运行：<code class="highlighter-rouge">wsl --set-version &lt;Distro&gt; 2</code>，其中<Distro>更改为`Ubuntu 18.04`</Distro></li>
+  <li>设置发行版，运行：<code class="highlighter-rouge">wsl --set-version &lt;Distro&gt; 2</code>，其中<Distro>更改为`Ubuntu 18.04`
+</Distro>    <ul>
+      <li><code class="highlighter-rouge">wsl --set-version Ubuntu-18.04 2</code></li>
+    </ul>
+  </li>
   <li>如要使 WSL 2 成为默认体系结构，运行：<code class="highlighter-rouge">wsl --set-default-version 2</code>，这会使安装的任何新发行版均初始化为<code class="highlighter-rouge">WSL2发行版</code>。</li>
   <li><code class="highlighter-rouge">wsl --list --verbose</code>或者<code class="highlighter-rouge">wsl -l -v</code>，显示有关发行版所有的详细信息：每个发行版名称、状态、版本号、正在运行的版本。默认发行版标注星号。</li>
 </ul>

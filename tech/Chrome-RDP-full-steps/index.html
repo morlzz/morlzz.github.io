@@ -234,7 +234,7 @@ sudo systemctl status chrome-remote-desktop                 #检查 Chrome远程
 passwd
 </code></pre></div></div>
 
-<p>#『可选』如需要切换为用户user1</p>
+<p>#『可选』如需要切换为用户user1                       //WSL：不需要</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># su - user1                                       #切换成用户user1
 </code></pre></div></div>
 
@@ -249,12 +249,16 @@ passwd
 
     <p>准备工作</p>
     <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sudo apt install dkms
-  sudo apt install linux-headers-4.19.0-8-cloud-amd64               
+  sudo apt install linux-headers-4.19.0-8-cloud-amd64          //for WSL：无需这一步，已手动编译module&amp;headers           
 </code></pre></div>    </div>
 
     <p><a href="(https://github.com/anbox/anbox-modules#install-instruction)">教程步骤</a>: 
   先从GitHub将”<a href="https://github.com/anbox/anbox-modules">Anbox Kernel Modules</a>“packages<a href="https://github.com/anbox/anbox-modules/archive/master.zip">下载</a>下来 (<a href="/assets/file/postsfile/anbox-modules-master.zip">本地副本</a>)。</p>
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo cp anbox.conf /etc/modules-load.d/
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  //或是git提取
+  $ git clone https://github.com/anbox/anbox-modules.git
+  $ cd anbox-modules
+	
+  $ sudo cp anbox.conf /etc/modules-load.d/
   $ sudo cp 99-anbox.rules /lib/udev/rules.d/
 
   $ sudo cp -rT ashmem /usr/src/anbox-ashmem-1
@@ -331,6 +335,13 @@ $ sudo snap refresh --list     #查找哪些安装包可以进行升级
 $ sudo snap refresh &lt;package&gt;  #指定安装包升级
 $ sudo snap revert &lt;package&gt;   #指定安装包降级
 $ sudo snap remove &lt;package&gt;   #卸载指定安装包    
+</code></pre></div></div>
+
+<p>#snap change in progress 错误：解决方法</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>snap changes                   //查看安装情况
+
+//找到status="dong"对应的ID号，比如"5"，终止"5"即可
+sudo snap abort 5
 </code></pre></div></div>
 
 <p style="margin-bottom:8px;">&nbsp;</p>

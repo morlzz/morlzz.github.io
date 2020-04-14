@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-04-11T18:05:59+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">Install &amp;amp; Run Jekyll</title><link href="http://localhost:8000/tech/Install_Run-Jekyll/" rel="alternate" type="text/html" title="Install &amp; Run Jekyll" /><published>2020-04-11T00:00:00+08:00</published><updated>2020-04-11T00:00:00+08:00</updated><id>http://localhost:8000/tech/Install_Run%20Jekyll</id><content type="html" xml:base="http://localhost:8000/tech/Install_Run-Jekyll/">&lt;p style=&quot;margin-bottom: 30px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-04-14T19:03:19+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">Install &amp;amp; Run Jekyll</title><link href="http://localhost:8000/tech/Install_Run-Jekyll/" rel="alternate" type="text/html" title="Install &amp; Run Jekyll" /><published>2020-04-11T00:00:00+08:00</published><updated>2020-04-11T00:00:00+08:00</updated><id>http://localhost:8000/tech/Install_Run%20Jekyll</id><content type="html" xml:base="http://localhost:8000/tech/Install_Run-Jekyll/">&lt;p style=&quot;margin-bottom: 30px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
 &lt;h3 id=&quot;安装教程&quot;&gt;&lt;a href=&quot;https://www.jianshu.com/p/58e2c5ea3103&quot;&gt;&lt;strong&gt;安装教程&lt;/strong&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;hr /&gt;
@@ -364,9 +364,9 @@ Keywords:
 &lt;a href=&quot;#keyword6&quot;&gt;微软子系统(Ubuntu)通过Xshell连接&lt;/a&gt;,
 &lt;a href=&quot;#keyword7&quot;&gt;Install WSL2&lt;/a&gt;,
 &lt;a href=&quot;#keyword8&quot;&gt;WSL Issues&lt;/a&gt;,
-&lt;a href=&quot;#keyword9&quot;&gt;Windows Sandbox .wsb Config&lt;/a&gt;,
-&lt;a href=&quot;#keyword10&quot;&gt;Apps for Windows OS&lt;/a&gt;,
-&lt;a href=&quot;#keyword11&quot;&gt;WindowsOS相关终端命令&lt;/a&gt;
+&lt;a href=&quot;#keyword10&quot;&gt;Windows Sandbox .wsb Config&lt;/a&gt;,
+&lt;a href=&quot;#keyword11&quot;&gt;Apps for Windows OS&lt;/a&gt;,
+&lt;a href=&quot;#keyword12&quot;&gt;WindowsOS相关终端命令&lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;margin-bottom: 25px;&quot;&gt;&amp;emsp;&lt;/p&gt;
@@ -402,22 +402,22 @@ Keywords:
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;8-win10-subsystemwsl-issues&quot;&gt;&lt;font id=&quot;keyword8&quot; color=&quot;green&quot;&gt;8. 『Win10 Subsystem』&lt;/font&gt;&lt;a href=&quot;/tech/WSL-Issues/&quot;&gt;WSL Issues&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;8-win10-subsystemwsl2-issues&quot;&gt;&lt;font id=&quot;keyword8&quot; color=&quot;green&quot;&gt;8. 『Win10 Subsystem』&lt;/font&gt;&lt;a href=&quot;/tech/WSL2-Issues/&quot;&gt;WSL2 Issues&lt;/a&gt;&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;缺失”Linux Header for 4.19.84-microsoft-standard Kernel”；Snapd不正常工作问题…&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;9-win10-sandboxwindows-sandbox-wsb-config&quot;&gt;&lt;font id=&quot;keyword9&quot; color=&quot;green&quot;&gt;9. 『Win10 Sandbox』&lt;/font&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/Win10-Sandbox/&quot;&gt;Windows Sandbox .wsb Config&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;10-win10-sandboxwindows-sandbox-wsb-config&quot;&gt;&lt;font id=&quot;keyword10&quot; color=&quot;green&quot;&gt;10. 『Win10 Sandbox』&lt;/font&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/Win10-Sandbox/&quot;&gt;Windows Sandbox .wsb Config&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;10-windows-apps微软平台推荐应用&quot;&gt;&lt;font id=&quot;keyword10&quot; color=&quot;green&quot;&gt;10. 『Windows Apps』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-Apps/&quot;&gt;微软平台推荐应用&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;11-windows-apps微软平台推荐应用&quot;&gt;&lt;font id=&quot;keyword11&quot; color=&quot;green&quot;&gt;11. 『Windows Apps』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-Apps/&quot;&gt;微软平台推荐应用&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;11-terminal-commandswindowsos相关终端命令&quot;&gt;&lt;font id=&quot;keyword11&quot; color=&quot;green&quot;&gt;11. 『Terminal Commands』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-OS-Commands/&quot;&gt;WindowsOS相关终端命令&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;12-terminal-commandswindowsos相关终端命令&quot;&gt;&lt;font id=&quot;keyword12&quot; color=&quot;green&quot;&gt;12. 『Terminal Commands』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-OS-Commands/&quot;&gt;WindowsOS相关终端命令&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;</content><author><name></name></author><category term="OS" /></entry><entry><title type="html">安装微软Subsystem子系统 v2 - WSL2</title><link href="http://localhost:8000/tech/WSL2/" rel="alternate" type="text/html" title="安装微软Subsystem子系统 v2 - WSL2" /><published>2020-04-04T00:18:00+08:00</published><updated>2020-04-04T00:18:00+08:00</updated><id>http://localhost:8000/tech/WSL2</id><content type="html" xml:base="http://localhost:8000/tech/WSL2/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -476,7 +476,11 @@ Keywords:
 
 &lt;ul&gt;
   &lt;li&gt;使用&lt;code class=&quot;highlighter-rouge&quot;&gt;wsl -l&lt;/code&gt;，显示当前发行版的名称，如&lt;code class=&quot;highlighter-rouge&quot;&gt;Ubuntu 18.04&lt;/code&gt;。&lt;/li&gt;
-  &lt;li&gt;设置发行版，运行：&lt;code class=&quot;highlighter-rouge&quot;&gt;wsl --set-version &amp;lt;Distro&amp;gt; 2&lt;/code&gt;，其中&lt;Distro&gt;更改为`Ubuntu 18.04`&lt;/Distro&gt;&lt;/li&gt;
+  &lt;li&gt;设置发行版，运行：&lt;code class=&quot;highlighter-rouge&quot;&gt;wsl --set-version &amp;lt;Distro&amp;gt; 2&lt;/code&gt;，其中&lt;Distro&gt;更改为`Ubuntu 18.04`
+&lt;/Distro&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;wsl --set-version Ubuntu-18.04 2&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;如要使 WSL 2 成为默认体系结构，运行：&lt;code class=&quot;highlighter-rouge&quot;&gt;wsl --set-default-version 2&lt;/code&gt;，这会使安装的任何新发行版均初始化为&lt;code class=&quot;highlighter-rouge&quot;&gt;WSL2发行版&lt;/code&gt;。&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;wsl --list --verbose&lt;/code&gt;或者&lt;code class=&quot;highlighter-rouge&quot;&gt;wsl -l -v&lt;/code&gt;，显示有关发行版所有的详细信息：每个发行版名称、状态、版本号、正在运行的版本。默认发行版标注星号。&lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><category term="WSL" /></entry><entry><title type="html">Jekyll Terminal Command</title><link href="http://localhost:8000/tech/Jekyll-Terminal-Command/" rel="alternate" type="text/html" title="Jekyll Terminal Command" /><published>2020-04-04T00:00:00+08:00</published><updated>2020-04-04T00:00:00+08:00</updated><id>http://localhost:8000/tech/Jekyll%20Terminal%20Command</id><content type="html" xml:base="http://localhost:8000/tech/Jekyll-Terminal-Command/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -489,7 +493,7 @@ bundle update jekyll
  
 jekyll -v
 bundle -v
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="Jekyll" /></entry><entry><title type="html">WSL Issues</title><link href="http://localhost:8000/tech/WSL-Issues/" rel="alternate" type="text/html" title="WSL Issues" /><published>2020-04-04T00:00:00+08:00</published><updated>2020-04-04T00:00:00+08:00</updated><id>http://localhost:8000/tech/WSL%20Issues</id><content type="html" xml:base="http://localhost:8000/tech/WSL-Issues/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="Jekyll" /></entry><entry><title type="html">WSL2 Issues</title><link href="http://localhost:8000/tech/WSL2-Issues/" rel="alternate" type="text/html" title="WSL2 Issues" /><published>2020-04-04T00:00:00+08:00</published><updated>2020-04-04T00:00:00+08:00</updated><id>http://localhost:8000/tech/WSL2%20Issues</id><content type="html" xml:base="http://localhost:8000/tech/WSL2-Issues/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
 Keywords: 
 &lt;a href=&quot;#keyword1&quot;&gt;Linux header missing&lt;/a&gt;， 
 &lt;a href=&quot;#keyword2&quot;&gt;Snapd not working properly&lt;/a&gt;
@@ -522,7 +526,7 @@ Keywords:
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
       &lt;/li&gt;
       &lt;li&gt;
-        &lt;p&gt;&lt;strong&gt;Step2: 从微软官方下载对应的Kernel包 &lt;code class=&quot;highlighter-rouge&quot;&gt;WSL2-Linux-Kernel-4.19.84-microsoft-standard.tar.gz&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;Step2: 从微软官方下载对应的Kernel包(154MB) &lt;a href=&quot;https://github.com/microsoft/WSL2-Linux-Kernel/archive/4.19.84-microsoft-standard.tar.gz&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;WSL2-Linux-Kernel-4.19.84-microsoft-standard.tar.gz&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;&lt;strong&gt;Step3: 准备工作&lt;/strong&gt;
         &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo apt-get install libelf-dev build-essential pkg-config            
@@ -530,13 +534,15 @@ Keywords:
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
       &lt;/li&gt;
       &lt;li&gt;&lt;strong&gt;Step4: 从Kernel文件进行恢复(restore) modules&lt;/strong&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo tar xvzf WSL2-Linux-Kernel-4.19.84-microsoft-standard.tar.gz    //tar文件完成后可删除
-  $ cd WSL2-Linux-Kernel-4.19.84-microsoft-standard                  //该目录完成后不可删除，&quot;/lib/modules&quot;与其symlink
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ cd ~
+  $ wget https://github.com/microsoft/WSL2-Linux-Kernel/archive/4.19.84-microsoft-standard.tar.gz   //从微软下载WSL2-Linux-Kernel
+  $ sudo tar xvzf 4.19.84-microsoft-standard.tar.gz                    //tar文件完成后可删除
+  $ cd WSL2-Linux-Kernel-4.19.84-microsoft-standard                    //该目录完成后不可删除，&quot;/lib/modules&quot;与其symlink
 
   # zcat /proc/config.gz &amp;gt; .config
 
-  # make -j $(nproc)                                                      //Compile the kernel and modules
-  $ sudo make -j $(nproc) modules_install                                 //Install the modules
+  # make -j $(nproc)                                                   //Compile the kernel and modules
+  $ sudo make -j $(nproc) modules_install                              //Install the modules
 
   //make a symlink of that install
   $ cd /lib/modules
@@ -751,9 +757,28 @@ Keywords:
   &lt;/ul&gt;
 &lt;/blockquote&gt;
 
-&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+&lt;p style=&quot;margin-bottom: 8px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h4 id=&quot;安装linux图形用户界面通常有两种方法&quot;&gt;安装Linux图形用户界面通常有两种方法：&lt;/h4&gt;
+&lt;h3 id=&quot;首次安装wsl1步骤&quot;&gt;&lt;strong&gt;&lt;font color=&quot;green&quot;&gt;首次安装WSL1步骤：&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;step1-powershell执行如下命令重启操作系统-作用等同于启用或关闭windows功能&quot;&gt;&lt;strong&gt;Step1: Powershell执行如下命令&amp;amp;重启操作系统 (作用等同于”启用或关闭Windows功能”)&lt;/strong&gt;&lt;/h4&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;step2-在应用商店中安装想要的linux发行版&quot;&gt;&lt;strong&gt;Step2: 在”应用商店”中，安装想要的Linux发行版&lt;/strong&gt;&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;安装完成后，需进入Linux Terminal进行初始设置(用户名+密码)。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:30px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;安装linux图形用户界面通常有两种方法&quot;&gt;&lt;strong&gt;&lt;font color=&quot;green&quot;&gt;安装Linux图形用户界面通常有两种方法：&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
 &lt;hr /&gt;
 &lt;ul&gt;
   &lt;li&gt;
@@ -844,14 +869,37 @@ Keywords:
     &lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
     &lt;ul&gt;
-      &lt;li&gt;进入xfce4桌面，基本设置 (一次设置永久生效)：
+      &lt;li&gt;&lt;strong&gt;进入xfce4桌面，基本设置 (一次设置永久生效)：&lt;/strong&gt;
         &lt;ul&gt;
-          &lt;li&gt;开始菜单/应用/Screensaver: no Screensaver&lt;/li&gt;
-          &lt;li&gt;开始菜单/应用/Seettings: Setting Manager  (桌面窗口样式/显示字体大小等等)
+          &lt;li&gt;&lt;strong&gt;『Screensaver』：开始菜单/应用/Screensaver: no Screensaver&lt;/strong&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;『Settings from StartMenu』：开始菜单/应用/Seettings: Setting Manager  (桌面窗口样式/显示字体大小等等)&lt;/strong&gt;
             &lt;ul&gt;
-              &lt;li&gt;&lt;u&gt;Appearance&lt;/u&gt;: “Fonts” Tab, Size：18     (主要的字体大小)&lt;/li&gt;
-              &lt;li&gt;&lt;u&gt;Desktop&lt;/u&gt;: “Icons” Tab, Icon Size：77   (桌面图标大小)&lt;/li&gt;
-              &lt;li&gt;&lt;u&gt;File Manager&lt;/u&gt;: “Side Pane” Tab, 设置左侧图标大小，Shortcut Pane选择Large，Tree Pane选择Normal;窗口大小直接鼠标拉伸；文件夹图标大大小，直接通过右击鼠标选择zoom in或者zoom out。&lt;/li&gt;
+              &lt;li&gt;&lt;strong&gt;&lt;u&gt;Appearance&lt;/u&gt;&lt;/strong&gt;: “Fonts” Tab, Size：18     (主要的字体大小)&lt;/li&gt;
+              &lt;li&gt;&lt;strong&gt;&lt;u&gt;Desktop&lt;/u&gt;&lt;/strong&gt;: “Icons” Tab, Icon Size：78   (桌面图标大小)&lt;/li&gt;
+              &lt;li&gt;&lt;strong&gt;&lt;u&gt;File Manager&lt;/u&gt;&lt;/strong&gt;: “Side Pane” Tab, 设置左侧图标大小，Shortcut Pane选择Normal，Tree Pane选择Small;窗口大小直接鼠标拉伸；文件夹图标大大小，直接通过右击鼠标选择zoom in或者zoom out。&lt;/li&gt;
+              &lt;li&gt;&lt;strong&gt;&lt;u&gt;Panel&lt;/u&gt;&lt;/strong&gt;: Panel 1 Row Size：41; Panel 2 Row Size：64   (上下两个面板条的长度设置)&lt;/li&gt;
+              &lt;li&gt;&lt;strong&gt;&lt;u&gt;Windows Manager&lt;/u&gt;&lt;/strong&gt;: Style/Default/Title Font: Size 18   (设置窗口界面中的文字大小)&lt;/li&gt;
+              &lt;li&gt;&lt;strong&gt;&lt;u&gt;Orange Perference&lt;/u&gt;&lt;/strong&gt;: 点击打开即可   (日历，首次登录需打开一次即可，以后无需)&lt;/li&gt;
+              &lt;li&gt;&lt;strong&gt;&lt;u&gt;Workspace&lt;/u&gt;&lt;/strong&gt;: layout/number of workspaces: 1~4，选择自己需要的数字   (桌面右上方，可右击删除workspace)&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;『Terminal设置』: 打开Terminal窗口&lt;/strong&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Tab: “Preference” -&amp;gt; Side Panel: “profile/unamed/” -&amp;gt; “text appearence” Property:
+                &lt;ul&gt;
+                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Initial Terminal Size&lt;/code&gt;: 144 columns, 40 rows&lt;/li&gt;
+                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Customer Font&lt;/code&gt;: 19&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;关闭&amp;amp;重新打开Terminal，设置即已生效。&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
