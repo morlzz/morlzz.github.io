@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8000/feed.xml" title="Morgan Zhao's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Morgan Zhao&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/Search/">Search</a><a class="page-link" href="/tags/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">  
+    <h1 class="post-title p-name" itemprop="name headline">Install Apps in WSL2-Ubuntu20.04</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-04-28T00:00:00+08:00" itemprop="datePublished">Apr 28, 2020
+      </time></p>
+
+
+<div class="post-categories">
+  
+  
+<span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Category▸&nbsp;</em></strong></span>   
+  
+  
+  <a href="/categories/#Tech">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Tech</em></strong></span>     
+  </a>  
+  
+  
+</div>
+
+
+<div class="post-tags">
+    
+
+<span style="font-size: 13px; color: #6d9eeb;"><strong><em>Tag▸&nbsp;</em></strong></span> 
+  
+  
+  <a href="/tags/#WSL">
+     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>WSL</em></strong></span>  
+  </a>
+  
+  
+</div>
+
+<span style="font-size:; color: rgb(127, 127, 127);"><strong><em></em></strong></span>
+
+  </header>
+
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="margin-bottom:35px;">&nbsp;</p>
+
+<h4 id="step-by-step"><strong>Step By Step.</strong></h4>
+
+<p style="margin-bottom:-5px;">&nbsp;</p>
+
+<h4 id="准备工作1"><strong>准备工作1</strong></h4>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//为root用户设置密码
+$ sudo -s
+$ passwd
+
+
+//为用户“xxx”添加sudo权限
+$ sudo chmod u+w /etc/sudoers 
+//nano编辑sudoers文件，光标直接移动/回车换行，鼠标右击paste，ctrl+x退出/Y保存/enter确认，ctrl+k删除行/长按可快速删除行。找到"root ALL=(ALL) ALL"这行, 在他下面添加"xxx ALL=(ALL) ALL" 。
+$ sudo nano /etc/sudoers 
+$ sudo cat /etc/sudoers          
+$ sudo chmod u-w /etc/sudoers 
+</code></pre></div></div>
+
+<p style="margin-bottom:10px;">&nbsp;</p>
+<h4 id="替换成国内源-etcaptsourceslist-for-ubuntu-2004"><strong>替换成国内源: <code class="highlighter-rouge">/etc/apt/sources.list</code> for Ubuntu-20.04</strong></h4>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 清华
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+
+# 预发布软件源，不建议启用
+# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+</code></pre></div></div>
+
+<p style="margin-bottom:10px;">&nbsp;</p>
+<h4 id="日常更新"><strong>日常更新</strong></h4>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update &amp;&amp; sudo apt upgrade
+</code></pre></div></div>
+
+<p style="margin-bottom:10px;">&nbsp;</p>
+<h4 id="恢复linux-header-for-wsl2"><strong>恢复Linux Header for WSL2</strong></h4>
+
+<p><a href="/tech/WSL2-Issues/#keyword1">详见</a></p>
+
+<p style="margin-bottom:10px;">&nbsp;</p>
+<h4 id="install-xfce4-rdp"><strong>Install xfce4 RDP</strong></h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//安装xorg（包括显卡驱动、图形环境库等等一系列软件包）
+$ sudo apt install xorg
+
+//安装xfce4（运行在类Unix操作系统上，提供轻量级桌面环境）
+$ sudo apt install xfce4
+
+//安装xrdp（一种开源的远程桌面协议（RDP）服务器）
+$ sudo apt install xrdp
+
+//配置xrdp（配置端口）, 默认端口号为3389，此处配置为3399
+$ sudo sed -i 's/port=3389/port=3399/g' /etc/xrdp/xrdp.ini
+
+//向.xsession中写入xfce4-session
+$ sudo echo xfce4-session &gt;~/.xsession
+
+//重启xrdp服务
+$ sudo service xrdp restart                    //停止xrdp服务： sudo service xrdp stop
+</code></pre></div></div>
+
+<p style="margin-bottom:10px;">&nbsp;</p>
+<h4 id="解决默认snapd-for-wsl2不可用问题"><strong>解决默认Snapd for WSL2不可用问题</strong></h4>
+<blockquote>
+  <p>该方法，Ubuntu使用成功。但 Debian, 会出现问题，勿用。</p>
+</blockquote>
+
+<p><a href="/tech/WSL2-Issues/#keyword2">参考</a>，但<code class="highlighter-rouge">Ubuntu 20.04</code>与<code class="highlighter-rouge">Ubuntu 18.04</code>有些微不同。详细步骤：</p>
+
+<ul>
+  <li><strong>Step1: 准备工作</strong>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo apt-get update &amp;&amp; sudo apt-get install -yqq daemonize dbus-user-session fontconfig
+	
+  //安装daemonize(否则以下文件修改后，会出现"/usr/sbin/daemonize: No such file or directory"错误，而无法再次进入wsl)
+  $ sudo apt-get update -y &amp;&amp; sudo apt-get install -y daemoniz
+  //注意：Ubuntu 20.04将其安装在"/usr/bin/daemonize"，而Ubuntu 18.04安装在"/usr/sbin/daemonize"，需ln -s。
+	
+  $ sudo apt install dos2unix
+  // dos2unix使用方法, 消除转换windows的格式问题
+  //$ dos2unix [filename]
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Step2: 新建&amp;修改文件</strong>
+    <ul>
+      <li>
+        <p>【<strong><font color="#4d8df1">文件1：新建</font></strong>】/usr/sbin/start-systemd-namespace文件 <code class="highlighter-rouge">sudo nano /usr/sbin/start-systemd-namespace</code>，添加以下内容：<a href="/assets/file/postsfile/wslissue/1.txt" target="_blank">File1</a>，<a href="/assets/file/postsfile/wslissue/start-systemd-namespace" target="_blank">下载</a></p>
+      </li>
+      <li>
+        <p>【<strong><font color="#4d8df1">文件2：新建</font></strong>】/usr/sbin/enter-systemd-namespace文件 <code class="highlighter-rouge">sudo nano /usr/sbin/enter-systemd-namespace</code>，添加以下内容后并赋予可执行权限(chmod +x)<code class="highlighter-rouge">sudo chmod +x /usr/sbin/enter-systemd-namespace</code>：<a href="/assets/file/postsfile/wslissue/2.txt" target="_blank">File2</a>，<a href="/assets/file/postsfile/wslissue/enter-systemd-namespace" target="_blank">下载</a></p>
+      </li>
+      <li>
+        <p>【<strong><font color="#4d8df1">文件3：修改</font></strong>】/etc/sudoers文件(推荐使用 sudo visudo命令) <code class="highlighter-rouge">sudo visudo -f /etc/sudoers</code>，在文件的末尾添加以下内容：<a href="/assets/file/postsfile/wslissue/3.txt" target="_blank">Add3</a>，<a href="/assets/file/postsfile/wslissue/add" target="_blank">下载</a></p>
+      </li>
+      <li>
+        <p>【<strong><font color="#4d8df1">文件4：修改</font></strong>】在/etc/bash.bashrc文件中，需要增加一行，直接运行以下命令进行增加</p>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sudo sed -i 2a"# Start or enter a PID namespace in WSL2\nsource /usr/sbin/start-systemd-namespace\n" /etc/bash.bashrc
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Step3: 在WSL窗口，输入</strong>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo ln -s /usr/bin/daemonize /usr/sbin/daemonize
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Step4: 在CMD窗口，增加两个环境变量</strong>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  cmd.exe /C setx WSLENV BASH_ENV/u
+  cmd.exe /C setx BASH_ENV /etc/bash.bashrc
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Step5: 退出WSL2所有进程，以确保更改后的new kernel得以应用</strong>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  //在Powershell运行：
+  wsl --shutdown
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Step6: 重启WSL2，提示错误”/bin/cat: /root/.systemd-env: No such file or directory”，解决方法</strong>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo cp $HOME/.systemd-env /root/.systemd-env
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Step7: 重启WSL2，问题解决。输入<code class="highlighter-rouge">snap version</code>命令。以下状态表示Snapd正常工作</strong>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ snap version
+  snap    2.44.3+20.04
+  snapd   2.44.3+20.04
+  series  16
+  ubuntu  20.04
+  kernel  4.19.84-microsoft-standard
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p style="margin-bottom:30px;">&nbsp;</p>
+<h3 id="issues"><strong>Issues</strong></h3>
+
+<ul>
+  <li>
+    <h4 id="issue1host问题-sudo-unable-to-resolve-host-webserver"><strong>Issue1:Host问题 “sudo: unable to resolve host webserver”</strong></h4>
+    <blockquote>
+      <p>问题描述：在”/etc/hosts”添加hostname，临时可解决问题，但”wsl –shutdown”重启后，问题依旧，且”/etc/hosts”仍变回原先版本。</p>
+    </blockquote>
+
+    <ul>
+      <li>解决方法：
+        <ul>
+          <li><strong>在WSL2输入：</strong><code class="highlighter-rouge">sudo true</code>，如问题存在会显示<code class="highlighter-rouge">sudo: unable to resolve host webserver</code>。<br />继而输入<code class="highlighter-rouge">$ hostname</code>，假设显示结果<code class="highlighter-rouge">aaa</code>。</li>
+          <li><strong>在windows系统：</strong><code class="highlighter-rouge">c:\Windows\System32\Drivers\etc\hosts</code>中，添加<code class="highlighter-rouge">127.0.0.1   aaa</code>。</li>
+          <li><strong>重启WSL2，</strong>输入<code class="highlighter-rouge">sudo true</code>，不再报错，问题解决。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+  </div><a class="u-url" href="/tech/Install-Apps-in-WSL2-Ubuntu20.04/" hidden></a>
+    
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Morgan Zhao&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name"><a href="/">Morgan Zhao&#39;s Blog</a></li><li>FB：<a href="https://www.facebook.com/zzmorl"><span class="username">zzmorl</span></a></li></ul>
+      </div>
+
+<!--
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/zzmorl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">zzmorl</span></a></li></ul>
+</div>  
+
+      <div class="footer-col footer-col-3">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+-->
+	  
+	  <div class="footer-col footer-col-4">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+	  
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
+

@@ -102,7 +102,13 @@ sudo apt upgrade
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install wget
 </code></pre></div></div>
 
-<p>#准备工作1：为用户“xxx”添加sudo权限</p>
+<p>#准备工作1：Xshell登录GCE VM为例，终端界面显示用户名称：<strong><code class="highlighter-rouge">xxx@yyy:~$</code></strong></p>
+<ul>
+  <li><code class="highlighter-rouge">xxx</code>：为google ssh密钥设置的用户名</li>
+  <li><code class="highlighter-rouge">yyy</code>：为该VPS_IP_Host对应的GCE_VM项目名称</li>
+</ul>
+
+<p>#准备工作2：为用户“xxx”添加sudo权限</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chmod u+w /etc/sudoers 
 
 #vim编辑sudoers文件 (ins键进入编辑状态；保存退出: Esc键后，:wq!回车)
@@ -117,18 +123,18 @@ sudo cat /etc/sudoers          #查看文件
 sudo chmod u-w /etc/sudoers 
 </code></pre></div></div>
 
-<p>#准备工作2：解决问题 - “sudo: unable to resolve host my-machine”</p>
+<p>#准备工作3：解决问题 - “sudo: unable to resolve host my-machine”</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chmod -R 777 /etc/hosts
 
 sudo vi /etc/hosts			  #编辑hosts文件 (ins键进入编辑状态；保存退出: Esc键后，:wq!回车)
-“127.0.1.1    yyy”            #在"/etc/hosts"文件中, add 127.0.1.1 你的GCE VM项目名称
+  127.0.0.1    yyy            #在"/etc/hosts"文件中, add 127.0.1.1 你的GCE VM项目名称
 
 sudo cat /etc/hosts           #查看文件
 
 sudo chmod -R 644 /etc/hosts
 </code></pre></div></div>
 
-<p>#准备工作3：为当前用户设置密码</p>
+<p>#准备工作4：为当前用户设置密码</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo passwd $(whoami)
 </code></pre></div></div>
 
@@ -137,9 +143,12 @@ sudo chmod -R 644 /etc/hosts
 
 sudo apt update
 
-sudo dpkg --install chrome-remote-desktop_current_amd64.deb
+sudo apt install --assume-yes --fix-broken   //OR：sudo apt --fix-broken install
 
-sudo apt install --assume-yes --fix-broken
+//Ignore, but if needed,try: 
+//sudo dpkg --add-architecture i386 &amp;&amp; sudo apt update
+
+sudo dpkg --install chrome-remote-desktop_current_amd64.deb
 </code></pre></div></div>
 
 <p>#开始安装Xfce</p>
@@ -158,9 +167,9 @@ sudo systemctl disable lightdm.service
 <p>#安装 Chrome 浏览器</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
-sudo dpkg --install google-chrome-stable_current_amd64.deb
+sudo apt install --assume-yes --fix-broken
 
-sudo apt install --assume-yes --fix-broken	
+sudo dpkg --install google-chrome-stable_current_amd64.deb	
 </code></pre></div></div>
 
 <p>#提高桌面分辨率, 设为自己机器的分辨率</p>

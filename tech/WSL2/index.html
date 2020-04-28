@@ -25,7 +25,7 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">  
-    <h1 class="post-title p-name" itemprop="name headline">安装微软Subsystem子系统 v2 - WSL2</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Install WSL2 &amp; Backup/restore WSL2</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="2020-04-04T00:18:00+08:00" itemprop="datePublished">Apr 4, 2020
       </time></p>
@@ -128,6 +128,70 @@
   </li>
   <li>如要使 WSL 2 成为默认体系结构，运行：<code class="highlighter-rouge">wsl --set-default-version 2</code>，这会使安装的任何新发行版均初始化为<code class="highlighter-rouge">WSL2发行版</code>。</li>
   <li><code class="highlighter-rouge">wsl --list --verbose</code>或者<code class="highlighter-rouge">wsl -l -v</code>，显示有关发行版所有的详细信息：每个发行版名称、状态、版本号、正在运行的版本。默认发行版标注星号。</li>
+</ul>
+
+<hr />
+
+<p style="margin-bottom: 20px;">&emsp;</p>
+
+<h3 id="backuprestore-wsl2"><strong>Backup/restore WSL2</strong></h3>
+<blockquote>
+  <p>使用Powershel自带”wsl –export”、”wsl –import”命令直接进行备份和恢复生成的”.tar”文件。</p>
+</blockquote>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//To list the distros installed
+wsl --list
+
+//to export a distro’s file system to a TAR file:
+wsl --export distro_name file_name.tar
+wsl --export Ubuntu-18.04 MyDebianBackup20200416.tar
+wsl --export Debian MyDebianBackup20200416.tar
+
+
+//to import the TAR backup file
+wsl --import distro_name install_location file_name.tar
+wsl --import Ubuntu-18.04 C:\Downloads\myinstall C:\1\MyDebianBackup20200416.tar
+wsl --import Debian C:\Downloads\myinstall C:\1\MyDebianBackup20200416.tar
+</code></pre></div></div>
+
+<h3 id="注销wsl2"><strong>注销WSL2</strong></h3>
+<blockquote>
+  <p>和卸载效果一样。</p>
+</blockquote>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl --unregister Debian
+wsl --unregister Ubuntu-18.04
+</code></pre></div></div>
+
+<h3 id="改变登录wsl2的默认用户名"><strong>改变登录WSL2的默认用户名</strong></h3>
+<blockquote>
+  <p>假设 WSL2-ubuntu 18.04。</p>
+</blockquote>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ubuntu1804 config --default-user &lt;username&gt;
+</code></pre></div></div>
+<hr />
+
+<p style="margin-bottom: 20px;">&emsp;</p>
+
+<h3 id="wsl2-相关路径"><strong>WSL2 相关路径</strong></h3>
+<blockquote>
+  <p>windows host可直接浏览wsl完整文件的路径</p>
+</blockquote>
+
+<ul>
+  <li><strong>在文件浏览器中输入：</strong>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  \\wsl$
+</code></pre></div>    </div>
+  </li>
+  <li><strong>WSL2-Ubuntu 默认安装路径：</strong>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  C:\Users\&lt;username&gt;\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_...\LocalState
+</code></pre></div>    </div>
+  </li>
+  <li><strong>WSL2-Debian 默认安装路径：</strong>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  C:\Users\&lt;username&gt;\AppData\Local\Packages\TheDebianProject.DebianGNULinux_...\LocalState
+</code></pre></div>    </div>
+  </li>
 </ul>
 
 

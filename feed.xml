@@ -1,4 +1,751 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-04-14T19:03:19+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">Install &amp;amp; Run Jekyll</title><link href="http://localhost:8000/tech/Install_Run-Jekyll/" rel="alternate" type="text/html" title="Install &amp; Run Jekyll" /><published>2020-04-11T00:00:00+08:00</published><updated>2020-04-11T00:00:00+08:00</updated><id>http://localhost:8000/tech/Install_Run%20Jekyll</id><content type="html" xml:base="http://localhost:8000/tech/Install_Run-Jekyll/">&lt;p style=&quot;margin-bottom: 30px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-04-28T22:37:26+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">Install Apps in WSL2-Ubuntu20.04</title><link href="http://localhost:8000/tech/Install-Apps-in-WSL2-Ubuntu20.04/" rel="alternate" type="text/html" title="Install Apps in WSL2-Ubuntu20.04" /><published>2020-04-28T00:00:00+08:00</published><updated>2020-04-28T00:00:00+08:00</updated><id>http://localhost:8000/tech/Install%20Apps%20in%20WSL2-Ubuntu20.04</id><content type="html" xml:base="http://localhost:8000/tech/Install-Apps-in-WSL2-Ubuntu20.04/">&lt;p style=&quot;margin-bottom:35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;step-by-step&quot;&gt;&lt;strong&gt;Step By Step.&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p style=&quot;margin-bottom:-5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;准备工作1&quot;&gt;&lt;strong&gt;准备工作1&lt;/strong&gt;&lt;/h4&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//为root用户设置密码
+$ sudo -s
+$ passwd
+
+
+//为用户“xxx”添加sudo权限
+$ sudo chmod u+w /etc/sudoers 
+//nano编辑sudoers文件，光标直接移动/回车换行，鼠标右击paste，ctrl+x退出/Y保存/enter确认，ctrl+k删除行/长按可快速删除行。找到&quot;root ALL=(ALL) ALL&quot;这行, 在他下面添加&quot;xxx ALL=(ALL) ALL&quot; 。
+$ sudo nano /etc/sudoers 
+$ sudo cat /etc/sudoers          
+$ sudo chmod u-w /etc/sudoers 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h4 id=&quot;替换成国内源-etcaptsourceslist-for-ubuntu-2004&quot;&gt;&lt;strong&gt;替换成国内源: &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/apt/sources.list&lt;/code&gt; for Ubuntu-20.04&lt;/strong&gt;&lt;/h4&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 清华
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+
+# 预发布软件源，不建议启用
+# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h4 id=&quot;日常更新&quot;&gt;&lt;strong&gt;日常更新&lt;/strong&gt;&lt;/h4&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h4 id=&quot;恢复linux-header-for-wsl2&quot;&gt;&lt;strong&gt;恢复Linux Header for WSL2&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;/tech/WSL2-Issues/#keyword1&quot;&gt;详见&lt;/a&gt;&lt;/p&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h4 id=&quot;install-xfce4-rdp&quot;&gt;&lt;strong&gt;Install xfce4 RDP&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//安装xorg（包括显卡驱动、图形环境库等等一系列软件包）
+$ sudo apt install xorg
+
+//安装xfce4（运行在类Unix操作系统上，提供轻量级桌面环境）
+$ sudo apt install xfce4
+
+//安装xrdp（一种开源的远程桌面协议（RDP）服务器）
+$ sudo apt install xrdp
+
+//配置xrdp（配置端口）, 默认端口号为3389，此处配置为3399
+$ sudo sed -i 's/port=3389/port=3399/g' /etc/xrdp/xrdp.ini
+
+//向.xsession中写入xfce4-session
+$ sudo echo xfce4-session &amp;gt;~/.xsession
+
+//重启xrdp服务
+$ sudo service xrdp restart                    //停止xrdp服务： sudo service xrdp stop
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h4 id=&quot;解决默认snapd-for-wsl2不可用问题&quot;&gt;&lt;strong&gt;解决默认Snapd for WSL2不可用问题&lt;/strong&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;该方法，Ubuntu使用成功。但 Debian, 会出现问题，勿用。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;/tech/WSL2-Issues/#keyword2&quot;&gt;参考&lt;/a&gt;，但&lt;code class=&quot;highlighter-rouge&quot;&gt;Ubuntu 20.04&lt;/code&gt;与&lt;code class=&quot;highlighter-rouge&quot;&gt;Ubuntu 18.04&lt;/code&gt;有些微不同。详细步骤：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Step1: 准备工作&lt;/strong&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install -yqq daemonize dbus-user-session fontconfig
+	
+  //安装daemonize(否则以下文件修改后，会出现&quot;/usr/sbin/daemonize: No such file or directory&quot;错误，而无法再次进入wsl)
+  $ sudo apt-get update -y &amp;amp;&amp;amp; sudo apt-get install -y daemoniz
+  //注意：Ubuntu 20.04将其安装在&quot;/usr/bin/daemonize&quot;，而Ubuntu 18.04安装在&quot;/usr/sbin/daemonize&quot;，需ln -s。
+	
+  $ sudo apt install dos2unix
+  // dos2unix使用方法, 消除转换windows的格式问题
+  //$ dos2unix [filename]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Step2: 新建&amp;amp;修改文件&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;【&lt;strong&gt;&lt;font color=&quot;#4d8df1&quot;&gt;文件1：新建&lt;/font&gt;&lt;/strong&gt;】/usr/sbin/start-systemd-namespace文件 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo nano /usr/sbin/start-systemd-namespace&lt;/code&gt;，添加以下内容：&lt;a href=&quot;/assets/file/postsfile/wslissue/1.txt&quot; target=&quot;_blank&quot;&gt;File1&lt;/a&gt;，&lt;a href=&quot;/assets/file/postsfile/wslissue/start-systemd-namespace&quot; target=&quot;_blank&quot;&gt;下载&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;【&lt;strong&gt;&lt;font color=&quot;#4d8df1&quot;&gt;文件2：新建&lt;/font&gt;&lt;/strong&gt;】/usr/sbin/enter-systemd-namespace文件 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo nano /usr/sbin/enter-systemd-namespace&lt;/code&gt;，添加以下内容后并赋予可执行权限(chmod +x)&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo chmod +x /usr/sbin/enter-systemd-namespace&lt;/code&gt;：&lt;a href=&quot;/assets/file/postsfile/wslissue/2.txt&quot; target=&quot;_blank&quot;&gt;File2&lt;/a&gt;，&lt;a href=&quot;/assets/file/postsfile/wslissue/enter-systemd-namespace&quot; target=&quot;_blank&quot;&gt;下载&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;【&lt;strong&gt;&lt;font color=&quot;#4d8df1&quot;&gt;文件3：修改&lt;/font&gt;&lt;/strong&gt;】/etc/sudoers文件(推荐使用 sudo visudo命令) &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo visudo -f /etc/sudoers&lt;/code&gt;，在文件的末尾添加以下内容：&lt;a href=&quot;/assets/file/postsfile/wslissue/3.txt&quot; target=&quot;_blank&quot;&gt;Add3&lt;/a&gt;，&lt;a href=&quot;/assets/file/postsfile/wslissue/add&quot; target=&quot;_blank&quot;&gt;下载&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;【&lt;strong&gt;&lt;font color=&quot;#4d8df1&quot;&gt;文件4：修改&lt;/font&gt;&lt;/strong&gt;】在/etc/bash.bashrc文件中，需要增加一行，直接运行以下命令进行增加&lt;/p&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo sed -i 2a&quot;# Start or enter a PID namespace in WSL2\nsource /usr/sbin/start-systemd-namespace\n&quot; /etc/bash.bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Step3: 在WSL窗口，输入&lt;/strong&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo ln -s /usr/bin/daemonize /usr/sbin/daemonize
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Step4: 在CMD窗口，增加两个环境变量&lt;/strong&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  cmd.exe /C setx WSLENV BASH_ENV/u
+  cmd.exe /C setx BASH_ENV /etc/bash.bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Step5: 退出WSL2所有进程，以确保更改后的new kernel得以应用&lt;/strong&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  //在Powershell运行：
+  wsl --shutdown
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Step6: 重启WSL2，提示错误”/bin/cat: /root/.systemd-env: No such file or directory”，解决方法&lt;/strong&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo cp $HOME/.systemd-env /root/.systemd-env
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Step7: 重启WSL2，问题解决。输入&lt;code class=&quot;highlighter-rouge&quot;&gt;snap version&lt;/code&gt;命令。以下状态表示Snapd正常工作&lt;/strong&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ snap version
+  snap    2.44.3+20.04
+  snapd   2.44.3+20.04
+  series  16
+  ubuntu  20.04
+  kernel  4.19.84-microsoft-standard
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:30px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h3 id=&quot;issues&quot;&gt;&lt;strong&gt;Issues&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;issue1host问题-sudo-unable-to-resolve-host-webserver&quot;&gt;&lt;strong&gt;Issue1:Host问题 “sudo: unable to resolve host webserver”&lt;/strong&gt;&lt;/h4&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;问题描述：在”/etc/hosts”添加hostname，临时可解决问题，但”wsl –shutdown”重启后，问题依旧，且”/etc/hosts”仍变回原先版本。&lt;/p&gt;
+    &lt;/blockquote&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;解决方法：
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;在WSL2输入：&lt;/strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo true&lt;/code&gt;，如问题存在会显示&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo: unable to resolve host webserver&lt;/code&gt;。&lt;br /&gt;继而输入&lt;code class=&quot;highlighter-rouge&quot;&gt;$ hostname&lt;/code&gt;，假设显示结果&lt;code class=&quot;highlighter-rouge&quot;&gt;aaa&lt;/code&gt;。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;在windows系统：&lt;/strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;c:\Windows\System32\Drivers\etc\hosts&lt;/code&gt;中，添加&lt;code class=&quot;highlighter-rouge&quot;&gt;127.0.0.1   aaa&lt;/code&gt;。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;重启WSL2，&lt;/strong&gt;输入&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo true&lt;/code&gt;，不再报错，问题解决。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="WSL" /></entry><entry><title type="html">Install Anbox for WSL2-Ubuntu18.04</title><link href="http://localhost:8000/tech/Install-Anbox-for-WSL2-Ubuntu18.04/" rel="alternate" type="text/html" title="Install Anbox for WSL2-Ubuntu18.04" /><published>2020-04-22T23:33:00+08:00</published><updated>2020-04-22T23:33:00+08:00</updated><id>http://localhost:8000/tech/Install%20Anbox%20for%20WSL2-Ubuntu18.04</id><content type="html" xml:base="http://localhost:8000/tech/Install-Anbox-for-WSL2-Ubuntu18.04/">&lt;p style=&quot;margin-bottom:35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;step-by-step&quot;&gt;&lt;strong&gt;Step By Step.&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;(Here, &lt;a href=&quot;/tech/MyConfig-for-WSL2-Ubuntu18.04/&quot;&gt;&lt;u&gt;MyConfig&lt;/u&gt;&lt;/a&gt; is only for My Personnel)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p style=&quot;margin-bottom:-5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;准备工作1&quot;&gt;&lt;strong&gt;准备工作1&lt;/strong&gt;&lt;/h4&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//为root用户设置密码
+$ sudo -s
+$ passwd
+
+
+//为用户“xxx”添加sudo权限
+$ sudo chmod u+w /etc/sudoers 
+//nano编辑sudoers文件，光标直接移动/回车换行，鼠标右击paste，ctrl+x退出/Y保存/enter确认，ctrl+k删除行/长按可快速删除行。找到&quot;root ALL=(ALL) ALL&quot;这行, 在他下面添加&quot;xxx ALL=(ALL) ALL&quot; 。
+$ sudo nano /etc/sudoers 
+$ sudo cat /etc/sudoers          
+$ sudo chmod u-w /etc/sudoers 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h4 id=&quot;替换成国内源-etcaptsourceslist-for-ubuntu-1804&quot;&gt;&lt;strong&gt;替换成国内源: &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/apt/sources.list&lt;/code&gt; for Ubuntu-18.04&lt;/strong&gt;&lt;/h4&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse  
+deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse  
+deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse  
+deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse  
+##测试版源  
+deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse  
+# 源码  
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse  
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse  
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse  
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse  
+##测试版源  
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse  
+# Canonical 合作伙伴和附加  
+deb http://archive.canonical.com/ubuntu/ bionic partner  
+#deb http://extras.ubuntu.com/ubuntu/ bionic main
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h4 id=&quot;日常更新&quot;&gt;&lt;strong&gt;日常更新&lt;/strong&gt;&lt;/h4&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h4 id=&quot;准备工作2---恢复linux-header-for-wsl2&quot;&gt;&lt;strong&gt;准备工作2 - 恢复Linux Header for WSL2&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;/tech/WSL2-Issues/#keyword1&quot;&gt;详见&lt;/a&gt;&lt;/p&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h4 id=&quot;安装kernel-module-for-anbox-官方教程&quot;&gt;&lt;strong&gt;安装Kernel Module for Anbox (&lt;a href=&quot;https://docs.anbox.io/userguide/install.html&quot;&gt;官方教程&lt;/a&gt;)&lt;/strong&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;注意：Ubuntu可成功按官方方法添加源。但 Debian需采用&lt;a href=&quot;https://github.com/anbox/anbox-modules&quot;&gt;手动方法&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo apt install software-properties-common
+
+$ sudo add-apt-repository ppa:morphis/anbox-support
+$ sudo apt update
+$ sudo apt install linux-headers-generic anbox-modules-dkms
+
+$ sudo modprobe ashmem_linux
+$ sudo modprobe binder_linux
+
+$ ls -1 /dev/{ashmem,binder}
+/dev/ashmem
+/dev/binder
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h4 id=&quot;准备工作3---解决默认snapd-for-wsl2不可用问题&quot;&gt;&lt;strong&gt;准备工作3 - 解决默认Snapd for WSL2不可用问题&lt;/strong&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;该方法，Ubuntu使用成功。但 Debian, 会出现问题，勿用。&lt;br /&gt;下面需要通过 snap安装 anbox, 因此需先行解决 snap问题。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;/tech/WSL2-Issues/#keyword2&quot;&gt;详见&lt;/a&gt;&lt;/p&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h4 id=&quot;install-xfce4-rdp&quot;&gt;&lt;strong&gt;Install xfce4 RDP&lt;/strong&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;运行Anbox服务，需基于桌面环境，因此需在安装Anbox Package之前，先行安装好 xfce4&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//安装xorg（包括显卡驱动、图形环境库等等一系列软件包）
+$ sudo apt install xorg
+
+//安装xfce4（运行在类Unix操作系统上，提供轻量级桌面环境）
+$ sudo apt install xfce4
+
+//安装xrdp（一种开源的远程桌面协议（RDP）服务器）
+$ sudo apt install xrdp
+
+//配置xrdp（配置端口）, 默认端口号为3389，此处配置为3399
+$ sudo sed -i 's/port=3389/port=3399/g' /etc/xrdp/xrdp.ini
+
+//向.xsession中写入xfce4-session
+$ sudo echo xfce4-session &amp;gt;~/.xsession
+
+//重启xrdp服务
+$ sudo service xrdp restart                    //停止xrdp服务： sudo service xrdp stop
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h4 id=&quot;安装anbox包&quot;&gt;&lt;strong&gt;安装Anbox包&lt;/strong&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;1) 网络链路：CMCC链路似乎无法连接 Anbox Server, 改用 CTC链路。&lt;br /&gt;2) 全局。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo -s
+# snap install --devmode --beta anbox
+
+$ systemctl reboot -i                         //重启系统
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h4 id=&quot;issue-file-system-read-only&quot;&gt;&lt;strong&gt;Issue: file system read-only&lt;/strong&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;重启系统再登陆后，当出现 “file system read-only”问题时，执行以下命令即可恢复正常：&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo -s
+# mount -o remount rw /
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h4 id=&quot;optional-if-uninstall-anbox&quot;&gt;&lt;strong&gt;[optional] If Uninstall Anbox&lt;/strong&gt;&lt;/h4&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//卸载包
+$ snap remove anbox
+
+//删除源
+$ sudo apt install ppa-purge
+$ sudo ppa-purge ppa:morphis/anbox-support
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="WSL" /></entry><entry><title type="html">Install Anbox by Debian Sid on Debian10 GCE VPS</title><link href="http://localhost:8000/tech/Install-Anbox-by-Debian-Sid-on-Debian10-GCE-VPS/" rel="alternate" type="text/html" title="Install Anbox by Debian Sid on Debian10 GCE VPS" /><published>2020-04-16T00:00:00+08:00</published><updated>2020-04-16T00:00:00+08:00</updated><id>http://localhost:8000/tech/Install%20Anbox%20by%20Debian%20Sid%20on%20Debian10%20GCE%20VPS</id><content type="html" xml:base="http://localhost:8000/tech/Install-Anbox-by-Debian-Sid-on-Debian10-GCE-VPS/">&lt;p style=&quot;margin-bottom:35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;system&quot;&gt;&lt;strong&gt;&lt;u&gt;System&lt;/u&gt;&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;gce-debian-10-amd64&quot;&gt;GCE, Debian 10, amd64&lt;/h3&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:15px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;install-anbox-method&quot;&gt;&lt;strong&gt;&lt;u&gt;Install Anbox Method&lt;/u&gt;&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;from-unstable-source-debian-sid&quot;&gt;from unstable source “&lt;a href=&quot;https://packages.debian.org/sid/utils/anbox&quot;&gt;Debian Sid&lt;/a&gt;”&lt;/h3&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p style=&quot;margin-bottom:15px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;前提条件确保已安装好桌面环境&quot;&gt;&lt;strong&gt;&lt;u&gt;前提条件：确保已安装好桌面环境&lt;/u&gt;&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;系统需要检测video-config-才能成功启动anbox服务因此需要桌面环境为前提条件&quot;&gt;系统需要检测video config, 才能成功启动Anbox服务，因此需要桌面环境为前提条件&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;chrome-vps-remote-desktop&quot;&gt;&lt;a href=&quot;/tech/Chrome-RDP-full-steps/&quot;&gt;Chrome VPS Remote Desktop&lt;/a&gt;&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;wsl-rdp&quot;&gt;&lt;a href=&quot;/tech/Install-GUI-for-Win10-WSL1-Ubuntu/&quot;&gt;WSL RDP&lt;/a&gt;&lt;/h3&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:15px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;anbox-installation-steps&quot;&gt;&lt;strong&gt;&lt;u&gt;Anbox Installation Steps&lt;/u&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;step1-先修改etcaptsourceslist-增加以下内容&quot;&gt;&lt;strong&gt;Step1: 先修改”/etc/apt/sources.list”, 增加以下内容&lt;/strong&gt;&lt;/h4&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  deb http://ftp.us.debian.org/debian/ sid main contrib non-free
+  deb-src http://ftp.us.debian.org/debian/ sid main
+	 
+  deb http://ftp.us.debian.org/debian/ testing main contrib non-free
+  deb-src http://ftp.us.debian.org/debian/ testing main
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;step2-更新&quot;&gt;&lt;strong&gt;Step2: 更新&lt;/strong&gt;&lt;/h4&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo apt update &amp;amp;&amp;amp; sudo apt -y upgrade
+  sudo apt update &amp;amp;&amp;amp; sudo apt upgrade	
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;step3-查看libmodules下新增的kernel目录&quot;&gt;&lt;strong&gt;Step3: 查看”/lib/modules/”下新增的Kernel目录&lt;/strong&gt;&lt;/h4&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  uname -r
+	
+  cd ~
+  cd /lib/modules/          
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;我这里出现的是&lt;code class=&quot;highlighter-rouge&quot;&gt;5.5.0-1-cloud-amd64&lt;/code&gt;, 因此对应&lt;code class=&quot;highlighter-rouge&quot;&gt;linux-headers-5.5.0-1-cloud-amd64&lt;/code&gt;。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;step4-从debian-sid安装anbox-官方安装文档&quot;&gt;&lt;strong&gt;Step4: 从”Debian Sid”安装anbox, &lt;a href=&quot;/assets/file/README.Debian&quot;&gt;官方安装文档&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;准备工作&lt;/strong&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo apt install dkms
+  sudo apt install linux-headers-5.5.0-1-cloud-amd64                   
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;使用DKMS安装&lt;code class=&quot;highlighter-rouge&quot;&gt;ashmem_linux&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;binder_linux&lt;/code&gt;两个模块&lt;/strong&gt;
+        &lt;blockquote&gt;
+          &lt;p&gt;GCE Debian10 Kernel默认不含这两个模块。&lt;br /&gt;不同于Ubuntu，Debian无法通过添加ppa方式进行直接安装&lt;a href=&quot;https://github.com/anbox/anbox-modules&quot;&gt;anbox-module&lt;/a&gt;，只能该手动方式。&lt;/p&gt;
+        &lt;/blockquote&gt;
+
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  //git提取
+  $ git clone https://github.com/anbox/anbox-modules.git
+  $ cd anbox-modules
+		
+  $ sudo cp anbox.conf /etc/modules-load.d/
+  $ sudo cp 99-anbox.rules /lib/udev/rules.d/
+
+  $ sudo cp -rT ashmem /usr/src/anbox-ashmem-1
+  $ sudo cp -rT binder /usr/src/anbox-binder-1
+
+  $ sudo dkms install anbox-ashmem/1
+  $ sudo dkms install anbox-binder/1
+
+  $ sudo modprobe ashmem_linux
+  $ sudo modprobe binder_linux
+  $ lsmod | grep -e ashmem_linux -e binder_linux
+  $ ls -alh /dev/binder /dev/ashmem                
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+
+        &lt;p&gt;load the kernel modules (The next time will be automatically loaded)&lt;/p&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo modprobe ashmem_linux
+  $ sudo modprobe binder_linux
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+
+        &lt;p&gt;System should have two new nodes in /dev directory (&lt;code class=&quot;highlighter-rouge&quot;&gt;/dev/ashmem&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;/dev/binder&lt;/code&gt;)&lt;/p&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ ls -1 /dev/{ashmem,binder}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;安装anbox package&lt;/strong&gt;&lt;/p&gt;
+
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo apt install anbox
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;需下载&lt;a href=&quot;https://build.anbox.io/android-images/&quot;&gt;Pre-Build android image for anbox&lt;/a&gt;: android.img&lt;/strong&gt;
+        &lt;blockquote&gt;
+          &lt;p&gt;下载或者wget “android.img”, 拷贝至 &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/anbox/android.img&lt;/code&gt;, 该路劲非常重要，不可变更。&lt;/p&gt;
+        &lt;/blockquote&gt;
+
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ wget https://build.anbox.io/android-images/2018/07/19/android_amd64.img
+  $ cd ~
+  $ sudo mv android.img /var/lib/anbox/android.img
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;检测anbox安装状态&lt;/strong&gt;&lt;/p&gt;
+
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ anbox system-info
+  $ anbox check-features                   //check whether system lack features to run Anbox
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;step5-所有安装完成后进一步清理&quot;&gt;&lt;strong&gt;Step5: 所有安装完成后，进一步清理&lt;/strong&gt;&lt;/h4&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  # apt-get clean &amp;amp;&amp;amp; apt-get autoremove
+  $ sudo apt-get -f install              #Another command to fix dependency problems
+  $ sudo dpkg --configure -a             #checks for dependency problems to fix            
+  $ sudo apt-get clean                   #clean unnecessary dependencies, &quot;apt-get autoclean&quot;
+  $ sudo apt-get update                  #Updates the packages’ list in the repositories
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;step6-运行anbox服务&quot;&gt;&lt;strong&gt;Step6: 运行Anbox服务&lt;/strong&gt;&lt;/h4&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo systemctl start anbox-container-manager.service
+  $ systemctl --user start anbox-session-manager.service
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;step7-如果step6成功-启动anox&quot;&gt;&lt;strong&gt;Step7: (如果Step6成功) 启动Anox&lt;/strong&gt;&lt;/h4&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;启动方法1：桌面开始菜单Anbox图标&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;启动方法2：命令行&lt;/p&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ anbox launch --package=org.anbox.appmgr --component=org.anbox.appmgr.AppViewActivity
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:25px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;install-apk-by-adb&quot;&gt;&lt;strong&gt;&lt;u&gt;Install Apk by ADB&lt;/u&gt;&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;install-adb&quot;&gt;Install ADB&lt;/h3&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo apt install android-tools-adb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;adb-commands&quot;&gt;ADB Commands&lt;/h3&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ adb devices                                    //需在桌面环境才能成功运行
+  $ adb shell 	                                 //需在桌面环境才能成功运行
+  $ sudo /usr/share/anbox/anbox-shell.sh           //进入Android root shell	
+	
+  //从Linux Host向anbox互相移动数据
+  adb push &amp;lt;files&amp;gt; '/sdcard/Download'              //从Linux向anbox传送数据
+  adb pull &amp;lt;files&amp;gt; '/sdcard/Download'              //从anbox向Linux传送数据	
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;install-apk&quot;&gt;Install Apk&lt;/h3&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ wget https://f-droid.org/FDroid.apk
+  $ adb install FDroid.apk
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;uninstall-apk&quot;&gt;Uninstall Apk&lt;/h3&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  adb shell pm list packages                       //list all installed APP_IDs with
+  adb uninstall [APP_ID]                           //卸载程序，注意是[APP_ID]而非文件名称	
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author></entry><entry><title type="html">『总贴』Google/Google Cloud</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/GCE/" rel="alternate" type="text/html" title="『总贴』Google/Google Cloud" /><published>2020-04-15T16:15:00+08:00</published><updated>2020-04-15T16:15:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/GCE</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/GCE/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;1-gce-vps&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://console.cloud.google.com&quot;&gt;1. GCE VPS&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;GCE防火墙设置：&lt;/p&gt;
+
+    &lt;table style=&quot;width:100%&quot;&gt;
+      &lt;tbody&gt;
+          &lt;tr&gt;
+              &lt;td width=&quot;100%&quot;&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/124.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/124.png&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/td&gt;		
+          &lt;/tr&gt;		
+      &lt;/tbody&gt;			
+  &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;速度：&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;Carrier&lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;GCE线路&lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;速度&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;CM&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;Tokyo&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;good&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;CT&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;HK&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;ok&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;CT&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;US&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;bad&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-vps主机中安装linux桌面环境脚本和windows-rdp远程桌面连接&quot;&gt;&lt;strong&gt;2. VPS主机中安装Linux桌面环境(脚本)和Windows RDP远程桌面连接&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;教程1一键脚本-该教程安装后较卡&quot;&gt;教程1：&lt;a href=&quot;/tech/Linux-RDP-on-VPS1/&quot;&gt;一键脚本&lt;/a&gt;  (该教程安装后，较卡)&lt;/h4&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;教程2精简逐步命令行方式&quot;&gt;教程2：&lt;a href=&quot;/tech/Linux-RDP-on-VPS2/&quot;&gt;精简逐步命令行方式&lt;/a&gt;&lt;/h4&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-在-compute-engine-上设置-chrome-远程桌面&quot;&gt;&lt;strong&gt;3. 在 Compute Engine 上设置 Chrome 远程桌面&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;官方教程&quot;&gt;&lt;a href=&quot;https://cloud.google.com/solutions/chrome-desktop-remote-on-compute-engine?hl=zh-cn&quot;&gt;官方教程&lt;/a&gt;&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://remotedesktop.google.com/u/1/access/&quot;&gt;Chrome远程桌面-登录界面&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://remotedesktop.google.com/headless?hl=zh-cn&quot;&gt;Chrome远程桌面-授权&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://remotedesktop.google.com/access?hl=zh-cn&quot;&gt;Chrome远程桌面-取消授权&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://support.google.com/chrome/answer/1649523?hl=zh-Hans&amp;amp;co=GENIE.Platform%3DDesktop&amp;amp;oco=1&quot;&gt;Chrome远程桌面-Q&amp;amp;A&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;亲测所有步骤on-debian10-gce-vps---chrome-rdp--anboxsnap-wine&quot;&gt;&lt;a href=&quot;/tech/Chrome-RDP-full-steps/&quot;&gt;亲测所有步骤：on Debian10 GCE VPS - Chrome RDP + Anbox@Snap /Wine&lt;/a&gt;&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;登录RDP初始化需要验证谷歌账户，即需要VPN (对VPN连接的质量要求不高，通过验证即可；登录成功后，建议保留该VPN连接，否则会出现明显卡顿现象)。&lt;/li&gt;
+      &lt;li&gt;默认本地有声音；本地速度流程；视频有卡顿，但基本还能勉强看。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;亲测on-debian10-gce-vps---chrome-rdp--anboxdebian-sid&quot;&gt;&lt;a href=&quot;/tech/Install-Anbox-by-Debian-Sid-on-Debian10-GCE-VPS/&quot;&gt;亲测：on Debian10 GCE VPS - Chrome RDP + Anbox@Debian Sid&lt;/a&gt;&lt;/h4&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;4-vpn-for-vps-install-stepsscripts----from-net-info-only-not-for-public&quot;&gt;&lt;strong&gt;4. VPN for VPS Install Steps/Scripts&lt;/strong&gt;      &lt;span style=&quot;color:grey;font-size: 19px; font-weight: bold;&quot;&gt;(from Net, Info Only, not for Public)&lt;/span&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;wireguard-安装脚本&quot;&gt;&lt;strong&gt;WireGuard 安装脚本&lt;/strong&gt;&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;/tech/搬运/WireGuard-Quick-Install-Script/&quot;&gt;WireGuard 一键安装脚本@2019&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;/tech/搬运/WG-new-Install-Script/&quot;&gt;WireGuard 安装脚本@2020.4&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;v2ray-安装脚本&quot;&gt;&lt;strong&gt;V2Ray 安装脚本&lt;/strong&gt;&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;/tech/搬运/V2Ray-Install-Script/&quot;&gt;V2Ray 一键安装脚本@2020.2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;/tech/搬运/V2Ray-Install-Script2/&quot;&gt;V2Ray 一键安装V2Ray+WebSocket+TLS+Nginx脚本@2020.2&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;block-test&quot;&gt;&lt;strong&gt;&lt;font color=&quot;grey&quot;&gt;Block Test&lt;/font&gt;&lt;/strong&gt;&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://port.ping.pe/&quot;&gt;https://port.ping.pe/&lt;/a&gt;，&lt;a href=&quot;https://www.bandwagonhost.net/1934.html&quot;&gt;说明&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://kiwivm.64clouds.com/main-exec.php?mode=blacklistcheck&quot;&gt;Banwagon Only Test&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;5-要点如何使用google服务&quot;&gt;&lt;strong&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Use-Google-Services-in-China/&quot;&gt;5. 要点：如何使用Google服务&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;6-更改google国家地区&quot;&gt;&lt;strong&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Change-Google-Area/&quot;&gt;6. 更改Google国家地区&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;7-available-nice-apps&quot;&gt;&lt;strong&gt;&lt;a href=&quot;/tech/搬运/V-Nice-Apps/&quot;&gt;7. Available Nice Apps&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;8-chrome-browser-x86_64-账号已暂停问题&quot;&gt;&lt;strong&gt;&lt;a href=&quot;/tech/Chrome-Browser-Account-Suspend/&quot;&gt;8. Chrome Browser x86_64 “账号已暂停”问题&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;9-manually-update-adb-in-ubuntu&quot;&gt;&lt;strong&gt;&lt;a href=&quot;/tech/Install-ADB-in-Local-Linux-OS/&quot;&gt;9. Manually Update ADB in Ubuntu&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;</content><author><name></name></author><category term="VPS" /><category term="RDP" /><summary type="html">谷歌账号,GCE VPS,RDP远程桌面(windows/chrome)</summary></entry><entry><title type="html">『总贴』Jekyll相关汇总</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Jekyll-Relevant/" rel="alternate" type="text/html" title="『总贴』Jekyll相关汇总" /><published>2020-04-15T00:00:00+08:00</published><updated>2020-04-15T00:00:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Jekyll%20Relevant</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Jekyll-Relevant/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;1-在windows上安装jekyll&quot;&gt;&lt;a href=&quot;/tech/Install_Run-Jekyll/&quot;&gt;1. 在Windows上安装Jekyll&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p style=&quot;margin-bottom:-5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;2-jekyll-blog中相关引用方法&quot;&gt;&lt;a href=&quot;/tech/LinkMethod-for-Jekyll-Blog/&quot;&gt;2. Jekyll Blog中相关引用方法&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p style=&quot;margin-bottom:-5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;3-github-pages-不支持插件plugin&quot;&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/Github-Pages-not-Support-Plugin/&quot;&gt;3. Github Pages 不支持插件Plugin&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p style=&quot;margin-bottom:-5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;4-jekyll-blogmarkdownhtml-相关语法&quot;&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/Useful-Collection_Jekyllblog_markdown/&quot;&gt;4. Jekyll Blog/Markdown/Html 相关语法&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p style=&quot;margin-bottom:-5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;5-searchjson结构被破坏的解决方法&quot;&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/%E6%90%AC%E8%BF%90/Issues-when-use-JekyllSimpleSearch/&quot;&gt;5. search.json结构被破坏的解决方法&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p style=&quot;margin-bottom:-5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;6-jekyll-terminal-command&quot;&gt;&lt;a href=&quot;/tech/Jekyll-Terminal-Command/&quot;&gt;6. Jekyll Terminal Command&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p style=&quot;margin-bottom:-5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;</content><author><name></name></author><category term="Jekyll" /><summary type="html">Github Pages不支持Plugin,Jekyll Blog/Markdown/Html相关语法,search.json结构被破坏的解决方法</summary></entry><entry><title type="html">Chrome浏览器(PC)重启后登录账号”已暂停”问题</title><link href="http://localhost:8000/tech/Chrome-Browser-Account-Suspend/" rel="alternate" type="text/html" title="Chrome浏览器(PC)重启后登录账号&quot;已暂停&quot;问题" /><published>2020-04-15T00:00:00+08:00</published><updated>2020-04-15T00:00:00+08:00</updated><id>http://localhost:8000/tech/Chrome%20Browser%20Account%20Suspend</id><content type="html" xml:base="http://localhost:8000/tech/Chrome-Browser-Account-Suspend/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;退出Chrome浏览器后，再次进入，一直显示”账号已暂停”，每次必须重新登录，不堪其扰，有可能目前Chrome的cookie高级清空机制有bug。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;issue&quot;&gt;&lt;strong&gt;Issue：&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;img align=&quot;center&quot; src=&quot;/assets/img/128.png&quot; width=&quot;11%&quot; /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;margin-bottom:5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h4 id=&quot;solution-by-steps&quot;&gt;&lt;strong&gt;Solution, by Steps：&lt;/strong&gt;&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;登陆谷歌账号。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;设置/隐私设置和安全性/网站设置/Cookie和网站数据：
+    &lt;ul&gt;
+      &lt;li&gt;“允许”添加：&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;https://[*.]accounts.google.com:443&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/129.png&quot; target=&quot;_blank&quot;&gt;
+ &lt;img align=&quot;center&quot; src=&quot;/assets/img/129.png&quot; width=&quot;85%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;“清除浏览数据”时，选择&lt;strong&gt;“基本”模式&lt;/strong&gt;。
+    &lt;ul&gt;
+      &lt;li&gt;勿用”高级”，亲测该模式下无论是否清楚cookie，chrome账号该被清除，因而仍会出现”已暂停”问题。&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/130.png&quot; target=&quot;_blank&quot;&gt;
+ &lt;img align=&quot;center&quot; src=&quot;/assets/img/130.png&quot; width=&quot;85%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author></entry><entry><title type="html">Install &amp;amp; Run Jekyll</title><link href="http://localhost:8000/tech/Install_Run-Jekyll/" rel="alternate" type="text/html" title="Install &amp; Run Jekyll" /><published>2020-04-11T00:00:00+08:00</published><updated>2020-04-11T00:00:00+08:00</updated><id>http://localhost:8000/tech/Install_Run%20Jekyll</id><content type="html" xml:base="http://localhost:8000/tech/Install_Run-Jekyll/">&lt;p style=&quot;margin-bottom: 30px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
 &lt;h3 id=&quot;安装教程&quot;&gt;&lt;a href=&quot;https://www.jianshu.com/p/58e2c5ea3103&quot;&gt;&lt;strong&gt;安装教程&lt;/strong&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;hr /&gt;
@@ -187,143 +934,7 @@ $ adb                                       //检查是否工作；如果不工�
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ adb kill-server
 $ adb start-server
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author></entry><entry><title type="html">『总贴』Google/Google Cloud</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/GCE/" rel="alternate" type="text/html" title="『总贴』Google/Google Cloud" /><published>2020-04-07T02:19:00+08:00</published><updated>2020-04-07T02:19:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/GCE</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/GCE/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;1-gce-vps&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://console.cloud.google.com&quot;&gt;1. GCE VPS&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;GCE防火墙设置：&lt;/p&gt;
-
-    &lt;table style=&quot;width:100%&quot;&gt;
-      &lt;tbody&gt;
-          &lt;tr&gt;
-              &lt;td width=&quot;100%&quot;&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/124.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/img/124.png&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/td&gt;		
-          &lt;/tr&gt;		
-      &lt;/tbody&gt;			
-  &lt;/table&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;速度：&lt;/p&gt;
-
-    &lt;table&gt;
-      &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th style=&quot;text-align: center&quot;&gt;Carrier&lt;/th&gt;
-          &lt;th style=&quot;text-align: center&quot;&gt;GCE线路&lt;/th&gt;
-          &lt;th style=&quot;text-align: center&quot;&gt;速度&lt;/th&gt;
-        &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;CM&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;Tokyo&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;good&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;CT&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;HK&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;ok&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;CT&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;US&lt;/td&gt;
-          &lt;td style=&quot;text-align: center&quot;&gt;bad&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;2-vps主机中安装linux桌面环境脚本和windows-rdp远程桌面连接&quot;&gt;&lt;strong&gt;2. VPS主机中安装Linux桌面环境(脚本)和Windows RDP远程桌面连接&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;教程1一键脚本-该教程安装后较卡&quot;&gt;教程1：&lt;a href=&quot;/tech/Linux-RDP-on-VPS1/&quot;&gt;一键脚本&lt;/a&gt;  (该教程安装后，较卡)&lt;/h4&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;教程2精简逐步命令行方式&quot;&gt;教程2：&lt;a href=&quot;/tech/Linux-RDP-on-VPS2/&quot;&gt;精简逐步命令行方式&lt;/a&gt;&lt;/h4&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;3-在-compute-engine-上设置-chrome-远程桌面&quot;&gt;&lt;strong&gt;3. 在 Compute Engine 上设置 Chrome 远程桌面&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;官方教程&quot;&gt;&lt;a href=&quot;https://cloud.google.com/solutions/chrome-desktop-remote-on-compute-engine?hl=zh-cn&quot;&gt;官方教程&lt;/a&gt;&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://remotedesktop.google.com/u/1/access/&quot;&gt;Chrome远程桌面-登录界面&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://remotedesktop.google.com/headless?hl=zh-cn&quot;&gt;Chrome远程桌面-授权&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://remotedesktop.google.com/access?hl=zh-cn&quot;&gt;Chrome远程桌面-取消授权&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://support.google.com/chrome/answer/1649523?hl=zh-Hans&amp;amp;co=GENIE.Platform%3DDesktop&amp;amp;oco=1&quot;&gt;Chrome远程桌面-Q&amp;amp;A&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;亲测所有步骤on-debian10-gce-vps---chrome-rdp--anboxsnapwine&quot;&gt;&lt;a href=&quot;/tech/Chrome-RDP-full-steps/&quot;&gt;亲测所有步骤：on Debian10 GCE VPS - Chrome RDP + Anbox/Snap/Wine&lt;/a&gt;&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;登录RDP初始化需要验证谷歌账户，即需要VPN (对VPN连接的质量要求不高，通过验证即可；登录成功后，建议保留该VPN连接，否则会出现明显卡顿现象)。&lt;/li&gt;
-      &lt;li&gt;默认本地有声音；本地速度流程；视频有卡顿，但基本还能勉强看。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;4-vpn-for-vps-install-stepsscripts----from-net-info-only-not-for-public&quot;&gt;&lt;strong&gt;4. VPN for VPS Install Steps/Scripts&lt;/strong&gt;      &lt;span style=&quot;color:grey;font-size: 19px; font-weight: bold;&quot;&gt;(from Net, Info Only, not for Public)&lt;/span&gt;&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;wireguard-安装脚本&quot;&gt;&lt;strong&gt;WireGuard 安装脚本&lt;/strong&gt;&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;/tech/搬运/WireGuard-Quick-Install-Script/&quot;&gt;WireGuard 一键安装脚本@2019&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;/tech/搬运/WG-new-Install-Script/&quot;&gt;WireGuard 安装脚本@2020.4&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;v2ray-安装脚本&quot;&gt;&lt;strong&gt;V2Ray 安装脚本&lt;/strong&gt;&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;/tech/搬运/V2Ray-Install-Script/&quot;&gt;V2Ray 一键安装脚本@2020.2&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;/tech/搬运/V2Ray-Install-Script2/&quot;&gt;V2Ray 一键安装V2Ray+WebSocket+TLS+Nginx脚本@2020.2&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;block-test&quot;&gt;&lt;strong&gt;&lt;font color=&quot;grey&quot;&gt;Block Test&lt;/font&gt;&lt;/strong&gt;&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://port.ping.pe/&quot;&gt;https://port.ping.pe/&lt;/a&gt;，&lt;a href=&quot;https://www.bandwagonhost.net/1934.html&quot;&gt;说明&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://kiwivm.64clouds.com/main-exec.php?mode=blacklistcheck&quot;&gt;Banwagon Only Test&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;5-要点如何使用google服务&quot;&gt;&lt;strong&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Use-Google-Services-in-China/&quot;&gt;5. 要点：如何使用Google服务&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;6-更改google国家地区&quot;&gt;&lt;strong&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Change-Google-Area/&quot;&gt;6. 更改Google国家地区&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;7-available-nice-apps&quot;&gt;&lt;strong&gt;&lt;a href=&quot;/tech/搬运/V-Nice-Apps/&quot;&gt;7. Available Nice Apps&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;</content><author><name></name></author><category term="VPS" /><category term="RDP" /><summary type="html">谷歌账号,GCE VPS,RDP远程桌面(windows/chrome)</summary></entry><entry><title type="html">Windows 10 Sandbox “.wsb” File Config</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Win10-Sandbox/" rel="alternate" type="text/html" title="Windows 10 Sandbox &quot;.wsb&quot; File Config" /><published>2020-04-07T00:00:00+08:00</published><updated>2020-04-07T00:00:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Win10%20Sandbox</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Win10-Sandbox/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author></entry><entry><title type="html">Windows 10 Sandbox “.wsb” File Config</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Win10-Sandbox/" rel="alternate" type="text/html" title="Windows 10 Sandbox &quot;.wsb&quot; File Config" /><published>2020-04-07T00:00:00+08:00</published><updated>2020-04-07T00:00:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Win10%20Sandbox</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/Win10-Sandbox/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://superuser.com/questions/1519617/windows-10-sandbox-how-do-i-access-my-files-in-the-sandboxed-environment-of-my&quot;&gt;设置教程&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;https://techcommunity.microsoft.com/t5/windows-kernel-internals/windows-sandbox-config-files/ba-p/354902#&quot;&gt;微软官方.wsb设置说明&lt;/a&gt;&lt;/p&gt;
@@ -364,9 +975,11 @@ Keywords:
 &lt;a href=&quot;#keyword6&quot;&gt;微软子系统(Ubuntu)通过Xshell连接&lt;/a&gt;,
 &lt;a href=&quot;#keyword7&quot;&gt;Install WSL2&lt;/a&gt;,
 &lt;a href=&quot;#keyword8&quot;&gt;WSL Issues&lt;/a&gt;,
-&lt;a href=&quot;#keyword10&quot;&gt;Windows Sandbox .wsb Config&lt;/a&gt;,
-&lt;a href=&quot;#keyword11&quot;&gt;Apps for Windows OS&lt;/a&gt;,
-&lt;a href=&quot;#keyword12&quot;&gt;WindowsOS相关终端命令&lt;/a&gt;
+&lt;a href=&quot;#keyword9&quot;&gt;在WSL2-Ubuntu18.04安装相关App&lt;/a&gt;,
+&lt;a href=&quot;#keyword10&quot;&gt;在WSL2-Ubuntu20.04安装相关App&lt;/a&gt;,
+&lt;a href=&quot;#keyword11&quot;&gt;Windows Sandbox .wsb Config&lt;/a&gt;,
+&lt;a href=&quot;#keyword12&quot;&gt;Apps for Windows OS&lt;/a&gt;,
+&lt;a href=&quot;#keyword13&quot;&gt;WindowsOS相关终端命令&lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;margin-bottom: 25px;&quot;&gt;&amp;emsp;&lt;/p&gt;
@@ -398,7 +1011,7 @@ Keywords:
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;7-win10-subsysteminstall-wsl2&quot;&gt;&lt;font id=&quot;keyword7&quot; color=&quot;green&quot;&gt;7. 『Win10 Subsystem』&lt;/font&gt;&lt;a href=&quot;/tech/WSL2/&quot;&gt;Install WSL2&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;7-win10-subsysteminstall-wsl2--backuprestore-wsl2&quot;&gt;&lt;font id=&quot;keyword7&quot; color=&quot;green&quot;&gt;7. 『Win10 Subsystem』&lt;/font&gt;&lt;a href=&quot;/tech/WSL2/&quot;&gt;Install WSL2 &amp;amp; Backup/restore WSL2&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
@@ -409,542 +1022,25 @@ Keywords:
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;10-win10-sandboxwindows-sandbox-wsb-config&quot;&gt;&lt;font id=&quot;keyword10&quot; color=&quot;green&quot;&gt;10. 『Win10 Sandbox』&lt;/font&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/Win10-Sandbox/&quot;&gt;Windows Sandbox .wsb Config&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;11-windows-apps微软平台推荐应用&quot;&gt;&lt;font id=&quot;keyword11&quot; color=&quot;green&quot;&gt;11. 『Windows Apps』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-Apps/&quot;&gt;微软平台推荐应用&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;12-terminal-commandswindowsos相关终端命令&quot;&gt;&lt;font id=&quot;keyword12&quot; color=&quot;green&quot;&gt;12. 『Terminal Commands』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-OS-Commands/&quot;&gt;WindowsOS相关终端命令&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;</content><author><name></name></author><category term="OS" /></entry><entry><title type="html">安装微软Subsystem子系统 v2 - WSL2</title><link href="http://localhost:8000/tech/WSL2/" rel="alternate" type="text/html" title="安装微软Subsystem子系统 v2 - WSL2" /><published>2020-04-04T00:18:00+08:00</published><updated>2020-04-04T00:18:00+08:00</updated><id>http://localhost:8000/tech/WSL2</id><content type="html" xml:base="http://localhost:8000/tech/WSL2/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;9-wsl2-ubuntuinstall-apps-on-ubuntu-1804&quot;&gt;&lt;font id=&quot;keyword9&quot; color=&quot;green&quot;&gt;9. 『WSL2-Ubuntu』&lt;/font&gt;&lt;a href=&quot;/tech/Install-Anbox-for-WSL2-Ubuntu18.04/&quot;&gt;Install Apps on Ubuntu 18.04&lt;/a&gt;&lt;/h3&gt;
 &lt;blockquote&gt;
-  &lt;h4 id=&quot;背景wsl2支持原生linux-kernel-即可实现安装浏览器等&quot;&gt;背景：WSL2支持原生Linux Kernel, 即可实现安装浏览器等。&lt;/h4&gt;
+  &lt;p&gt;安装Anbox等；&lt;a href=&quot;/tech/MyConfig-for-WSL2-Ubuntu18.04/&quot;&gt;MyConfig&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h4 id=&quot;微软官方教程-en-cn&quot;&gt;&lt;strong&gt;微软官方教程: &lt;a href=&quot;https://docs.microsoft.com/en-us/windows/wsl/wsl2-install&quot;&gt;EN&lt;/a&gt;, &lt;a href=&quot;https://docs.microsoft.com/zh-cn/windows/wsl/wsl2-install&quot;&gt;CN&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;step1加入-windows-预览体验计划&quot;&gt;&lt;strong&gt;Step1：加入 Windows 预览体验计划&lt;/strong&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;WSL 2 仅适用于 Windows 10 版本 18917 或更高版本。因此，需加入 Windows 预览体验计划, 选择“快速”或“慢速”升级。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;CMD窗口：&lt;code class=&quot;highlighter-rouge&quot;&gt;ver&lt;/code&gt;命令, 检查 Windows 版本。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;step2启用虚拟机平台可选组件并确保启用了-wsl&quot;&gt;&lt;strong&gt;Step2：启用“虚拟机平台”可选组件并确保启用了 WSL&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;在 PowerShell 中运行以下命令:
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-  dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;重启计算机来完成以上两个组件的安装。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;step3确保已从microsoft-store安装wsl1&quot;&gt;&lt;strong&gt;Step3：确保已从Microsoft Store安装WSL1&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;My Case: WSL1 - &lt;a href=&quot;https://www.microsoft.com/store/apps/9N9TNGVNDL3Q&quot;&gt;Ubuntu 18.04 LTS&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;安装完成后，需进入初始设置&lt;code class=&quot;highlighter-rouge&quot;&gt;UNIX用户名&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;UNIX密码&lt;/code&gt;。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;step4更新为wsl2-linux内核&quot;&gt;&lt;strong&gt;Step4：&lt;a href=&quot;https://docs.microsoft.com/zh-cn/windows/wsl/wsl2-kernel&quot;&gt;更新为WSL2 Linux内核&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi&quot;&gt;安装文件_PC-x64&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:1px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;step5使用powershell设置要由-wsl2-支持的发行版&quot;&gt;&lt;strong&gt;Step5：使用PowerShell设置要由 WSL2 支持的发行版&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;使用&lt;code class=&quot;highlighter-rouge&quot;&gt;wsl -l&lt;/code&gt;，显示当前发行版的名称，如&lt;code class=&quot;highlighter-rouge&quot;&gt;Ubuntu 18.04&lt;/code&gt;。&lt;/li&gt;
-  &lt;li&gt;设置发行版，运行：&lt;code class=&quot;highlighter-rouge&quot;&gt;wsl --set-version &amp;lt;Distro&amp;gt; 2&lt;/code&gt;，其中&lt;Distro&gt;更改为`Ubuntu 18.04`
-&lt;/Distro&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;wsl --set-version Ubuntu-18.04 2&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;如要使 WSL 2 成为默认体系结构，运行：&lt;code class=&quot;highlighter-rouge&quot;&gt;wsl --set-default-version 2&lt;/code&gt;，这会使安装的任何新发行版均初始化为&lt;code class=&quot;highlighter-rouge&quot;&gt;WSL2发行版&lt;/code&gt;。&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;wsl --list --verbose&lt;/code&gt;或者&lt;code class=&quot;highlighter-rouge&quot;&gt;wsl -l -v&lt;/code&gt;，显示有关发行版所有的详细信息：每个发行版名称、状态、版本号、正在运行的版本。默认发行版标注星号。&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="WSL" /></entry><entry><title type="html">Jekyll Terminal Command</title><link href="http://localhost:8000/tech/Jekyll-Terminal-Command/" rel="alternate" type="text/html" title="Jekyll Terminal Command" /><published>2020-04-04T00:00:00+08:00</published><updated>2020-04-04T00:00:00+08:00</updated><id>http://localhost:8000/tech/Jekyll%20Terminal%20Command</id><content type="html" xml:base="http://localhost:8000/tech/Jekyll-Terminal-Command/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;In Powershell:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem update jekyll
-bundle update
-bundle update jekyll
- 
-jekyll -v
-bundle -v
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="Jekyll" /></entry><entry><title type="html">WSL2 Issues</title><link href="http://localhost:8000/tech/WSL2-Issues/" rel="alternate" type="text/html" title="WSL2 Issues" /><published>2020-04-04T00:00:00+08:00</published><updated>2020-04-04T00:00:00+08:00</updated><id>http://localhost:8000/tech/WSL2%20Issues</id><content type="html" xml:base="http://localhost:8000/tech/WSL2-Issues/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
-Keywords: 
-&lt;a href=&quot;#keyword1&quot;&gt;Linux header missing&lt;/a&gt;， 
-&lt;a href=&quot;#keyword2&quot;&gt;Snapd not working properly&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;wsl2虽已升级为完整的linux-kernel-但仍存在很多的问题&quot;&gt;WSL2虽已升级为完整的Linux Kernel, 但仍存在很多的问题。&lt;/h4&gt;
+&lt;h3 id=&quot;10-wsl2-ubuntuinstall-apps-on-ubuntu-2004&quot;&gt;&lt;font id=&quot;keyword10&quot; color=&quot;green&quot;&gt;10. 『WSL2-Ubuntu』&lt;/font&gt;&lt;a href=&quot;/tech/Install-Apps-in-WSL2-Ubuntu20.04/&quot;&gt;Install Apps on Ubuntu 20.04&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;issue-1linux-header缺失问题&quot;&gt;&lt;strong&gt;&lt;font id=&quot;keyword1&quot; color=&quot;green&quot;&gt;『Issue 1』Linux Header缺失问题&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;『背景』：WSL默认包含了 Linux Kernel(如：4.19.84-microsoft-standard), 但却缺失了 Linux Header文件，而安装某些 package时又必须依赖 Linux Header文件，如 anbox。&lt;br /&gt;『解决方法』：从官方提供下载的 kernel文件中，恢复(restore)对应的 Linux Header至 /lib/module目录中。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p style=&quot;margin-bottom:-5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;解决方法参考网址&quot;&gt;&lt;a href=&quot;https://medium.com/@centerorbit/installing-wireguard-in-wsl-2-dd676520cb21&quot;&gt;『解决方法』参考网址&lt;/a&gt;&lt;/h4&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;微软官方linux-kernel-for-microsoft-standard下载网址&quot;&gt;&lt;a href=&quot;https://github.com/microsoft/WSL2-Linux-Kernel/releases/tag/4.19.84-microsoft-standard&quot;&gt;微软官方Linux Kernel for Microsoft Standard下载网址&lt;/a&gt;&lt;/h4&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;resore-linux-header-for-wsl2-kernel-step-by-step&quot;&gt;&lt;strong&gt;&lt;u&gt;Resore Linux Header for WSL2 Kernel Step by Step&lt;/u&gt;&lt;/strong&gt;&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Step1: 查看内核版本&lt;/strong&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ uname -r
-  4.19.84-microsoft-standard
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;strong&gt;Step2: 从微软官方下载对应的Kernel包(154MB) &lt;a href=&quot;https://github.com/microsoft/WSL2-Linux-Kernel/archive/4.19.84-microsoft-standard.tar.gz&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;WSL2-Linux-Kernel-4.19.84-microsoft-standard.tar.gz&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Step3: 准备工作&lt;/strong&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo apt-get install libelf-dev build-essential pkg-config            
-  $ sudo apt-get install bison build-essential flex libssl-dev libelf-dev bc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Step4: 从Kernel文件进行恢复(restore) modules&lt;/strong&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ cd ~
-  $ wget https://github.com/microsoft/WSL2-Linux-Kernel/archive/4.19.84-microsoft-standard.tar.gz   //从微软下载WSL2-Linux-Kernel
-  $ sudo tar xvzf 4.19.84-microsoft-standard.tar.gz                    //tar文件完成后可删除
-  $ cd WSL2-Linux-Kernel-4.19.84-microsoft-standard                    //该目录完成后不可删除，&quot;/lib/modules&quot;与其symlink
-
-  # zcat /proc/config.gz &amp;gt; .config
-
-  # make -j $(nproc)                                                   //Compile the kernel and modules
-  $ sudo make -j $(nproc) modules_install                              //Install the modules
-
-  //make a symlink of that install
-  $ cd /lib/modules
-  $ sudo ln -s 4.19.84-microsoft-standard+/ 4.19.84-microsoft-standard    
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-        &lt;ul&gt;
-          &lt;li&gt;此时，在/lib/modules目录中，已看到生成的”4.19.84-microsoft-standard”目录，其包含了对应的Linux Header等等。即表示kernel恢复配置已成功，其他依赖其的package可正常安装。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;issue-2snapd不正常问题&quot;&gt;&lt;strong&gt;&lt;font id=&quot;keyword2&quot; color=&quot;green&quot;&gt;『Issue 2』Snapd不正常问题&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;问题描述&quot;&gt;问题描述&lt;/h4&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo snap install --devmode --beta anbox
-  error: cannot communicate with server: Post http://localhost/v2/snaps/anbox: dial unix /run/snapd.socket: connect: no such file or directory
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;解决方法参考网址-1&quot;&gt;&lt;a href=&quot;https://forum.snapcraft.io/t/running-snaps-on-wsl2-insiders-only-for-now/13033&quot;&gt;『解决方法』参考网址&lt;/a&gt;&lt;/h4&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;该 Issue和 linux header没有关系。&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;troubleshooting-step-by-step&quot;&gt;&lt;strong&gt;&lt;u&gt;Troubleshooting Step by Step&lt;/u&gt;&lt;/strong&gt;&lt;/h4&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Step1: 卸载自带Snapd并重装它&lt;/strong&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo apt purge -y snapd &amp;amp;&amp;amp; sudo apt autoremove -y
-  sudo apt install snapd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-
-        &lt;p&gt;&lt;strong&gt;此时snapd为不工作状态&lt;/strong&gt;&lt;/p&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ snap version
-  snap    2.42.1+18.04
-  snapd   unavailable
-  series  -
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Step2: 准备工作&lt;/strong&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install -yqq daemonize dbus-user-session fontconfig
-		
-  //安装daemonize(否则以下文件修改后，会出现&quot;/usr/sbin/daemonize: No such file or directory&quot;错误，而无法再次进入wsl)
-  sudo apt-get update -y
-  sudo apt-get install -y daemonize
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Step3: 新建&amp;amp;修改文件&lt;/strong&gt;
-        &lt;ul&gt;
-          &lt;li&gt;
-            &lt;p&gt;【&lt;strong&gt;&lt;font color=&quot;#4d8df1&quot;&gt;文件1：新建&lt;/font&gt;&lt;/strong&gt;】/usr/sbin/start-systemd-namespace文件 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo nano /usr/sbin/start-systemd-namespace&lt;/code&gt;，添加以下内容：&lt;a href=&quot;/assets/file/postsfile/wslissue/1.txt&quot; target=&quot;_blank&quot;&gt;File1&lt;/a&gt;&lt;/p&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;p&gt;【&lt;strong&gt;&lt;font color=&quot;#4d8df1&quot;&gt;文件2：新建&lt;/font&gt;&lt;/strong&gt;】/usr/sbin/enter-systemd-namespace文件 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo nano /usr/sbin/enter-systemd-namespace&lt;/code&gt;，添加以下内容后并赋予可执行权限(chmod +x)&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo chmod +x /usr/sbin/enter-systemd-namespace&lt;/code&gt;：&lt;a href=&quot;/assets/file/postsfile/wslissue/2.txt&quot; target=&quot;_blank&quot;&gt;File2&lt;/a&gt;&lt;/p&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;p&gt;【&lt;strong&gt;&lt;font color=&quot;#4d8df1&quot;&gt;文件3：修改&lt;/font&gt;&lt;/strong&gt;】/etc/sudoers文件(推荐使用 sudo visudo命令) &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo visudo -f /etc/sudoers&lt;/code&gt;，在文件的末尾添加以下内容：&lt;a href=&quot;/assets/file/postsfile/wslissue/3.txt&quot; target=&quot;_blank&quot;&gt;Add3&lt;/a&gt;&lt;/p&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;p&gt;【&lt;strong&gt;&lt;font color=&quot;#4d8df1&quot;&gt;文件4：修改&lt;/font&gt;&lt;/strong&gt;】在/etc/bash.bashrc文件中，需要增加一行，直接运行以下命令进行增加&lt;/p&gt;
-            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo sed -i 2a&quot;# Start or enter a PID namespace in WSL2\nsource /usr/sbin/start-systemd-namespace\n&quot; /etc/bash.bashrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Step4: 在CMD窗口，增加两个环境变量&lt;/strong&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  cmd.exe /C setx WSLENV BASH_ENV/u
-  cmd.exe /C setx BASH_ENV /etc/bash.bashrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Step5: 退出WSL2所有进程，以确保更改后的new kernel得以应用&lt;/strong&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  //在Powershell运行：
-  wsl --shutdown
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Step6: 重新进入WSL，并输入&lt;code class=&quot;highlighter-rouge&quot;&gt;snap version&lt;/code&gt;命令。以下状态表示Snapd正常工作&lt;/strong&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ snap version
-  snap    2.42.1+18.04
-  snapd   2.42.1+18.04
-  series  16
-  ubuntu  18.04
-  kernel  4.19.84-microsoft-standard
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="WSL" /></entry><entry><title type="html">通过Xshell连接微软子系统 WSL - Ubuntu</title><link href="http://localhost:8000/tech/Xshell-connect-to-WSL-Ubuntu/" rel="alternate" type="text/html" title="通过Xshell连接微软子系统 WSL - Ubuntu" /><published>2020-04-02T21:40:00+08:00</published><updated>2020-04-02T21:40:00+08:00</updated><id>http://localhost:8000/tech/Xshell%20connect%20to%20WSL-Ubuntu</id><content type="html" xml:base="http://localhost:8000/tech/Xshell-connect-to-WSL-Ubuntu/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;step1---在wsl中配置公私钥&quot;&gt;&lt;strong&gt;Step1 - 在WSL中配置公/私钥&lt;/strong&gt;&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;建立密钥&quot;&gt;&lt;strong&gt;建立密钥&lt;/strong&gt;&lt;/h4&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;默认存储在：私钥 -  /root/.ssh/id_rsa；公钥 -  /root/.ssh/id_rsa.pub&lt;/p&gt;
-    &lt;/blockquote&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;『首选』由WSL内置工具生成密钥&lt;/strong&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo -i
-  cd ~/.ssh/
-  ssh-keygen
-  cat /root/.ssh/id_rsa.pub &amp;gt; /root/.ssh/authorized_keys     # 或者： cat id_rsa.pub &amp;gt;&amp;gt; ~/.ssh/authorized_keys 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;『可选项』或者由Xshell生成密钥后，上传公钥到WSL&lt;/strong&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo -i
-  cd /root
-  mkdir .ssh
-  cp /mnt/c/1/id_rsa.pub /root/.ssh                      #或使用&quot;mv&quot;进行移动
-  cat /root/.ssh/id_rsa.pub &amp;gt; /root/.ssh/authorized_keys
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;权限设置&quot;&gt;&lt;strong&gt;权限设置&lt;/strong&gt;&lt;/h4&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;否则 Xshell无法成功登录 WSL SSH Server&lt;/p&gt;
-    &lt;/blockquote&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  chown -R root:root ~/.ssh
-  chmod 700 ~/.ssh
-  chmod 600 ~/.ssh/authorized_keys
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom: 8px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;step2---配置wsl-ssh-server---参考&quot;&gt;&lt;strong&gt;Step2 - 配置WSL SSH Server&lt;/strong&gt;   (&lt;a href=&quot;https://www.jianshu.com/p/039411d2c1f6&quot;&gt;参考&lt;/a&gt;)&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;卸载自带的ssh-server重新安装&quot;&gt;&lt;strong&gt;卸载自带的SSH Server，重新安装&lt;/strong&gt;&lt;/h4&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  // 卸载
-  sudo apt-get remove openssh-server
-
-  // 安装
-  sudo apt-get install openssh-server
-
-  // 编辑配置文件
-  // vim /etc/ssh/sshd_config
-		
-      Port 38000                   #默认22，但是windows有自己的ssh服务用的也是22端口，修改一下		
-      PasswordAuthentication no    #改为yes即可使用密码登录；这里使用ssh秘钥对登录，所以使用默认no
-
-  // 重启ssh服务
-  sudo service ssh --full-restart
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom: 8px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;step3---将私钥拷至windows中&quot;&gt;&lt;strong&gt;Step3 - 将私钥拷至Windows中&lt;/strong&gt;&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;将私钥id_rsa拷至windows并导入到xshell&quot;&gt;将私钥”id_rsa”拷至Windows并导入到XShell&lt;/h4&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom: 8px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;step4---xshell配置&quot;&gt;&lt;strong&gt;Step4 - Xshell配置&lt;/strong&gt;&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;config&quot;&gt;&lt;strong&gt;Config:&lt;/strong&gt;&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;『主机地址』: 127.0.0.1&lt;/li&gt;
-      &lt;li&gt;『端口号』: 38000&lt;/li&gt;
-      &lt;li&gt;『连接-用户身份验证』: public key&lt;/li&gt;
-      &lt;li&gt;『用户名』: root (因为/root/.ssh)&lt;/li&gt;
-      &lt;li&gt;『私钥』: 选择生成的/导入的私钥，密码为私钥密码&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&quot;11-win10-sandboxwindows-sandbox-wsb-config&quot;&gt;&lt;font id=&quot;keyword10&quot; color=&quot;green&quot;&gt;11. 『Win10 Sandbox』&lt;/font&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/Win10-Sandbox/&quot;&gt;Windows Sandbox .wsb Config&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;xshell连接成功后默认为root用户&quot;&gt;&lt;strong&gt;Xshell连接成功后默认为”root”用户&lt;/strong&gt;&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;如需更换其他用户，使用命令：
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  su - xxx                                       #切换成用户xxx
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="WSL" /></entry><entry><title type="html">微软Subsystem子系统WSL - Ubuntu安装图形用户界面</title><link href="http://localhost:8000/tech/Install-GUI-for-Win10-WSL1-Ubuntu/" rel="alternate" type="text/html" title="微软Subsystem子系统WSL - Ubuntu安装图形用户界面" /><published>2020-03-29T00:00:00+08:00</published><updated>2020-03-29T00:00:00+08:00</updated><id>http://localhost:8000/tech/Install%20GUI%20for%20Win10%20WSL1-Ubuntu</id><content type="html" xml:base="http://localhost:8000/tech/Install-GUI-for-Win10-WSL1-Ubuntu/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;h4 id=&quot;背景windows-10-已安装-wslwindows-subsystem-for-linux--ubuntu-1804&quot;&gt;背景：Windows 10 已安装 WSL（windows subsystem for linux）- Ubuntu 18.04。&lt;/h4&gt;
-  &lt;ul&gt;
-    &lt;li&gt;Subsystem Path on Windows 10:
-      &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C:\Users\&amp;lt;我的用户名&amp;gt;\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;      &lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
+&lt;h3 id=&quot;12-windows-apps微软平台推荐应用&quot;&gt;&lt;font id=&quot;keyword11&quot; color=&quot;green&quot;&gt;12. 『Windows Apps』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-Apps/&quot;&gt;微软平台推荐应用&lt;/a&gt;&lt;/h3&gt;
 
-&lt;p style=&quot;margin-bottom: 8px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;h3 id=&quot;首次安装wsl1步骤&quot;&gt;&lt;strong&gt;&lt;font color=&quot;green&quot;&gt;首次安装WSL1步骤：&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;step1-powershell执行如下命令重启操作系统-作用等同于启用或关闭windows功能&quot;&gt;&lt;strong&gt;Step1: Powershell执行如下命令&amp;amp;重启操作系统 (作用等同于”启用或关闭Windows功能”)&lt;/strong&gt;&lt;/h4&gt;
+&lt;h3 id=&quot;13-terminal-commandswindowsos相关终端命令&quot;&gt;&lt;font id=&quot;keyword12&quot; color=&quot;green&quot;&gt;13. 『Terminal Commands』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-OS-Commands/&quot;&gt;WindowsOS相关终端命令&lt;/a&gt;&lt;/h3&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;step2-在应用商店中安装想要的linux发行版&quot;&gt;&lt;strong&gt;Step2: 在”应用商店”中，安装想要的Linux发行版&lt;/strong&gt;&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;安装完成后，需进入Linux Terminal进行初始设置(用户名+密码)。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:30px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;安装linux图形用户界面通常有两种方法&quot;&gt;&lt;strong&gt;&lt;font color=&quot;green&quot;&gt;安装Linux图形用户界面通常有两种方法：&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;使用x-windows安装使用图形化界面&quot;&gt;&lt;a href=&quot;https://blog.csdn.net/daybreak222/article/details/87968078&quot;&gt;使用X-Windows安装使用图形化界面&lt;/a&gt;&lt;/h4&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;通过本机远程桌面连接-本帖使用方法&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://www.bbsmax.com/A/x9J206jgd6/&quot;&gt;通过本机远程桌面连接&lt;/a&gt; (本帖使用方法)&lt;/strong&gt;&lt;/h4&gt;
-
-    &lt;p&gt;&lt;strong&gt;1. 查看当前系统版本&lt;/strong&gt;&lt;/p&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  lsb_release -a
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;&lt;strong&gt;2. 查看运行ubuntu是32位或是64位&lt;/strong&gt;&lt;/p&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  #如果显示i686, 则表示32位；如果显示 x86_64, 则表示64位
-  sudo uname --m
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  #其他命令
-  sudo uname --s     #显示内核名字s
-  sudo uname --r     #显示内核版本
-  sudo uname --n     #显示网络主机名
-  sudo uname --p     #显示cpu 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;&lt;strong&gt;3. 替换成国内源&lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/apt/sources.list&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse  
-  deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse  
-  deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse  
-  deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse  
-  ##测试版源  
-  deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse  
-  # 源码  
-  deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse  
-  deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse  
-  deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse  
-  deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse  
-  ##测试版源  
-  deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse  
-  # Canonical 合作伙伴和附加  
-  deb http://archive.canonical.com/ubuntu/ bionic partner  
-  #deb http://extras.ubuntu.com/ubuntu/ bionic main
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;&lt;strong&gt;4. 日常更新&amp;amp;准备工作&lt;/strong&gt;&lt;/p&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo apt update
-  sudo apt upgrade
-	
-  #或者
-  sudo apt update &amp;amp;&amp;amp; sudo apt upgrade
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;&lt;strong&gt;5. 使用”本机远程桌面连接”方式：在Ubuntu Terminal中的安装步骤&lt;/strong&gt;&lt;/p&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  #安装xorg（包括显卡驱动、图形环境库等等一系列软件包）
-  sudo apt install xorg
-
-  #安装xfce4（运行在类Unix操作系统上，提供轻量级桌面环境）
-  sudo apt install xfce4
-
-  #安装xrdp（一种开源的远程桌面协议（RDP）服务器）
-  sudo apt install xrdp
-
-  #配置xrdp（配置端口）, 默认端口号为3389，此处配置为3399
-  sudo sed -i 's/port=3389/port=3399/g' /etc/xrdp/xrdp.ini
-
-  #向.xsession中写入xfce4-session
-  sudo echo xfce4-session &amp;gt;~/.xsession
-
-  #重启xrdp服务
-  sudo service xrdp restart                  #停止xrdp服务： sudo service xrdp stop
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;&lt;strong&gt;6. 在windows远程桌面登录xfce4图形界面&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;在微软远程桌面连接(运行&lt;code class=&quot;highlighter-rouge&quot;&gt;mstsc&lt;/code&gt;)，点击进入，计算机栏输入【本机IP:端口】（即：&lt;code class=&quot;highlighter-rouge&quot;&gt;127.0.0.1:3399&lt;/code&gt;(for WSL1), &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:3399&lt;/code&gt;(for WSL2)），用户名栏输入子系统用户名，点击连接。
-        &lt;ul&gt;
-          &lt;li&gt;&lt;strong&gt;&lt;font color=&quot;green&quot;&gt;NOTE: 每次重启Windows系统后，需要在WSL Terminal中&quot;sudo service xrdp restart&quot;重启xrdp服务一次，否则出现&quot;远程连接失败&quot;错误。&lt;/font&gt;&lt;/strong&gt;&lt;/li&gt;
-          &lt;li&gt;在”微软远程桌面连接”窗口，”显示/体验”Tab中均可做呈现设置。
-            &lt;ul&gt;
-              &lt;li&gt;如：显示配置 - 2560x1440，颜色 - 真彩色24位，体验 - LAN/不勾选”动画、视觉样式”。&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;进入xfce4桌面，基本设置 (一次设置永久生效)：&lt;/strong&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;strong&gt;『Screensaver』：开始菜单/应用/Screensaver: no Screensaver&lt;/strong&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-
-        &lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;strong&gt;『Settings from StartMenu』：开始菜单/应用/Seettings: Setting Manager  (桌面窗口样式/显示字体大小等等)&lt;/strong&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;strong&gt;&lt;u&gt;Appearance&lt;/u&gt;&lt;/strong&gt;: “Fonts” Tab, Size：18     (主要的字体大小)&lt;/li&gt;
-              &lt;li&gt;&lt;strong&gt;&lt;u&gt;Desktop&lt;/u&gt;&lt;/strong&gt;: “Icons” Tab, Icon Size：78   (桌面图标大小)&lt;/li&gt;
-              &lt;li&gt;&lt;strong&gt;&lt;u&gt;File Manager&lt;/u&gt;&lt;/strong&gt;: “Side Pane” Tab, 设置左侧图标大小，Shortcut Pane选择Normal，Tree Pane选择Small;窗口大小直接鼠标拉伸；文件夹图标大大小，直接通过右击鼠标选择zoom in或者zoom out。&lt;/li&gt;
-              &lt;li&gt;&lt;strong&gt;&lt;u&gt;Panel&lt;/u&gt;&lt;/strong&gt;: Panel 1 Row Size：41; Panel 2 Row Size：64   (上下两个面板条的长度设置)&lt;/li&gt;
-              &lt;li&gt;&lt;strong&gt;&lt;u&gt;Windows Manager&lt;/u&gt;&lt;/strong&gt;: Style/Default/Title Font: Size 18   (设置窗口界面中的文字大小)&lt;/li&gt;
-              &lt;li&gt;&lt;strong&gt;&lt;u&gt;Orange Perference&lt;/u&gt;&lt;/strong&gt;: 点击打开即可   (日历，首次登录需打开一次即可，以后无需)&lt;/li&gt;
-              &lt;li&gt;&lt;strong&gt;&lt;u&gt;Workspace&lt;/u&gt;&lt;/strong&gt;: layout/number of workspaces: 1~4，选择自己需要的数字   (桌面右上方，可右击删除workspace)&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-
-        &lt;p style=&quot;margin-bottom:-10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;strong&gt;『Terminal设置』: 打开Terminal窗口&lt;/strong&gt;
-            &lt;ul&gt;
-              &lt;li&gt;Tab: “Preference” -&amp;gt; Side Panel: “profile/unamed/” -&amp;gt; “text appearence” Property:
-                &lt;ul&gt;
-                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Initial Terminal Size&lt;/code&gt;: 144 columns, 40 rows&lt;/li&gt;
-                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Customer Font&lt;/code&gt;: 19&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;关闭&amp;amp;重新打开Terminal，设置即已生效。&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-    &lt;p&gt;&lt;strong&gt;7. 『可选』在子系统中安装常用程序&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.msec.it/blog/dukto/&quot;&gt;Install Dukto&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  #下载并安装.deb包
-  $sudo apt install ./dukto_6.0-1_amd64.deb
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://linuxize.com/post/how-to-list-installed-packages-on-ubuntu/&quot;&gt;List Installed Packages on Ubuntu&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo apt list --installed
-  sudo apt list --installed | less
-  sudo apt list --installed | grep package_name
-
-  sudo dpkg-query -l | less
-  sudo dpkg-query -l | grep package_name	   
-
-  sudo dpkg-query -f '${binary:Package}\n' -W &amp;gt; packages_list.txt    #将已安装包列表保存在&quot;packages_list.txt&quot;
-  sudo xargs -a packages_list.txt apt install                        #安装&quot;packages_list.txt&quot;中含列的安装包
-
-  sudo dpkg-query -f '${binary:Package}\n' -W | wc -l                #统计已安装的安装包的数量
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;strong&gt;Windows&amp;lt;-&amp;gt;WSL File Transfer&lt;/strong&gt;&lt;/p&gt;
-
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  mv /mnt/c/download/file1 /home/Downloads  #从Windows C盘移动文件至WSL
-  cp /mnt/c/download/file2 /home/Downloads  #从Windows C盘复制文件至WSL；&quot;-r&quot;为复制目录；&quot;-f&quot;为强制，需逐个确认。
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:15px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;ubuntudebian常用命令参见&quot;&gt;&lt;strong&gt;Ubuntu/Debian常用命令：&lt;a href=&quot;/tech/Useful-Collection_Common-Commands-for-Diff-OS/&quot;&gt;参见&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;</content><author><name></name></author><category term="WSL" /></entry></feed>
+&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;</content><author><name></name></author><category term="OS" /></entry></feed>

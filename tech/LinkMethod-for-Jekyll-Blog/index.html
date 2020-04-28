@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8000/feed.xml" title="Morgan Zhao's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Morgan Zhao&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/Search/">Search</a><a class="page-link" href="/tags/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">  
+    <h1 class="post-title p-name" itemprop="name headline">Jekyll Blog中相关引用方法</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-04-15T00:00:00+08:00" itemprop="datePublished">Apr 15, 2019
+      </time></p>
+
+
+<div class="post-categories">
+  
+  
+<span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Category▸&nbsp;</em></strong></span>   
+  
+  
+  <a href="/categories/#Tech">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Tech</em></strong></span>     
+  </a>  
+  
+  
+</div>
+
+
+<div class="post-tags">
+    
+
+<span style="font-size: 13px; color: #6d9eeb;"><strong><em>Tag▸&nbsp;</em></strong></span> 
+  
+  
+  <a href="/tags/#Jekyll">
+     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>Jekyll</em></strong></span>  
+  </a>
+  
+  
+</div>
+
+<span style="font-size:; color: rgb(127, 127, 127);"><strong><em></em></strong></span>
+
+  </header>
+
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><br /><br /></p>
+
+<ul>
+  <li>
+    <h4 id="引用本地其他post-file如2019-04-15-zzzmd">引用本地其他”Post File”(如：2019-04-15-zzz.md)</h4>
+    <ul>
+      <li><code class="highlighter-rouge"> [链接zzz]({% post_url 2019-04-15-zzz %}) </code>
+        <ul>
+          <li>注意：仅文件名称部分，”.md”文件后缀名不需要。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:5px;">&nbsp;</p>
+
+<ul>
+  <li>
+    <h4 id="引用本地其他post-webpage如httptechtest123">引用本地其他”Post webpage”(如：http://…/tech/test123/)</h4>
+    <ul>
+      <li><code class="highlighter-rouge">[链接webpage](/tech/test123/)</code>
+        <ul>
+          <li>该方式，主要用来链接子页面。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:5px;">&nbsp;</p>
+
+<ul>
+  <li>
+    <h4 id="链接外网网址如http123com">链接外网网址(如：http://123.com)</h4>
+    <ul>
+      <li><code class="highlighter-rouge">[123](http://123.com)</code></li>
+      <li><code class="highlighter-rouge">&lt;http://123.com&gt;</code></li>
+      <li><code class="highlighter-rouge">&lt;a align="left" href="http://123.com" target="_blank"&gt;123&lt;/a&gt;</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:5px;">&nbsp;</p>
+
+<ul>
+  <li>
+    <h4 id="链接显示图片-如http3331234jpg">链接&amp;显示图片 (如：http://333/1234.jpg)</h4>
+    <ul>
+      <li><strong>外网图片，如：http://333/1234.jpg</strong>
+        <ul>
+          <li><code class="highlighter-rouge">![](http://333/1234.jpg)</code></li>
+          <li><code class="highlighter-rouge">&lt;img align="center" src="http://333/1234.jpg" width="85%" height="25%"/&gt;</code></li>
+        </ul>
+
+        <p style="margin-bottom:-7px;">&nbsp;</p>
+      </li>
+      <li><strong>本地图片，如：/assets/img/1577.png</strong>
+        <ul>
+          <li><code class="highlighter-rouge">![](/assets/img/1577.png)</code></li>
+          <li><code class="highlighter-rouge">&lt;img align="center" src="/assets/img/1577.png" width="85%" height="25%"/&gt;</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:5px;">&nbsp;</p>
+
+<ul>
+  <li>
+    <h4 id="引用代码">引用代码</h4>
+
+    <ul>
+      <li><img align="left" src="/assets/img/131.png" width="55%" /></li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:5px;">&nbsp;</p>
+
+  </div><a class="u-url" href="/tech/LinkMethod-for-Jekyll-Blog/" hidden></a>
+    
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Morgan Zhao&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name"><a href="/">Morgan Zhao&#39;s Blog</a></li><li>FB：<a href="https://www.facebook.com/zzmorl"><span class="username">zzmorl</span></a></li></ul>
+      </div>
+
+<!--
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/zzmorl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">zzmorl</span></a></li></ul>
+</div>  
+
+      <div class="footer-col footer-col-3">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+-->
+	  
+	  <div class="footer-col footer-col-4">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+	  
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
+

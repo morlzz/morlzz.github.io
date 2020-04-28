@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8000/feed.xml" title="Morgan Zhao's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Morgan Zhao&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/Search/">Search</a><a class="page-link" href="/tags/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">  
+    <h1 class="post-title p-name" itemprop="name headline">Install Anbox by Debian Sid on Debian10 GCE VPS</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-04-16T00:00:00+08:00" itemprop="datePublished">Apr 16, 2020
+      </time></p>
+
+
+<div class="post-categories">
+  
+  
+<span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Category▸&nbsp;</em></strong></span>   
+  
+  
+  <a href="/categories/#Tech">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Tech</em></strong></span>     
+  </a>  
+  
+  
+</div>
+
+
+<div class="post-tags">
+    
+
+<span style="font-size: 13px; color: #6d9eeb;"><strong><em></em></strong></span> 
+  
+  
+</div>
+
+<span style="font-size:; color: rgb(127, 127, 127);"><strong><em></em></strong></span>
+
+  </header>
+
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="margin-bottom:35px;">&nbsp;</p>
+
+<h3 id="system"><strong><u>System</u></strong></h3>
+<ul>
+  <li>
+    <h3 id="gce-debian-10-amd64">GCE, Debian 10, amd64</h3>
+  </li>
+</ul>
+
+<p style="margin-bottom:15px;">&nbsp;</p>
+
+<h3 id="install-anbox-method"><strong><u>Install Anbox Method</u></strong></h3>
+<ul>
+  <li>
+    <h3 id="from-unstable-source-debian-sid">from unstable source “<a href="https://packages.debian.org/sid/utils/anbox">Debian Sid</a>”</h3>
+  </li>
+</ul>
+
+<hr />
+
+<p style="margin-bottom:15px;">&nbsp;</p>
+
+<h3 id="前提条件确保已安装好桌面环境"><strong><u>前提条件：确保已安装好桌面环境</u></strong></h3>
+<ul>
+  <li>
+    <h3 id="系统需要检测video-config-才能成功启动anbox服务因此需要桌面环境为前提条件">系统需要检测video config, 才能成功启动Anbox服务，因此需要桌面环境为前提条件</h3>
+  </li>
+  <li>
+    <h3 id="chrome-vps-remote-desktop"><a href="/tech/Chrome-RDP-full-steps/">Chrome VPS Remote Desktop</a></h3>
+  </li>
+  <li>
+    <h3 id="wsl-rdp"><a href="/tech/Install-GUI-for-Win10-WSL1-Ubuntu/">WSL RDP</a></h3>
+  </li>
+</ul>
+
+<p style="margin-bottom:15px;">&nbsp;</p>
+
+<h3 id="anbox-installation-steps"><strong><u>Anbox Installation Steps</u></strong></h3>
+
+<ul>
+  <li>
+    <h4 id="step1-先修改etcaptsourceslist-增加以下内容"><strong>Step1: 先修改”/etc/apt/sources.list”, 增加以下内容</strong></h4>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  deb http://ftp.us.debian.org/debian/ sid main contrib non-free
+  deb-src http://ftp.us.debian.org/debian/ sid main
+	 
+  deb http://ftp.us.debian.org/debian/ testing main contrib non-free
+  deb-src http://ftp.us.debian.org/debian/ testing main
+</code></pre></div>    </div>
+  </li>
+</ul>
+<p style="margin-bottom:-3px;">&nbsp;</p>
+
+<ul>
+  <li>
+    <h4 id="step2-更新"><strong>Step2: 更新</strong></h4>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sudo apt update &amp;&amp; sudo apt -y upgrade
+  sudo apt update &amp;&amp; sudo apt upgrade	
+</code></pre></div>    </div>
+  </li>
+</ul>
+<p style="margin-bottom:-3px;">&nbsp;</p>
+
+<ul>
+  <li>
+    <h4 id="step3-查看libmodules下新增的kernel目录"><strong>Step3: 查看”/lib/modules/”下新增的Kernel目录</strong></h4>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  uname -r
+	
+  cd ~
+  cd /lib/modules/          
+</code></pre></div>    </div>
+
+    <p>我这里出现的是<code class="highlighter-rouge">5.5.0-1-cloud-amd64</code>, 因此对应<code class="highlighter-rouge">linux-headers-5.5.0-1-cloud-amd64</code>。</p>
+  </li>
+</ul>
+
+<p style="margin-bottom:-3px;">&nbsp;</p>
+
+<ul>
+  <li>
+    <h4 id="step4-从debian-sid安装anbox-官方安装文档"><strong>Step4: 从”Debian Sid”安装anbox, <a href="/assets/file/README.Debian">官方安装文档</a></strong></h4>
+
+    <ul>
+      <li><strong>准备工作</strong>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sudo apt install dkms
+  sudo apt install linux-headers-5.5.0-1-cloud-amd64                   
+</code></pre></div>        </div>
+      </li>
+      <li><strong>使用DKMS安装<code class="highlighter-rouge">ashmem_linux</code>和<code class="highlighter-rouge">binder_linux</code>两个模块</strong>
+        <blockquote>
+          <p>GCE Debian10 Kernel默认不含这两个模块。<br />不同于Ubuntu，Debian无法通过添加ppa方式进行直接安装<a href="https://github.com/anbox/anbox-modules">anbox-module</a>，只能该手动方式。</p>
+        </blockquote>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  //git提取
+  $ git clone https://github.com/anbox/anbox-modules.git
+  $ cd anbox-modules
+		
+  $ sudo cp anbox.conf /etc/modules-load.d/
+  $ sudo cp 99-anbox.rules /lib/udev/rules.d/
+
+  $ sudo cp -rT ashmem /usr/src/anbox-ashmem-1
+  $ sudo cp -rT binder /usr/src/anbox-binder-1
+
+  $ sudo dkms install anbox-ashmem/1
+  $ sudo dkms install anbox-binder/1
+
+  $ sudo modprobe ashmem_linux
+  $ sudo modprobe binder_linux
+  $ lsmod | grep -e ashmem_linux -e binder_linux
+  $ ls -alh /dev/binder /dev/ashmem                
+</code></pre></div>        </div>
+
+        <p>load the kernel modules (The next time will be automatically loaded)</p>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo modprobe ashmem_linux
+  $ sudo modprobe binder_linux
+</code></pre></div>        </div>
+
+        <p>System should have two new nodes in /dev directory (<code class="highlighter-rouge">/dev/ashmem</code>, <code class="highlighter-rouge">/dev/binder</code>)</p>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ ls -1 /dev/{ashmem,binder}
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p><strong>安装anbox package</strong></p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo apt install anbox
+</code></pre></div>        </div>
+      </li>
+      <li><strong>需下载<a href="https://build.anbox.io/android-images/">Pre-Build android image for anbox</a>: android.img</strong>
+        <blockquote>
+          <p>下载或者wget “android.img”, 拷贝至 <code class="highlighter-rouge">/var/lib/anbox/android.img</code>, 该路劲非常重要，不可变更。</p>
+        </blockquote>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ wget https://build.anbox.io/android-images/2018/07/19/android_amd64.img
+  $ cd ~
+  $ sudo mv android.img /var/lib/anbox/android.img
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p><strong>检测anbox安装状态</strong></p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ anbox system-info
+  $ anbox check-features                   //check whether system lack features to run Anbox
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:-3px;">&nbsp;</p>
+
+<ul>
+  <li>
+    <h4 id="step5-所有安装完成后进一步清理"><strong>Step5: 所有安装完成后，进一步清理</strong></h4>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  # apt-get clean &amp;&amp; apt-get autoremove
+  $ sudo apt-get -f install              #Another command to fix dependency problems
+  $ sudo dpkg --configure -a             #checks for dependency problems to fix            
+  $ sudo apt-get clean                   #clean unnecessary dependencies, "apt-get autoclean"
+  $ sudo apt-get update                  #Updates the packages’ list in the repositories
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p style="margin-bottom:-3px;">&nbsp;</p>
+
+<ul>
+  <li>
+    <h4 id="step6-运行anbox服务"><strong>Step6: 运行Anbox服务</strong></h4>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo systemctl start anbox-container-manager.service
+  $ systemctl --user start anbox-session-manager.service
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p style="margin-bottom:-3px;">&nbsp;</p>
+
+<ul>
+  <li>
+    <h4 id="step7-如果step6成功-启动anox"><strong>Step7: (如果Step6成功) 启动Anox</strong></h4>
+
+    <ul>
+      <li>
+        <p>启动方法1：桌面开始菜单Anbox图标</p>
+      </li>
+      <li>
+        <p>启动方法2：命令行</p>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ anbox launch --package=org.anbox.appmgr --component=org.anbox.appmgr.AppViewActivity
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:25px;">&nbsp;</p>
+
+<h3 id="install-apk-by-adb"><strong><u>Install Apk by ADB</u></strong></h3>
+<ul>
+  <li>
+    <h3 id="install-adb">Install ADB</h3>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo apt install android-tools-adb
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p style="margin-bottom:-3px;">&nbsp;</p>
+
+<ul>
+  <li>
+    <h3 id="adb-commands">ADB Commands</h3>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ adb devices                                    //需在桌面环境才能成功运行
+  $ adb shell 	                                 //需在桌面环境才能成功运行
+  $ sudo /usr/share/anbox/anbox-shell.sh           //进入Android root shell	
+	
+  //从Linux Host向anbox互相移动数据
+  adb push &lt;files&gt; '/sdcard/Download'              //从Linux向anbox传送数据
+  adb pull &lt;files&gt; '/sdcard/Download'              //从anbox向Linux传送数据	
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p style="margin-bottom:-3px;">&nbsp;</p>
+
+<ul>
+  <li>
+    <h3 id="install-apk">Install Apk</h3>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ wget https://f-droid.org/FDroid.apk
+  $ adb install FDroid.apk
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p style="margin-bottom:-3px;">&nbsp;</p>
+
+<ul>
+  <li>
+    <h3 id="uninstall-apk">Uninstall Apk</h3>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  adb shell pm list packages                       //list all installed APP_IDs with
+  adb uninstall [APP_ID]                           //卸载程序，注意是[APP_ID]而非文件名称	
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+
+  </div><a class="u-url" href="/tech/Install-Anbox-by-Debian-Sid-on-Debian10-GCE-VPS/" hidden></a>
+    
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Morgan Zhao&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name"><a href="/">Morgan Zhao&#39;s Blog</a></li><li>FB：<a href="https://www.facebook.com/zzmorl"><span class="username">zzmorl</span></a></li></ul>
+      </div>
+
+<!--
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/zzmorl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">zzmorl</span></a></li></ul>
+</div>  
+
+      <div class="footer-col footer-col-3">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+-->
+	  
+	  <div class="footer-col footer-col-4">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+	  
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
+
