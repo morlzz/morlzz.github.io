@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-04-28T22:37:26+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">Install Apps in WSL2-Ubuntu20.04</title><link href="http://localhost:8000/tech/Install-Apps-in-WSL2-Ubuntu20.04/" rel="alternate" type="text/html" title="Install Apps in WSL2-Ubuntu20.04" /><published>2020-04-28T00:00:00+08:00</published><updated>2020-04-28T00:00:00+08:00</updated><id>http://localhost:8000/tech/Install%20Apps%20in%20WSL2-Ubuntu20.04</id><content type="html" xml:base="http://localhost:8000/tech/Install-Apps-in-WSL2-Ubuntu20.04/">&lt;p style=&quot;margin-bottom:35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-05-01T00:11:39+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">Install Apps in WSL2-Ubuntu20.04</title><link href="http://localhost:8000/tech/Install-Apps-in-WSL2-Ubuntu20.04/" rel="alternate" type="text/html" title="Install Apps in WSL2-Ubuntu20.04" /><published>2020-04-28T00:00:00+08:00</published><updated>2020-04-28T00:00:00+08:00</updated><id>http://localhost:8000/tech/Install%20Apps%20in%20WSL2-Ubuntu20.04</id><content type="html" xml:base="http://localhost:8000/tech/Install-Apps-in-WSL2-Ubuntu20.04/">&lt;p style=&quot;margin-bottom:35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;h4 id=&quot;step-by-step&quot;&gt;&lt;strong&gt;Step By Step.&lt;/strong&gt;&lt;/h4&gt;
 
@@ -739,7 +739,7 @@ $ sudo ppa-purge ppa:morphis/anbox-support
   &lt;/li&gt;
   &lt;li&gt;“清除浏览数据”时，选择&lt;strong&gt;“基本”模式&lt;/strong&gt;。
     &lt;ul&gt;
-      &lt;li&gt;勿用”高级”，亲测该模式下无论是否清楚cookie，chrome账号该被清除，因而仍会出现”已暂停”问题。&lt;/li&gt;
+      &lt;li&gt;勿用”高级”，亲测该模式下无论是否清除cookie，chrome账号都被清除，因而仍会出现”已暂停”问题。&lt;/li&gt;
     &lt;/ul&gt;
 
     &lt;p&gt;&lt;a align=&quot;center&quot; href=&quot;/assets/img/130.png&quot; target=&quot;_blank&quot;&gt;
@@ -862,6 +862,38 @@ cd mytestblog
     &lt;ul&gt;
       &lt;li&gt;最快的方式 - 指定端口, CMD 命令行：
         &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  bundle exec jekyll serve -P &amp;lt;Your_Assigned_New_Port&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: 10px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;already-activated-xxx-v230-but-your-gemfile-requires-xxx-v220&quot;&gt;&lt;strong&gt;already activated xxx v2.3.0, but your Gemfile requires xxx v2.2.0&lt;/strong&gt;&lt;/h4&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;输入 jekyll -v时会直接报错。&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;ul&gt;
+      &lt;li&gt;解决方法：直接进入目录，手动删除多出的”.gemspec”文件。Windows10为例：
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  C:\Ruby27-x64\lib\ruby\gems\2.7.0\specifications
+  C:\Ruby27-x64\lib\ruby\gems\2.7.0\specifications\default
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: 10px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;could-not-find-public_suffix-403-in-any-of-the-sources&quot;&gt;&lt;strong&gt;Could not find public_suffix-4.0.3 in any of the sources&lt;/strong&gt;&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;解决方法：Powershell输入
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  bundle install
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
       &lt;/li&gt;
     &lt;/ul&gt;

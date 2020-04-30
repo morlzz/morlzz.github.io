@@ -187,6 +187,39 @@ cd mytestblog
   </li>
 </ul>
 
+<p style="margin-bottom: 10px;">&emsp;</p>
+
+<ul>
+  <li>
+    <h4 id="already-activated-xxx-v230-but-your-gemfile-requires-xxx-v220"><strong>already activated xxx v2.3.0, but your Gemfile requires xxx v2.2.0</strong></h4>
+    <blockquote>
+      <p>输入 jekyll -v时会直接报错。</p>
+    </blockquote>
+    <ul>
+      <li>解决方法：直接进入目录，手动删除多出的”.gemspec”文件。Windows10为例：
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  C:\Ruby27-x64\lib\ruby\gems\2.7.0\specifications
+  C:\Ruby27-x64\lib\ruby\gems\2.7.0\specifications\default
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom: 10px;">&emsp;</p>
+
+<ul>
+  <li>
+    <h4 id="could-not-find-public_suffix-403-in-any-of-the-sources"><strong>Could not find public_suffix-4.0.3 in any of the sources</strong></h4>
+    <ul>
+      <li>解决方法：Powershell输入
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  bundle install
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
   </div><a class="u-url" href="/tech/Install_Run-Jekyll/" hidden></a>
     
 </article>
