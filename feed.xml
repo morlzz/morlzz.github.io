@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-05-01T00:11:39+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">Install Apps in WSL2-Ubuntu20.04</title><link href="http://localhost:8000/tech/Install-Apps-in-WSL2-Ubuntu20.04/" rel="alternate" type="text/html" title="Install Apps in WSL2-Ubuntu20.04" /><published>2020-04-28T00:00:00+08:00</published><updated>2020-04-28T00:00:00+08:00</updated><id>http://localhost:8000/tech/Install%20Apps%20in%20WSL2-Ubuntu20.04</id><content type="html" xml:base="http://localhost:8000/tech/Install-Apps-in-WSL2-Ubuntu20.04/">&lt;p style=&quot;margin-bottom:35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-05-01T02:07:45+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">Install Apps in WSL2-Ubuntu20.04</title><link href="http://localhost:8000/tech/Install-Apps-in-WSL2-Ubuntu20.04/" rel="alternate" type="text/html" title="Install Apps in WSL2-Ubuntu20.04" /><published>2020-04-28T00:00:00+08:00</published><updated>2020-04-28T00:00:00+08:00</updated><id>http://localhost:8000/tech/Install%20Apps%20in%20WSL2-Ubuntu20.04</id><content type="html" xml:base="http://localhost:8000/tech/Install-Apps-in-WSL2-Ubuntu20.04/">&lt;p style=&quot;margin-bottom:35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;h4 id=&quot;step-by-step&quot;&gt;&lt;strong&gt;Step By Step.&lt;/strong&gt;&lt;/h4&gt;
 
@@ -909,7 +909,11 @@ cd mytestblog
 
 &lt;h4 id=&quot;下载直链&quot;&gt;&lt;strong&gt;下载直链：&lt;/strong&gt;&lt;/h4&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://dl.google.com/android/repository/platform-tools-latest-windows.zip&quot;&gt;Latest for Windows&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dl.google.com/android/repository/platform-tools-latest-windows.zip&quot;&gt;Latest for Windows&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ic4uihg&quot;&gt;adb-setup-1.4.3&lt;/a&gt;：经典一键安装版本(含驱动+path)，建议windows操作系统首先安装&lt;code class=&quot;highlighter-rouge&quot;&gt;adb-setup-1.4.3&lt;/code&gt;(默认安装路径&lt;code class=&quot;highlighter-rouge&quot;&gt;c:\adb\&lt;/code&gt;)，而后再将&lt;code class=&quot;highlighter-rouge&quot;&gt;Android SDK Platform-tools&lt;/code&gt;最新版解压缩后所有内容覆盖至&lt;code class=&quot;highlighter-rouge&quot;&gt;c:\adb\&lt;/code&gt;即可。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://dl.google.com/android/repository/platform-tools-latest-linux.zip&quot;&gt;Latest for Linux&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
