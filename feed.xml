@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-05-04T21:20:40+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">Install Apps in WSL2-Ubuntu20.04</title><link href="http://localhost:8000/tech/Install-Apps-in-WSL2-Ubuntu20.04/" rel="alternate" type="text/html" title="Install Apps in WSL2-Ubuntu20.04" /><published>2020-04-28T00:00:00+08:00</published><updated>2020-04-28T00:00:00+08:00</updated><id>http://localhost:8000/tech/Install%20Apps%20in%20WSL2-Ubuntu20.04</id><content type="html" xml:base="http://localhost:8000/tech/Install-Apps-in-WSL2-Ubuntu20.04/">&lt;p style=&quot;margin-bottom:35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-05-12T22:41:57+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">WindowsOS 常用路径</title><link href="http://localhost:8000/tech/Windows-OS-Path/" rel="alternate" type="text/html" title="WindowsOS 常用路径" /><published>2020-05-06T00:00:00+08:00</published><updated>2020-05-06T00:00:00+08:00</updated><id>http://localhost:8000/tech/Windows%20OS%20Path</id><content type="html" xml:base="http://localhost:8000/tech/Windows-OS-Path/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;1-a-copy-of-the-current-wallpaper&quot;&gt;&lt;strong&gt;1. A copy of the current wallpaper&lt;/strong&gt;&lt;/h4&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%AppData%\Microsoft\Windows\Themes\CachedFiles&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="OS" /></entry><entry><title type="html">Install Apps in WSL2-Ubuntu20.04</title><link href="http://localhost:8000/tech/Install-Apps-in-WSL2-Ubuntu20.04/" rel="alternate" type="text/html" title="Install Apps in WSL2-Ubuntu20.04" /><published>2020-04-28T00:00:00+08:00</published><updated>2020-04-28T00:00:00+08:00</updated><id>http://localhost:8000/tech/Install%20Apps%20in%20WSL2-Ubuntu20.04</id><content type="html" xml:base="http://localhost:8000/tech/Install-Apps-in-WSL2-Ubuntu20.04/">&lt;p style=&quot;margin-bottom:35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;h4 id=&quot;step-by-step&quot;&gt;&lt;strong&gt;Step By Step.&lt;/strong&gt;&lt;/h4&gt;
 
@@ -1001,82 +1009,4 @@ $ adb start-server
       &lt;li&gt;路径：Sandbox中 &lt;code class=&quot;highlighter-rouge&quot;&gt;C:\Users\WDAGUtilityAccount\&lt;/code&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="OS" /></entry><entry><title type="html">『总贴』Windows微软相关汇总</title><link href="http://localhost:8000/tech/Windows-All-Relative/" rel="alternate" type="text/html" title="『总贴』Windows微软相关汇总" /><published>2020-04-04T22:16:00+08:00</published><updated>2020-04-04T22:16:00+08:00</updated><id>http://localhost:8000/tech/Windows%20All%20Relative</id><content type="html" xml:base="http://localhost:8000/tech/Windows-All-Relative/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
-Keywords: 
-&lt;a href=&quot;#keyword1&quot;&gt;微软终端命令&lt;/a&gt;,
-&lt;a href=&quot;#keyword2&quot;&gt;微软官方WinPE&lt;/a&gt;,
-&lt;a href=&quot;#keyword3&quot;&gt;Surface Pro4 硬件驱动黄色惊叹号&lt;/a&gt;,
-&lt;a href=&quot;#keyword4&quot;&gt;SOHO局域网相关汇总&lt;/a&gt;,
-&lt;a href=&quot;#keyword5&quot;&gt;微软WSL-Ubuntu安装图形用户界面&lt;/a&gt;,
-&lt;a href=&quot;#keyword6&quot;&gt;微软子系统(Ubuntu)通过Xshell连接&lt;/a&gt;,
-&lt;a href=&quot;#keyword7&quot;&gt;Install WSL2&lt;/a&gt;,
-&lt;a href=&quot;#keyword8&quot;&gt;WSL Issues&lt;/a&gt;,
-&lt;a href=&quot;#keyword9&quot;&gt;在WSL2-Ubuntu18.04安装相关App&lt;/a&gt;,
-&lt;a href=&quot;#keyword10&quot;&gt;在WSL2-Ubuntu20.04安装相关App&lt;/a&gt;,
-&lt;a href=&quot;#keyword11&quot;&gt;Windows Sandbox .wsb Config&lt;/a&gt;,
-&lt;a href=&quot;#keyword12&quot;&gt;Apps for Windows OS&lt;/a&gt;,
-&lt;a href=&quot;#keyword13&quot;&gt;WindowsOS相关终端命令&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p style=&quot;margin-bottom: 25px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;1-commandswindows-x86-相关终端命令&quot;&gt;&lt;font id=&quot;keyword1&quot; color=&quot;green&quot;&gt;1. 『Commands』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-OS-Commands/&quot;&gt;Windows x86 相关终端命令&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;2-winpe微软官方winpe-启动u盘或iso制作&quot;&gt;&lt;font id=&quot;keyword2&quot; color=&quot;green&quot;&gt;2. 『WinPE』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-Official-WinPE/&quot;&gt;微软官方WinPE 启动U盘或iso制作&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;3-driver-issuesurface-pro4-硬件驱动黄色惊叹号&quot;&gt;&lt;font id=&quot;keyword3&quot; color=&quot;green&quot;&gt;3. 『Driver Issue』&lt;/font&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Surface-Pro4-Drivers'-Issue/&quot;&gt;Surface Pro4 硬件驱动黄色惊叹号&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;4-soho-lansoho局域网相关汇总&quot;&gt;&lt;font id=&quot;keyword4&quot; color=&quot;green&quot;&gt;4. 『SOHO LAN』&lt;/font&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SohoLAN/&quot;&gt;SOHO局域网相关汇总&lt;/a&gt;&lt;/h3&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;SMB(v2)局域网跨设备文件共享/浏览,IIS,卡巴防火墙相关设置,路由器访客/AP隔离&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;5-win10-subsystem微软子系统wsl-v1ubuntu安装图形用户界面&quot;&gt;&lt;font id=&quot;keyword5&quot; color=&quot;green&quot;&gt;5. 『Win10 Subsystem』&lt;/font&gt;&lt;a href=&quot;/tech/Install-GUI-for-Win10-WSL1-Ubuntu/&quot;&gt;微软子系统WSL v1(Ubuntu)安装图形用户界面&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;6-win10-subsystemxshell连接wsl-ubuntu&quot;&gt;&lt;font id=&quot;keyword6&quot; color=&quot;green&quot;&gt;6. 『Win10 Subsystem』&lt;/font&gt;&lt;a href=&quot;/tech/Xshell-connect-to-WSL-Ubuntu/&quot;&gt;Xshell连接WSL Ubuntu&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;7-win10-subsysteminstall-wsl2--backuprestore-wsl2&quot;&gt;&lt;font id=&quot;keyword7&quot; color=&quot;green&quot;&gt;7. 『Win10 Subsystem』&lt;/font&gt;&lt;a href=&quot;/tech/WSL2/&quot;&gt;Install WSL2 &amp;amp; Backup/restore WSL2&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;8-win10-subsystemwsl2-issues&quot;&gt;&lt;font id=&quot;keyword8&quot; color=&quot;green&quot;&gt;8. 『Win10 Subsystem』&lt;/font&gt;&lt;a href=&quot;/tech/WSL2-Issues/&quot;&gt;WSL2 Issues&lt;/a&gt;&lt;/h3&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;缺失”Linux Header for 4.19.84-microsoft-standard Kernel”；Snapd不正常工作问题…&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;9-wsl2-ubuntuinstall-apps-on-ubuntu-1804&quot;&gt;&lt;font id=&quot;keyword9&quot; color=&quot;green&quot;&gt;9. 『WSL2-Ubuntu』&lt;/font&gt;&lt;a href=&quot;/tech/Install-Anbox-for-WSL2-Ubuntu18.04/&quot;&gt;Install Apps on Ubuntu 18.04&lt;/a&gt;&lt;/h3&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;安装Anbox等；&lt;a href=&quot;/tech/MyConfig-for-WSL2-Ubuntu18.04/&quot;&gt;MyConfig&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;10-wsl2-ubuntuinstall-apps-on-ubuntu-2004&quot;&gt;&lt;font id=&quot;keyword10&quot; color=&quot;green&quot;&gt;10. 『WSL2-Ubuntu』&lt;/font&gt;&lt;a href=&quot;/tech/Install-Apps-in-WSL2-Ubuntu20.04/&quot;&gt;Install Apps on Ubuntu 20.04&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;11-win10-sandboxwindows-sandbox-wsb-config&quot;&gt;&lt;font id=&quot;keyword10&quot; color=&quot;green&quot;&gt;11. 『Win10 Sandbox』&lt;/font&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/Win10-Sandbox/&quot;&gt;Windows Sandbox .wsb Config&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;12-windows-apps微软平台推荐应用&quot;&gt;&lt;font id=&quot;keyword11&quot; color=&quot;green&quot;&gt;12. 『Windows Apps』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-Apps/&quot;&gt;微软平台推荐应用&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;13-terminal-commandswindowsos相关终端命令&quot;&gt;&lt;font id=&quot;keyword12&quot; color=&quot;green&quot;&gt;13. 『Terminal Commands』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-OS-Commands/&quot;&gt;WindowsOS相关终端命令&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;</content><author><name></name></author><category term="OS" /></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="OS" /></entry></feed>

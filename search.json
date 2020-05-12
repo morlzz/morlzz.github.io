@@ -2,6 +2,19 @@
   
     {
     
+      "title"    : "WindowsOS 常用路径",
+      "url"      : "/tech/Windows-OS-Path/",	  
+      "category" : "Tech",
+      "tags"     : "OS",
+      "date"     : "2020-05-06",
+      "excerpt" : "",
+	  "body"    : "1. A copy of the current wallpaper  %AppData%\\Microsoft\\Windows\\Themes\\CachedFiles",
+	  "content" : "1. A copy of the current wallpaper  AppData#92;Microsoft#92;Windows#92;Themes#92;CachedFiles"	 
+      
+    } ,
+  
+    {
+    
       "title"    : "Install Apps in WSL2-Ubuntu20.04",
       "url"      : "/tech/Install-Apps-in-WSL2-Ubuntu20.04/",	  
       "category" : "Tech",
@@ -125,8 +138,8 @@
       "tags"     : "OS",
       "date"     : "2020-04-04",
       "excerpt" : "",
-	  "body"    : "Keywords: 微软终端命令,微软官方WinPE,Surface Pro4 硬件驱动黄色惊叹号,SOHO局域网相关汇总,微软WSL-Ubuntu安装图形用户界面,微软子系统(Ubuntu)通过Xshell连接,Install WSL2,WSL Issues,在WSL2-Ubuntu18.04安装相关App,在WSL2-Ubuntu20.04安装相关App,Windows Sandbox .wsb Config,Apps for Windows OS,WindowsOS相关终端命令&emsp;1. 『Commands』Windows x86 相关终端命令&emsp;2. 『WinPE』微软官方WinPE 启动U盘或iso制作&emsp;3. 『Driver Issue』Surface Pro4 硬件驱动黄色惊叹号&emsp;4. 『SOHO LAN』SOHO局域网相关汇总  SMB(v2)局域网跨设备文件共享/浏览,IIS,卡巴防火墙相关设置,路由器访客/AP隔离&emsp;5. 『Win10 Subsystem』微软子系统WSL v1(Ubuntu)安装图形用户界面&emsp;6. 『Win10 Subsystem』Xshell连接WSL Ubuntu&emsp;7. 『Win10 Subsystem』Install WSL2 &amp; Backup/restore WSL2&emsp;8. 『Win10 Subsystem』WSL2 Issues  缺失”Linux Header for 4.19.84-microsoft-standard Kernel”；Snapd不正常工作问题…&emsp;9. 『WSL2-Ubuntu』Install Apps on Ubuntu 18.04  安装Anbox等；MyConfig&emsp;10. 『WSL2-Ubuntu』Install Apps on Ubuntu 20.04&emsp;11. 『Win10 Sandbox』Windows Sandbox .wsb Config&emsp;12. 『Windows Apps』微软平台推荐应用&emsp;13. 『Terminal Commands』WindowsOS相关终端命令&emsp;",
-	  "content" : "Keywords: ,WinPE,Surface Pro4 ,SOHO,WSL-Ubuntu,(Ubuntu)Xshell,Install WSL2,WSL Issues,WSL2-Ubuntu18.04App,WSL2-Ubuntu20.04App,Windows Sandbox .wsb Config,Apps for Windows OS,WindowsOSemsp;1. CommandsWindows x86 emsp;2. WinPEWinPE Uisoemsp;3. Driver IssueSurface Pro4 emsp;4. SOHO LANSOHO  SMB(v2)/,IIS,,/APemsp;5. Win10 SubsystemWSL v1(Ubuntu)emsp;6. Win10 SubsystemXshellWSL Ubuntuemsp;7. Win10 SubsystemInstall WSL2 amp; Backup/restore WSL2emsp;8. Win10 SubsystemWSL2 Issues  Linux Header for 4.19.84-microsoft-standard KernelSnapdemsp;9. WSL2-UbuntuInstall Apps on Ubuntu 18.04  AnboxMyConfigemsp;10. WSL2-UbuntuInstall Apps on Ubuntu 20.04emsp;11. Win10 SandboxWindows Sandbox .wsb Configemsp;12. Windows Appsemsp;13. Terminal CommandsWindowsOSemsp;"	 
+	  "body"    : "Keywords: 微软终端命令,微软官方WinPE,Surface Pro4 硬件驱动黄色惊叹号,SOHO局域网相关汇总,微软WSL-Ubuntu安装图形用户界面,微软子系统(Ubuntu)通过Xshell连接,Install WSL2,WSL Issues,在WSL2-Ubuntu18.04安装相关App,在WSL2-Ubuntu20.04安装相关App,Windows Sandbox .wsb Config,Apps for Windows OS,WindowsOS常用路径&emsp;1. 『Commands』Windows x86 相关终端命令&emsp;2. 『WinPE』微软官方WinPE 启动U盘或iso制作&emsp;3. 『Driver Issue』Surface Pro4 硬件驱动黄色惊叹号&emsp;4. 『SOHO LAN』SOHO局域网相关汇总  SMB(v2)局域网跨设备文件共享/浏览,IIS,卡巴防火墙相关设置,路由器访客/AP隔离&emsp;5. 『Win10 Subsystem』微软子系统WSL v1(Ubuntu)安装图形用户界面&emsp;6. 『Win10 Subsystem』Xshell连接WSL Ubuntu&emsp;7. 『Win10 Subsystem』Install WSL2 &amp; Backup/restore WSL2&emsp;8. 『Win10 Subsystem』WSL2 Issues  缺失”Linux Header for 4.19.84-microsoft-standard Kernel”；Snapd不正常工作问题…&emsp;9. 『WSL2-Ubuntu』Install Apps on Ubuntu 18.04  安装Anbox等；MyConfig&emsp;10. 『WSL2-Ubuntu』Install Apps on Ubuntu 20.04&emsp;11. 『Win10 Sandbox』Windows Sandbox .wsb Config&emsp;12. 『Windows Apps』微软平台推荐应用&emsp;13. 『General Path』WindowsOS常用路径&emsp;",
+	  "content" : "Keywords: ,WinPE,Surface Pro4 ,SOHO,WSL-Ubuntu,(Ubuntu)Xshell,Install WSL2,WSL Issues,WSL2-Ubuntu18.04App,WSL2-Ubuntu20.04App,Windows Sandbox .wsb Config,Apps for Windows OS,WindowsOSemsp;1. CommandsWindows x86 emsp;2. WinPEWinPE Uisoemsp;3. Driver IssueSurface Pro4 emsp;4. SOHO LANSOHO  SMB(v2)/,IIS,,/APemsp;5. Win10 SubsystemWSL v1(Ubuntu)emsp;6. Win10 SubsystemXshellWSL Ubuntuemsp;7. Win10 SubsystemInstall WSL2 amp; Backup/restore WSL2emsp;8. Win10 SubsystemWSL2 Issues  Linux Header for 4.19.84-microsoft-standard KernelSnapdemsp;9. WSL2-UbuntuInstall Apps on Ubuntu 18.04  AnboxMyConfigemsp;10. WSL2-UbuntuInstall Apps on Ubuntu 20.04emsp;11. Win10 SandboxWindows Sandbox .wsb Configemsp;12. Windows Appsemsp;13. General PathWindowsOSemsp;"	 
       
     } ,
   
