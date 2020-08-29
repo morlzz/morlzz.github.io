@@ -177,7 +177,7 @@
           <li><strong><font color="green">NOTE: 每次重启Windows系统后，需要在WSL Terminal中"sudo service xrdp restart"重启xrdp服务一次，否则出现"远程连接失败"错误。</font></strong></li>
           <li>在”微软远程桌面连接”窗口，”显示/体验”Tab中均可做呈现设置。
             <ul>
-              <li>如：显示配置 - 2560x1440，颜色 - 真彩色24位，体验 - LAN/不勾选”动画、视觉样式”。</li>
+              <li>如：显示配置 - 2560x1440 (另：for 1920x1080: 1440x900)，颜色 - 真彩色24位，体验 - LAN/不勾选”动画、视觉样式”。</li>
             </ul>
           </li>
         </ul>
@@ -240,7 +240,8 @@
   $ sudo apt install ./dukto_6.0-1_amd64.deb
 		
   $ wget https://download.opensuse.org/repositories/home:/colomboem/xUbuntu_16.04/amd64/dukto_6.0-1_amd64.deb  //for ubuntu
-  $ sudo apt install ./dukto_6.0-1_amd64.deb
+  $ sudo dpkg --install ./dukto_6.0-1_amd64.deb
+  $ sudo apt --fix-broken install
 </code></pre></div>        </div>
       </li>
       <li>

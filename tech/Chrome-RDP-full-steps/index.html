@@ -94,12 +94,11 @@ Keywords:
 <h4 id="step1---debian10教程"><strong>Step1 - Debian10教程</strong></h4>
 
 <p>#日常更新</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update
-sudo apt upgrade
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update &amp;&amp; sudo apt upgrade
 </code></pre></div></div>
 
-<p>#Debian10需要安装wget</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install wget
+<p>#安装wget/curl/unzip等常用包</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install wget curl unzip git software-properties-common
 </code></pre></div></div>
 
 <p>#准备工作1：Xshell登录GCE VM为例，终端界面显示用户名称：<strong><code class="highlighter-rouge">xxx@yyy:~$</code></strong></p>
@@ -127,6 +126,8 @@ sudo chmod u-w /etc/sudoers
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chmod -R 777 /etc/hosts
 
 sudo vi /etc/hosts			  #编辑hosts文件 (ins键进入编辑状态；保存退出: Esc键后，:wq!回车)
+//sudo nano /etc/hosts
+	
   127.0.0.1    yyy            #在"/etc/hosts"文件中, add 127.0.1.1 你的GCE VM项目名称
 
 sudo cat /etc/hosts           #查看文件
@@ -138,17 +139,23 @@ sudo chmod -R 644 /etc/hosts
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo passwd $(whoami)
 </code></pre></div></div>
 
+<p>#准备工作5：为root用户设置密码</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -s
+passwd
+</code></pre></div></div>
+
 <p>#开始官方教程步骤</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 
 sudo apt update
 
-sudo apt install --assume-yes --fix-broken   //OR：sudo apt --fix-broken install
-
 //Ignore, but if needed,try: 
 //sudo dpkg --add-architecture i386 &amp;&amp; sudo apt update
 
 sudo dpkg --install chrome-remote-desktop_current_amd64.deb
+
+//如果上一条命令出错，执行（则会自动修复并安装上一条命令）： 
+sudo apt --fix-broken install         //OR：sudo apt install --assume-yes --fix-broken
 </code></pre></div></div>
 
 <p>#开始安装Xfce</p>
@@ -167,9 +174,10 @@ sudo systemctl disable lightdm.service
 <p>#安装 Chrome 浏览器</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
-sudo apt install --assume-yes --fix-broken
-
 sudo dpkg --install google-chrome-stable_current_amd64.deb	
+
+//如果上一条命令出错，执行（则会自动修复并安装上一条命令）： 
+sudo apt --fix-broken install         //OR：sudo apt install --assume-yes --fix-broken
 </code></pre></div></div>
 
 <p>#提高桌面分辨率, 设为自己机器的分辨率</p>
@@ -178,7 +186,11 @@ sudo dpkg --install google-chrome-stable_current_amd64.deb
      
 sudo systemctl restart chrome-remote-desktop                #重启服务
 
-sudo systemctl status chrome-remote-desktop                 #检查 Chrome远程桌面服务的状态, 如果服务正在运行，会看到包含"active"状态的输出(Ctrl+c退出)
+sudo systemctl status chrome-remote-desktop                 #检查 Chrome远程桌面服务的状态, //如果服务正在运行，会看到包含"active"状态的输出(Ctrl+c退出)
+
+//如果chrome-remote-desktop运行不正常：
+sudo systemctl stop chrome-remote-desktop                   #关闭服务
+sudo systemctl restart chrome-remote-desktop                #再重启服务即可恢复正常
 </code></pre></div></div>
 
 <p style="margin-bottom:-3px;">&nbsp;</p>
@@ -238,12 +250,12 @@ sudo systemctl status chrome-remote-desktop                 #检查 Chrome远程
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install software-properties-common       #In case add-apt-repository is missing
 </code></pre></div></div>
 
-<p>#为root用户设置密码</p>
+<p>#『必须』为root用户设置密码    //如前面已设，跳过</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -s
 passwd
 </code></pre></div></div>
 
-<p>#『可选』如需要切换为用户user1                       //WSL：不需要</p>
+<p>#『可选』如需要切换为用户user1</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># su - user1                                       #切换成用户user1
 </code></pre></div></div>
 
@@ -258,7 +270,14 @@ passwd
 
     <p>准备工作</p>
     <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sudo apt install dkms
-  sudo apt install linux-headers-4.19.0-8-cloud-amd64          //for WSL：无需这一步，已手动编译module&amp;headers           
+  sudo apt install linux-headers-4.19.0-9-cloud-amd64          //for WSL：无需这一步，已手动编译module&amp;headers   	
+</code></pre></div>    </div>
+
+    <p>linux headers版本，查看”/lib/modules/”下的Kernel目录，我这里出现的是<code class="highlighter-rouge">4.19.0-9-cloud-amd64</code>，因此对应<code class="highlighter-rouge">linux-headers-4.19.0-9-cloud-amd64</code>。</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  uname -r
+	
+  cd ~
+  cd /lib/modules/          
 </code></pre></div>    </div>
 
     <p><a href="(https://github.com/anbox/anbox-modules#install-instruction)">教程步骤</a>: 
@@ -309,7 +328,7 @@ passwd
 
 <p>#安装adb</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install android-tools-adb
-sudo ln -s /snap/bin/anbox /usr/bin/anbox         #Managed to run the session-manager after
+sudo ln -s /snap/bin/anbox /usr/bin/anbox          #Managed to run the session-manager after
 </code></pre></div></div>
 
 <p>#检查adb是否安装成功</p>
@@ -423,14 +442,86 @@ $ notepad-plus-plus		  #在Terminal中直接启动
 
 <h4 id="教程-项目"><a href="https://www.771633.com/14275.htm">教程</a>, <a href="https://github.com/helloxz/ccaa">项目</a></h4>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo -i
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ mkdir Downloads
+
+$ sudo -i
 # apt-get -y install curl    
 # bash &lt;(curl -Lsk https://raw.githubusercontent.com/helloxz/ccaa/master/ccaa.sh)    //内含安装/卸载/更新互动选项
+
+//可设置下载路径：/home/xxx/Downloads
 </code></pre></div></div>
 <p>Note:</p>
 <ul>
   <li>For GCE, allow <code class="highlighter-rouge">Port 6080/6081/6800/6998/51413</code> in Firewall rules. (ingress, tcp&amp;udp, 0.0.0.0/0)</li>
   <li>下载到VPS后，在Aria_webUI，本地搭配FDM可快速下载。</li>
+</ul>
+
+<p style="margin-bottom:8px;">&nbsp;</p>
+
+<h3 id="brave在debian-9ubuntu-1404mint-17中安装brave"><strong><font id="keyword5" color="green">『Brave』在Debian 9+/Ubuntu 14.04+/Mint 17+中安装Brave</font></strong></h3>
+<hr />
+
+<p style="margin-bottom:-3px;">&nbsp;</p>
+
+<h4 id="教程-1"><a href="https://brave-browser.readthedocs.io/en/latest/installing-brave.html#linux">教程</a></h4>
+
+<p>#安装</p>
+<ul>
+  <li>Stable Release Channel
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo apt install apt-transport-https curl
+
+  $ curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
+
+  $ echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+
+  $ sudo apt update
+
+  sudo apt install brave-browser   
+</code></pre></div>    </div>
+  </li>
+  <li>Beta Channel
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo apt install apt-transport-https curl
+
+  $ curl -s https://brave-browser-apt-beta.s3.brave.com/brave-core-nightly.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-prerelease.gpg add -
+
+  $ echo "deb [arch=amd64] https://brave-browser-apt-beta.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-beta.list
+
+  $ sudo apt update
+
+  $ sudo apt install brave-browser-beta 
+</code></pre></div>    </div>
+  </li>
+  <li>Nightly Channel
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo apt install apt-transport-https curl
+
+  $ curl -s https://brave-browser-apt-nightly.s3.brave.com/brave-core-nightly.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-prerelease.gpg add -
+
+  $ echo "deb [arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-nightly.list
+
+  $ sudo apt update
+
+  $ sudo apt install brave-browser-nightly 
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>#卸载</p>
+<ul>
+  <li>Stable Release Channel
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo apt remove --auto-remove brave-browser                 
+  $ sudo rm -f /etc/apt/sources.list.d/brave-browser.list   
+</code></pre></div>    </div>
+  </li>
+  <li>Beta Channel
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo apt remove --auto-remove brave-browser-beta                 
+  $ sudo rm -f /etc/apt/sources.list.d/brave-browser-beta.list   
+</code></pre></div>    </div>
+  </li>
+  <li>Nightly Channel
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo apt remove --auto-remove brave-browser-nightly                 
+  $ sudo rm -f /etc/apt/sources.list.d/brave-browser-nightly.list   
+</code></pre></div>    </div>
+  </li>
 </ul>
 
 <p style="margin-bottom:13px;">&nbsp;</p>

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:8000/feed.xml" title="Morgan Zhao's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Morgan Zhao&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/Search/">Search</a><a class="page-link" href="/tags/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">  
+    <h1 class="post-title p-name" itemprop="name headline">WSL2 Issues - Solve Linux Header/Snap, install Anbox by Ubuntu 20.04 focal source</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-04-04T00:00:00+08:00" itemprop="datePublished">Apr 4, 2020
+      </time></p>
+
+
+<div class="post-categories">
+  
+  
+<span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Category▸&nbsp;</em></strong></span>   
+  
+  
+  <a href="/categories/#Tech">
+      <span style="font-size: 13px; color: rgb(112, 173, 71);"><strong><em>Tech</em></strong></span>     
+  </a>  
+  
+  
+</div>
+
+
+<div class="post-tags">
+    
+
+<span style="font-size: 13px; color: #6d9eeb;"><strong><em>Tag▸&nbsp;</em></strong></span> 
+  
+  
+  <a href="/tags/#WSL">
+     <span style="font-size: 13px; color: #6d9eeb;"><strong><em>WSL</em></strong></span>  
+  </a>
+  
+  
+</div>
+
+<span style="font-size:; color: rgb(127, 127, 127);"><strong><em></em></strong></span>
+
+  </header>
+
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="margin-bottom: 12px;color:#474747;font-size:14px;">
+Keywords: 
+<a href="#keyword1">Linux header missing</a>， 
+<a href="#keyword2">Snapd not working properly</a>
+</p>
+
+<p><br /><br /></p>
+<h3 id="update-on-2020714"><font color="#4d8df1">Update on 2020.7.14</font></h3>
+
+<h4 id="wsl2虽已升级为完整的linux-kernel-但仍存在很多的问题">WSL2虽已升级为完整的Linux Kernel, 但仍存在很多的问题。</h4>
+
+<p style="margin-bottom: 1px;">&emsp;</p>
+
+<h3 id="issue-1linux-header缺失问题"><strong><font id="keyword1" color="green">『Issue 1』Linux Header缺失问题</font></strong></h3>
+<blockquote>
+  <p>『背景』：WSL默认包含了 Linux Kernel(如：4.19.104-microsoft-standard), 但却缺失了 Linux Header文件，而安装某些 package时又必须依赖 Linux Header文件，如 anbox。<br />『解决方法』：从官方提供下载的 kernel文件中，恢复(restore)对应的 Linux Header至 /lib/module目录中。</p>
+</blockquote>
+
+<p style="margin-bottom:-5px;">&nbsp;</p>
+<ul>
+  <li>
+    <h4 id="解决方法参考网址"><a href="https://medium.com/@centerorbit/installing-wireguard-in-wsl-2-dd676520cb21">『解决方法』参考网址</a></h4>
+  </li>
+  <li>
+    <h4 id="微软官方linux-kernel-for-microsoft-standard下载网址"><a href="https://github.com/microsoft/WSL2-Linux-Kernel/releases/tag/4.19.104-microsoft-standard">微软官方Linux Kernel for Microsoft Standard下载网址</a></h4>
+  </li>
+  <li>
+    <h4 id="resore-linux-header-for-wsl2-kernel-step-by-step"><strong><u>Resore Linux Header for WSL2 Kernel Step by Step</u></strong></h4>
+    <ul>
+      <li><strong>准备工作: <a href="/tech/WSL2/">设置WSL2体系结构, 备份/恢复系统</a></strong>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sudo apt update &amp;&amp; sudo apt -y upgrade
+  sudo apt install wget curl unzip git software-properties-common	
+  sudo apt install wsl
+  sudo apt install dos2unix
+</code></pre></div>        </div>
+
+        <p><a href="/assets/file/sources.list.cn.txt">国内阿里源</a> <code class="highlighter-rouge">sudo nano /etc/apt/sources.list</code>
+  <a href="/assets/file/sources.list.us.txt">默认国外源</a> <code class="highlighter-rouge">sudo nano /etc/apt/sources.list</code></p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  //在powershell中输入
+  wsl -l -v
+  wsl --set-version Ubuntu-20.04 2
+  wsl --set-default-version 2
+  wsl -l -v	
+
+  //备份WSL系统
+  wsl --export Ubuntu-20.04 D:\WSL\WSL2MyBackup20200714v2.tar
+
+  //恢复WSL系统	
+  wsl --unregister Ubuntu-20.04
+  wsl --import Ubuntu-20.04 D:\WSL\OS D:\WSL\WSL2MyBackup20200714v2.tar
+  ubuntu2004 config --default-user morlzz
+</code></pre></div>        </div>
+      </li>
+      <li><strong>Step1: 查看内核版本</strong>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ uname -r
+  4.19.104-microsoft-standard
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p><strong>Step2: 从微软官方下载对应的Kernel包 <a href="https://github.com/microsoft/WSL2-Linux-Kernel/archive/4.19.104-microsoft-standard.tar.gz"><code class="highlighter-rouge">WSL2-Linux-Kernel-4.19.104-microsoft-standard.tar.gz</code></a></strong></p>
+      </li>
+      <li><strong>Step3: 准备工作</strong>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo apt-get install libelf-dev build-essential pkg-config            
+  $ sudo apt-get install bison build-essential flex libssl-dev libelf-dev bc
+</code></pre></div>        </div>
+      </li>
+      <li><strong>Step4: 从Kernel文件进行恢复(restore) modules</strong>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ cd ~
+  $ wget https://github.com/microsoft/WSL2-Linux-Kernel/archive/4.19.84-microsoft-standard.tar.gz   //从微软下载WSL2-Linux-Kernel
+  $ sudo tar xvzf 4.19.104-microsoft-standard.tar.gz                    //tar文件完成后可删除
+  $ cd WSL2-Linux-Kernel-4.19.104-microsoft-standard                    //该目录完成后不可删除，"/lib/modules"与其symlink
+
+  //或是下载好，直接复制过来
+  //$ cp /mnt/d/Downloads/WSL2-Linux-Kernel-4.19.104-microsoft-standard.tar.gz /home/morlzz/Downloads
+		
+  $ sudo -s
+  # zcat /proc/config.gz &gt; .config
+
+  # make -j $(nproc)                                                   //Compile the kernel and modules
+  $ sudo make -j $(nproc) modules_install                              //Install the modules
+
+  //make a symlink of that install
+  $ cd /lib/modules
+  $ sudo ln -s 4.19.104-microsoft-standard+/ 4.19.104-microsoft-standard    
+</code></pre></div>        </div>
+        <ul>
+          <li>此时，在/lib/modules目录中，已看到生成的”4.19.104-microsoft-standard”目录，其包含了对应的Linux Header等等。即表示kernel恢复配置已成功，其他依赖其的package可正常安装。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:10px;">&nbsp;</p>
+
+<h3 id="issue-2snapd不正常问题"><strong><font id="keyword2" color="green">『Issue 2』Snapd不正常问题</font></strong></h3>
+
+<ul>
+  <li>
+    <h4 id="问题描述">问题描述</h4>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo snap install --devmode --beta anbox
+  error: cannot communicate with server: Post http://localhost/v2/snaps/anbox: dial unix /run/snapd.socket: connect: no such file or directory
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <h4 id="解决方法参考网址-1"><a href="https://forum.snapcraft.io/t/running-snaps-on-wsl2-insiders-only-for-now/13033">『解决方法』参考网址</a></h4>
+    <blockquote>
+      <p>该 Issue和 linux header没有关系。</p>
+    </blockquote>
+  </li>
+  <li>
+    <h4 id="troubleshooting-step-by-step"><strong><u>Troubleshooting Step by Step</u></strong></h4>
+
+    <ul>
+      <li><strong>Step1: 卸载自带Snapd并重装它</strong>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sudo apt purge -y snapd &amp;&amp; sudo apt autoremove -y
+  sudo apt install snapd
+</code></pre></div>        </div>
+
+        <p><strong>此时snapd为不工作状态</strong></p>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ snap version                 //无任何反应，Ctrl+C退出
+</code></pre></div>        </div>
+      </li>
+      <li><strong>Step2: 准备工作</strong>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sudo apt-get update &amp;&amp; sudo apt-get install -yqq daemonize dbus-user-session fontconfig
+		
+  //安装daemonize(否则以下文件修改后，会出现"/usr/sbin/daemonize: No such file or directory"错误，而无法再次进入wsl)
+  sudo apt-get update -y
+  sudo apt-get install -y daemonize
+  sudo cp /usr/bin/daemonize /usr/sbin/daemonize
+</code></pre></div>        </div>
+      </li>
+      <li><strong>Step3: 新建&amp;修改文件</strong>
+        <ul>
+          <li>
+            <p>【<strong><font color="#4d8df1">文件1：新建</font></strong>】/usr/sbin/start-systemd-namespace文件 <code class="highlighter-rouge">sudo nano /usr/sbin/start-systemd-namespace</code>，添加以下内容：<a href="/assets/file/postsfile/wslissue/1.txt" target="_blank">File1</a></p>
+          </li>
+          <li>
+            <p>【<strong><font color="#4d8df1">文件2：新建</font></strong>】/usr/sbin/enter-systemd-namespace文件 <code class="highlighter-rouge">sudo nano /usr/sbin/enter-systemd-namespace</code>，添加以下内容后并赋予可执行权限(chmod +x)<code class="highlighter-rouge">sudo chmod +x /usr/sbin/enter-systemd-namespace</code>：<a href="/assets/file/postsfile/wslissue/2.txt" target="_blank">File2</a></p>
+          </li>
+          <li>
+            <p>【<strong><font color="#4d8df1">文件3：修改</font></strong>】/etc/sudoers文件(推荐使用 sudo visudo命令) <code class="highlighter-rouge">sudo visudo -f /etc/sudoers</code>，在文件的末尾添加以下内容：<a href="/assets/file/postsfile/wslissue/3.txt" target="_blank">Add3</a> <br />(另外：找到这行<code class="highlighter-rouge">root ALL=(ALL) ALL</code>, 在他下面添加<code class="highlighter-rouge">morlzz ALL=(ALL) ALL</code>)</p>
+          </li>
+          <li>
+            <p>【<strong><font color="#4d8df1">文件4：修改</font></strong>】在/etc/bash.bashrc文件中，需要增加一行，直接运行以下命令进行增加</p>
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sudo sed -i 2a"# Start or enter a PID namespace in WSL2\nsource /usr/sbin/start-systemd-namespace\n" /etc/bash.bashrc
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+      <li><strong>Step4: 在CMD窗口，增加两个环境变量</strong>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  cmd.exe /C setx WSLENV BASH_ENV/u
+  cmd.exe /C setx BASH_ENV /etc/bash.bashrc
+</code></pre></div>        </div>
+      </li>
+      <li><strong>Step5: 退出WSL2所有进程，以确保更改后的new kernel得以应用</strong>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  //在Powershell运行：
+  wsl --shutdown
+</code></pre></div>        </div>
+      </li>
+      <li><strong>Step6：重新进入WSL，首行出错信息：/bin/cat: /root/.systemd-env: No such file or directory</strong>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  //ubuntu终端中，执行以下命令即可：
+  sudo cp $HOME/.systemd-env /root/.systemd-env
+
+  //在Powershell运行：
+  wsl --shutdown
+</code></pre></div>        </div>
+      </li>
+      <li><strong>Step7: 重新进入WSL，并输入<code class="highlighter-rouge">snap version</code>命令。以下状态表示Snapd正常工作</strong>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ snap version
+  snap    2.45.1+20.04
+  snapd   2.45.1+20.04
+  series  16
+  ubuntu  20.04
+  kernel  4.19.104-microsoft-standard
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:10px;">&nbsp;</p>
+
+<h3 id="安装图形用户界面"><strong><font id="keyword2" color="green">安装图形用户界面</font></strong></h3>
+
+<ul>
+  <li>
+    <h4 id="在安装anbox之前先行安装好图形用户界面">在安装anbox之前，先行安装好图形用户界面</h4>
+    <ul>
+      <li><a href="/tech/Install-GUI-for-Win10-WSL1-Ubuntu/">WSL RDP</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:10px;">&nbsp;</p>
+
+<h3 id="透过ubuntu2004-focal直接安装anbox"><strong><font id="keyword2" color="green">透过ubuntu20.04 (focal)直接安装anbox</font></strong></h3>
+
+<ul>
+  <li>
+    <h4 id="step1-安装anbox"><strong>Step1: 安装anbox</strong></h4>
+    <ul>
+      <li><strong>准备工作</strong>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sudo apt install dkms                  
+</code></pre></div>        </div>
+      </li>
+      <li><strong>使用DKMS安装<code class="highlighter-rouge">ashmem_linux</code>和<code class="highlighter-rouge">binder_linux</code>两个模块</strong>
+        <blockquote>
+          <p><a href="https://github.com/anbox/anbox-modules">anbox-module</a></p>
+        </blockquote>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  //git提取
+  $ git clone https://github.com/anbox/anbox-modules.git
+  $ cd anbox-modules
+		
+  $ sudo cp anbox.conf /etc/modules-load.d/
+  $ sudo cp 99-anbox.rules /lib/udev/rules.d/
+
+  $ sudo cp -rT ashmem /usr/src/anbox-ashmem-1
+  $ sudo cp -rT binder /usr/src/anbox-binder-1
+
+  $ sudo dkms install anbox-ashmem/1
+  $ sudo dkms install anbox-binder/1
+
+  $ sudo modprobe ashmem_linux
+  $ sudo modprobe binder_linux
+  $ lsmod | grep -e ashmem_linux -e binder_linux
+  $ ls -alh /dev/binder /dev/ashmem                
+</code></pre></div>        </div>
+
+        <p>load the kernel modules (The next time will be automatically loaded)</p>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo modprobe ashmem_linux
+  $ sudo modprobe binder_linux
+</code></pre></div>        </div>
+
+        <p>System should have two new nodes in /dev directory (<code class="highlighter-rouge">/dev/ashmem</code>, <code class="highlighter-rouge">/dev/binder</code>)</p>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ ls -1 /dev/{ashmem,binder}
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p><strong>安装anbox package</strong></p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo apt install anbox
+		
+  //卸载 (if needed)
+  //sudo apt purge -y anbox &amp;&amp; sudo apt autoremove -y
+</code></pre></div>        </div>
+      </li>
+      <li><strong>需下载<a href="https://build.anbox.io/android-images/">Pre-Build android image for anbox</a>: android.img</strong>
+        <blockquote>
+          <p>下载或者wget “android.img”, 拷贝至 <code class="highlighter-rouge">/var/lib/anbox/android.img</code>, 该路劲非常重要，不可变更。</p>
+        </blockquote>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ wget https://build.anbox.io/android-images/2018/07/19/android_amd64.img
+  $ cd ~
+  $ sudo mv android_amd64.img /var/lib/anbox/android.img
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p><strong>检测anbox安装状态</strong></p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ anbox system-info
+  $ anbox check-features                   //check whether system lack features to run Anbox
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:-3px;">&nbsp;</p>
+
+<ul>
+  <li>
+    <h4 id="step2-每次重启wsl后均需重新启动xrdp桌面环境"><strong><font color="green">Step2: 每次重启WSL后，均需重新启动xrdp桌面环境</font></strong></h4>
+    <ul>
+      <li><strong><font color="green">每次重启WSL, 均需启动xrdp桌面环境</font></strong>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo service xrdp restart              //sudo service xrdp stop   //停止
+</code></pre></div>        </div>
+      </li>
+      <li>在微软远程桌面连接(运行<code class="highlighter-rouge">mstsc</code>)，点击进入，计算机栏输入【本机IP:端口】（即：<code class="highlighter-rouge">127.0.0.1:3399</code>(for WSL1), <code class="highlighter-rouge">localhost:3399</code>(for WSL2)），用户名栏输入子系统用户名，点击连接，<a href="/tech/Install-GUI-for-Win10-WSL1-Ubuntu/">连接参数设置</a>。</li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:-3px;">&nbsp;</p>
+
+<ul>
+  <li>
+    <h4 id="step3-启动anox必须初次成功启动一次before-step5"><strong>Step3: 启动Anox，必须初次成功启动一次(before step5)</strong></h4>
+    <ul>
+      <li><strong>启动Anbox容器管理器</strong>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo systemctl start anbox-container-manager
+</code></pre></div>        </div>
+      </li>
+      <li><strong>补充添加</strong>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo mkdir -pv /etc/systemd/system/anbox-container-manager.service.d /var/lib/anbox/rootfs-overlay/system/etc/
+		
+  $ sudo nano /etc/systemd/system/anbox-container-manager.service.d/override.conf
+		
+  override.conf文件中放置以下内容：
+		
+  [Service]
+  ExecStart=
+  ExecStart=/usr/bin/anbox container-manager --daemon --privileged --data-path=/var/lib/anbox --use-rootfs-overlay
+</code></pre></div>        </div>
+      </li>
+      <li><strong>启动Session管理器</strong>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ export $(dbus-launch)
+  $ mkdir /tmp/runtime-user
+  $ export XDG_RUNTIME_DIR=/tmp/runtime-user
+  $ printenv | grep RUNTIME
+		
+  $ sudo /usr/bin/anbox session-manager       //显示no runtime directory, 忽略
+  //或是：sudo anbox session-manager
+  //或是：sudo anbox session-manager --gles-driver=translator
+</code></pre></div>        </div>
+      </li>
+      <li><strong>启动Anbox应用管理界面</strong>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ /usr/bin/anbox launch --package=org.anbox.appmgr --component=org.anbox.appmgr.AppViewActivity
+  //或是：anbox launch --package=org.anbox.appmgr --component=org.anbox.appmgr.AppViewActivity
+</code></pre></div>        </div>
+
+        <p>或者：直接点击桌面开始菜单Anbox图标</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:-3px;">&nbsp;</p>
+
+<ul>
+  <li>
+    <h4 id="step4-重启"><strong>Step4: 重启</strong></h4>
+
+    <ul>
+      <li>重启Liunx (for WSL, 重启之外，输入：wsl –shutdown)
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  systemctl reboot -i                         //Restart Debian Linux 
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p style="margin-bottom:-3px;">&nbsp;</p>
+
+<ul>
+  <li>
+    <h4 id="step5-anbox-install-google-play-store--enable-arm-参考1参考2"><strong>Step5: Anbox install Google Play Store &amp; Enable ARM <a href="https://www.linuxuprising.com/2018/07/anbox-how-to-install-google-play-store.html">参考1</a>，<a href="https://blog.csdn.net/ZhangRelay/article/details/84847001?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=anbox,%20adb:%20failed%20to%20install%20&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-84847001">参考2</a></strong></h4>
+
+    <ul>
+      <li>安装<a href="https://raw.githubusercontent.com/geeks-r-us/anbox-playstore-installer/master/install-playstore.sh">脚本</a>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo apt install wget lzip unzip squashfs-tools
+  $ wget https://raw.githubusercontent.com/geeks-r-us/anbox-playstore-installer/master/install-playstore.sh
+  //或是：sudo cp /mnt/d/Downloads/install-playstore.sh /home/morlzz/
+  $ sudo chmod +x install-playstore.sh
+
+  //如果没有反应，多试几次(或是关闭linux os再重启)
+  $ sudo -s
+  # sudo ./install-playstore.sh		
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>安装完成后，重复Step4: 重启，再次进入Linux</p>
+      </li>
+      <li>
+        <p>安装adb tools：<code class="highlighter-rouge">sudo apt install android-tools-adb</code></p>
+      </li>
+      <li>开启adb功能：
+  <br /><strong><font color="green">每次重启WSL后，需打开anbox图标或是启动以下第一行命令</font></strong>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ anbox launch --package=org.anbox.appmgr --component=org.anbox.appmgr.AppViewActivity           //每次使用adb之前，需启动该命令或是打开anbox图标		
+  $ adb devices
+  $ adb shell 		
+</code></pre></div>        </div>
+      </li>
+      <li>使用adb安装apk
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ wget https://f-droid.org/FDroid.apk
+  $ adb install FDroid.apk
+  $ adb install -g 1.apk                 //赋予1.apk所有的权限
+</code></pre></div>        </div>
+      </li>
+      <li>进入anbox
+        <ul>
+          <li>设置-&gt;应用中，将google play、google play servcies中的所有权限打开。
+            <ul>
+              <li>原因未知，一进入”settings”，WSL立即中止断开。</li>
+              <li>所以为了设置app的权限，曲线使用<code class="highlighter-rouge">app ops</code>+<code class="highlighter-rouge">shizuku</code>
+                <ul>
+                  <li><code class="highlighter-rouge">shizuku</code>: adb开启，在ubuntu终端中输入以下命令，即可使用<code class="highlighter-rouge">app ops</code>
+                    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ adb shell sh /data/user_de/0/moe.shizuku.privileged.api/start.sh
+</code></pre></div>                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>打开google play，输入Google账号后，即可在谷歌商店中下载、安装应用。</li>
+          <li>[可选]其他问题：
+            <ul>
+              <li>Google帐户连接问题：确保其anbox-bride.sh正在运行
+                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo /usr/share/anbox/anbox-bridge.sh start
+  $ sudo /usr/share/anbox/anbox-bridge.sh restart
+</code></pre></div>                </div>
+              </li>
+              <li>与Anbox存在连接问题, 可能还需要安装dnsmasq软件包: <code class="highlighter-rouge">sudo apt install dnsmasq</code></li>
+              <li>无法anbox上网问题：<a href="https://github.com/anbox/anbox/issues/443">参考方案</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p style="margin-bottom:11px;">&nbsp;</p>
+    <ul>
+      <li>
+        <font color="grey">[可选] ADB其他命令</font>
+        <ul>
+          <li>
+            <font color="grey">进入Android root shell</font>
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ sudo /usr/share/anbox/anbox-shell.sh	
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <font color="grey">从Linux Host向anbox互相移动数据</font>
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ adb push &lt;files&gt; '/sdcard/Download'              //从Linux向anbox传送数据
+  $ adb pull &lt;files&gt; '/sdcard/Download'              //从anbox向Linux传送数据	
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <font color="grey">adb卸载应用</font>
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ adb shell pm list packages                       //list all installed APP_IDs with
+  $ adb uninstall [APP_ID]                           //卸载程序，注意是[APP_ID]而非文件名称
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+  </div><a class="u-url" href="/tech/WSL2-Issues-&-install-anbox-by-focal-source/" hidden></a>
+    
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Morgan Zhao&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name"><a href="/">Morgan Zhao&#39;s Blog</a></li><li>FB：<a href="https://www.facebook.com/zzmorl"><span class="username">zzmorl</span></a></li></ul>
+      </div>
+
+<!--
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/zzmorl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">zzmorl</span></a></li></ul>
+</div>  
+
+      <div class="footer-col footer-col-3">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+-->
+	  
+	  <div class="footer-col footer-col-4">
+        <p>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people&#39;s Sharings, in return and be encouraged I&#39;ll spread out and with Mine.😘🙏</p>
+      </div>
+	  
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
+

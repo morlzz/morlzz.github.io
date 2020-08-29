@@ -1,4 +1,122 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-05-12T22:41:57+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">WindowsOS 常用路径</title><link href="http://localhost:8000/tech/Windows-OS-Path/" rel="alternate" type="text/html" title="WindowsOS 常用路径" /><published>2020-05-06T00:00:00+08:00</published><updated>2020-05-06T00:00:00+08:00</updated><id>http://localhost:8000/tech/Windows%20OS%20Path</id><content type="html" xml:base="http://localhost:8000/tech/Windows-OS-Path/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:8000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8000/" rel="alternate" type="text/html" /><updated>2020-08-29T19:48:53+08:00</updated><id>http://localhost:8000/feed.xml</id><title type="html">Morgan Zhao’s Blog</title><subtitle>My Life Experience, anything would love to share or record.😘🙏 Thanks for all people's Sharings, in return and be encouraged I'll spread out and with Mine.😘🙏</subtitle><entry><title type="html">关于(云)闪付/非接卡支付/contactlesspayments@POS/ATM</title><link href="http://localhost:8000/tech/Contactless-Pay/" rel="alternate" type="text/html" title="关于(云)闪付/非接卡支付/contactlesspayments@POS/ATM" /><published>2020-08-29T02:02:00+08:00</published><updated>2020-08-29T02:02:00+08:00</updated><id>http://localhost:8000/tech/Contactless%20Pay</id><content type="html" xml:base="http://localhost:8000/tech/Contactless-Pay/">&lt;p&gt;&lt;br /&gt;
+就我了解的信息整合如下：&lt;/p&gt;
+
+&lt;h3 id=&quot;1-关于云闪付非接卡支付contactless-payments全球目前的非接通道标准包括&quot;&gt;&lt;font size=&quot;4&quot; color=&quot;green&quot;&gt;1. 关于(云)闪付/非接卡支付/contactless payments，全球目前的非接通道标准包括&lt;/font&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;『银联 (Union Pay)』- UnionPay QuickPass (英文)/ 银联(云)闪付(中文)&lt;/li&gt;
+  &lt;li&gt;『Visa』- Visa PayWave
+-『Mastercard』- Mastercard PayPass&lt;/li&gt;
+  &lt;li&gt;『AMEX』- AMEX ExpressPass&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2--实现非接支付的承载方式&quot;&gt;&lt;font size=&quot;4&quot; color=&quot;green&quot;&gt;2.  实现非接支付的承载方式&lt;/font&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;支持以上各种非接标准的&lt;strong&gt;银行实体卡&lt;/strong&gt;，可在POS/ATM非接触使用 (常称为：拍卡、挥卡)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;手机Pay&lt;/strong&gt;：银行卡绑定验证成功后，由银行下发一张对应该卡的虚拟银行卡至手机
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;安卓阵营&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;u&gt;Google Pay&lt;/u&gt;
+            &lt;ul&gt;
+              &lt;li&gt;谷歌提供HCE (host-based cardemulator)支付方案，为广大安卓OS提供实现手机pay的可行方案;&lt;/li&gt;
+              &lt;li&gt;Google Pay前生为andriod pay google wallet, 遗憾的是虽然带动了这个趋势，但各家安卓oem手机厂商均纷纷推出自己的Pay (如华为pay/三星pay)，anyhow，技术支撑和实现上谷歌功不可没，向谷歌致敬！&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;u&gt;各家手机Pay: 分两类&lt;/u&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;strong&gt;含SE (安全芯片secure elements)&lt;/strong&gt;硬件的各家手机Pay，手机厂商为主导
+                &lt;ul&gt;
+                  &lt;li&gt;如：华为pay/小米华为pay/oppo pay/vivo pay/三星pay/魅族pay..&lt;/li&gt;
+                  &lt;li&gt;卡片支付相关Token存储在&lt;strong&gt;&lt;font color=&quot;green&quot;&gt;手机内置SE，因此支付是无需联网。(但显示&lt;u&gt;交易记录(不影响交易本身的握手完成)&lt;/u&gt;，需要联网由银行端推送)&lt;/font&gt;&lt;/strong&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;&lt;strong&gt;无SE硬件，基于HCE的各家闪付App，各家银行为主导&lt;/strong&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;如：招商银行app/工行随e行app/掌上生活app…&lt;/li&gt;
+                  &lt;li&gt;卡片支付相关Token存储在银行云端，因此支付是需要联网。&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;苹果阵营&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;iphone/watch.., 内置SE硬件。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3--手机pay绑卡原则&quot;&gt;&lt;font size=&quot;4&quot; color=&quot;green&quot;&gt;3.  手机Pay绑卡原则&lt;/font&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;无论哪个阵营，绑卡原则完全取决于厂商与银行的合作程度，case by case: 不断更新地国家列表 银行列表&lt;/li&gt;
+  &lt;li&gt;只要在其列表之中，各种手机Pay均绑定支持线下(到店) 线上(如在线app)支付&lt;/li&gt;
+  &lt;li&gt;中国区的卡片有一定的特殊性：
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Google Pay&lt;/strong&gt;: 不支持银联通道；中国发行的外币卡可添加，但仅支持线上支付 (其他不在列表内的银行类似)&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Apple Pay&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;和银联机构合作，支持任何银联卡片；中国境内发行的卡片，无论是否双标，只认银联通道，即如果中国发行的单标外币卡，无法添加到apple pay。&lt;/li&gt;
+          &lt;li&gt;境外银行卡（visa/mastercard/AMEX..）：只要列表之内，支持添加。&lt;/li&gt;
+          &lt;li&gt;不同于Google Pay, 不在列表之内的，apple pay完全不支持添加。&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;font size=&quot;4&quot; color=&quot;green&quot;&gt;&amp;ensp;&lt;b&gt;➱注意：添加卡片成功与否，与Apple ID注册区域、IP地址、iPhone发行地，没有任何关系。仅和上面的绑卡原则有关。&lt;/b&gt;&lt;/font&gt;
+        &lt;p&gt;&lt;br /&gt;			
+  &lt;a href=&quot;/assets/img/20200829/1.png&quot; target=&quot;_blank&quot;&gt;
+      &lt;img src=&quot;/assets/img/20200829/1.png&quot; width=&quot;87%&quot; /&gt;&lt;/a&gt;		
+  &lt;br /&gt;			
+  &lt;a href=&quot;/assets/img/20200829/2.jpeg&quot; target=&quot;_blank&quot;&gt;
+      &lt;img src=&quot;/assets/img/20200829/2.jpeg&quot; width=&quot;40%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;其他安卓oem厂商的手机Pay&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;绑卡原则类似apple pay，区别在于厂商合作的对象有所不同，对于银联通道，比如找银联机构、或是单独找各家银行合作；境外卡部分，也均有各自的支持列表。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;4--手机pay非接卡支付的注意事项&quot;&gt;&lt;font size=&quot;4&quot; color=&quot;green&quot;&gt;4.  手机Pay/非接卡支付的注意事项&lt;/font&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;小额免密免签&lt;/strong&gt;： 凡支持云闪付的银联实卡，&lt;strong&gt;默认被开通&lt;/strong&gt;“小额免密免签”功能，需注意资金安全，以防&lt;strong&gt;被拍卡&lt;/strong&gt;，可考虑使用屏蔽套。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;境外pos消费输入密码&lt;/strong&gt;：境外一定比例的老pos机不支持密码输入（没有小键盘），交易直接失败。（如基于招行掌上生活的手机闪付，必须在pos上输入密码。）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;5--实现手机pay非接卡atm机pos机的要求&quot;&gt;&lt;font size=&quot;4&quot; color=&quot;green&quot;&gt;5.  实现手机Pay/非接卡，ATM机、POS机的要求&lt;/font&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;支持NFC&lt;/li&gt;
+  &lt;li&gt;支持对应支付通道
+    &lt;ul&gt;
+      &lt;li&gt;[同一单标实体卡] 支付通道与非接支付通道：貌似两者之间，还是需要一定的技术升级。&lt;br /&gt;例如：同一张visa境外卡，在国内支持visa标志、以及“手机Pay/非接卡”感应区的atm机器上，吞卡方式正常工作，但非接方式显示不支持（更换成银联的非接卡片，可顺利读取）。&lt;br /&gt;
+  &lt;strong&gt;➱结论：有visa/mastercard/AMEX..标志的ATM，吞卡方式对应支持。但对应通道的非接方式，国内ATM目前并不支持。&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;实测：手机Pay - 银联通道 - ATM (参差不齐，形同虚设，几乎无法”取现”)&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;现状：ATM表面硬件上几乎均配备有NFC 非接感应区&lt;/li&gt;
+          &lt;li&gt;实测下来：
+            &lt;ul&gt;
+              &lt;li&gt;部分机器完全不支持非接的任何操作(比如查询/取款)，银联通道的非接在输入密码后，无任何反馈和提示。&lt;/li&gt;
+              &lt;li&gt;部分机器仅支持”查询”，不支持”取现”。&lt;/li&gt;
+              &lt;li&gt;其他更多机器上待测补充。&lt;/li&gt;
+              &lt;li&gt;估计，手机pay”存款”更是遥远&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;实测：手机Pay - 银联通道 - POS (应用广泛)&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;现状：超市、商家线下POS应用方案，普及率较高。&lt;br /&gt;			
+  &lt;a href=&quot;/assets/img/20200829/4.jpeg&quot; target=&quot;_blank&quot;&gt;
+  &lt;img src=&quot;/assets/img/20200829/4.jpeg&quot; width=&quot;77%&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;例证：上图中POS支付时，iphone手机地区为”美国”，完全不影响银联通道的正常交易。&lt;br /&gt;					
+  &lt;img src=&quot;/assets/img/20200829/3.jpeg&quot; width=&quot;22%&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Payments" /><summary type="html">contactlesspayments@POS/ATM</summary></entry><entry><title type="html">WindowsOS 常用路径</title><link href="http://localhost:8000/tech/Windows-OS-Path/" rel="alternate" type="text/html" title="WindowsOS 常用路径" /><published>2020-05-06T00:00:00+08:00</published><updated>2020-05-06T00:00:00+08:00</updated><id>http://localhost:8000/tech/Windows%20OS%20Path</id><content type="html" xml:base="http://localhost:8000/tech/Windows-OS-Path/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;1-a-copy-of-the-current-wallpaper&quot;&gt;&lt;strong&gt;1. A copy of the current wallpaper&lt;/strong&gt;&lt;/h4&gt;
 &lt;hr /&gt;
@@ -6,300 +124,9 @@
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%AppData%\Microsoft\Windows\Themes\CachedFiles&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="OS" /></entry><entry><title type="html">Install Apps in WSL2-Ubuntu20.04</title><link href="http://localhost:8000/tech/Install-Apps-in-WSL2-Ubuntu20.04/" rel="alternate" type="text/html" title="Install Apps in WSL2-Ubuntu20.04" /><published>2020-04-28T00:00:00+08:00</published><updated>2020-04-28T00:00:00+08:00</updated><id>http://localhost:8000/tech/Install%20Apps%20in%20WSL2-Ubuntu20.04</id><content type="html" xml:base="http://localhost:8000/tech/Install-Apps-in-WSL2-Ubuntu20.04/">&lt;p style=&quot;margin-bottom:35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="OS" /></entry><entry><title type="html">Install Anbox by Debian contrib Source on Debian10 GCE VPS</title><link href="http://localhost:8000/tech/Install-Anbox-by-Debian-contrib-Source-on-Debian10-GCE-VPS/" rel="alternate" type="text/html" title="Install Anbox by Debian contrib Source on Debian10 GCE VPS" /><published>2020-04-16T00:00:00+08:00</published><updated>2020-04-16T00:00:00+08:00</updated><id>http://localhost:8000/tech/Install%20Anbox%20by%20Debian%20contrib%20Source%20on%20Debian10%20GCE%20VPS</id><content type="html" xml:base="http://localhost:8000/tech/Install-Anbox-by-Debian-contrib-Source-on-Debian10-GCE-VPS/">&lt;p style=&quot;margin-bottom:35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;h4 id=&quot;step-by-step&quot;&gt;&lt;strong&gt;Step By Step.&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p style=&quot;margin-bottom:-5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;准备工作1&quot;&gt;&lt;strong&gt;准备工作1&lt;/strong&gt;&lt;/h4&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//为root用户设置密码
-$ sudo -s
-$ passwd
-
-
-//为用户“xxx”添加sudo权限
-$ sudo chmod u+w /etc/sudoers 
-//nano编辑sudoers文件，光标直接移动/回车换行，鼠标右击paste，ctrl+x退出/Y保存/enter确认，ctrl+k删除行/长按可快速删除行。找到&quot;root ALL=(ALL) ALL&quot;这行, 在他下面添加&quot;xxx ALL=(ALL) ALL&quot; 。
-$ sudo nano /etc/sudoers 
-$ sudo cat /etc/sudoers          
-$ sudo chmod u-w /etc/sudoers 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;替换成国内源-etcaptsourceslist-for-ubuntu-2004&quot;&gt;&lt;strong&gt;替换成国内源: &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/apt/sources.list&lt;/code&gt; for Ubuntu-20.04&lt;/strong&gt;&lt;/h4&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 清华
-# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
-# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
-# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
-# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
-# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
-
-# 预发布软件源，不建议启用
-# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
-# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;日常更新&quot;&gt;&lt;strong&gt;日常更新&lt;/strong&gt;&lt;/h4&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;恢复linux-header-for-wsl2&quot;&gt;&lt;strong&gt;恢复Linux Header for WSL2&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&quot;/tech/WSL2-Issues/#keyword1&quot;&gt;详见&lt;/a&gt;&lt;/p&gt;
-
-&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;install-xfce4-rdp&quot;&gt;&lt;strong&gt;Install xfce4 RDP&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//安装xorg（包括显卡驱动、图形环境库等等一系列软件包）
-$ sudo apt install xorg
-
-//安装xfce4（运行在类Unix操作系统上，提供轻量级桌面环境）
-$ sudo apt install xfce4
-
-//安装xrdp（一种开源的远程桌面协议（RDP）服务器）
-$ sudo apt install xrdp
-
-//配置xrdp（配置端口）, 默认端口号为3389，此处配置为3399
-$ sudo sed -i 's/port=3389/port=3399/g' /etc/xrdp/xrdp.ini
-
-//向.xsession中写入xfce4-session
-$ sudo echo xfce4-session &amp;gt;~/.xsession
-
-//重启xrdp服务
-$ sudo service xrdp restart                    //停止xrdp服务： sudo service xrdp stop
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;解决默认snapd-for-wsl2不可用问题&quot;&gt;&lt;strong&gt;解决默认Snapd for WSL2不可用问题&lt;/strong&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;该方法，Ubuntu使用成功。但 Debian, 会出现问题，勿用。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&quot;/tech/WSL2-Issues/#keyword2&quot;&gt;参考&lt;/a&gt;，但&lt;code class=&quot;highlighter-rouge&quot;&gt;Ubuntu 20.04&lt;/code&gt;与&lt;code class=&quot;highlighter-rouge&quot;&gt;Ubuntu 18.04&lt;/code&gt;有些微不同。详细步骤：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Step1: 准备工作&lt;/strong&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install -yqq daemonize dbus-user-session fontconfig
-	
-  //安装daemonize(否则以下文件修改后，会出现&quot;/usr/sbin/daemonize: No such file or directory&quot;错误，而无法再次进入wsl)
-  $ sudo apt-get update -y &amp;amp;&amp;amp; sudo apt-get install -y daemoniz
-  //注意：Ubuntu 20.04将其安装在&quot;/usr/bin/daemonize&quot;，而Ubuntu 18.04安装在&quot;/usr/sbin/daemonize&quot;，需ln -s。
-	
-  $ sudo apt install dos2unix
-  // dos2unix使用方法, 消除转换windows的格式问题
-  //$ dos2unix [filename]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Step2: 新建&amp;amp;修改文件&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;【&lt;strong&gt;&lt;font color=&quot;#4d8df1&quot;&gt;文件1：新建&lt;/font&gt;&lt;/strong&gt;】/usr/sbin/start-systemd-namespace文件 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo nano /usr/sbin/start-systemd-namespace&lt;/code&gt;，添加以下内容：&lt;a href=&quot;/assets/file/postsfile/wslissue/1.txt&quot; target=&quot;_blank&quot;&gt;File1&lt;/a&gt;，&lt;a href=&quot;/assets/file/postsfile/wslissue/start-systemd-namespace&quot; target=&quot;_blank&quot;&gt;下载&lt;/a&gt;&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;【&lt;strong&gt;&lt;font color=&quot;#4d8df1&quot;&gt;文件2：新建&lt;/font&gt;&lt;/strong&gt;】/usr/sbin/enter-systemd-namespace文件 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo nano /usr/sbin/enter-systemd-namespace&lt;/code&gt;，添加以下内容后并赋予可执行权限(chmod +x)&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo chmod +x /usr/sbin/enter-systemd-namespace&lt;/code&gt;：&lt;a href=&quot;/assets/file/postsfile/wslissue/2.txt&quot; target=&quot;_blank&quot;&gt;File2&lt;/a&gt;，&lt;a href=&quot;/assets/file/postsfile/wslissue/enter-systemd-namespace&quot; target=&quot;_blank&quot;&gt;下载&lt;/a&gt;&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;【&lt;strong&gt;&lt;font color=&quot;#4d8df1&quot;&gt;文件3：修改&lt;/font&gt;&lt;/strong&gt;】/etc/sudoers文件(推荐使用 sudo visudo命令) &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo visudo -f /etc/sudoers&lt;/code&gt;，在文件的末尾添加以下内容：&lt;a href=&quot;/assets/file/postsfile/wslissue/3.txt&quot; target=&quot;_blank&quot;&gt;Add3&lt;/a&gt;，&lt;a href=&quot;/assets/file/postsfile/wslissue/add&quot; target=&quot;_blank&quot;&gt;下载&lt;/a&gt;&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;【&lt;strong&gt;&lt;font color=&quot;#4d8df1&quot;&gt;文件4：修改&lt;/font&gt;&lt;/strong&gt;】在/etc/bash.bashrc文件中，需要增加一行，直接运行以下命令进行增加&lt;/p&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo sed -i 2a&quot;# Start or enter a PID namespace in WSL2\nsource /usr/sbin/start-systemd-namespace\n&quot; /etc/bash.bashrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Step3: 在WSL窗口，输入&lt;/strong&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo ln -s /usr/bin/daemonize /usr/sbin/daemonize
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Step4: 在CMD窗口，增加两个环境变量&lt;/strong&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  cmd.exe /C setx WSLENV BASH_ENV/u
-  cmd.exe /C setx BASH_ENV /etc/bash.bashrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Step5: 退出WSL2所有进程，以确保更改后的new kernel得以应用&lt;/strong&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  //在Powershell运行：
-  wsl --shutdown
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Step6: 重启WSL2，提示错误”/bin/cat: /root/.systemd-env: No such file or directory”，解决方法&lt;/strong&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo cp $HOME/.systemd-env /root/.systemd-env
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Step7: 重启WSL2，问题解决。输入&lt;code class=&quot;highlighter-rouge&quot;&gt;snap version&lt;/code&gt;命令。以下状态表示Snapd正常工作&lt;/strong&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ snap version
-  snap    2.44.3+20.04
-  snapd   2.44.3+20.04
-  series  16
-  ubuntu  20.04
-  kernel  4.19.84-microsoft-standard
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:30px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h3 id=&quot;issues&quot;&gt;&lt;strong&gt;Issues&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;issue1host问题-sudo-unable-to-resolve-host-webserver&quot;&gt;&lt;strong&gt;Issue1:Host问题 “sudo: unable to resolve host webserver”&lt;/strong&gt;&lt;/h4&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;问题描述：在”/etc/hosts”添加hostname，临时可解决问题，但”wsl –shutdown”重启后，问题依旧，且”/etc/hosts”仍变回原先版本。&lt;/p&gt;
-    &lt;/blockquote&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;解决方法：
-        &lt;ul&gt;
-          &lt;li&gt;&lt;strong&gt;在WSL2输入：&lt;/strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo true&lt;/code&gt;，如问题存在会显示&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo: unable to resolve host webserver&lt;/code&gt;。&lt;br /&gt;继而输入&lt;code class=&quot;highlighter-rouge&quot;&gt;$ hostname&lt;/code&gt;，假设显示结果&lt;code class=&quot;highlighter-rouge&quot;&gt;aaa&lt;/code&gt;。&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;在windows系统：&lt;/strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;c:\Windows\System32\Drivers\etc\hosts&lt;/code&gt;中，添加&lt;code class=&quot;highlighter-rouge&quot;&gt;127.0.0.1   aaa&lt;/code&gt;。&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;重启WSL2，&lt;/strong&gt;输入&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo true&lt;/code&gt;，不再报错，问题解决。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="WSL" /></entry><entry><title type="html">Install Anbox for WSL2-Ubuntu18.04</title><link href="http://localhost:8000/tech/Install-Anbox-for-WSL2-Ubuntu18.04/" rel="alternate" type="text/html" title="Install Anbox for WSL2-Ubuntu18.04" /><published>2020-04-22T23:33:00+08:00</published><updated>2020-04-22T23:33:00+08:00</updated><id>http://localhost:8000/tech/Install%20Anbox%20for%20WSL2-Ubuntu18.04</id><content type="html" xml:base="http://localhost:8000/tech/Install-Anbox-for-WSL2-Ubuntu18.04/">&lt;p style=&quot;margin-bottom:35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;step-by-step&quot;&gt;&lt;strong&gt;Step By Step.&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;(Here, &lt;a href=&quot;/tech/MyConfig-for-WSL2-Ubuntu18.04/&quot;&gt;&lt;u&gt;MyConfig&lt;/u&gt;&lt;/a&gt; is only for My Personnel)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p style=&quot;margin-bottom:-5px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h4 id=&quot;准备工作1&quot;&gt;&lt;strong&gt;准备工作1&lt;/strong&gt;&lt;/h4&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//为root用户设置密码
-$ sudo -s
-$ passwd
-
-
-//为用户“xxx”添加sudo权限
-$ sudo chmod u+w /etc/sudoers 
-//nano编辑sudoers文件，光标直接移动/回车换行，鼠标右击paste，ctrl+x退出/Y保存/enter确认，ctrl+k删除行/长按可快速删除行。找到&quot;root ALL=(ALL) ALL&quot;这行, 在他下面添加&quot;xxx ALL=(ALL) ALL&quot; 。
-$ sudo nano /etc/sudoers 
-$ sudo cat /etc/sudoers          
-$ sudo chmod u-w /etc/sudoers 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;替换成国内源-etcaptsourceslist-for-ubuntu-1804&quot;&gt;&lt;strong&gt;替换成国内源: &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/apt/sources.list&lt;/code&gt; for Ubuntu-18.04&lt;/strong&gt;&lt;/h4&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse  
-deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse  
-deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse  
-deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse  
-##测试版源  
-deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse  
-# 源码  
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse  
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse  
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse  
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse  
-##测试版源  
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse  
-# Canonical 合作伙伴和附加  
-deb http://archive.canonical.com/ubuntu/ bionic partner  
-#deb http://extras.ubuntu.com/ubuntu/ bionic main
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;日常更新&quot;&gt;&lt;strong&gt;日常更新&lt;/strong&gt;&lt;/h4&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;准备工作2---恢复linux-header-for-wsl2&quot;&gt;&lt;strong&gt;准备工作2 - 恢复Linux Header for WSL2&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&quot;/tech/WSL2-Issues/#keyword1&quot;&gt;详见&lt;/a&gt;&lt;/p&gt;
-
-&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;安装kernel-module-for-anbox-官方教程&quot;&gt;&lt;strong&gt;安装Kernel Module for Anbox (&lt;a href=&quot;https://docs.anbox.io/userguide/install.html&quot;&gt;官方教程&lt;/a&gt;)&lt;/strong&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;注意：Ubuntu可成功按官方方法添加源。但 Debian需采用&lt;a href=&quot;https://github.com/anbox/anbox-modules&quot;&gt;手动方法&lt;/a&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo apt install software-properties-common
-
-$ sudo add-apt-repository ppa:morphis/anbox-support
-$ sudo apt update
-$ sudo apt install linux-headers-generic anbox-modules-dkms
-
-$ sudo modprobe ashmem_linux
-$ sudo modprobe binder_linux
-
-$ ls -1 /dev/{ashmem,binder}
-/dev/ashmem
-/dev/binder
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;准备工作3---解决默认snapd-for-wsl2不可用问题&quot;&gt;&lt;strong&gt;准备工作3 - 解决默认Snapd for WSL2不可用问题&lt;/strong&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;该方法，Ubuntu使用成功。但 Debian, 会出现问题，勿用。&lt;br /&gt;下面需要通过 snap安装 anbox, 因此需先行解决 snap问题。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&quot;/tech/WSL2-Issues/#keyword2&quot;&gt;详见&lt;/a&gt;&lt;/p&gt;
-
-&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;install-xfce4-rdp&quot;&gt;&lt;strong&gt;Install xfce4 RDP&lt;/strong&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;运行Anbox服务，需基于桌面环境，因此需在安装Anbox Package之前，先行安装好 xfce4&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//安装xorg（包括显卡驱动、图形环境库等等一系列软件包）
-$ sudo apt install xorg
-
-//安装xfce4（运行在类Unix操作系统上，提供轻量级桌面环境）
-$ sudo apt install xfce4
-
-//安装xrdp（一种开源的远程桌面协议（RDP）服务器）
-$ sudo apt install xrdp
-
-//配置xrdp（配置端口）, 默认端口号为3389，此处配置为3399
-$ sudo sed -i 's/port=3389/port=3399/g' /etc/xrdp/xrdp.ini
-
-//向.xsession中写入xfce4-session
-$ sudo echo xfce4-session &amp;gt;~/.xsession
-
-//重启xrdp服务
-$ sudo service xrdp restart                    //停止xrdp服务： sudo service xrdp stop
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;安装anbox包&quot;&gt;&lt;strong&gt;安装Anbox包&lt;/strong&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;1) 网络链路：CMCC链路似乎无法连接 Anbox Server, 改用 CTC链路。&lt;br /&gt;2) 全局。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo -s
-# snap install --devmode --beta anbox
-
-$ systemctl reboot -i                         //重启系统
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;issue-file-system-read-only&quot;&gt;&lt;strong&gt;Issue: file system read-only&lt;/strong&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;重启系统再登陆后，当出现 “file system read-only”问题时，执行以下命令即可恢复正常：&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo -s
-# mount -o remount rw /
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p style=&quot;margin-bottom:10px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h4 id=&quot;optional-if-uninstall-anbox&quot;&gt;&lt;strong&gt;[optional] If Uninstall Anbox&lt;/strong&gt;&lt;/h4&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//卸载包
-$ snap remove anbox
-
-//删除源
-$ sudo apt install ppa-purge
-$ sudo ppa-purge ppa:morphis/anbox-support
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="WSL" /></entry><entry><title type="html">Install Anbox by Debian Sid on Debian10 GCE VPS</title><link href="http://localhost:8000/tech/Install-Anbox-by-Debian-Sid-on-Debian10-GCE-VPS/" rel="alternate" type="text/html" title="Install Anbox by Debian Sid on Debian10 GCE VPS" /><published>2020-04-16T00:00:00+08:00</published><updated>2020-04-16T00:00:00+08:00</updated><id>http://localhost:8000/tech/Install%20Anbox%20by%20Debian%20Sid%20on%20Debian10%20GCE%20VPS</id><content type="html" xml:base="http://localhost:8000/tech/Install-Anbox-by-Debian-Sid-on-Debian10-GCE-VPS/">&lt;p style=&quot;margin-bottom:35px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h3 id=&quot;update-on-2020714&quot;&gt;&lt;font color=&quot;#4d8df1&quot;&gt;Update on 2020.7.14&lt;/font&gt;&lt;/h3&gt;
 
 &lt;h3 id=&quot;system&quot;&gt;&lt;strong&gt;&lt;u&gt;System&lt;/u&gt;&lt;/strong&gt;&lt;/h3&gt;
 &lt;ul&gt;
@@ -313,7 +140,7 @@ $ sudo ppa-purge ppa:morphis/anbox-support
 &lt;h3 id=&quot;install-anbox-method&quot;&gt;&lt;strong&gt;&lt;u&gt;Install Anbox Method&lt;/u&gt;&lt;/strong&gt;&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;h3 id=&quot;from-unstable-source-debian-sid&quot;&gt;from unstable source “&lt;a href=&quot;https://packages.debian.org/sid/utils/anbox&quot;&gt;Debian Sid&lt;/a&gt;”&lt;/h3&gt;
+    &lt;h3 id=&quot;参考contrib-source&quot;&gt;参考：&lt;a href=&quot;https://leux.cn/doc/Anbox%E5%AE%89%E8%A3%85ARM%E5%85%BC%E5%AE%B9%E5%BA%93.html#more&quot;&gt;contrib Source&lt;/a&gt;&lt;/h3&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -327,10 +154,10 @@ $ sudo ppa-purge ppa:morphis/anbox-support
     &lt;h3 id=&quot;系统需要检测video-config-才能成功启动anbox服务因此需要桌面环境为前提条件&quot;&gt;系统需要检测video config, 才能成功启动Anbox服务，因此需要桌面环境为前提条件&lt;/h3&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;h3 id=&quot;chrome-vps-remote-desktop&quot;&gt;&lt;a href=&quot;/tech/Chrome-RDP-full-steps/&quot;&gt;Chrome VPS Remote Desktop&lt;/a&gt;&lt;/h3&gt;
+    &lt;h3 id=&quot;step1准备工作15需先行设置好&quot;&gt;&lt;a href=&quot;/tech/Chrome-RDP-full-steps/&quot;&gt;Step1：准备工作1~5，需先行设置好&lt;/a&gt;&lt;/h3&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;h3 id=&quot;wsl-rdp&quot;&gt;&lt;a href=&quot;/tech/Install-GUI-for-Win10-WSL1-Ubuntu/&quot;&gt;WSL RDP&lt;/a&gt;&lt;/h3&gt;
+    &lt;h3 id=&quot;chrome-vps-remote-desktop&quot;&gt;&lt;a href=&quot;/tech/Chrome-RDP-full-steps/&quot;&gt;Chrome VPS Remote Desktop&lt;/a&gt;&lt;/h3&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -340,13 +167,16 @@ $ sudo ppa-purge ppa:morphis/anbox-support
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;h4 id=&quot;step1-先修改etcaptsourceslist-增加以下内容&quot;&gt;&lt;strong&gt;Step1: 先修改”/etc/apt/sources.list”, 增加以下内容&lt;/strong&gt;&lt;/h4&gt;
+    &lt;h4 id=&quot;step1-contrib-source替换etcaptsourceslist&quot;&gt;&lt;strong&gt;Step1: contrib Source，替换”/etc/apt/sources.list”&lt;/strong&gt;&lt;/h4&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  deb http://ftp.us.debian.org/debian/ sid main contrib non-free
-  deb-src http://ftp.us.debian.org/debian/ sid main
-	 
-  deb http://ftp.us.debian.org/debian/ testing main contrib non-free
-  deb-src http://ftp.us.debian.org/debian/ testing main
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  deb http://ftp.us.debian.org/debian/ buster main contrib non-free
+  deb-src http://ftp.us.debian.org/debian/ buster main contrib non-free
+
+  deb http://ftp.us.debian.org/debian/ buster-updates main contrib non-free
+  deb-src http://ftp.us.debian.org/debian/ buster-updates main contrib non-free
+
+  deb http://security.debian.org/ buster/updates main contrib non-free
+  deb-src http://security.debian.org/ buster/updates main contrib non-free
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -355,8 +185,7 @@ $ sudo ppa-purge ppa:morphis/anbox-support
 &lt;ul&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;step2-更新&quot;&gt;&lt;strong&gt;Step2: 更新&lt;/strong&gt;&lt;/h4&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo apt update &amp;amp;&amp;amp; sudo apt -y upgrade
-  sudo apt update &amp;amp;&amp;amp; sudo apt upgrade	
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo apt update &amp;amp;&amp;amp; sudo apt -y upgrade            //sudo apt update &amp;amp;&amp;amp; sudo apt upgrade	
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -371,7 +200,7 @@ $ sudo ppa-purge ppa:morphis/anbox-support
   cd /lib/modules/          
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
 
-    &lt;p&gt;我这里出现的是&lt;code class=&quot;highlighter-rouge&quot;&gt;5.5.0-1-cloud-amd64&lt;/code&gt;, 因此对应&lt;code class=&quot;highlighter-rouge&quot;&gt;linux-headers-5.5.0-1-cloud-amd64&lt;/code&gt;。&lt;/p&gt;
+    &lt;p&gt;我这里出现的是&lt;code class=&quot;highlighter-rouge&quot;&gt;4.19.0-9-cloud-amd64&lt;/code&gt;, 因此对应&lt;code class=&quot;highlighter-rouge&quot;&gt;linux-headers-4.19.0-9-cloud-amd64&lt;/code&gt;。&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -379,17 +208,17 @@ $ sudo ppa-purge ppa:morphis/anbox-support
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;h4 id=&quot;step4-从debian-sid安装anbox-官方安装文档&quot;&gt;&lt;strong&gt;Step4: 从”Debian Sid”安装anbox, &lt;a href=&quot;/assets/file/README.Debian&quot;&gt;官方安装文档&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
+    &lt;h4 id=&quot;step4-从debian-contrib安装anbox&quot;&gt;&lt;strong&gt;Step4: 从”Debian Contrib”安装anbox&lt;/strong&gt;&lt;/h4&gt;
 
     &lt;ul&gt;
       &lt;li&gt;&lt;strong&gt;准备工作&lt;/strong&gt;
         &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo apt install dkms
-  sudo apt install linux-headers-5.5.0-1-cloud-amd64                   
+  sudo apt install linux-headers-4.19.0-9-cloud-amd64                   
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
       &lt;/li&gt;
       &lt;li&gt;&lt;strong&gt;使用DKMS安装&lt;code class=&quot;highlighter-rouge&quot;&gt;ashmem_linux&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;binder_linux&lt;/code&gt;两个模块&lt;/strong&gt;
         &lt;blockquote&gt;
-          &lt;p&gt;GCE Debian10 Kernel默认不含这两个模块。&lt;br /&gt;不同于Ubuntu，Debian无法通过添加ppa方式进行直接安装&lt;a href=&quot;https://github.com/anbox/anbox-modules&quot;&gt;anbox-module&lt;/a&gt;，只能该手动方式。&lt;/p&gt;
+          &lt;p&gt;GCE Debian10 Kernel默认不含这两个模块。&lt;br /&gt;不同于Ubuntu，Debian无法通过添加ppa方式进行直接安装 &lt;a href=&quot;https://github.com/anbox/anbox-modules&quot;&gt;anbox-module&lt;/a&gt;，只能该手动方式。&lt;/p&gt;
         &lt;/blockquote&gt;
 
         &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  //git提取
@@ -424,6 +253,9 @@ $ sudo ppa-purge ppa:morphis/anbox-support
         &lt;p&gt;&lt;strong&gt;安装anbox package&lt;/strong&gt;&lt;/p&gt;
 
         &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo apt install anbox
+		
+  //卸载 (if needed)
+  //sudo apt purge -y anbox &amp;amp;&amp;amp; sudo apt autoremove -y
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
       &lt;/li&gt;
       &lt;li&gt;&lt;strong&gt;需下载&lt;a href=&quot;https://build.anbox.io/android-images/&quot;&gt;Pre-Build android image for anbox&lt;/a&gt;: android.img&lt;/strong&gt;
@@ -433,7 +265,7 @@ $ sudo ppa-purge ppa:morphis/anbox-support
 
         &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ wget https://build.anbox.io/android-images/2018/07/19/android_amd64.img
   $ cd ~
-  $ sudo mv android.img /var/lib/anbox/android.img
+  $ sudo mv android_amd64.img /var/lib/anbox/android.img
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
       &lt;/li&gt;
       &lt;li&gt;
@@ -451,94 +283,142 @@ $ sudo ppa-purge ppa:morphis/anbox-support
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;h4 id=&quot;step5-所有安装完成后进一步清理&quot;&gt;&lt;strong&gt;Step5: 所有安装完成后，进一步清理&lt;/strong&gt;&lt;/h4&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  # apt-get clean &amp;amp;&amp;amp; apt-get autoremove
-  $ sudo apt-get -f install              #Another command to fix dependency problems
-  $ sudo dpkg --configure -a             #checks for dependency problems to fix            
-  $ sudo apt-get clean                   #clean unnecessary dependencies, &quot;apt-get autoclean&quot;
-  $ sudo apt-get update                  #Updates the packages’ list in the repositories
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;step6-运行anbox服务&quot;&gt;&lt;strong&gt;Step6: 运行Anbox服务&lt;/strong&gt;&lt;/h4&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo systemctl start anbox-container-manager.service
-  $ systemctl --user start anbox-session-manager.service
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;step7-如果step6成功-启动anox&quot;&gt;&lt;strong&gt;Step7: (如果Step6成功) 启动Anox&lt;/strong&gt;&lt;/h4&gt;
+    &lt;h4 id=&quot;step5-启动anox必须初次成功启动一次before-step7&quot;&gt;&lt;strong&gt;Step5: 启动Anox，必须初次成功启动一次(before step7)&lt;/strong&gt;&lt;/h4&gt;
 
     &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;启动方法1：桌面开始菜单Anbox图标&lt;/p&gt;
+      &lt;li&gt;启动Anbox容器管理器
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo systemctl start anbox-container-manager
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
       &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;启动方法2：命令行&lt;/p&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ anbox launch --package=org.anbox.appmgr --component=org.anbox.appmgr.AppViewActivity
+      &lt;li&gt;补充添加
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo mkdir -pv /etc/systemd/system/anbox-container-manager.service.d /var/lib/anbox/rootfs-overlay/system/etc/
+		
+  $ sudo nano /etc/systemd/system/anbox-container-manager.service.d/override.conf
+		
+  override.conf文件中放置以下内容：
+		
+  [Service]
+  ExecStart=
+  ExecStart=/usr/bin/anbox container-manager --daemon --privileged --data-path=/var/lib/anbox --use-rootfs-overlay
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;启动Session管理器
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ export $(dbus-launch)
+  $ mkdir /tmp/runtime-user
+  $ export XDG_RUNTIME_DIR=/tmp/runtime-user
+  $ printenv | grep RUNTIME
+		
+  $ sudo /usr/bin/anbox session-manager       //显示no runtime directory, 忽略
+  //或是：sudo anbox session-manager
+  //或是：sudo anbox session-manager --gles-driver=translator
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;启动Anbox应用管理界面
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ /usr/bin/anbox launch --package=org.anbox.appmgr --component=org.anbox.appmgr.AppViewActivity
+  //或是：anbox launch --package=org.anbox.appmgr --component=org.anbox.appmgr.AppViewActivity
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+
+        &lt;p&gt;或者：直接点击桌面开始菜单Anbox图标&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;step6-重启&quot;&gt;&lt;strong&gt;Step6: 重启&lt;/strong&gt;&lt;/h4&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;重启Liunx (如果是GCE, 重启之外，点击”停止”&amp;amp;”重启VM”)
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  systemctl reboot -i                         //Restart Debian Linux 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p style=&quot;margin-bottom:25px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&quot;install-apk-by-adb&quot;&gt;&lt;strong&gt;&lt;u&gt;Install Apk by ADB&lt;/u&gt;&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;install-adb&quot;&gt;Install ADB&lt;/h3&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo apt install android-tools-adb
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;h3 id=&quot;adb-commands&quot;&gt;ADB Commands&lt;/h3&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ adb devices                                    //需在桌面环境才能成功运行
-  $ adb shell 	                                 //需在桌面环境才能成功运行
-  $ sudo /usr/share/anbox/anbox-shell.sh           //进入Android root shell	
-	
-  //从Linux Host向anbox互相移动数据
-  adb push &amp;lt;files&amp;gt; '/sdcard/Download'              //从Linux向anbox传送数据
-  adb pull &amp;lt;files&amp;gt; '/sdcard/Download'              //从anbox向Linux传送数据	
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+    &lt;h4 id=&quot;step7-anbox-install-google-play-store--enable-arm-参考1参考2&quot;&gt;&lt;strong&gt;Step7: Anbox install Google Play Store &amp;amp; Enable ARM &lt;a href=&quot;https://www.linuxuprising.com/2018/07/anbox-how-to-install-google-play-store.html&quot;&gt;参考1&lt;/a&gt;，&lt;a href=&quot;https://blog.csdn.net/ZhangRelay/article/details/84847001?ops_request_misc=&amp;amp;request_id=&amp;amp;biz_id=102&amp;amp;utm_term=anbox,%20adb:%20failed%20to%20install%20&amp;amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-84847001&quot;&gt;参考2&lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
 
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;安装&lt;a href=&quot;https://raw.githubusercontent.com/geeks-r-us/anbox-playstore-installer/master/install-playstore.sh&quot;&gt;脚本&lt;/a&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo apt install wget lzip unzip squashfs-tools
+  $ wget https://raw.githubusercontent.com/geeks-r-us/anbox-playstore-installer/master/install-playstore.sh
+  //或是：sudo cp /mnt/d/Downloads/install-playstore.sh /home/morlzz/
+  $ sudo chmod +x install-playstore.sh
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;install-apk&quot;&gt;Install Apk&lt;/h3&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ wget https://f-droid.org/FDroid.apk
+  //如果没有反应，多试几次(或是关闭linux os再重启)
+  $ sudo -s
+  # sudo ./install-playstore.sh		
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;安装完成后，重复Step6: 重启，再次进入Linux&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;安装adb tools：&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt install android-tools-adb&lt;/code&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;开启adb功能：
+  &lt;br /&gt;&lt;strong&gt;&lt;font color=&quot;green&quot;&gt;每次重启Linux后，需打开anbox图标或是启动以下第一行命令&lt;/font&gt;&lt;/strong&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ anbox launch --package=org.anbox.appmgr --component=org.anbox.appmgr.AppViewActivity           //每次使用adb之前，需启动该命令或是打开anbox图标		
+  $ adb devices
+  $ adb shell 		
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;使用adb安装apk
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ wget https://f-droid.org/FDroid.apk
   $ adb install FDroid.apk
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;进入anbox
+        &lt;ul&gt;
+          &lt;li&gt;设置-&amp;gt;应用中，将google play、google play servcies中的所有权限打开。&lt;/li&gt;
+          &lt;li&gt;打开google play，输入Google账号后，即可在谷歌商店中下载、安装应用。&lt;/li&gt;
+          &lt;li&gt;[可选]其他问题：
+            &lt;ul&gt;
+              &lt;li&gt;Google帐户连接问题：确保其anbox-bride.sh正在运行
+                &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo /usr/share/anbox/anbox-bridge.sh start
+  $ sudo /usr/share/anbox/anbox-bridge.sh restart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;                &lt;/div&gt;
+              &lt;/li&gt;
+              &lt;li&gt;与Anbox存在连接问题, 可能还需要安装dnsmasq软件包: &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt install dnsmasq&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;无法anbox上网问题：&lt;a href=&quot;https://github.com/anbox/anbox/issues/443&quot;&gt;参考方案&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
 
-&lt;p style=&quot;margin-bottom:-3px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;uninstall-apk&quot;&gt;Uninstall Apk&lt;/h3&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  adb shell pm list packages                       //list all installed APP_IDs with
-  adb uninstall [APP_ID]                           //卸载程序，注意是[APP_ID]而非文件名称	
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p style=&quot;margin-bottom:11px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;font color=&quot;grey&quot;&gt;[可选] ADB其他命令&lt;/font&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;font color=&quot;grey&quot;&gt;进入Android root shell&lt;/font&gt;
+            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo /usr/share/anbox/anbox-shell.sh	
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;font color=&quot;grey&quot;&gt;从Linux Host向anbox互相移动数据&lt;/font&gt;
+            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ adb push &amp;lt;files&amp;gt; '/sdcard/Download'              //从Linux向anbox传送数据
+  $ adb pull &amp;lt;files&amp;gt; '/sdcard/Download'              //从anbox向Linux传送数据	
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;font color=&quot;grey&quot;&gt;adb卸载应用&lt;/font&gt;
+            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ adb shell pm list packages                       //list all installed APP_IDs with
+  $ adb uninstall [APP_ID]                           //卸载程序，注意是[APP_ID]而非文件名称
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author></entry><entry><title type="html">『总贴』Google/Google Cloud</title><link href="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/GCE/" rel="alternate" type="text/html" title="『总贴』Google/Google Cloud" /><published>2020-04-15T16:15:00+08:00</published><updated>2020-04-15T16:15:00+08:00</updated><id>http://localhost:8000/tech/%E6%90%AC%E8%BF%90/GCE</id><content type="html" xml:base="http://localhost:8000/tech/%E6%90%AC%E8%BF%90/GCE/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -633,7 +513,7 @@ $ sudo ppa-purge ppa:morphis/anbox-support
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;h4 id=&quot;亲测on-debian10-gce-vps---chrome-rdp--anboxdebian-sid&quot;&gt;&lt;a href=&quot;/tech/Install-Anbox-by-Debian-Sid-on-Debian10-GCE-VPS/&quot;&gt;亲测：on Debian10 GCE VPS - Chrome RDP + Anbox@Debian Sid&lt;/a&gt;&lt;/h4&gt;
+    &lt;h4 id=&quot;亲测on-debian10-gce-vps---chrome-rdp--anboxdebian-contrib-source&quot;&gt;&lt;a href=&quot;/tech/Install-Anbox-by-Debian-contrib-Source-on-Debian10-GCE-VPS/&quot;&gt;亲测：on Debian10 GCE VPS - Chrome RDP + Anbox@Debian contrib Source&lt;/a&gt;&lt;/h4&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1009,4 +889,69 @@ $ adb start-server
       &lt;li&gt;路径：Sandbox中 &lt;code class=&quot;highlighter-rouge&quot;&gt;C:\Users\WDAGUtilityAccount\&lt;/code&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="OS" /></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="OS" /></entry><entry><title type="html">『总贴』Windows微软相关汇总</title><link href="http://localhost:8000/tech/Windows-All-Relative/" rel="alternate" type="text/html" title="『总贴』Windows微软相关汇总" /><published>2020-04-04T22:16:00+08:00</published><updated>2020-04-04T22:16:00+08:00</updated><id>http://localhost:8000/tech/Windows%20All%20Relative</id><content type="html" xml:base="http://localhost:8000/tech/Windows-All-Relative/">&lt;p style=&quot;margin-bottom: 12px;color:#474747;font-size:14px;&quot;&gt;
+Keywords: 
+&lt;a href=&quot;#keyword1&quot;&gt;微软终端命令&lt;/a&gt;,
+&lt;a href=&quot;#keyword2&quot;&gt;微软官方WinPE&lt;/a&gt;,
+&lt;a href=&quot;#keyword3&quot;&gt;Surface Pro4 硬件驱动黄色惊叹号&lt;/a&gt;,
+&lt;a href=&quot;#keyword4&quot;&gt;SOHO局域网相关汇总&lt;/a&gt;,
+&lt;a href=&quot;#keyword5&quot;&gt;微软WSL-Ubuntu安装图形用户界面&lt;/a&gt;,
+&lt;a href=&quot;#keyword6&quot;&gt;微软子系统(Ubuntu)通过Xshell连接&lt;/a&gt;,
+&lt;a href=&quot;#keyword7&quot;&gt;Install WSL2&lt;/a&gt;,
+&lt;a href=&quot;#keyword8&quot;&gt;WSL问题修复&amp;amp;focal源安装anbox&lt;/a&gt;,
+&lt;a href=&quot;#keyword11&quot;&gt;Windows Sandbox .wsb Config&lt;/a&gt;,
+&lt;a href=&quot;#keyword12&quot;&gt;Apps for Windows OS&lt;/a&gt;,
+&lt;a href=&quot;#keyword13&quot;&gt;WindowsOS常用路径&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;margin-bottom: 25px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;1-commandswindows-x86-相关终端命令&quot;&gt;&lt;font id=&quot;keyword1&quot; color=&quot;green&quot;&gt;1. 『Commands』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-OS-Commands/&quot;&gt;Windows x86 相关终端命令&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-winpe微软官方winpe-启动u盘或iso制作&quot;&gt;&lt;font id=&quot;keyword2&quot; color=&quot;green&quot;&gt;2. 『WinPE』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-Official-WinPE/&quot;&gt;微软官方WinPE 启动U盘或iso制作&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-driver-issuesurface-pro4-硬件驱动黄色惊叹号&quot;&gt;&lt;font id=&quot;keyword3&quot; color=&quot;green&quot;&gt;3. 『Driver Issue』&lt;/font&gt;&lt;a href=&quot;/tech/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/Surface-Pro4-Drivers'-Issue/&quot;&gt;Surface Pro4 硬件驱动黄色惊叹号&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;4-soho-lansoho局域网相关汇总&quot;&gt;&lt;font id=&quot;keyword4&quot; color=&quot;green&quot;&gt;4. 『SOHO LAN』&lt;/font&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/SohoLAN/&quot;&gt;SOHO局域网相关汇总&lt;/a&gt;&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;SMB(v2)局域网跨设备文件共享/浏览,IIS,卡巴防火墙相关设置,路由器访客/AP隔离&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;5-win10-subsystem微软子系统wsl-v1ubuntu安装图形用户界面&quot;&gt;&lt;font id=&quot;keyword5&quot; color=&quot;green&quot;&gt;5. 『Win10 Subsystem』&lt;/font&gt;&lt;a href=&quot;/tech/Install-GUI-for-Win10-WSL1-Ubuntu/&quot;&gt;微软子系统WSL v1(Ubuntu)安装图形用户界面&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;6-win10-subsystemxshell连接wsl-ubuntu&quot;&gt;&lt;font id=&quot;keyword6&quot; color=&quot;green&quot;&gt;6. 『Win10 Subsystem』&lt;/font&gt;&lt;a href=&quot;/tech/Xshell-connect-to-WSL-Ubuntu/&quot;&gt;Xshell连接WSL Ubuntu&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;7-win10-subsysteminstall-wsl2--backuprestore-wsl2&quot;&gt;&lt;font id=&quot;keyword7&quot; color=&quot;green&quot;&gt;7. 『Win10 Subsystem』&lt;/font&gt;&lt;a href=&quot;/tech/WSL2/&quot;&gt;Install WSL2 &amp;amp; Backup/restore WSL2&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;8-win10-subsystemwsl2-issues--install-anbox-by-focal-source-on-ubuntu-2004&quot;&gt;&lt;font id=&quot;keyword8&quot; color=&quot;green&quot;&gt;8. 『Win10 Subsystem』&lt;/font&gt;&lt;a href=&quot;/tech/WSL2-Issues-&amp;amp;-install-anbox-by-focal-source/&quot;&gt;WSL2 Issues &amp;amp; install anbox by focal source on Ubuntu 20.04&lt;/a&gt;&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;缺失”Linux Header for 4.19.84-microsoft-standard Kernel”；Snapd不正常工作问题…&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;11-win10-sandboxwindows-sandbox-wsb-config&quot;&gt;&lt;font id=&quot;keyword11&quot; color=&quot;green&quot;&gt;11. 『Win10 Sandbox』&lt;/font&gt;&lt;a href=&quot;/tech/%E6%90%AC%E8%BF%90/Win10-Sandbox/&quot;&gt;Windows Sandbox .wsb Config&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;12-windows-apps微软平台推荐应用&quot;&gt;&lt;font id=&quot;keyword12&quot; color=&quot;green&quot;&gt;12. 『Windows Apps』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-Apps/&quot;&gt;微软平台推荐应用&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;h3 id=&quot;13-general-pathwindowsos常用路径&quot;&gt;&lt;font id=&quot;keyword13&quot; color=&quot;green&quot;&gt;13. 『General Path』&lt;/font&gt;&lt;a href=&quot;/tech/Windows-OS-Path/&quot;&gt;WindowsOS常用路径&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom: 1px;&quot;&gt;&amp;emsp;&lt;/p&gt;</content><author><name></name></author><category term="OS" /></entry></feed>

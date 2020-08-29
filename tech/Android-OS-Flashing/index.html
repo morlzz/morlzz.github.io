@@ -103,6 +103,59 @@
 <hr />
 
 <h4 id="1-谷歌出厂镜像涵盖pixelnexus系列"><a href="/tech/%E6%90%AC%E8%BF%90/Native-Andriod-OS/">1. 谷歌出厂镜像：涵盖Pixel、Nexus系列</a></h4>
+<ul>
+  <li>新发布的手机，手动更新os时，必须更新至最新版的adb tools，否则会各种报错。</li>
+</ul>
+<p style="margin-top: -48px;">&emsp;</p>
+<h4 id="2-nexus-5刷机说明">2. Nexus 5刷机说明</h4>
+<ul>
+  <li>所有操作，必须基于老版的<a href="https://androidfilehost.com/?fid=11410932744536987337">adb tools (adb 1.4.3)</a>，否则会各种报错。</li>
+  <li>刷第三方recovery前, 必须<code class="highlighter-rouge">fastboot oem unlock</code>，否则会无限循环。
+    <ul>
+      <li><code class="highlighter-rouge">unlock</code>与<code class="highlighter-rouge">lock</code>，之间的切换会导致数据全部清空，慎用；如无必要，默认优选<code class="highlighter-rouge">unlock</code>，也可保证第三方recovery的顺利更新。</li>
+    </ul>
+  </li>
+  <li>建议在”cmd”中，输入<code class="highlighter-rouge">flash-all.bat</code></li>
+  <li>
+    <p>System 分区空间不够，需resize: <a href="https://forum.xda-developers.com/showpost.php?p=79928889&amp;postcount=190">教程</a></p>
+  </li>
+  <li><strong>Nexus 5 一键刷机(flash-all.bat)经常失败，采用手动的方式如下:</strong>
+    <ul>
+      <li>采用<a href="https://forum.xda-developers.com/google-nexus-5/general/tutorial-how-to-flash-factory-image-t2513701">该帖子</a>中方法二 (确保使用老版本adb - adb v1.4.3)：
+        <ol>
+          <li>Extract the image-hammerhead-krt16m.zip somewhere easy to access (On C:\image-hammerhead-krt16m for example). You will have the following files</li>
+          <li>In the same folder, from the original archive, extract &amp; put “bootloader-hammerhead-XXXXXX.img” (rename it to bootloader.img) and “radio-hammerhead-XXXXXX.img” (rename it to radio.img) in the same folder</li>
+          <li>Boot it in fastboot by pressing and holding Power Button + Volume Down at the same time</li>
+          <li>Connect your phone to your PC through your USB cable，and open a CMD window</li>
+          <li>Type the following commands, in the order
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> fastboot flash bootloader bootloader.img
+ fastboot reboot-bootloader
+ fastboot flash radio radio.img
+ fastboot reboot-bootloader
+ fastboot flash system system.img
+
+ fastboot flash userdata userdata.img 
+ //(Note: this command will wipe your device (including \sdcard), EVEN if your bootloader is already unlocked.)
+
+ fastboot flash boot boot.img
+ fastboot flash recovery recovery.img
+ fastboot erase cache
+ fastboot flash cache cache.img
+</code></pre></div>            </div>
+          </li>
+          <li>After everything finished, select “Recovery Mode” using the volume buttons</li>
+          <li>进入Recover, <a href="https://www.android.gs/how-to-boot-recovery-mode-for-google-nexus-5">手势方法参考</a>
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> press and hold POWER, and then press once the Volume Up button
+</code></pre></div>            </div>
+          </li>
+          <li>Select “Wipe data/factory data reset”</li>
+          <li>Reboot. Your phone should be stock.</li>
+          <li>[可选] 完成以上后，如果手机开机无反应，则再次进入fastboot，使用一键方式<code class="highlighter-rouge">flash-all.exe</code>再次刷入一次，完成后重启。</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ul>
 
 <p><font color="purple" size="6" style="border-bottom: 3px solid grey;display:block;margin-top: 50px;font-weight:">去DM验证</font></p>
 
